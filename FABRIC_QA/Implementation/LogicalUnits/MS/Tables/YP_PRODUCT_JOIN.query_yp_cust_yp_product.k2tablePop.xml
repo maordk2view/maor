@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_yp_cust_yp_product</PopulationObjectName>
+  <TableName>YP_PRODUCT_JOIN</TableName>
+  <ID>query_yp_cust_yp_product</ID>
+  <RootItemID>query_326</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="customer_id" id="query_326.0" dataType="Real" index="0" />
+    <Arg name="product_code" id="query_326.1" dataType="Text" index="1" />
+    <Arg name="product_issue_num" id="query_326.2" dataType="Real" index="2" />
+    <Arg name="product_status" id="query_326.3" dataType="Real" index="3" />
+    <Arg name="retirement_status" id="query_326.4" dataType="Text" index="4" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_326" name="query_yp_cust_yp_product" nodeOrder="0" module="DBQuery" connName="PG_SOURCE">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_326.0" name="customer_id" dataType="Real" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_326.1" name="product_code" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_326.2" name="product_issue_num" dataType="Real" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_326.3" name="product_status" dataType="Real" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_326.4" name="retirement_status" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_326.5" name="new_product_code" dataType="Text" index="5" />
+      </OutputsList>
+      <SQL><![CDATA[Select yp_product.customer_id,
+  yp_product.product_code,
+  yp_product.product_issue_num,
+  yp_product.product_status,
+  yp_product.retirement_status,
+  yp_product_trn.new_product_code
+From yp_product
+  Inner Join yp_product_trn On yp_product.product_code =
+    yp_product_trn.old_product_code]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="432" fromNodeOrder="0" fromItemID="query_326" fromColID="query_326.0" toItemID="tbl_YP_PRODUCT_JOIN" toColID="tblCol_f18ee1d2bd24423297af4b7be31abf5d" />
+    <Link partId="433" fromNodeOrder="0" fromItemID="query_326" fromColID="query_326.1" toItemID="tbl_YP_PRODUCT_JOIN" toColID="tblCol_e712cd2d261c48ed8d66c595293468b5" />
+    <Link partId="434" fromNodeOrder="0" fromItemID="query_326" fromColID="query_326.2" toItemID="tbl_YP_PRODUCT_JOIN" toColID="tblCol_ac780d176da24b33a5b37f4f9b2f0743" />
+    <Link partId="435" fromNodeOrder="0" fromItemID="query_326" fromColID="query_326.3" toItemID="tbl_YP_PRODUCT_JOIN" toColID="tblCol_97bbf4e0e3bc408d8dcb07de51832e60" />
+    <Link partId="436" fromNodeOrder="0" fromItemID="query_326" fromColID="query_326.4" toItemID="tbl_YP_PRODUCT_JOIN" toColID="tblCol_02bb2fcc420442e499c76d7aa6e9f9a2" />
+    <Link partId="437" fromNodeOrder="0" fromItemID="query_326" fromColID="query_326.5" toItemID="tbl_YP_PRODUCT_JOIN" toColID="tblCol_47412344ba43411d8e46ae0846a11934" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

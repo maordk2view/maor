@@ -1,0 +1,9 @@
+﻿<Graph version="2.3.0.1" name="vdb.k2vdb.bin" lastPartID="1111">
+  <Node id="0" partID="73" name="PATIENT" isRootView="true" pos="188 121" size="257 138.546844" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"PATIENT","TablePopulationPropertiesList":[{"ID":"query_PATIENT","Name":"query_PATIENT","Order":1,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="826" name="invoice" isRootView="false" pos="675 133" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"invoice","TablePopulationPropertiesList":[{"ID":"popInvPars","Name":"popInvPars","Order":2,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+  <Link from="2" to="3" partID="1083" linkType="Database" pointsArr="445 167.545578 455 167.545578 665 179.545578 675 179.545578" fromNodePartID="73" fromNodeColumnName="PATIENT_ID" toNodePartID="826" toNodeColumnName="invoiceID" toNodePopulationObjectName="popInvPars" />
+</Graph>

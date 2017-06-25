@@ -1,0 +1,17 @@
+﻿<Graph version="2.4.0.6" name="vdb.k2vdb.bin" lastPartID="585">
+  <Node id="0" partID="0" name="merchant" isRootView="true" pos="10 105" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"merchant","TablePopulationPropertiesList":[{"ID":"query_merchant","Name":"query_merchant","Order":1,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="7" name="contact" isRootView="false" pos="305 55" size="257 138.546844" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"contact","TablePopulationPropertiesList":[{"ID":"query_contact","Name":"query_contact","Order":2,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+  <Node id="2" partID="322" name="contact_address" isRootView="false" pos="600 5" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"contact_address","TablePopulationPropertiesList":[{"ID":"query_contact_address","Name":"query_contact_address","Order":3,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+  <Node id="3" partID="329" name="merchant_address" isRootView="false" pos="305 230" size="257 138.546936" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"merchant_address","TablePopulationPropertiesList":[{"ID":"query_merchant_address","Name":"query_merchant_address","Order":2,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+  <Link from="4" to="5" partID="337" linkType="Database" pointsArr="267 151.545578 277 151.545578 295 101.54557 305 101.54557" fromNodePartID="0" fromNodeColumnName="merchant_id" toNodePartID="7" toNodeColumnName="merchant_id" toNodePopulationObjectName="query_contact" />
+  <Link from="4" to="6" partID="338" linkType="Database" pointsArr="267 151.545578 277 151.545578 295 276.545563 305 276.545563" fromNodePartID="0" fromNodeColumnName="merchant_id" toNodePartID="329" toNodeColumnName="merchant_id" toNodePopulationObjectName="query_merchant_address" />
+  <Link from="7" to="8" partID="339" linkType="Database" pointsArr="562 117.636711 572 117.636711 590 51.54557 600 51.54557" fromNodePartID="7" fromNodeColumnName="contact_id" toNodePartID="322" toNodeColumnName="contact_id" toNodePopulationObjectName="query_contact_address" />
+</Graph>

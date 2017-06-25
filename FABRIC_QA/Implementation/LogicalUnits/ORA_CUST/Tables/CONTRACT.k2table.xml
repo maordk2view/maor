@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>CONTRACT</Name>
+  <ID>tbl_CONTRACT</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="BAN" id="tblCol_68a1c1e250b64ba89ff0daf7cdba909b" index="0" datatype="Integer" mandatory="true" />
+    <Column name="SUBSCRIBER_NO" id="tblCol_59920677ce8c4a078726739ae5ffa084" index="1" datatype="Text" mandatory="true" />
+    <Column name="CNT_SEQ_NO" id="tblCol_7da48aaee90140d59f1d734aca82d7d1" index="2" datatype="Integer" mandatory="true" />
+    <Column name="SYS_CREATION_DATE" id="tblCol_21aef52237c94cc6bf971af037dde506" index="3" datatype="Text" mandatory="true" />
+    <Column name="SYS_UPDATE_DATE" id="tblCol_20572a71bc994041a236c75743551fe5" index="4" datatype="Text" />
+    <Column name="OPERATOR_ID" id="tblCol_a6fc3a1802474d95a9b4b63830458f37" index="5" datatype="Integer" />
+    <Column name="APPLICATION_ID" id="tblCol_52eecd096f2c4981a38822d538fff5e5" index="6" datatype="Text" />
+    <Column name="DL_SERVICE_CODE" id="tblCol_107da264ad32425dbc94a021501abd30" index="7" datatype="Text" mandatory="true" />
+    <Column name="DL_UPDATE_STAMP" id="tblCol_590726680a3c44a29b7a48520160bc03" index="8" datatype="Integer" />
+    <Column name="EFFECTIVE_DATE" id="tblCol_a6f0d3401c9e48a3a39eae8d3b7d8d24" index="9" datatype="Text" mandatory="true" />
+    <Column name="COMMIT_START_DATE" id="tblCol_c4feafaa17cf492eb282eb36597b4e47" index="10" datatype="Text" />
+    <Column name="COMMIT_END_DATE" id="tblCol_24f1199e2b3547099e0ca4a8fc9b979f" index="11" datatype="Text" />
+    <Column name="COMMIT_REASON_CD" id="tblCol_3d60e0482bc448e191ea1ebe4dc1305f" index="12" datatype="Text" />
+    <Column name="COMMIT_ORIG_NO_MONTH" id="tblCol_383a7fb03ea44e5d9f345e439850f7bf" index="13" datatype="Integer" />
+    <Column name="DEALER_CODE" id="tblCol_b74d62dd0fdf4a0489a1c7d06a3531bc" index="14" datatype="Text" />
+    <Column name="PAPER_WORK_STATUS" id="tblCol_ecac7b5cc6844173aa1e9da4468d13c8" index="15" datatype="Text" />
+    <Column name="PAPER_WORK_REQUIRED" id="tblCol_1c2b4614b3c840e1b6739ff68f4f5636" index="16" datatype="Text" />
+    <Column name="PAPER_WORK_DATE" id="tblCol_340312ac9c4a4ea9841b26ed695f2dc1" index="17" datatype="Text" />
+    <Column name="PAPER_WORK_REF_NO" id="tblCol_1fa9399aa89245a3adefd6af33001411" index="18" datatype="Text" />
+    <Column name="PAPER_WORK_TRNS_NO" id="tblCol_1971e789effe4f16902207bf607d2c89" index="19" datatype="Text" />
+    <Column name="INIT_COM_DLR" id="tblCol_54003e1fcf2d4507a004162906c12d89" index="20" datatype="Text" />
+    <Column name="INIT_COM_SPLIT_DLR" id="tblCol_028ab5b62c22431ea3acf38b90aa88bc" index="21" datatype="Text" />
+    <Column name="LST_COM_ACTV_CD" id="tblCol_a36b2eeb10854ea885ef1e42dadbe731" index="22" datatype="Text" />
+    <Column name="LST_COM_ACTV_DATE" id="tblCol_6d3607bddb1141e297ebc622c4933199" index="23" datatype="Text" />
+    <Column name="LST_COM_ACTV_DLR" id="tblCol_2023397e1d3a444688abe53ec4e19c93" index="24" datatype="Text" />
+    <Column name="LST_COM_SPLT_DLR" id="tblCol_f7bd59f3f7f74229b8b0384cdf1c7b36" index="25" datatype="Text" />
+    <Column name="PRODUCT_TYPE" id="tblCol_e17fc5d9009944c3a8bfab7d01e23b56" index="26" datatype="Text" mandatory="true" />
+    <Column name="CONTRACT_TYPE" id="tblCol_2ca6f26c0ebe4ca8b5f6054099396dd9" index="27" datatype="Text" />
+    <Column name="IMAGE_IND" id="tblCol_7baf4a1f49384578b73c1a94f4ec6103" index="28" datatype="Text" />
+    <Column name="ELIGIBILITY_RESULT" id="tblCol_cce1e97c90604f78b562c71779f6c284" index="29" datatype="Text" />
+    <Column name="RSN_CODE" id="tblCol_5acd1be881174299badb974d6a8ad02d" index="30" datatype="Integer" />
+    <Column name="AGENT_CODE" id="tblCol_4d5f6e2fdc53421eabda17ff1fa4e4b0" index="31" datatype="Text" />
+    <Column name="AGENT_LOCATION" id="tblCol_4c7cae527fda4ac382bff7b00886cbd4" index="32" datatype="Text" />
+    <Column name="LAST_UPGRADE_DATE" id="tblCol_4146fcdcdf794c5a9c7693afc5a3ea9b" index="33" datatype="Text" />
+    <Column name="PARKED_CONT_REASON" id="tblCol_90bc61cea5e5444dbcb3aabbf4833a86" index="34" datatype="Text" />
+    <Column name="WAIVE_UPG_IND" id="tblCol_4240c1662c0141099c1c1818e84c30dc" index="35" datatype="Text" />
+    <Column name="D2C" id="tblCol_6406ab32a9b342a3b3f0313c9105bc6d" index="36" datatype="Text" />
+    <Column name="CONTRACT_GRP_CD" id="tblCol_440d0e776acd4189a19f685012d954f1" index="37" datatype="Text" />
+    <Column name="ORIG_QUALIF_LVL" id="tblCol_67c23995738a4e3991948305dfb49541" index="38" datatype="Text" />
+    <Column name="OVER_QUALIF_LVL" id="tblCol_c94fd75745b84eec970d360386fd4104" index="39" datatype="Text" />
+    <Column name="MIN_COMMIT_NO_MONTHS" id="tblCol_32a1ae574a134864a9416f8a8a5f892d" index="40" datatype="Integer" />
+    <Column name="MAX_DEVICE_DISC_AMT" id="tblCol_91f73d0835c148fd8432ff1aeee5446f" index="41" datatype="Text" />
+    <Column name="DEVICE_DISCOUNT_AMT" id="tblCol_5ba5b9b2fe004ac58a8c4f17ed89db11" index="42" datatype="Text" />
+    <Column name="REQUIRED_MIN_MRC" id="tblCol_a13f72d834044a08b93ae656008213b0" index="43" datatype="Real" />
+    <Column name="MONTHS_FOR_MRC_COMMIT" id="tblCol_d9d54a3db39f4bff943fe99f0bb2c0b8" index="44" datatype="Integer" />
+    <Column name="EXTERNAL_USER_ID" id="tblCol_beb542a3ae2643ada8a43499315748fd" index="45" datatype="Text" />
+    <Column name="IGNORE_CHARGEBACK" id="tblCol_8b7da43b4e094b74ab783a8e2583a197" index="46" datatype="Text" />
+    <Column name="DEVICE_PRICE" id="tblCol_5f9f733b39ab43049739264536b56b12" index="47" datatype="Text" />
+    <Column name="FINAL_DEVICE_PRICE" id="tblCol_bd688299755843af9548dbf7eb021c4e" index="48" datatype="Text" />
+    <Column name="SECURED_OFFER_RSN" id="tblCol_743c0a9212754f119c8d55e3be118e75" index="49" datatype="Text" />
+    <Column name="DISCOUNT_UNIT" id="tblCol_86161696d03d499487244dd2c5e424cf" index="50" datatype="Text" />
+    <Column name="POLICY_CAT" id="tblCol_4f6288478d064b2a8909fa0569a2d4e9" index="51" datatype="Text" />
+    <Column name="EQUIP_IND" id="tblCol_180cdf3819a24f149b4364e63a58b938" index="52" datatype="Text" />
+    <Column name="UPG_REV_DATE" id="tblCol_25e14ebe0ead48fbadc3acd9eca325dc" index="53" datatype="Text" />
+    <Column name="UPG_REV_RSN_CD" id="tblCol_b86cf20797074013bced3d7541d1e9c2" index="54" datatype="Text" />
+    <Column name="APPROVER_ID" id="tblCol_eb0cb0c6f2054367b7c1cccb10c37763" index="55" datatype="Text" />
+    <Column name="BEHALF_OF_USER" id="tblCol_b85a1cc29cbd4605841ea64d080bcd2b" index="56" datatype="Text" />
+    <Column name="OVERRIDE_ID" id="tblCol_1b95c0c0f7af4d4faac260e7f33a7521" index="57" datatype="Text" />
+    <Column name="UPG_FEE_AMT" id="tblCol_6bd587f55e7340778d8a77c6a56f479d" index="58" datatype="Real" />
+    <Column name="USER_SEQ_NO" id="tblCol_cb22e87208f64ccc99300e9a060bb5a0" index="59" datatype="Integer" />
+    <Column name="TC_APPROVAL_REQ" id="tblCol_b51a1c744d3248bf88f22b55052c23e3" index="60" datatype="Text" />
+    <Column name="ITEM_ID" id="tblCol_f1c38adf732d4e1c89f6e7f5bf906adb" index="61" datatype="Text" />
+    <Column name="DF_STATUS" id="tblCol_ebf96d8f734145329c41799eb40ed163" index="62" datatype="Text" />
+    <Column name="UP_FEE_COLLECTION" id="tblCol_b9ef974524dc4ce9ba3f660fe577e57c" index="63" datatype="Text" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" columnsIdsList="tblCol_68a1c1e250b64ba89ff0daf7cdba909b,tblCol_59920677ce8c4a078726739ae5ffa084" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ParserMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>test1</Name>
+  <MapType>ParserMap</MapType>
+  <RootItemID>f_51</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <TargetsList>
+    <Target xsi:type="ParserMapTargetItem">
+      <TargetName>web_log_test1</TargetName>
+      <Module>Parser_Map</Module>
+      <ItemsList>
+        <Item id="f_51" name="k2_StreamParser" nodeOrder="0" module="Function" mapObjectModule="Function" fileName="k2_StreamParser.k2function.xml">
+          <InputsList>
+            <Input id="fi_51.0" name="folderPath" defaultValue="C:\Sergey\ParserLogs\" />
+            <Input id="fi_51.1" name="folderPathDebug" defaultValue="h:\QA\ParserLogs" />
+            <Input id="fi_51.2" name="regexFilter" defaultValue="LogParser.log" />
+            <Input id="fi_51.3" name="endOfFrameString" defaultValue="\n" />
+            <Input id="fi_51.4" name="quote" defaultValue="&quot;" />
+            <Input id="fi_51.5" name="delimiter" defaultValue=" " />
+          </InputsList>
+          <OutputsList>
+            <Output id="fo_51.0" name="result" />
+          </OutputsList>
+        </Item>
+        <Item id="f_14" name="k2_UrlDecoder" nodeOrder="1" module="Function" mapObjectModule="Function" fileName="k2_UrlDecoder.k2function.xml">
+          <InputsList>
+            <Input id="fi_14.0" name="map" />
+            <Input id="fi_14.1" name="key" defaultValue="5" />
+          </InputsList>
+          <OutputsList>
+            <Output id="fo_14.0" name="map" />
+          </OutputsList>
+        </Item>
+        <Item id="f_5" name="k2_RecordValidator" nodeOrder="2" module="Function" mapObjectModule="Function" fileName="k2_RecordValidator.k2function.xml">
+          <InputsList>
+            <Input id="fi_5.0" name="map" />
+          </InputsList>
+          <OutputsList>
+            <Output id="fo_5.0" name="map" />
+          </OutputsList>
+        </Item>
+        <Item id="f_18" name="k2weblog1_fields" nodeOrder="3" module="Function" mapObjectModule="Function" fileName="k2weblog1_fields.k2function.xml">
+          <InputsList>
+            <Input id="fi_18.0" name="in" />
+          </InputsList>
+          <OutputsList>
+            <Output id="fo_18.0" name="person_id" />
+            <Output id="fo_18.1" name="path" />
+            <Output id="fo_18.2" name="ip" />
+          </OutputsList>
+        </Item>
+        <Item xsi:type="ParserRecordTypeDataSave" id="rt_web_log_test1" name="web_log_test1" nodeOrder="4" module="ParserRecordType" mapObjectModule="ParserRecordType" parentParser="test1">
+          <InputsList>
+            <Input xsi:type="ParserRecordTypeDataSaveColumnInput" id="rtCol_484f52ae392c413bb13277a74841ddd8" name="person_id" dataType="Text" />
+            <Input xsi:type="ParserRecordTypeDataSaveColumnInput" id="rtCol_d8dddf0cc8a1493a8b99e52ea51a7999" name="path" dataType="Text" />
+            <Input xsi:type="ParserRecordTypeDataSaveColumnInput" id="rtCol_d40dcf66ce06401f9ceffc49b2db1557" name="ip" dataType="Text" />
+          </InputsList>
+          <OutputsList />
+          <RecordTypeKeyColumn>rtCol_484f52ae392c413bb13277a74841ddd8</RecordTypeKeyColumn>
+        </Item>
+      </ItemsList>
+      <LinksList>
+        <Link partId="28" fromNodeOrder="3" fromItemID="f_18" fromColID="fo_18.0" toItemID="rt_web_log_test1" toColID="rtCol_484f52ae392c413bb13277a74841ddd8" />
+        <Link partId="25" fromNodeOrder="2" fromItemID="f_5" fromColID="fo_5.0" toItemID="f_18" toColID="fi_18.0" />
+        <Link partId="24" fromNodeOrder="1" fromItemID="f_14" fromColID="fo_14.0" toItemID="f_5" toColID="fi_5.0" />
+        <Link partId="59" fromNodeOrder="0" fromItemID="f_51" fromColID="fo_51.0" toItemID="f_14" toColID="fi_14.0" />
+        <Link partId="29" fromNodeOrder="3" fromItemID="f_18" fromColID="fo_18.1" toItemID="rt_web_log_test1" toColID="rtCol_d8dddf0cc8a1493a8b99e52ea51a7999" />
+        <Link partId="110" fromNodeOrder="3" fromItemID="f_18" fromColID="fo_18.2" toItemID="rt_web_log_test1" toColID="rtCol_d40dcf66ce06401f9ceffc49b2db1557" />
+      </LinksList>
+      <ParserMapRecordType id="rt_web_log_test1" name="web_log_test1" parentParser="test1">
+        <RecordTypeKeyColumn>rtCol_484f52ae392c413bb13277a74841ddd8</RecordTypeKeyColumn>
+        <Columns>
+          <Column id="rtCol_484f52ae392c413bb13277a74841ddd8" name="person_id" index="0">
+            <DataType>Text</DataType>
+          </Column>
+          <Column id="rtCol_d8dddf0cc8a1493a8b99e52ea51a7999" name="path" index="1">
+            <DataType>Text</DataType>
+          </Column>
+          <Column id="rtCol_d40dcf66ce06401f9ceffc49b2db1557" name="ip" index="2">
+            <DataType>Text</DataType>
+          </Column>
+        </Columns>
+      </ParserMapRecordType>
+    </Target>
+  </TargetsList>
+  <syncEvery>00:00:00</syncEvery>
+</ParserMap>

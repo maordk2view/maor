@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>pop_web_log_test1</ID>
+  <PopulationObjectName>pop_web_log_test1</PopulationObjectName>
+  <TableName>web_log_test1</TableName>
+  <RootItemID>rt_web_log_test1</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="person_id" id="rtCol_484f52ae392c413bb13277a74841ddd8" dataType="Text" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="ParserRecordTypeDataSave" id="rt_web_log_test1" name="web_log_test1" nodeOrder="0" module="ParserRecordType" mapObjectModule="ParserRecordType" parentParser="test1" active="true" deleteRecordsAfterSync="false">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="ParserRecordTypeDataSaveColumn" id="rtCol_484f52ae392c413bb13277a74841ddd8" name="person_id" dataType="Text" />
+        <Output xsi:type="ParserRecordTypeDataSaveColumn" id="rtCol_d8dddf0cc8a1493a8b99e52ea51a7999" name="path" dataType="Text" />
+      </OutputsList>
+      <RecordTypeKeyColumn>rtCol_484f52ae392c413bb13277a74841ddd8</RecordTypeKeyColumn>
+      <PkColumnsList />
+      <ClusteringKeyOrder>ASC</ClusteringKeyOrder>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="8" fromNodeOrder="0" fromItemID="rt_web_log_test1" fromColID="rtCol_484f52ae392c413bb13277a74841ddd8" toItemID="tbl_web_log_test1" toColID="tblCol_1c0f3b01100846cbb1455a7f9751387b" />
+    <Link partId="9" fromNodeOrder="0" fromItemID="rt_web_log_test1" fromColID="rtCol_d8dddf0cc8a1493a8b99e52ea51a7999" toItemID="tbl_web_log_test1" toColID="tblCol_53a5c0ef5b334eaf9d3e3239daa5beb6" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>concat_shared</Name>
+  <ID>JAVA.concat_shared</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>return i_str + i_con_str + "_shared";
+
+//return s.concat ("_RIVI");
+//return i_str.concat ("_RIVI");</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="i_str" id="fi.JAVA.concat_shared.0" index="0" dataType="String">
+      <Comment />
+    </Input>
+    <Input name="i_con_str" id="fi.JAVA.concat_shared.1" index="1" dataType="String">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="o_str" id="fo.JAVA.concat_shared.0" index="0" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBConn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="DBConnCache" name="dbCache" type="Cache" version="1.9.1.1">
+  <Active>false</Active>
+  <DataSource>10.21.1.29</DataSource>
+  <PortNum>1972</PortNum>
+  <DataBase>SAMPLES</DataBase>
+  <UserId>admin</UserId>
+  <Password>7nJRXZnsFOsVdDJvhpvrHmEIXhi8w0Fz2OkM7lUtHeM=:KnJjz8WmOBsTXAu5xRD62CHDTZLSZlOeqd/N2j0Yed8=</Password>
+  <ConnectionStringClient>Server=10.21.1.29;Port=1972;Namespace=SAMPLES;POOLING=false;User ID=admin;Password=[PASSWORD];</ConnectionStringClient>
+  <ConnectionStringServerSide>jdbc:Cache://10.21.1.29:1972/SAMPLES</ConnectionStringServerSide>
+  <CommandList />
+</DBConn>

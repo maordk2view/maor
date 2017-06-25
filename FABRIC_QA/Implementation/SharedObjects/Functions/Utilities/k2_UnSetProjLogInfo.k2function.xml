@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>k2_UnSetProjLogInfo</Name>
+  <ID>Utilities.k2_UnSetProjLogInfo</ID>
+  <Category>Utilities</Category>
+  <FunctionLevel>Product</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>PHP</Language>
+  <FunctionBody>$GLOBALS['projectLogInfo']['logCodeId'] = null;
+$GLOBALS['projectLogInfo']['value1'] = null;
+$GLOBALS['projectLogInfo']['value2'] = null;
+$GLOBALS['projectLogInfo']['value3'] = null;
+$GLOBALS['projectLogInfo']['value4'] = null;
+$GLOBALS['projectLogInfo']['value5'] = null;</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <InputParams />
+  <OutputParams />
+</KFunction>

@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_PAYMENT_ACTIVITY</PopulationObjectName>
+  <TableName>PAYMENT_ACTIVITY</TableName>
+  <ID>query_PAYMENT_ACTIVITY</ID>
+  <RootItemID>query_46</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="BAN" id="query_46.0" dataType="Integer" index="0" />
+    <Arg name="ENT_SEQ_NO" id="query_46.1" dataType="Integer" index="1" />
+    <Arg name="ACTV_SEQ_NO" id="query_46.2" dataType="Integer" index="2" />
+    <Arg name="SYS_CREATION_DATE" id="query_46.3" dataType="Text" index="3" />
+    <Arg name="SYS_UPDATE_DATE" id="query_46.4" dataType="Text" index="4" />
+    <Arg name="OPERATOR_ID" id="query_46.5" dataType="Integer" index="5" />
+    <Arg name="APPLICATION_ID" id="query_46.6" dataType="Text" index="6" />
+    <Arg name="DL_SERVICE_CODE" id="query_46.7" dataType="Text" index="7" />
+    <Arg name="DL_UPDATE_STAMP" id="query_46.8" dataType="Integer" index="8" />
+    <Arg name="ACTV_CODE" id="query_46.9" dataType="Text" index="9" />
+    <Arg name="ACTV_REASON_CODE" id="query_46.10" dataType="Text" index="10" />
+    <Arg name="ACTV_DATE" id="query_46.11" dataType="Text" index="11" />
+    <Arg name="ACTV_AMT" id="query_46.12" dataType="Real" index="12" />
+    <Arg name="ACTV_BILL_SEQ_NO" id="query_46.13" dataType="Integer" index="13" />
+    <Arg name="DCK_CHG_GROUP_ID" id="query_46.14" dataType="Integer" index="14" />
+    <Arg name="FNT_BAN" id="query_46.15" dataType="Integer" index="15" />
+    <Arg name="EXCEPTION_RSN_CODE" id="query_46.16" dataType="Text" index="16" />
+    <Arg name="CONV_RUN_NO" id="query_46.17" dataType="Integer" index="17" />
+    <Arg name="BL_IGNORE_IND" id="query_46.18" dataType="Text" index="18" />
+    <Arg name="MEMO_ID" id="query_46.19" dataType="Integer" index="19" />
+    <Arg name="INTERNAL_ACTV_AMT" id="query_46.20" dataType="Real" index="20" />
+    <Arg name="PRE_ACTV_AMT" id="query_46.21" dataType="Real" index="21" />
+    <Arg name="BACKOUT_FILE_SEQ_NO" id="query_46.22" dataType="Integer" index="22" />
+    <Arg name="BACKOUT_BATCH_NO" id="query_46.23" dataType="Integer" index="23" />
+    <Arg name="BACKOUT_LINE_NO" id="query_46.24" dataType="Integer" index="24" />
+    <Arg name="CR_CARD_AUTH_TYPE" id="query_46.25" dataType="Text" index="25" />
+    <Arg name="CR_CARD_AUTH_CODE" id="query_46.26" dataType="Text" index="26" />
+    <Arg name="CR_CARD_REF_NO" id="query_46.27" dataType="Integer" index="27" />
+    <Arg name="FNT_MARKET" id="query_46.28" dataType="Text" index="28" />
+    <Arg name="SOURCE_BATCH_ID" id="query_46.29" dataType="Text" index="29" />
+    <Arg name="SOURCE_TRANS_ID" id="query_46.30" dataType="Text" index="30" />
+    <Arg name="SOURCE_APPLID" id="query_46.31" dataType="Text" index="31" />
+    <Arg name="BMG_TYPE" id="query_46.32" dataType="Text" index="32" />
+    <Arg name="BANK_ROUTING_NO" id="query_46.33" dataType="Text" index="33" />
+    <Arg name="BANK_ACCT_NUM" id="query_46.34" dataType="Text" index="34" />
+    <Arg name="CUSTOMER_NAME" id="query_46.35" dataType="Text" index="35" />
+    <Arg name="CAPM_SOURCE" id="query_46.36" dataType="Text" index="36" />
+    <Arg name="CAPM_PYM_MEDIA" id="query_46.37" dataType="Text" index="37" />
+    <Arg name="SEGMENT_CD" id="query_46.38" dataType="Text" index="38" />
+    <Arg name="LIABILITY_TYPE" id="query_46.39" dataType="Text" index="39" />
+    <Arg name="ENTERPRISE_TYPE" id="query_46.40" dataType="Text" index="40" />
+    <Arg name="CAPM_REF_NO" id="query_46.41" dataType="Text" index="41" />
+    <Arg name="AR_BRKDWN_IND" id="query_46.42" dataType="Text" index="42" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_46" name="query_PAYMENT_ACTIVITY" nodeOrder="0" module="DBQuery" connName="ORA_140">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.0" name="BAN" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.1" name="ENT_SEQ_NO" dataType="Integer" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.2" name="ACTV_SEQ_NO" dataType="Integer" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.3" name="SYS_CREATION_DATE" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.4" name="SYS_UPDATE_DATE" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.5" name="OPERATOR_ID" dataType="Integer" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.6" name="APPLICATION_ID" dataType="Text" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.7" name="DL_SERVICE_CODE" dataType="Text" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.8" name="DL_UPDATE_STAMP" dataType="Integer" index="8" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.9" name="ACTV_CODE" dataType="Text" index="9" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.10" name="ACTV_REASON_CODE" dataType="Text" index="10" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.11" name="ACTV_DATE" dataType="Text" index="11" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.12" name="ACTV_AMT" dataType="Real" index="12" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.13" name="ACTV_BILL_SEQ_NO" dataType="Integer" index="13" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.14" name="DCK_CHG_GROUP_ID" dataType="Integer" index="14" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.15" name="FNT_BAN" dataType="Integer" index="15" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.16" name="EXCEPTION_RSN_CODE" dataType="Text" index="16" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.17" name="CONV_RUN_NO" dataType="Integer" index="17" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.18" name="BL_IGNORE_IND" dataType="Text" index="18" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.19" name="MEMO_ID" dataType="Integer" index="19" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.20" name="INTERNAL_ACTV_AMT" dataType="Real" index="20" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.21" name="PRE_ACTV_AMT" dataType="Real" index="21" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.22" name="BACKOUT_FILE_SEQ_NO" dataType="Integer" index="22" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.23" name="BACKOUT_BATCH_NO" dataType="Integer" index="23" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.24" name="BACKOUT_LINE_NO" dataType="Integer" index="24" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.25" name="CR_CARD_AUTH_TYPE" dataType="Text" index="25" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.26" name="CR_CARD_AUTH_CODE" dataType="Text" index="26" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.27" name="CR_CARD_REF_NO" dataType="Integer" index="27" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.28" name="FNT_MARKET" dataType="Text" index="28" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.29" name="SOURCE_BATCH_ID" dataType="Text" index="29" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.30" name="SOURCE_TRANS_ID" dataType="Text" index="30" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.31" name="SOURCE_APPLID" dataType="Text" index="31" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.32" name="BMG_TYPE" dataType="Text" index="32" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.33" name="BANK_ROUTING_NO" dataType="Text" index="33" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.34" name="BANK_ACCT_NUM" dataType="Text" index="34" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.35" name="CUSTOMER_NAME" dataType="Text" index="35" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.36" name="CAPM_SOURCE" dataType="Text" index="36" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.37" name="CAPM_PYM_MEDIA" dataType="Text" index="37" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.38" name="SEGMENT_CD" dataType="Text" index="38" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.39" name="LIABILITY_TYPE" dataType="Text" index="39" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.40" name="ENTERPRISE_TYPE" dataType="Text" index="40" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.41" name="CAPM_REF_NO" dataType="Text" index="41" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_46.42" name="AR_BRKDWN_IND" dataType="Text" index="42" />
+      </OutputsList>
+      <SQL><![CDATA[select * from PAYMENT_ACTIVITY]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="90" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.0" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_13d4d2eade894e5ea098b575f00034fa" />
+    <Link partId="91" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.1" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_02f3ec092d7c4a1d8651dff76c7c3a80" />
+    <Link partId="92" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.2" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_c90b3854d5b34c57a386e4056f370dda" />
+    <Link partId="93" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.3" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_2455c1611a204494a903c39e5057d962" />
+    <Link partId="94" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.4" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_fa4d7e8189f84f8eb9c3674b9f230fec" />
+    <Link partId="95" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.5" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_01abc3150b144a328ba326276d80101b" />
+    <Link partId="96" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.6" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_0e87ecd21f974491a036659e6244b9f8" />
+    <Link partId="97" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.7" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_b9fdef12ce7d4e38847937730f759559" />
+    <Link partId="98" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.8" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_ae22167a96f942b3a1aa074ee05999e3" />
+    <Link partId="99" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.9" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_7986b162ef22463c81c9bda74a5c64ee" />
+    <Link partId="100" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.10" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_8bc7eec2328a4fb38b3b0612e63349e2" />
+    <Link partId="101" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.11" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_3fb088ada0904a87868cfbdbf73c9796" />
+    <Link partId="102" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.12" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_f38e6d8878ed415e9d8894f76dfee0da" />
+    <Link partId="103" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.13" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_1dd91cbce5ea46d6b840fdf15a228b28" />
+    <Link partId="104" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.14" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_dc9bd136406f4cdba9661d1e1be67bc6" />
+    <Link partId="105" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.15" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_44e826b6b034466680a8a5dc52af8724" />
+    <Link partId="106" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.16" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_253e5526cf314aad9718b1c972b0c461" />
+    <Link partId="107" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.17" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_da12672f85194e938a590338863d59ce" />
+    <Link partId="108" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.18" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_bd9d2f0674fb443f8f4681511612044a" />
+    <Link partId="109" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.19" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_30d538652a68447485039efcf6779e42" />
+    <Link partId="110" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.20" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_05713c765f0349d999b1ad8d62bea275" />
+    <Link partId="111" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.21" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_d325b1469c744535836723dffb396f2f" />
+    <Link partId="112" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.22" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_600a944496ee42b396d223d961b05c55" />
+    <Link partId="113" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.23" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_2021b2ec268c4b48b1bf3dc309433088" />
+    <Link partId="114" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.24" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_91672b6adc68441dba109fb6ef63a3ec" />
+    <Link partId="115" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.25" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_d0152976211b4cdc9dec48168496cb5b" />
+    <Link partId="116" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.26" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_0050f759778c4464946f934eefb8ecea" />
+    <Link partId="117" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.27" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_3338b20e59984104ae7efee78c15212a" />
+    <Link partId="118" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.28" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_5da90b0e0a9f4966816b830a3d857579" />
+    <Link partId="119" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.29" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_cc4197755b7a4cf0bfc018c233b1d535" />
+    <Link partId="120" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.30" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_e2179868c21a4f0692112e4f6f741c75" />
+    <Link partId="121" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.31" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_8e3d59c7fcd34ce49277aa8f2fa893f5" />
+    <Link partId="122" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.32" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_fe18f56cd3dd4e149cb5f27f79beeae1" />
+    <Link partId="123" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.33" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_6f6f59172561463bad208fee297045a2" />
+    <Link partId="124" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.34" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_d3187f3ccf724198bf18ba7f16a0ecb3" />
+    <Link partId="125" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.35" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_390a45ebe0fd4582a5e1d04f50e1d7cd" />
+    <Link partId="126" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.36" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_20008cac294a4e7baa301a10af411d1f" />
+    <Link partId="127" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.37" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_ee4249a59bcf4080a6fc2b6c24a4a0dc" />
+    <Link partId="128" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.38" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_3224c2a2a7974e73bf6634a3f9e13ba6" />
+    <Link partId="129" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.39" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_4699b9bc0dfb451088a5c7540cc76986" />
+    <Link partId="130" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.40" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_53b2d95a41d2408f97a1d2b018f564b5" />
+    <Link partId="131" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.41" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_2bafb25bc96d485e96a6509e4324e3f6" />
+    <Link partId="132" fromNodeOrder="0" fromItemID="query_46" fromColID="query_46.42" toItemID="tbl_PAYMENT_ACTIVITY" toColID="tblCol_87548eca1e28409484935ae6e0aab901" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

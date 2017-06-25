@@ -1,0 +1,8 @@
+﻿<Graph name="ctnAccountBalance.popCtnAccountBalance.k2tablePop.bin" lastPartID="47">
+  <TableNode partID="0" name="ctnAccountBalance" pos="741 125" width="309.3241" />
+  <FunctionMapNode id="0" L0="1" R0="2" R1="3" partID="5" topLabel="populateAccountBalance (5)" pos="142.768478 153" size="254.023636 49.23697" isRoot="true">
+    <KFunction>{"Name":"populateAccountBalance","Category":"Project","FunctionLevel":0,"FunctionType":0,"RegisterAsLuDbFunction":false,"SaveToDLUR":false,"ApiFunction":false,"RequiresLuReference":false,"Desc":"","Auther":{"Name":"","ID":""},"Language":1,"FunctionBody":"Random rand = new Random();\nDouble d = rand.nextDouble() * 1000.0;\n\nObject row [] = {accountNumber, d};\nyield(row);","IsSyntaxValid":true,"IsRootFunction":true,"inputParams":[{"Name":"accountNumber","ID":"fi_5.0","Index":0,"DataType":"String","Comment":""}],"outputParams":[{"Name":"accountNumber","ID":"fo_5.0","Index":0,"DataType":"String","Comment":""},{"Name":"accountBalance","ID":"fo_5.1","Index":1,"DataType":"Double","Comment":""}],"ID":"f_5"}</KFunction>
+  </FunctionMapNode>
+  <Link partID="46" from="2" to="4" pointsArr="396.7921 174.1276 406.7921 174.1276 731 156.036453 741 156.036453" fromNodePartID="5" fromNodeColumnName="accountNumber" toNodePartID="0" toNodeColumnName="ACCOUNT_NUMBER" />
+  <Link partID="47" from="3" to="5" pointsArr="396.7921 186.200516 406.7921 186.200516 731 168.109375 741 168.109375" fromNodePartID="5" fromNodeColumnName="accountBalance" toNodePartID="0" toNodeColumnName="ACCOUNT_BALANCE" />
+</Graph>

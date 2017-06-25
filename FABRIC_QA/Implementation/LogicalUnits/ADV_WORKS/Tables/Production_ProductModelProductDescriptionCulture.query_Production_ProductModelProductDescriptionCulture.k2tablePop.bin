@@ -1,0 +1,10 @@
+﻿<Graph name="Production_ProductModelProductDescriptionCulture.query_Production_ProductModelProductDescriptionCulture.k2tablePop.bin" lastPartID="15">
+  <TableNode partID="0" name="Production_ProductModelProductDescriptionCulture" pos="440.032471 24.8177147" width="309.3241" />
+  <DBQueryNode partID="7" name="SqlServer_AdvWorks" pos="10 20.8541718" size="385.032471 108.291656" isRoot="true">
+    <DBQuery>{"Name":"query_Production_ProductModelProductDescriptionCulture","ID":"query_query_Production_ProductModelProductDescriptionCulture","ConnName":"SqlServer_AdvWorks","SQL":"select * from Production.ProductModelProductDescriptionCulture","ColumnsList":[{"ID":"queryCol_0","Name":"ProductModelID","DataType":"Integer","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"ProductDescriptionID","DataType":"Integer","Index":1,"IsInputArgument":true},{"ID":"queryCol_2","Name":"CultureID","DataType":"Text","Index":2,"IsInputArgument":true},{"ID":"queryCol_3","Name":"ModifiedDate","DataType":"Text","Index":3,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="12" from="0" to="1" pointsArr="335.375427 56.89063 345.375427 56.89063 407.532471 25 427.532471 25 430.032471 55.85417 440.032471 55.85417" fromNodePartID="7" fromNodeColumnName="ProductModelID" toNodePartID="0" toNodeColumnName="ProductModelID" />
+  <Link partID="13" from="2" to="3" pointsArr="335.375427 68.96355 345.375427 68.96355 407.532471 50 427.532471 50 430.032471 67.9270859 440.032471 67.9270859" fromNodePartID="7" fromNodeColumnName="ProductDescriptionID" toNodePartID="0" toNodeColumnName="ProductDescriptionID" />
+  <Link partID="14" from="4" to="5" pointsArr="335.375427 81.03645 345.375427 81.03645 407.532471 75 427.532471 75 430.032471 80 440.032471 80" fromNodePartID="7" fromNodeColumnName="CultureID" toNodePartID="0" toNodeColumnName="CultureID" />
+  <Link partID="15" from="6" to="7" pointsArr="335.375427 93.109375 345.375427 93.109375 407.532471 100 427.532471 100 430.032471 92.07292 440.032471 92.07292" fromNodePartID="7" fromNodeColumnName="ModifiedDate" toNodePartID="0" toNodeColumnName="ModifiedDate" />
+</Graph>

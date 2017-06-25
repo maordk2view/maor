@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2.4.0.5">
+  <Name>add</Name>
+  <ID>JAVA.add</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>RegularFunction</FunctionType>
+  <FunctionType2>RegularFunction</FunctionType2>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>return in1 + in2;</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="in1" id="fi.JAVA.add.0" index="0" dataType="String" />
+    <Input name="in2" id="fi.JAVA.add.1" index="1" dataType="String" />
+  </InputParams>
+  <OutputParams>
+    <Output name="out" id="fo.JAVA.add.0" index="0" dataType="String" />
+  </OutputParams>
+</KFunction>

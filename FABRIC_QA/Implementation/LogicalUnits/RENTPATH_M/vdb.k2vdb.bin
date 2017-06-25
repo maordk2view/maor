@@ -1,0 +1,85 @@
+﻿<Graph version="1.4.0.0" name="vdb.k2vdb.bin" lastPartID="11738">
+  <Node id="0" partID="108" name="P_yp_product" isRootView="false" pos="305 205" size="257 138.5469" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"P_yp_product","TablePopulationPropertiesList":[{"ID":"query_yp_cust_yp_product","Name":"query_yp_cust_yp_product","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="214" name="O_YP_PRODUCT" isRootView="false" pos="305 730" size="257 138.546753" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"O_YP_PRODUCT","TablePopulationPropertiesList":[{"ID":"query_YP_PRODUCT","Name":"query_YP_PRODUCT","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="2" partID="313" name="O_YP_ITEM" isRootView="false" pos="895 180" size="257 138.546875" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"O_YP_ITEM","TablePopulationPropertiesList":[{"ID":"query_YP_ITEM","Name":"query_YP_ITEM","Order":3}]}</TableProperties>
+  </Node>
+  <Node id="3" partID="441" name="M_yp_item" isRootView="false" pos="600 555" size="257 138.546753" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"M_yp_item","TablePopulationPropertiesList":[{"ID":"query_yp_item","Name":"query_yp_item","Order":3}]}</TableProperties>
+  </Node>
+  <Node id="4" partID="671" name="P_YP_ADDRESS_FUN" isRootView="false" pos="600 380" size="257 138.546936" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"P_YP_ADDRESS_FUN","TablePopulationPropertiesList":[{"ID":"funGetPGAddress","Name":"funGetPGAddress","Order":3}]}</TableProperties>
+  </Node>
+  <Node id="5" partID="685" name="S_YP_ADDRESS_FUN" isRootView="false" pos="895 5" size="257 138.54686" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"S_YP_ADDRESS_FUN","TablePopulationPropertiesList":[{"ID":"funGetSQLSAddress","Name":"funGetSQLSAddress","Order":4}]}</TableProperties>
+  </Node>
+  <Node id="6" partID="732" name="O_YP_ITEM_FUN" isRootView="false" pos="895 355" size="257 138.546936" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"O_YP_ITEM_FUN","TablePopulationPropertiesList":[{"ID":"funGetOraItems","Name":"funGetOraItems","Order":3}]}</TableProperties>
+  </Node>
+  <Node id="7" partID="1439" name="S_N_YP_ADDRESS" isRootView="false" pos="305 905" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"S_N_YP_ADDRESS","TablePopulationPropertiesList":[{"ID":"query_dbo_YP_ADDRESS","Name":"query_dbo_YP_ADDRESS","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="8" partID="1446" name="S_YP_ADDRESS" isRootView="false" pos="600 30" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"S_YP_ADDRESS","TablePopulationPropertiesList":[{"ID":"query_dbo_YP_ADDRESS","Name":"query_dbo_YP_ADDRESS","Order":3}]}</TableProperties>
+  </Node>
+  <Node id="9" partID="2926" name="D_YP_PRODUCT" isRootView="false" pos="305 1080" size="257 138.547119" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"D_YP_PRODUCT","TablePopulationPropertiesList":[{"ID":"query_DB2INST1_YP_PRODUCT","Name":"query_DB2INST1_YP_PRODUCT","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="10" partID="3026" name="O_YP_PRODUCT_FUN" isRootView="false" pos="600 730" size="257 138.546753" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"O_YP_PRODUCT_FUN","TablePopulationPropertiesList":[{"ID":"funGetOraProduct","Name":"funGetOraProduct","Order":3}]}</TableProperties>
+  </Node>
+  <Node id="11" partID="3209" name="D_YP_ITEM" isRootView="false" pos="600 1080" size="257 138.547119" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"D_YP_ITEM","TablePopulationPropertiesList":[{"ID":"query_DB2INST1_YP_ITEM","Name":"query_DB2INST1_YP_ITEM","Order":3}]}</TableProperties>
+  </Node>
+  <Node id="12" partID="4016" name="P_yp_address" isRootView="false" pos="305 405" size="257 138.546936" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"P_yp_address","TablePopulationPropertiesList":[{"ID":"query_yp_cust_yp_address","Name":"query_yp_cust_yp_address","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="13" partID="4051" name="M_YP_ITEM_FUN" isRootView="false" pos="600 905" size="257 138.546753" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"M_YP_ITEM_FUN","TablePopulationPropertiesList":[{"ID":"funGetMYSQLItem","Name":"funGetMYSQLItem","Order":3}]}</TableProperties>
+  </Node>
+  <Node id="14" partID="4092" name="L_YP_ITEM" isRootView="false" pos="1035 565" size="257 138.546753" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"L_YP_ITEM","TablePopulationPropertiesList":[{"ID":"query_O_YP_ITEM_FUN","Name":"query_O_YP_ITEM_FUN","Order":4}]}</TableProperties>
+  </Node>
+  <Node id="15" partID="4133" name="M_yp_customer" isRootView="true" pos="10 730" size="257 138.546753" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"M_yp_customer","TablePopulationPropertiesList":[{"ID":"query_yp_customer","Name":"query_yp_customer","Order":1}]}</TableProperties>
+  </Node>
+  <Node id="16" partID="4200" name="L_YP_PRODUCT_ENRICH" isRootView="false" pos="925 726" size="257 138.546753" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"L_YP_PRODUCT_ENRICH","TablePopulationPropertiesList":[{"ID":"query_O_YP_PRODUCT_FUN","Name":"query_O_YP_PRODUCT_FUN","Order":4}]}</TableProperties>
+  </Node>
+  <Node id="17" partID="5008" name="P_yp_item" isRootView="false" pos="297 13" size="257 138.54686" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"P_yp_item","TablePopulationPropertiesList":[{"ID":"query_yp_cust_yp_item","Name":"query_yp_cust_yp_item","Order":3}]}</TableProperties>
+  </Node>
+  <Node id="18" partID="6063" name="YP_ITEM_ROOT_REF" isRootView="false" pos="122 83" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"YP_ITEM_ROOT_REF","TablePopulationPropertiesList":[{"ID":"getNewYp","Name":"getNewYp","Order":4}]}</TableProperties>
+  </Node>
+  <Link from="19" to="20" partID="603" linkType="Database" pointsArr="267 776.5456 277 776.5456 295 251.545578 305 251.545578" fromNodePartID="4133" fromNodeColumnName="CUSTOMER_ID" toNodePartID="108" toNodeColumnName="customer_id" toNodePopulationObjectName="query_yp_cust_yp_product" />
+  <Link from="19" to="21" partID="607" linkType="Database" pointsArr="267 776.5456 277 776.5456 295 467.636719 305 467.636719" fromNodePartID="4133" fromNodeColumnName="CUSTOMER_ID" toNodePartID="4016" toNodeColumnName="customer_id" toNodePopulationObjectName="query_yp_cust_yp_address" />
+  <Link from="19" to="22" partID="609" linkType="Database" pointsArr="267 776.5456 277 776.5456 295 776.5456 305 776.5456" fromNodePartID="4133" fromNodeColumnName="CUSTOMER_ID" toNodePartID="214" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="query_YP_PRODUCT" />
+  <Link from="23" to="24" partID="610" linkType="Database" pointsArr="562 776.5456 572 776.5456 590 601.5456 600 601.5456" fromNodePartID="214" fromNodeColumnName="CUSTOMER_ID" toNodePartID="441" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="query_yp_item" />
+  <Link from="25" to="26" partID="613" linkType="Database" pointsArr="562 251.545578 572 251.545578 885 226.545578 895 226.545578" fromNodePartID="108" fromNodeColumnName="customer_id" toNodePartID="313" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="query_YP_ITEM" />
+  <Link from="27" to="28" partID="614" linkType="Database" pointsArr="562 267.636719 572 267.636719 885 242.636719 895 242.636719" fromNodePartID="108" fromNodeColumnName="product_code" toNodePartID="313" toNodeColumnName="PRODUCT_CODE" toNodePopulationObjectName="query_YP_ITEM" />
+  <Link from="29" to="30" partID="615" linkType="Database" pointsArr="562 283.727844 572 283.727844 885 258.727844 895 258.727844" fromNodePartID="108" fromNodeColumnName="product_issue_num" toNodePartID="313" toNodeColumnName="PRODUCT_ISSUE_NUM" toNodePopulationObjectName="query_YP_ITEM" />
+  <Link from="25" to="31" partID="616" linkType="Database" pointsArr="562 251.545578 572 251.545578 590 76.54557 600 76.54557" fromNodePartID="108" fromNodeColumnName="customer_id" toNodePartID="1446" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="query_dbo_YP_ADDRESS" />
+  <Link from="32" to="33" partID="684" linkType="Database" pointsArr="562 467.636719 572 467.636719 590 426.545563 600 426.545563" fromNodePartID="4016" fromNodeColumnName="customer_id" toNodePartID="671" toNodeColumnName="i_cust_id" toNodePopulationObjectName="funGetPGAddress" />
+  <Link from="34" to="35" partID="694" linkType="Database" pointsArr="857 76.54557 867 76.54557 885 51.54557 895 51.54557" fromNodePartID="1446" fromNodeColumnName="CUSTOMER_ID" toNodePartID="685" toNodeColumnName="i_cust_id" toNodePopulationObjectName="funGetSQLSAddress" />
+  <Link from="23" to="36" partID="709" linkType="Database" pointsArr="562 776.5456 572 776.5456 590 776.5456 600 776.5456" fromNodePartID="214" fromNodeColumnName="CUSTOMER_ID" toNodePartID="3026" toNodeColumnName="i_cust_id" toNodePopulationObjectName="funGetOraProduct" />
+  <Link from="23" to="37" partID="731" linkType="Database" pointsArr="562 776.5456 572 776.5456 590 951.5456 600 951.5456" fromNodePartID="214" fromNodeColumnName="CUSTOMER_ID" toNodePartID="4051" toNodeColumnName="i_cust_id" toNodePopulationObjectName="funGetMYSQLItem" />
+  <Link from="25" to="38" partID="754" linkType="Database" pointsArr="562 251.545578 572 251.545578 885 401.545563 895 401.545563" fromNodePartID="108" fromNodeColumnName="customer_id" toNodePartID="732" toNodeColumnName="I_CUSTOMER_ID" toNodePopulationObjectName="funGetOraItems" />
+  <Link from="27" to="39" partID="755" linkType="Database" pointsArr="562 267.636719 572 267.636719 885 417.636719 895 417.636719" fromNodePartID="108" fromNodeColumnName="product_code" toNodePartID="732" toNodeColumnName="I_PRODUCT_CODE" toNodePopulationObjectName="funGetOraItems" />
+  <Link from="29" to="40" partID="756" linkType="Database" pointsArr="562 283.727844 572 283.727844 885 433.727875 895 433.727875" fromNodePartID="108" fromNodeColumnName="product_issue_num" toNodePartID="732" toNodeColumnName="I_PRODUCT_ISSUE_NUM" toNodePopulationObjectName="funGetOraItems" />
+  <Link from="19" to="41" partID="1379" linkType="Database" pointsArr="267 776.5456 277 776.5456 295 951.5456 305 951.5456" fromNodePartID="4133" fromNodeColumnName="CUSTOMER_ID" toNodePartID="1439" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="query_dbo_YP_ADDRESS" />
+  <Link from="19" to="42" partID="3025" linkType="Database" pointsArr="267 776.5456 277 776.5456 295 1126.54553 305 1126.54553" fromNodePartID="4133" fromNodeColumnName="CUSTOMER_ID" toNodePartID="2926" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="query_DB2INST1_YP_PRODUCT" />
+  <Link from="23" to="43" partID="3193" linkType="Database" pointsArr="562 776.5456 572 776.5456 590 1126.54553 600 1126.54553" fromNodePartID="214" fromNodeColumnName="CUSTOMER_ID" toNodePartID="3209" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="query_DB2INST1_YP_ITEM" />
+  <Link from="44" to="45" partID="4013" linkType="Database" pointsArr="1152 449.819031 1162 449.819031 1025 611.5456 1035 611.5456" fromNodePartID="732" fromNodeColumnName="CUSTOMER_ID" toNodePartID="4092" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="query_O_YP_ITEM_FUN" />
+  <Link from="46" to="47" partID="4014" linkType="Database" pointsArr="1152 465.9102 1162 465.9102 1025 627.6367 1035 627.6367" fromNodePartID="732" fromNodeColumnName="PRODUCT_CODE" toNodePartID="4092" toNodeColumnName="PRODUCT_CODE" toNodePopulationObjectName="query_O_YP_ITEM_FUN" />
+  <Link from="48" to="49" partID="4015" linkType="Database" pointsArr="1152 482.001343 1162 482.001343 1025 643.727844 1035 643.727844" fromNodePartID="732" fromNodeColumnName="PRODUCT_ISSUE_NUM" toNodePartID="4092" toNodeColumnName="PRODUCT_ISSUE_NUM" toNodePopulationObjectName="query_O_YP_ITEM_FUN" />
+  <Link from="50" to="51" partID="4091" linkType="Database" pointsArr="857 792.6367 867 792.6367 915 772.5456 925 772.5456" fromNodePartID="3026" fromNodeColumnName="CUSTOMER_ID" toNodePartID="4200" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="query_O_YP_PRODUCT_FUN" />
+  <Link from="25" to="52" partID="5136" linkType="Database" pointsArr="562 251.545578 572 251.545578 287 59.54557 297 59.54557" fromNodePartID="108" fromNodeColumnName="customer_id" toNodePartID="5008" toNodeColumnName="customer_id" toNodePopulationObjectName="query_yp_cust_yp_item" />
+  <Link from="27" to="53" partID="5137" linkType="Database" pointsArr="562 267.636719 572 267.636719 287 75.63672 297 75.63672" fromNodePartID="108" fromNodeColumnName="product_code" toNodePartID="5008" toNodeColumnName="product_code" toNodePopulationObjectName="query_yp_cust_yp_item" />
+  <Link from="29" to="54" partID="5138" linkType="Database" pointsArr="562 283.727844 572 283.727844 287 91.72786 297 91.72786" fromNodePartID="108" fromNodeColumnName="product_issue_num" toNodePartID="5008" toNodeColumnName="product_issue_num" toNodePopulationObjectName="query_yp_cust_yp_item" />
+  <Link from="55" to="56" partID="6070" linkType="Database" pointsArr="554 59.54557 564 59.54557 112 129.545563 122 129.545563" fromNodePartID="5008" fromNodeColumnName="customer_id" toNodePartID="6063" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="getNewYp" />
+</Graph>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_Production_WorkOrderRouting</ID>
+  <PopulationObjectName>query_Production_WorkOrderRouting</PopulationObjectName>
+  <TableName>Production_WorkOrderRouting</TableName>
+  <RootItemID>query_query_Production_WorkOrderRouting</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="WorkOrderID" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="ProductID" id="queryCol_1" dataType="Integer" index="1" />
+    <Arg name="OperationSequence" id="queryCol_2" dataType="Integer" index="2" />
+    <Arg name="LocationID" id="queryCol_3" dataType="Integer" index="3" />
+    <Arg name="ScheduledStartDate" id="queryCol_4" dataType="Text" index="4" />
+    <Arg name="ScheduledEndDate" id="queryCol_5" dataType="Text" index="5" />
+    <Arg name="ActualStartDate" id="queryCol_6" dataType="Text" index="6" />
+    <Arg name="ActualEndDate" id="queryCol_7" dataType="Text" index="7" />
+    <Arg name="ActualResourceHrs" id="queryCol_8" dataType="Real" index="8" />
+    <Arg name="PlannedCost" id="queryCol_9" dataType="Real" index="9" />
+    <Arg name="ActualCost" id="queryCol_10" dataType="Real" index="10" />
+    <Arg name="ModifiedDate" id="queryCol_11" dataType="Text" index="11" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_Production_WorkOrderRouting" name="query_Production_WorkOrderRouting" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="SqlServer_AdvWorks">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="WorkOrderID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="ProductID" dataType="Integer" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="OperationSequence" dataType="Integer" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="LocationID" dataType="Integer" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="ScheduledStartDate" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="ScheduledEndDate" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_6" name="ActualStartDate" dataType="Text" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_7" name="ActualEndDate" dataType="Text" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_8" name="ActualResourceHrs" dataType="Real" index="8" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_9" name="PlannedCost" dataType="Real" index="9" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_10" name="ActualCost" dataType="Real" index="10" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_11" name="ModifiedDate" dataType="Text" index="11" />
+      </OutputsList>
+      <SQL><![CDATA[select * from Production.WorkOrderRouting]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="28" fromNodeOrder="0" fromItemID="query_query_Production_WorkOrderRouting" fromColID="queryCol_0" toItemID="tbl_Production_WorkOrderRouting" toColID="tblCol_fc30a6de5e264c1da39b5107beb95f4b" />
+    <Link partId="29" fromNodeOrder="0" fromItemID="query_query_Production_WorkOrderRouting" fromColID="queryCol_1" toItemID="tbl_Production_WorkOrderRouting" toColID="tblCol_345c418371a346a5a9829894f45034f4" />
+    <Link partId="30" fromNodeOrder="0" fromItemID="query_query_Production_WorkOrderRouting" fromColID="queryCol_2" toItemID="tbl_Production_WorkOrderRouting" toColID="tblCol_fc22a8be82884403bd6b75d6b1931de2" />
+    <Link partId="31" fromNodeOrder="0" fromItemID="query_query_Production_WorkOrderRouting" fromColID="queryCol_3" toItemID="tbl_Production_WorkOrderRouting" toColID="tblCol_41dce3c3ac7642979861a22c99b1f684" />
+    <Link partId="32" fromNodeOrder="0" fromItemID="query_query_Production_WorkOrderRouting" fromColID="queryCol_4" toItemID="tbl_Production_WorkOrderRouting" toColID="tblCol_06d8f1ec17fa4e19a79977a223ef8b50" />
+    <Link partId="33" fromNodeOrder="0" fromItemID="query_query_Production_WorkOrderRouting" fromColID="queryCol_5" toItemID="tbl_Production_WorkOrderRouting" toColID="tblCol_de8d606483f040d7be4c05303e0d4a71" />
+    <Link partId="34" fromNodeOrder="0" fromItemID="query_query_Production_WorkOrderRouting" fromColID="queryCol_6" toItemID="tbl_Production_WorkOrderRouting" toColID="tblCol_8af044eb5fd448f4b5ba6e144c69aebb" />
+    <Link partId="35" fromNodeOrder="0" fromItemID="query_query_Production_WorkOrderRouting" fromColID="queryCol_7" toItemID="tbl_Production_WorkOrderRouting" toColID="tblCol_97d81cfb355e4579a0773c92ed1e9fe0" />
+    <Link partId="36" fromNodeOrder="0" fromItemID="query_query_Production_WorkOrderRouting" fromColID="queryCol_8" toItemID="tbl_Production_WorkOrderRouting" toColID="tblCol_b7a26567ef32477bab1215e99e8cc47a" />
+    <Link partId="37" fromNodeOrder="0" fromItemID="query_query_Production_WorkOrderRouting" fromColID="queryCol_9" toItemID="tbl_Production_WorkOrderRouting" toColID="tblCol_209e9d34cf0849b7bd7a85ee84db18ef" />
+    <Link partId="38" fromNodeOrder="0" fromItemID="query_query_Production_WorkOrderRouting" fromColID="queryCol_10" toItemID="tbl_Production_WorkOrderRouting" toColID="tblCol_f019191204e64dec95cf9986c6e5b6cc" />
+    <Link partId="39" fromNodeOrder="0" fromItemID="query_query_Production_WorkOrderRouting" fromColID="queryCol_11" toItemID="tbl_Production_WorkOrderRouting" toColID="tblCol_d1b99656d62d49d8ac99f7f50af73ebd" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

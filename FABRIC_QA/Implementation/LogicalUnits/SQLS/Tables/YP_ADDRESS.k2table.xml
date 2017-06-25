@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>YP_ADDRESS</Name>
+  <ID>tbl_YP_ADDRESS</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="CUSTOMER_ID" id="tblCol_82ebda774606477385d9eb1e239b0a1d" index="0" datatype="Integer" />
+    <Column name="STREET" id="tblCol_ce6bd11ddd2b4052bc7fd8cfe403315b" index="1" datatype="Text" />
+    <Column name="CITY" id="tblCol_132ab1a5cbde4fc89be89decb8defd9e" index="2" datatype="Text" />
+    <Column name="STATE" id="tblCol_8c116c2f52e44b3f8fb303b2b43a716a" index="3" datatype="Text" />
+    <Column name="COUNTRY" id="tblCol_8c8570ba3601487cad196267926eae86" index="4" datatype="Text" />
+    <Column name="ZIP_CODE" id="tblCol_297c58d47b9f4f288323e7dde03faacb" index="5" datatype="Text" />
+    <Column name="A" id="tblCol_d866c7a5498042deac7e82d455cd70ef" index="6" datatype="Text" />
+    <Column name="B" id="tblCol_6f10d44efd904f3ab1ec1ef6cda21c16" index="7" datatype="Text" />
+    <Column name="C" id="tblCol_6edc6df9660d415285cc413a6225fad0" index="8" datatype="Text" />
+    <Column name="D" id="tblCol_d2b8bb54c3f94e38a0b171232ae3142a" index="9" datatype="Text" />
+    <Column name="E" id="tblCol_7886d6f07d9f4231bd984189a839bc1e" index="10" datatype="Text" />
+    <Column name="F" id="tblCol_b5fa282a67c2409c98677474ffd492e1" index="11" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

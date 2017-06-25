@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Production_ProductModelProductDescriptionCulture</Name>
+  <ID>tbl_Production_ProductModelProductDescriptionCulture</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="ProductModelID" id="tblCol_aeafa19955df417894378a64859152f5" index="0" datatype="Integer" mandatory="true" />
+    <Column name="ProductDescriptionID" id="tblCol_05ecdd3d7fa44720afb73ddc3f4d9006" index="1" datatype="Integer" mandatory="true" />
+    <Column name="CultureID" id="tblCol_d87e2a593a084451a9fcb53f6d35cce6" index="2" datatype="Text" mandatory="true" />
+    <Column name="ModifiedDate" id="tblCol_cf1abb159b6848acbea296b8138db939" index="3" datatype="Text" mandatory="true" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_aeafa19955df417894378a64859152f5,tblCol_05ecdd3d7fa44720afb73ddc3f4d9006,tblCol_d87e2a593a084451a9fcb53f6d35cce6" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

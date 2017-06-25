@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>funCheckPrdCD</Name>
+  <ID>JAVA.funCheckPrdCD</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String new_prd_cd=null;
+new_prd_cd=i_prd_cd;
+
+if (i_prd_cd.equals("DVAR")){
+   rejectRecord ("Trn product record was rejected in getCustType " + i_prd_cd);
+   new_prd_cd="Error";
+ 
+ }
+	return  new_prd_cd;
+</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="i_prd_cd" id="fi.JAVA.funCheckPrdCD.0" index="0" dataType="String">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="o_prd_cd" id="fo.JAVA.funCheckPrdCD.0" index="0" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

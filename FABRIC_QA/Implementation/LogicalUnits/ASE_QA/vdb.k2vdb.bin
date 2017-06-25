@@ -1,0 +1,9 @@
+﻿<Graph version="1.8.0.10" name="vdb.k2vdb.bin" lastPartID="60">
+  <Node id="0" partID="0" name="Clients" isRootView="true" pos="11 13" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"Clients","TablePopulationPropertiesList":[{"ID":"query_Clients","Name":"query_Clients","Order":1}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="29" name="Clients_Media" isRootView="false" pos="449 140" size="257 138.54686" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"Clients_Media","TablePopulationPropertiesList":[{"ID":"query_Clients_Media","Name":"query_Clients_Media","Order":2}]}</TableProperties>
+  </Node>
+  <Link from="2" to="3" partID="46" linkType="Database" pointsArr="268 75.63671 278 75.63671 439 250.910141 449 250.910141" fromNodePartID="0" fromNodeColumnName="Reg_date" toNodePartID="29" toNodeColumnName="updated_on" toNodePopulationObjectName="query_Clients_Media" />
+</Graph>

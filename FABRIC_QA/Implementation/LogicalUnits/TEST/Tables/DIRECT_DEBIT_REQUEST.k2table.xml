@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>DIRECT_DEBIT_REQUEST</Name>
+  <ID>tbl_DIRECT_DEBIT_REQUEST</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="BAN" id="tblCol_224b0fa77b2c4b39ab1dac8ee569c8aa" index="0" datatype="Integer" mandatory="true" />
+    <Column name="DIRCT_DBT_VOUCHER" id="tblCol_a11ec00baffe4f50991e8a87cb812de9" index="1" datatype="Integer" mandatory="true" />
+    <Column name="SYS_CREATION_DATE" id="tblCol_f6b54a90123949e2be4676cc30078c33" index="2" datatype="Text" mandatory="true" />
+    <Column name="SYS_UPDATE_DATE" id="tblCol_c8993541091047318a416e141ff50070" index="3" datatype="Text" />
+    <Column name="OPERATOR_ID" id="tblCol_3bd3e5b4759746f8b3083db941bfa2a6" index="4" datatype="Integer" />
+    <Column name="APPLICATION_ID" id="tblCol_116fc5efc60d486d8a902c43a541c645" index="5" datatype="Text" />
+    <Column name="DL_SERVICE_CODE" id="tblCol_1ebdc542d3c94350ac1515685d44857b" index="6" datatype="Text" mandatory="true" />
+    <Column name="DL_UPDATE_STAMP" id="tblCol_7611b7e2df9341ceaeaf060a31ba15d1" index="7" datatype="Integer" />
+    <Column name="DUE_DATE" id="tblCol_c14693e2162a43c2be7cb8a4df25d8f2" index="8" datatype="Text" mandatory="true" />
+    <Column name="REQUEST_AMT" id="tblCol_9fe5ca6fa6ad4d4d8f5821f97f3537dd" index="9" datatype="Real" />
+    <Column name="BILL_SEQ_NO" id="tblCol_f1f7cb7f2a2d4ecebfd7f542f3535481" index="10" datatype="Integer" />
+    <Column name="AUTO_GEN_PYM_TYPE" id="tblCol_d050822965004922aacd654ebb5c7911" index="11" datatype="Text" />
+    <Column name="CREDIT_CARD_TYPE" id="tblCol_ed221c79d33a4af2a8600213603a4c1b" index="12" datatype="Text" />
+    <Column name="CREDIT_CARD_NO" id="tblCol_5c8857b2c16d44009a9ff279ab87b00d" index="13" datatype="Text" />
+    <Column name="CR_CARD_EXPIR_DATE" id="tblCol_d8e2e09c6e2c4611a3ca7dcb75bedf42" index="14" datatype="Text" />
+    <Column name="STATUS_UPDATE_DATE" id="tblCol_7d52227aae2d47c1ba997df9b91f722d" index="15" datatype="Text" />
+    <Column name="REQUEST_STATUS" id="tblCol_83374e94842a42f38a038952f462e85b" index="16" datatype="Text" />
+    <Column name="CR_CARD_AUTH_CODE" id="tblCol_ba2a3201a453462a91625c5b20074d6c" index="17" datatype="Text" />
+    <Column name="CANCEL_REASON_CODE" id="tblCol_4a1b7e71d5b74bd3989572cfc742301e" index="18" datatype="Text" />
+    <Column name="CC_ERROR_VARCHAR2(200)" id="tblCol_1ade47add51848d4bb065c54a4d7ffdb" index="19" datatype="Text" />
+    <Column name="BNK_CODE" id="tblCol_5a580c577cc54835b4e13627eafb4312" index="20" datatype="Text" />
+    <Column name="BNK_ACCT_NUMBER" id="tblCol_3f579441d72246baaafa3cd5edffeb44" index="21" datatype="Text" />
+    <Column name="ACTV_CODE" id="tblCol_2440620bc9d841f4addf24f11829d938" index="22" datatype="Text" />
+    <Column name="CARD_VERIFY_NUM" id="tblCol_6bd2324a1c334eedad941f2f2c67d9d9" index="23" datatype="Integer" />
+    <Column name="TAX_IND" id="tblCol_12fadde33ada452997468cb3ebc065f4" index="24" datatype="Integer" />
+    <Column name="TAX_AMT" id="tblCol_0873e981b2f344cc9672f4efe7aee156" index="25" datatype="Real" />
+    <Column name="INIT_UPDATE_DATE" id="tblCol_7670bb0595aa45dba81a97338c8da135" index="26" datatype="Text" />
+    <Column name="CVV_CODE" id="tblCol_11cb1ed55cfb46aaaf391419b96d6b4e" index="27" datatype="Text" />
+    <Column name="REC_TYPE" id="tblCol_4573d28ac18d4a1b96c7f92638908b54" index="28" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

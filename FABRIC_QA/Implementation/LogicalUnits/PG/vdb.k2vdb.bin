@@ -1,0 +1,19 @@
+﻿<Graph version="1.1.0.0" name="vdb.k2vdb.bin" lastPartID="5615">
+  <Node id="0" partID="2856" name="yp_item" isRootView="false" pos="997 552" size="257 138.546753" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"yp_item","TablePopulationPropertiesList":[{"ID":"query_yp_cust_yp_item","Name":"query_yp_cust_yp_item","Order":3}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="3378" name="yp_product" isRootView="false" pos="491 463" size="257 138.546814" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"yp_product","TablePopulationPropertiesList":[{"ID":"query_yp_cust_yp_product","Name":"query_yp_cust_yp_product","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="2" partID="3481" name="yp_address" isRootView="false" pos="703 128" size="257 138.546844" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"yp_address","TablePopulationPropertiesList":[{"ID":"query_yp_cust_yp_address","Name":"query_yp_cust_yp_address","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="3" partID="3520" name="YP_CUSTOMER" isRootView="true" pos="96 197" size="257 138.5469" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"YP_CUSTOMER","TablePopulationPropertiesList":[{"ID":"query_yp_cust_yp_customer","Name":"query_yp_cust_yp_customer","Order":1}]}</TableProperties>
+  </Node>
+  <Link from="4" to="5" partID="87" linkType="Database" pointsArr="353 243.545578 363 243.545578 693 190.636719 703 190.636719" fromNodePartID="3520" fromNodeColumnName="customer_id" toNodePartID="3481" toNodeColumnName="customer_id" toNodePopulationObjectName="query_yp_cust_yp_address" />
+  <Link from="4" to="6" partID="196" linkType="Database" pointsArr="353 243.545578 363 243.545578 481 509.545563 491 509.545563" fromNodePartID="3520" fromNodeColumnName="customer_id" toNodePartID="3378" toNodeColumnName="customer_id" toNodePopulationObjectName="query_yp_cust_yp_product" />
+  <Link from="7" to="8" partID="325" linkType="Database" pointsArr="748 509.545563 758 509.545563 987 598.5456 997 598.5456" fromNodePartID="3378" fromNodeColumnName="customer_id" toNodePartID="2856" toNodeColumnName="customer_id" toNodePopulationObjectName="query_yp_cust_yp_item" />
+  <Link from="9" to="10" partID="326" linkType="Database" pointsArr="748 525.6367 758 525.6367 987 614.6367 997 614.6367" fromNodePartID="3378" fromNodeColumnName="product_code" toNodePartID="2856" toNodeColumnName="product_code" toNodePopulationObjectName="query_yp_cust_yp_item" />
+  <Link from="11" to="12" partID="327" linkType="Database" pointsArr="748 541.7279 758 541.7279 987 630.727844 997 630.727844" fromNodePartID="3378" fromNodeColumnName="product_issue_num" toNodePartID="2856" toNodeColumnName="product_issue_num" toNodePopulationObjectName="query_yp_cust_yp_item" />
+</Graph>

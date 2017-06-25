@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>update_TT1</ID>
+  <PopulationObjectName>update_TT1</PopulationObjectName>
+  <TableName>TT1</TableName>
+  <RootItemID>f_8</RootItemID>
+  <Mode>Update</Mode>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="id" id="fi_8.0" dataType="String" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="ConstantDataSave" id="c.14" nodeOrder="0" module="Constant" mapObjectModule="Constant">
+      <Value><![CDATA[MM]]></Value>
+    </Item>
+    <Item xsi:type="ConstantDataSave" id="c.12" nodeOrder="0" module="Constant" mapObjectModule="Constant">
+      <Value><![CDATA[22]]></Value>
+    </Item>
+    <Item id="f_8" name="getIdRoot" nodeOrder="0" module="Function" mapObjectModule="Function" fileName="getIdRoot.k2function.xml">
+      <InputsList>
+        <Input id="fi_8.0" name="id" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_8.0" name="out" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="17" fromNodeOrder="0" fromItemID="c.14" fromColID="c.14" toItemID="tbl_TT1" toColID="tblCol_a874f1316a1a437089351ec6df09d23f" />
+    <Link partId="16" fromNodeOrder="0" fromItemID="c.12" fromColID="c.12" toItemID="tbl_TT1" toColID="tblCol_0cdea70f24f942c3af22075c7b7066a2" />
+    <Link partId="11" fromNodeOrder="0" fromItemID="f_8" fromColID="fo_8.0" toItemID="tbl_TT1" toColID="tblCol_81aac8d0f1b8479d939f7456322991d6" />
+  </LinksList>
+  <ModeKeyColumnIDs>tblCol_0cdea70f24f942c3af22075c7b7066a2</ModeKeyColumnIDs>
+</TablePopulationObject>

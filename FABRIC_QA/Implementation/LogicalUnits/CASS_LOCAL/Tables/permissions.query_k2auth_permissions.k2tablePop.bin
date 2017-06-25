@@ -1,0 +1,9 @@
+﻿<Graph name="permissions.query_k2auth_permissions.k2tablePop.bin" lastPartID="12">
+  <TableNode partID="0" name="permissions" pos="308 5.854168" width="309.3241" />
+  <DBQueryNode partID="6" name="CASS_Local" pos="10 1.890625" size="253 96.21875" isRoot="true">
+    <DBQuery>{"Name":"query_k2auth_permissions","ID":"query_query_k2auth_permissions","ConnName":"CASS_Local","SQL":"select * from k2auth.permissions","ColumnsList":[{"ID":"queryCol_0","Name":"method","DataType":"Text","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"permissions","DataType":"Text","Index":1,"IsInputArgument":true},{"ID":"queryCol_2","Name":"role","DataType":"Text","Index":2,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="10" from="0" to="1" pointsArr="263 37.9270859 273 37.9270859 275.5 25 295.5 25 298 36.890625 308 36.890625" fromNodePartID="6" fromNodeColumnName="method" toNodePartID="0" toNodeColumnName="method" />
+  <Link partID="11" from="2" to="3" pointsArr="263 50 273 50 275.5 50 295.5 50 298 48.9635429 308 48.9635429" fromNodePartID="6" fromNodeColumnName="permissions" toNodePartID="0" toNodeColumnName="permissions" />
+  <Link partID="12" from="4" to="5" pointsArr="263 62.0729141 273 62.0729141 275.5 75 295.5 75 298 61.0364571 308 61.0364571" fromNodePartID="6" fromNodeColumnName="role" toNodePartID="0" toNodeColumnName="role" />
+</Graph>

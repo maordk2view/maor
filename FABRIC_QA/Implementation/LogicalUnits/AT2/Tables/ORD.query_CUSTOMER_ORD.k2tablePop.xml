@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_CUSTOMER_ORD</PopulationObjectName>
+  <TableName>ORD</TableName>
+  <ID>query_CUSTOMER_ORD</ID>
+  <RootItemID>query_18</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="BAN" id="query_18.0" dataType="Integer" index="0" />
+    <Arg name="SYS_CREATION_DATE" id="query_18.1" dataType="Text" index="1" />
+    <Arg name="SYS_UPDATE_DATE" id="query_18.2" dataType="Text" index="2" />
+    <Arg name="OPERATOR_ID" id="query_18.3" dataType="Integer" index="3" />
+    <Arg name="APPLICATION_ID" id="query_18.4" dataType="Text" index="4" />
+    <Arg name="DL_SERVICE_CODE" id="query_18.5" dataType="Text" index="5" />
+    <Arg name="DL_UPDATE_STAMP" id="query_18.6" dataType="Integer" index="6" />
+    <Arg name="AR_EXCPT_ACCT_IND" id="query_18.7" dataType="Text" index="7" />
+    <Arg name="ACCOUNT_TYPE" id="query_18.8" dataType="Text" index="8" />
+    <Arg name="BILL_CYCLE" id="query_18.9" dataType="Integer" index="9" />
+    <Arg name="AR_BALANCE" id="query_18.10" dataType="Real" index="10" />
+    <Arg name="BAN_STATUS" id="query_18.11" dataType="Text" index="11" />
+    <Arg name="HIST_LAST_DATE" id="query_18.12" dataType="Text" index="12" />
+    <Arg name="STATUS_LAST_DATE" id="query_18.13" dataType="Text" index="13" />
+    <Arg name="STATUS_ACTV_CODE" id="query_18.14" dataType="Text" index="14" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_18" name="query_CUSTOMER_ORD" nodeOrder="0" module="DBQuery" connName="CUSTOMER_TEST">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.0" name="BAN" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.1" name="SYS_CREATION_DATE" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.2" name="SYS_UPDATE_DATE" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.3" name="OPERATOR_ID" dataType="Integer" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.4" name="APPLICATION_ID" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.5" name="DL_SERVICE_CODE" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.6" name="DL_UPDATE_STAMP" dataType="Integer" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.7" name="AR_EXCPT_ACCT_IND" dataType="Text" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.8" name="ACCOUNT_TYPE" dataType="Text" index="8" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.9" name="BILL_CYCLE" dataType="Integer" index="9" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.10" name="AR_BALANCE" dataType="Real" index="10" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.11" name="BAN_STATUS" dataType="Text" index="11" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.12" name="HIST_LAST_DATE" dataType="Text" index="12" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.13" name="STATUS_LAST_DATE" dataType="Text" index="13" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.14" name="STATUS_ACTV_CODE" dataType="Text" index="14" />
+      </OutputsList>
+      <SQL><![CDATA[select * from CUSTOMER.ORD]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="34" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.0" toItemID="tbl_ORD" toColID="tblCol_1a0934151a344bb9ab9379cf4f47249d" />
+    <Link partId="35" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.1" toItemID="tbl_ORD" toColID="tblCol_c94b355390cc45b1b2fbeec5b6f94439" />
+    <Link partId="36" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.2" toItemID="tbl_ORD" toColID="tblCol_aafc89ce02d94511a8df1e2d772932ff" />
+    <Link partId="37" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.3" toItemID="tbl_ORD" toColID="tblCol_8ac6fa556f1a40be9087bbf4140e898e" />
+    <Link partId="38" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.4" toItemID="tbl_ORD" toColID="tblCol_cdb394f137974e20ba082ee120508867" />
+    <Link partId="39" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.5" toItemID="tbl_ORD" toColID="tblCol_e98c160b3916479a93129aecf13f9f60" />
+    <Link partId="40" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.6" toItemID="tbl_ORD" toColID="tblCol_3249c1afef3840d3bf361aff7044170b" />
+    <Link partId="41" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.7" toItemID="tbl_ORD" toColID="tblCol_4a2a46be03724bd4a9d907cdb3afd6bc" />
+    <Link partId="42" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.8" toItemID="tbl_ORD" toColID="tblCol_43f92e5235484cdfa1a762db95ecb056" />
+    <Link partId="43" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.9" toItemID="tbl_ORD" toColID="tblCol_4990bca31b4549e687723428fcd199e2" />
+    <Link partId="44" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.10" toItemID="tbl_ORD" toColID="tblCol_848b506f2a6648c8b86d8159f8968f26" />
+    <Link partId="45" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.11" toItemID="tbl_ORD" toColID="tblCol_f49aca584595450f91baa4659c3004ae" />
+    <Link partId="46" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.12" toItemID="tbl_ORD" toColID="tblCol_3c122a92404b42babced9229ef0987d6" />
+    <Link partId="47" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.13" toItemID="tbl_ORD" toColID="tblCol_eb890bddc1d94d2da36f31b14405f844" />
+    <Link partId="48" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.14" toItemID="tbl_ORD" toColID="tblCol_87264b42b6444aefb933fe6d5216e5e1" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

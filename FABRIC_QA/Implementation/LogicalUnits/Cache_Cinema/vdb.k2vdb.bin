@@ -1,0 +1,9 @@
+﻿<Graph version="3.0.3.0" name="vdb.k2vdb.bin" lastPartID="133">
+  <Node id="0" partID="47" name="Film" isRootView="true" pos="70 81" size="257 138.546844" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"Film","TablePopulationPropertiesList":[{"ID":"query_Cinema_Film","Name":"query_Cinema_Film","Order":1,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="102" name="FilmCategory" isRootView="false" pos="505 138" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"FilmCategory","TablePopulationPropertiesList":[{"ID":"query_Cinema_FilmCategory","Name":"query_Cinema_FilmCategory","Order":2,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+  <Link from="2" to="3" partID="109" linkType="Database" pointsArr="327 143.636719 337 143.636719 495 184.545563 505 184.545563" fromNodePartID="47" fromNodeColumnName="Category" toNodePartID="102" toNodeColumnName="ID" toNodePopulationObjectName="query_Cinema_FilmCategory" />
+</Graph>

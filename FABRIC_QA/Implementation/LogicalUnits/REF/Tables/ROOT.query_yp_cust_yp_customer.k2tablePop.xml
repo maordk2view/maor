@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_yp_cust_yp_customer</PopulationObjectName>
+  <TableName>ROOT</TableName>
+  <ID>query_yp_cust_yp_customer</ID>
+  <RootItemID>query_3</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="inst_id" id="query_3.0" dataType="Integer" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_3" name="query_yp_cust_yp_customer" nodeOrder="0" module="DBQuery" connName="PG_SOURCE">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.0" name="inst_id" dataType="Integer" index="0" />
+      </OutputsList>
+      <SQL><![CDATA[Select 1 As INST_ID]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="58" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.0" toItemID="tbl_ROOT" toColID="tblCol_f4438f307a514a1a8e3d1aeeb2cb1886" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

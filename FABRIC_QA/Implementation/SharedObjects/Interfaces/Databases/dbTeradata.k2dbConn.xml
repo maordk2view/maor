@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBConn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="DBConnTeradata" name="dbTeradata" type="Teradata" version="2.4.0.11">
+  <Active>true</Active>
+  <DataSource>10.21.1.4</DataSource>
+  <PortNum>1025</PortNum>
+  <DataBase />
+  <UserId>dbc</UserId>
+  <Password>P+wnG2mveRqCI9PQFrfaCPTVOo/evLuLLzl6MpdJOYM=:yuK1bvRF4I4M8xfXQRvSAvg6m/ud5c+EBkcbS6BmPhI=</Password>
+  <MaxConnectionsNumber>60</MaxConnectionsNumber>
+  <ConnectionStringClient>Data Source='10.21.1.4';PortNumber=1025;User ID='dbc';Password='[PASSWORD]';SessionCharacterSet=UTF8</ConnectionStringClient>
+  <IsCustomConnectionStringServerSide>true</IsCustomConnectionStringServerSide>
+  <ConnectionStringServerSide>jdbc:teradata://10.21.1.4/DBS_PORT=1025,DATABASE=financial,CHARSET=UTF8</ConnectionStringServerSide>
+  <CommandList />
+</DBConn>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>funGetYpProduct</Name>
+  <ID>JAVA.funGetYpProduct</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String sql = "SELECT CUSTOMER_ID, PRODUCT_CODE, PRODUCT_ISSUE_NUM, PRODUCT_STATUS, RETIREMENT_STATUS, PROSPECT_CODE, PROSPECT_AGE FROM YP_PRODUCT "+
+             "WHERE CUSTOMER_ID = ?";
+Object[] valuesArr = {i_cust};
+ResultSetWrapper rs = DBQuery("DB2_SOURCE", sql, valuesArr);
+
+for(Object[] row : rs) {
+    yield(row);
+}
+</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>true</IsRootFunction>
+  <InputParams>
+    <Input name="i_cust" id="fi.JAVA.funGetYpProduct.0" index="0" dataType="Integer">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="CUSTOMER_ID" id="fo.JAVA.funGetYpProduct.0" index="0" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="PRODUCT_CODE" id="fo.JAVA.funGetYpProduct.1" index="1" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="PRODUCT_ISSUE_NUM" id="fo.JAVA.funGetYpProduct.2" index="2" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="PRODUCT_STATUS" id="fo.JAVA.funGetYpProduct.3" index="3" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="RETIREMENT_STATUS" id="fo.JAVA.funGetYpProduct.4" index="4" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="PROSPECT_CODE" id="fo.JAVA.funGetYpProduct.5" index="5" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="PROSPECT_AGE" id="fo.JAVA.funGetYpProduct.6" index="6" dataType="Long">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

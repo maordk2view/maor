@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>eli_ref_pop</ID>
+  <PopulationObjectName>eli_ref_pop</PopulationObjectName>
+  <TableName>eli_ref</TableName>
+  <RootItemID>query_query_SOURCE03_ELI_EMP</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="FIRST" id="queryCol_0" dataType="Text" index="0" />
+    <Arg name="LAST" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="COMP_ID" id="queryCol_2" dataType="Text" index="2" />
+    <Arg name="MYDATE" id="queryCol_3" dataType="Text" index="3" />
+    <Arg name="MYLDATE" id="queryCol_4" dataType="Text" index="4" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_SOURCE03_ELI_EMP" name="query_SOURCE03_ELI_EMP" nodeOrder="0" module="DBQuery" connName="ORA_SOURCE">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="FIRST" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="COMP_ID" dataType="Text" index="2" />
+      </OutputsList>
+      <SQL><![CDATA[select * from SOURCE03.ELI_EMP]]></SQL>
+    </Item>
+    <Item xsi:type="ConstantDataSave" id="c.15" nodeOrder="0" module="Constant">
+      <Value><![CDATA[LPZ]]></Value>
+    </Item>
+    <Item xsi:type="LookupDataSave" id="tblLookup.17" name="FUN_REF_UDAC" nodeOrder="1" module="Lookup" alias="" itemType="Table" lookupNotFound="Reject_Record" isReference="true">
+      <InputsList>
+        <Input xsi:type="LookupDataSaveColumnInput" id="tblLookup.17.in.udac_code" name="udac_code" columnID="tblCol_9795b0a7239448c48a502ece3749a801" />
+      </InputsList>
+      <OutputsList>
+        <Output xsi:type="LookupDataSaveColumn" id="tblLookup.17.out.udac_desc" name="udac_desc" columnID="tblCol_fee05d662c0d4884940aff493cd45061" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="13" fromNodeOrder="0" fromItemID="query_query_SOURCE03_ELI_EMP" fromColID="queryCol_2" toItemID="tbl_eli_ref" toColID="tblCol_3892e0a692464b72bc7ecf21fdfb2480" />
+    <Link partId="14" fromNodeOrder="0" fromItemID="query_query_SOURCE03_ELI_EMP" fromColID="queryCol_0" toItemID="tbl_eli_ref" toColID="tblCol_981a9b157f9e4b8f92054fea0f1a7656" />
+    <Link partId="28" fromNodeOrder="0" fromItemID="c.15" fromColID="c.15" toItemID="tbl_eli_ref" toColID="tblCol_8b6940aead934319be0acdbb53fcd8cc" />
+    <Link partId="27" fromNodeOrder="1" fromItemID="tblLookup.17" fromColID="tblLookup.17.out.udac_desc" toItemID="tbl_eli_ref" toColID="tblCol_87b02d739e8448f2ae65f3a0f8905dc4" />
+    <Link partId="26" fromNodeOrder="0" fromItemID="c.15" fromColID="c.15" toItemID="tblLookup.17" toColID="tblLookup.17.in.udac_code" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

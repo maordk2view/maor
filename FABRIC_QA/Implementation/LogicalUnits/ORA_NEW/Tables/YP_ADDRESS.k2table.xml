@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>YP_ADDRESS</Name>
+  <ID>tbl_YP_ADDRESS</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="ADDRESS_ID" id="tblCol_31552eb7932c41ae8d47916c76a14a30" index="0" datatype="Integer" mandatory="true" />
+    <Column name="CUSTOMER_ID" id="tblCol_d403c68ee6c046a49e2d3d7f18df593d" index="1" datatype="Integer" mandatory="true" />
+    <Column name="HOUSE_NO" id="tblCol_46cc14f81ccf4e9ab0b66e15effb4266" index="2" datatype="Text" />
+    <Column name="COLONY_ID" id="tblCol_2a0f03a6decc46b6b73a898215d8b2d9" index="3" datatype="Integer" />
+    <Column name="OVERRIDE_COLONY" id="tblCol_6eda4ac5e0aa40f3ba331365471614f7" index="4" datatype="Text" />
+    <Column name="STATE_CODE" id="tblCol_0ad499bbc0994c15ac1a004beeb83d46" index="5" datatype="Text" />
+    <Column name="STREET_NAME" id="tblCol_c5f26601b27c445ebdf11b79abea2d00" index="6" datatype="Text" />
+    <Column name="STREET_TYPE" id="tblCol_8bcf27259d6641fa83ef36d44b082209" index="7" datatype="Text" />
+    <Column name="SUB_LOCATION" id="tblCol_ebf52044af214974a9ec8096e7c2e6e8" index="8" datatype="Text" />
+    <Column name="ZIP_CODE" id="tblCol_9b815aa2c3a54e13905cabd1114764d2" index="9" datatype="Text" />
+    <Column name="PO_BOX" id="tblCol_a3bc764220e142069e3aca824537a4d5" index="10" datatype="Text" />
+    <Column name="DIRECTION" id="tblCol_6675b62816c74b88a10bccfbfcc1aa03" index="11" datatype="Text" />
+    <Column name="SELLING_ID" id="tblCol_cbaa1100675949de8cb1d1ec2c02320f" index="12" datatype="Text" />
+    <Column name="BLOCK_NUMBER" id="tblCol_2abdf214508e4e00b42ca2a12d1be09e" index="13" datatype="Text" />
+    <Column name="TERRAIN_NUMBER" id="tblCol_d82c9577862d4be889becade6d672050" index="14" datatype="Text" />
+    <Column name="INTERIOR_NUMBER" id="tblCol_6d199a2cc4744ef8ae53bc8f963f6269" index="15" datatype="Text" />
+    <Column name="OVERRIDE_TOWN" id="tblCol_d56e3b61d4e54312ac02c31732298b4b" index="16" datatype="Text" />
+    <Column name="BETWEEN_STREET1" id="tblCol_1df85f1cf3854c00be7e546d26be6f5c" index="17" datatype="Text" />
+    <Column name="BETWEEN_STREET2" id="tblCol_7fe469a01d7445b6adc45cadcd5562d2" index="18" datatype="Text" />
+    <Column name="COUNTRY" id="tblCol_7e9b4957b2f843a98e0fdb1818b17ad0" index="19" datatype="Text" mandatory="true" />
+    <Column name="OVERRIDE_COLONY_TYPE" id="tblCol_b96ffea5cfc248db9910a056e1430c5a" index="20" datatype="Text" />
+    <Column name="CTCR_BATCH_PROG_ID" id="tblCol_ae8644b1d2d9494ea9728cb000fb1315" index="21" datatype="Text" />
+    <Column name="CTCR_BATCH_PROG_DT" id="tblCol_dd7f07aa5d844a3d88b38e4032771df9" index="22" datatype="Text" />
+    <Column name="CTCR_ONLINE_USER_ID" id="tblCol_d1010c1a0a904070b9b494f27e5c64a6" index="23" datatype="Integer" />
+    <Column name="CTCR_ONLINE_PROG_ID" id="tblCol_e22d559f6232412c98ad704d022bf08c" index="24" datatype="Text" />
+    <Column name="CTCR_ONLINE_PROG_DT" id="tblCol_dea90548210044e69cd9500ce1b7c163" index="25" datatype="Text" />
+    <Column name="CTCR_SYS_CRE_DT" id="tblCol_a775ddaad9844ca886d978fe051e877f" index="26" datatype="Text" />
+    <Column name="CTCR_SYS_UPD_DT" id="tblCol_a1ccbae465ff4fe5b09953cf5f659181" index="27" datatype="Text" />
+    <Column name="CTCR_DBI_PROG_ID" id="tblCol_7039c77beffb4af584313d1875b37afb" index="28" datatype="Text" />
+    <Column name="CTCR_DBI_PROG_DT" id="tblCol_c9de683ebf2a43ab9012819a5b8e6e8b" index="29" datatype="Text" />
+    <Column name="CTCR_CNV_DT" id="tblCol_bc3a15bf730444bcb37ece665c6da60a" index="30" datatype="Text" />
+    <Column name="CTCR_EVENT_ID" id="tblCol_24583aa2f32043319b2b7b6c180d6f75" index="31" datatype="Integer" />
+    <Column name="SFA_ID" id="tblCol_c416fb5363bf41069dcdbac047da5761" index="32" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

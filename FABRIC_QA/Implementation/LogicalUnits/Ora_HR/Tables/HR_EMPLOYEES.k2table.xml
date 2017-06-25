@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>HR_EMPLOYEES</Name>
+  <ID>tbl_HR_EMPLOYEES</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="EMPLOYEE_ID" id="tblCol_4f25e8593282449186a2f8afe219cfa3" index="0" datatype="Integer" mandatory="true" />
+    <Column name="FIRST_NAME" id="tblCol_76a57ac690614ff7853d32a16e26c003" index="1" datatype="Text" />
+    <Column name="LAST_NAME" id="tblCol_c4ad2d5a02824d889b07020256fd8fe0" index="2" datatype="Text" mandatory="true" />
+    <Column name="EMAIL" id="tblCol_fbe0f5d142e548e994b9c4fb24e83186" index="3" datatype="Text" mandatory="true" />
+    <Column name="PHONE_NUMBER" id="tblCol_945c895048a64f65a760f7d14fdf9942" index="4" datatype="Text" />
+    <Column name="HIRE_DATE" id="tblCol_fd4238c192e44c3b92742fd26b0eb7d1" index="5" datatype="Text" mandatory="true" />
+    <Column name="JOB_ID" id="tblCol_1b1fe01948a24c6c81a9c9687e876d69" index="6" datatype="Text" mandatory="true" />
+    <Column name="SALARY" id="tblCol_a5874f27aa1d4e168fb76c55e1491617" index="7" datatype="Real" />
+    <Column name="COMMISSION_PCT" id="tblCol_cc80b3fa7d824530980b0bb2806e9b2f" index="8" datatype="Real" />
+    <Column name="MANAGER_ID" id="tblCol_e8cb6b0a25a24e70ab7a501485c566fa" index="9" datatype="Integer" />
+    <Column name="DEPARTMENT_ID" id="tblCol_63471711b7c34c03aa5a4ff4a4e08f80" index="10" datatype="Integer" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_4f25e8593282449186a2f8afe219cfa3" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

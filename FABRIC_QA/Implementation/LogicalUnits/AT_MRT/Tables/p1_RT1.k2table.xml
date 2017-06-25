@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>p1_RT1</Name>
+  <ID>tbl_p1_RT1</ID>
+  <EntityId>tblCol_0f7930cc9c4d43279ff275540fe1ff23</EntityId>
+  <LazyDataUpdate performEvery="1.00:00:00">
+    <TruncateBeforeSync>false</TruncateBeforeSync>
+  </LazyDataUpdate>
+  <Columns>
+    <Column name="col1" id="tblCol_0f7930cc9c4d43279ff275540fe1ff23" index="0" datatype="Text" />
+    <Column name="col2" id="tblCol_355293b41b884423b06f58f3e040f375" index="1" datatype="Text" />
+    <Column name="col3" id="tblCol_9b63152efd7a48158d8979e7620638c9" index="2" datatype="Text" />
+    <Column name="col4" id="tblCol_1b0fbc8537de469abd4ad32781657e33" index="3" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>getAddRecords</PopulationObjectName>
+  <TableName>YP_ADDR_FUN</TableName>
+  <ID>getAddRecords</ID>
+  <RootItemID>f_3</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="CUSTOMER_ID" id="fi_3.0" dataType="Integer" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item id="f_3" name="getAddRecords" nodeOrder="0" module="Function" fileName="getAddRecords.k2function.xml">
+      <InputsList>
+        <Input id="fi_3.0" name="CUSTOMER_ID" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_3.0" name="ADDRESS_ID" />
+        <Output id="fo_3.1" name="HOUSE_NO" />
+        <Output id="fo_3.2" name="COLONY_ID" />
+        <Output id="fo_3.3" name="STATE_CODE" />
+        <Output id="fo_3.4" name="ZIP_CODE" />
+        <Output id="fo_3.5" name="STREET_NAME" />
+        <Output id="fo_3.6" name="SFA_ID" />
+        <Output id="fo_3.7" name="ADD_PRM1" />
+        <Output id="fo_3.8" name="ADD_PRM2" />
+      </OutputsList>
+    </Item>
+    <Item xsi:type="DBLookupDataSave" id="dbLookup.184" name="yp_ref_udac" nodeOrder="0" module="Lookup" itemType="DB_Object" lookupNotFound="Reject_Record" connName="MYSQL_SOURCE" owner="yp_cust">
+      <InputsList>
+        <Input xsi:type="LookupDataSaveColumnInput" id="dbLookup.184.in.UDAC_CODE" name="UDAC_CODE" defaultValue="SRL" columnID="MYSQL_SOURCE.yp_ref_udac.UDAC_CODE" />
+      </InputsList>
+      <OutputsList>
+        <Output xsi:type="LookupDataSaveColumn" id="dbLookup.184.out.UDAC_DESC" name="UDAC_DESC" columnID="MYSQL_SOURCE.yp_ref_udac.UDAC_DESC" />
+      </OutputsList>
+    </Item>
+    <Item xsi:type="DBLookupDataSave" id="dbLookup.220" name="yp_product" nodeOrder="0" module="Lookup" itemType="DB_Object" lookupNotFound="Reject_Record" connName="MYSQL_SOURCE" owner="yp_cust">
+      <InputsList>
+        <Input xsi:type="LookupDataSaveColumnInput" id="dbLookup.220.in.CUSTOMER_ID" name="CUSTOMER_ID" defaultValue="4333" columnID="MYSQL_SOURCE.yp_product.CUSTOMER_ID" />
+        <Input xsi:type="LookupDataSaveColumnInput" id="dbLookup.220.in.PRODUCT_ISSUE_NUM" name="PRODUCT_ISSUE_NUM" defaultValue="2008" columnID="MYSQL_SOURCE.yp_product.PRODUCT_ISSUE_NUM" />
+      </InputsList>
+      <OutputsList>
+        <Output xsi:type="LookupDataSaveColumn" id="dbLookup.220.out.PRODUCT_CODE" name="PRODUCT_CODE" columnID="MYSQL_SOURCE.yp_product.PRODUCT_CODE" />
+      </OutputsList>
+    </Item>
+    <Item id="f_904" name="test1" nodeOrder="0" module="Function" fileName="test1.k2function.xml">
+      <InputsList>
+        <Input id="fi_904.0" name="i_in" defaultValue="10" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_904.0" name="i_out" />
+      </OutputsList>
+    </Item>
+    <Item id="f_200" name="java_concat_str" nodeOrder="1" module="Function" fileName="java_concat_str.k2function.xml">
+      <InputsList>
+        <Input id="fi_200.0" name="i_str" />
+        <Input id="fi_200.1" name="i_con_str" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_200.0" name="o_str" />
+      </OutputsList>
+    </Item>
+    <Item id="f_216" name="trnProduct" nodeOrder="1" module="Translation" fileName="trnProduct.k2trans.xml">
+      <InputsList>
+        <Input id="fi_216.0" name="PRD_CD_IN" />
+        <Input id="fi_216.1" name="VSERION" defaultValue="1" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_216.0" name="PRD_CD_OUT" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="124" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.0" toItemID="tbl_YP_ADDR_FUN" toColID="tblCol_4260639b25a54401a103260bb9541734" />
+    <Link partId="125" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.1" toItemID="tbl_YP_ADDR_FUN" toColID="tblCol_c328fcb5327240f0bb1b96eb06a8e958" />
+    <Link partId="126" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.2" toItemID="tbl_YP_ADDR_FUN" toColID="tblCol_5e146334f04b4fab8e4f9ae3cdbb5984" />
+    <Link partId="127" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.3" toItemID="tbl_YP_ADDR_FUN" toColID="tblCol_ad010be5494644dc9b3242be0a5e7626" />
+    <Link partId="128" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.4" toItemID="tbl_YP_ADDR_FUN" toColID="tblCol_2da6e04d644941e4aeb5539816786b6e" />
+    <Link partId="195" fromNodeOrder="0" fromItemID="dbLookup.184" fromColID="dbLookup.184.out.UDAC_DESC" toItemID="tbl_YP_ADDR_FUN" toColID="tblCol_ef201e5374a145ae9fda4138606b1275" />
+    <Link partId="198" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.5" toItemID="tbl_YP_ADDR_FUN" toColID="tblCol_c5f4d4aeffeb41fb88999230bfa45b3c" />
+    <Link partId="207" fromNodeOrder="1" fromItemID="f_200" fromColID="fo_200.0" toItemID="tbl_YP_ADDR_FUN" toColID="tblCol_f45e3fa8fb0c47fe83c98735d06f2ae6" />
+    <Link partId="204" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.1" toItemID="f_200" toColID="fi_200.0" />
+    <Link partId="205" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.4" toItemID="f_200" toColID="fi_200.1" />
+    <Link partId="422" fromNodeOrder="0" fromItemID="dbLookup.220" fromColID="dbLookup.220.out.PRODUCT_CODE" toItemID="tbl_YP_ADDR_FUN" toColID="tblCol_45dbf5860764477fb98a9591f0db197f" />
+    <Link partId="424" fromNodeOrder="1" fromItemID="f_216" fromColID="fo_216.0" toItemID="tbl_YP_ADDR_FUN" toColID="tblCol_23c13675b5b143a3bb961936f5f9725c" />
+    <Link partId="417" fromNodeOrder="0" fromItemID="dbLookup.220" fromColID="dbLookup.220.out.PRODUCT_CODE" toItemID="f_216" toColID="fi_216.0" />
+    <Link partId="423" fromNodeOrder="0" fromItemID="dbLookup.220" fromColID="dbLookup.220.out.PRODUCT_CODE" toItemID="tbl_YP_ADDR_FUN" toColID="tblCol_6a9ed80a7946460781027fc4d439ac3b" />
+    <Link partId="428" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.6" toItemID="tbl_YP_ADDR_FUN" toColID="tblCol_00fc5207ff5542189cdb118ca9d665e1" />
+    <Link partId="902" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.7" toItemID="tbl_YP_ADDR_FUN" toColID="tblCol_5797fdbc3a9146aeb48e7d295ba4fd28" />
+    <Link partId="907" fromNodeOrder="0" fromItemID="f_904" fromColID="fo_904.0" toItemID="tbl_YP_ADDR_FUN" toColID="tblCol_e4e8a286b13f4a3ea0673cd9fa10f450" />
+    <Link partId="1148" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.8" toItemID="tbl_YP_ADDR_FUN" toColID="tblCol_36decd4591274b7c88d9eebf080b59bd" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

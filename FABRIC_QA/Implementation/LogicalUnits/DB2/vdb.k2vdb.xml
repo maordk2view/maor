@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2.5.3.0">
+  <Name>vdb</Name>
+  <RootView>YP_CUSTOMER</RootView>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>YP_ADDRESS</Table>
+    <Table>YP_ITEM</Table>
+    <Table>YP_CUSTOMER</Table>
+    <Table>YP_PRODUCT_FUN</Table>
+    <Table>YP_PRODUCT</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="YP_ADDRESS">
+      <Populations>
+        <Population id="query_DB2INST1_YP_ADDRESS" name="query_DB2INST1_YP_ADDRESS" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="YP_ITEM">
+      <Populations>
+        <Population id="query_DB2INST1_YP_ITEM" name="query_DB2INST1_YP_ITEM" order="3" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="YP_CUSTOMER">
+      <Populations>
+        <Population id="query_DB2INST1_YP_CUSTOMER" name="query_DB2INST1_YP_CUSTOMER" order="1" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="YP_PRODUCT_FUN">
+      <Populations>
+        <Population id="funGetYpProduct" name="funGetYpProduct" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="YP_PRODUCT">
+      <Populations>
+        <Population id="query_DB2INST1_YP_PRODUCT" name="query_DB2INST1_YP_PRODUCT" order="2" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="false" name="FUN_REF_UDAC" />
+    <Item active="false" name="MS_REF_UDAC" />
+    <Item active="false" name="REF_SERVICE_AGREEMENT" />
+    <Item active="false" name="REF_YP_PRODUCT_TRN" />
+    <Item active="false" name="test_YP_REF_UDAC" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="60">
+      <From tableType="TableObject" table="YP_CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_b8973797144241f59a801c3cb5c8b922" />
+      <To tableType="TableObject" table="YP_ADDRESS" populationObjectName="query_DB2INST1_YP_ADDRESS" column="CUSTOMER_ID" columnId="query_9.0" />
+    </Relation>
+    <Relation id="161">
+      <From tableType="TableObject" table="YP_CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_b8973797144241f59a801c3cb5c8b922" />
+      <To tableType="TableObject" table="YP_PRODUCT" populationObjectName="query_DB2INST1_YP_PRODUCT" column="CUSTOMER_ID" columnId="query_101.0" />
+    </Relation>
+    <Relation id="290">
+      <From tableType="TableObject" table="YP_PRODUCT" column="CUSTOMER_ID" columnId="tblCol_1392b5f029d14db4aa28ee12a92ce55d" />
+      <To tableType="TableObject" table="YP_ITEM" populationObjectName="query_DB2INST1_YP_ITEM" column="CUSTOMER_ID" columnId="query_130.0" />
+    </Relation>
+    <Relation id="292">
+      <From tableType="TableObject" table="YP_PRODUCT" column="PRODUCT_CODE" columnId="tblCol_8ea1e33e05d443759f97dee2a27b6354" />
+      <To tableType="TableObject" table="YP_ITEM" populationObjectName="query_DB2INST1_YP_ITEM" column="PRODUCT_CODE" columnId="query_130.1" />
+    </Relation>
+    <Relation id="293">
+      <From tableType="TableObject" table="YP_PRODUCT" column="PRODUCT_ISSUE_NUM" columnId="tblCol_a5103e54c59d490ea626adedb737f139" />
+      <To tableType="TableObject" table="YP_ITEM" populationObjectName="query_DB2INST1_YP_ITEM" column="PRODUCT_ISSUE_NUM" columnId="query_130.2" />
+    </Relation>
+    <Relation id="692">
+      <From tableType="TableObject" table="YP_CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_b8973797144241f59a801c3cb5c8b922" />
+      <To tableType="TableObject" table="YP_PRODUCT_FUN" populationObjectName="funGetYpProduct" column="i_cust" columnId="fi_3.0" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

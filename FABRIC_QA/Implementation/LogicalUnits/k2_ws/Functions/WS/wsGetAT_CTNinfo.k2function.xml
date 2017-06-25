@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>wsGetAT_CTNinfo</Name>
+  <ID>WS.wsGetAT_CTNinfo</ID>
+  <Category>WS</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>WebService</FunctionType>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>Object[] valuesArr = null;
+
+DBExecute("fabric","get AT_CTN."+ CTN, null);
+
+String ctnMainInfoSQL = "SELECT CTNMAININFO.*,round(CTNACCOUNTBALANCE.ACCOUNT_BALANCE,2) as ACCOUNT_BALANCE FROM CTNMAININFO,CTNACCOUNTBALANCE WHERE CTNMAININFO.ACCOUNT_NUMBER = CTNACCOUNTBALANCE.ACCOUNT_NUMBER";
+ResultSetWrapper rsMain = DBQuery("fabric", ctnMainInfoSQL, valuesArr);
+
+Map&lt;String,Object&gt; overallCtnMap = new LinkedHashMap&lt;String,Object&gt;();
+ArrayList&lt;Object&gt; accountCTNMap = new ArrayList&lt;Object&gt;();
+
+overallCtnMap.put("CTNSearchedFor",CTN);
+
+
+for(Object[] row : rsMain) {
+	
+	Map&lt;String,Object&gt; ctnMap        = new LinkedHashMap&lt;String,Object&gt;();
+	Map&lt;String,Object&gt; subNameMap    = new LinkedHashMap&lt;String,Object&gt;();
+	Map&lt;String,Object&gt; adrressMap    = new LinkedHashMap&lt;String,Object&gt;();
+	
+	//row2 = Arrays.copyOf(row,row.length+1);
+	ctnMap.put("CTN",row[0]);
+	ctnMap.put("accountNumber",row[1]);
+	ctnMap.put("carrier",row[2]);
+	ctnMap.put("account",row[3]);
+	ctnMap.put("accountBillCycle",row[4]);
+	ctnMap.put("accountType",row[5]);
+	ctnMap.put("accountSubType",row[6]);
+	ctnMap.put("accountStatus",row[7]);
+	ctnMap.put("accountStatusReason",row[8]);
+	ctnMap.put("accountStatusDate",row[9]);
+	ctnMap.put("accountBalance",row[24]);
+	ctnMap.put("subscriberStatus",row[10]);
+	ctnMap.put("subscriberStatusReason",row[11]);
+	ctnMap.put("subscriberStatusDate",row[12]);
+	ctnMap.put("subscriberRatePlan",row[13]);
+	ctnMap.put("subscriberPortStatus",row[14]);
+	
+	subNameMap.put("firstName",row[15]);
+	subNameMap.put("paternalLastName",row[16]);
+	subNameMap.put("maternalLastName",row[17]);
+	
+	ctnMap.put("subscriberName",subNameMap);
+	
+	
+	
+    adrressMap.put("street",row[18]);
+	adrressMap.put("streetNumber",row[19]);
+	adrressMap.put("apartmentNumber",row[20]);
+	adrressMap.put("city/town",row[21]);
+	adrressMap.put("postCode",row[22]);
+	adrressMap.put("state/province",row[23]);
+	
+	
+	ctnMap.put("subscriberAddress",adrressMap);
+	
+	accountCTNMap.add(ctnMap);
+}
+
+overallCtnMap.put("results",accountCTNMap);
+
+return overallCtnMap;
+	
+</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="CTN" id="fi.WS.wsGetAT_CTNinfo.0" index="0" dataType="String">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="wsResutls" id="fo.WS.wsGetAT_CTNinfo.0" index="0" dataType="Object">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

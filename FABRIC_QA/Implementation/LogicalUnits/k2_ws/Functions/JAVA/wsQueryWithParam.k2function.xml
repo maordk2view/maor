@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>wsQueryWithParam</Name>
+  <ID>JAVA.wsQueryWithParam</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>WebService</FunctionType>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>DBExecute("fabric","get AT1.4333",null);
+Map&lt;String, String&gt; data = new HashMap&lt;String, String&gt;();
+String q = "select LEGAL_NAME from M_yp_customer where SEARCH_LEGAL_NAME=?";
+Object[] valuesArr = {searchName};
+Object name = DBSelectValue("fabric", q, valuesArr);
+return name.toString();
+</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="searchName" id="fi.JAVA.wsQueryWithParam.0" index="0" dataType="String">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="legalName" id="fo.JAVA.wsQueryWithParam.0" index="0" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

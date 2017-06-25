@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>getCustType</Name>
+  <ID>JAVA.getCustType</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>
+
+
+String sql = "select getNewUdacDesc2('RIGRA', 1, 'Y') FROM M_YP_CUSTOMER ";
+
+String sql1 = "select CTCR_BATCH_PROG_DT FROM M_YP_CUSTOMER";
+
+String sql2 = "select CUSTOMER_TYPE FROM M_YP_CUSTOMER";
+
+Object cust_type = DBSelectValue("ludb", sql2, null);
+
+Object hbd = DBSelectValue("ludb", sql, null);
+
+Object date = DBSelectValue("ludb", sql1, null);
+
+
+if (product_issue_num == 2008 || product_issue_num == 2005)
+	rejectRecord ("Trn product record was rejected in getCustType " + prd_cd);
+
+String entity = getInstanceID();
+String new_cust_type = java_concat_str ((String)cust_type, "_NEW");
+String o_entity=entity;
+return  new Object[] {(String)hbd, (String)date, entity, concat ("A", "_B"), new_cust_type, LU_NAME, CONV_NO} ;</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="prd_cd" id="fi.JAVA.getCustType.0" index="0" dataType="String">
+      <Comment />
+    </Input>
+    <Input name="product_issue_num" id="fi.JAVA.getCustType.1" index="1" dataType="Integer">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="hbd" id="fo.JAVA.getCustType.0" index="0" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="o_date" id="fo.JAVA.getCustType.1" index="1" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="o_entity_id" id="fo.JAVA.getCustType.2" index="2" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="con_lu" id="fo.JAVA.getCustType.3" index="3" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="new_cust_type" id="fo.JAVA.getCustType.4" index="4" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="global_lu" id="fo.JAVA.getCustType.5" index="5" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="global_sh" id="fo.JAVA.getCustType.6" index="6" dataType="Integer">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.8.0.10">
+  <Name>vdb</Name>
+  <RootView>Clients</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <EnableDataEncryption>false</EnableDataEncryption>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>Clients</Table>
+    <Table>Clients_Media</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="Clients">
+      <Populations>
+        <Population id="query_Clients" name="query_Clients" order="1" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="Clients_Media">
+      <Populations>
+        <Population id="query_Clients_Media" name="query_Clients_Media" order="2" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="false" name="FUN_REF_UDAC" />
+    <Item active="false" name="MS_REF_UDAC" />
+    <Item active="false" name="REF_SERVICE_AGREEMENT" />
+    <Item active="false" name="REF_YP_PRODUCT_TRN" />
+    <Item active="false" name="test_YP_REF_UDAC" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="46">
+      <From tableType="TableObject" table="Clients" column="Reg_date" columnId="tblCol_356f7ce5a83940dfbb06562fd5c41fb7" />
+      <To tableType="TableObject" table="Clients_Media" populationObjectName="query_Clients_Media" column="updated_on" columnId="queryCol_5" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

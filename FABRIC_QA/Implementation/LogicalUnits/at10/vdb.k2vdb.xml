@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.1.1.0">
+  <Name>vdb</Name>
+  <RootView>ELI_COMP</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>ELI_COMP</Table>
+    <Table>ELI_EMP</Table>
+    <Table>eli_ref</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="ELI_COMP">
+      <Populations>
+        <Population id="query_ELI_COMP" name="query_ELI_COMP" order="1" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="ELI_EMP">
+      <Populations>
+        <Population id="poplateFN" name="poplateFN" order="3" />
+        <Population id="query_ELI_EMP" name="query_ELI_EMP" order="4" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="eli_ref">
+      <Populations>
+        <Population id="eli_ref_pop" name="eli_ref_pop" order="6" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="true" name="FUN_REF_UDAC" />
+    <Item active="false" name="MS_REF_UDAC" />
+    <Item active="false" name="REF_SERVICE_AGREEMENT" />
+    <Item active="false" name="REF_YP_PRODUCT_TRN" />
+    <Item active="false" name="test_YP_REF_UDAC" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="488">
+      <From tableType="TableObject" table="ELI_COMP" column="ID" columnId="tblCol_db27c7401c7b4bc787560bf235db54dd" />
+      <To tableType="TableObject" table="ELI_EMP" populationObjectName="poplateFN" column="in" columnId="fi_10.0" />
+    </Relation>
+    <Relation id="946">
+      <From tableType="TableObject" table="ELI_COMP" column="ID" columnId="tblCol_db27c7401c7b4bc787560bf235db54dd" />
+      <To tableType="TableObject" table="ELI_EMP" populationObjectName="query_ELI_EMP" column="COMP_ID" columnId="queryCol_2" />
+    </Relation>
+    <Relation id="1178">
+      <From tableType="TableObject" table="ELI_EMP" column="COMP_ID" columnId="tblCol_6364b4af1357475c9f8e821a41c75660" />
+      <To tableType="TableObject" table="eli_ref" populationObjectName="eli_ref_pop" column="COMP_ID" columnId="queryCol_2" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

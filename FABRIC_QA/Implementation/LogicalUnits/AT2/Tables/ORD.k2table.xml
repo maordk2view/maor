@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ORD</Name>
+  <ID>tbl_ORD</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="BAN" id="tblCol_1a0934151a344bb9ab9379cf4f47249d" index="0" datatype="Integer" mandatory="true" />
+    <Column name="SYS_CREATION_DATE" id="tblCol_c94b355390cc45b1b2fbeec5b6f94439" index="1" datatype="Text" mandatory="true" />
+    <Column name="SYS_UPDATE_DATE" id="tblCol_aafc89ce02d94511a8df1e2d772932ff" index="2" datatype="Text" />
+    <Column name="OPERATOR_ID" id="tblCol_8ac6fa556f1a40be9087bbf4140e898e" index="3" datatype="Integer" />
+    <Column name="APPLICATION_ID" id="tblCol_cdb394f137974e20ba082ee120508867" index="4" datatype="Text" />
+    <Column name="DL_SERVICE_CODE" id="tblCol_e98c160b3916479a93129aecf13f9f60" index="5" datatype="Text" mandatory="true" />
+    <Column name="DL_UPDATE_STAMP" id="tblCol_3249c1afef3840d3bf361aff7044170b" index="6" datatype="Integer" />
+    <Column name="AR_EXCPT_ACCT_IND" id="tblCol_4a2a46be03724bd4a9d907cdb3afd6bc" index="7" datatype="Text" mandatory="true" />
+    <Column name="ACCOUNT_TYPE" id="tblCol_43f92e5235484cdfa1a762db95ecb056" index="8" datatype="Text" mandatory="true" />
+    <Column name="BILL_CYCLE" id="tblCol_4990bca31b4549e687723428fcd199e2" index="9" datatype="Integer" mandatory="true" />
+    <Column name="AR_BALANCE" id="tblCol_848b506f2a6648c8b86d8159f8968f26" index="10" datatype="Real" mandatory="true" />
+    <Column name="BAN_STATUS" id="tblCol_f49aca584595450f91baa4659c3004ae" index="11" datatype="Text" mandatory="true" />
+    <Column name="HIST_LAST_DATE" id="tblCol_3c122a92404b42babced9229ef0987d6" index="12" datatype="Text" />
+    <Column name="STATUS_LAST_DATE" id="tblCol_eb890bddc1d94d2da36f31b14405f844" index="13" datatype="Text" />
+    <Column name="STATUS_ACTV_CODE" id="tblCol_87264b42b6444aefb933fe6d5216e5e1" index="14" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

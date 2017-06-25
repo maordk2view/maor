@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_PATIENT</ID>
+  <PopulationObjectName>query_PATIENT</PopulationObjectName>
+  <TableName>PATIENT</TableName>
+  <RootItemID>query_query_PATIENT</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="PATIENT_ID" id="queryCol_0" dataType="Text" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_PATIENT" name="query_PATIENT" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="HIS_DB">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="PATIENT_ID" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="SSN" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="FIRST_NAME" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="LAST_NAME" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="ADDRESS" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="CITY" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_6" name="ZIP" dataType="Text" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_7" name="STATE" dataType="Text" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_8" name="COUNTRY" dataType="Text" index="8" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM PATIENT]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="22" fromNodeOrder="0" fromItemID="query_query_PATIENT" fromColID="queryCol_0" toItemID="tbl_PATIENT" toColID="tblCol_60543195867b4b529de59f694a16af11" />
+    <Link partId="23" fromNodeOrder="0" fromItemID="query_query_PATIENT" fromColID="queryCol_1" toItemID="tbl_PATIENT" toColID="tblCol_04c575f76407480093b0d8e34d0e99b9" />
+    <Link partId="24" fromNodeOrder="0" fromItemID="query_query_PATIENT" fromColID="queryCol_2" toItemID="tbl_PATIENT" toColID="tblCol_7862af3685e649498abd98c2c4e7196b" />
+    <Link partId="25" fromNodeOrder="0" fromItemID="query_query_PATIENT" fromColID="queryCol_3" toItemID="tbl_PATIENT" toColID="tblCol_8aa675d3b69542f898ee38ee3c0f4804" />
+    <Link partId="27" fromNodeOrder="0" fromItemID="query_query_PATIENT" fromColID="queryCol_5" toItemID="tbl_PATIENT" toColID="tblCol_96d58cac87914065871ed3decfaf108c" />
+    <Link partId="26" fromNodeOrder="0" fromItemID="query_query_PATIENT" fromColID="queryCol_4" toItemID="tbl_PATIENT" toColID="tblCol_184da9d17fa54118b1ba952d6cd74103" />
+    <Link partId="28" fromNodeOrder="0" fromItemID="query_query_PATIENT" fromColID="queryCol_6" toItemID="tbl_PATIENT" toColID="tblCol_0eb41b5572994b2eaae27c724b03c67b" />
+    <Link partId="29" fromNodeOrder="0" fromItemID="query_query_PATIENT" fromColID="queryCol_7" toItemID="tbl_PATIENT" toColID="tblCol_ddcf7e031ed54ea0a4639b51b5f9da75" />
+    <Link partId="30" fromNodeOrder="0" fromItemID="query_query_PATIENT" fromColID="queryCol_8" toItemID="tbl_PATIENT" toColID="tblCol_fe60617cdfd046ac9cf22d00e4d5866e" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

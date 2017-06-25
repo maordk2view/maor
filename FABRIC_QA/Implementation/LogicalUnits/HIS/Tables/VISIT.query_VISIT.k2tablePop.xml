@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_VISIT</ID>
+  <PopulationObjectName>query_VISIT</PopulationObjectName>
+  <TableName>VISIT</TableName>
+  <RootItemID>query_query_VISIT</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="PATIENT_ID" id="queryCol_0" dataType="Text" index="0" />
+    <Arg name="VISIT_ID" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="VISIT_DATE" id="queryCol_2" dataType="Text" index="2" />
+    <Arg name="STATUS" id="queryCol_3" dataType="Text" index="3" />
+    <Arg name="PHYSICIAN" id="queryCol_4" dataType="Text" index="4" />
+    <Arg name="DIAGNOSIS" id="queryCol_5" dataType="Text" index="5" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_VISIT" name="query_VISIT" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="ORACLE_HIS">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="PATIENT_ID" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="VISIT_ID" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="VISIT_DATE" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="STATUS" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="PHYSICIAN" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="DIAGNOSIS" dataType="Text" index="5" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM VISIT]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="16" fromNodeOrder="0" fromItemID="query_query_VISIT" fromColID="queryCol_0" toItemID="tbl_VISIT" toColID="tblCol_ef173cc3c9aa45dcb901a22ee399a29f" />
+    <Link partId="17" fromNodeOrder="0" fromItemID="query_query_VISIT" fromColID="queryCol_1" toItemID="tbl_VISIT" toColID="tblCol_e16a8b00db6c4d6c90e61021fad81717" />
+    <Link partId="18" fromNodeOrder="0" fromItemID="query_query_VISIT" fromColID="queryCol_2" toItemID="tbl_VISIT" toColID="tblCol_b47cfef8ab5440b38085a8c3d1c14ce3" />
+    <Link partId="19" fromNodeOrder="0" fromItemID="query_query_VISIT" fromColID="queryCol_3" toItemID="tbl_VISIT" toColID="tblCol_ba598943604146de8979430ba928cabb" />
+    <Link partId="20" fromNodeOrder="0" fromItemID="query_query_VISIT" fromColID="queryCol_4" toItemID="tbl_VISIT" toColID="tblCol_3f3bf63b167c4958a72a439e6a3f93fb" />
+    <Link partId="21" fromNodeOrder="0" fromItemID="query_query_VISIT" fromColID="queryCol_5" toItemID="tbl_VISIT" toColID="tblCol_5050663cdedd4e68a2f42de87e0261ec" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="3.2.0.0">
+  <Name>fnRtSwitch</Name>
+  <ID>Parser.fnRtSwitch</ID>
+  <Category>Parser</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>RegularFunction</FunctionType>
+  <FunctionType2>SwitchFunction</FunctionType2>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String key = mapIn.get("0").toString();
+if(key.equals("100")){
+	return new Object [] {mapIn, null};
+}else{
+	return new Object [] {null, mapIn};
+}</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="mapIn" id="fi.Parser.fnRtSwitch.0" index="0" dataType="Map&lt;String,Object&gt;" />
+  </InputParams>
+  <OutputParams>
+    <Output name="mapRT1" id="fo.Parser.fnRtSwitch.0" index="0" dataType="Map&lt;String,Object&gt;" />
+    <Output name="mapRT2" id="fo.Parser.fnRtSwitch.1" index="1" dataType="Map&lt;String,Object&gt;" />
+  </OutputParams>
+</KFunction>

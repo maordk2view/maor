@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>wsPreparedStatementTestD</Name>
+  <ID>JAVA.wsPreparedStatementTestD</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>WebService</FunctionType>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>DBExecute("fabric", "use AT1", null);
+return DBSelectValue("fabric", "select customer_id from m_yp_customer where customer_id = ? and contact_id &lt;&gt; ?", new Object[] {id,contactid});</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="id" id="fi.JAVA.wsPreparedStatementTestD.0" index="0" dataType="Integer">
+      <Comment />
+    </Input>
+    <Input name="contactid" id="fi.JAVA.wsPreparedStatementTestD.1" index="1" dataType="Integer">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="result" id="fo.JAVA.wsPreparedStatementTestD.0" index="0" dataType="Object">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

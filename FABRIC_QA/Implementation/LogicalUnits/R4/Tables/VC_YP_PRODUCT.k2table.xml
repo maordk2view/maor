@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>VC_YP_PRODUCT</Name>
+  <ID>tbl_VC_YP_PRODUCT</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="CUSTOMER_ID" id="tblCol_bb30470a8e2046f6a559dec7370b3277" index="0" datatype="integer" />
+    <Column name="PRODUCT_CODE" id="tblCol_5c1dc99951e04c6c917d3d9005ea53f7" index="1" datatype="text" />
+    <Column name="PRODUCT_ISSUE_NUM" id="tblCol_3fdb3af063e14adaa2d2ac14921aa598" index="2" datatype="integer" />
+    <Column name="SOURCE" id="tblCol_97b1f1c48b4c4fc89c328524b0c3f6fa" index="3" datatype="text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

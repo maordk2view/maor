@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.2.0.0">
+  <Name>vdb</Name>
+  <RootView>tbl</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>tbl</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="tbl">
+      <Populations>
+        <Population id="tinytbl" name="tinytbl" order="1" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="false" name="FUN_REF_UDAC" />
+    <Item active="false" name="MS_REF_UDAC" />
+    <Item active="false" name="REF_SERVICE_AGREEMENT" />
+    <Item active="false" name="REF_YP_PRODUCT_TRN" />
+    <Item active="false" name="test_YP_REF_UDAC" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations />
+</VirtualDB>

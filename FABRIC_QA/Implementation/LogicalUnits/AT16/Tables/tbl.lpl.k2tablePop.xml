@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>lpl</ID>
+  <PopulationObjectName>lpl</PopulationObjectName>
+  <TableName>tbl</TableName>
+  <RootItemID>query_query_tests_root</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="end" id="queryCol_0" dataType="Text" index="0" />
+    <Arg name="start" id="queryCol_1" dataType="Text" index="1" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_tests_root" name="query_tests_root" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="CASS_Local">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="end" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="start" dataType="Text" index="1" />
+      </OutputsList>
+      <SQL><![CDATA[select * from tests.root]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="9" fromNodeOrder="0" fromItemID="query_query_tests_root" fromColID="queryCol_1" toItemID="tbl_tbl" toColID="tblCol_f3056b5c69104463850ad60b4508b90a" />
+    <Link partId="8" fromNodeOrder="0" fromItemID="query_query_tests_root" fromColID="queryCol_0" toItemID="tbl_tbl" toColID="tblCol_2c8c5704072e4025ba2d57c4b1046ece" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

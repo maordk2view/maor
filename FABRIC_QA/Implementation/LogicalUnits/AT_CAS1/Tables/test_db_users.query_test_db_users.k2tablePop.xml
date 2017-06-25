@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_test_db_users</ID>
+  <PopulationObjectName>query_test_db_users</PopulationObjectName>
+  <TableName>test_db_users</TableName>
+  <RootItemID>query_query_test_db_users</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="id" id="queryCol_0" dataType="Text" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_test_db_users" name="query_test_db_users" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="CASS_Local">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="id" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="name" dataType="Text" index="1" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM test_db.users]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="8" fromNodeOrder="0" fromItemID="query_query_test_db_users" fromColID="queryCol_0" toItemID="tbl_test_db_users" toColID="tblCol_4cf61ae12ad742b1b2f7071127a59590" />
+    <Link partId="9" fromNodeOrder="0" fromItemID="query_query_test_db_users" fromColID="queryCol_1" toItemID="tbl_test_db_users" toColID="tblCol_6557c6360bb94d33bafe02559bd616c5" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

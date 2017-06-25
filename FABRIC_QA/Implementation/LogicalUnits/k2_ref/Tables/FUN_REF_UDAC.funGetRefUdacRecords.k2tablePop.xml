@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>funGetRefUdacRecords</PopulationObjectName>
+  <TableName>FUN_REF_UDAC</TableName>
+  <ID>funGetRefUdacRecords</ID>
+  <RootItemID>f_3</RootItemID>
+  <Mode>Upsert</Mode>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments />
+  <ItemsList>
+    <Item id="f_3" name="funGetRefUdacRecords" nodeOrder="0" module="Function" fileName="funGetRefUdacRecords.k2function.xml">
+      <InputsList />
+      <OutputsList>
+        <Output id="fo_3.0" name="last_version_ind" />
+        <Output id="fo_3.1" name="udac_code" />
+        <Output id="fo_3.2" name="udac_desc" />
+      </OutputsList>
+    </Item>
+    <Item id="f_29" name="k2_concat5" nodeOrder="1" module="Function" fileName="k2_concat5.k2function.xml">
+      <InputsList>
+        <Input id="fi_29.0" name="i_str1" />
+        <Input id="fi_29.1" name="i_str2" />
+        <Input id="fi_29.2" name="i_str3" defaultValue="B" />
+        <Input id="fi_29.3" name="i_str4" />
+        <Input id="fi_29.4" name="i_str5" />
+        <Input id="fi_29.5" name="i_delimiter" defaultValue="_" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_29.0" name="o_str1" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="11" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.1" toItemID="tbl_FUN_REF_UDAC" toColID="tblCol_9795b0a7239448c48a502ece3749a801" />
+    <Link partId="10" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.0" toItemID="tbl_FUN_REF_UDAC" toColID="tblCol_310ed477565a47abaa71d1d3ad4ce9ae" />
+    <Link partId="12" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.2" toItemID="tbl_FUN_REF_UDAC" toColID="tblCol_fee05d662c0d4884940aff493cd45061" />
+    <Link partId="40" fromNodeOrder="1" fromItemID="f_29" fromColID="fo_29.0" toItemID="tbl_FUN_REF_UDAC" toColID="tblCol_87671f28ca274b40b789b55fb1f2f6e7" />
+    <Link partId="37" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.1" toItemID="f_29" toColID="fi_29.0" />
+    <Link partId="38" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.0" toItemID="f_29" toColID="fi_29.1" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

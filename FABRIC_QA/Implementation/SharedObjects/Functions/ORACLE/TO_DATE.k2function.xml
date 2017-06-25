@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>TO_DATE</Name>
+  <ID>ORACLE.TO_DATE</ID>
+  <Category>ORACLE</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>true</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc>oracle to_date()</Desc>
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>return OracleToDate.toDate(source,format);
+		 
+
+	
+
+</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="source" id="fi.ORACLE.TO_DATE.0" index="0" dataType="String">
+      <Comment />
+    </Input>
+    <Input name="format" id="fi.ORACLE.TO_DATE.1" index="1" dataType="String">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="out" id="fo.ORACLE.TO_DATE.0" index="0" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

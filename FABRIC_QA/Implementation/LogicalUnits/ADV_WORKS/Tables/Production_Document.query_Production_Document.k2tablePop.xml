@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_Production_Document</ID>
+  <PopulationObjectName>query_Production_Document</PopulationObjectName>
+  <TableName>Production_Document</TableName>
+  <RootItemID>query_query_Production_Document</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="DocumentNode" id="queryCol_0" dataType="Text" index="0" />
+    <Arg name="DocumentLevel" id="queryCol_1" dataType="Integer" index="1" />
+    <Arg name="Title" id="queryCol_2" dataType="Text" index="2" />
+    <Arg name="Owner" id="queryCol_3" dataType="Integer" index="3" />
+    <Arg name="FolderFlag" id="queryCol_4" dataType="Integer" index="4" />
+    <Arg name="FileName" id="queryCol_5" dataType="Text" index="5" />
+    <Arg name="FileExtension" id="queryCol_6" dataType="Text" index="6" />
+    <Arg name="Revision" id="queryCol_7" dataType="Text" index="7" />
+    <Arg name="ChangeNumber" id="queryCol_8" dataType="Integer" index="8" />
+    <Arg name="Status" id="queryCol_9" dataType="Integer" index="9" />
+    <Arg name="DocumentSummary" id="queryCol_10" dataType="Text" index="10" />
+    <Arg name="Document" id="queryCol_11" dataType="BLOB" index="11" />
+    <Arg name="rowguid" id="queryCol_12" dataType="Text" index="12" />
+    <Arg name="ModifiedDate" id="queryCol_13" dataType="Text" index="13" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_Production_Document" name="query_Production_Document" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="SqlServer_AdvWorks">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="DocumentNode" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="DocumentLevel" dataType="Integer" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="Title" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="Owner" dataType="Integer" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="FolderFlag" dataType="Integer" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="FileName" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_6" name="FileExtension" dataType="Text" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_7" name="Revision" dataType="Text" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_8" name="ChangeNumber" dataType="Integer" index="8" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_9" name="Status" dataType="Integer" index="9" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_10" name="DocumentSummary" dataType="Text" index="10" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_11" name="Document" dataType="BLOB" index="11" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_12" name="rowguid" dataType="Text" index="12" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_13" name="ModifiedDate" dataType="Text" index="13" />
+      </OutputsList>
+      <SQL><![CDATA[select * from Production.Document]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="32" fromNodeOrder="0" fromItemID="query_query_Production_Document" fromColID="queryCol_0" toItemID="tbl_Production_Document" toColID="tblCol_96c71b3f7d3a4ab881af17f2c2774e68" />
+    <Link partId="33" fromNodeOrder="0" fromItemID="query_query_Production_Document" fromColID="queryCol_1" toItemID="tbl_Production_Document" toColID="tblCol_30e15a33d67c42bc96fc636063b46562" />
+    <Link partId="34" fromNodeOrder="0" fromItemID="query_query_Production_Document" fromColID="queryCol_2" toItemID="tbl_Production_Document" toColID="tblCol_fd799a7f37af4219bbfc3b1ed7ecb533" />
+    <Link partId="35" fromNodeOrder="0" fromItemID="query_query_Production_Document" fromColID="queryCol_3" toItemID="tbl_Production_Document" toColID="tblCol_3d70dd13c4ba4c4b8684bc333d992ccc" />
+    <Link partId="36" fromNodeOrder="0" fromItemID="query_query_Production_Document" fromColID="queryCol_4" toItemID="tbl_Production_Document" toColID="tblCol_3a6273bd17a841848d2c7507f7f03523" />
+    <Link partId="37" fromNodeOrder="0" fromItemID="query_query_Production_Document" fromColID="queryCol_5" toItemID="tbl_Production_Document" toColID="tblCol_cd96a0b364804859a71f5955ff05b878" />
+    <Link partId="38" fromNodeOrder="0" fromItemID="query_query_Production_Document" fromColID="queryCol_6" toItemID="tbl_Production_Document" toColID="tblCol_4f746c7d7af24288bd8d55f0a601240b" />
+    <Link partId="39" fromNodeOrder="0" fromItemID="query_query_Production_Document" fromColID="queryCol_7" toItemID="tbl_Production_Document" toColID="tblCol_c54e034a139d49a2ba841f6bb587460e" />
+    <Link partId="40" fromNodeOrder="0" fromItemID="query_query_Production_Document" fromColID="queryCol_8" toItemID="tbl_Production_Document" toColID="tblCol_82e7dc4fb27747a4af01046292fc8987" />
+    <Link partId="41" fromNodeOrder="0" fromItemID="query_query_Production_Document" fromColID="queryCol_9" toItemID="tbl_Production_Document" toColID="tblCol_32449127db18446f95be8779785b84f8" />
+    <Link partId="42" fromNodeOrder="0" fromItemID="query_query_Production_Document" fromColID="queryCol_10" toItemID="tbl_Production_Document" toColID="tblCol_cb63d54a743c4180bc0f617e4e49b84d" />
+    <Link partId="43" fromNodeOrder="0" fromItemID="query_query_Production_Document" fromColID="queryCol_11" toItemID="tbl_Production_Document" toColID="tblCol_aed0e66996a74547af3ccd1de8dc265f" />
+    <Link partId="44" fromNodeOrder="0" fromItemID="query_query_Production_Document" fromColID="queryCol_12" toItemID="tbl_Production_Document" toColID="tblCol_27bbe81c81ae41e6819ce4a0e391c751" />
+    <Link partId="45" fromNodeOrder="0" fromItemID="query_query_Production_Document" fromColID="queryCol_13" toItemID="tbl_Production_Document" toColID="tblCol_5bf855bbcd4140919bc9b2240f1a5f35" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

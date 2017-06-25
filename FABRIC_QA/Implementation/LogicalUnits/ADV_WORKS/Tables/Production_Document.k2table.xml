@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Production_Document</Name>
+  <ID>tbl_Production_Document</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="DocumentNode" id="tblCol_96c71b3f7d3a4ab881af17f2c2774e68" index="0" datatype="Text" mandatory="true" />
+    <Column name="DocumentLevel" id="tblCol_30e15a33d67c42bc96fc636063b46562" index="1" datatype="Integer" />
+    <Column name="Title" id="tblCol_fd799a7f37af4219bbfc3b1ed7ecb533" index="2" datatype="Text" mandatory="true" />
+    <Column name="Owner" id="tblCol_3d70dd13c4ba4c4b8684bc333d992ccc" index="3" datatype="Integer" mandatory="true" />
+    <Column name="FolderFlag" id="tblCol_3a6273bd17a841848d2c7507f7f03523" index="4" datatype="Integer" mandatory="true" />
+    <Column name="FileName" id="tblCol_cd96a0b364804859a71f5955ff05b878" index="5" datatype="Text" mandatory="true" />
+    <Column name="FileExtension" id="tblCol_4f746c7d7af24288bd8d55f0a601240b" index="6" datatype="Text" mandatory="true" />
+    <Column name="Revision" id="tblCol_c54e034a139d49a2ba841f6bb587460e" index="7" datatype="Text" mandatory="true" />
+    <Column name="ChangeNumber" id="tblCol_82e7dc4fb27747a4af01046292fc8987" index="8" datatype="Integer" mandatory="true" />
+    <Column name="Status" id="tblCol_32449127db18446f95be8779785b84f8" index="9" datatype="Integer" mandatory="true" />
+    <Column name="DocumentSummary" id="tblCol_cb63d54a743c4180bc0f617e4e49b84d" index="10" datatype="Text" />
+    <Column name="Document" id="tblCol_aed0e66996a74547af3ccd1de8dc265f" index="11" datatype="BLOB" />
+    <Column name="rowguid" id="tblCol_27bbe81c81ae41e6819ce4a0e391c751" index="12" datatype="Text" mandatory="true" />
+    <Column name="ModifiedDate" id="tblCol_5bf855bbcd4140919bc9b2240f1a5f35" index="13" datatype="Text" mandatory="true" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

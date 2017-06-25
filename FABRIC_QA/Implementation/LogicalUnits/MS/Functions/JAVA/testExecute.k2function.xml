@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>testExecute</Name>
+  <ID>JAVA.testExecute</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String sql = "UPDATE YP_CUSTOMER SET SFA_ID = ? WHERE CUSTOMER_ID = ? ";
+
+String sql3 = "select new_concat ('A', '_B')";
+
+Object concat_sql = DBSelectValue("ludb", sql3, null);
+
+
+Object[] valuesArr = {"Rivi 12", cust_id};
+
+Boolean bool = DBExecute ("ludb", sql, valuesArr);
+
+String error = DBGetLastErrorStr();
+
+return  new Object[] {bool, error, concat_sql.toString()};</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="cust_id" id="fi.JAVA.testExecute.0" index="0" dataType="Integer">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="o_execute" id="fo.JAVA.testExecute.0" index="0" dataType="Boolean">
+      <Comment />
+    </Output>
+    <Output name="o_error" id="fo.JAVA.testExecute.1" index="1" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="o_con_sql" id="fo.JAVA.testExecute.2" index="2" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>getNewYp</Name>
+  <ID>ROOT.getNewYp</ID>
+  <Category>ROOT</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String sql = "SELECT I.CUSTOMER_ID, I.PRODUCT_CODE, I.PRODUCT_ISSUE_NUM, I.ITEM_ID, I.ITEM_VERSION, R.UDAC_DESC FROM yp_item I, MS_REF_UDAC R WHERE I.UDAC_CODE=R.UDAC_CODE";
+
+ResultSetWrapper rs = DBQuery("Ludb", sql, null);
+
+for (Object[] row : rs) {
+		yield (row);
+}
+</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>true</IsRootFunction>
+  <InputParams>
+    <Input name="CUSTOMER_ID" id="fi.ROOT.getNewYp.0" index="0" dataType="Long">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="CUSTOMER_ID" id="fo.ROOT.getNewYp.0" index="0" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="PRODUCT_CODE" id="fo.ROOT.getNewYp.1" index="1" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="PRODUCT_ISSUE_NUM" id="fo.ROOT.getNewYp.2" index="2" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="ITEM_ID" id="fo.ROOT.getNewYp.3" index="3" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="ITEM_VERSION" id="fo.ROOT.getNewYp.4" index="4" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="UDAC_DESC" id="fo.ROOT.getNewYp.5" index="5" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

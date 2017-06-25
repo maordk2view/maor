@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_HR_JOB_HISTORY</PopulationObjectName>
+  <TableName>HR_JOB_HISTORY</TableName>
+  <ID>query_HR_JOB_HISTORY</ID>
+  <RootItemID>query_query_HR_JOB_HISTORY</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="EMPLOYEE_ID" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="START_DATE" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="END_DATE" id="queryCol_2" dataType="Text" index="2" />
+    <Arg name="JOB_ID" id="queryCol_3" dataType="Text" index="3" />
+    <Arg name="DEPARTMENT_ID" id="queryCol_4" dataType="Integer" index="4" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_HR_JOB_HISTORY" name="query_HR_JOB_HISTORY" nodeOrder="0" module="DBQuery" connName="CUSTOMER_TEST">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="EMPLOYEE_ID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="START_DATE" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="END_DATE" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="JOB_ID" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="DEPARTMENT_ID" dataType="Integer" index="4" />
+      </OutputsList>
+      <SQL><![CDATA[select * from HR.JOB_HISTORY]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="14" fromNodeOrder="0" fromItemID="query_query_HR_JOB_HISTORY" fromColID="queryCol_0" toItemID="tbl_HR_JOB_HISTORY" toColID="tblCol_084dda6dd3c34ea39bfb01ac575fd411" />
+    <Link partId="15" fromNodeOrder="0" fromItemID="query_query_HR_JOB_HISTORY" fromColID="queryCol_1" toItemID="tbl_HR_JOB_HISTORY" toColID="tblCol_3f3c20bf34a9476b90f716e96931b2a2" />
+    <Link partId="16" fromNodeOrder="0" fromItemID="query_query_HR_JOB_HISTORY" fromColID="queryCol_2" toItemID="tbl_HR_JOB_HISTORY" toColID="tblCol_7ee84713367645828644b9958fd10609" />
+    <Link partId="17" fromNodeOrder="0" fromItemID="query_query_HR_JOB_HISTORY" fromColID="queryCol_3" toItemID="tbl_HR_JOB_HISTORY" toColID="tblCol_da0d9313f9f44fb989378a677d07c49d" />
+    <Link partId="18" fromNodeOrder="0" fromItemID="query_query_HR_JOB_HISTORY" fromColID="queryCol_4" toItemID="tbl_HR_JOB_HISTORY" toColID="tblCol_02a84dd458df41ceb1b0082f0f23fe2c" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_Production_WorkOrder</ID>
+  <PopulationObjectName>query_Production_WorkOrder</PopulationObjectName>
+  <TableName>Production_WorkOrder</TableName>
+  <RootItemID>query_query_Production_WorkOrder</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="WorkOrderID" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="ProductID" id="queryCol_1" dataType="Integer" index="1" />
+    <Arg name="OrderQty" id="queryCol_2" dataType="Integer" index="2" />
+    <Arg name="StockedQty" id="queryCol_3" dataType="Integer" index="3" />
+    <Arg name="ScrappedQty" id="queryCol_4" dataType="Integer" index="4" />
+    <Arg name="StartDate" id="queryCol_5" dataType="Text" index="5" />
+    <Arg name="EndDate" id="queryCol_6" dataType="Text" index="6" />
+    <Arg name="DueDate" id="queryCol_7" dataType="Text" index="7" />
+    <Arg name="ScrapReasonID" id="queryCol_8" dataType="Integer" index="8" />
+    <Arg name="ModifiedDate" id="queryCol_9" dataType="Text" index="9" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_Production_WorkOrder" name="query_Production_WorkOrder" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="SqlServer_AdvWorks">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="WorkOrderID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="ProductID" dataType="Integer" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="OrderQty" dataType="Integer" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="StockedQty" dataType="Integer" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="ScrappedQty" dataType="Integer" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="StartDate" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_6" name="EndDate" dataType="Text" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_7" name="DueDate" dataType="Text" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_8" name="ScrapReasonID" dataType="Integer" index="8" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_9" name="ModifiedDate" dataType="Text" index="9" />
+      </OutputsList>
+      <SQL><![CDATA[select * from Production.WorkOrder]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="24" fromNodeOrder="0" fromItemID="query_query_Production_WorkOrder" fromColID="queryCol_0" toItemID="tbl_Production_WorkOrder" toColID="tblCol_4c18b541f789438eac322711d6119bb8" />
+    <Link partId="25" fromNodeOrder="0" fromItemID="query_query_Production_WorkOrder" fromColID="queryCol_1" toItemID="tbl_Production_WorkOrder" toColID="tblCol_f4ff1a975cbe44d395c0f879e386ca4d" />
+    <Link partId="26" fromNodeOrder="0" fromItemID="query_query_Production_WorkOrder" fromColID="queryCol_2" toItemID="tbl_Production_WorkOrder" toColID="tblCol_90977e3b69a44295a721b2d072f706bf" />
+    <Link partId="27" fromNodeOrder="0" fromItemID="query_query_Production_WorkOrder" fromColID="queryCol_3" toItemID="tbl_Production_WorkOrder" toColID="tblCol_c61bea3263da44d38022dd2e87812bc5" />
+    <Link partId="28" fromNodeOrder="0" fromItemID="query_query_Production_WorkOrder" fromColID="queryCol_4" toItemID="tbl_Production_WorkOrder" toColID="tblCol_3742f6475ee743729cff5ed8c50e213e" />
+    <Link partId="29" fromNodeOrder="0" fromItemID="query_query_Production_WorkOrder" fromColID="queryCol_5" toItemID="tbl_Production_WorkOrder" toColID="tblCol_5fa119ecb4b94a5f8d39d348c173e6fd" />
+    <Link partId="30" fromNodeOrder="0" fromItemID="query_query_Production_WorkOrder" fromColID="queryCol_6" toItemID="tbl_Production_WorkOrder" toColID="tblCol_8f541b375c4840f4acff81a70d93302d" />
+    <Link partId="31" fromNodeOrder="0" fromItemID="query_query_Production_WorkOrder" fromColID="queryCol_7" toItemID="tbl_Production_WorkOrder" toColID="tblCol_e1503f83d0ae4273b3d006d41a590f78" />
+    <Link partId="32" fromNodeOrder="0" fromItemID="query_query_Production_WorkOrder" fromColID="queryCol_8" toItemID="tbl_Production_WorkOrder" toColID="tblCol_48e240e1811043e38f002b952e2938ba" />
+    <Link partId="33" fromNodeOrder="0" fromItemID="query_query_Production_WorkOrder" fromColID="queryCol_9" toItemID="tbl_Production_WorkOrder" toColID="tblCol_e3988e88195446d09793e94c7c8f3f98" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

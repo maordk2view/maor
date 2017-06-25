@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>k2_parseDBColumnValue</Name>
+  <ID>Utilities.k2_parseDBColumnValue</ID>
+  <Category>Utilities</Category>
+  <FunctionLevel>Product</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>PHP</Language>
+  <FunctionBody>if ($value == null){
+	return 'NULL';
+}else{
+	//if column type numeric
+	if (in_array(trim(strtolower($columnType)),array('int','integer','real','double','decimal','numeric','bool','boolean','number'))){
+		return $value;
+	}else{
+		return "'" . str_replace("'","''",$value) . "'";
+	}
+}</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <InputParams>
+    <Input name="value" id="fi.Utilities.k2_parseDBColumnValue.0" index="0" dataType="text" />
+    <Input name="columnType" id="fi.Utilities.k2_parseDBColumnValue.1" index="1" dataType="text" />
+  </InputParams>
+  <OutputParams />
+</KFunction>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>CUSTOMER</Name>
+  <ID>tbl_CUSTOMER</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="CUSTOMER_ID" id="tblCol_adedeb2d95834da09ad858187ce87f05" index="0" datatype="Integer" mandatory="true" />
+    <Column name="SYS_CREATION_DATE" id="tblCol_adfb5a9784f0476abb9f31e6f9057627" index="1" datatype="Text" mandatory="true" />
+    <Column name="SYS_UPDATE_DATE" id="tblCol_c073cef2de5b47659b58c228c0fafef8" index="2" datatype="Text" />
+    <Column name="OPERATOR_ID" id="tblCol_0945087b80284540bd6cb2f95dbf1b14" index="3" datatype="Integer" />
+    <Column name="APPLICATION_ID" id="tblCol_87d4d91f4e0e41b0bfaf07cb4a857ead" index="4" datatype="Text" />
+    <Column name="DL_SERVICE_CODE" id="tblCol_1c2e595d0356423286690af6c113fa08" index="5" datatype="Text" mandatory="true" />
+    <Column name="DL_UPDATE_STAMP" id="tblCol_ddd2634dbd2549e3b380693ce27db32e" index="6" datatype="Integer" />
+    <Column name="CUSTOMER_TYPE" id="tblCol_dd36d19f610545df8205a722706ad001" index="7" datatype="Text" />
+    <Column name="BUSINESS_TYPE" id="tblCol_283c191f8d744bf7a87ea7bf79f69504" index="8" datatype="Text" />
+    <Column name="CHANGE_AUTH_TELNO" id="tblCol_28008527a8504d1aaad9d0a16f3d91b1" index="9" datatype="Text" />
+    <Column name="CONTACT_TELNO" id="tblCol_91b6f22ae85946428a710f7d1e338f01" index="10" datatype="Text" />
+    <Column name="CONTACT_TN_EXTNO" id="tblCol_e4b07ce997674f84a9e893d720854dd8" index="11" datatype="Text" />
+    <Column name="CONTACT_FAXNO" id="tblCol_ce147309683f4fd1976ba09754845479" index="12" datatype="Text" />
+    <Column name="BUSINESS_ENTITY" id="tblCol_db1e3718e4d043dc83772d5f1409814b" index="13" datatype="Text" />
+    <Column name="CUSTOMER_SSN" id="tblCol_8894afae238048608d810b23c56cd677" index="14" datatype="Integer" />
+    <Column name="WORK_TELNO" id="tblCol_6dead47e06994746b5f7b8821848d7d3" index="15" datatype="Text" />
+    <Column name="WORK_TN_EXTNO" id="tblCol_1c696044886c4f319c8bcddba6ffe26f" index="16" datatype="Text" />
+    <Column name="HOME_TELNO" id="tblCol_01884e04583d4af594464b982f2aade9" index="17" datatype="Text" />
+    <Column name="BIRTH_DATE" id="tblCol_cca5754ec5d94fa2b51818c0dce84376" index="18" datatype="Text" />
+    <Column name="DRIVR_LICNS_NO" id="tblCol_3589d8117c844ea38cfdc06729a25c42" index="19" datatype="Text" />
+    <Column name="DRIVR_LICNS_STATE" id="tblCol_89ac60296b5c469e9d432ad080d9fb55" index="20" datatype="Text" />
+    <Column name="EMPLOYMENT_DT" id="tblCol_0ae677711835478f956e99d4f1722ccc" index="21" datatype="Text" />
+    <Column name="EMPLYR_NAME" id="tblCol_e2407fa94a9d49669522ba6f730cd3f3" index="22" datatype="Text" />
+    <Column name="TAX_ID" id="tblCol_bba79b8ce99f4a4e81de9b19dd3f836e" index="23" datatype="Integer" />
+    <Column name="EMPLOYEE_QTY" id="tblCol_b67e12618e574fe2aa537a481393af2f" index="24" datatype="Integer" />
+    <Column name="YEARS_IN_BUSINESS" id="tblCol_70395d1b63a04b3e8b0f98089179bfde" index="25" datatype="Integer" />
+    <Column name="SIC_CODE" id="tblCol_e18a4cb835784471988d1261c40431ec" index="26" datatype="Integer" />
+    <Column name="DEALER_CODE" id="tblCol_5dd552921f1d4728918531cce199e96a" index="27" datatype="Text" />
+    <Column name="MARKET_ID" id="tblCol_0b0db40db1a34a1e8a438a5470a6d85c" index="28" datatype="Text" />
+    <Column name="DRIVR_LICNS_EXP_DT" id="tblCol_8bdc0afbc04a4d0f8ec15d15d80cb269" index="29" datatype="Text" />
+    <Column name="EMPLOYEE_POSITION" id="tblCol_b1be6d0d216c424bb2b38ec58cdb6fd1" index="30" datatype="Text" />
+    <Column name="BUSINESS_NATURE" id="tblCol_891a127d7a9c484f83e2054b80e91c3a" index="31" datatype="Text" />
+    <Column name="BUSINESS_EST_DATE" id="tblCol_37f9f683d68f4343b96e92033bd4b4ee" index="32" datatype="Text" />
+    <Column name="GUR_CR_CARD_TYPE" id="tblCol_d1902739c3e344f09c32a19fe5e24ba3" index="33" datatype="Text" />
+    <Column name="GUR_CR_CARD_NO" id="tblCol_811f4f90b5214f94963da0558199b4dd" index="34" datatype="Text" />
+    <Column name="GUR_CR_CARD_EXP_DT" id="tblCol_3bc6277e4c484758b0a61aa5cab119ba" index="35" datatype="Text" />
+    <Column name="OTHER_TELNO" id="tblCol_a1a6cad5fbc446bebb3ada0fa8bb8cc0" index="36" datatype="Text" />
+    <Column name="OTHER_EXTNO" id="tblCol_606264cc44f34719a78c5cedc9496e21" index="37" datatype="Text" />
+    <Column name="OTHER_TN_TYPE" id="tblCol_e58919fac2bd4ab095cde1df9606f939" index="38" datatype="Text" />
+    <Column name="GOV_PUR_ORDER_ID" id="tblCol_eb5e5b2aad204cfca5bb399c422eccc4" index="39" datatype="Text" />
+    <Column name="GOV_PUR_EFF_DT" id="tblCol_e143947bb91f45498d628b905bd378c1" index="40" datatype="Text" />
+    <Column name="GOV_PUR_EXP_DT" id="tblCol_45766ee127a046ea8541fc5e93fc97be" index="41" datatype="Text" />
+    <Column name="GOV_PUR_COMMENT" id="tblCol_04d050f8a5494ef882c262bb2558ef19" index="42" datatype="Text" />
+    <Column name="ACC_PASSWORD" id="tblCol_ca5b12b710654fb3b56393c4556da2a0" index="43" datatype="Text" />
+    <Column name="VERIFIED_DATE" id="tblCol_817e5a963d7a405ea5395094f36c6599" index="44" datatype="Text" />
+    <Column name="CONV_RUN_NO" id="tblCol_7c32ec0b3eeb4431a88104053a10cd2e" index="45" datatype="Integer" />
+    <Column name="EMPLOYMENT_DATE" id="tblCol_da5bc1a76a834af1a0399eb4d388c5bb" index="46" datatype="Text" />
+    <Column name="LOCATION" id="tblCol_86ca38132b514250ae8b9e41e95c60a1" index="47" datatype="Text" />
+    <Column name="AGENT_CODE" id="tblCol_6068618eb1ae44c7b14e1364a431fa03" index="48" datatype="Text" />
+    <Column name="AGENT_LOCATION" id="tblCol_d98cbb2f2ed64cd98d4aac2475d1eedd" index="49" datatype="Text" />
+    <Column name="D2C" id="tblCol_9ecac74ce9d14b718f1d84f23b4cfb7b" index="50" datatype="Text" />
+    <Column name="AUTO_RESTRICT_IND" id="tblCol_b01c8fcaa64a4d478d2421d8cfd126f0" index="51" datatype="Text" />
+    <Column name="DLI_UPD_DATE" id="tblCol_f20eb304c5564d2e89f3bc46af4ed3f7" index="52" datatype="Text" />
+    <Column name="PORTING_PASSWORD" id="tblCol_ea2c48303dd84241b7d15f07224708be" index="53" datatype="Text" />
+    <Column name="BUSINESS_SUB_TYPE" id="tblCol_af6476f584734ac380227d28cf814b08" index="54" datatype="Text" />
+    <Column name="BUS_VIP_IND" id="tblCol_dd2002d86b5c4d01a9f42d29f6750da2" index="55" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

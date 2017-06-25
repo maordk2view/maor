@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>default_u_data</Name>
+  <ID>tbl_default_u_data</ID>
+  <EntityId>tblCol_6d5f916b6acf47248c59287a0c3f6310</EntityId>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="userid" id="tblCol_1e74c5924b79456fa42e7d2aacda961a" index="0" datatype="Integer" />
+    <Column name="movieid" id="tblCol_6d5f916b6acf47248c59287a0c3f6310" index="1" datatype="Integer" />
+    <Column name="rating" id="tblCol_cfb6dab310b04f9d8ee32a81fce884d7" index="2" datatype="Integer" />
+    <Column name="unixtime" id="tblCol_c278c4f01fb1485f80188fa67a764220" index="3" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

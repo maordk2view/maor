@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>enrichFunc</Name>
+  <ID>CAT1.enrichFunc</ID>
+  <Category>CAT1</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>RegularFunction</FunctionType>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String updateStr = "UPDATE PERSON SET STR = ? WHERE PERSON_ID=?";
+Object[] valuesArray = {"Sereen_2", "1" };
+String str = null;
+
+Boolean res = DBExecute("ludb" , updateStr, valuesArray);</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams />
+  <OutputParams />
+</KFunction>

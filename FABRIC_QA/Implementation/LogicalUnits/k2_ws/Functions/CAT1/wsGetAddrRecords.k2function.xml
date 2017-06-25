@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>wsGetAddrRecords</Name>
+  <ID>CAT1.wsGetAddrRecords</ID>
+  <Category>CAT1</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>WebService</FunctionType>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>DBExecute("fabric","get MS."+cust_id, null);
+
+String sql = "SELECT ADDRESS_ID, HOUSE_NO, COLONY_ID, STATE_CODE, ZIP_CODE, STREET_NAME, interior_number FROM YP_ADDRESS WHERE CUSTOMER_ID = ?";
+Object[] valuesArr = {cust_id};
+
+ResultSetWrapper rs = DBQuery("PG_SOURCE", sql, valuesArr);
+
+Map&lt;Integer, Object&gt; addr_data = new HashMap&lt;Integer, Object&gt;();
+Integer i=1;
+for (Object[] row : rs) {
+
+
+	row[1] = concat_shared (row[1].toString(), "_con_fun");
+	Object [] row2 = Arrays.copyOf(row,row.length+2);
+
+	String[] trnValues = {"SRL", "1"};
+
+	Map trn = getTranslationValues("trnProduct", trnValues);
+
+	row2[7] = (String) trn.get("PRD_CD_OUT");
+	
+	String sql1 = "select getNewUdacDesc2(HBD, 1, 'Y') FROM YP_CUSTOMER ";
+	row2[8] = DBSelectValue("fabric", sql1, null);
+  	
+	addr_data.put (i++, row2);
+}
+
+return  addr_data;</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="cust_id" id="fi.CAT1.wsGetAddrRecords.0" index="0" dataType="Integer">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="result" id="fo.CAT1.wsGetAddrRecords.0" index="0" dataType="Object">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

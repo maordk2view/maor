@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_Production_Illustration</ID>
+  <PopulationObjectName>query_Production_Illustration</PopulationObjectName>
+  <TableName>Production_Illustration</TableName>
+  <RootItemID>query_query_Production_Illustration</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="IllustrationID" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="Diagram" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="ModifiedDate" id="queryCol_2" dataType="Text" index="2" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_Production_Illustration" name="query_Production_Illustration" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="SqlServer_AdvWorks">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="IllustrationID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="Diagram" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="ModifiedDate" dataType="Text" index="2" />
+      </OutputsList>
+      <SQL><![CDATA[select * from Production.Illustration]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="10" fromNodeOrder="0" fromItemID="query_query_Production_Illustration" fromColID="queryCol_0" toItemID="tbl_Production_Illustration" toColID="tblCol_3abf792029064984a2019fa54626103c" />
+    <Link partId="11" fromNodeOrder="0" fromItemID="query_query_Production_Illustration" fromColID="queryCol_1" toItemID="tbl_Production_Illustration" toColID="tblCol_2fb54263b1de4556a837805a594b8904" />
+    <Link partId="12" fromNodeOrder="0" fromItemID="query_query_Production_Illustration" fromColID="queryCol_2" toItemID="tbl_Production_Illustration" toColID="tblCol_77aa909810f341fa883c4876bc2f069f" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

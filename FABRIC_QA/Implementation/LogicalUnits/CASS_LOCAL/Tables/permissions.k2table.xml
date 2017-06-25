@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>permissions</Name>
+  <ID>tbl_permissions</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="method" id="tblCol_981a1297dbe34c0d93d7c14f563af3df" index="0" datatype="Text" />
+    <Column name="permissions" id="tblCol_c34d6644e51d49da9252974e8f9d0370" index="1" datatype="Text" />
+    <Column name="role" id="tblCol_8cd804f13cd440d2b10a8d7822f9d746" index="2" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

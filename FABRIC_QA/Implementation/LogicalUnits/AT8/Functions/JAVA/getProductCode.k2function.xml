@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>getProductCode</Name>
+  <ID>JAVA.getProductCode</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>RegularFunction</FunctionType>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>DBExecute("cdbms","get AT8.4333", null);
+String SQL = "SELECT PRODUCT_CODE FROM P_YP_PRODUCT limit 1";
+Object output = DBSelectValue("cdbms", SQL, null);
+return (String)output;</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams />
+  <OutputParams>
+    <Output name="product_code" id="fo.JAVA.getProductCode.0" index="0" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

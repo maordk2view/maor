@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBConn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="DBConnOracle" name="PBG" type="Oracle" version="2.5.7.0">
+  <Active>true</Active>
+  <DataSource>10.21.1.159</DataSource>
+  <PortNum>1521</PortNum>
+  <DataBase>xe</DataBase>
+  <UserId>PBG</UserId>
+  <Password>zEeo9CtWmQElaophl6C0thl8gDZheLFEQLhqOMPyL3E=:lgZz8gT4XMTb4bz4IeCDGYenYVYVzd1BteMoc0BhJsQ=</Password>
+  <ProviderType>Native</ProviderType>
+</DBConn>

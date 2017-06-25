@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>getNewYp</PopulationObjectName>
+  <TableName>YP_ITEM_NEW</TableName>
+  <ID>getNewYp</ID>
+  <RootItemID>f_658</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="CUSTOMER_ID" id="fi_658.0" dataType="Long" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item id="f_658" name="getNewYp" nodeOrder="0" module="Function" fileName="getNewYp.k2function.xml">
+      <InputsList>
+        <Input id="fi_658.0" name="CUSTOMER_ID" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_658.0" name="CUSTOMER_ID" />
+        <Output id="fo_658.1" name="PRODUCT_CODE" />
+        <Output id="fo_658.2" name="PRODUCT_ISSUE_NUM" />
+        <Output id="fo_658.3" name="ITEM_ID" />
+        <Output id="fo_658.4" name="ITEM_VERSION" />
+        <Output id="fo_658.5" name="UDAC_DESC" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="670" fromNodeOrder="0" fromItemID="f_658" fromColID="fo_658.0" toItemID="tbl_YP_ITEM_NEW" toColID="tblCol_dbbbe955c6eb45ea97e3d8188e90426b" />
+    <Link partId="671" fromNodeOrder="0" fromItemID="f_658" fromColID="fo_658.1" toItemID="tbl_YP_ITEM_NEW" toColID="tblCol_dba5c51552fb406bb90c27f7f70055bc" />
+    <Link partId="672" fromNodeOrder="0" fromItemID="f_658" fromColID="fo_658.2" toItemID="tbl_YP_ITEM_NEW" toColID="tblCol_490f9de398664508b0333e5e32aa67b7" />
+    <Link partId="673" fromNodeOrder="0" fromItemID="f_658" fromColID="fo_658.3" toItemID="tbl_YP_ITEM_NEW" toColID="tblCol_3830ac033e864c1189cd7a94ed7b95bc" />
+    <Link partId="674" fromNodeOrder="0" fromItemID="f_658" fromColID="fo_658.4" toItemID="tbl_YP_ITEM_NEW" toColID="tblCol_148389fb5d1548439ab183c72b27d3dd" />
+    <Link partId="675" fromNodeOrder="0" fromItemID="f_658" fromColID="fo_658.5" toItemID="tbl_YP_ITEM_NEW" toColID="tblCol_40a2f21a59f144598e0ced568d71a4be" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_Production_ProductProductPhoto</ID>
+  <PopulationObjectName>query_Production_ProductProductPhoto</PopulationObjectName>
+  <TableName>Production_ProductProductPhoto</TableName>
+  <RootItemID>query_query_Production_ProductProductPhoto</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="ProductID" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="ProductPhotoID" id="queryCol_1" dataType="Integer" index="1" />
+    <Arg name="Primary" id="queryCol_2" dataType="Integer" index="2" />
+    <Arg name="ModifiedDate" id="queryCol_3" dataType="Text" index="3" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_Production_ProductProductPhoto" name="query_Production_ProductProductPhoto" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="SqlServer_AdvWorks">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="ProductID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="ProductPhotoID" dataType="Integer" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="Primary" dataType="Integer" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="ModifiedDate" dataType="Text" index="3" />
+      </OutputsList>
+      <SQL><![CDATA[select * from Production.ProductProductPhoto]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="12" fromNodeOrder="0" fromItemID="query_query_Production_ProductProductPhoto" fromColID="queryCol_0" toItemID="tbl_Production_ProductProductPhoto" toColID="tblCol_b19447ca8db84ac88a9b4160d1b21e75" />
+    <Link partId="13" fromNodeOrder="0" fromItemID="query_query_Production_ProductProductPhoto" fromColID="queryCol_1" toItemID="tbl_Production_ProductProductPhoto" toColID="tblCol_1c0a984ae5894fb4b8329c8af4c5e25c" />
+    <Link partId="14" fromNodeOrder="0" fromItemID="query_query_Production_ProductProductPhoto" fromColID="queryCol_2" toItemID="tbl_Production_ProductProductPhoto" toColID="tblCol_1b30dcf8b48b4f318f2249fb0594ea30" />
+    <Link partId="15" fromNodeOrder="0" fromItemID="query_query_Production_ProductProductPhoto" fromColID="queryCol_3" toItemID="tbl_Production_ProductProductPhoto" toColID="tblCol_1848bd35cd9d43bb8ac6e76cbe3481b3" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

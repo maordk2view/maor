@@ -1,0 +1,17 @@
+﻿<Graph name="YP_PRODUCT_ENRICH.query_yp_prod_enrich1.k2tablePop.bin" lastPartID="368">
+  <TableNode partID="0" name="YP_PRODUCT_ENRICH" pos="406.592072 31" width="309.731659" />
+  <DBQueryNode partID="13" name="ORA_SOURCE" pos="81 68" size="253 108.291656" isRoot="true">
+    <DBQuery>{"Name":"query_YP_PRODUCT","ID":"query_query_YP_PRODUCT","ConnName":"ORA_SOURCE","SQL":"Select YP_PRODUCT.CUSTOMER_ID,\r\n  YP_PRODUCT.PRODUCT_CODE,\r\n  YP_PRODUCT.PRODUCT_STATUS,\r\n  YP_PRODUCT.ACTIVITY_TYPE\r\nFrom YP_PRODUCT","ColumnsList":[{"ID":"queryCol_0","Name":"CUSTOMER_ID","DataType":"Integer","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"PRODUCT_CODE","DataType":"Text","Index":1,"IsInputArgument":true},{"ID":"queryCol_2","Name":"PRODUCT_STATUS","DataType":"Integer","Index":2,"IsInputArgument":true},{"ID":"queryCol_3","Name":"ACTIVITY_TYPE","DataType":"Integer","Index":3,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <ConstantMapNode partID="116" topLabel="con1" pos="397.4185 273" size="29.9804688 45.091156">
+    <KDataValue>{"ID":"c.116","DataValue":"4"}</KDataValue>
+  </ConstantMapNode>
+  <ConstantMapNode partID="156" topLabel="CUST" pos="518.8121 377" size="65.81201 45.091156">
+    <KDataValue>{"ID":"c.156","DataValue":"106812302"}</KDataValue>
+  </ConstantMapNode>
+  <Link partID="113" from="0" to="1" pointsArr="334 116.109375 344 116.109375 396.592072 74.109375 406.592072 74.109375" fromNodePartID="13" fromNodeColumnName="PRODUCT_CODE" toNodePartID="0" toNodeColumnName="PRODUCT_CODE" />
+  <Link partID="114" from="2" to="3" pointsArr="334 128.182281 344 128.182281 396.592072 86.18229 406.592072 86.18229" fromNodePartID="13" fromNodeColumnName="PRODUCT_STATUS" toNodePartID="0" toNodeColumnName="PRODUCT_STATUS" />
+  <Link partID="115" from="4" to="5" pointsArr="334 140.2552 344 140.2552 396.592072 98.2552 406.592072 98.2552" fromNodePartID="13" fromNodeColumnName="ACTIVITY_TYPE" toNodePartID="0" toNodeColumnName="ACTIVITY_TYPE" />
+  <Link partID="118" from="6" to="7" pointsArr="426.6501 298.091156 436.6501 298.091156 396.592072 182.76564 406.592072 182.76564" fromNodePartID="116" fromNodeColumnName="4" toNodePartID="0" toNodeColumnName="T1" />
+  <Link partID="368" from="8" to="9" pointsArr="334 104.036461 344 104.036461 396.592072 62.0364571 406.592072 62.0364571" fromNodePartID="13" fromNodeColumnName="CUSTOMER_ID" toNodePartID="0" toNodeColumnName="CUSTOMER_ID" />
+</Graph>

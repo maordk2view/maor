@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.2.0.0">
+  <Name>vdb</Name>
+  <RootView>WEB_LOG_ROOT</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>web_log_test1</Table>
+    <Table>WEB_LOG_ROOT</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="web_log_test1">
+      <Populations>
+        <Population id="pop_web_log_test1" name="pop_web_log_test1" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="WEB_LOG_ROOT">
+      <Populations>
+        <Population id="query_WEB_LOG_ROOT" name="query_WEB_LOG_ROOT" order="1" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="false" name="FUN_REF_UDAC" />
+    <Item active="false" name="MS_REF_UDAC" />
+    <Item active="false" name="REF_SERVICE_AGREEMENT" />
+    <Item active="false" name="REF_YP_PRODUCT_TRN" />
+    <Item active="false" name="test_YP_REF_UDAC" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="18">
+      <From tableType="TableObject" table="WEB_LOG_ROOT" column="ID" columnId="tblCol_249a7fe8132d47ca9095d72a6dc1d8f7" />
+      <To tableType="TableObject" table="web_log_test1" populationObjectName="pop_web_log_test1" column="person_id" columnId="rtCol_484f52ae392c413bb13277a74841ddd8" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

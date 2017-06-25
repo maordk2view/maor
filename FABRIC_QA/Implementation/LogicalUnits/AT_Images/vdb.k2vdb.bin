@@ -1,0 +1,5 @@
+﻿<Graph version="2.1.0.4" name="vdb.k2vdb.bin" lastPartID="56">
+  <Node id="0" partID="0" name="Images" isRootView="true" pos="71 65" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"Images","TablePopulationPropertiesList":[{"ID":"query_Images","Name":"query_Images","Order":1,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+</Graph>

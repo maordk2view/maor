@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>pop</ID>
+  <PopulationObjectName>pop</PopulationObjectName>
+  <TableName>SOURCE_CUSTOMER</TableName>
+  <RootItemID>query_query_YP_CUST_YP_CUSTOMER</RootItemID>
+  <LazyDataUpdate syncMethod="Inherited" performEvery="1.00:00:00">
+    <DecisionFunction>test</DecisionFunction>
+  </LazyDataUpdate>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="CUSTOMER_ID" id="queryCol_0" dataType="Integer" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_YP_CUST_YP_CUSTOMER" name="query_YP_CUST_YP_CUSTOMER" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="ORA_140">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="CUSTOMER_ID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="CUSTOMER_TYPE" dataType="Text" index="1" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM YP_CUST.YP_CUSTOMER]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="61" fromNodeOrder="0" fromItemID="query_query_YP_CUST_YP_CUSTOMER" fromColID="queryCol_0" toItemID="tbl_SOURCE_CUSTOMER" toColID="tblCol_d899ed2ce1c249b3b1901ecea4e84df9" />
+    <Link partId="62" fromNodeOrder="0" fromItemID="query_query_YP_CUST_YP_CUSTOMER" fromColID="queryCol_1" toItemID="tbl_SOURCE_CUSTOMER" toColID="tblCol_d84eb833a43742efa06606f7ec52c43a" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>funGetYpProduct</PopulationObjectName>
+  <TableName>YP_PRODUCT_FUN</TableName>
+  <ID>funGetYpProduct</ID>
+  <RootItemID>f_3</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="i_cust" id="fi_3.0" dataType="Integer" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item id="f_3" name="funGetYpProduct" nodeOrder="0" module="Function" fileName="funGetYpProduct.k2function.xml">
+      <InputsList>
+        <Input id="fi_3.0" name="i_cust" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_3.0" name="CUSTOMER_ID" />
+        <Output id="fo_3.1" name="PRODUCT_CODE" />
+        <Output id="fo_3.2" name="PRODUCT_ISSUE_NUM" />
+        <Output id="fo_3.3" name="PRODUCT_STATUS" />
+        <Output id="fo_3.4" name="RETIREMENT_STATUS" />
+        <Output id="fo_3.5" name="PROSPECT_CODE" />
+        <Output id="fo_3.6" name="PROSPECT_AGE" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="19" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.0" toItemID="tbl_YP_PRODUCT_FUN" toColID="tblCol_a587d6b4e268449fbc0a82e2b01fed66" />
+    <Link partId="20" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.1" toItemID="tbl_YP_PRODUCT_FUN" toColID="tblCol_3d3265f5f2df4ceeac9999bc41af05c7" />
+    <Link partId="21" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.2" toItemID="tbl_YP_PRODUCT_FUN" toColID="tblCol_c2e759ae64eb444ebb1c4a91203d2b4b" />
+    <Link partId="22" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.3" toItemID="tbl_YP_PRODUCT_FUN" toColID="tblCol_d7d8918f0685404ebe27a22f342252a4" />
+    <Link partId="23" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.4" toItemID="tbl_YP_PRODUCT_FUN" toColID="tblCol_c8f2ad96fcd842f3b1b7de4b79e47492" />
+    <Link partId="24" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.5" toItemID="tbl_YP_PRODUCT_FUN" toColID="tblCol_24d8ca62585b401b9796e39b28b36686" />
+    <Link partId="25" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.6" toItemID="tbl_YP_PRODUCT_FUN" toColID="tblCol_83e60cd228ca4011907f433fc97a5761" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="4.0.0.3">
+  <Name>fnFieldsRT2</Name>
+  <ID>Parser.fnFieldsRT2</ID>
+  <Category>Parser</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>RegularFunction</FunctionType>
+  <FunctionType2>RegularFunction</FunctionType2>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>//return new Object [] {map.get(""),map.get("")};
+return new Object [] {map.get("0"),map.get("1"),map.get("2"),map.get("3"),map.get("4"),map.get("5")};</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="map" id="fi.Parser.fnFieldsRT2.0" index="0" dataType="Map&lt;String,Object&gt;" />
+  </InputParams>
+  <OutputParams>
+    <Output name="col1" id="fo.Parser.fnFieldsRT2.0" index="0" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="col2" id="fo.Parser.fnFieldsRT2.1" index="1" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="col3" id="fo.Parser.fnFieldsRT2.2" index="2" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="col4" id="fo.Parser.fnFieldsRT2.3" index="3" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="col5" id="fo.Parser.fnFieldsRT2.4" index="4" dataType="String" />
+    <Output name="col6" id="fo.Parser.fnFieldsRT2.5" index="5" dataType="String" />
+  </OutputParams>
+</KFunction>

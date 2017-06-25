@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>HR_DEPARTMENTS</Name>
+  <ID>tbl_HR_DEPARTMENTS</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="DEPARTMENT_ID" id="tblCol_a6395238c9574444931bc0c4427d266d" index="0" datatype="Integer" mandatory="true" />
+    <Column name="DEPARTMENT_NAME" id="tblCol_fecc609ea97841c19e75265e892ca43f" index="1" datatype="Text" mandatory="true" />
+    <Column name="MANAGER_ID" id="tblCol_795cf2bb662b465883d3c85183416183" index="2" datatype="Integer" />
+    <Column name="LOCATION_ID" id="tblCol_00c53242549548b6b37197d847420cc0" index="3" datatype="Integer" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_a6395238c9574444931bc0c4427d266d" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

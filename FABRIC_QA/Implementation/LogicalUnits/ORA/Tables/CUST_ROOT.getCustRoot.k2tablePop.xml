@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>getCustRoot</PopulationObjectName>
+  <TableName>CUST_ROOT</TableName>
+  <ID>getCustRoot</ID>
+  <RootItemID>f_3</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="CUSTOMER_ID" id="fi_3.0" dataType="Integer" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item id="f_3" name="getCustRoot" nodeOrder="0" module="Function" fileName="getCustRoot.k2function.xml">
+      <InputsList>
+        <Input id="fi_3.0" name="CUSTOMER_ID" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_3.0" name="CUST_ID" />
+        <Output id="fo_3.1" name="CUSTOMER_TYPE" />
+        <Output id="fo_3.2" name="CUST_OPEN_DATE_TIME" />
+        <Output id="fo_3.3" name="CONTACT_ID" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="13" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.0" toItemID="tbl_CUST_ROOT" toColID="tblCol_a002dfb733b94bc5bc45d96446c7aa29" />
+    <Link partId="14" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.1" toItemID="tbl_CUST_ROOT" toColID="tblCol_0748048428494216b7a87dd51ab47f2c" />
+    <Link partId="15" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.2" toItemID="tbl_CUST_ROOT" toColID="tblCol_3e67cc2b7db94e71a38cc43bc0a560af" />
+    <Link partId="16" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.3" toItemID="tbl_CUST_ROOT" toColID="tblCol_56a1bc79b8ca4321913a44b35985d3af" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

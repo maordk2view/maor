@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>SERVICE_FEATURE</Name>
+  <ID>tbl_SERVICE_FEATURE</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="BAN" id="tblCol_de8f87357d1a4586af77ab4e18a3d6e5" index="0" datatype="Integer" mandatory="true" />
+    <Column name="SUBSCRIBER_NO" id="tblCol_2ea5b5283b3541dcbdbd562a22e8c681" index="1" datatype="Text" mandatory="true" />
+    <Column name="SOC" id="tblCol_65781f94560a4c75a6ea0c85f28355bc" index="2" datatype="Text" mandatory="true" />
+    <Column name="SOC_SEQ_NO" id="tblCol_c8113aca55004d1f96c4e67b2f9c1991" index="3" datatype="Integer" mandatory="true" />
+    <Column name="SERVICE_FTR_SEQ_NO" id="tblCol_01ae7de307104ef683a1e22e423c778a" index="4" datatype="Integer" mandatory="true" />
+    <Column name="SYS_CREATION_DATE" id="tblCol_e11aca89609f43eb8af2e0f87aa8ff42" index="5" datatype="Text" mandatory="true" />
+    <Column name="SYS_UPDATE_DATE" id="tblCol_f15e5a1596814d55a33432faa9fbcd53" index="6" datatype="Text" />
+    <Column name="OPERATOR_ID" id="tblCol_cdc59bad93514d6ebbea7571b6fb1ce4" index="7" datatype="Integer" />
+    <Column name="APPLICATION_ID" id="tblCol_02bf9f226b724a659e5ea6145bcc9c2d" index="8" datatype="Text" />
+    <Column name="DL_SERVICE_CODE" id="tblCol_81e5642a2b00495eae341c9f492c5c62" index="9" datatype="Text" mandatory="true" />
+    <Column name="DL_UPDATE_STAMP" id="tblCol_2747751d8f304b10a8daf77c9263ee4a" index="10" datatype="Integer" />
+    <Column name="SOC_EFFECTIVE_DATE" id="tblCol_9cddf689151949c8afefe0f22d6f7ba5" index="11" datatype="Text" mandatory="true" />
+    <Column name="CUSTOMER_ID" id="tblCol_23f46b21f96a4a4eb131bc7477c1a4fc" index="12" datatype="Integer" mandatory="true" />
+    <Column name="FEATURE_CODE" id="tblCol_e3fb53b7a3ca4a5e8a422cd493fccb7a" index="13" datatype="Text" mandatory="true" />
+    <Column name="SERVICE_TYPE" id="tblCol_6ce7cf69a8e24b859cd122eb5b83a352" index="14" datatype="Text" mandatory="true" />
+    <Column name="SOC_LEVEL_CODE" id="tblCol_2b499cf6abcd44dc943f9b16b6aec600" index="15" datatype="Text" mandatory="true" />
+    <Column name="FTR_EFFECTIVE_DATE" id="tblCol_523387742cc249b181b894b0b8666a0c" index="16" datatype="Text" mandatory="true" />
+    <Column name="FTR_EFF_RSN_CODE" id="tblCol_e2c73a1948c84fb39a9a7578b0215d6a" index="17" datatype="Text" />
+    <Column name="FTR_EXPIRATION_DATE" id="tblCol_ad1dda5a9ed148e2a421fe591b30be74" index="18" datatype="Text" />
+    <Column name="FTR_EXP_RSN_CODE" id="tblCol_6fa1feb9ee8a428ca5a3ad5d52784e3b" index="19" datatype="Text" />
+    <Column name="SERVICE_FTR_QTY" id="tblCol_a34fc1a207a94a4fbe176eddb8d6979b" index="20" datatype="Integer" mandatory="true" />
+    <Column name="FTR_SPECIAL_TELNO" id="tblCol_43e8f859916643519b6e8f12c7e7b3d7" index="21" datatype="Text" />
+    <Column name="FTR_SPECIAL_TN_DATE" id="tblCol_c79cf7e6c9d346078693bd474d54b7f8" index="22" datatype="Text" />
+    <Column name="PAGER_TYPE" id="tblCol_98dc592f83024ea89717de13853fd31d" index="23" datatype="Text" />
+    <Column name="PAGER_CLASS" id="tblCol_b74235c80d0e4d2aa5633d16c573a634" index="24" datatype="Text" />
+    <Column name="PAGER_TN" id="tblCol_cf250b12d67448a8ae9c3519665e395f" index="25" datatype="Text" />
+    <Column name="PAGER_PIN" id="tblCol_d6b1c9defa3f4e9397005ef81090123e" index="26" datatype="Integer" />
+    <Column name="RC_WAIVER_EFF_DATE" id="tblCol_b3008fb7ae604d5689e76b31238e8dbc" index="27" datatype="Text" />
+    <Column name="RC_WAIVER_EXPR_DATE" id="tblCol_0b5ac0c1450d4116aafe1d1089e3b27e" index="28" datatype="Text" />
+    <Column name="RC_WAIVER_RSN" id="tblCol_be9a950c8da346db92a48dee461415a5" index="29" datatype="Text" />
+    <Column name="RC_WAIVER_OPID" id="tblCol_acf89e63314f48fc8298a8b70e64fc23" index="30" datatype="Integer" />
+    <Column name="CONV_RUN_NO" id="tblCol_46fd6b369d6b4c3bb04cb541d45b957e" index="31" datatype="Integer" />
+    <Column name="LSA_CODE" id="tblCol_c97a0339a3714c608d273135dce1c2e4" index="32" datatype="Text" />
+    <Column name="FTR_EFF_ISSUE_DATE" id="tblCol_9b51f0c8cb374482a0339f7837a8429c" index="33" datatype="Text" />
+    <Column name="FTR_EXP_ISSUE_DATE" id="tblCol_3543c20f20f94242a697f1b671b8dded" index="34" datatype="Text" />
+    <Column name="FTR_TRX_ID" id="tblCol_34642b33efb842d290ae60562a129da3" index="35" datatype="Integer" />
+    <Column name="FTR_PREV_SEQ_NO" id="tblCol_5dec3e728dc346f28000c29ed7cdbd0a" index="36" datatype="Integer" />
+    <Column name="FTR_SOC_VER_NO" id="tblCol_c3d9c134f73e4ce78653ef240da66e19" index="37" datatype="Integer" mandatory="true" />
+    <Column name="FTR_VAD_TN" id="tblCol_8a6887a80f77444491cbf841b191d476" index="38" datatype="Text" />
+    <Column name="FTR_ADD_SW_PRM" id="tblCol_19f5ad80d1eb43ffb52ecfdbbadb9338" index="39" datatype="Text" />
+    <Column name="FTR_INS_TRX_ID" id="tblCol_0867ece3d5524fc58295dfd893e3a555" index="40" datatype="Integer" />
+    <Column name="PRODUCT_TYPE" id="tblCol_ec72b0436096414898ee07047be9da99" index="41" datatype="Text" mandatory="true" />
+    <Column name="MSISDN" id="tblCol_60793b12699d48018945da73c3a05e18" index="42" datatype="Text" />
+    <Column name="PRODUCT_SUB_TYPE" id="tblCol_eb6f7571e5d8430c81ee7b4e5d3dfad5" index="43" datatype="Text" />
+    <Column name="CUSTOMIZED_TYPE" id="tblCol_17a8ce2b32dc41fca107c4426f5da785" index="44" datatype="Text" />
+    <Column name="FTR_PARKING_IND" id="tblCol_c810052ac5814533b8f9c30f30f57bf6" index="45" datatype="Text" />
+    <Column name="GROUP_SOC_SEQ_NO" id="tblCol_dd713a44bfb24629b306cd9972b62c9e" index="46" datatype="Integer" />
+    <Column name="GROUP_FTR_SEQ_NO" id="tblCol_0d77b0efe5f440a9bc1f9ef1ad0139b1" index="47" datatype="Integer" />
+    <Column name="GLPP_ID" id="tblCol_57a13df6097a4b7b93ffd10c052093fb" index="48" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>dbQueryTest</Name>
+  <ID>JAVA.dbQueryTest</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String sql = "SELECT ADDRESS_ID, HOUSE_NO FROM YP_ADDRESS WHERE CUSTOMER_ID = ? ";
+
+Object[] valuesArr = {cust_id};
+
+ResultSetWrapper rs = DBQuery("PG_SOURCE", sql, valuesArr);
+Iterator&lt;Object[]&gt; rsItr = rs.iterator();
+String house_no = "";
+Integer address_sum = 0;
+String add_str = ""; 
+BigDecimal bigDec = new  BigDecimal (0);
+
+while(rsItr.hasNext()) {
+	Object [] row = rsItr.next();
+	bigDec = (BigDecimal)row[0];
+	address_sum = address_sum + bigDec.intValue();
+	//address_sum = address_sum + Integer.valueOf((String) row[0]);
+    add_str = add_str + "_" + row[0];	
+	house_no = house_no + "_" + row[1];	
+}
+
+return new Object[] {house_no, address_sum, add_str} ;</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <InputParams>
+    <Input name="cust_id" id="fi.JAVA.dbQueryTest.0" index="0" dataType="Integer">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="house_nm_str" id="fo.JAVA.dbQueryTest.0" index="0" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="address_sum" id="fo.JAVA.dbQueryTest.1" index="1" dataType="Integer">
+      <Comment />
+    </Output>
+    <Output name="add_str" id="fo.JAVA.dbQueryTest.2" index="2" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

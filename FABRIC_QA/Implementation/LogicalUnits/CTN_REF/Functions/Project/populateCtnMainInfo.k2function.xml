@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>populateCtnMainInfo</Name>
+  <ID>Project.populateCtnMainInfo</ID>
+  <Category>Project</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>RegularFunction</FunctionType>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String accountNumber = "9876543212";
+String carrier = "Nextel";
+String account = "Postpaid";
+Integer accountBillCycle = (new Random().nextInt(3));
+String accountType = "Individual";
+String accountSubType = "Regular";
+String accountStatus = "Active";
+String accountStatusReason = "None";
+String accountStatusDate = "2015-10-23";
+String subscriberStatus = "Active";
+String subscriberStatusReason = "Not sure";
+String subscriberStatusDate = "2015-10-23";
+String subscriberRatePlan = "XXXXX";
+String subscriberPortStatus = "Complete";
+String subscriberFirstName = "Juan Antonio";
+String subscriberPaternalLastName = "Lopez";
+String subscriberMaternalLastName = "Rico";
+String street = "Straco";
+String streetNumber = "412";
+String apartmentNumber = "# 69";
+String city = "Puerto Vallarta";
+String postCode = "46800";
+String state = "JAL";
+
+Object row [] = {CTN,accountNumber,carrier,account,accountBillCycle,accountType,accountSubType,accountStatus,accountStatusReason,accountStatusDate,subscriberStatus,subscriberStatusReason,subscriberStatusDate,subscriberRatePlan,subscriberPortStatus,subscriberFirstName,subscriberPaternalLastName,subscriberMaternalLastName,street,streetNumber,apartmentNumber,city,postCode,state};
+yield(row);
+
+Object row1 [] = {CTN,"9876543213",carrier,account,accountBillCycle,accountType,accountSubType,accountStatus,accountStatusReason,accountStatusDate,subscriberStatus,subscriberStatusReason,subscriberStatusDate,subscriberRatePlan,subscriberPortStatus,subscriberFirstName,subscriberPaternalLastName,subscriberMaternalLastName,street,streetNumber,apartmentNumber,city,postCode,state};
+yield(row1);
+/*
+if (accountBillCycle == 0) {
+	throw new com.k2view.cdbms.exceptions.SyncSkipException();
+}
+*/
+Object row2 [] = {CTN,"9876543214",carrier,account,accountBillCycle,accountType,accountSubType,accountStatus,accountStatusReason,accountStatusDate,subscriberStatus,subscriberStatusReason,subscriberStatusDate,subscriberRatePlan,subscriberPortStatus,subscriberFirstName,subscriberPaternalLastName,subscriberMaternalLastName,street,streetNumber,apartmentNumber,city,postCode,state};
+yield(row2);
+</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>true</IsRootFunction>
+  <InputParams>
+    <Input name="CTN" id="fi.Project.populateCtnMainInfo.0" index="0" dataType="String">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="CTN" id="fo.Project.populateCtnMainInfo.0" index="0" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="accountNumber" id="fo.Project.populateCtnMainInfo.1" index="1" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="carrier" id="fo.Project.populateCtnMainInfo.2" index="2" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="account" id="fo.Project.populateCtnMainInfo.3" index="3" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="accountBillCycle" id="fo.Project.populateCtnMainInfo.4" index="4" dataType="Integer">
+      <Comment />
+    </Output>
+    <Output name="accountType" id="fo.Project.populateCtnMainInfo.5" index="5" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="accountSubType" id="fo.Project.populateCtnMainInfo.6" index="6" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="accountStatus" id="fo.Project.populateCtnMainInfo.7" index="7" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="accountStatusReason" id="fo.Project.populateCtnMainInfo.8" index="8" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="accountStatusDate" id="fo.Project.populateCtnMainInfo.9" index="9" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="subscriberStatus" id="fo.Project.populateCtnMainInfo.10" index="10" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="subscriberStatusReason" id="fo.Project.populateCtnMainInfo.11" index="11" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="subscriberStatusDate" id="fo.Project.populateCtnMainInfo.12" index="12" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="subscriberRatePlan" id="fo.Project.populateCtnMainInfo.13" index="13" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="subscriberPortStatus" id="fo.Project.populateCtnMainInfo.14" index="14" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="subscriberFirstName" id="fo.Project.populateCtnMainInfo.15" index="15" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="subscriberPaternalLastName" id="fo.Project.populateCtnMainInfo.16" index="16" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="subscriberMaternalLastName" id="fo.Project.populateCtnMainInfo.17" index="17" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="street" id="fo.Project.populateCtnMainInfo.18" index="18" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="streetNumber" id="fo.Project.populateCtnMainInfo.19" index="19" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="apartmentNumber" id="fo.Project.populateCtnMainInfo.20" index="20" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="city" id="fo.Project.populateCtnMainInfo.21" index="21" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="postCode" id="fo.Project.populateCtnMainInfo.22" index="22" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="state" id="fo.Project.populateCtnMainInfo.23" index="23" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

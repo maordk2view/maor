@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>HR_LOCATIONS</Name>
+  <ID>tbl_HR_LOCATIONS</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="LOCATION_ID" id="tblCol_bc15239d0e47458d87ebcbe707c6c811" index="0" datatype="Integer" mandatory="true" />
+    <Column name="STREET_ADDRESS" id="tblCol_86f5ca13cc404e199b48c9d5cebfbe59" index="1" datatype="Text" />
+    <Column name="POSTAL_CODE" id="tblCol_734112c561e6427fa5e7b1ee722bba52" index="2" datatype="Text" />
+    <Column name="CITY" id="tblCol_dc600947471f4ea4b1bcb61bca5c54d2" index="3" datatype="Text" mandatory="true" />
+    <Column name="STATE_PROVINCE" id="tblCol_22374689fdaf46a380c50f217a6f9d3c" index="4" datatype="Text" />
+    <Column name="COUNTRY_ID" id="tblCol_db13af84f05c40b4b1089698936d89af" index="5" datatype="Text" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_bc15239d0e47458d87ebcbe707c6c811" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

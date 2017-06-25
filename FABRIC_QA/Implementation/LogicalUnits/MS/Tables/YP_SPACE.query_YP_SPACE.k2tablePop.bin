@@ -1,0 +1,14 @@
+﻿<Graph name="YP_SPACE.query_YP_SPACE.k2tablePop.bin" lastPartID="77">
+  <TableNode partID="0" name="YP_SPACE" pos="308 5.854168" width="309.324219" />
+  <DBQueryNode partID="6" name="YP_TEST" pos="10 1.890625" size="253 156.583313" isRoot="true">
+    <DBQuery>{"Name":"query_YP_SPACE","ID":"query_6","ConnName":"YP_TEST","SQL":"select * from YP_SPACE","ColumnsList":[{"ID":"query_6.0","Name":"CUSTOMER ID","DataType":"Integer","Index":0,"IsInputArgument":true},{"ID":"query_6.1","Name":"S 1","DataType":"Text","Index":1,"IsInputArgument":true},{"ID":"query_6.2","Name":"S2","DataType":"Text","Index":2,"IsInputArgument":true},{"ID":"query_6.3","Name":"S 2","DataType":"Text","Index":3,"IsInputArgument":false},{"ID":"query_6.4","Name":"S-3","DataType":"Text","Index":4,"IsInputArgument":false},{"ID":"query_6.5","Name":"S#3","DataType":"Text","Index":5,"IsInputArgument":false},{"ID":"query_6.6","Name":"S*4","DataType":"Text","Index":6,"IsInputArgument":false},{"ID":"query_6.7","Name":"Aaaa","DataType":"Text","Index":7,"IsInputArgument":false}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="70" from="0" to="1" pointsArr="263 37.92708 273 37.92708 298 36.89062 308 36.89062" fromNodePartID="6" fromNodeColumnName="CUSTOMER ID" toNodePartID="0" toNodeColumnName="CUSTOMER ID" />
+  <Link partID="71" from="2" to="3" pointsArr="263 49.9999924 273 49.9999924 298 48.96354 308 48.96354" fromNodePartID="6" fromNodeColumnName="S 1" toNodePartID="0" toNodeColumnName="S 1" />
+  <Link partID="72" from="4" to="5" pointsArr="263 62.0729065 273 62.0729065 298 61.0364532 308 61.0364532" fromNodePartID="6" fromNodeColumnName="S2" toNodePartID="0" toNodeColumnName="S2" />
+  <Link partID="73" from="6" to="7" pointsArr="263 74.14583 273 74.14583 298 73.10937 308 73.10937" fromNodePartID="6" fromNodeColumnName="S 2" toNodePartID="0" toNodeColumnName="S 2" />
+  <Link partID="74" from="8" to="9" pointsArr="263 86.2187347 273 86.2187347 298 85.18228 308 85.18228" fromNodePartID="6" fromNodeColumnName="S-3" toNodePartID="0" toNodeColumnName="S-3" />
+  <Link partID="75" from="10" to="11" pointsArr="263 98.29166 273 98.29166 298 97.2551956 308 97.2551956" fromNodePartID="6" fromNodeColumnName="S#3" toNodePartID="0" toNodeColumnName="S_3" />
+  <Link partID="76" from="12" to="13" pointsArr="263 110.364578 273 110.364578 298 109.328117 308 109.328117" fromNodePartID="6" fromNodeColumnName="S*4" toNodePartID="0" toNodeColumnName="S_4" />
+  <Link partID="77" from="14" to="15" pointsArr="263 122.4375 273 122.4375 298 121.401039 308 121.401039" fromNodePartID="6" fromNodeColumnName="Aaaa" toNodePartID="0" toNodeColumnName="Aaaa" />
+</Graph>

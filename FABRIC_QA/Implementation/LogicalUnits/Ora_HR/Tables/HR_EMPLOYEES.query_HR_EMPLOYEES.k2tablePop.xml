@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_HR_EMPLOYEES</PopulationObjectName>
+  <TableName>HR_EMPLOYEES</TableName>
+  <ID>query_HR_EMPLOYEES</ID>
+  <RootItemID>query_query_HR_EMPLOYEES</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="EMPLOYEE_ID" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="FIRST_NAME" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="LAST_NAME" id="queryCol_2" dataType="Text" index="2" />
+    <Arg name="EMAIL" id="queryCol_3" dataType="Text" index="3" />
+    <Arg name="PHONE_NUMBER" id="queryCol_4" dataType="Text" index="4" />
+    <Arg name="HIRE_DATE" id="queryCol_5" dataType="Text" index="5" />
+    <Arg name="JOB_ID" id="queryCol_6" dataType="Text" index="6" />
+    <Arg name="SALARY" id="queryCol_7" dataType="Real" index="7" />
+    <Arg name="COMMISSION_PCT" id="queryCol_8" dataType="Real" index="8" />
+    <Arg name="MANAGER_ID" id="queryCol_9" dataType="Integer" index="9" />
+    <Arg name="DEPARTMENT_ID" id="queryCol_10" dataType="Integer" index="10" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_HR_EMPLOYEES" name="query_HR_EMPLOYEES" nodeOrder="0" module="DBQuery" connName="CUSTOMER_TEST">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="EMPLOYEE_ID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="FIRST_NAME" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="LAST_NAME" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="EMAIL" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="PHONE_NUMBER" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="HIRE_DATE" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_6" name="JOB_ID" dataType="Text" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_7" name="SALARY" dataType="Real" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_8" name="COMMISSION_PCT" dataType="Real" index="8" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_9" name="MANAGER_ID" dataType="Integer" index="9" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_10" name="DEPARTMENT_ID" dataType="Integer" index="10" />
+      </OutputsList>
+      <SQL><![CDATA[select * from HR.EMPLOYEES]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="26" fromNodeOrder="0" fromItemID="query_query_HR_EMPLOYEES" fromColID="queryCol_0" toItemID="tbl_HR_EMPLOYEES" toColID="tblCol_4f25e8593282449186a2f8afe219cfa3" />
+    <Link partId="27" fromNodeOrder="0" fromItemID="query_query_HR_EMPLOYEES" fromColID="queryCol_1" toItemID="tbl_HR_EMPLOYEES" toColID="tblCol_76a57ac690614ff7853d32a16e26c003" />
+    <Link partId="28" fromNodeOrder="0" fromItemID="query_query_HR_EMPLOYEES" fromColID="queryCol_2" toItemID="tbl_HR_EMPLOYEES" toColID="tblCol_c4ad2d5a02824d889b07020256fd8fe0" />
+    <Link partId="29" fromNodeOrder="0" fromItemID="query_query_HR_EMPLOYEES" fromColID="queryCol_3" toItemID="tbl_HR_EMPLOYEES" toColID="tblCol_fbe0f5d142e548e994b9c4fb24e83186" />
+    <Link partId="30" fromNodeOrder="0" fromItemID="query_query_HR_EMPLOYEES" fromColID="queryCol_4" toItemID="tbl_HR_EMPLOYEES" toColID="tblCol_945c895048a64f65a760f7d14fdf9942" />
+    <Link partId="31" fromNodeOrder="0" fromItemID="query_query_HR_EMPLOYEES" fromColID="queryCol_5" toItemID="tbl_HR_EMPLOYEES" toColID="tblCol_fd4238c192e44c3b92742fd26b0eb7d1" />
+    <Link partId="32" fromNodeOrder="0" fromItemID="query_query_HR_EMPLOYEES" fromColID="queryCol_6" toItemID="tbl_HR_EMPLOYEES" toColID="tblCol_1b1fe01948a24c6c81a9c9687e876d69" />
+    <Link partId="33" fromNodeOrder="0" fromItemID="query_query_HR_EMPLOYEES" fromColID="queryCol_7" toItemID="tbl_HR_EMPLOYEES" toColID="tblCol_a5874f27aa1d4e168fb76c55e1491617" />
+    <Link partId="34" fromNodeOrder="0" fromItemID="query_query_HR_EMPLOYEES" fromColID="queryCol_8" toItemID="tbl_HR_EMPLOYEES" toColID="tblCol_cc80b3fa7d824530980b0bb2806e9b2f" />
+    <Link partId="35" fromNodeOrder="0" fromItemID="query_query_HR_EMPLOYEES" fromColID="queryCol_9" toItemID="tbl_HR_EMPLOYEES" toColID="tblCol_e8cb6b0a25a24e70ab7a501485c566fa" />
+    <Link partId="36" fromNodeOrder="0" fromItemID="query_query_HR_EMPLOYEES" fromColID="queryCol_10" toItemID="tbl_HR_EMPLOYEES" toColID="tblCol_63471711b7c34c03aa5a4ff4a4e08f80" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_yp_cust_yp_address</ID>
+  <PopulationObjectName>query_yp_cust_yp_address</PopulationObjectName>
+  <TableName>yp_address</TableName>
+  <RootItemID>query_query_yp_cust_yp_address</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="address_id" id="queryCol_0" dataType="Real" index="0" />
+    <Arg name="customer_id" id="queryCol_1" dataType="Real" index="1" />
+    <Arg name="house_no" id="queryCol_2" dataType="Text" index="2" />
+    <Arg name="colony_id" id="queryCol_3" dataType="Real" index="3" />
+    <Arg name="override_colony" id="queryCol_4" dataType="Text" index="4" />
+    <Arg name="state_code" id="queryCol_5" dataType="Text" index="5" />
+    <Arg name="street_name" id="queryCol_6" dataType="Text" index="6" />
+    <Arg name="street_type" id="queryCol_7" dataType="Text" index="7" />
+    <Arg name="sub_location" id="queryCol_8" dataType="Text" index="8" />
+    <Arg name="zip_code" id="queryCol_9" dataType="Text" index="9" />
+    <Arg name="po_box" id="queryCol_10" dataType="Text" index="10" />
+    <Arg name="direction" id="queryCol_11" dataType="Text" index="11" />
+    <Arg name="selling_id" id="queryCol_12" dataType="Text" index="12" />
+    <Arg name="block_number" id="queryCol_13" dataType="Text" index="13" />
+    <Arg name="terrain_number" id="queryCol_14" dataType="Text" index="14" />
+    <Arg name="interior_number" id="queryCol_15" dataType="Text" index="15" />
+    <Arg name="override_town" id="queryCol_16" dataType="Text" index="16" />
+    <Arg name="between_street1" id="queryCol_17" dataType="Text" index="17" />
+    <Arg name="between_street2" id="queryCol_18" dataType="Text" index="18" />
+    <Arg name="country" id="queryCol_19" dataType="Text" index="19" />
+    <Arg name="override_colony_type" id="queryCol_20" dataType="Text" index="20" />
+    <Arg name="ctcr_batch_prog_id" id="queryCol_21" dataType="Text" index="21" />
+    <Arg name="ctcr_batch_prog_dt" id="queryCol_22" dataType="Text" index="22" />
+    <Arg name="ctcr_online_user_id" id="queryCol_23" dataType="Real" index="23" />
+    <Arg name="ctcr_online_prog_id" id="queryCol_24" dataType="Text" index="24" />
+    <Arg name="ctcr_online_prog_dt" id="queryCol_25" dataType="Text" index="25" />
+    <Arg name="ctcr_sys_cre_dt" id="queryCol_26" dataType="Text" index="26" />
+    <Arg name="ctcr_sys_upd_dt" id="queryCol_27" dataType="Text" index="27" />
+    <Arg name="ctcr_dbi_prog_id" id="queryCol_28" dataType="Text" index="28" />
+    <Arg name="ctcr_dbi_prog_dt" id="queryCol_29" dataType="Text" index="29" />
+    <Arg name="ctcr_cnv_dt" id="queryCol_30" dataType="Text" index="30" />
+    <Arg name="ctcr_event_id" id="queryCol_31" dataType="Real" index="31" />
+    <Arg name="sfa_id" id="queryCol_32" dataType="Text" index="32" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_yp_cust_yp_address" name="query_yp_cust_yp_address" nodeOrder="0" module="DBQuery" connName="PG_SOURCE">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="address_id" dataType="Real" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="customer_id" dataType="Real" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="house_no" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="colony_id" dataType="Real" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="override_colony" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="state_code" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_6" name="street_name" dataType="Text" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_7" name="street_type" dataType="Text" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_8" name="sub_location" dataType="Text" index="8" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_9" name="zip_code" dataType="Text" index="9" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_10" name="po_box" dataType="Text" index="10" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_11" name="direction" dataType="Text" index="11" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_12" name="selling_id" dataType="Text" index="12" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_13" name="block_number" dataType="Text" index="13" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_14" name="terrain_number" dataType="Text" index="14" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_15" name="interior_number" dataType="Text" index="15" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_16" name="override_town" dataType="Text" index="16" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_17" name="between_street1" dataType="Text" index="17" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_18" name="between_street2" dataType="Text" index="18" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_19" name="country" dataType="Text" index="19" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_20" name="override_colony_type" dataType="Text" index="20" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_21" name="ctcr_batch_prog_id" dataType="Text" index="21" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_22" name="ctcr_batch_prog_dt" dataType="Text" index="22" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_23" name="ctcr_online_user_id" dataType="Real" index="23" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_24" name="ctcr_online_prog_id" dataType="Text" index="24" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_25" name="ctcr_online_prog_dt" dataType="Text" index="25" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_26" name="ctcr_sys_cre_dt" dataType="Text" index="26" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_27" name="ctcr_sys_upd_dt" dataType="Text" index="27" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_28" name="ctcr_dbi_prog_id" dataType="Text" index="28" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_29" name="ctcr_dbi_prog_dt" dataType="Text" index="29" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_30" name="ctcr_cnv_dt" dataType="Text" index="30" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_31" name="ctcr_event_id" dataType="Real" index="31" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_32" name="sfa_id" dataType="Text" index="32" />
+      </OutputsList>
+      <SQL><![CDATA[Select *
+From yp_address]]></SQL>
+    </Item>
+    <Item xsi:type="ConstantDataSave" id="c.415" nodeOrder="0" module="Constant">
+      <Value><![CDATA[TEST1]]></Value>
+    </Item>
+    <Item xsi:type="ConstantDataSave" id="c.418" nodeOrder="0" module="Constant">
+      <Value><![CDATA[TEST2]]></Value>
+    </Item>
+    <Item xsi:type="ConstantDataSave" id="c.568" nodeOrder="0" module="Constant">
+      <Value><![CDATA[TEST3]]></Value>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="70" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_0" toItemID="tbl_yp_address" toColID="tblCol_0544873e1c934856ad225d3661860dd0" />
+    <Link partId="71" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_1" toItemID="tbl_yp_address" toColID="tblCol_dd5d9cc714eb46e998f0dc46a1a29d65" />
+    <Link partId="72" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_2" toItemID="tbl_yp_address" toColID="tblCol_607f2a329ffa4975b683f07a828e4909" />
+    <Link partId="73" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_3" toItemID="tbl_yp_address" toColID="tblCol_e00b2197e5e8450eb579aa38a4c456b3" />
+    <Link partId="74" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_4" toItemID="tbl_yp_address" toColID="tblCol_ed34c7db109f460abca1fa207fd23267" />
+    <Link partId="75" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_5" toItemID="tbl_yp_address" toColID="tblCol_5aef8888d75f4ad9b95f437248ef3ccd" />
+    <Link partId="76" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_6" toItemID="tbl_yp_address" toColID="tblCol_4d97267eba7147b8a898fa77187e0857" />
+    <Link partId="77" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_7" toItemID="tbl_yp_address" toColID="tblCol_aba6ee3ee8da475c86a144703e7d0bb4" />
+    <Link partId="78" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_8" toItemID="tbl_yp_address" toColID="tblCol_bcdbc58d9f144e56a876e4ae1106f3d5" />
+    <Link partId="79" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_9" toItemID="tbl_yp_address" toColID="tblCol_4d4dcd58b335434cae05571cf09348c3" />
+    <Link partId="80" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_10" toItemID="tbl_yp_address" toColID="tblCol_5dd5cce87ba9492ebb4418c854cda397" />
+    <Link partId="81" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_11" toItemID="tbl_yp_address" toColID="tblCol_a08f4a6387424cfd89a4e6d8f9a99a20" />
+    <Link partId="82" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_12" toItemID="tbl_yp_address" toColID="tblCol_ac621068e0a64ff29245ac652252c60e" />
+    <Link partId="83" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_13" toItemID="tbl_yp_address" toColID="tblCol_f38cfd16c5ff4d0d890186312c889fc4" />
+    <Link partId="84" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_14" toItemID="tbl_yp_address" toColID="tblCol_f00f9114f4c8474d90f41ebba5b338f0" />
+    <Link partId="85" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_15" toItemID="tbl_yp_address" toColID="tblCol_1af2f32e8af2447f8901b66d86e01298" />
+    <Link partId="86" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_16" toItemID="tbl_yp_address" toColID="tblCol_2333987ef3834d468cda9a61346edca5" />
+    <Link partId="87" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_17" toItemID="tbl_yp_address" toColID="tblCol_ca5466f57d11407c9b71be668715461f" />
+    <Link partId="88" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_18" toItemID="tbl_yp_address" toColID="tblCol_940e2fe478ee459e93ee550ffebd94a8" />
+    <Link partId="89" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_19" toItemID="tbl_yp_address" toColID="tblCol_fa351007d53d468b93fa16e8e4ed8e25" />
+    <Link partId="90" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_20" toItemID="tbl_yp_address" toColID="tblCol_616c406b922a413aaf47ee54db876aa4" />
+    <Link partId="91" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_21" toItemID="tbl_yp_address" toColID="tblCol_d3ee9216b90f41c49c47c0ea5f291f98" />
+    <Link partId="92" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_22" toItemID="tbl_yp_address" toColID="tblCol_fd830195ff4a4534b5c21d11e8bfc6fc" />
+    <Link partId="93" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_23" toItemID="tbl_yp_address" toColID="tblCol_f3d7576b12554341a316ad894d2a0493" />
+    <Link partId="94" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_24" toItemID="tbl_yp_address" toColID="tblCol_029a7be0d32b4ab7860a9afb238b7184" />
+    <Link partId="95" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_25" toItemID="tbl_yp_address" toColID="tblCol_81914aab46ba4b23a94b8c74178b9933" />
+    <Link partId="96" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_26" toItemID="tbl_yp_address" toColID="tblCol_2c779136ff58424f902fb81c7688192d" />
+    <Link partId="97" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_27" toItemID="tbl_yp_address" toColID="tblCol_5312c4c97a2f46a494d05f0e9f7cca30" />
+    <Link partId="98" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_28" toItemID="tbl_yp_address" toColID="tblCol_3eb83914015142ffa1baeb17da34bd1e" />
+    <Link partId="99" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_29" toItemID="tbl_yp_address" toColID="tblCol_c2f0e9eb8bf545389562b9903bf1dee2" />
+    <Link partId="100" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_30" toItemID="tbl_yp_address" toColID="tblCol_666d6c62b04e40e6b7210c050196170b" />
+    <Link partId="101" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_31" toItemID="tbl_yp_address" toColID="tblCol_89d9b821b19a486b93f3df4575ed473a" />
+    <Link partId="102" fromNodeOrder="0" fromItemID="query_query_yp_cust_yp_address" fromColID="queryCol_32" toItemID="tbl_yp_address" toColID="tblCol_1a9230b4b2df4f93bcc9e585ee08cc96" />
+    <Link partId="417" fromNodeOrder="0" fromItemID="c.415" fromColID="c.415" toItemID="tbl_yp_address" toColID="tblCol_1d6b0ed25dc047fa8bd12b664979e9dd" />
+    <Link partId="421" fromNodeOrder="0" fromItemID="c.418" fromColID="c.418" toItemID="tbl_yp_address" toColID="tblCol_92bb6f4090754ca6b6218d0e5db1e8ac" />
+    <Link partId="571" fromNodeOrder="0" fromItemID="c.568" fromColID="c.568" toItemID="tbl_yp_address" toColID="tblCol_7bcbd1c3c787418685b624ba05b05c4e" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

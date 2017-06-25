@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>TEST_PROD_FUN</Name>
+  <ID>tbl_TEST_PROD_FUN</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="CUSTOMER_ID" id="tblCol_f9eb46f89c3e4eae98b2a939849892f9" index="0" datatype="Integer" />
+    <Column name="PRODUCT_CODE" id="tblCol_966ef35140334dbfba0c91034d3fd8d7" index="1" datatype="Text" />
+    <Column name="PRODUCT_ISSUE_NUM" id="tblCol_26ed13e085c84a99a4f2bc6ea850cb0a" index="2" datatype="Integer" />
+    <Column name="DATE" id="tblCol_3ab3bb08886e4d9689b59afada851601" index="3" datatype="Text" />
+    <Column name="DATE_CON" id="tblCol_e1437a1b921f4698af9fa6ea0ec94c47" index="4" datatype="Text" />
+    <Column name="DATE_SUM" id="tblCol_a7737c9b3bc34ffc870301e25e1343b8" index="5" datatype="Integer" />
+    <Column name="CUR_DATE" id="tblCol_0a91990b0c6749db9a1326ef09b09d65" index="6" datatype="Text" />
+    <Column name="CUR_DATE_TIME" id="tblCol_9a79c75848804158b9c8b6c360a07bbf" index="7" datatype="Text" />
+    <Column name="CUR_DATE_TIME_STAMP" id="tblCol_68b56c087c144f46a87cb1bc2db76c40" index="8" datatype="Text" />
+    <Column name="NUM_ABS" id="tblCol_7bb0332ee1774d35a2fb5ad3bc4d7112" index="9" datatype="Real" />
+    <Column name="NUM_CEIL" id="tblCol_109d3ff915d9474e82a63c3ddb4be6a8" index="10" datatype="Real" />
+    <Column name="NUM_FLOOR" id="tblCol_bbdec5acb8a64c31a75a2a2f7cd20110" index="11" datatype="Real" />
+    <Column name="NUM_MINUS" id="tblCol_51263d6102ab4e9199fee23506e3740a" index="12" datatype="Real" />
+    <Column name="NUM_MOD" id="tblCol_063c113ab0c04d909090379787cf105a" index="13" datatype="Integer" />
+    <Column name="NUM_MULTI" id="tblCol_dffe1d9fe6ef42cd929e04b3084c6d14" index="14" datatype="Real" />
+    <Column name="NUM_PLUS" id="tblCol_62d609c5022d439bb6f3c87e82710a37" index="15" datatype="Real" />
+    <Column name="NUM_ROUND" id="tblCol_6ea88de825b946e49708f5b499de404a" index="16" datatype="Real" />
+    <Column name="STR_NULL" id="tblCol_dad13d0893444df3986d118f2b120fb3" index="17" datatype="Text" defaultValue="" />
+    <Column name="STR_LTRIM" id="tblCol_a401cae40b024f2ba69c6672fa5cc529" index="18" datatype="Text" />
+    <Column name="STR_CONCAT" id="tblCol_ec14886dce404bcc8718d4241d82dbcb" index="19" datatype="Text" />
+    <Column name="STR_PAD" id="tblCol_be39f4350c704c9cbacb2d8d6371e7a7" index="20" datatype="Text" />
+    <Column name="STR_REGEXP_MATCH" id="tblCol_d488c91f096949ef8478f80d5bd8a747" index="21" datatype="Text" />
+    <Column name="STR_REGEXP_REP" id="tblCol_38f2a4c7eb4b4783b4a98a07e474328b" index="22" datatype="Text" />
+    <Column name="STR_POS" id="tblCol_2826f441f7414ef3825d1a943a600939" index="23" datatype="Integer" />
+    <Column name="STR_RPOS" id="tblCol_6000882351cb4d4a983d54bb697aba0e" index="24" datatype="Integer" />
+    <Column name="STR_LOWER" id="tblCol_d7948643a5334e2b8b568ef92de69972" index="25" datatype="Text" />
+    <Column name="STR_UPPER" id="tblCol_ac82af67bf58432da15fed990b34dd05" index="26" datatype="Text" />
+    <Column name="STR_TRIM" id="tblCol_9cb1e49a1e6645dfa82558f38705800c" index="27" datatype="Text" />
+    <Column name="ENTITY_ID" id="tblCol_68a5176ecbc7417496812a1598816968" index="28" datatype="Text" />
+    <Column name="STR_IF" id="tblCol_72c1e165c0d143f98827a6d3413b851b" index="29" datatype="Text" />
+    <Column name="FILES" id="tblCol_10c5ad81d84242c2a1ffd13d2adf13b9" index="30" datatype="Text" />
+    <Column name="FUN_DATE" id="tblCol_b0f22c4df1194b3da1933950b6feac84" index="31" datatype="Text" />
+    <Column name="FUN_NUMROUND" id="tblCol_227b9df3412e455a8e3cb85ba3645465" index="32" datatype="Text" />
+    <Column name="FUN_STRPAD" id="tblCol_54d957ee4e104492b7e3edbe18fc6471" index="33" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

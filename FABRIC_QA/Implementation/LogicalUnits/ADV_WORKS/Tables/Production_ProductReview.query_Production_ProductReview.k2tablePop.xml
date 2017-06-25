@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_Production_ProductReview</ID>
+  <PopulationObjectName>query_Production_ProductReview</PopulationObjectName>
+  <TableName>Production_ProductReview</TableName>
+  <RootItemID>query_query_Production_ProductReview</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="ProductReviewID" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="ProductID" id="queryCol_1" dataType="Integer" index="1" />
+    <Arg name="ReviewerName" id="queryCol_2" dataType="Text" index="2" />
+    <Arg name="ReviewDate" id="queryCol_3" dataType="Text" index="3" />
+    <Arg name="EmailAddress" id="queryCol_4" dataType="Text" index="4" />
+    <Arg name="Rating" id="queryCol_5" dataType="Integer" index="5" />
+    <Arg name="Comments" id="queryCol_6" dataType="Text" index="6" />
+    <Arg name="ModifiedDate" id="queryCol_7" dataType="Text" index="7" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_Production_ProductReview" name="query_Production_ProductReview" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="SqlServer_AdvWorks">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="ProductReviewID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="ProductID" dataType="Integer" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="ReviewerName" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="ReviewDate" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="EmailAddress" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="Rating" dataType="Integer" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_6" name="Comments" dataType="Text" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_7" name="ModifiedDate" dataType="Text" index="7" />
+      </OutputsList>
+      <SQL><![CDATA[select * from Production.ProductReview]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="20" fromNodeOrder="0" fromItemID="query_query_Production_ProductReview" fromColID="queryCol_0" toItemID="tbl_Production_ProductReview" toColID="tblCol_4fdedd1378ed4bb5b6faf131f9b0c880" />
+    <Link partId="21" fromNodeOrder="0" fromItemID="query_query_Production_ProductReview" fromColID="queryCol_1" toItemID="tbl_Production_ProductReview" toColID="tblCol_272a417dceab4956ae58de0db0d6170f" />
+    <Link partId="22" fromNodeOrder="0" fromItemID="query_query_Production_ProductReview" fromColID="queryCol_2" toItemID="tbl_Production_ProductReview" toColID="tblCol_e5d41fe976734b6e8decc9ee58c86ca9" />
+    <Link partId="23" fromNodeOrder="0" fromItemID="query_query_Production_ProductReview" fromColID="queryCol_3" toItemID="tbl_Production_ProductReview" toColID="tblCol_68c1b19b64d8403e9f9f90aa0aebd73d" />
+    <Link partId="24" fromNodeOrder="0" fromItemID="query_query_Production_ProductReview" fromColID="queryCol_4" toItemID="tbl_Production_ProductReview" toColID="tblCol_0bc1bec04e4c4cd1bf7875e6ab61e150" />
+    <Link partId="25" fromNodeOrder="0" fromItemID="query_query_Production_ProductReview" fromColID="queryCol_5" toItemID="tbl_Production_ProductReview" toColID="tblCol_c465254870ce4eca922b1ad7d6d502b4" />
+    <Link partId="26" fromNodeOrder="0" fromItemID="query_query_Production_ProductReview" fromColID="queryCol_6" toItemID="tbl_Production_ProductReview" toColID="tblCol_599fb39ab4fd40908e82332fe8afbe94" />
+    <Link partId="27" fromNodeOrder="0" fromItemID="query_query_Production_ProductReview" fromColID="queryCol_7" toItemID="tbl_Production_ProductReview" toColID="tblCol_47f15f566f5440fabaf5646e6db008c0" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

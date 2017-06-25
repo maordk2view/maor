@@ -1,0 +1,8 @@
+﻿<Graph name="YP_CUSTOMER_TYPE.getCustomer.k2tablePop.bin" lastPartID="10">
+  <TableNode partID="0" name="YP_CUSTOMER_TYPE" pos="401 30" width="253" />
+  <FunctionMapNode id="0" L0="1" R0="2" R1="3" partID="3" topLabel="getCustomer (3)" pos="50.334465 59.0000038" size="234.661224 49.2369728" isRoot="true">
+    <KFunction>{"Name":"getCustomer","ID":"f_3","Category":"ROOT","FunctionLevel":0,"RegisterAsLuDbFunction":false,"SaveToDLUR":false,"ApiFunction":false,"RequiresLuReference":false,"Desc":"","Auther":{"Name":"","ID":""},"Language":1,"FunctionBody":"String sql = \"SELECT CUSTOMER_ID, CUSTOMER_TYPE FROM yp_customer where CUSTOMER_ID=?\";\nObject[] valuesArr = {CUSTOMER_ID};\nResultSetWrapper rs = DBQuery(\"MYSQL_SOURCE\", sql, valuesArr);\n\nfor(Object[] row : rs) {\n    yield(row);\n}\n","IsSyntaxValid":true,"IsRootFunction":true,"inputParams":[{"Name":"CUSTOMER_ID","ID":"fi_3.0","Index":0,"DataType":"Long","Comment":""}],"outputParams":[{"Name":"CUSTOMER_ID","ID":"fo_3.0","Index":0,"DataType":"Long","Comment":""},{"Name":"CUSTOMER_TYPE","ID":"fo_3.1","Index":1,"DataType":"String","Comment":""}]}</KFunction>
+  </FunctionMapNode>
+  <Link partID="9" from="2" to="4" pointsArr="284.9957 80.12761 294.9957 80.12761 391 61.0364571 401 61.0364571" fromNodePartID="3" fromNodeColumnName="CUSTOMER_ID" toNodePartID="0" toNodeColumnName="CUSTOMER_ID" />
+  <Link partID="10" from="3" to="5" pointsArr="284.9957 92.20052 294.9957 92.20052 391 73.109375 401 73.109375" fromNodePartID="3" fromNodeColumnName="CUSTOMER_TYPE" toNodePartID="0" toNodeColumnName="CUSTOMER_TYPE" />
+</Graph>

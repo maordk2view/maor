@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_Production_ProductModel</ID>
+  <PopulationObjectName>query_Production_ProductModel</PopulationObjectName>
+  <TableName>Production_ProductModel</TableName>
+  <RootItemID>query_query_Production_ProductModel</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="ProductModelID" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="Name" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="CatalogDescription" id="queryCol_2" dataType="Text" index="2" />
+    <Arg name="Instructions" id="queryCol_3" dataType="Text" index="3" />
+    <Arg name="rowguid" id="queryCol_4" dataType="Text" index="4" />
+    <Arg name="ModifiedDate" id="queryCol_5" dataType="Text" index="5" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_Production_ProductModel" name="query_Production_ProductModel" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="SqlServer_AdvWorks">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="ProductModelID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="Name" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="CatalogDescription" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="Instructions" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="rowguid" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="ModifiedDate" dataType="Text" index="5" />
+      </OutputsList>
+      <SQL><![CDATA[select * from Production.ProductModel]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="16" fromNodeOrder="0" fromItemID="query_query_Production_ProductModel" fromColID="queryCol_0" toItemID="tbl_Production_ProductModel" toColID="tblCol_20872d9d85854da0be15ba1450d326e4" />
+    <Link partId="17" fromNodeOrder="0" fromItemID="query_query_Production_ProductModel" fromColID="queryCol_1" toItemID="tbl_Production_ProductModel" toColID="tblCol_658806333af345a79acae44e321acafb" />
+    <Link partId="18" fromNodeOrder="0" fromItemID="query_query_Production_ProductModel" fromColID="queryCol_2" toItemID="tbl_Production_ProductModel" toColID="tblCol_ecfa9a611b094a3daca471964ddd28e5" />
+    <Link partId="19" fromNodeOrder="0" fromItemID="query_query_Production_ProductModel" fromColID="queryCol_3" toItemID="tbl_Production_ProductModel" toColID="tblCol_567b72616a71497bb54bf9ce2f6b989f" />
+    <Link partId="20" fromNodeOrder="0" fromItemID="query_query_Production_ProductModel" fromColID="queryCol_4" toItemID="tbl_Production_ProductModel" toColID="tblCol_b3152b6a07a74f71877c1e3bd3f4ebc6" />
+    <Link partId="21" fromNodeOrder="0" fromItemID="query_query_Production_ProductModel" fromColID="queryCol_5" toItemID="tbl_Production_ProductModel" toColID="tblCol_037f577c95ca48d99577a7d08a67b268" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

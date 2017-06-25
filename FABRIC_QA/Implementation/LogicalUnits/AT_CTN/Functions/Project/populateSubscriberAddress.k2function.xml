@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>populateSubscriberAddress</Name>
+  <ID>Project.populateSubscriberAddress</ID>
+  <Category>Project</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>RegularFunction</FunctionType>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String street = "Straco";
+String streetNumber = "412";
+String apartmentNumber = "# 69";
+String city = "Puerto Vallarta";
+String postCode = "46800";
+String state = "JAL";
+
+
+Object row [] = {CTN,street,streetNumber,apartmentNumber,city,postCode,state};
+yield(row);</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>true</IsRootFunction>
+  <InputParams>
+    <Input name="CTN" id="fi.Project.populateSubscriberAddress.0" index="0" dataType="String">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="CTN" id="fo.Project.populateSubscriberAddress.0" index="0" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="street" id="fo.Project.populateSubscriberAddress.1" index="1" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="streetNumber" id="fo.Project.populateSubscriberAddress.2" index="2" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="apartmentNumber" id="fo.Project.populateSubscriberAddress.3" index="3" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="city" id="fo.Project.populateSubscriberAddress.4" index="4" dataType="Integer">
+      <Comment />
+    </Output>
+    <Output name="postCode" id="fo.Project.populateSubscriberAddress.5" index="5" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="state" id="fo.Project.populateSubscriberAddress.6" index="6" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

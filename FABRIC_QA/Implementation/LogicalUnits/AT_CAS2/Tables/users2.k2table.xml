@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>users2</Name>
+  <ID>tbl_users2</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="id" id="tblCol_62eb708289164b50b5db317470bfdad1" index="0" datatype="Text" mandatory="true" />
+    <Column name="name" id="tblCol_20eea0b7ceee486eb8daea6f43bc228b" index="1" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

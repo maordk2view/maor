@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>FAMILY_HISTORY</Name>
+  <ID>tbl_FAMILY_HISTORY</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="PATIENT_ID" id="tblCol_b0129d8f3cca4109bd53785e707269e4" index="0" datatype="Text" mandatory="true" />
+    <Column name="ALCOHOL_DRUG_ABUSE" id="tblCol_f2d2d0d001bd424ca1d2bdfc58c70e9a" index="1" datatype="Integer" mandatory="true" />
+    <Column name="ALLERGIES" id="tblCol_ed3c75b8f982401c89474edd30a26db8" index="2" datatype="Integer" />
+    <Column name="ASTHMA" id="tblCol_b9e883d6bd1f4935818a7ef8376a2d21" index="3" datatype="Integer" />
+    <Column name="CANCER" id="tblCol_034fbc63894b465eaa6f45905f3b3573" index="4" datatype="Integer" />
+    <Column name="DEPRESSION" id="tblCol_b6ba275b6ec1408e8708d7b2ef0a780f" index="5" datatype="Integer" />
+    <Column name="HEART_DISEASE" id="tblCol_284e272e251a41eabf1c18e3b940da97" index="6" datatype="Integer" />
+    <Column name="HIGH_BLOOD_PRESSURE" id="tblCol_45a9d90216ba45b19b57ca1cc9701aea" index="7" datatype="Integer" />
+    <Column name="HIGH_CHOLESTEROL" id="tblCol_b29e3f15f6334d089e738793206974e4" index="8" datatype="Integer" />
+    <Column name="MENTAL_ILLNESS" id="tblCol_6cc3e82b55ed45769a9f563506ae378b" index="9" datatype="Integer" />
+    <Column name="STROKE" id="tblCol_d70e5ae7172d456892ed4bc7572a7792" index="10" datatype="Integer" />
+    <Column name="SMOKER" id="tblCol_ccef819500d545a2b47fca95619323c8" index="11" datatype="Integer" />
+    <Column name="EXERCISE_REGULARLY" id="tblCol_8bb55668a90a4081b1017e7559005653" index="12" datatype="Integer" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_b0129d8f3cca4109bd53785e707269e4" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

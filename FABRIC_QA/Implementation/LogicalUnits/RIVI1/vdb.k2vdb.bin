@@ -1,0 +1,20 @@
+﻿<Graph version="1.8.0.0" name="vdb.k2vdb.bin" lastPartID="13687">
+  <Node id="0" partID="0" name="YP_CUSTOMER" isRootView="true" pos="11 13" size="257 138.54686" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"YP_CUSTOMER","TablePopulationPropertiesList":[{"ID":"query_YP_CUSTOMER","Name":"query_YP_CUSTOMER","Order":1}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="107" name="YP_PRODUCT" isRootView="false" pos="298 14" size="257 138.54686" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"YP_PRODUCT","TablePopulationPropertiesList":[{"ID":"query_YP_PRODUCT","Name":"query_YP_PRODUCT","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="2" partID="306" name="YP_ITEM" isRootView="false" pos="615 -21" size="257 189.54686" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"YP_ITEM","TablePopulationPropertiesList":[{"ID":"popPgFromSql","Name":"popPgFromSql","Order":3},{"ID":"popSqlServerItem","Name":"popSqlServerItem","Order":3},{"ID":"popYpItemFromPG","Name":"popYpItemFromPG","Order":5},{"ID":"query_YP_ITEM","Name":"query_YP_ITEM","Order":3}]}</TableProperties>
+  </Node>
+  <Node id="3" partID="1127" name="YP_ADDRESS" isRootView="false" pos="382 347" size="257 138.546936" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"YP_ADDRESS","TablePopulationPropertiesList":[{"ID":"query_YP_ADDRESS","Name":"query_YP_ADDRESS","Order":2}]}</TableProperties>
+  </Node>
+  <Link from="4" to="5" partID="563" linkType="Database" pointsArr="268 59.54557 278 59.54557 288 60.54557 298 60.54557" fromNodePartID="0" fromNodeColumnName="CUSTOMER_ID" toNodePartID="107" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="query_YP_PRODUCT" />
+  <Link from="4" to="6" partID="1196" linkType="Database" pointsArr="268 59.54557 278 59.54557 372 425.727875 382 425.727875" fromNodePartID="0" fromNodeColumnName="CUSTOMER_ID" toNodePartID="1127" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="query_YP_ADDRESS" />
+  <Link from="7" to="8" partID="4179" linkType="Database" pointsArr="555 60.54557 565 60.54557 610 57.5 620 57.5" fromNodePartID="107" fromNodeColumnName="CUSTOMER_ID" toNodePartID="306" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="query_YP_ITEM" />
+  <Link from="7" to="9" partID="9526" linkType="Database" pointsArr="555 60.54557 565 60.54557 610 23.5 620 23.5" fromNodePartID="107" fromNodeColumnName="CUSTOMER_ID" toNodePartID="306" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="popSqlServerItem" />
+  <Link from="7" to="10" partID="10051" linkType="Database" pointsArr="555 60.54557 565 60.54557 605 76.54557 615 76.54557" fromNodePartID="107" fromNodeColumnName="CUSTOMER_ID" toNodePartID="306" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="popPgFromSql" />
+  <Link from="7" to="11" partID="13015" linkType="Database" pointsArr="555 60.54557 565 60.54557 610 40.5 620 40.5" fromNodePartID="107" fromNodeColumnName="CUSTOMER_ID" toNodePartID="306" toNodeColumnName="customer_id1" toNodePopulationObjectName="popYpItemFromPG" />
+</Graph>

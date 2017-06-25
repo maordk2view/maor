@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>test_ref</Name>
+  <ID>JAVA.test_ref</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>WebService</FunctionType>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>Object []param = {"JRIC"};
+//return DBQuery("cdbms","select * from ref_yp_product_trn where OLD_PRODUCT_CODE = ? limit 10" ,param);
+return DBQuery("fabric","select * from ref_yp_product_trn where ref_yp_product_trn match (?) limit 10" ,param);</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams />
+  <OutputParams>
+    <Output name="out" id="fo.JAVA.test_ref.0" index="0" dataType="Object">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

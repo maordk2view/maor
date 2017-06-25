@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ParserMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="3.2.0.0">
+  <Name>p1</Name>
+  <MapType>ParserMap</MapType>
+  <RootItemID>f_1</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <TargetsList>
+    <Target xsi:type="ParserMapTargetItem">
+      <TargetName>RT2</TargetName>
+      <Module>Parser_Map</Module>
+      <ItemsList>
+        <Item id="f_1" name="k2_FolderStreamReader" nodeOrder="0" module="Function" mapObjectModule="Function" fileName="k2_FolderStreamReader.k2function.xml">
+          <InputsList>
+            <Input id="fi_1.0" name="folderPath" defaultValue="/home/k2view/fabric/test/LU/Implementation/LogicalUnits/AT_MRT/ParserLogs" />
+            <Input id="fi_1.1" name="folderPathDebug" defaultValue="/home/k2view/fabric/test/LU/Implementation/LogicalUnits/ATMRT/ParserLogs" />
+            <Input id="fi_1.2" name="regexFilter" defaultValue="RT*.txt" />
+            <Input id="fi_1.3" name="recordDelimiter" defaultValue="\n" />
+            <Input id="fi_1.4" name="fieldDelimiter" defaultValue="," />
+            <Input id="fi_1.5" name="enclosingChar" defaultValue="&quot;" />
+          </InputsList>
+          <OutputsList>
+            <Output id="fo_1.0" name="result" />
+          </OutputsList>
+        </Item>
+        <Item id="f_180" name="fnRtSwitch" nodeOrder="1" module="Function" mapObjectModule="Function" fileName="fnRtSwitch.k2function.xml">
+          <InputsList>
+            <Input id="fi_180.0" name="mapIn" />
+          </InputsList>
+          <OutputsList>
+            <Output id="fo_180.0" name="mapRT1" />
+            <Output id="fo_180.1" name="mapRT2" />
+          </OutputsList>
+        </Item>
+        <Item id="f_160" name="fnFieldsRT2" nodeOrder="2" module="Function" mapObjectModule="Function" fileName="fnFieldsRT2.k2function.xml">
+          <InputsList>
+            <Input id="fi_160.0" name="map" />
+          </InputsList>
+          <OutputsList>
+            <Output id="fo_160.0" name="col1" />
+            <Output id="fo_160.1" name="col2" />
+            <Output id="fo_160.2" name="col3" />
+            <Output id="fo_160.3" name="col4" />
+            <Output id="fo_160.4" name="col5" />
+            <Output id="fo_160.5" name="col6" />
+          </OutputsList>
+        </Item>
+        <Item xsi:type="ParserRecordTypeDataSave" id="rt_RT2" name="RT2" nodeOrder="3" module="ParserRecordType" mapObjectModule="ParserRecordType" parentParser="p1">
+          <InputsList>
+            <Input xsi:type="ParserRecordTypeDataSaveColumnInput" id="rtCol_a51e49708c6b4fe4b8e7699fe9370870" name="col1" dataType="Text" />
+            <Input xsi:type="ParserRecordTypeDataSaveColumnInput" id="rtCol_a6e949abd133495d8e044ea2900b3931" name="col2" dataType="Text" />
+            <Input xsi:type="ParserRecordTypeDataSaveColumnInput" id="rtCol_0fba8eb4cea8475f8875389da9bc4135" name="col3" dataType="Text" />
+            <Input xsi:type="ParserRecordTypeDataSaveColumnInput" id="rtCol_189008f490304c85948c3dac75f6a015" name="col4" dataType="Text" />
+            <Input xsi:type="ParserRecordTypeDataSaveColumnInput" id="rtCol_51bbf709c12d4486a53139952efa14b8" name="col5" dataType="Text" />
+            <Input xsi:type="ParserRecordTypeDataSaveColumnInput" id="rtCol_5288e9cec1734525b6963a9ad30b0726" name="col6" dataType="Text" />
+          </InputsList>
+          <OutputsList />
+          <RecordTypeKeyColumn>rtCol_a51e49708c6b4fe4b8e7699fe9370870</RecordTypeKeyColumn>
+          <PkColumnsList />
+          <ClusteringKeyOrder>ASC</ClusteringKeyOrder>
+        </Item>
+      </ItemsList>
+      <LinksList>
+        <Link partId="174" fromNodeOrder="2" fromItemID="f_160" fromColID="fo_160.0" toItemID="rt_RT2" toColID="rtCol_a51e49708c6b4fe4b8e7699fe9370870" />
+        <Link partId="184" fromNodeOrder="1" fromItemID="f_180" fromColID="fo_180.1" toItemID="f_160" toColID="fi_160.0" />
+        <Link partId="185" fromNodeOrder="0" fromItemID="f_1" fromColID="fo_1.0" toItemID="f_180" toColID="fi_180.0" />
+        <Link partId="175" fromNodeOrder="2" fromItemID="f_160" fromColID="fo_160.1" toItemID="rt_RT2" toColID="rtCol_a6e949abd133495d8e044ea2900b3931" />
+        <Link partId="176" fromNodeOrder="2" fromItemID="f_160" fromColID="fo_160.2" toItemID="rt_RT2" toColID="rtCol_0fba8eb4cea8475f8875389da9bc4135" />
+        <Link partId="177" fromNodeOrder="2" fromItemID="f_160" fromColID="fo_160.3" toItemID="rt_RT2" toColID="rtCol_189008f490304c85948c3dac75f6a015" />
+        <Link partId="178" fromNodeOrder="2" fromItemID="f_160" fromColID="fo_160.4" toItemID="rt_RT2" toColID="rtCol_51bbf709c12d4486a53139952efa14b8" />
+        <Link partId="179" fromNodeOrder="2" fromItemID="f_160" fromColID="fo_160.5" toItemID="rt_RT2" toColID="rtCol_5288e9cec1734525b6963a9ad30b0726" />
+      </LinksList>
+      <ParserMapRecordType id="rt_RT2" name="RT2" parentParser="p1">
+        <Active xsi:nil="true" />
+        <RecordTypeKeyColumn>rtCol_a51e49708c6b4fe4b8e7699fe9370870</RecordTypeKeyColumn>
+        <Columns>
+          <Column id="rtCol_a51e49708c6b4fe4b8e7699fe9370870" name="col1" index="0">
+            <DataType>Text</DataType>
+          </Column>
+          <Column id="rtCol_a6e949abd133495d8e044ea2900b3931" name="col2" index="1">
+            <DataType>Text</DataType>
+          </Column>
+          <Column id="rtCol_0fba8eb4cea8475f8875389da9bc4135" name="col3" index="2">
+            <DataType>Text</DataType>
+          </Column>
+          <Column id="rtCol_189008f490304c85948c3dac75f6a015" name="col4" index="3">
+            <DataType>Text</DataType>
+          </Column>
+          <Column id="rtCol_51bbf709c12d4486a53139952efa14b8" name="col5" index="4">
+            <DataType>Text</DataType>
+          </Column>
+          <Column id="rtCol_5288e9cec1734525b6963a9ad30b0726" name="col6" index="5">
+            <DataType>Text</DataType>
+          </Column>
+        </Columns>
+        <PkColumns />
+      </ParserMapRecordType>
+    </Target>
+    <Target xsi:type="ParserMapTargetItem">
+      <TargetName>RT1</TargetName>
+      <Module>Parser_Map</Module>
+      <ItemsList>
+        <Item id="f_1" name="k2_FolderStreamReader" nodeOrder="0" module="Function" mapObjectModule="Function" fileName="k2_FolderStreamReader.k2function.xml">
+          <InputsList>
+            <Input id="fi_1.0" name="folderPath" defaultValue="/home/k2view/fabric/test/LU/Implementation/LogicalUnits/AT_MRT/ParserLogs" />
+            <Input id="fi_1.1" name="folderPathDebug" defaultValue="/home/k2view/fabric/test/LU/Implementation/LogicalUnits/ATMRT/ParserLogs" />
+            <Input id="fi_1.2" name="regexFilter" defaultValue="RT*.txt" />
+            <Input id="fi_1.3" name="recordDelimiter" defaultValue="\n" />
+            <Input id="fi_1.4" name="fieldDelimiter" defaultValue="," />
+            <Input id="fi_1.5" name="enclosingChar" defaultValue="&quot;" />
+          </InputsList>
+          <OutputsList>
+            <Output id="fo_1.0" name="result" />
+          </OutputsList>
+        </Item>
+        <Item id="f_180" name="fnRtSwitch" nodeOrder="1" module="Function" mapObjectModule="Function" fileName="fnRtSwitch.k2function.xml">
+          <InputsList>
+            <Input id="fi_180.0" name="mapIn" />
+          </InputsList>
+          <OutputsList>
+            <Output id="fo_180.0" name="mapRT1" />
+            <Output id="fo_180.1" name="mapRT2" />
+          </OutputsList>
+        </Item>
+        <Item id="f_96" name="fnFieldsRT1" nodeOrder="2" module="Function" mapObjectModule="Function" fileName="fnFieldsRT1.k2function.xml">
+          <InputsList>
+            <Input id="fi_96.0" name="map" />
+          </InputsList>
+          <OutputsList>
+            <Output id="fo_96.0" name="col1" />
+            <Output id="fo_96.1" name="col2" />
+            <Output id="fo_96.2" name="col3" />
+            <Output id="fo_96.3" name="col4" />
+          </OutputsList>
+        </Item>
+        <Item xsi:type="ParserRecordTypeDataSave" id="rt_RT1" name="RT1" nodeOrder="3" module="ParserRecordType" mapObjectModule="ParserRecordType" parentParser="p1">
+          <InputsList>
+            <Input xsi:type="ParserRecordTypeDataSaveColumnInput" id="rtCol_a346b364e332418db1d74576e67b90c5" name="col1" dataType="Text" />
+            <Input xsi:type="ParserRecordTypeDataSaveColumnInput" id="rtCol_1c17848ec197443b99de97de0a607c14" name="col2" dataType="Text" />
+            <Input xsi:type="ParserRecordTypeDataSaveColumnInput" id="rtCol_fb152aa962d74067a83d45e08350e44a" name="col3" dataType="Text" />
+            <Input xsi:type="ParserRecordTypeDataSaveColumnInput" id="rtCol_6ffd4eba685f421bb50ed4d5d90c269b" name="col4" dataType="Text" />
+          </InputsList>
+          <OutputsList />
+          <RecordTypeKeyColumn>rtCol_a346b364e332418db1d74576e67b90c5</RecordTypeKeyColumn>
+          <PkColumnsList />
+          <ClusteringKeyOrder>ASC</ClusteringKeyOrder>
+        </Item>
+      </ItemsList>
+      <LinksList>
+        <Link partId="155" fromNodeOrder="2" fromItemID="f_96" fromColID="fo_96.0" toItemID="rt_RT1" toColID="rtCol_a346b364e332418db1d74576e67b90c5" />
+        <Link partId="159" fromNodeOrder="1" fromItemID="f_180" fromColID="fo_180.0" toItemID="f_96" toColID="fi_96.0" />
+        <Link partId="185" fromNodeOrder="0" fromItemID="f_1" fromColID="fo_1.0" toItemID="f_180" toColID="fi_180.0" />
+        <Link partId="156" fromNodeOrder="2" fromItemID="f_96" fromColID="fo_96.1" toItemID="rt_RT1" toColID="rtCol_1c17848ec197443b99de97de0a607c14" />
+        <Link partId="157" fromNodeOrder="2" fromItemID="f_96" fromColID="fo_96.2" toItemID="rt_RT1" toColID="rtCol_fb152aa962d74067a83d45e08350e44a" />
+        <Link partId="158" fromNodeOrder="2" fromItemID="f_96" fromColID="fo_96.3" toItemID="rt_RT1" toColID="rtCol_6ffd4eba685f421bb50ed4d5d90c269b" />
+      </LinksList>
+      <ParserMapRecordType id="rt_RT1" name="RT1" parentParser="p1">
+        <Active xsi:nil="true" />
+        <RecordTypeKeyColumn>rtCol_a346b364e332418db1d74576e67b90c5</RecordTypeKeyColumn>
+        <Columns>
+          <Column id="rtCol_a346b364e332418db1d74576e67b90c5" name="col1" index="0">
+            <DataType>Text</DataType>
+          </Column>
+          <Column id="rtCol_1c17848ec197443b99de97de0a607c14" name="col2" index="1">
+            <DataType>Text</DataType>
+          </Column>
+          <Column id="rtCol_fb152aa962d74067a83d45e08350e44a" name="col3" index="2">
+            <DataType>Text</DataType>
+          </Column>
+          <Column id="rtCol_6ffd4eba685f421bb50ed4d5d90c269b" name="col4" index="3">
+            <DataType>Text</DataType>
+          </Column>
+        </Columns>
+        <PkColumns />
+      </ParserMapRecordType>
+    </Target>
+  </TargetsList>
+  <Active>true</Active>
+  <syncEvery>00:00:00</syncEvery>
+  <ExecutionScope>Single_Node</ExecutionScope>
+</ParserMap>

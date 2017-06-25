@@ -1,0 +1,9 @@
+/loc_test/
+
+# genrated studio files
+*.zip
+*.json
+*.jar
+
+# generated data under every LU
+/LogicalUnits/*/VirtualDB_Data

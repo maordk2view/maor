@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>k2_getProcessExecutionInfo</Name>
+  <ID>Utilities.k2_getProcessExecutionInfo</ID>
+  <Category>Utilities</Category>
+  <FunctionLevel>Product</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc>get All known information about the specific engine execution</Desc>
+  <Auther name="" id="" />
+  <Language>PHP</Language>
+  <FunctionBody>return getProcessExecutionInfo();</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <InputParams />
+  <OutputParams>
+    <Output name="processID" id="fo.Utilities.k2_getProcessExecutionInfo.0" index="0" dataType="integer">
+      <Comment />
+    </Output>
+    <Output name="executionID" id="fo.Utilities.k2_getProcessExecutionInfo.1" index="1" dataType="integer">
+      <Comment />
+    </Output>
+    <Output name="executionDetID" id="fo.Utilities.k2_getProcessExecutionInfo.2" index="2" dataType="integer">
+      <Comment />
+    </Output>
+    <Output name="deploymentID" id="fo.Utilities.k2_getProcessExecutionInfo.3" index="3" dataType="integer">
+      <Comment />
+    </Output>
+    <Output name="deploymentDetID" id="fo.Utilities.k2_getProcessExecutionInfo.4" index="4" dataType="integer">
+      <Comment />
+    </Output>
+    <Output name="serverName" id="fo.Utilities.k2_getProcessExecutionInfo.5" index="5" dataType="text">
+      <Comment />
+    </Output>
+    <Output name="osPID" id="fo.Utilities.k2_getProcessExecutionInfo.6" index="6" dataType="integer">
+      <Comment />
+    </Output>
+    <Output name="allInfoArray" id="fo.Utilities.k2_getProcessExecutionInfo.7" index="7" dataType="object">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

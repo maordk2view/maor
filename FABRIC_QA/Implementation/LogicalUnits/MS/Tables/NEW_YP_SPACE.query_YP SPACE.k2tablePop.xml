@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_YP SPACE</PopulationObjectName>
+  <TableName>NEW_YP_SPACE</TableName>
+  <ID>query_YP SPACE</ID>
+  <RootItemID>query_6</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="CUSTOMER ID" id="query_6.0" dataType="Integer" index="0" />
+    <Arg name="S 1" id="query_6.1" dataType="Text" index="1" />
+    <Arg name="S2" id="query_6.2" dataType="Text" index="2" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_6" name="query_YP SPACE" nodeOrder="0" module="DBQuery" connName="YP_TEST">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_6.0" name="CUSTOMER ID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_6.1" name="S 1" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_6.2" name="S2" dataType="Text" index="2" />
+      </OutputsList>
+      <SQL><![CDATA[select * from "YP SPACE"]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="10" fromNodeOrder="0" fromItemID="query_6" fromColID="query_6.0" toItemID="tbl_NEW_YP_SPACE" toColID="tblCol_78b8632f78604d4e871c3cdf636a4c92" />
+    <Link partId="11" fromNodeOrder="0" fromItemID="query_6" fromColID="query_6.1" toItemID="tbl_NEW_YP_SPACE" toColID="tblCol_f0f216677c6e4343ae5a2a50a41be210" />
+    <Link partId="12" fromNodeOrder="0" fromItemID="query_6" fromColID="query_6.2" toItemID="tbl_NEW_YP_SPACE" toColID="tblCol_a8599fe746784b8a8e42d4375b8dde6b" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

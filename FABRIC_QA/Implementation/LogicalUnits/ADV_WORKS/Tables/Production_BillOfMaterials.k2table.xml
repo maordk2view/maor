@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Production_BillOfMaterials</Name>
+  <ID>tbl_Production_BillOfMaterials</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="BillOfMaterialsID" id="tblCol_9b11503a5390497688a00c1fa36f95b0" index="0" datatype="Integer" mandatory="true" />
+    <Column name="ProductAssemblyID" id="tblCol_8a3660f3ebc54d04b71961b9ea4c4208" index="1" datatype="Integer" />
+    <Column name="ComponentID" id="tblCol_551d58b377fa475a92c3aecaf04db1d9" index="2" datatype="Integer" mandatory="true" />
+    <Column name="StartDate" id="tblCol_d710b2f27a9548b496a8c08b5b5b4073" index="3" datatype="Text" mandatory="true" />
+    <Column name="EndDate" id="tblCol_90f0758138c14ddf9e40c7f270f4aaa4" index="4" datatype="Text" />
+    <Column name="UnitMeasureCode" id="tblCol_6ba3d94698674ffaa3e31c20190fd207" index="5" datatype="Text" mandatory="true" />
+    <Column name="BOMLevel" id="tblCol_ba00c2105d5344d79e8c061c0865ffac" index="6" datatype="Integer" mandatory="true" />
+    <Column name="PerAssemblyQty" id="tblCol_518ee3f821b140ef8e296533d4939866" index="7" datatype="Real" mandatory="true" />
+    <Column name="ModifiedDate" id="tblCol_ed3181ba3f0140d9a0141013ae6dd710" index="8" datatype="Text" mandatory="true" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_9b11503a5390497688a00c1fa36f95b0" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

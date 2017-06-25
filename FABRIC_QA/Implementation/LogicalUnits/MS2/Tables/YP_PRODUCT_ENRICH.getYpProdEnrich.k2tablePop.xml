@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>getYpProdEnrich</PopulationObjectName>
+  <TableName>YP_PRODUCT_ENRICH</TableName>
+  <ID>getYpProdEnrich</ID>
+  <RootItemID>f_3</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="CUSTOMER_ID" id="fi_3.0" dataType="Integer" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item id="f_3" name="getYpProdEnrich" nodeOrder="0" module="Function" fileName="getYpProdEnrich.k2function.xml">
+      <InputsList>
+        <Input id="fi_3.0" name="CUSTOMER_ID" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_3.0" name="CUSTOMER_ID" />
+        <Output id="fo_3.1" name="PRODUCT_CODE" />
+        <Output id="fo_3.2" name="PRODUCT_ISSUE_NUM" />
+        <Output id="fo_3.3" name="PRODUCT_STATUS" />
+        <Output id="fo_3.4" name="ACTIVITY_TYPE" />
+      </OutputsList>
+    </Item>
+    <Item id="f_43" name="k2_currentDateTime" nodeOrder="0" module="Function" fileName="k2_currentDateTime.k2function.xml">
+      <InputsList />
+      <OutputsList>
+        <Output id="fo_43.0" name="current_datetime" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="14" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.0" toItemID="tbl_YP_PRODUCT_ENRICH" toColID="tblCol_424d463904c24b1b836458e8bc34d067" />
+    <Link partId="15" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.1" toItemID="tbl_YP_PRODUCT_ENRICH" toColID="tblCol_2cd557908c384808a305b13b3f544a76" />
+    <Link partId="16" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.3" toItemID="tbl_YP_PRODUCT_ENRICH" toColID="tblCol_55e5e2229a6f4fb8b6e790c567aa9225" />
+    <Link partId="17" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.4" toItemID="tbl_YP_PRODUCT_ENRICH" toColID="tblCol_6b39f71472a84bd381f05c772f1099cc" />
+    <Link partId="135" fromNodeOrder="0" fromItemID="f_43" fromColID="fo_43.0" toItemID="tbl_YP_PRODUCT_ENRICH" toColID="tblCol_d16b916e2a42400388d5fb844f698ab4" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

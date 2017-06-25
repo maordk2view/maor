@@ -1,0 +1,13 @@
+﻿<Graph name="users.users_pop.k2tablePop.bin" lastPartID="40">
+  <TableNode partID="0" name="users" pos="404 30" width="309.3241" />
+  <DBQueryNode partID="4" name="CASS_SOURCE" pos="70 14" size="253 144.5104" isRoot="true">
+    <DBQuery>{"Name":"query_tests_users","ID":"query_query_tests_users","ConnName":"CASS_SOURCE","SQL":"SELECT * FROM tests.users","ColumnsList":[{"ID":"queryCol_0","Name":"user_name","DataType":"Text","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"birth_year","DataType":"Integer","Index":1,"IsInputArgument":true},{"ID":"queryCol_2","Name":"gender","DataType":"Text","Index":2,"IsInputArgument":true},{"ID":"queryCol_3","Name":"password","DataType":"Text","Index":3,"IsInputArgument":true},{"ID":"queryCol_4","Name":"session_token","DataType":"Text","Index":4,"IsInputArgument":true},{"ID":"queryCol_5","Name":"state","DataType":"Text","Index":5,"IsInputArgument":true},{"ID":"queryCol_6","Name":"user_code","DataType":"Text","Index":6,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="18" from="0" to="1" pointsArr="323 50.0364571 333 50.0364571 394 61.0364571 404 61.0364571" fromNodePartID="4" fromNodeColumnName="user_name" toNodePartID="0" toNodeColumnName="user_name" />
+  <Link partID="19" from="2" to="3" pointsArr="323 62.109375 333 62.109375 394 73.109375 404 73.109375" fromNodePartID="4" fromNodeColumnName="birth_year" toNodePartID="0" toNodeColumnName="birth_year" />
+  <Link partID="20" from="4" to="5" pointsArr="323 74.18229 333 74.18229 394 85.18229 404 85.18229" fromNodePartID="4" fromNodeColumnName="gender" toNodePartID="0" toNodeColumnName="gender" />
+  <Link partID="21" from="6" to="7" pointsArr="323 86.2552 333 86.2552 394 97.2552 404 97.2552" fromNodePartID="4" fromNodeColumnName="password" toNodePartID="0" toNodeColumnName="password" />
+  <Link partID="22" from="8" to="9" pointsArr="323 98.32812 333 98.32812 394 109.328117 404 109.328117" fromNodePartID="4" fromNodeColumnName="session_token" toNodePartID="0" toNodeColumnName="session_token" />
+  <Link partID="23" from="10" to="11" pointsArr="323 110.401031 333 110.401031 394 121.401031 404 121.401031" fromNodePartID="4" fromNodeColumnName="state" toNodePartID="0" toNodeColumnName="state" />
+  <Link partID="24" from="12" to="13" pointsArr="323 122.473953 333 122.473953 394 133.473953 404 133.473953" fromNodePartID="4" fromNodeColumnName="user_code" toNodePartID="0" toNodeColumnName="user_code" />
+</Graph>

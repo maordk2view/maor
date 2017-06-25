@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>funGetOraProduct</PopulationObjectName>
+  <TableName>O_YP_PRODUCT_FUN</TableName>
+  <ID>funGetOraProduct</ID>
+  <RootItemID>f_3</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="i_cust_id" id="fi_3.0" dataType="Integer" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item id="f_3" name="funGetOraProduct" nodeOrder="0" module="Function" fileName="funGetOraProduct.k2function.xml">
+      <InputsList>
+        <Input id="fi_3.0" name="i_cust_id" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_3.0" name="CUSTOMER_ID" />
+        <Output id="fo_3.1" name="PRODUCT_CODE" />
+        <Output id="fo_3.2" name="PRODUCT_ISSUE_NUM" />
+        <Output id="fo_3.3" name="PRODUCT_STATUS" />
+        <Output id="fo_3.4" name="RETIREMENT_STATUS" />
+        <Output id="fo_3.5" name="ACTIVITY_TYPE" />
+        <Output id="fo_3.6" name="ACTIVITY_DATE" />
+        <Output id="fo_3.7" name="NIR_PRODUCT_IND" />
+        <Output id="fo_3.8" name="NISD_AMOUNT" />
+        <Output id="fo_3.9" name="BOTS_AMOUNT" />
+        <Output id="fo_3.10" name="DISCOUNT_AMT" />
+        <Output id="fo_3.11" name="CONVERSION_IND" />
+        <Output id="fo_3.12" name="S1" />
+        <Output id="fo_3.13" name="S2" />
+      </OutputsList>
+    </Item>
+    <Item id="g.173" name="SYSTEM" nodeOrder="0" module="Global">
+      <InputsList />
+      <OutputsList />
+    </Item>
+    <Item id="g.176" name="LU_NAME" nodeOrder="0" module="Global">
+      <InputsList />
+      <OutputsList />
+    </Item>
+    <Item xsi:type="ConstantDataSave" id="c.167" nodeOrder="0" module="Constant">
+      <InputsList />
+      <OutputsList />
+      <Value><![CDATA[SUC]]></Value>
+    </Item>
+    <Item xsi:type="ConstantDataSave" id="c.169" nodeOrder="0" module="Constant">
+      <InputsList />
+      <OutputsList />
+      <Value><![CDATA[1.0]]></Value>
+    </Item>
+    <Item xsi:type="ConstantDataSave" id="c.295" nodeOrder="0" module="Constant">
+      <InputsList />
+      <OutputsList />
+      <Value><![CDATA[2.0]]></Value>
+    </Item>
+    <Item xsi:type="ConstantDataSave" id="c.309" nodeOrder="0" module="Constant">
+      <InputsList />
+      <OutputsList />
+      <Value><![CDATA[TEST1]]></Value>
+    </Item>
+    <Item id="f_98" name="k2_mod" nodeOrder="1" module="Function" fileName="k2_mod.k2function.xml">
+      <InputsList>
+        <Input id="fi_98.0" name="i_number" defaultValue="9" />
+        <Input id="fi_98.1" name="i_mod" defaultValue="5" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_98.0" name="o_mod_num" />
+      </OutputsList>
+    </Item>
+    <Item id="f_102" name="k2_plus" nodeOrder="1" module="Function" fileName="k2_plus.k2function.xml">
+      <InputsList>
+        <Input id="fi_102.0" name="i_num1" defaultValue="1.0" />
+        <Input id="fi_102.1" name="i_num2" defaultValue="2.0" />
+        <Input id="fi_102.2" name="i_num3" defaultValue="3.0" />
+        <Input id="fi_102.3" name="i_num4" />
+        <Input id="fi_102.4" name="i_num5" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_102.0" name="o_num" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="29" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.0" toItemID="tbl_O_YP_PRODUCT_FUN" toColID="tblCol_36b232e15b544b3f8a80156c3f2102d6" />
+    <Link partId="30" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.1" toItemID="tbl_O_YP_PRODUCT_FUN" toColID="tblCol_ab5174b50fdf49b8accdb7034ebd6feb" />
+    <Link partId="31" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.2" toItemID="tbl_O_YP_PRODUCT_FUN" toColID="tblCol_505b006a3a9d4d13aad816d663d6f16c" />
+    <Link partId="32" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.3" toItemID="tbl_O_YP_PRODUCT_FUN" toColID="tblCol_66dd0112bdca472a89b6674521da6ccc" />
+    <Link partId="33" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.4" toItemID="tbl_O_YP_PRODUCT_FUN" toColID="tblCol_49cb122fe6cb4b91898668e167750080" />
+    <Link partId="34" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.5" toItemID="tbl_O_YP_PRODUCT_FUN" toColID="tblCol_2e41096e9c7a470f80a06b65fa551b5e" />
+    <Link partId="35" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.6" toItemID="tbl_O_YP_PRODUCT_FUN" toColID="tblCol_1a1850642cd7427f963b801880b6f1e4" />
+    <Link partId="36" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.7" toItemID="tbl_O_YP_PRODUCT_FUN" toColID="tblCol_a3ea0f2f237e418e9a9c8bf100719414" />
+    <Link partId="37" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.8" toItemID="tbl_O_YP_PRODUCT_FUN" toColID="tblCol_a1c60500235f4cbe8f2fcde94f692311" />
+    <Link partId="38" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.9" toItemID="tbl_O_YP_PRODUCT_FUN" toColID="tblCol_73cd953dc678497a8793b9dad96ae05b" />
+    <Link partId="39" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.10" toItemID="tbl_O_YP_PRODUCT_FUN" toColID="tblCol_599d48bb08ab4bf89ea9eeb390e71d9b" />
+    <Link partId="40" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.11" toItemID="tbl_O_YP_PRODUCT_FUN" toColID="tblCol_11f82d2656f148c4b59eaafe5d533891" />
+    <Link partId="116" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.12" toItemID="tbl_O_YP_PRODUCT_FUN" toColID="tblCol_6bb7d19ab20a496794500940755cdfdd" />
+    <Link partId="110" fromNodeOrder="1" fromItemID="f_98" fromColID="fo_98.0" toItemID="tbl_O_YP_PRODUCT_FUN" toColID="tblCol_7ab7dd5818fb43369b615ee69c8d0d43" />
+    <Link partId="119" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.2" toItemID="f_98" toColID="fi_98.0" />
+    <Link partId="109" fromNodeOrder="1" fromItemID="f_102" fromColID="fo_102.0" toItemID="tbl_O_YP_PRODUCT_FUN" toColID="tblCol_b87b244591f547159f6a29065cebb455" />
+    <Link partId="120" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.2" toItemID="f_102" toColID="fi_102.0" />
+    <Link partId="115" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.13" toItemID="tbl_O_YP_PRODUCT_FUN" toColID="tblCol_93fb7cb82860430f92fd752710678d1d" />
+    <Link partId="175" fromNodeOrder="0" fromItemID="g.173" fromColID="g.173" toItemID="tbl_O_YP_PRODUCT_FUN" toColID="tblCol_dbbc7d9b33e147728547106b19fecfa9" />
+    <Link partId="178" fromNodeOrder="0" fromItemID="g.176" fromColID="g.176" toItemID="tbl_O_YP_PRODUCT_FUN" toColID="tblCol_e68f1f7c1e7b456ba40a4f6656b40103" />
+    <Link partId="172" fromNodeOrder="0" fromItemID="c.167" fromColID="c.167" toItemID="tbl_O_YP_PRODUCT_FUN" toColID="tblCol_635d1018a221482a852943870b3407c9" />
+    <Link partId="171" fromNodeOrder="0" fromItemID="c.169" fromColID="c.169" toItemID="tbl_O_YP_PRODUCT_FUN" toColID="tblCol_a310ed1faae14c05b6856da2426e1b14" />
+    <Link partId="297" fromNodeOrder="0" fromItemID="c.295" fromColID="c.295" toItemID="tbl_O_YP_PRODUCT_FUN" toColID="tblCol_57fb7c8fd82248b4a8e130b09ae04acd" />
+    <Link partId="183" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.10" toItemID="tbl_O_YP_PRODUCT_FUN" toColID="tblCol_93ac687e8b124679ba6953e0d20a2f3f" />
+    <Link partId="312" fromNodeOrder="0" fromItemID="c.309" fromColID="c.309" toItemID="tbl_O_YP_PRODUCT_FUN" toColID="tblCol_3995a9fdfe864ce197cb1b760d888741" />
+    <Link partId="314" fromNodeOrder="0" fromItemID="c.309" fromColID="c.309" toItemID="tbl_O_YP_PRODUCT_FUN" toColID="tblCol_3dc3045452ae4a4bb34ff66da894ebb3" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

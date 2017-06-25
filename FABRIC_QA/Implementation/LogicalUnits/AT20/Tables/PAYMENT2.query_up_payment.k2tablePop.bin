@@ -1,0 +1,8 @@
+﻿<Graph name="PAYMENT2.query_up_payment.k2tablePop.bin" lastPartID="27">
+  <TableNode partID="0" name="PAYMENT2" pos="724 132" width="309.3241" />
+  <DBQueryNode partID="9" name="HIS_DB" pos="229 156" size="253 84.14583" isRoot="true">
+    <DBQuery>{"Name":"query_INVOICE","ID":"query_query_INVOICE","ConnName":"HIS_DB","SQL":"Select INVOICE.STATUS,\r\n  INVOICE.INVOICE_ID\r\nFrom INVOICE\r\nWhere INVOICE.STATUS = 'CLOSED'","ColumnsList":[{"ID":"queryCol_0","Name":"STATUS","DataType":"Text","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"INVOICE_ID","DataType":"Text","Index":1,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="16" from="0" to="1" pointsArr="482 192.036453 492 192.036453 714 199.2552 724 199.2552" fromNodePartID="9" fromNodeColumnName="STATUS" toNodePartID="0" toNodeColumnName="STATUS" />
+  <Link partID="17" from="2" to="3" pointsArr="482 204.109375 492 204.109375 714 163.036453 724 163.036453" fromNodePartID="9" fromNodeColumnName="INVOICE_ID" toNodePartID="0" toNodeColumnName="INVOICE_ID" />
+</Graph>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>wsSimple</Name>
+  <ID>CAT1.wsSimple</ID>
+  <Category>CAT1</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>WebService</FunctionType>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>DBExecute("fabric","get MS."+cust_id, null);
+
+String sql2 = "select CITY FROM YP_ADDRESS";
+
+Object cust_type = DBSelectValue("MYSQL_SOURCE", sql2, null);
+
+String[] trnValues = {"MEXA", "1"};
+
+Map trn = getTranslationValues("trnProduct", trnValues);
+
+Map&lt;String, String&gt; cust_data = new HashMap&lt;String, String&gt;();
+
+cust_data.put("CUSTOMER_ID", cust_id.toString());
+cust_data.put("STREET_NAME", cust_type.toString());
+cust_data.put("MESSAGE", "TEST");
+cust_data.put("TRN_PRODUCT", trn.get("PRD_CD_OUT").toString());
+cust_data.put("SYSTEM", SYSTEM);
+cust_data.put("FUN_CONCAT", concat_shared("A", "_B"));
+cust_data.put("WS_CHECK", wsTwoLus(cust_id));
+
+
+return cust_data;</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="cust_id" id="fi.CAT1.wsSimple.0" index="0" dataType="Integer">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="result" id="fo.CAT1.wsSimple.0" index="0" dataType="Object">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

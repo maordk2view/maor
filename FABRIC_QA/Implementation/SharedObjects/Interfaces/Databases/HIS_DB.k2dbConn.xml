@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBConn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="DBConnOracle" name="HIS_DB" type="Oracle" version="1.8.0.1">
+  <Active>true</Active>
+  <DataSource>10.21.1.159</DataSource>
+  <PortNum>1521</PortNum>
+  <DataBase>XE</DataBase>
+  <UserId>HIS_USER</UserId>
+  <Password>70dwQB1tNTSXyoS5aJoyh+cFfCX67JZcE8FzR909Uzk=:T373eDlmXcUkqeh5WknCrJqWxRCPsIXtLn8QcbTVBSM=</Password>
+  <ConnectionStringClient>Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.21.1.159)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=XE)));User Id=HIS_USER;Password=[PASSWORD];</ConnectionStringClient>
+  <ConnectionStringServerSide>jdbc:oracle:thin:@10.21.1.159:1521/XE</ConnectionStringServerSide>
+  <CommandList />
+</DBConn>

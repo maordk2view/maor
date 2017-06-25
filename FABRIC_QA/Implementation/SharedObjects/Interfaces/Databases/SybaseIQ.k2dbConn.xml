@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBConn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="DBConnSybaseIQ" name="SybaseIQ" type="Sybase_IQ" version="1.7.0.8">
+  <Active>true</Active>
+  <DataSource>10.21.1.54</DataSource>
+  <PortNum>2638</PortNum>
+  <DataBase>rd-ts06_iqdemo</DataBase>
+  <UserId>DBA</UserId>
+  <Password>UaMxC5WB3i8C+Lcv8c/ZTYgVWqhcx3ViF/kTqQZ3dxw=:aBlqxQqqDlKxWCcN+6mlPq9qbmbJYi7oLnHYiWJJ2r0=</Password>
+  <ConnectionStringClient>Host=10.21.1.54:2638;ServerName='rd-ts06_iqdemo';DatabaseName='rd-ts06_iqdemo';UserID='DBA';Password='[PASSWORD]';</ConnectionStringClient>
+  <ConnectionStringServerSide />
+  <CommandList />
+  <ServerName>rd-ts06_iqdemo</ServerName>
+</DBConn>

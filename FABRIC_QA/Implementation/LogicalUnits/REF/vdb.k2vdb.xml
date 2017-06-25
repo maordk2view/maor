@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2.5.3.0">
+  <Name>vdb</Name>
+  <RootView>ROOT</RootView>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>ROOT</Table>
+    <Table>YP_PRODUCT_TRN</Table>
+    <Table>YP_REF_UDAC</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="ROOT">
+      <Populations>
+        <Population id="query_yp_cust_yp_customer" name="query_yp_cust_yp_customer" order="1" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="YP_PRODUCT_TRN">
+      <Populations>
+        <Population id="query_YP_PRODUCT_TRN" name="query_YP_PRODUCT_TRN" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="YP_REF_UDAC">
+      <Populations>
+        <Population id="query_YP_REF_UDAC" name="query_YP_REF_UDAC" order="2" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="false" name="FUN_REF_UDAC" />
+    <Item active="false" name="MS_REF_UDAC" />
+    <Item active="false" name="REF_SERVICE_AGREEMENT" />
+    <Item active="false" name="REF_YP_PRODUCT_TRN" />
+    <Item active="false" name="test_YP_REF_UDAC" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="6">
+      <From tableType="TableObject" table="ROOT" column="inst_id" columnId="tblCol_f4438f307a514a1a8e3d1aeeb2cb1886" />
+      <To tableType="TableObject" table="YP_PRODUCT_TRN" populationObjectName="query_YP_PRODUCT_TRN" column="INST_ID" columnId="query_102.0" />
+    </Relation>
+    <Relation id="14">
+      <From tableType="TableObject" table="ROOT" column="inst_id" columnId="tblCol_f4438f307a514a1a8e3d1aeeb2cb1886" />
+      <To tableType="TableObject" table="YP_REF_UDAC" populationObjectName="query_YP_REF_UDAC" column="INST_ID" columnId="query_3.0" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

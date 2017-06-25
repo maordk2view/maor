@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>getRowNum</Name>
+  <ID>ORACLE.getRowNum</ID>
+  <Category>ORACLE</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>RegularFunction</FunctionType>
+  <RegisterAsLuDbFunction>true</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc>Get Rownum value for current row.</Desc>
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>return OracleRownum.get(session, id);</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="session" id="fi.ORACLE.getRowNum.0" index="0" dataType="String">
+      <Comment />
+    </Input>
+    <Input name="id" id="fi.ORACLE.getRowNum.1" index="1" dataType="String">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="return" id="fo.ORACLE.getRowNum.0" index="0" dataType="Integer">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

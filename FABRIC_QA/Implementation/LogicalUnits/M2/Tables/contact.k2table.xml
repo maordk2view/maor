@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>contact</Name>
+  <ID>tbl_contact</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="merchant_id" id="tblCol_ec38ed756c334138a8d8b8c4ac7fc0ea" index="0" datatype="Integer" mandatory="true" />
+    <Column name="contact_id" id="tblCol_abd74ae5b6324a11a2f1862701bb072b" index="1" datatype="Integer" mandatory="true" />
+    <Column name="phone" id="tblCol_f6f6eb4131c64776be0e8db68fd9bed1" index="2" datatype="Text" />
+    <Column name="mobile" id="tblCol_de4289ad3f4e4f4296417acc7f93ad3b" index="3" datatype="Text" />
+    <Column name="fax" id="tblCol_2ea619138ae442e49e67cb9f6d5f2f15" index="4" datatype="Text" />
+    <Column name="email" id="tblCol_3465b89cc82b4e8db97351da35835504" index="5" datatype="Text" />
+    <Column name="other" id="tblCol_40e88d09190a45c497dfa139e217cd76" index="6" datatype="Text" />
+    <Column name="effective_end_date" id="tblCol_de6eb00a15574fd7b099d69cd7de488d" index="7" datatype="Text" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_abd74ae5b6324a11a2f1862701bb072b" />
+    <Index id="2" columnsIdsList="tblCol_f6f6eb4131c64776be0e8db68fd9bed1" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

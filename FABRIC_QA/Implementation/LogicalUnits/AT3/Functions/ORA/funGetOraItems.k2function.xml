@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>funGetOraItems</Name>
+  <ID>ORA.funGetOraItems</ID>
+  <Category>ORA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String sql = "SELECT CUSTOMER_ID, PRODUCT_CODE, PRODUCT_ISSUE_NUM, ITEM_ID, ITEM_VERSION, PROPOSAL_ID, LAST_VERSION_IND, SECTION_CODE, HEADING_CODE, SUB_HEADING_CODE, UDAC_CODE, RATE_UDAC_CODE, LISTING_ID, MAIN_ITEM_ID, ACTION_CODE, ACTION_CODE_RSN, CONTRACT_ID, CONTRACT_VERSION FROM YP_ITEM "+
+              "WHERE CUSTOMER_ID = ? AND PRODUCT_CODE = ? AND PRODUCT_ISSUE_NUM = ?";
+Object[] valuesArr = {I_CUSTOMER_ID,I_PRODUCT_CODE, I_PRODUCT_ISSUE_NUM};
+ResultSetWrapper rs = DBQuery("YP_TEST", sql, valuesArr);
+
+for(Object[] row : rs) {
+    yield(row);
+}
+</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>true</IsRootFunction>
+  <InputParams>
+    <Input name="I_CUSTOMER_ID" id="fi.ORA.funGetOraItems.0" index="0" dataType="Long">
+      <Comment />
+    </Input>
+    <Input name="I_PRODUCT_CODE" id="fi.ORA.funGetOraItems.1" index="1" dataType="String">
+      <Comment />
+    </Input>
+    <Input name="I_PRODUCT_ISSUE_NUM" id="fi.ORA.funGetOraItems.2" index="2" dataType="Long">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="CUSTOMER_ID" id="fo.ORA.funGetOraItems.0" index="0" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="PRODUCT_CODE" id="fo.ORA.funGetOraItems.1" index="1" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="PRODUCT_ISSUE_NUM" id="fo.ORA.funGetOraItems.2" index="2" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="ITEM_ID" id="fo.ORA.funGetOraItems.3" index="3" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="ITEM_VERSION" id="fo.ORA.funGetOraItems.4" index="4" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="PROPOSAL_ID" id="fo.ORA.funGetOraItems.5" index="5" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="LAST_VERSION_IND" id="fo.ORA.funGetOraItems.6" index="6" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="SECTION_CODE" id="fo.ORA.funGetOraItems.7" index="7" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="HEADING_CODE" id="fo.ORA.funGetOraItems.8" index="8" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="SUB_HEADING_CODE" id="fo.ORA.funGetOraItems.9" index="9" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="UDAC_CODE" id="fo.ORA.funGetOraItems.10" index="10" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="RATE_UDAC_CODE" id="fo.ORA.funGetOraItems.11" index="11" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="LISTING_ID" id="fo.ORA.funGetOraItems.12" index="12" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="MAIN_ITEM_ID" id="fo.ORA.funGetOraItems.13" index="13" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="ACTION_CODE" id="fo.ORA.funGetOraItems.14" index="14" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="ACTION_CODE_RSN" id="fo.ORA.funGetOraItems.15" index="15" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="CONTRACT_ID" id="fo.ORA.funGetOraItems.16" index="16" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="CONTRACT_VERSION" id="fo.ORA.funGetOraItems.17" index="17" dataType="Long">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

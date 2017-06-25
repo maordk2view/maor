@@ -1,0 +1,9 @@
+﻿<Graph name="ELI_EMP.query_ELI_EMP.k2tablePop.bin" lastPartID="105">
+  <TableNode partID="0" name="ELI_EMP" pos="481 117.817719" width="309.324219" />
+  <DBQueryNode partID="74" name="ORA_SOURCE" pos="194 110" size="253.006775 96.21875" isRoot="true">
+    <DBQuery>{"Name":"query_SOURCE03_ELI_EMP","ID":"query_query_SOURCE03_ELI_EMP","ConnName":"ORA_SOURCE","SQL":"select * from SOURCE03.ELI_EMP","ColumnsList":[{"ID":"queryCol_0","Name":"FIRST","DataType":"Text","Index":0,"IsInputArgument":false},{"ID":"queryCol_1","Name":"LAST","DataType":"Text","Index":1,"IsInputArgument":false},{"ID":"queryCol_2","Name":"COMP_ID","DataType":"Text","Index":2,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="78" from="0" to="1" pointsArr="447.006775 146.036453 457.006775 146.036453 471 148.854172 481 148.854172" fromNodePartID="74" fromNodeColumnName="FIRST" toNodePartID="0" toNodeColumnName="FIRST" />
+  <Link partID="79" from="2" to="3" pointsArr="447.006775 158.109375 457.006775 158.109375 471 160.9271 481 160.9271" fromNodePartID="74" fromNodeColumnName="LAST" toNodePartID="0" toNodeColumnName="LAST" />
+  <Link partID="80" from="4" to="5" pointsArr="447.006775 170.182281 457.006775 170.182281 471 173 481 173" fromNodePartID="74" fromNodeColumnName="COMP_ID" toNodePartID="0" toNodeColumnName="COMP_ID" />
+</Graph>

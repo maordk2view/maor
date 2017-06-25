@@ -1,0 +1,11 @@
+﻿<Graph name="Production_ProductCostHistory.query_Production_ProductCostHistory.k2tablePop.bin" lastPartID="18">
+  <TableNode partID="0" name="Production_ProductCostHistory" pos="366.408936 18.7812538" width="309.3241" />
+  <DBQueryNode partID="8" name="SqlServer_AdvWorks" pos="9.999985 14.8177109" size="311.408966 120.364578" isRoot="true">
+    <DBQuery>{"Name":"query_Production_ProductCostHistory","ID":"query_query_Production_ProductCostHistory","ConnName":"SqlServer_AdvWorks","SQL":"select * from Production.ProductCostHistory","ColumnsList":[{"ID":"queryCol_0","Name":"ProductID","DataType":"Integer","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"StartDate","DataType":"Text","Index":1,"IsInputArgument":true},{"ID":"queryCol_2","Name":"EndDate","DataType":"Text","Index":2,"IsInputArgument":true},{"ID":"queryCol_3","Name":"StandardCost","DataType":"Real","Index":3,"IsInputArgument":true},{"ID":"queryCol_4","Name":"ModifiedDate","DataType":"Text","Index":4,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="14" from="0" to="1" pointsArr="321.408936 50.85417 331.408936 50.85417 333.908936 25 353.908936 25 356.408936 49.81771 366.408936 49.81771" fromNodePartID="8" fromNodeColumnName="ProductID" toNodePartID="0" toNodeColumnName="ProductID" />
+  <Link partID="15" from="2" to="3" pointsArr="321.408936 62.9270859 331.408936 62.9270859 333.908936 50 353.908936 50 356.408936 61.89063 366.408936 61.89063" fromNodePartID="8" fromNodeColumnName="StartDate" toNodePartID="0" toNodeColumnName="StartDate" />
+  <Link partID="16" from="4" to="5" pointsArr="321.408936 75 331.408936 75 333.908936 75 353.908936 75 356.408936 73.96355 366.408936 73.96355" fromNodePartID="8" fromNodeColumnName="EndDate" toNodePartID="0" toNodeColumnName="EndDate" />
+  <Link partID="17" from="6" to="7" pointsArr="321.408936 87.0729141 331.408936 87.0729141 333.908936 100 353.908936 100 356.408936 86.03645 366.408936 86.03645" fromNodePartID="8" fromNodeColumnName="StandardCost" toNodePartID="0" toNodeColumnName="StandardCost" />
+  <Link partID="18" from="8" to="9" pointsArr="321.408936 99.14583 331.408936 99.14583 333.908936 125 353.908936 125 356.408936 98.109375 366.408936 98.109375" fromNodePartID="8" fromNodeColumnName="ModifiedDate" toNodePartID="0" toNodeColumnName="ModifiedDate" />
+</Graph>

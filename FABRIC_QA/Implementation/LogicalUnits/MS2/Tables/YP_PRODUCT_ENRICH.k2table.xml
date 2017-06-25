@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>YP_PRODUCT_ENRICH</Name>
+  <ID>tbl_YP_PRODUCT_ENRICH</ID>
+  <LazyDataUpdate performEvery="00:00:30" />
+  <Columns>
+    <Column name="CUSTOMER_ID" id="tblCol_424d463904c24b1b836458e8bc34d067" index="0" datatype="Long" />
+    <Column name="PRODUCT_CODE" id="tblCol_2cd557908c384808a305b13b3f544a76" index="1" datatype="String" />
+    <Column name="PRODUCT_STATUS" id="tblCol_55e5e2229a6f4fb8b6e790c567aa9225" index="2" datatype="Long" />
+    <Column name="ACTIVITY_TYPE" id="tblCol_6b39f71472a84bd381f05c772f1099cc" index="3" datatype="Long" />
+    <Column name="PRODUCT_IND" id="tblCol_b9097041a6294abda5e3974d9b4da0a0" index="4" datatype="Text" mandatory="true" defaultValue="N" columnType="ComputedField" />
+    <Column name="NEW_SEQ" id="tblCol_5bbb28eb64284904b98bb814d04d8ca7" index="5" datatype="Integer" defaultValue="1" columnType="ComputedField" />
+    <Column name="CURRENT_DATE" id="tblCol_d16b916e2a42400388d5fb844f698ab4" index="6" datatype="Text" mandatory="true" />
+    <Column name="CON1" id="tblCol_05a752bcbcc2451cabab28f42bc067e7" index="7" datatype="Text" columnType="ComputedField" />
+    <Column name="NEW_PRODUCT" id="tblCol_29fb3082eaa641d38c60fd6acfc6462d" index="8" datatype="Text" columnType="ComputedField" />
+    <Column name="ENRICH1" id="tblCol_bac7b66f7c6449d6be9db8e999075099" index="9" datatype="Integer" columnType="ComputedField" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList>
+    <Enrichment>
+      <Name>testEnrichmentIns</Name>
+      <Type>Function</Type>
+      <TableName>YP_PRODUCT_ENRICH</TableName>
+    </Enrichment>
+    <Enrichment>
+      <Name>testEnrichmentTrans</Name>
+      <Type>Function</Type>
+      <TableName>YP_PRODUCT_ENRICH</TableName>
+    </Enrichment>
+  </EnrichmentList>
+</TableObject>

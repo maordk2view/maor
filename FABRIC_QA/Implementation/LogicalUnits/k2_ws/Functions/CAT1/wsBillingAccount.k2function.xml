@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>wsBillingAccount</Name>
+  <ID>CAT1.wsBillingAccount</ID>
+  <Category>CAT1</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>WebService</FunctionType>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>DBExecute("fabric","get ORA_CUST."+ cust_id, null);
+
+Object[] valuesArr = null;
+
+String SQL = "SELECT * FROM BILLING_ACCOUNT ";
+				
+ResultSetWrapper rs = DBQuery("fabric", SQL , valuesArr);
+
+return rs;</FunctionBody>
+  <IsSyntaxValid>false</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="cust_id" id="fi.CAT1.wsBillingAccount.0" index="0" dataType="Integer">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="result" id="fo.CAT1.wsBillingAccount.0" index="0" dataType="Object">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>funGetMYSQLItem</PopulationObjectName>
+  <TableName>M_YP_ITEM_FUN</TableName>
+  <ID>funGetMYSQLItem</ID>
+  <RootItemID>f_3</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="i_cust_id" id="fi_3.0" dataType="Integer" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item id="f_3" name="funGetMYSQLItem" nodeOrder="0" module="Function" fileName="funGetMYSQLItem.k2function.xml">
+      <InputsList>
+        <Input id="fi_3.0" name="i_cust_id" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_3.0" name="CUSTOMER_ID" />
+        <Output id="fo_3.1" name="PRODUCT_CODE" />
+        <Output id="fo_3.2" name="PRODUCT_ISSUE_NUM" />
+        <Output id="fo_3.3" name="ITEM_ID" />
+        <Output id="fo_3.4" name="ITEM_VERSION" />
+        <Output id="fo_3.5" name="PROPOSAL_ID" />
+        <Output id="fo_3.6" name="LAST_VERSION_IND" />
+        <Output id="fo_3.7" name="SECTION_CODE" />
+        <Output id="fo_3.8" name="HEADING_CODE" />
+        <Output id="fo_3.9" name="SUB_HEADING_CODE" />
+        <Output id="fo_3.10" name="UDAC_CODE" />
+        <Output id="fo_3.11" name="ACTION_CODE" />
+        <Output id="fo_3.12" name="CONTRACT_ID" />
+        <Output id="fo_3.13" name="RATE_UDAC_CODE" />
+        <Output id="fo_3.14" name="OPEN_DATE" />
+        <Output id="fo_3.15" name="IN_OUT_DATE" />
+        <Output id="fo_3.16" name="ITEM_STATUS" />
+        <Output id="fo_3.17" name="LISTING_ID" />
+        <Output id="fo_3.18" name="MAIN_ITEM_ID" />
+      </OutputsList>
+    </Item>
+    <Item id="f_110" name="trnProduct" nodeOrder="0" module="Translation" fileName="trnProduct.k2trans.xml">
+      <InputsList>
+        <Input id="fi_110.0" name="PRD_CD_IN" />
+        <Input id="fi_110.1" name="VSERION" defaultValue="1" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_110.0" name="PRD_CD_OUT" />
+      </OutputsList>
+    </Item>
+    <Item id="f_117" name="trnProduct" nodeOrder="0" module="Translation" fileName="trnProduct.k2trans.xml">
+      <InputsList>
+        <Input id="fi_117.0" name="PRD_CD_IN" defaultValue="" />
+        <Input id="fi_117.1" name="VSERION" defaultValue="1" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_117.0" name="PRD_CD_OUT" />
+      </OutputsList>
+    </Item>
+    <Item id="f_129" name="trnProduct" nodeOrder="0" module="Translation" fileName="trnProduct.k2trans.xml">
+      <InputsList>
+        <Input id="fi_129.0" name="PRD_CD_IN" defaultValue="D" />
+        <Input id="fi_129.1" name="VSERION" defaultValue="1" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_129.0" name="PRD_CD_OUT" />
+      </OutputsList>
+    </Item>
+    <Item id="f_142" name="trnUdac" nodeOrder="0" module="Translation" fileName="trnUdac.k2trans.xml">
+      <InputsList>
+        <Input id="fi_142.0" name="IN_UDAC" defaultValue="A" />
+        <Input id="fi_142.1" name="IN_VER" defaultValue="3" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_142.0" name="OUT_UDAC" />
+      </OutputsList>
+    </Item>
+    <Item id="f_148" name="trnProduct" nodeOrder="0" module="Translation" fileName="trnProduct.k2trans.xml">
+      <InputsList>
+        <Input id="fi_148.0" name="PRD_CD_IN" defaultValue="A" />
+        <Input id="fi_148.1" name="VSERION" defaultValue="10" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_148.0" name="PRD_CD_OUT" />
+      </OutputsList>
+    </Item>
+    <Item id="f_103" name="trnProduct" nodeOrder="1" module="Translation" fileName="trnProduct.k2trans.xml">
+      <InputsList>
+        <Input id="fi_103.0" name="PRD_CD_IN" />
+        <Input id="fi_103.1" name="VSERION" defaultValue="1" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_103.0" name="PRD_CD_OUT" />
+      </OutputsList>
+    </Item>
+    <Item id="f_122" name="trnProduct" nodeOrder="1" module="Translation" fileName="trnProduct.k2trans.xml">
+      <InputsList>
+        <Input id="fi_122.0" name="PRD_CD_IN" defaultValue="A" />
+        <Input id="fi_122.1" name="VSERION" defaultValue="1" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_122.0" name="PRD_CD_OUT" />
+      </OutputsList>
+    </Item>
+    <Item id="f_225" name="getTrnValue" nodeOrder="1" module="Function" fileName="getTrnValue.k2function.xml">
+      <InputsList>
+        <Input id="fi_225.0" name="prd_cd" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_225.0" name="prd_cd_out" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="43" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.0" toItemID="tbl_M_YP_ITEM_FUN" toColID="tblCol_9eb61cd6f63943f4b52a8d6792cdc1e7" />
+    <Link partId="44" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.1" toItemID="tbl_M_YP_ITEM_FUN" toColID="tblCol_abcce3a19fce462aaca3a13f1bdd2f2f" />
+    <Link partId="45" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.2" toItemID="tbl_M_YP_ITEM_FUN" toColID="tblCol_0f78b6b2d8634cb58ba73b04542cb9b7" />
+    <Link partId="46" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.3" toItemID="tbl_M_YP_ITEM_FUN" toColID="tblCol_93adc9947d4d48c88dd006d96c5accbe" />
+    <Link partId="47" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.4" toItemID="tbl_M_YP_ITEM_FUN" toColID="tblCol_8084d28713304077ae32ed7dc784c078" />
+    <Link partId="48" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.5" toItemID="tbl_M_YP_ITEM_FUN" toColID="tblCol_5fdf3f3a3a91457c9b057d7c312f2ea4" />
+    <Link partId="49" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.6" toItemID="tbl_M_YP_ITEM_FUN" toColID="tblCol_54b4a968e26748e4adecb928349a3dbb" />
+    <Link partId="50" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.7" toItemID="tbl_M_YP_ITEM_FUN" toColID="tblCol_0790d8c4559c46a88489809274f5e9c5" />
+    <Link partId="51" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.8" toItemID="tbl_M_YP_ITEM_FUN" toColID="tblCol_cf6f1a2e07f74d818ce9fa8d3009c956" />
+    <Link partId="52" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.9" toItemID="tbl_M_YP_ITEM_FUN" toColID="tblCol_0d0b3c750e7f431bab1933f53a0e8e0a" />
+    <Link partId="53" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.10" toItemID="tbl_M_YP_ITEM_FUN" toColID="tblCol_3dc2d45c8b0d43e08451c610bb22e26a" />
+    <Link partId="54" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.11" toItemID="tbl_M_YP_ITEM_FUN" toColID="tblCol_7f0b32b98d174458814c4fbb493b66f1" />
+    <Link partId="55" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.12" toItemID="tbl_M_YP_ITEM_FUN" toColID="tblCol_75e7f7196c4e4028bd2b8e4b2f094fb0" />
+    <Link partId="56" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.13" toItemID="tbl_M_YP_ITEM_FUN" toColID="tblCol_e67d06c6efec4046ac7671cb4f9603d4" />
+    <Link partId="57" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.14" toItemID="tbl_M_YP_ITEM_FUN" toColID="tblCol_cc3dd245be7a423a9fbaf657fb1a7133" />
+    <Link partId="58" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.15" toItemID="tbl_M_YP_ITEM_FUN" toColID="tblCol_23f6845451904c5c9dd4faf68b2dc74c" />
+    <Link partId="59" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.16" toItemID="tbl_M_YP_ITEM_FUN" toColID="tblCol_6a068e5ba4ec4d8ba45bc3a6c66914b2" />
+    <Link partId="60" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.17" toItemID="tbl_M_YP_ITEM_FUN" toColID="tblCol_8c2f3c76ffb443c7850fe8275543cb13" />
+    <Link partId="61" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.18" toItemID="tbl_M_YP_ITEM_FUN" toColID="tblCol_febc6b9c717d458ebdfd54a409a81377" />
+    <Link partId="108" fromNodeOrder="1" fromItemID="f_103" fromColID="fo_103.0" toItemID="tbl_M_YP_ITEM_FUN" toColID="tblCol_4e696862795046adb42fada5b859817f" />
+    <Link partId="109" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.1" toItemID="f_103" toColID="fi_103.0" />
+    <Link partId="115" fromNodeOrder="0" fromItemID="f_110" fromColID="fo_110.0" toItemID="tbl_M_YP_ITEM_FUN" toColID="tblCol_521368d53aae4304bb41055b026fa55a" />
+    <Link partId="121" fromNodeOrder="0" fromItemID="f_117" fromColID="fo_117.0" toItemID="tbl_M_YP_ITEM_FUN" toColID="tblCol_14067c18ef0846638edbb12b8eb21f77" />
+    <Link partId="127" fromNodeOrder="1" fromItemID="f_122" fromColID="fo_122.0" toItemID="tbl_M_YP_ITEM_FUN" toColID="tblCol_8344452048414f018992c01249b4673a" />
+    <Link partId="128" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.12" toItemID="f_122" toColID="fi_122.1" />
+    <Link partId="134" fromNodeOrder="0" fromItemID="f_129" fromColID="fo_129.0" toItemID="tbl_M_YP_ITEM_FUN" toColID="tblCol_e4efd067e39449ae90b294f54256730b" />
+    <Link partId="146" fromNodeOrder="0" fromItemID="f_142" fromColID="fo_142.0" toItemID="tbl_M_YP_ITEM_FUN" toColID="tblCol_7fecedf628be4ec6a3c3afcd73e05293" />
+    <Link partId="152" fromNodeOrder="0" fromItemID="f_148" fromColID="fo_148.0" toItemID="tbl_M_YP_ITEM_FUN" toColID="tblCol_3240f47a57ff4fe2870f0692a1ee973f" />
+    <Link partId="230" fromNodeOrder="1" fromItemID="f_225" fromColID="fo_225.0" toItemID="tbl_M_YP_ITEM_FUN" toColID="tblCol_e95c6de9be334ff69d96dd718e69bad6" />
+    <Link partId="228" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.1" toItemID="f_225" toColID="fi_225.0" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

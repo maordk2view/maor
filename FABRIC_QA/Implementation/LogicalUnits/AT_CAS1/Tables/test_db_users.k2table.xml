@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>test_db_users</Name>
+  <ID>tbl_test_db_users</ID>
+  <EntityId>tblCol_4cf61ae12ad742b1b2f7071127a59590</EntityId>
+  <LazyDataUpdate performEvery="1.00:00:00">
+    <DeleteEntityIfNotExists>true</DeleteEntityIfNotExists>
+  </LazyDataUpdate>
+  <Columns>
+    <Column name="id" id="tblCol_4cf61ae12ad742b1b2f7071127a59590" index="0" datatype="Text" mandatory="true" />
+    <Column name="name" id="tblCol_6557c6360bb94d33bafe02559bd616c5" index="1" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_Images</ID>
+  <PopulationObjectName>query_Images</PopulationObjectName>
+  <TableName>Images</TableName>
+  <RootItemID>query_query_Images</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="ProductPhotoID" id="queryCol_0" dataType="Integer" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_Images" name="query_Images" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="SqlServer_AdvWorks">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="ProductPhotoID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="ThumbNailPhoto" dataType="BLOB" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="ThumbnailPhotoFileName" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="LargePhoto" dataType="BLOB" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="LargePhotoFileName" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="ModifiedDate" dataType="Text" index="5" />
+      </OutputsList>
+      <SQL><![CDATA[Select *
+From Production.ProductPhoto]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="16" fromNodeOrder="0" fromItemID="query_query_Images" fromColID="queryCol_0" toItemID="Images" toColID="tblCol_e74506f8607f4ce18cabb97815929414" />
+    <Link partId="17" fromNodeOrder="0" fromItemID="query_query_Images" fromColID="queryCol_1" toItemID="Images" toColID="tblCol_3a5f99301f7c4b6e84c1f4ef39285ddb" />
+    <Link partId="18" fromNodeOrder="0" fromItemID="query_query_Images" fromColID="queryCol_2" toItemID="Images" toColID="tblCol_6dc5f3050ff140fd85a79bb36e0dae8a" />
+    <Link partId="19" fromNodeOrder="0" fromItemID="query_query_Images" fromColID="queryCol_3" toItemID="Images" toColID="tblCol_f956b62291244e2db76d23dd1b351ed0" />
+    <Link partId="20" fromNodeOrder="0" fromItemID="query_query_Images" fromColID="queryCol_4" toItemID="Images" toColID="tblCol_dc11f9f67e4746ee89ba4f21f1aa68dd" />
+    <Link partId="21" fromNodeOrder="0" fromItemID="query_query_Images" fromColID="queryCol_5" toItemID="Images" toColID="tblCol_5f0e7479d4034e108cf7a4c8f359226f" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

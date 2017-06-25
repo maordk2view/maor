@@ -1,0 +1,88 @@
+﻿<Graph version="1.2.6.0" name="vdb.k2vdb.bin" lastPartID="18834">
+  <Group id="0" partID="5862" name="ADDRESS" pos="313 15.1809845" size="560 336.638062" wasexpanded="false" expanded="true">
+    <Node id="1" partID="12935" name="ADDRESS_NAME_LINK" isRootView="false" pos="317 59.2721252" size="257 138.546844" listGroupSize="250 100" viewType="Table">
+      <TableProperties>{"TableName":"ADDRESS_NAME_LINK","TablePopulationPropertiesList":[{"ID":"query_ADDRESS_NAME_LINK","Name":"query_ADDRESS_NAME_LINK","Order":2}]}</TableProperties>
+    </Node>
+    <Node id="2" partID="12955" name="ADDRESS_DATA" isRootView="false" pos="612 209.272125" size="257 138.5469" listGroupSize="250 100" viewType="Table">
+      <TableProperties>{"TableName":"ADDRESS_DATA","TablePopulationPropertiesList":[{"ID":"query_ADDRESS_DATA","Name":"query_ADDRESS_DATA","Order":3}]}</TableProperties>
+    </Node>
+    <Node id="3" partID="13015" name="NAME_DATA" isRootView="false" pos="612 34.27213" size="257 138.54686" listGroupSize="250 100" viewType="Table">
+      <TableProperties>{"TableName":"NAME_DATA","TablePopulationPropertiesList":[{"ID":"query_NAME_DATA","Name":"query_NAME_DATA","Order":3}]}</TableProperties>
+    </Node>
+    <Link from="23" to="24" partID="1144" linkType="Database" pointsArr="574 194.81897 584 194.81897 602 80.8177 612 80.8177" fromNodePartID="12935" fromNodeColumnName="NAME_ID" toNodePartID="13015" toNodeColumnName="NAME_ID" toNodePopulationObjectName="query_NAME_DATA" />
+    <Link from="25" to="26" partID="138" linkType="Database" pointsArr="574 194.81897 584 194.81897 602 255.8177 612 255.8177" fromNodePartID="12935" fromNodeColumnName="ADDRESS_ID" toNodePartID="12955" toNodeColumnName="ADDRESS_ID" toNodePopulationObjectName="query_ADDRESS_DATA" />
+  </Group>
+  <Node id="4" partID="11583" name="CONTRACT" isRootView="false" pos="456.5 380" size="257 138.546936" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"CONTRACT","TablePopulationPropertiesList":[{"ID":"query_CONTRACT","Name":"query_CONTRACT","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="5" partID="11648" name="SERVICE_AGREEMENT" isRootView="false" pos="456.5 555" size="257 138.546753" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"SERVICE_AGREEMENT","TablePopulationPropertiesList":[{"ID":"query_SERVICE_AGREEMENT","Name":"query_SERVICE_AGREEMENT","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="6" partID="11695" name="SERVICE_FEATURE" isRootView="false" pos="903 555" size="257 138.546753" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"SERVICE_FEATURE","TablePopulationPropertiesList":[{"ID":"query_SERVICE_FEATURE","Name":"query_SERVICE_FEATURE","Order":3}]}</TableProperties>
+  </Node>
+  <Node id="7" partID="11745" name="BILLING_ACCOUNT" isRootView="false" pos="456.5 730" size="257 138.546753" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"BILLING_ACCOUNT","TablePopulationPropertiesList":[{"ID":"query_BILLING_ACCOUNT","Name":"query_BILLING_ACCOUNT","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="8" partID="11951" name="ADJUSTMENT" isRootView="false" pos="456.5 905" size="257 138.546753" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"ADJUSTMENT","TablePopulationPropertiesList":[{"ID":"query_ADJUSTMENT","Name":"query_ADJUSTMENT","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="9" partID="12078" name="BAN_DIRECT_DEBIT" isRootView="false" pos="456.5 1080" size="257 138.547119" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"BAN_DIRECT_DEBIT","TablePopulationPropertiesList":[{"ID":"query_BAN_DIRECT_DEBIT","Name":"query_BAN_DIRECT_DEBIT","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="10" partID="12100" name="BILL" isRootView="false" pos="456.5 1255" size="257 138.547119" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"BILL","TablePopulationPropertiesList":[{"ID":"query_BILL","Name":"query_BILL","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="11" partID="12237" name="BILL_SUBSCRIBER" isRootView="false" pos="456.5 1430" size="257 138.547119" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"BILL_SUBSCRIBER","TablePopulationPropertiesList":[{"ID":"query_BILL_SUBSCRIBER","Name":"query_BILL_SUBSCRIBER","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="12" partID="12335" name="CHARGE_HISTORY" isRootView="false" pos="456.5 1605" size="257 138.547119" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"CHARGE_HISTORY","TablePopulationPropertiesList":[{"ID":"query_CHARGE_HISTORY","Name":"query_CHARGE_HISTORY","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="13" partID="12464" name="CHARGE_HIST_TAXES" isRootView="false" pos="456.5 1780" size="257 138.547119" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"CHARGE_HIST_TAXES","TablePopulationPropertiesList":[{"ID":"query_CHARGE_HIST_TAXES","Name":"query_CHARGE_HIST_TAXES","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="14" partID="12484" name="CHARGE_TAXES" isRootView="false" pos="456.5 1955" size="257 138.546875" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"CHARGE_TAXES","TablePopulationPropertiesList":[{"ID":"query_CHARGE_TAXES","Name":"query_CHARGE_TAXES","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="15" partID="12504" name="CREDIT_DEBIT_LINK" isRootView="false" pos="456.5 2130" size="257 138.546387" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"CREDIT_DEBIT_LINK","TablePopulationPropertiesList":[{"ID":"query_CREDIT_DEBIT_LINK","Name":"query_CREDIT_DEBIT_LINK","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="16" partID="12527" name="CREDIT_HISTORY" isRootView="false" pos="456.5 2305" size="257 138.546387" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"CREDIT_HISTORY","TablePopulationPropertiesList":[{"ID":"query_CREDIT_HISTORY","Name":"query_CREDIT_HISTORY","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="17" partID="12586" name="INVOICE" isRootView="false" pos="456.5 2655" size="257 138.546387" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"INVOICE","TablePopulationPropertiesList":[{"ID":"query_INVOICE","Name":"query_INVOICE","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="18" partID="12602" name="PAYMENT_ACTIVITY" isRootView="false" pos="456.5 2830" size="257 138.546387" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"PAYMENT_ACTIVITY","TablePopulationPropertiesList":[{"ID":"query_PAYMENT_ACTIVITY","Name":"query_PAYMENT_ACTIVITY","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="19" partID="12646" name="DIRECT_DEBIT_REQUEST" isRootView="false" pos="456.5 2480" size="257 138.546387" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"DIRECT_DEBIT_REQUEST","TablePopulationPropertiesList":[{"ID":"query_DIRECT_DEBIT_REQUEST","Name":"query_DIRECT_DEBIT_REQUEST","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="20" partID="12677" name="USAGE" isRootView="false" pos="456.5 3005" size="257 138.546387" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"USAGE","TablePopulationPropertiesList":[{"ID":"query_USAGE","Name":"query_USAGE","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="21" partID="12878" name="CUSTOMER" isRootView="true" pos="10 1630" size="257 138.547119" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"CUSTOMER","TablePopulationPropertiesList":[{"ID":"query_CUSTOMER","Name":"query_CUSTOMER","Order":1}]}</TableProperties>
+  </Node>
+  <Link from="27" to="28" partID="77" linkType="Database" pointsArr="267 1676.54553 277 1676.54553 307 121.908836 317 121.908836" fromNodePartID="12878" fromNodeColumnName="CUSTOMER_ID" toNodePartID="12935" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="query_ADDRESS_NAME_LINK" />
+  <Link from="27" to="29" partID="993" linkType="Database" pointsArr="267 1676.54553 277 1676.54553 446.5 426.545563 456.5 426.545563" fromNodePartID="12878" fromNodeColumnName="CUSTOMER_ID" toNodePartID="11583" toNodeColumnName="BAN" toNodePopulationObjectName="query_CONTRACT" />
+  <Link from="27" to="30" partID="1237" linkType="Database" pointsArr="267 1676.54553 277 1676.54553 446.5 601.5456 456.5 601.5456" fromNodePartID="12878" fromNodeColumnName="CUSTOMER_ID" toNodePartID="11648" toNodeColumnName="BAN" toNodePopulationObjectName="query_SERVICE_AGREEMENT" />
+  <Link from="31" to="32" partID="1288" linkType="Database" pointsArr="713.5 601.5456 723.5 601.5456 893 601.5456 903 601.5456" fromNodePartID="11648" fromNodeColumnName="BAN" toNodePartID="11695" toNodeColumnName="BAN" toNodePopulationObjectName="query_SERVICE_FEATURE" />
+  <Link from="27" to="33" partID="1754" linkType="Database" pointsArr="267 1676.54553 277 1676.54553 446.5 776.5456 456.5 776.5456" fromNodePartID="12878" fromNodeColumnName="CUSTOMER_ID" toNodePartID="11745" toNodeColumnName="BAN" toNodePopulationObjectName="query_BILLING_ACCOUNT" />
+  <Link from="27" to="34" partID="1882" linkType="Database" pointsArr="267 1676.54553 277 1676.54553 446.5 951.5456 456.5 951.5456" fromNodePartID="12878" fromNodeColumnName="CUSTOMER_ID" toNodePartID="11951" toNodeColumnName="BAN" toNodePopulationObjectName="query_ADJUSTMENT" />
+  <Link from="27" to="35" partID="1927" linkType="Database" pointsArr="267 1676.54553 277 1676.54553 446.5 1126.54553 456.5 1126.54553" fromNodePartID="12878" fromNodeColumnName="CUSTOMER_ID" toNodePartID="12078" toNodeColumnName="BAN" toNodePopulationObjectName="query_BAN_DIRECT_DEBIT" />
+  <Link from="27" to="36" partID="2065" linkType="Database" pointsArr="267 1676.54553 277 1676.54553 446.5 1301.54553 456.5 1301.54553" fromNodePartID="12878" fromNodeColumnName="CUSTOMER_ID" toNodePartID="12100" toNodeColumnName="BAN" toNodePopulationObjectName="query_BILL" />
+  <Link from="27" to="37" partID="2164" linkType="Database" pointsArr="267 1676.54553 277 1676.54553 446.5 1476.54553 456.5 1476.54553" fromNodePartID="12878" fromNodeColumnName="CUSTOMER_ID" toNodePartID="12237" toNodeColumnName="BAN" toNodePopulationObjectName="query_BILL_SUBSCRIBER" />
+  <Link from="27" to="38" partID="2294" linkType="Database" pointsArr="267 1676.54553 277 1676.54553 446.5 1667.63672 456.5 1667.63672" fromNodePartID="12878" fromNodeColumnName="CUSTOMER_ID" toNodePartID="12335" toNodeColumnName="BAN" toNodePopulationObjectName="query_CHARGE_HISTORY" />
+  <Link from="27" to="39" partID="2315" linkType="Database" pointsArr="267 1676.54553 277 1676.54553 446.5 1842.63672 456.5 1842.63672" fromNodePartID="12878" fromNodeColumnName="CUSTOMER_ID" toNodePartID="12464" toNodeColumnName="BAN" toNodePopulationObjectName="query_CHARGE_HIST_TAXES" />
+  <Link from="27" to="40" partID="2336" linkType="Database" pointsArr="267 1676.54553 277 1676.54553 446.5 2017.63672 456.5 2017.63672" fromNodePartID="12878" fromNodeColumnName="CUSTOMER_ID" toNodePartID="12484" toNodeColumnName="BAN" toNodePopulationObjectName="query_CHARGE_TAXES" />
+  <Link from="27" to="41" partID="2360" linkType="Database" pointsArr="267 1676.54553 277 1676.54553 446.5 2176.54565 456.5 2176.54565" fromNodePartID="12878" fromNodeColumnName="CUSTOMER_ID" toNodePartID="12504" toNodeColumnName="BAN" toNodePopulationObjectName="query_CREDIT_DEBIT_LINK" />
+  <Link from="27" to="42" partID="2420" linkType="Database" pointsArr="267 1676.54553 277 1676.54553 446.5 2351.54565 456.5 2351.54565" fromNodePartID="12878" fromNodeColumnName="CUSTOMER_ID" toNodePartID="12527" toNodeColumnName="BAN" toNodePopulationObjectName="query_CREDIT_HISTORY" />
+  <Link from="27" to="43" partID="2451" linkType="Database" pointsArr="267 1676.54553 277 1676.54553 446.5 2542.63672 456.5 2542.63672" fromNodePartID="12878" fromNodeColumnName="CUSTOMER_ID" toNodePartID="12646" toNodeColumnName="BAN" toNodePopulationObjectName="query_DIRECT_DEBIT_REQUEST" />
+  <Link from="27" to="44" partID="2468" linkType="Database" pointsArr="267 1676.54553 277 1676.54553 446.5 2701.54565 456.5 2701.54565" fromNodePartID="12878" fromNodeColumnName="CUSTOMER_ID" toNodePartID="12586" toNodeColumnName="BAN" toNodePopulationObjectName="query_INVOICE" />
+  <Link from="27" to="45" partID="2513" linkType="Database" pointsArr="267 1676.54553 277 1676.54553 446.5 2876.54565 456.5 2876.54565" fromNodePartID="12878" fromNodeColumnName="CUSTOMER_ID" toNodePartID="12602" toNodeColumnName="BAN" toNodePopulationObjectName="query_PAYMENT_ACTIVITY" />
+  <Link from="27" to="46" partID="2714" linkType="Database" pointsArr="267 1676.54553 277 1676.54553 446.5 3067.63672 456.5 3067.63672" fromNodePartID="12878" fromNodeColumnName="CUSTOMER_ID" toNodePartID="12677" toNodeColumnName="BAN" toNodePopulationObjectName="query_USAGE" />
+  <CommentBalloon id="22" text="Test" anchor="null" reanchorable="true" loc="30 30" />
+</Graph>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Production_ProductPhoto</Name>
+  <ID>tbl_Production_ProductPhoto</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="ProductPhotoID" id="tblCol_019b17c84f7d40ff824ba00862cf52ee" index="0" datatype="Integer" mandatory="true" />
+    <Column name="ThumbNailPhoto" id="tblCol_0986a530d9094b15af045f93fd5c2e22" index="1" datatype="BLOB" />
+    <Column name="ThumbnailPhotoFileName" id="tblCol_534a2387174a4862a3c9bec2829fdd17" index="2" datatype="Text" />
+    <Column name="LargePhoto" id="tblCol_c4d8423b9f2f4f06bed75f4effe682da" index="3" datatype="BLOB" />
+    <Column name="LargePhotoFileName" id="tblCol_d50e36b657364555ab5a55e6d7398bcd" index="4" datatype="Text" />
+    <Column name="ModifiedDate" id="tblCol_d9e0ab22aa6d4146bcbf68e310ada027" index="5" datatype="Text" mandatory="true" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_019b17c84f7d40ff824ba00862cf52ee" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

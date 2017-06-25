@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>getYpItemRecords</PopulationObjectName>
+  <TableName>YP_ITEM</TableName>
+  <ID>getYpItemRecords</ID>
+  <RootItemID>f_3</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="CUST_ID" id="fi_3.0" dataType="Integer" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item id="f_3" name="getYpItemRecords" nodeOrder="0" module="Function" fileName="getYpItemRecords.k2function.xml">
+      <InputsList>
+        <Input id="fi_3.0" name="CUST_ID" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_3.0" name="CUSTOMER_ID" />
+        <Output id="fo_3.1" name="PRODUCT_CODE" />
+        <Output id="fo_3.2" name="PRODUCT_ISSUE_NUM" />
+        <Output id="fo_3.3" name="ITEM_ID" />
+        <Output id="fo_3.4" name="ITEM_VERSION" />
+        <Output id="fo_3.5" name="LAST_VERSION_IND" />
+      </OutputsList>
+    </Item>
+    <Item id="f_39" name="k2_currentDateTime" nodeOrder="0" module="Function" fileName="k2_currentDateTime.k2function.xml">
+      <InputsList />
+      <OutputsList>
+        <Output id="fo_39.0" name="current_datetime" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="17" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.0" toItemID="tbl_YP_ITEM" toColID="tblCol_b1d05ad9ee7e4cd3b4329b0447b38709" />
+    <Link partId="18" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.1" toItemID="tbl_YP_ITEM" toColID="tblCol_444f99ebe7534307981f1a3dd727796a" />
+    <Link partId="19" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.2" toItemID="tbl_YP_ITEM" toColID="tblCol_df3b5a636cc945d4ba0b8a1f59103ab3" />
+    <Link partId="20" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.3" toItemID="tbl_YP_ITEM" toColID="tblCol_cae7104ecad64c6690aa94c5e064f5da" />
+    <Link partId="21" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.4" toItemID="tbl_YP_ITEM" toColID="tblCol_29c4549ea6e64ea89d4c4f52b84e92d9" />
+    <Link partId="22" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.5" toItemID="tbl_YP_ITEM" toColID="tblCol_e96c389672cf4257a4f71b6666b15988" />
+    <Link partId="41" fromNodeOrder="0" fromItemID="f_39" fromColID="fo_39.0" toItemID="tbl_YP_ITEM" toColID="tblCol_bfcb064175ac460eac74037089d1263d" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

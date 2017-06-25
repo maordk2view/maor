@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>funTestProdutcFunc</Name>
+  <ID>JAVA.funTestProdutcFunc</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String sql1 = "select CTCR_BATCH_PROG_DT FROM YP_CUSTOMER ";
+
+Object date = DBSelectValue("ludb", sql1, null);
+
+Object[] date_arr = (Object[])k2_breakDate (date.toString(), "yyyy-MM-dd");
+
+String o_date=k2_concat5(date_arr[0].toString(), date_arr[1].toString(), ((Integer)date_arr[2]).toString(), "", "", "_");
+
+Integer percision=2;
+
+int  number1 = ((Integer)date_arr[0]).intValue();
+int  number2 = ((Integer)date_arr[1]).intValue();
+
+Double o_num_round=k2_round(k2_multiply((double)number1 ,(double)number2),percision);
+
+String o_strpad=k2_pad(date_arr[2].toString(),"*",4,false);
+
+//String Content=o_date;
+//String FileName="TestProductFunc";
+//String Location="C:\\k2View";
+
+//k2_Createfile(Content,FileName,Location,0);
+
+return new Object[]{o_date ,o_num_round.toString(),o_strpad};</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams />
+  <OutputParams>
+    <Output name="o_date" id="fo.JAVA.funTestProdutcFunc.0" index="0" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="o_num_round" id="fo.JAVA.funTestProdutcFunc.1" index="1" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="o_strpad" id="fo.JAVA.funTestProdutcFunc.2" index="2" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

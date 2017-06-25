@@ -1,0 +1,12 @@
+﻿<Graph name="YP_REF_UDAC.query_YP_REF_UDAC.k2tablePop.bin" lastPartID="35">
+  <TableNode partID="0" name="YP_REF_UDAC" pos="401 30" width="253" />
+  <DBQueryNode partID="3" name="ORA_SOURCE" pos="175 179" size="253 132.4375" isRoot="true">
+    <DBQuery>{"Name":"query_YP_REF_UDAC","ID":"query_3","ConnName":"ORA_SOURCE","SQL":"Select 1 As INST_ID,\r\n  Y.*\r\nFrom YP_REF_UDAC Y","ColumnsList":[{"ID":"query_3.0","Name":"INST_ID","DataType":"Real","Index":0,"IsInputArgument":true},{"ID":"query_3.1","Name":"UDAC_CODE","DataType":"Text","Index":1,"IsInputArgument":true},{"ID":"query_3.2","Name":"UDAC_VERSION","DataType":"Real","Index":2,"IsInputArgument":true},{"ID":"query_3.3","Name":"LAST_VERSION_IND","DataType":"Text","Index":3,"IsInputArgument":true},{"ID":"query_3.4","Name":"TYPE","DataType":"Text","Index":4,"IsInputArgument":true},{"ID":"query_3.5","Name":"UDAC_DESC","DataType":"Text","Index":5,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="16" from="0" to="1" pointsArr="428 215.036469 438 215.036469 391 61.0364571 401 61.0364571" fromNodePartID="3" fromNodeColumnName="INST_ID" toNodePartID="0" toNodeColumnName="INST_ID" />
+  <Link partID="17" from="2" to="3" pointsArr="428 227.109375 438 227.109375 391 73.109375 401 73.109375" fromNodePartID="3" fromNodeColumnName="UDAC_CODE" toNodePartID="0" toNodeColumnName="UDAC_CODE" />
+  <Link partID="18" from="4" to="5" pointsArr="428 239.182281 438 239.182281 391 85.18229 401 85.18229" fromNodePartID="3" fromNodeColumnName="UDAC_VERSION" toNodePartID="0" toNodeColumnName="UDAC_VERSION" />
+  <Link partID="19" from="6" to="7" pointsArr="428 251.2552 438 251.2552 391 97.2552 401 97.2552" fromNodePartID="3" fromNodeColumnName="LAST_VERSION_IND" toNodePartID="0" toNodeColumnName="LAST_VERSION_IND" />
+  <Link partID="20" from="8" to="9" pointsArr="428 263.328125 438 263.328125 391 109.328117 401 109.328117" fromNodePartID="3" fromNodeColumnName="TYPE" toNodePartID="0" toNodeColumnName="TYPE" />
+  <Link partID="21" from="10" to="11" pointsArr="428 275.401031 438 275.401031 391 121.401031 401 121.401031" fromNodePartID="3" fromNodeColumnName="UDAC_DESC" toNodePartID="0" toNodeColumnName="UDAC_DESC" />
+</Graph>

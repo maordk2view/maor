@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>M_YP_ITEM_FUN</Name>
+  <ID>tbl_M_YP_ITEM_FUN</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="CUSTOMER_ID" id="tblCol_9eb61cd6f63943f4b52a8d6792cdc1e7" index="0" datatype="Long" />
+    <Column name="PRODUCT_CODE" id="tblCol_abcce3a19fce462aaca3a13f1bdd2f2f" index="1" datatype="String" />
+    <Column name="PRODUCT_ISSUE_NUM" id="tblCol_0f78b6b2d8634cb58ba73b04542cb9b7" index="2" datatype="Long" />
+    <Column name="ITEM_ID" id="tblCol_93adc9947d4d48c88dd006d96c5accbe" index="3" datatype="Long" />
+    <Column name="ITEM_VERSION" id="tblCol_8084d28713304077ae32ed7dc784c078" index="4" datatype="Long" />
+    <Column name="PROPOSAL_ID" id="tblCol_5fdf3f3a3a91457c9b057d7c312f2ea4" index="5" datatype="Long" />
+    <Column name="LAST_VERSION_IND" id="tblCol_54b4a968e26748e4adecb928349a3dbb" index="6" datatype="String" />
+    <Column name="SECTION_CODE" id="tblCol_0790d8c4559c46a88489809274f5e9c5" index="7" datatype="String" />
+    <Column name="HEADING_CODE" id="tblCol_cf6f1a2e07f74d818ce9fa8d3009c956" index="8" datatype="Long" />
+    <Column name="SUB_HEADING_CODE" id="tblCol_0d0b3c750e7f431bab1933f53a0e8e0a" index="9" datatype="Long" />
+    <Column name="UDAC_CODE" id="tblCol_3dc2d45c8b0d43e08451c610bb22e26a" index="10" datatype="String" />
+    <Column name="ACTION_CODE" id="tblCol_7f0b32b98d174458814c4fbb493b66f1" index="11" datatype="String" />
+    <Column name="CONTRACT_ID" id="tblCol_75e7f7196c4e4028bd2b8e4b2f094fb0" index="12" datatype="Long" />
+    <Column name="RATE_UDAC_CODE" id="tblCol_e67d06c6efec4046ac7671cb4f9603d4" index="13" datatype="String" />
+    <Column name="OPEN_DATE" id="tblCol_cc3dd245be7a423a9fbaf657fb1a7133" index="14" datatype="String" />
+    <Column name="IN_OUT_DATE" id="tblCol_23f6845451904c5c9dd4faf68b2dc74c" index="15" datatype="String" />
+    <Column name="ITEM_STATUS" id="tblCol_6a068e5ba4ec4d8ba45bc3a6c66914b2" index="16" datatype="Long" />
+    <Column name="LISTING_ID" id="tblCol_8c2f3c76ffb443c7850fe8275543cb13" index="17" datatype="Long" />
+    <Column name="MAIN_ITEM_ID" id="tblCol_febc6b9c717d458ebdfd54a409a81377" index="18" datatype="Long" />
+    <Column name="TRN1" id="tblCol_4e696862795046adb42fada5b859817f" index="19" datatype="Text" />
+    <Column name="TRN_NULL" id="tblCol_521368d53aae4304bb41055b026fa55a" index="20" datatype="Text" />
+    <Column name="TRN_EMPTY" id="tblCol_14067c18ef0846638edbb12b8eb21f77" index="21" datatype="Text" />
+    <Column name="TRN_NULL_OUTPUT" id="tblCol_8344452048414f018992c01249b4673a" index="22" datatype="Text" />
+    <Column name="TRN_EMPTY_OUTPUT" id="tblCol_e4efd067e39449ae90b294f54256730b" index="23" datatype="Text" />
+    <Column name="TRN_NULL_DEF" id="tblCol_7fecedf628be4ec6a3c3afcd73e05293" index="24" datatype="Text" />
+    <Column name="TRN_DEF" id="tblCol_3240f47a57ff4fe2870f0692a1ee973f" index="25" datatype="Text" />
+    <Column name="TRN_FUN" id="tblCol_e95c6de9be334ff69d96dd718e69bad6" index="26" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

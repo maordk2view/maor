@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ctnMainInfo</Name>
+  <ID>tbl_ctnMainInfo</ID>
+  <EntityId>tblCol_adb92a80e21d4dcabd4e17318dcf4a83</EntityId>
+  <LazyDataUpdate enabled="true" performEvery="00:00:01" />
+  <Columns>
+    <Column name="CTN" id="tblCol_adb92a80e21d4dcabd4e17318dcf4a83" index="0" datatype="text" mandatory="true" />
+    <Column name="ACCOUNT_NUMBER" id="tblCol_f1aca6eb0e874e5f9e8b7b2e92623a9e" index="1" datatype="text" />
+    <Column name="CARRIER" id="tblCol_16fc3f7983bb4792b678dc71b03932d5" index="2" datatype="text" />
+    <Column name="ACCOUNT" id="tblCol_2752d91b52f54aada20d906269ecde45" index="3" datatype="text" />
+    <Column name="ACCOUNT_BILL_CYCLE" id="tblCol_6d934105aa414e98806f992d65aa38e1" index="4" datatype="integer" />
+    <Column name="ACCOUNT_TYPE" id="tblCol_644881c2a23347b89ab4467a7aec0d57" index="5" datatype="text" />
+    <Column name="ACCOUNT_SUB_TYPE" id="tblCol_cba831ed5b3a44638ed7d69d661e81f4" index="6" datatype="text" />
+    <Column name="ACCOUNT_STATUS" id="tblCol_4919d72b795648d5a9405f6ead5b9e36" index="7" datatype="text" />
+    <Column name="ACCOUNT_STATUS_REASON" id="tblCol_bd06afcbdcb648c39e36b5a2439c4d8f" index="8" datatype="text" />
+    <Column name="ACCOUNT_STATUS_DATE" id="tblCol_ce2c6b43f4ac4a328ec77f006d69b0ba" index="9" datatype="text" />
+    <Column name="SUB_STATUS" id="tblCol_2e39598085514e5e974b8748d83e3dff" index="10" datatype="text" />
+    <Column name="SUB_STATUS_REASON" id="tblCol_364e20001b164b49a68f82ce9a6ff786" index="11" datatype="text" />
+    <Column name="SUB_STATUS_DATE" id="tblCol_8747dcb71b4f4ff69152fdbb1c719959" index="12" datatype="text" />
+    <Column name="SUB_RATE_PLAN" id="tblCol_776ccb81d2154d72a56f4bcafce77c1f" index="13" datatype="text" />
+    <Column name="SUB_PORT_STATUS" id="tblCol_22bda1b756c44a63952274653406a233" index="14" datatype="text" />
+    <Column name="SUB_FIRST_NAME" id="tblCol_7a1b526026484cc0af933b815034b672" index="15" datatype="text" />
+    <Column name="SUB_PATERNAL_LAST_NAME" id="tblCol_0d893a5b3c234b56b2fb50c39c572537" index="16" datatype="text" />
+    <Column name="SUB_MATERNAL_LAST_NAME" id="tblCol_cf353d6c57b544c899fe4ee9f4cd1af4" index="17" datatype="text" />
+    <Column name="SUB_STREET" id="tblCol_8987d0e5ffdf4871af7cfbc68e844a0b" index="18" datatype="text" />
+    <Column name="SUB_STREET_NUMBER" id="tblCol_f1173cbefc1747e495e64598c2ae6b66" index="19" datatype="text" />
+    <Column name="SUB_APARTMENT_NUMBER" id="tblCol_ea3cd8ff3ad24662978938a02fc2146e" index="20" datatype="text" />
+    <Column name="SUB_CITY" id="tblCol_d3bd9cab8cac427c9422d58b0fa1b094" index="21" datatype="text" />
+    <Column name="SUB_POST_CODE" id="tblCol_93c9d17638a94bdda5c1fb32956e20d0" index="22" datatype="text" />
+    <Column name="SUB_STATE" id="tblCol_5aecab37c48d49389fbd82e6e7d9bdf3" index="23" datatype="text" />
+  </Columns>
+  <IndexesList>
+    <Index id="2" instanceOnly="true" columnsIdsList="tblCol_f1aca6eb0e874e5f9e8b7b2e92623a9e" />
+    <Index id="3" columnsIdsList="tblCol_adb92a80e21d4dcabd4e17318dcf4a83" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

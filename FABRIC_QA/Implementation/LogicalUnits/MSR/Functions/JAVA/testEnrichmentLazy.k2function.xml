@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>testEnrichmentLazy</Name>
+  <ID>JAVA.testEnrichmentLazy</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String SQL1= "select new_seq from yp_product_enrich";
+Object[] valuearray =null;
+Object value =DBSelectValue("ludb",SQL1,valuearray);
+
+Integer new_seq=(Integer)value;
+new_seq++;
+String  con1=CONV_NO;
+
+Object [] resultarray={new_seq,con1};
+
+String SQL2="Update yp_product_enrich set new_seq=?, con1=?";
+
+DBExecute("ludb",SQL2,resultarray);</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams />
+  <OutputParams />
+</KFunction>

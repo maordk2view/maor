@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>invoice_cas</Name>
+  <ID>tbl_invoice_cas</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="patient_id" id="tblCol_4c1b8420d4e047ce936029a3abcf0e5e" index="0" datatype="Text" mandatory="true" />
+    <Column name="status" id="tblCol_d11b962a94ff4e5792b1313ade5ec080" index="1" datatype="Text" />
+    <Column name="status2" id="tblCol_86c7138b4c7648f7a0f207037069843d" index="2" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

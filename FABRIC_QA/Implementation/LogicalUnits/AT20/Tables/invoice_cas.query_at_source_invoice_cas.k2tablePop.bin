@@ -1,0 +1,9 @@
+﻿<Graph name="invoice_cas.query_at_source_invoice_cas.k2tablePop.bin" lastPartID="12">
+  <TableNode partID="0" name="invoice_cas" pos="319.040649 5.854168" width="309.324158" />
+  <DBQueryNode partID="6" name="at_source" pos="10 1.890625" size="264.040649 96.21875" isRoot="true">
+    <DBQuery>{"Name":"query_at_source_invoice_cas","ID":"query_query_at_source_invoice_cas","ConnName":"at_source","SQL":"SELECT * FROM at_source.invoice_cas","ColumnsList":[{"ID":"queryCol_0","Name":"patient_id","DataType":"Text","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"status","DataType":"Text","Index":1,"IsInputArgument":true},{"ID":"queryCol_2","Name":"status2","DataType":"Text","Index":2,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="10" from="0" to="1" pointsArr="274.040649 37.9270859 284.040649 37.9270859 286.540649 25 306.540649 25 309.040649 36.890625 319.040649 36.890625" fromNodePartID="6" fromNodeColumnName="patient_id" toNodePartID="0" toNodeColumnName="patient_id" />
+  <Link partID="11" from="2" to="3" pointsArr="274.040649 50 284.040649 50 286.540649 50 306.540649 50 309.040649 48.9635429 319.040649 48.9635429" fromNodePartID="6" fromNodeColumnName="status" toNodePartID="0" toNodeColumnName="status" />
+  <Link partID="12" from="4" to="5" pointsArr="274.040649 62.0729141 284.040649 62.0729141 286.540649 75 306.540649 75 309.040649 61.0364571 319.040649 61.0364571" fromNodePartID="6" fromNodeColumnName="status2" toNodePartID="0" toNodeColumnName="status2" />
+</Graph>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>getNewUdacCode</Name>
+  <ID>JAVA.getNewUdacCode</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String sql = "select UDAC_DESC FROM YP_REF_UDAC WHERE UDAC_CODE = ? and UDAC_VERSION = ? AND LAST_VERSION_IND = ?";
+
+Object[] valuesArr = {i_udac_code, i_udac_ver, i_last_version_ind};
+
+Object newUdacCode = DBSelectValue("ORA_SOURCE", sql, valuesArr);
+
+return  (String) newUdacCode;</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <InputParams>
+    <Input name="i_udac_code" id="fi.JAVA.getNewUdacCode.0" index="0" dataType="String">
+      <Comment />
+    </Input>
+    <Input name="i_udac_ver" id="fi.JAVA.getNewUdacCode.1" index="1" dataType="Integer">
+      <Comment />
+    </Input>
+    <Input name="i_last_version_ind" id="fi.JAVA.getNewUdacCode.2" index="2" dataType="String">
+      <Comment />
+    </Input>
+    <Input name="i_udac_ver1" id="fi.JAVA.getNewUdacCode.3" index="3" dataType="Integer">
+      <Comment />
+    </Input>
+    <Input name="i_section_code" id="fi.JAVA.getNewUdacCode.4" index="4" dataType="String">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="o_new_udac" id="fo.JAVA.getNewUdacCode.0" index="0" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

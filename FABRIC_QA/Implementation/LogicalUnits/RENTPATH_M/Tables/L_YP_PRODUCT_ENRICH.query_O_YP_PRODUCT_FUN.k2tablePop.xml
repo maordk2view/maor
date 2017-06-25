@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_O_YP_PRODUCT_FUN</PopulationObjectName>
+  <TableName>L_YP_PRODUCT_ENRICH</TableName>
+  <ID>query_O_YP_PRODUCT_FUN</ID>
+  <RootItemID>query_200</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="CUSTOMER_ID" id="query_200.0" dataType="Text" index="0" />
+    <Arg name="PRODUCT_CODE" id="query_200.1" dataType="Text" index="1" />
+    <Arg name="PRODUCT_ISSUE_NUM" id="query_200.2" dataType="Text" index="2" />
+    <Arg name="PRODUCT_STATUS" id="query_200.3" dataType="Text" index="3" />
+    <Arg name="RETIREMENT_STATUS" id="query_200.4" dataType="Text" index="4" />
+    <Arg name="ACTIVITY_TYPE" id="query_200.5" dataType="Text" index="5" />
+    <Arg name="ACTIVITY_DATE" id="query_200.6" dataType="Text" index="6" />
+    <Arg name="NIR_PRODUCT_IND" id="query_200.7" dataType="Text" index="7" />
+    <Arg name="NISD_AMOUNT" id="query_200.8" dataType="Real" index="8" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_200" name="query_O_YP_PRODUCT_FUN" nodeOrder="0" module="DBQuery" connName="ludb">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_200.0" name="CUSTOMER_ID" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_200.1" name="PRODUCT_CODE" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_200.2" name="PRODUCT_ISSUE_NUM" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_200.3" name="PRODUCT_STATUS" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_200.4" name="RETIREMENT_STATUS" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_200.5" name="ACTIVITY_TYPE" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_200.6" name="ACTIVITY_DATE" dataType="Text" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_200.7" name="NIR_PRODUCT_IND" dataType="Text" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_200.8" name="NISD_AMOUNT" dataType="Real" index="8" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_200.9" name="SEQ" index="9" />
+      </OutputsList>
+      <SQL><![CDATA[Select AT1.O_YP_PRODUCT_FUN.CUSTOMER_ID,
+  AT1.O_YP_PRODUCT_FUN.PRODUCT_CODE,
+  AT1.O_YP_PRODUCT_FUN.PRODUCT_ISSUE_NUM,
+  AT1.O_YP_PRODUCT_FUN.PRODUCT_STATUS,
+  AT1.O_YP_PRODUCT_FUN.RETIREMENT_STATUS,
+  AT1.O_YP_PRODUCT_FUN.ACTIVITY_TYPE,
+  AT1.O_YP_PRODUCT_FUN.ACTIVITY_DATE,
+  AT1.O_YP_PRODUCT_FUN.NIR_PRODUCT_IND,
+  AT1.O_YP_PRODUCT_FUN.NISD_AMOUNT,
+  0 As SEQ
+From AT1.O_YP_PRODUCT_FUN]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="238" fromNodeOrder="0" fromItemID="query_200" fromColID="query_200.0" toItemID="tbl_L_YP_PRODUCT_ENRICH" toColID="tblCol_b3b8cb0d77cc4da688bef94d1df7e993" />
+    <Link partId="239" fromNodeOrder="0" fromItemID="query_200" fromColID="query_200.1" toItemID="tbl_L_YP_PRODUCT_ENRICH" toColID="tblCol_047ade67caeb4a04b3e53c603f9202f5" />
+    <Link partId="240" fromNodeOrder="0" fromItemID="query_200" fromColID="query_200.2" toItemID="tbl_L_YP_PRODUCT_ENRICH" toColID="tblCol_ae508c75f6f44bc886d06e4bc131478b" />
+    <Link partId="241" fromNodeOrder="0" fromItemID="query_200" fromColID="query_200.3" toItemID="tbl_L_YP_PRODUCT_ENRICH" toColID="tblCol_fc4570091f48465fb14c5232f51a85eb" />
+    <Link partId="242" fromNodeOrder="0" fromItemID="query_200" fromColID="query_200.4" toItemID="tbl_L_YP_PRODUCT_ENRICH" toColID="tblCol_59daf3bcc97a4620b697747970c836da" />
+    <Link partId="243" fromNodeOrder="0" fromItemID="query_200" fromColID="query_200.5" toItemID="tbl_L_YP_PRODUCT_ENRICH" toColID="tblCol_cc06aa261462401fa039fd78b4240821" />
+    <Link partId="244" fromNodeOrder="0" fromItemID="query_200" fromColID="query_200.6" toItemID="tbl_L_YP_PRODUCT_ENRICH" toColID="tblCol_2d1f226a806b442e8ead20267cc5dfbd" />
+    <Link partId="245" fromNodeOrder="0" fromItemID="query_200" fromColID="query_200.7" toItemID="tbl_L_YP_PRODUCT_ENRICH" toColID="tblCol_525f5b8ef67e42b3b87271d00d333e5b" />
+    <Link partId="246" fromNodeOrder="0" fromItemID="query_200" fromColID="query_200.8" toItemID="tbl_L_YP_PRODUCT_ENRICH" toColID="tblCol_349207baa255429284aaff82818d747b" />
+    <Link partId="252" fromNodeOrder="0" fromItemID="query_200" fromColID="query_200.9" toItemID="tbl_L_YP_PRODUCT_ENRICH" toColID="tblCol_f9b36422ef544fb88cc83c53f1d6d1fc" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

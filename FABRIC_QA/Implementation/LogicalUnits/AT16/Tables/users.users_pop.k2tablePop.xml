@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>users_pop</ID>
+  <PopulationObjectName>users_pop</PopulationObjectName>
+  <TableName>users</TableName>
+  <RootItemID>query_query_tests_users</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="user_name" id="queryCol_0" dataType="Text" index="0" />
+    <Arg name="birth_year" id="queryCol_1" dataType="Integer" index="1" />
+    <Arg name="gender" id="queryCol_2" dataType="Text" index="2" />
+    <Arg name="password" id="queryCol_3" dataType="Text" index="3" />
+    <Arg name="session_token" id="queryCol_4" dataType="Text" index="4" />
+    <Arg name="state" id="queryCol_5" dataType="Text" index="5" />
+    <Arg name="user_code" id="queryCol_6" dataType="Text" index="6" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_tests_users" name="query_tests_users" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="CASS_SOURCE">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="user_name" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="birth_year" dataType="Integer" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="gender" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="password" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="session_token" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="state" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_6" name="user_code" dataType="Text" index="6" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM tests.users]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="18" fromNodeOrder="0" fromItemID="query_query_tests_users" fromColID="queryCol_0" toItemID="tbl_users" toColID="tblCol_85e1b5af8f384aee972e58198318f2d7" />
+    <Link partId="19" fromNodeOrder="0" fromItemID="query_query_tests_users" fromColID="queryCol_1" toItemID="tbl_users" toColID="tblCol_384420278a56408eaa7833874c6dbb10" />
+    <Link partId="20" fromNodeOrder="0" fromItemID="query_query_tests_users" fromColID="queryCol_2" toItemID="tbl_users" toColID="tblCol_ef476d56b66e43a19c490147f3db523c" />
+    <Link partId="21" fromNodeOrder="0" fromItemID="query_query_tests_users" fromColID="queryCol_3" toItemID="tbl_users" toColID="tblCol_d7dc5469c2624e02902bde4a624fb3cc" />
+    <Link partId="22" fromNodeOrder="0" fromItemID="query_query_tests_users" fromColID="queryCol_4" toItemID="tbl_users" toColID="tblCol_0004e573099a4b27b528ef67d81ce51b" />
+    <Link partId="23" fromNodeOrder="0" fromItemID="query_query_tests_users" fromColID="queryCol_5" toItemID="tbl_users" toColID="tblCol_863db81d2a2a4e81bbf2cda0304799af" />
+    <Link partId="24" fromNodeOrder="0" fromItemID="query_query_tests_users" fromColID="queryCol_6" toItemID="tbl_users" toColID="tblCol_ecf5b40febd741b0a1dd001e0a3d7dfd" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

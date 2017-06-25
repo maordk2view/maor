@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>customer_name</Name>
+  <ID>tbl_customer_name</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="cust_id" id="tblCol_16124e8dff154c0b9b0f4c4c37278855" index="0" datatype="Integer" mandatory="true" />
+    <Column name="income" id="tblCol_347f452db1a4432ba7088267ce8ec060" index="1" datatype="Integer" />
+    <Column name="age" id="tblCol_8584ff1ea6154a97b8759731a4249c79" index="2" datatype="Integer" />
+    <Column name="years_with_bank" id="tblCol_11ac108593ac403e8b5591e722714498" index="3" datatype="Integer" />
+    <Column name="nbr_children" id="tblCol_ff34a38bcd8f4e769a6c94111fcfee68" index="4" datatype="Integer" />
+    <Column name="street_nbr" id="tblCol_305926b7ef1140d98e5dc6b90d89c1da" index="5" datatype="Integer" />
+    <Column name="street_name" id="tblCol_bba332f9bd4442d59cd3d4db1b25604a" index="6" datatype="Text" />
+    <Column name="postal_code" id="tblCol_b6ae81ba2db243da8ea53fc5e96fd5f9" index="7" datatype="Text" />
+    <Column name="city_name" id="tblCol_8647da4ed51546c5aab51ba8a741b2db" index="8" datatype="Text" />
+    <Column name="state_code" id="tblCol_d0b6af5da2fd43c490280b30013067c4" index="9" datatype="Text" />
+    <Column name="name_prefix" id="tblCol_dcc5dc1503204e9283bea4294dcf233e" index="10" datatype="Text" />
+    <Column name="first_name" id="tblCol_19e3516de02944aa94b5d99b8e3cb447" index="11" datatype="Text" />
+    <Column name="last_name" id="tblCol_a5de95e3e6b44dfd927ef1bac5176e14" index="12" datatype="Text" />
+    <Column name="gender" id="tblCol_8ff6f4a47d2349da8b0a8133d90331b8" index="13" datatype="Text" />
+    <Column name="marital_status" id="tblCol_16a24d090ad146dd9dbf0137addbbd6d" index="14" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

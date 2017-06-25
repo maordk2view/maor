@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Datatypes</Name>
+  <ID>tbl_Datatypes</ID>
+  <EntityId>tblCol_15c4cd3c3ec94e968d84f25c5be06d6f</EntityId>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="int_param" id="tblCol_28d99419d2ed44a4b70ada3ea8d14677" index="0" datatype="Integer" mandatory="true" />
+    <Column name="small_int" id="tblCol_1b53447f0d72415e9e51166be8c236ac" index="1" datatype="Integer" mandatory="true" />
+    <Column name="big_int" id="tblCol_c275158a33944a31943ab1e1281fb405" index="2" datatype="Integer" mandatory="true" />
+    <Column name="tiny_int" id="tblCol_81a35230807d4ce4a8de96f88fe12088" index="3" datatype="Integer" mandatory="true" />
+    <Column name="decimal_" id="tblCol_742baabda1ed45ffb2a3241c53c1bc9e" index="4" datatype="Real" mandatory="true" />
+    <Column name="numeric_" id="tblCol_531489fa397442a0bdf939d95338a11a" index="5" datatype="Real" mandatory="true" />
+    <Column name="float_" id="tblCol_b69b54a14eb14f428ad23b7dcde12327" index="6" datatype="Real" mandatory="true" />
+    <Column name="real_" id="tblCol_8341ce9f7144407ba45e52f27304735a" index="7" datatype="Real" mandatory="true" />
+    <Column name="binary_" id="tblCol_60eba447d9b54cd2a407294047f7a2fb" index="8" datatype="BLOB" mandatory="true" />
+    <Column name="bit_" id="tblCol_1e4f3659ebd644898a3d72d19b6a96dd" index="9" datatype="Integer" mandatory="true" />
+    <Column name="date_" id="tblCol_15c4cd3c3ec94e968d84f25c5be06d6f" index="10" datatype="Text" mandatory="true" />
+    <Column name="time_" id="tblCol_9424bafb633549a08b15e7a76d9039bf" index="11" datatype="Text" mandatory="true" />
+    <Column name="datetime_" id="tblCol_2f1a218b0fc24c9e95447fb558bce359" index="12" datatype="Text" mandatory="true" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

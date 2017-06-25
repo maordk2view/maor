@@ -1,0 +1,11 @@
+﻿<Graph name="YP_SPACE.query_YP_SPACE.k2tablePop.bin" lastPartID="268">
+  <TableNode partID="0" name="YP_SPACE" pos="628 114.854172" width="309.324219" />
+  <DBQueryNode partID="182" name="ORA_140" pos="188 169.763031" size="256.254333 156.583313" isRoot="true">
+    <DBQuery>{"Name":"query_SOURCE03_YP_SPACE","ID":"query_query_SOURCE03_YP_SPACE","ConnName":"ORA_140","SQL":"select * from SOURCE03.YP_SPACE","ColumnsList":[{"ID":"queryCol_0","Name":"CUSTOMER ID","DataType":"Integer","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"S 1","DataType":"Text","Index":1,"IsInputArgument":false},{"ID":"queryCol_2","Name":"S2","DataType":"Text","Index":2,"IsInputArgument":false},{"ID":"queryCol_3","Name":"S 2","DataType":"Text","Index":3,"IsInputArgument":false},{"ID":"queryCol_4","Name":"S-3","DataType":"Text","Index":4,"IsInputArgument":false},{"ID":"queryCol_5","Name":"S#3","DataType":"Text","Index":5,"IsInputArgument":false},{"ID":"queryCol_6","Name":"S*4","DataType":"Text","Index":6,"IsInputArgument":false},{"ID":"queryCol_7","Name":"Aaaa","DataType":"Text","Index":7,"IsInputArgument":false}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="264" from="0" to="1" pointsArr="444.254333 205.7995 454.254333 205.7995 618 145.890625 628 145.890625" fromNodePartID="182" fromNodeColumnName="CUSTOMER ID" toNodePartID="0" toNodeColumnName="CUSTOMER_ID" />
+  <Link partID="265" from="2" to="3" pointsArr="444.254333 217.8724 454.254333 217.8724 618 157.963547 628 157.963547" fromNodePartID="182" fromNodeColumnName="S 1" toNodePartID="0" toNodeColumnName="S 1" />
+  <Link partID="266" from="4" to="5" pointsArr="444.254333 229.945313 454.254333 229.945313 618 170.036453 628 170.036453" fromNodePartID="182" fromNodeColumnName="S2" toNodePartID="0" toNodeColumnName="S2" />
+  <Link partID="267" from="6" to="7" pointsArr="444.254333 242.01825 454.254333 242.01825 618 182.109375 628 182.109375" fromNodePartID="182" fromNodeColumnName="S 2" toNodePartID="0" toNodeColumnName="S 2" />
+  <Link partID="268" from="8" to="9" pointsArr="444.254333 254.091156 454.254333 254.091156 618 194.182281 628 194.182281" fromNodePartID="182" fromNodeColumnName="S-3" toNodePartID="0" toNodeColumnName="S-3" />
+</Graph>

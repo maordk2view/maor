@@ -1,0 +1,8 @@
+﻿<Graph name="users.pop2.k2tablePop.bin" lastPartID="15">
+  <TableNode partID="0" name="users" pos="403.537018 30" width="309.787079" />
+  <DBQueryNode partID="5" name="CASS_Local" pos="67 38" size="253 84.14581" isRoot="true">
+    <DBQuery>{"Name":"query_test_db_users","ID":"query_query_test_db_users","ConnName":"CASS_Local","SQL":"SELECT * FROM test_db.users","ColumnsList":[{"ID":"queryCol_0","Name":"id","DataType":"Text","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"name","DataType":"Text","Index":1,"IsInputArgument":false}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="8" from="0" to="1" pointsArr="320 74.03645 330 74.03645 394 61.0364571 404 61.0364571" fromNodePartID="5" fromNodeColumnName="id" toNodePartID="0" toNodeColumnName="id" />
+  <Link partID="9" from="2" to="3" pointsArr="320 86.10937 330 86.10937 394 73.109375 404 73.109375" fromNodePartID="5" fromNodeColumnName="name" toNodePartID="0" toNodeColumnName="name" />
+</Graph>

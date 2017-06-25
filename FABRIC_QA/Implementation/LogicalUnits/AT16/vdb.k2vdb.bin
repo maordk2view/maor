@@ -1,0 +1,14 @@
+﻿<Graph version="1.7.0.6" name="vdb.k2vdb.bin" lastPartID="290">
+  <Node id="0" partID="162" name="target" isRootView="false" pos="480 63" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"target","TablePopulationPropertiesList":[{"ID":"plp_target","Name":"plp_target","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="182" name="root" isRootView="true" pos="45 199" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"root","TablePopulationPropertiesList":[{"ID":"query_tests_root","Name":"query_tests_root","Order":1}]}</TableProperties>
+  </Node>
+  <Node id="3" partID="273" name="users" isRootView="false" pos="450 272" size="257 138.54686" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"users","TablePopulationPropertiesList":[{"ID":"query_tests_users","Name":"query_tests_users","Order":2}]}</TableProperties>
+  </Node>
+  <Link from="4" to="5" partID="206" linkType="Database" pointsArr="302 261.636719 312 261.636719 470 109.545578 480 109.545578" fromNodePartID="182" fromNodeColumnName="end" toNodePartID="162" toNodeColumnName="end" toNodePopulationObjectName="plp_target" />
+  <Link from="6" to="7" partID="290" linkType="Database" pointsArr="302 277.727875 312 277.727875 440 399.001343 450 399.001343" fromNodePartID="182" fromNodeColumnName="code" toNodePartID="273" toNodeColumnName="user_code" toNodePopulationObjectName="query_tests_users" />
+  <CommentExtra1 id="2" text="Replaces AT14&#xD;&#xA;&#xD;&#xA;Features: &#xD;&#xA;Use Cassandra as a source.&#xD;&#xA;Use root table with multiple rows for same instance&#xD;&#xA;Use multiple cassandra data in second level table; tesing no OR for cql.&#xD;&#xA;&#xD;&#xA;Instances: 1" titleDate="11/25/2015 7:35 PM" size="428.4557 141.729141" loc="42 14" />
+</Graph>

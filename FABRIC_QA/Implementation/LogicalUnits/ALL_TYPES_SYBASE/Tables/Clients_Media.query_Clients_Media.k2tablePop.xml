@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_Clients_Media</ID>
+  <PopulationObjectName>query_Clients_Media</PopulationObjectName>
+  <TableName>Clients_Media</TableName>
+  <RootItemID>query_query_Clients_Media</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="Media_id" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="phone" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="mobile" id="queryCol_2" dataType="Text" index="2" />
+    <Arg name="office" id="queryCol_3" dataType="Text" index="3" />
+    <Arg name="office2" id="queryCol_4" dataType="Text" index="4" />
+    <Arg name="updated_on" id="queryCol_5" dataType="Text" index="5" />
+    <Arg name="Client_id" id="queryCol_6" dataType="Integer" index="6" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_Clients_Media" name="query_Clients_Media" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="SybaseASE">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="Media_id" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="phone" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="mobile" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="office" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="office2" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="updated_on" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_6" name="Client_id" dataType="Integer" index="6" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM Clients_Media]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="18" fromNodeOrder="0" fromItemID="query_query_Clients_Media" fromColID="queryCol_0" toItemID="tbl_Clients_Media" toColID="tblCol_9f7277a379c741e0bf04e415bce75f1c" />
+    <Link partId="19" fromNodeOrder="0" fromItemID="query_query_Clients_Media" fromColID="queryCol_1" toItemID="tbl_Clients_Media" toColID="tblCol_f890b882609e46759e8ef751eacf1405" />
+    <Link partId="20" fromNodeOrder="0" fromItemID="query_query_Clients_Media" fromColID="queryCol_2" toItemID="tbl_Clients_Media" toColID="tblCol_11b10f0306714c91befdc16c2a4a1799" />
+    <Link partId="21" fromNodeOrder="0" fromItemID="query_query_Clients_Media" fromColID="queryCol_3" toItemID="tbl_Clients_Media" toColID="tblCol_ee51de8c611f49729b70e418da848d72" />
+    <Link partId="22" fromNodeOrder="0" fromItemID="query_query_Clients_Media" fromColID="queryCol_4" toItemID="tbl_Clients_Media" toColID="tblCol_a930184d2b2741938fb2f688998478f4" />
+    <Link partId="23" fromNodeOrder="0" fromItemID="query_query_Clients_Media" fromColID="queryCol_5" toItemID="tbl_Clients_Media" toColID="tblCol_b12588b9009c420a8af55356bd52105e" />
+    <Link partId="24" fromNodeOrder="0" fromItemID="query_query_Clients_Media" fromColID="queryCol_6" toItemID="tbl_Clients_Media" toColID="tblCol_03981ca24ad84befbf7f0b23cdbc720f" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

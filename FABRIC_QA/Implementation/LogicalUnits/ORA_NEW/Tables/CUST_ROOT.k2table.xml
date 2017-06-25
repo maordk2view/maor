@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>CUST_ROOT</Name>
+  <ID>tbl_CUST_ROOT</ID>
+  <EntityId>tblCol_a002dfb733b94bc5bc45d96446c7aa29</EntityId>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="CUST_ID" id="tblCol_a002dfb733b94bc5bc45d96446c7aa29" index="0" datatype="Integer" />
+    <Column name="CUSTOMER_TYPE" id="tblCol_0748048428494216b7a87dd51ab47f2c" index="1" datatype="String" />
+    <Column name="CUST_OPEN_DATE_TIME" id="tblCol_3e67cc2b7db94e71a38cc43bc0a560af" index="2" datatype="String" />
+    <Column name="CONTACT_ID" id="tblCol_56a1bc79b8ca4321913a44b35985d3af" index="3" datatype="Integer" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

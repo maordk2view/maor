@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_merchant</PopulationObjectName>
+  <TableName>merchant</TableName>
+  <ID>query_merchant</ID>
+  <RootItemID>query_9</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="merchant_id" id="query_9.0" dataType="Integer" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_9" name="query_merchant" nodeOrder="0" module="DBQuery" connName="MerchantInfo">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_9.0" name="merchant_id" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_9.1" name="merchant_type" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_9.2" name="merchant_name" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_9.3" name="tin" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_9.4" name="effective_start_date" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_9.5" name="effective_end_date" dataType="Text" index="5" />
+      </OutputsList>
+      <SQL><![CDATA[select * from merchant]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="16" fromNodeOrder="0" fromItemID="query_9" fromColID="query_9.0" toItemID="tbl_merchant" toColID="tblCol_4d2bd7d9cea04af0a2483206c43cdc71" />
+    <Link partId="17" fromNodeOrder="0" fromItemID="query_9" fromColID="query_9.1" toItemID="tbl_merchant" toColID="tblCol_772711acd4b44adca01012c57c6af2f6" />
+    <Link partId="18" fromNodeOrder="0" fromItemID="query_9" fromColID="query_9.2" toItemID="tbl_merchant" toColID="tblCol_0aa1725c2cc04ab2bf51b5f564bf67ae" />
+    <Link partId="19" fromNodeOrder="0" fromItemID="query_9" fromColID="query_9.3" toItemID="tbl_merchant" toColID="tblCol_d4bc7b09c497426dbccce4f110c2aaa3" />
+    <Link partId="20" fromNodeOrder="0" fromItemID="query_9" fromColID="query_9.4" toItemID="tbl_merchant" toColID="tblCol_293195aec93e4c0ba3ccc9ac0f01b6e2" />
+    <Link partId="21" fromNodeOrder="0" fromItemID="query_9" fromColID="query_9.5" toItemID="tbl_merchant" toColID="tblCol_a165b6a366fd48be879e577e5e70da16" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

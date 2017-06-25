@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_DB2INST1_YP_ITEM</PopulationObjectName>
+  <TableName>D_YP_ITEM</TableName>
+  <ID>query_DB2INST1_YP_ITEM</ID>
+  <RootItemID>query_130</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="CUSTOMER_ID" id="query_130.0" dataType="Real" index="0" />
+    <Arg name="PRODUCT_CODE" id="query_130.1" dataType="Text" index="1" />
+    <Arg name="PRODUCT_ISSUE_NUM" id="query_130.2" dataType="Real" index="2" />
+    <Arg name="ITEM_ID" id="query_130.3" dataType="Real" index="3" />
+    <Arg name="ITEM_VERSION" id="query_130.4" dataType="Real" index="4" />
+    <Arg name="LAST_VERSION_IND" id="query_130.5" dataType="Text" index="5" />
+    <Arg name="UDAC_CODE" id="query_130.6" dataType="Text" index="6" />
+    <Arg name="RATE_UDAC_CODE" id="query_130.7" dataType="Text" index="7" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_130" name="query_DB2INST1_YP_ITEM" nodeOrder="0" module="DBQuery" connName="DB2_SOURCE">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.0" name="CUSTOMER_ID" dataType="Real" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.1" name="PRODUCT_CODE" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.2" name="PRODUCT_ISSUE_NUM" dataType="Real" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.3" name="ITEM_ID" dataType="Real" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.4" name="ITEM_VERSION" dataType="Real" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.5" name="LAST_VERSION_IND" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.6" name="UDAC_CODE" dataType="Text" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.7" name="RATE_UDAC_CODE" dataType="Text" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.8" name="DISCOUNT_CODE" dataType="Text" index="8" />
+      </OutputsList>
+      <SQL><![CDATA[Select YP_ITEM.CUSTOMER_ID,
+  YP_ITEM.PRODUCT_CODE,
+  YP_ITEM.PRODUCT_ISSUE_NUM,
+  YP_ITEM.ITEM_ID,
+  YP_ITEM.ITEM_VERSION,
+  YP_ITEM.LAST_VERSION_IND,
+  YP_ITEM.UDAC_CODE,
+  YP_ITEM.RATE_UDAC_CODE,
+  YP_ITEM.DISCOUNT_CODE
+From YP_ITEM]]></SQL>
+    </Item>
+    <Item xsi:type="ConstantDataSave" id="c.934" nodeOrder="0" module="Constant">
+      <InputsList />
+      <OutputsList />
+      <Value><![CDATA[1]]></Value>
+    </Item>
+    <Item xsi:type="DBLookupDataSave" id="dbLookup.656" name="YP_REF_UDAC" nodeOrder="0" module="Lookup" itemType="DB_Object" lookupNotFound="Reject_Record" connName="YP_TEST" owner="SOURCE03">
+      <InputsList>
+        <Input xsi:type="LookupDataSaveColumnInput" id="dbLookup.656.in.UDAC_CODE" name="UDAC_CODE" defaultValue="SRL" columnID="YP_TEST.YP_REF_UDAC.UDAC_CODE" />
+        <Input xsi:type="LookupDataSaveColumnInput" id="dbLookup.656.in.UDAC_VERSION" name="UDAC_VERSION" defaultValue="1" columnID="YP_TEST.YP_REF_UDAC.UDAC_VERSION" />
+      </InputsList>
+      <OutputsList>
+        <Output xsi:type="LookupDataSaveColumn" id="dbLookup.656.out.UDAC_DESC" name="UDAC_DESC" columnID="YP_TEST.YP_REF_UDAC.UDAC_DESC" />
+      </OutputsList>
+    </Item>
+    <Item xsi:type="DBLookupDataSave" id="dbLookup.921" name="DB2INST1.YP_REF_UDAC" nodeOrder="1" module="Lookup" itemType="DB_Object" lookupNotFound="Report_N_Continue" connName="DB2_SOURCE" owner="DB2INST1">
+      <InputsList>
+        <Input xsi:type="LookupDataSaveColumnInput" id="dbLookup.921.in.UDAC_CODE" name="UDAC_CODE" columnID="DB2_SOURCE.DB2INST1.YP_REF_UDAC.UDAC_CODE" />
+        <Input xsi:type="LookupDataSaveColumnInput" id="dbLookup.921.in.UDAC_VERSION" name="UDAC_VERSION" columnID="DB2_SOURCE.DB2INST1.YP_REF_UDAC.UDAC_VERSION" />
+      </InputsList>
+      <OutputsList>
+        <Output xsi:type="LookupDataSaveColumn" id="dbLookup.921.out.UDAC_DESC" name="UDAC_DESC" columnID="DB2_SOURCE.DB2INST1.YP_REF_UDAC.UDAC_DESC" />
+      </OutputsList>
+    </Item>
+    <Item xsi:type="DBLookupDataSave" id="dbLookup.669" name="yp_ref_udac" nodeOrder="1" module="Lookup" itemType="DB_Object" lookupNotFound="Continue" connName="MYSQL_SOURCE" owner="yp_cust">
+      <InputsList>
+        <Input xsi:type="LookupDataSaveColumnInput" id="dbLookup.669.in.UDAC_CODE" name="UDAC_CODE" columnID="MYSQL_SOURCE.yp_ref_udac.UDAC_CODE" />
+      </InputsList>
+      <OutputsList>
+        <Output xsi:type="LookupDataSaveColumn" id="dbLookup.669.out.UDAC_DESC" name="UDAC_DESC" columnID="MYSQL_SOURCE.yp_ref_udac.UDAC_DESC" />
+      </OutputsList>
+    </Item>
+    <Item xsi:type="DBLookupDataSave" id="dbLookup.700" name="dbo.YP_REF_UDAC" nodeOrder="1" module="Lookup" itemType="DB_Object" lookupNotFound="Continue" connName="SQLSERVER_SOURCE" owner="dbo">
+      <InputsList>
+        <Input xsi:type="LookupDataSaveColumnInput" id="dbLookup.700.in.UDAC_CODE" name="UDAC_CODE" defaultValue="RIGRA" columnID="SQLSERVER_SOURCE.dbo.YP_REF_UDAC.UDAC_CODE" />
+      </InputsList>
+      <OutputsList>
+        <Output xsi:type="LookupDataSaveColumn" id="dbLookup.700.out.UDAC_DESC" name="UDAC_DESC" columnID="SQLSERVER_SOURCE.dbo.YP_REF_UDAC.UDAC_DESC" />
+      </OutputsList>
+    </Item>
+    <Item xsi:type="DBLookupDataSave" id="dbLookup.683" name="yp_cust.yp_ref_udac" nodeOrder="1" module="Lookup" itemType="DB_Object" lookupNotFound="Reject_Record" connName="PG_SOURCE" owner="yp_cust">
+      <InputsList>
+        <Input xsi:type="LookupDataSaveColumnInput" id="dbLookup.683.in.udac_code" name="udac_code" columnID="PG_SOURCE.yp_cust.yp_ref_udac.udac_code" />
+      </InputsList>
+      <OutputsList>
+        <Output xsi:type="LookupDataSaveColumn" id="dbLookup.683.out.udac_desc" name="udac_desc" columnID="PG_SOURCE.yp_cust.yp_ref_udac.udac_desc" />
+      </OutputsList>
+    </Item>
+    <Item xsi:type="LookupDataSave" id="tblLookup.719" name="O_YP_PRODUCT" nodeOrder="1" module="Lookup" alias="" itemType="Table" lookupNotFound="Reject_Record" isReference="false">
+      <InputsList>
+        <Input xsi:type="LookupDataSaveColumnInput" id="tblLookup.719.in.CUSTOMER_ID" name="CUSTOMER_ID" columnID="tblCol_f9564fd310d747cda1de1811aa5f22eb" />
+        <Input xsi:type="LookupDataSaveColumnInput" id="tblLookup.719.in.PRODUCT_CODE" name="PRODUCT_CODE" columnID="tblCol_7459dc4f84f440fe860c9ee737671f4d" />
+        <Input xsi:type="LookupDataSaveColumnInput" id="tblLookup.719.in.PRODUCT_ISSUE_NUM" name="PRODUCT_ISSUE_NUM" columnID="tblCol_f0905d14ecea403ba70a92b03b3f6376" />
+      </InputsList>
+      <OutputsList>
+        <Output xsi:type="LookupDataSaveColumn" id="tblLookup.719.out.PRODUCT_STATUS" name="PRODUCT_STATUS" columnID="tblCol_a058b0643aa142378f34d9d7197e90c8" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="258" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.0" toItemID="tbl_D_YP_ITEM" toColID="tblCol_c199753455624596a94ecf0f443d3d89" />
+    <Link partId="259" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.1" toItemID="tbl_D_YP_ITEM" toColID="tblCol_dbc42adf67724887b876125dd6b7e766" />
+    <Link partId="260" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.2" toItemID="tbl_D_YP_ITEM" toColID="tblCol_46aa55d309d44407840ba62b0f3c56b5" />
+    <Link partId="261" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.3" toItemID="tbl_D_YP_ITEM" toColID="tblCol_b7bb994823014389af6e2b7498fdeea3" />
+    <Link partId="262" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.4" toItemID="tbl_D_YP_ITEM" toColID="tblCol_e2f5d8a263394e4e919029d3020a4e11" />
+    <Link partId="264" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.5" toItemID="tbl_D_YP_ITEM" toColID="tblCol_7c49d894400045ea8419e527dfc98054" />
+    <Link partId="270" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.6" toItemID="tbl_D_YP_ITEM" toColID="tblCol_6a3f66342f5e4532930f722ff69f89cb" />
+    <Link partId="271" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.7" toItemID="tbl_D_YP_ITEM" toColID="tblCol_5123c126604f427fa3b3503c7ee7ac8d" />
+    <Link partId="932" fromNodeOrder="1" fromItemID="dbLookup.921" fromColID="dbLookup.921.out.UDAC_DESC" toItemID="tbl_D_YP_ITEM" toColID="tblCol_c9637a6960c745c7b2f1fb18497b19b5" />
+    <Link partId="933" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.6" toItemID="dbLookup.921" toColID="dbLookup.921.in.UDAC_CODE" />
+    <Link partId="936" fromNodeOrder="0" fromItemID="c.934" fromColID="c.934" toItemID="dbLookup.921" toColID="dbLookup.921.in.UDAC_VERSION" />
+    <Link partId="667" fromNodeOrder="0" fromItemID="dbLookup.656" fromColID="dbLookup.656.out.UDAC_DESC" toItemID="tbl_D_YP_ITEM" toColID="tblCol_eb5c7e13a41f42748dc7591ed2a430c0" />
+    <Link partId="681" fromNodeOrder="1" fromItemID="dbLookup.669" fromColID="dbLookup.669.out.UDAC_DESC" toItemID="tbl_D_YP_ITEM" toColID="tblCol_c69c667a91f743909e280f4cce51a3c1" />
+    <Link partId="682" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.6" toItemID="dbLookup.669" toColID="dbLookup.669.in.UDAC_CODE" />
+    <Link partId="713" fromNodeOrder="1" fromItemID="dbLookup.700" fromColID="dbLookup.700.out.UDAC_DESC" toItemID="tbl_D_YP_ITEM" toColID="tblCol_91696478a17c491ebf3ff5d876072e2f" />
+    <Link partId="718" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.8" toItemID="dbLookup.700" toColID="dbLookup.700.in.UDAC_CODE" />
+    <Link partId="714" fromNodeOrder="1" fromItemID="dbLookup.683" fromColID="dbLookup.683.out.udac_desc" toItemID="tbl_D_YP_ITEM" toColID="tblCol_cd4a2e3b9e6441198d59e6397a847a31" />
+    <Link partId="715" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.6" toItemID="dbLookup.683" toColID="dbLookup.683.in.udac_code" />
+    <Link partId="920" fromNodeOrder="1" fromItemID="tblLookup.719" fromColID="tblLookup.719.out.PRODUCT_STATUS" toItemID="tbl_D_YP_ITEM" toColID="tblCol_1fb1a757c68b48cfbf0601d1c0e622d9" />
+    <Link partId="916" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.0" toItemID="tblLookup.719" toColID="tblLookup.719.in.CUSTOMER_ID" />
+    <Link partId="917" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.1" toItemID="tblLookup.719" toColID="tblLookup.719.in.PRODUCT_CODE" />
+    <Link partId="918" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.2" toItemID="tblLookup.719" toColID="tblLookup.719.in.PRODUCT_ISSUE_NUM" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

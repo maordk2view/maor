@@ -1,0 +1,21 @@
+﻿<Graph version="1.0.0.2" name="vdb.k2vdb.bin" lastPartID="4207">
+  <Node id="0" partID="315" name="TBAP_ITEM" isRootView="true" pos="11 186" size="257 91" listGroupSize="250 54" viewType="Table">
+    <TableProperties>{"TableName":"TBAP_ITEM","TablePopulationPropertiesList":[{"ID":"query_TBAP_ITEM","Name":"query_TBAP_ITEM","Order":1}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="2588" name="TT1" isRootView="false" pos="371 67" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"TT1","TablePopulationPropertiesList":[{"ID":"query_TT1","Name":"query_TT1","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="2" partID="2601" name="TT2" isRootView="false" pos="687 107" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"TT2","TablePopulationPropertiesList":[{"ID":"query_TT2","Name":"query_TT2","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="3" partID="2614" name="TT3" isRootView="false" pos="955 220" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"TT3","TablePopulationPropertiesList":[{"ID":"query_TT3","Name":"query_TT3","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="4" partID="2627" name="TT4" isRootView="false" pos="554 360" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"TT4","TablePopulationPropertiesList":[{"ID":"query_TT4","Name":"query_TT4","Order":2}]}</TableProperties>
+  </Node>
+  <Link from="5" to="6" partID="2640" linkType="Database" pointsArr="268 232.545578 278 232.545578 361 177.910141 371 177.910141" fromNodePartID="315" fromNodeColumnName="AP_ID" toNodePartID="2588" toNodeColumnName="ID" toNodePopulationObjectName="query_TT1" />
+  <Link from="5" to="7" partID="2641" linkType="Database" pointsArr="268 232.545578 278 232.545578 544 470.9102 554 470.9102" fromNodePartID="315" fromNodeColumnName="AP_ID" toNodePartID="2627" toNodeColumnName="ID" toNodePopulationObjectName="query_TT4" />
+  <Link from="5" to="8" partID="2642" linkType="Database" pointsArr="268 232.545578 278 232.545578 945 330.9102 955 330.9102" fromNodePartID="315" fromNodeColumnName="AP_ID" toNodePartID="2614" toNodeColumnName="ID" toNodePopulationObjectName="query_TT3" />
+  <Link from="5" to="9" partID="2643" linkType="Database" pointsArr="268 232.545578 278 232.545578 677 217.910141 687 217.910141" fromNodePartID="315" fromNodeColumnName="AP_ID" toNodePartID="2601" toNodeColumnName="ID" toNodePopulationObjectName="query_TT2" />
+</Graph>

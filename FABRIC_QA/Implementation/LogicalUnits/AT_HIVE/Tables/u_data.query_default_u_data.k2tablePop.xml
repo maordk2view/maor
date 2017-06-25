@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_default_u_data</ID>
+  <PopulationObjectName>query_default_u_data</PopulationObjectName>
+  <TableName>u_data</TableName>
+  <RootItemID>query_query_default_u_data</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="movieid" id="queryCol_1" dataType="Integer" index="1" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_default_u_data" name="query_default_u_data" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="dbHadoop_Hive">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="userid" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="movieid" dataType="Integer" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="rating" dataType="Integer" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="unixtime" dataType="Text" index="3" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM `default`.u_data]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="12" fromNodeOrder="0" fromItemID="query_query_default_u_data" fromColID="queryCol_0" toItemID="tbl_u_data" toColID="tblCol_dcf75567daa7470897d529ac994986ca" />
+    <Link partId="13" fromNodeOrder="0" fromItemID="query_query_default_u_data" fromColID="queryCol_1" toItemID="tbl_u_data" toColID="tblCol_f814cb31addf406e823ccc4b0df2c665" />
+    <Link partId="14" fromNodeOrder="0" fromItemID="query_query_default_u_data" fromColID="queryCol_2" toItemID="tbl_u_data" toColID="tblCol_93ef515e1009426b959aa7171ec939f2" />
+    <Link partId="15" fromNodeOrder="0" fromItemID="query_query_default_u_data" fromColID="queryCol_3" toItemID="tbl_u_data" toColID="tblCol_2ec6cf12d32c4a8a80ef73d58776dcd9" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

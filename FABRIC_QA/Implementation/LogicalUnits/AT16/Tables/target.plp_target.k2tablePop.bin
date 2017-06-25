@@ -1,0 +1,8 @@
+﻿<Graph name="target.plp_target.k2tablePop.bin" lastPartID="20">
+  <TableNode partID="0" name="target" pos="404 30" width="309.3241" />
+  <DBQueryNode partID="16" name="CASS_SOURCE" pos="16 31" size="253 84.14581" isRoot="true">
+    <DBQuery>{"Name":"query_tests_target","ID":"query_query_tests_target","ConnName":"CASS_SOURCE","SQL":"select * from tests.target","ColumnsList":[{"ID":"queryCol_0","Name":"end","DataType":"Text","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"value","DataType":"Text","Index":1,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="19" from="0" to="1" pointsArr="269 67.03647 279 67.03647 394 61.0364571 404 61.0364571" fromNodePartID="16" fromNodeColumnName="end" toNodePartID="0" toNodeColumnName="end" />
+  <Link partID="20" from="2" to="3" pointsArr="269 79.109375 279 79.109375 394 73.109375 404 73.109375" fromNodePartID="16" fromNodeColumnName="value" toNodePartID="0" toNodeColumnName="value" />
+</Graph>

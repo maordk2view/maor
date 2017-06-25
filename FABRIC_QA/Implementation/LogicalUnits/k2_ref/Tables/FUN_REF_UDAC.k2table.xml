@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>FUN_REF_UDAC</Name>
+  <ID>tbl_FUN_REF_UDAC</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="udac_code" id="tblCol_9795b0a7239448c48a502ece3749a801" index="0" datatype="Text" />
+    <Column name="last_version_ind" id="tblCol_310ed477565a47abaa71d1d3ad4ce9ae" index="1" datatype="Text" />
+    <Column name="udac_desc" id="tblCol_fee05d662c0d4884940aff493cd45061" index="2" datatype="Text" />
+    <Column name="CONCAT" id="tblCol_87671f28ca274b40b789b55fb1f2f6e7" index="3" datatype="Text" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" unique="true" columnsIdsList="tblCol_9795b0a7239448c48a502ece3749a801" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

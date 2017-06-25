@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>double_pop</ID>
+  <PopulationObjectName>double_pop</PopulationObjectName>
+  <TableName>eli_ref</TableName>
+  <RootItemID>query_query_SOURCE03_ELI_COMP</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="ID" id="queryCol_0" dataType="Text" index="0" />
+    <Arg name="COMPANY_NAME" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="HQ" id="queryCol_2" dataType="Text" index="2" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_SOURCE03_ELI_COMP" name="query_SOURCE03_ELI_COMP" nodeOrder="0" module="DBQuery" connName="ORA_SOURCE">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="ID" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="COMPANY_NAME" dataType="Text" index="1" />
+      </OutputsList>
+      <SQL><![CDATA[select * from SOURCE03.ELI_COMP]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="19" fromNodeOrder="0" fromItemID="query_query_SOURCE03_ELI_COMP" fromColID="queryCol_0" toItemID="tbl_eli_ref" toColID="tblCol_3892e0a692464b72bc7ecf21fdfb2480" />
+    <Link partId="20" fromNodeOrder="0" fromItemID="query_query_SOURCE03_ELI_COMP" fromColID="queryCol_1" toItemID="tbl_eli_ref" toColID="tblCol_8b6940aead934319be0acdbb53fcd8cc" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

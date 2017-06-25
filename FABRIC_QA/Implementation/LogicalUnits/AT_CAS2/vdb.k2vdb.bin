@@ -1,0 +1,10 @@
+﻿<Graph version="4.0.0.1" name="vdb.k2vdb.bin" lastPartID="261">
+  <Node id="0" partID="0" name="users" isRootView="true" pos="128 61" size="257 171" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"users","TablePopulationPropertiesList":[{"ID":"pop2","Name":"pop2","Order":1,"Disabled":true,"IsEnrichment":false},{"ID":"pop3","Name":"pop3","Order":1,"Disabled":false,"IsEnrichment":false},{"ID":"query_test_db_users","Name":"query_test_db_users","Order":1,"Disabled":true,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="33" name="users2" isRootView="false" pos="412 52" size="257 154" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"users2","TablePopulationPropertiesList":[{"ID":"pop4","Name":"pop4","Order":2,"Disabled":true,"IsEnrichment":false},{"ID":"query_test_db_users2","Name":"query_test_db_users2","Order":2,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+  <Link from="2" to="3" partID="40" linkType="Database" pointsArr="385 141.545563 395 141.545563 407 96.5 417 96.5" fromNodePartID="0" fromNodeColumnName="id" toNodePartID="33" toNodeColumnName="id" toNodePopulationObjectName="query_test_db_users2" />
+  <Link from="2" to="4" partID="75" linkType="Database" pointsArr="385 141.545563 395 141.545563 402 115.54557 412 115.54557" fromNodePartID="0" fromNodeColumnName="id" toNodePartID="33" toNodeColumnName="id" toNodePopulationObjectName="pop4" />
+</Graph>

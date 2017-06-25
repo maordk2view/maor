@@ -1,0 +1,6 @@
+﻿<Graph version="1.6.0.0" name="vdb.k2vdb.bin" lastPartID="4523">
+  <Node id="0" partID="315" name="TBAP_ITEM" isRootView="true" pos="11 169" size="257 108" listGroupSize="250 54" viewType="Table">
+    <TableProperties>{"TableName":"TBAP_ITEM","TablePopulationPropertiesList":[{"ID":"q2_TBAP","Name":"q2_TBAP","Order":1},{"ID":"query_TBAP_ITEM","Name":"query_TBAP_ITEM","Order":1}]}</TableProperties>
+  </Node>
+  <CommentBalloon id="1" text="LU for testing Multi population on root table&#xD;&#xA;Based on AT7 (TORA)" anchor="null" reanchorable="true" loc="30 30" />
+</Graph>

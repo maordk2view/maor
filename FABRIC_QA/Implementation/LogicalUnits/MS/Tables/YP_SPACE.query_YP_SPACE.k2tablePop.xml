@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_YP_SPACE</PopulationObjectName>
+  <TableName>YP_SPACE</TableName>
+  <ID>query_YP_SPACE</ID>
+  <RootItemID>query_6</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="CUSTOMER ID" id="query_6.0" dataType="Integer" index="0" />
+    <Arg name="S 1" id="query_6.1" dataType="Text" index="1" />
+    <Arg name="S2" id="query_6.2" dataType="Text" index="2" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_6" name="query_YP_SPACE" nodeOrder="0" module="DBQuery" connName="YP_TEST">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_6.0" name="CUSTOMER ID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_6.1" name="S 1" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_6.2" name="S2" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_6.3" name="S 2" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_6.4" name="S-3" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_6.5" name="S#3" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_6.6" name="S*4" dataType="Text" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_6.7" name="Aaaa" dataType="Text" index="7" />
+      </OutputsList>
+      <SQL><![CDATA[select * from YP_SPACE]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="70" fromNodeOrder="0" fromItemID="query_6" fromColID="query_6.0" toItemID="tbl_YP_SPACE" toColID="tblCol_b43280725bb64bfc849fe954e81b448f" />
+    <Link partId="71" fromNodeOrder="0" fromItemID="query_6" fromColID="query_6.1" toItemID="tbl_YP_SPACE" toColID="tblCol_508d61dd13e04b7fad55780caa886238" />
+    <Link partId="72" fromNodeOrder="0" fromItemID="query_6" fromColID="query_6.2" toItemID="tbl_YP_SPACE" toColID="tblCol_90034ea5c7ea47618dc7a507e14e74bf" />
+    <Link partId="73" fromNodeOrder="0" fromItemID="query_6" fromColID="query_6.3" toItemID="tbl_YP_SPACE" toColID="tblCol_6e5ee0fe5c4f4737a8328c663cee7130" />
+    <Link partId="74" fromNodeOrder="0" fromItemID="query_6" fromColID="query_6.4" toItemID="tbl_YP_SPACE" toColID="tblCol_32abf4ceefee4ac9950baa0efd3b29eb" />
+    <Link partId="75" fromNodeOrder="0" fromItemID="query_6" fromColID="query_6.5" toItemID="tbl_YP_SPACE" toColID="tblCol_d34b1e314f2649309b60bcc4d75299e6" />
+    <Link partId="76" fromNodeOrder="0" fromItemID="query_6" fromColID="query_6.6" toItemID="tbl_YP_SPACE" toColID="tblCol_2e086b10a6d5421e92e4b3520a8fc1f8" />
+    <Link partId="77" fromNodeOrder="0" fromItemID="query_6" fromColID="query_6.7" toItemID="tbl_YP_SPACE" toColID="tblCol_7c4c752f719c4047892bf259c356edc4" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

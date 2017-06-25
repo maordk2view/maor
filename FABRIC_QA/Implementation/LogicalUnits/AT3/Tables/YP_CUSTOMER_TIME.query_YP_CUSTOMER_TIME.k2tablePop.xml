@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_YP_CUSTOMER_TIME</PopulationObjectName>
+  <TableName>YP_CUSTOMER_TIME</TableName>
+  <ID>query_YP_CUSTOMER_TIME</ID>
+  <RootItemID>query_7</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="CUSTOMER_ID" id="query_7.0" dataType="Integer" index="0" />
+    <Arg name="CUR_TIME_STAMPTZ" id="query_7.1" dataType="Integer" index="1" />
+    <Arg name="CUR_TIME_STAMP" id="query_7.2" dataType="Integer" index="2" />
+    <Arg name="CUR_TIME_STAMP_TZLOCAL" id="query_7.3" dataType="Integer" index="3" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_7" name="query_YP_CUSTOMER_TIME" nodeOrder="0" module="DBQuery" connName="YP_TEST">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_7.0" name="CUSTOMER_ID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_7.1" name="CUR_TIME_STAMPTZ" dataType="Integer" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_7.2" name="CUR_TIME_STAMP" dataType="Integer" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_7.3" name="CUR_TIME_STAMP_TZLOCAL" dataType="Integer" index="3" />
+      </OutputsList>
+      <SQL><![CDATA[select * from YP_CUSTOMER_TIME]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="12" fromNodeOrder="0" fromItemID="query_7" fromColID="query_7.0" toItemID="tbl_YP_CUSTOMER_TIME" toColID="tblCol_bc9cbe13923942008e161f5c733d45b6" />
+    <Link partId="13" fromNodeOrder="0" fromItemID="query_7" fromColID="query_7.1" toItemID="tbl_YP_CUSTOMER_TIME" toColID="tblCol_d8cf61b3a35c48d7ba40f9d4bde4d2ba" />
+    <Link partId="14" fromNodeOrder="0" fromItemID="query_7" fromColID="query_7.2" toItemID="tbl_YP_CUSTOMER_TIME" toColID="tblCol_0f8f1cacbdc34891aea851a6b5a01dac" />
+    <Link partId="15" fromNodeOrder="0" fromItemID="query_7" fromColID="query_7.3" toItemID="tbl_YP_CUSTOMER_TIME" toColID="tblCol_7a312494a72c4acebb1c85ba793016ed" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

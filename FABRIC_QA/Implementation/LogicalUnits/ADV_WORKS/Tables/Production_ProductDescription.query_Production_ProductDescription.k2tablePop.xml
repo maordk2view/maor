@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_Production_ProductDescription</ID>
+  <PopulationObjectName>query_Production_ProductDescription</PopulationObjectName>
+  <TableName>Production_ProductDescription</TableName>
+  <RootItemID>query_query_Production_ProductDescription</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="ProductDescriptionID" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="Description" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="rowguid" id="queryCol_2" dataType="Text" index="2" />
+    <Arg name="ModifiedDate" id="queryCol_3" dataType="Text" index="3" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_Production_ProductDescription" name="query_Production_ProductDescription" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="SqlServer_AdvWorks">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="ProductDescriptionID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="Description" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="rowguid" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="ModifiedDate" dataType="Text" index="3" />
+      </OutputsList>
+      <SQL><![CDATA[select * from Production.ProductDescription]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="12" fromNodeOrder="0" fromItemID="query_query_Production_ProductDescription" fromColID="queryCol_0" toItemID="tbl_Production_ProductDescription" toColID="tblCol_8de5563b5c0744d9861f6cfa1423f637" />
+    <Link partId="13" fromNodeOrder="0" fromItemID="query_query_Production_ProductDescription" fromColID="queryCol_1" toItemID="tbl_Production_ProductDescription" toColID="tblCol_de3ac16bc3a44f2b9fdabf6a24e19778" />
+    <Link partId="14" fromNodeOrder="0" fromItemID="query_query_Production_ProductDescription" fromColID="queryCol_2" toItemID="tbl_Production_ProductDescription" toColID="tblCol_7003873a84b749bca77ad7450fe4c3c9" />
+    <Link partId="15" fromNodeOrder="0" fromItemID="query_query_Production_ProductDescription" fromColID="queryCol_3" toItemID="tbl_Production_ProductDescription" toColID="tblCol_3b5b120dc6e5484b95075d26758b4234" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

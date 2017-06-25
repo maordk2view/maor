@@ -1,0 +1,14 @@
+﻿<Graph name="INVOICE.query_INVOICE.k2tablePop.bin" lastPartID="733">
+  <TableNode partID="0" name="INVOICE" pos="304.543854 12.7447968" width="312.7805" />
+  <DBQueryNode partID="9" name="HIS_DB" pos="10 8.78125" size="253 132.4375" isRoot="true">
+    <DBQuery>{"Name":"query_INVOICE","ID":"query_query_INVOICE","ConnName":"HIS_DB","SQL":"SELECT * FROM INVOICE","ColumnsList":[{"ID":"queryCol_0","Name":"PATIENT_ID","DataType":"Text","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"INVOICE_ID","DataType":"Text","Index":1,"IsInputArgument":true},{"ID":"queryCol_2","Name":"ISSUED_DATE","DataType":"Text","Index":2,"IsInputArgument":true},{"ID":"queryCol_3","Name":"DUE_DATE","DataType":"Text","Index":3,"IsInputArgument":true},{"ID":"queryCol_4","Name":"STATUS","DataType":"Text","Index":4,"IsInputArgument":true},{"ID":"queryCol_5","Name":"BALANCE","DataType":"Real","Index":5,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="16" from="0" to="1" pointsArr="263 44.81771 273 44.81771 294.543854 43.7812538 304.543854 43.7812538" fromNodePartID="9" fromNodeColumnName="PATIENT_ID" toNodePartID="0" toNodeColumnName="PATIENT_ID" />
+  <Link partID="17" from="2" to="3" pointsArr="263 56.890625 273 56.890625 294.543854 55.85417 304.543854 55.85417" fromNodePartID="9" fromNodeColumnName="INVOICE_ID" toNodePartID="0" toNodeColumnName="INVOICE_ID" />
+  <Link partID="18" from="4" to="5" pointsArr="263 68.96354 273 68.96354 294.543854 67.9270859 304.543854 67.9270859" fromNodePartID="9" fromNodeColumnName="ISSUED_DATE" toNodePartID="0" toNodeColumnName="ISSUED_DATE" />
+  <Link partID="19" from="6" to="7" pointsArr="263 81.03645 273 81.03645 294.543854 80 304.543854 80" fromNodePartID="9" fromNodeColumnName="DUE_DATE" toNodePartID="0" toNodeColumnName="DUE_DATE" />
+  <Link partID="21" from="8" to="9" pointsArr="263 105.182281 273 105.182281 294.543854 92.0729141 304.543854 92.0729141" fromNodePartID="9" fromNodeColumnName="BALANCE" toNodePartID="0" toNodeColumnName="BALANCE" />
+  <Link partID="52" from="10" to="11" pointsArr="263 93.109375 273 93.109375 294.543854 104.145828 304.543854 104.145828" fromNodePartID="9" fromNodeColumnName="STATUS" toNodePartID="0" toNodeColumnName="STATUS1" />
+  <Link partID="85" from="10" to="12" pointsArr="263 93.109375 273 93.109375 294.543854 116.21875 304.543854 116.21875" fromNodePartID="9" fromNodeColumnName="STATUS" toNodePartID="0" toNodeColumnName="STATUS2" />
+  <Link partID="123" from="10" to="13" pointsArr="263 93.109375 273 93.109375 294.543854 128.291672 304.543854 128.291672" fromNodePartID="9" fromNodeColumnName="STATUS" toNodePartID="0" toNodeColumnName="STATUS4" />
+</Graph>

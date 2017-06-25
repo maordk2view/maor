@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>getAddRecords</PopulationObjectName>
+  <TableName>YP_ADDR_FUN</TableName>
+  <ID>getAddRecords</ID>
+  <RootItemID>f_3</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="CUSTOMER_ID" id="fi_3.0" dataType="Integer" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item id="f_3" name="getAddRecords" nodeOrder="0" module="Function" fileName="getAddRecords.k2function.xml">
+      <InputsList>
+        <Input id="fi_3.0" name="CUSTOMER_ID" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_3.0" name="ADDRESS_ID" />
+        <Output id="fo_3.1" name="HOUSE_NO" />
+        <Output id="fo_3.2" name="COLONY_ID" />
+        <Output id="fo_3.3" name="STATE_CODE" />
+        <Output id="fo_3.4" name="ZIP_CODE" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="124" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.0" toItemID="tbl_YP_ADDR_FUN" toColID="tblCol_4260639b25a54401a103260bb9541734" />
+    <Link partId="125" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.1" toItemID="tbl_YP_ADDR_FUN" toColID="tblCol_c328fcb5327240f0bb1b96eb06a8e958" />
+    <Link partId="126" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.2" toItemID="tbl_YP_ADDR_FUN" toColID="tblCol_5e146334f04b4fab8e4f9ae3cdbb5984" />
+    <Link partId="127" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.3" toItemID="tbl_YP_ADDR_FUN" toColID="tblCol_ad010be5494644dc9b3242be0a5e7626" />
+    <Link partId="128" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.4" toItemID="tbl_YP_ADDR_FUN" toColID="tblCol_2da6e04d644941e4aeb5539816786b6e" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

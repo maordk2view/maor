@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DbQueryItemOfDataTable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DbConn>ORA_140</DbConn>
+  <Name>ei1K</Name>
+  <Sql>Select BILLING_ACCOUNT.BAN
+From BILLING_ACCOUNT
+Where BILLING_ACCOUNT.BAN &gt;= 700000000 And BILLING_ACCOUNT.BAN &lt; 800000000 And
+  RowNum &lt; 1001</Sql>
+  <IsSqlValid>true</IsSqlValid>
+</DbQueryItemOfDataTable>

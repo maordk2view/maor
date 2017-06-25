@@ -1,0 +1,5 @@
+﻿<Graph version="2.5.3.0" name="vdb.k2vdb.bin" lastPartID="398">
+  <Node id="0" partID="102" name="YP_PRODUCT" isRootView="true" pos="180 216" size="257 138.5469" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"YP_PRODUCT","TablePopulationPropertiesList":[{"ID":"query_YP_PRODUCT","Name":"query_YP_PRODUCT","Order":1}]}</TableProperties>
+  </Node>
+</Graph>

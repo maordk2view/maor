@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBConn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="DBConnSalesforce" name="SALESFORCE_SOURCE" type="Salesforce" version="1.2.0.0">
+  <Active>false</Active>
+  <UserId>gabi.ochman@k2view.com</UserId>
+  <Password>8LVBH10anUnBOUDLoULWhAzSDL/gF8mKYzzggumVaYM=:HXDnHWM45oLqTU8iLN6+h7GxtHox2oKy/AM+NOOS/zM=</Password>
+  <ConnectionStringClient>DRIVER={DataDirect 7.1 Salesforce};LogonID=gabi.ochman@k2view.com;Password=[PASSWORD];SecurityToken=K1k2usE5wwnCupBI83pA7ENpB;</ConnectionStringClient>
+  <IsCustomConnectionStringServerSide>true</IsCustomConnectionStringServerSide>
+  <ConnectionStringServerSide>jdbc:datadirect:sforce://login.salesforce.com;User=gabi.ochman@k2view.com;Password=[PASSWORD];SecurityToken=K1k2usE5wwnCupBI83pA7ENpB;</ConnectionStringServerSide>
+  <CommandList />
+  <SecurityToken>K1k2usE5wwnCupBI83pA7ENpB</SecurityToken>
+</DBConn>

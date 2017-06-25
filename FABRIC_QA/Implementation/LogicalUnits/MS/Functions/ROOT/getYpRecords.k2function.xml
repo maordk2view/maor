@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>getYpRecords</Name>
+  <ID>ROOT.getYpRecords</ID>
+  <Category>ROOT</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String sql = "SELECT CUSTOMER_ID, PRODUCT_CODE, PRODUCT_ISSUE_NUM, ITEM_ID, ITEM_VERSION, PROPOSAL_ID, LAST_VERSION_IND, SECTION_CODE, HEADING_CODE, SUB_HEADING_CODE, TOWN_POPULATION_CODE, TOWN_INTEGR_CODE, UDAC_CODE, RATE_UDAC_CODE, LISTING_ID, MAIN_ITEM_ID, ACTION_CODE, ACTION_CODE_RSN, CONTRACT_ID, CONTRACT_VERSION, PREVIOUS_ITEM_ID, PREVIOUS_ACTION_CODE, PREV_ACTION_CODE_RSN, OPEN_DATE, IN_OUT_DATE, ITEM_STATUS, BOTS_ORIGIN_CODE, DIS_ASSOC_STATUS, COPYSHEET_CHG_REASON, DISPLAY_AD_ACT_RSN, DISPLAY_AD_PREFIX, DISPLAY_AD_NUMBER, DISPLAY_AD_VERSION, DISPLAY_AD_ACTIVITY, OMIT_ANCHOR_IND, OMIT_ADDRESS_IND, OMIT_TOWN_IND, HELD_ACTIVITY, ITEM_NISD_AMT, ITEM_BOTS_AMT, ATB_AMT, ATB_REASON, COMPLAINT_IND, COMPLAINT_NISD_AMT, BRAND_NAME, SEARCH_BRAND_NAME, BRAND_NAMES_NUM, CAPTION_ARR_IND, HEADING_CNG_STS, LAST_YEAR_DISC_CODE, LAST_YEAR_DISC_PHASE, DISCOUNT_BOTS_AMT, SELLING_ID, SUBORDINATE_SEQ_NUM, SENIORITY_DATE, DISCOUNT_CODE, DISCOUNT_PHASE, DISCOUNT_AMT, ADVERT_ID, ADVERT_LINE_ID, COPY_SHEET_FORMAT, BASED_ON_AD_PREFIX, CORRECTION_NUMBER, CORRECTION_UPD_DATE, BASED_ON_AD, IDENTICAL_TO_BASE, CONTENT_ID, CONTENT_VERSION, FORCE_PRICE_IND, UNIT_QUANTITY, PROM_RELATED_YP_PRD, PROM_RELATED_YP_ISS, PROM_RELATED_ITEM_ID, NIR_GRAPH_SUPPLIER, NIR_GRAPH_SUP_METHOD, START_PUBLISH_DATE, NIR_PRODUCT_IND, LISTADO_ID, ADVERT_INDENT_LEVEL, ADVERT_LINE_SEQ_NUM, ASSC_DISASS_CUST_ID, LOCATED_IND, MISSING_CONTENT_IND, COMPLAINT_PERCENTAGE, ITEM_CMSN_BOTS_AMT, ATCB_AMT, DISCOUNT_PERCENTAGE, LAST_YEAR_DISC_PRCNT, LAST_YEAR_RATE_UDAC, ASSC_DISASS_PRD_CODE, CTCR_BATCH_PROG_ID, CTCR_BATCH_PROG_DT, CTCR_ONLINE_USER_ID, CTCR_ONLINE_PROG_ID, CTCR_ONLINE_PROG_DT, CTCR_SYS_CRE_DT, CTCR_SYS_UPD_DT, CTCR_DBI_PROG_ID, CTCR_DBI_PROG_DT, CTCR_CNV_DT, CTCR_EVENT_ID, COMMISSION_PAID_IND, PRE_PAY_IND, COMPLAINT_BOTS_AMT, SFA_TRANSACTION, SFA_ID, BASED_ON_UDAC, RATE_DISC_PERCENTAGE, RATE_DISCOUNT_AMT, RATE_BASE_AMT, RATE_DISC_PERCENTAGE_LY, RATE_DISCOUNT_AMT_LY, LOYALTY_DISC_PERCENTAGE, LOYALTY_DISCOUNT_AMT, LOYALTY_BASE_AMT, LOYALTY_DISC_PERCENTAGE_LY, LOYALTY_DISCOUNT_AMT_LY, NS_RATE_TYPE, BOTTOM_PRICE, UDAC_CMSN_POINTS, BONI_DISC_CODE, PREV_BONI_DISC_CODE, SPECIAL_UDAC_IND, VOLUME_DISC_PERCENTAGE, VOLUME_DISCOUNT_AMT, VOLUME_BASE_AMT, LOCK_CONTENT_IND FROM yp_item WHERE CUSTOMER_ID =?";
+
+Object[] valuesArr = {CUST_ID};
+
+ResultSetWrapper rs = DBQuery("MYSQL_SOURCE", sql, valuesArr);
+
+BigDecimal product_issue_num = new  BigDecimal (0);
+for (Object[] row : rs) {
+	product_issue_num = (BigDecimal)row[2];
+	Object [] row2 = Arrays.copyOf(row,row.length+2);
+	if (product_issue_num.intValue() != 2004)
+	{
+		row2[row.length] = concat (row2[2].toString(), row2[6].toString());
+		row2[row.length+1] = java_concat_str (row2[2].toString(), row2[6].toString());
+		yield (row2);
+	}
+	Object [] row3 = Arrays.copyOf(row2,row2.length);
+	row3[row.length] = "NEW_RECORD";
+		
+	for (Integer i=0; i &lt; 3; i++)
+	{
+		row3[row.length+1] = i.toString();
+		yield (row3);
+	}
+}</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>true</IsRootFunction>
+  <InputParams>
+    <Input name="CUST_ID" id="fi.ROOT.getYpRecords.0" index="0" dataType="Integer">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="CUSTOMER_ID" id="fo.ROOT.getYpRecords.0" index="0" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="PRODUCT_CODE" id="fo.ROOT.getYpRecords.1" index="1" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="PRODUCT_ISSUE_NUM" id="fo.ROOT.getYpRecords.2" index="2" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="ITEM_ID" id="fo.ROOT.getYpRecords.3" index="3" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="ITEM_VERSION" id="fo.ROOT.getYpRecords.4" index="4" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="PROPOSAL_ID" id="fo.ROOT.getYpRecords.5" index="5" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="LAST_VERSION_IND" id="fo.ROOT.getYpRecords.6" index="6" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="SECTION_CODE" id="fo.ROOT.getYpRecords.7" index="7" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="HEADING_CODE" id="fo.ROOT.getYpRecords.8" index="8" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="SUB_HEADING_CODE" id="fo.ROOT.getYpRecords.9" index="9" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="TOWN_POPULATION_CODE" id="fo.ROOT.getYpRecords.10" index="10" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="TOWN_INTEGR_CODE" id="fo.ROOT.getYpRecords.11" index="11" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="UDAC_CODE" id="fo.ROOT.getYpRecords.12" index="12" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="RATE_UDAC_CODE" id="fo.ROOT.getYpRecords.13" index="13" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="LISTING_ID" id="fo.ROOT.getYpRecords.14" index="14" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="MAIN_ITEM_ID" id="fo.ROOT.getYpRecords.15" index="15" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="ACTION_CODE" id="fo.ROOT.getYpRecords.16" index="16" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="ACTION_CODE_RSN" id="fo.ROOT.getYpRecords.17" index="17" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="CONTRACT_ID" id="fo.ROOT.getYpRecords.18" index="18" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="CONTRACT_VERSION" id="fo.ROOT.getYpRecords.19" index="19" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="PREVIOUS_ITEM_ID" id="fo.ROOT.getYpRecords.20" index="20" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="PREVIOUS_ACTION_CODE" id="fo.ROOT.getYpRecords.21" index="21" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="PREV_ACTION_CODE_RSN" id="fo.ROOT.getYpRecords.22" index="22" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="OPEN_DATE" id="fo.ROOT.getYpRecords.23" index="23" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="IN_OUT_DATE" id="fo.ROOT.getYpRecords.24" index="24" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="ITEM_STATUS" id="fo.ROOT.getYpRecords.25" index="25" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="BOTS_ORIGIN_CODE" id="fo.ROOT.getYpRecords.26" index="26" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="DIS_ASSOC_STATUS" id="fo.ROOT.getYpRecords.27" index="27" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="COPYSHEET_CHG_REASON" id="fo.ROOT.getYpRecords.28" index="28" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="DISPLAY_AD_ACT_RSN" id="fo.ROOT.getYpRecords.29" index="29" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="DISPLAY_AD_PREFIX" id="fo.ROOT.getYpRecords.30" index="30" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="DISPLAY_AD_NUMBER" id="fo.ROOT.getYpRecords.31" index="31" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="DISPLAY_AD_VERSION" id="fo.ROOT.getYpRecords.32" index="32" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="DISPLAY_AD_ACTIVITY" id="fo.ROOT.getYpRecords.33" index="33" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="OMIT_ANCHOR_IND" id="fo.ROOT.getYpRecords.34" index="34" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="OMIT_ADDRESS_IND" id="fo.ROOT.getYpRecords.35" index="35" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="OMIT_TOWN_IND" id="fo.ROOT.getYpRecords.36" index="36" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="HELD_ACTIVITY" id="fo.ROOT.getYpRecords.37" index="37" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="ITEM_NISD_AMT" id="fo.ROOT.getYpRecords.38" index="38" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="ITEM_BOTS_AMT" id="fo.ROOT.getYpRecords.39" index="39" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="ATB_AMT" id="fo.ROOT.getYpRecords.40" index="40" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="ATB_REASON" id="fo.ROOT.getYpRecords.41" index="41" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="COMPLAINT_IND" id="fo.ROOT.getYpRecords.42" index="42" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="COMPLAINT_NISD_AMT" id="fo.ROOT.getYpRecords.43" index="43" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="BRAND_NAME" id="fo.ROOT.getYpRecords.44" index="44" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="SEARCH_BRAND_NAME" id="fo.ROOT.getYpRecords.45" index="45" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="BRAND_NAMES_NUM" id="fo.ROOT.getYpRecords.46" index="46" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="CAPTION_ARR_IND" id="fo.ROOT.getYpRecords.47" index="47" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="HEADING_CNG_STS" id="fo.ROOT.getYpRecords.48" index="48" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="LAST_YEAR_DISC_CODE" id="fo.ROOT.getYpRecords.49" index="49" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="LAST_YEAR_DISC_PHASE" id="fo.ROOT.getYpRecords.50" index="50" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="DISCOUNT_BOTS_AMT" id="fo.ROOT.getYpRecords.51" index="51" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="SELLING_ID" id="fo.ROOT.getYpRecords.52" index="52" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="SUBORDINATE_SEQ_NUM" id="fo.ROOT.getYpRecords.53" index="53" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="SENIORITY_DATE" id="fo.ROOT.getYpRecords.54" index="54" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="DISCOUNT_CODE" id="fo.ROOT.getYpRecords.55" index="55" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="DISCOUNT_PHASE" id="fo.ROOT.getYpRecords.56" index="56" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="DISCOUNT_AMT" id="fo.ROOT.getYpRecords.57" index="57" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="ADVERT_ID" id="fo.ROOT.getYpRecords.58" index="58" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="ADVERT_LINE_ID" id="fo.ROOT.getYpRecords.59" index="59" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="COPY_SHEET_FORMAT" id="fo.ROOT.getYpRecords.60" index="60" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="BASED_ON_AD_PREFIX" id="fo.ROOT.getYpRecords.61" index="61" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="CORRECTION_NUMBER" id="fo.ROOT.getYpRecords.62" index="62" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="CORRECTION_UPD_DATE" id="fo.ROOT.getYpRecords.63" index="63" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="BASED_ON_AD" id="fo.ROOT.getYpRecords.64" index="64" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="IDENTICAL_TO_BASE" id="fo.ROOT.getYpRecords.65" index="65" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="CONTENT_ID" id="fo.ROOT.getYpRecords.66" index="66" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="CONTENT_VERSION" id="fo.ROOT.getYpRecords.67" index="67" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="FORCE_PRICE_IND" id="fo.ROOT.getYpRecords.68" index="68" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="UNIT_QUANTITY" id="fo.ROOT.getYpRecords.69" index="69" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="PROM_RELATED_YP_PRD" id="fo.ROOT.getYpRecords.70" index="70" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="PROM_RELATED_YP_ISS" id="fo.ROOT.getYpRecords.71" index="71" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="PROM_RELATED_ITEM_ID" id="fo.ROOT.getYpRecords.72" index="72" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="NIR_GRAPH_SUPPLIER" id="fo.ROOT.getYpRecords.73" index="73" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="NIR_GRAPH_SUP_METHOD" id="fo.ROOT.getYpRecords.74" index="74" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="START_PUBLISH_DATE" id="fo.ROOT.getYpRecords.75" index="75" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="NIR_PRODUCT_IND" id="fo.ROOT.getYpRecords.76" index="76" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="LISTADO_ID" id="fo.ROOT.getYpRecords.77" index="77" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="ADVERT_INDENT_LEVEL" id="fo.ROOT.getYpRecords.78" index="78" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="ADVERT_LINE_SEQ_NUM" id="fo.ROOT.getYpRecords.79" index="79" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="ASSC_DISASS_CUST_ID" id="fo.ROOT.getYpRecords.80" index="80" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="LOCATED_IND" id="fo.ROOT.getYpRecords.81" index="81" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="MISSING_CONTENT_IND" id="fo.ROOT.getYpRecords.82" index="82" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="COMPLAINT_PERCENTAGE" id="fo.ROOT.getYpRecords.83" index="83" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="ITEM_CMSN_BOTS_AMT" id="fo.ROOT.getYpRecords.84" index="84" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="ATCB_AMT" id="fo.ROOT.getYpRecords.85" index="85" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="DISCOUNT_PERCENTAGE" id="fo.ROOT.getYpRecords.86" index="86" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="LAST_YEAR_DISC_PRCNT" id="fo.ROOT.getYpRecords.87" index="87" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="LAST_YEAR_RATE_UDAC" id="fo.ROOT.getYpRecords.88" index="88" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="ASSC_DISASS_PRD_CODE" id="fo.ROOT.getYpRecords.89" index="89" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="CTCR_BATCH_PROG_ID" id="fo.ROOT.getYpRecords.90" index="90" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="CTCR_BATCH_PROG_DT" id="fo.ROOT.getYpRecords.91" index="91" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="CTCR_ONLINE_USER_ID" id="fo.ROOT.getYpRecords.92" index="92" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="CTCR_ONLINE_PROG_ID" id="fo.ROOT.getYpRecords.93" index="93" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="CTCR_ONLINE_PROG_DT" id="fo.ROOT.getYpRecords.94" index="94" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="CTCR_SYS_CRE_DT" id="fo.ROOT.getYpRecords.95" index="95" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="CTCR_SYS_UPD_DT" id="fo.ROOT.getYpRecords.96" index="96" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="CTCR_DBI_PROG_ID" id="fo.ROOT.getYpRecords.97" index="97" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="CTCR_DBI_PROG_DT" id="fo.ROOT.getYpRecords.98" index="98" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="CTCR_CNV_DT" id="fo.ROOT.getYpRecords.99" index="99" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="CTCR_EVENT_ID" id="fo.ROOT.getYpRecords.100" index="100" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="COMMISSION_PAID_IND" id="fo.ROOT.getYpRecords.101" index="101" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="PRE_PAY_IND" id="fo.ROOT.getYpRecords.102" index="102" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="COMPLAINT_BOTS_AMT" id="fo.ROOT.getYpRecords.103" index="103" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="SFA_TRANSACTION" id="fo.ROOT.getYpRecords.104" index="104" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="SFA_ID" id="fo.ROOT.getYpRecords.105" index="105" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="BASED_ON_UDAC" id="fo.ROOT.getYpRecords.106" index="106" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="RATE_DISC_PERCENTAGE" id="fo.ROOT.getYpRecords.107" index="107" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="RATE_DISCOUNT_AMT" id="fo.ROOT.getYpRecords.108" index="108" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="RATE_BASE_AMT" id="fo.ROOT.getYpRecords.109" index="109" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="RATE_DISC_PERCENTAGE_LY" id="fo.ROOT.getYpRecords.110" index="110" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="RATE_DISCOUNT_AMT_LY" id="fo.ROOT.getYpRecords.111" index="111" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="LOYALTY_DISC_PERCENTAGE" id="fo.ROOT.getYpRecords.112" index="112" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="LOYALTY_DISCOUNT_AMT" id="fo.ROOT.getYpRecords.113" index="113" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="LOYALTY_BASE_AMT" id="fo.ROOT.getYpRecords.114" index="114" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="LOYALTY_DISC_PERCENTAGE_LY" id="fo.ROOT.getYpRecords.115" index="115" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="LOYALTY_DISCOUNT_AMT_LY" id="fo.ROOT.getYpRecords.116" index="116" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="NS_RATE_TYPE" id="fo.ROOT.getYpRecords.117" index="117" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="BOTTOM_PRICE" id="fo.ROOT.getYpRecords.118" index="118" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="UDAC_CMSN_POINTS" id="fo.ROOT.getYpRecords.119" index="119" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="BONI_DISC_CODE" id="fo.ROOT.getYpRecords.120" index="120" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="PREV_BONI_DISC_CODE" id="fo.ROOT.getYpRecords.121" index="121" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="SPECIAL_UDAC_IND" id="fo.ROOT.getYpRecords.122" index="122" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="VOLUME_DISC_PERCENTAGE" id="fo.ROOT.getYpRecords.123" index="123" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="VOLUME_DISCOUNT_AMT" id="fo.ROOT.getYpRecords.124" index="124" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="VOLUME_BASE_AMT" id="fo.ROOT.getYpRecords.125" index="125" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="LOCK_CONTENT_IND" id="fo.ROOT.getYpRecords.126" index="126" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="CON1" id="fo.ROOT.getYpRecords.127" index="127" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="CON2" id="fo.ROOT.getYpRecords.128" index="128" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

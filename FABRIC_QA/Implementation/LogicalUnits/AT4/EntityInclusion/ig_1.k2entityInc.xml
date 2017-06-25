@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DbQueryItemOfDataTable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DbConn>CUSTOMER_TEST</DbConn>
+  <Name>ig_1</Name>
+  <Sql>select ban from customer.billing_account where ban
+	in (400000001, 400000002, 400000003, 400000004, 400000005, 500000006, 500000007, 500000008, 500000009, 500000010)</Sql>
+  <IsSqlValid>true</IsSqlValid>
+</DbQueryItemOfDataTable>

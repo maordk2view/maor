@@ -1,0 +1,8 @@
+﻿<Graph name="FilmCategory.query_Cinema_FilmCategory.k2tablePop.bin" lastPartID="9">
+  <TableNode partID="0" name="FilmCategory" pos="315.817627 11.8906288" width="309.3241" />
+  <DBQueryNode partID="5" name="dbCache" pos="10 7.927086" size="260.817627 84.14583" isRoot="true">
+    <DBQuery>{"Name":"query_Cinema_FilmCategory","ID":"query_query_Cinema_FilmCategory","ConnName":"dbCache","SQL":"SELECT * FROM Cinema.FilmCategory","ColumnsList":[{"ID":"queryCol_0","Name":"ID","DataType":"Integer","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"CategoryName","DataType":"Text","Index":1,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="8" from="0" to="1" pointsArr="270.817627 43.9635429 280.817627 43.9635429 283.317627 25 303.317627 25 305.817627 42.9270859 315.817627 42.9270859" fromNodePartID="5" fromNodeColumnName="ID" toNodePartID="0" toNodeColumnName="ID" />
+  <Link partID="9" from="2" to="3" pointsArr="270.817627 56.03646 280.817627 56.03646 283.317627 50 303.317627 50 305.817627 55.0000038 315.817627 55.0000038" fromNodePartID="5" fromNodeColumnName="CategoryName" toNodePartID="0" toNodeColumnName="CategoryName" />
+</Graph>

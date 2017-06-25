@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_savings_acct</ID>
+  <PopulationObjectName>query_savings_acct</PopulationObjectName>
+  <TableName>savings_acct</TableName>
+  <RootItemID>query_query_savings_acct</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="cust_id" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="acct_nbr" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="minimum_balance" id="queryCol_2" dataType="Integer" index="2" />
+    <Arg name="acct_type" id="queryCol_3" dataType="Text" index="3" />
+    <Arg name="account_active" id="queryCol_4" dataType="Text" index="4" />
+    <Arg name="acct_start_date" id="queryCol_5" dataType="Text" index="5" />
+    <Arg name="acct_end_date" id="queryCol_6" dataType="Text" index="6" />
+    <Arg name="starting_balance" id="queryCol_7" dataType="Real" index="7" />
+    <Arg name="ending_balance" id="queryCol_8" dataType="Real" index="8" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_savings_acct" name="query_savings_acct" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="dbTeradata">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="cust_id" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="acct_nbr" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="minimum_balance" dataType="Integer" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="acct_type" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="account_active" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="acct_start_date" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_6" name="acct_end_date" dataType="Text" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_7" name="starting_balance" dataType="Real" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_8" name="ending_balance" dataType="Real" index="8" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM savings_acct]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="22" fromNodeOrder="0" fromItemID="query_query_savings_acct" fromColID="queryCol_0" toItemID="tbl_savings_acct" toColID="tblCol_b7216f2b6237444099aa5cb0ddf4acf2" />
+    <Link partId="23" fromNodeOrder="0" fromItemID="query_query_savings_acct" fromColID="queryCol_1" toItemID="tbl_savings_acct" toColID="tblCol_5a4782f4cd5b421fb5e0f5cc8bbd829a" />
+    <Link partId="24" fromNodeOrder="0" fromItemID="query_query_savings_acct" fromColID="queryCol_2" toItemID="tbl_savings_acct" toColID="tblCol_141b39ce0e914700b4e14c5f2aceff8b" />
+    <Link partId="25" fromNodeOrder="0" fromItemID="query_query_savings_acct" fromColID="queryCol_3" toItemID="tbl_savings_acct" toColID="tblCol_271987eb75754f37b0f1e25707840cac" />
+    <Link partId="26" fromNodeOrder="0" fromItemID="query_query_savings_acct" fromColID="queryCol_4" toItemID="tbl_savings_acct" toColID="tblCol_2f7d0d343cfc472385d0debde4a87e5f" />
+    <Link partId="27" fromNodeOrder="0" fromItemID="query_query_savings_acct" fromColID="queryCol_5" toItemID="tbl_savings_acct" toColID="tblCol_0b656fd725304f1f8c23e3c69027859f" />
+    <Link partId="28" fromNodeOrder="0" fromItemID="query_query_savings_acct" fromColID="queryCol_6" toItemID="tbl_savings_acct" toColID="tblCol_2da55f6398bc4a7eb0f56ff27df41d00" />
+    <Link partId="29" fromNodeOrder="0" fromItemID="query_query_savings_acct" fromColID="queryCol_7" toItemID="tbl_savings_acct" toColID="tblCol_94fc82a2886f4f08a56d9475f7a9e01f" />
+    <Link partId="30" fromNodeOrder="0" fromItemID="query_query_savings_acct" fromColID="queryCol_8" toItemID="tbl_savings_acct" toColID="tblCol_d4ab97456ec54a60a611250530a5c5e3" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

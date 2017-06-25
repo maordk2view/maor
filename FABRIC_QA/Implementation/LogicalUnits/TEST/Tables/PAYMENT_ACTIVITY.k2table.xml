@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>PAYMENT_ACTIVITY</Name>
+  <ID>tbl_PAYMENT_ACTIVITY</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="BAN" id="tblCol_0520cfb04c75413aa0ec37455265264f" index="0" datatype="Integer" mandatory="true" />
+    <Column name="ENT_SEQ_NO" id="tblCol_8b13a675005b4ea4acd4073515fed9ae" index="1" datatype="Integer" mandatory="true" />
+    <Column name="ACTV_SEQ_NO" id="tblCol_77d143acd0d0481c9f680dc2fe762075" index="2" datatype="Integer" mandatory="true" />
+    <Column name="SYS_CREATION_DATE" id="tblCol_5aecd55d7d6242e9b0adb2b73cdc39ae" index="3" datatype="Text" mandatory="true" />
+    <Column name="SYS_UPDATE_DATE" id="tblCol_d7fff6eb17714ecdb0fee61f87d776d2" index="4" datatype="Text" />
+    <Column name="OPERATOR_ID" id="tblCol_bf851031c6a54216ba705205a3babc3b" index="5" datatype="Integer" />
+    <Column name="APPLICATION_ID" id="tblCol_36b510c62f5b4ef796e05c1edcd26f4e" index="6" datatype="Text" />
+    <Column name="DL_SERVICE_CODE" id="tblCol_043c490784fc43eabb89807d6cde62f7" index="7" datatype="Text" mandatory="true" />
+    <Column name="DL_UPDATE_STAMP" id="tblCol_11e0e784f545487d8ff4c5aa8cb9ecae" index="8" datatype="Integer" />
+    <Column name="ACTV_CODE" id="tblCol_8e9a4ffbed664c36b06b27956de01113" index="9" datatype="Text" />
+    <Column name="ACTV_REASON_CODE" id="tblCol_84c2097064434dcba6ec2c4e373a86a8" index="10" datatype="Text" />
+    <Column name="ACTV_DATE" id="tblCol_050c009d19a644119bffab8441bbd1bb" index="11" datatype="Text" />
+    <Column name="ACTV_AMT" id="tblCol_2cbc776db7de42f59badeaf754b169d3" index="12" datatype="Real" />
+    <Column name="ACTV_BILL_SEQ_NO" id="tblCol_6b2cae9ae64c4e439eb5603079b593cf" index="13" datatype="Integer" />
+    <Column name="DCK_CHG_GROUP_ID" id="tblCol_928e580af9d346478d8cf46ec3a0d7bb" index="14" datatype="Integer" />
+    <Column name="FNT_BAN" id="tblCol_4380d715869b4aeca4feb2d5bd14123b" index="15" datatype="Integer" />
+    <Column name="EXCEPTION_RSN_CODE" id="tblCol_97059c2a46de45cca4a64807f2658261" index="16" datatype="Text" />
+    <Column name="CONV_RUN_NO" id="tblCol_0e3ebc6b892645bd898d7f36023ee83f" index="17" datatype="Integer" />
+    <Column name="BL_IGNORE_IND" id="tblCol_4b72a16e61c14c6591b7202c972ae5bd" index="18" datatype="Text" />
+    <Column name="MEMO_ID" id="tblCol_5935cf2e97cb4c2cb6a0785c967696d9" index="19" datatype="Integer" />
+    <Column name="INTERNAL_ACTV_AMT" id="tblCol_3ccb50a7e13f43cb80a728160e962011" index="20" datatype="Real" />
+    <Column name="PRE_ACTV_AMT" id="tblCol_72dc993e62f44ef0a00e6f7ddc0e964d" index="21" datatype="Real" />
+    <Column name="BACKOUT_FILE_SEQ_NO" id="tblCol_aae0c94683114cf8a29894bbbdaa0438" index="22" datatype="Integer" />
+    <Column name="BACKOUT_BATCH_NO" id="tblCol_b4745f7712974d8484aca6dd0b82a92e" index="23" datatype="Integer" />
+    <Column name="BACKOUT_LINE_NO" id="tblCol_eec586dc7963479eb9dd15fc1b51ee01" index="24" datatype="Integer" />
+    <Column name="CR_CARD_AUTH_TYPE" id="tblCol_8121cee904d34a65b40e3214440bd001" index="25" datatype="Text" />
+    <Column name="CR_CARD_AUTH_CODE" id="tblCol_7ef05cc6fcea453caee00263d3b96c01" index="26" datatype="Text" />
+    <Column name="CR_CARD_REF_NO" id="tblCol_6f9a741a2d6f4cd9a0ca51919671eec5" index="27" datatype="Integer" />
+    <Column name="FNT_MARKET" id="tblCol_c3242285c4474251a923c9a9d6f97e63" index="28" datatype="Text" />
+    <Column name="SOURCE_BATCH_ID" id="tblCol_327e5066a5884bbb8ce01af751378d5c" index="29" datatype="Text" />
+    <Column name="SOURCE_TRANS_ID" id="tblCol_24eda7f6fb7e4756bd453dbeb8a01dcb" index="30" datatype="Text" />
+    <Column name="SOURCE_APPLID" id="tblCol_123eb33c6d734f7c9943064574934992" index="31" datatype="Text" />
+    <Column name="BMG_TYPE" id="tblCol_0a1618915ddd44d7975473f7f2885bb0" index="32" datatype="Text" />
+    <Column name="BANK_ROUTING_NO" id="tblCol_c8e2cf65c2fb48be9b88403a0c78f1d3" index="33" datatype="Text" />
+    <Column name="BANK_ACCT_NUM" id="tblCol_f8b4e734dc8049bfa8f99c35ab275fcb" index="34" datatype="Text" />
+    <Column name="CUSTOMER_NAME" id="tblCol_574bee1f0ab4416982d3c51a46b191b1" index="35" datatype="Text" />
+    <Column name="CAPM_SOURCE" id="tblCol_edf3896a807f4106be2f7bd33b751dd0" index="36" datatype="Text" />
+    <Column name="CAPM_PYM_MEDIA" id="tblCol_2f63fa49e7844456ae4a2eea0ed77861" index="37" datatype="Text" />
+    <Column name="SEGMENT_CD" id="tblCol_cf528992e4db4fb2add773eaaae266ce" index="38" datatype="Text" />
+    <Column name="LIABILITY_TYPE" id="tblCol_78e656f4511e4e139c5523e23e1f5cbe" index="39" datatype="Text" />
+    <Column name="ENTERPRISE_TYPE" id="tblCol_3de408b7702f4993bdf8f3dbf57f4bb7" index="40" datatype="Text" />
+    <Column name="CAPM_REF_NO" id="tblCol_b3b3cd7fd95c4ea68aa561e1c2610f64" index="41" datatype="Text" />
+    <Column name="AR_BRKDWN_IND" id="tblCol_24f145971ed54a009113adc9a938e617" index="42" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

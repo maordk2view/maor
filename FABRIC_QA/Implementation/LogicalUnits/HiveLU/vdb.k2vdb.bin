@@ -1,0 +1,5 @@
+﻿<Graph version="1.7.0.3" name="vdb.k2vdb.bin" lastPartID="20">
+  <Node id="0" partID="0" name="default_u_data" isRootView="true" pos="11 13" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"default_u_data","TablePopulationPropertiesList":[{"ID":"query_default_u_data","Name":"query_default_u_data","Order":1}]}</TableProperties>
+  </Node>
+</Graph>

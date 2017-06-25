@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_trans</ID>
+  <PopulationObjectName>query_trans</PopulationObjectName>
+  <TableName>trans</TableName>
+  <RootItemID>query_query_trans</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="cust_id" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="acct_type" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="tran_period" id="queryCol_2" dataType="Integer" index="2" />
+    <Arg name="tran_channel" id="queryCol_3" dataType="Text" index="3" />
+    <Arg name="tran_code" id="queryCol_4" dataType="Text" index="4" />
+    <Arg name="tran_type" id="queryCol_5" dataType="Text" index="5" />
+    <Arg name="tran_count" id="queryCol_6" dataType="Integer" index="6" />
+    <Arg name="tran_total" id="queryCol_7" dataType="Real" index="7" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_trans" name="query_trans" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="dbTeradata">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="cust_id" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="acct_type" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="tran_period" dataType="Integer" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="tran_channel" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="tran_code" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="tran_type" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_6" name="tran_count" dataType="Integer" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_7" name="tran_total" dataType="Real" index="7" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM trans]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="20" fromNodeOrder="0" fromItemID="query_query_trans" fromColID="queryCol_0" toItemID="tbl_trans" toColID="tblCol_a37aeb3c15314c8fb9f71dc7f18247f4" />
+    <Link partId="21" fromNodeOrder="0" fromItemID="query_query_trans" fromColID="queryCol_1" toItemID="tbl_trans" toColID="tblCol_dce6eee826d94ac1b80e833437bd0164" />
+    <Link partId="22" fromNodeOrder="0" fromItemID="query_query_trans" fromColID="queryCol_2" toItemID="tbl_trans" toColID="tblCol_bbcc6d357ab445c8984fa4bb83d93907" />
+    <Link partId="23" fromNodeOrder="0" fromItemID="query_query_trans" fromColID="queryCol_3" toItemID="tbl_trans" toColID="tblCol_6c42aeab71b5445c9aa045347e25cd81" />
+    <Link partId="24" fromNodeOrder="0" fromItemID="query_query_trans" fromColID="queryCol_4" toItemID="tbl_trans" toColID="tblCol_a6a0c854b95541f38d16eabbdd111120" />
+    <Link partId="25" fromNodeOrder="0" fromItemID="query_query_trans" fromColID="queryCol_5" toItemID="tbl_trans" toColID="tblCol_dfd1d246bb824b56b5187b293a8b4931" />
+    <Link partId="26" fromNodeOrder="0" fromItemID="query_query_trans" fromColID="queryCol_6" toItemID="tbl_trans" toColID="tblCol_b45a251141e34f5da1e3dbe0e202c545" />
+    <Link partId="27" fromNodeOrder="0" fromItemID="query_query_trans" fromColID="queryCol_7" toItemID="tbl_trans" toColID="tblCol_bbef7a21c8164d47b50610e2a3e0b571" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

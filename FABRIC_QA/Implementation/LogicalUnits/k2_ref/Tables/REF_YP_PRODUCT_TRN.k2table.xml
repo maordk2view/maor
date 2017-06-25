@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>REF_YP_PRODUCT_TRN</Name>
+  <ID>tbl_REF_YP_PRODUCT_TRN</ID>
+  <LazyDataUpdate performEvery="00:00:30" />
+  <FullTextSearch>true</FullTextSearch>
+  <Columns>
+    <Column name="OLD_PRODUCT_CODE" id="tblCol_7b7b376bf7914cbe89b93d5edf83f03f" index="0" datatype="Text" mandatory="true" />
+    <Column name="NEW_PRODUCT_CODE" id="tblCol_32c5d99e1a02476bbdd0aafc2691723f" index="1" datatype="Text" />
+    <Column name="SYSTEM" id="tblCol_3e8ee90212644d538fbdef754c81e2a6" index="2" datatype="Text" />
+    <Column name="CONV_NO" id="tblCol_6fca364e0a074cb8b3bffa548bec39c2" index="3" datatype="Integer" />
+    <Column name="NEW_PRODUCT" id="tblCol_2f903f9a018140f193bb199205081fc2" index="4" datatype="Text" />
+    <Column name="TRN_PRODUCT" id="tblCol_917eba4a00244caf850fb99c9fb29cb8" index="5" datatype="Text" />
+    <Column name="CON_FUN" id="tblCol_db7808a4bf2146998ba23e164a61c3c8" index="6" datatype="Text" />
+    <Column name="CON_SHARED" id="tblCol_cf2705fcdccf4f3eb23a5890a29db644" index="7" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

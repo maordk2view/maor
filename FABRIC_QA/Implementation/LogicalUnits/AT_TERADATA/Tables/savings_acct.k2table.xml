@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>savings_acct</Name>
+  <ID>tbl_savings_acct</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="cust_id" id="tblCol_b7216f2b6237444099aa5cb0ddf4acf2" index="0" datatype="Integer" mandatory="true" />
+    <Column name="acct_nbr" id="tblCol_5a4782f4cd5b421fb5e0f5cc8bbd829a" index="1" datatype="Text" />
+    <Column name="minimum_balance" id="tblCol_141b39ce0e914700b4e14c5f2aceff8b" index="2" datatype="Integer" />
+    <Column name="acct_type" id="tblCol_271987eb75754f37b0f1e25707840cac" index="3" datatype="Text" />
+    <Column name="account_active" id="tblCol_2f7d0d343cfc472385d0debde4a87e5f" index="4" datatype="Text" />
+    <Column name="acct_start_date" id="tblCol_0b656fd725304f1f8c23e3c69027859f" index="5" datatype="Text" />
+    <Column name="acct_end_date" id="tblCol_2da55f6398bc4a7eb0f56ff27df41d00" index="6" datatype="Text" />
+    <Column name="starting_balance" id="tblCol_94fc82a2886f4f08a56d9475f7a9e01f" index="7" datatype="Real" />
+    <Column name="ending_balance" id="tblCol_d4ab97456ec54a60a611250530a5c5e3" index="8" datatype="Real" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>CHARGE_TAXES</Name>
+  <ID>tbl_CHARGE_TAXES</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="PARTITION_KEY" id="tblCol_fa8873f4b09e496e84520ce9c6ce89ee" index="0" datatype="Integer" mandatory="true" />
+    <Column name="BAN" id="tblCol_3ceab50060a64018a33ad51af5b9791f" index="1" datatype="Integer" mandatory="true" />
+    <Column name="CHG_SEQ_NO" id="tblCol_9a8535edea8648f9833d1423b6aab102" index="2" datatype="Integer" mandatory="true" />
+    <Column name="ACTV_SEQ_NO" id="tblCol_2d206fae1b2545c1b1bd9ca424163432" index="3" datatype="Integer" mandatory="true" />
+    <Column name="TAX_GROUP_TYPE" id="tblCol_88291322f3074e959cc630bfa259ad80" index="4" datatype="Text" mandatory="true" />
+    <Column name="TAX_AUTH" id="tblCol_c875b246c0f345119bf724c39a865c17" index="5" datatype="Integer" mandatory="true" />
+    <Column name="TAX_TYPE" id="tblCol_f0eb714353ec4e048308b3c8ca81a968" index="6" datatype="Integer" mandatory="true" />
+    <Column name="SYS_CREATION_DATE" id="tblCol_8f49f34006de417aa1c3d9c20d964757" index="7" datatype="Text" mandatory="true" />
+    <Column name="SYS_UPDATE_DATE" id="tblCol_45c5b29c4e3f4f26995dbd9b1ce1c22c" index="8" datatype="Text" />
+    <Column name="OPERATOR_ID" id="tblCol_1de3cb440f1c4c78ba49c2704e768dac" index="9" datatype="Integer" />
+    <Column name="APPLICATION_ID" id="tblCol_70905fa0738445b7a8347a7a174e0f60" index="10" datatype="Text" />
+    <Column name="DL_SERVICE_CODE" id="tblCol_61b6938c353d403aa0d0fe44b804b464" index="11" datatype="Text" mandatory="true" />
+    <Column name="DL_UPDATE_STAMP" id="tblCol_5c1402b165844838b6c5742a5372d8ab" index="12" datatype="Integer" />
+    <Column name="TAX_RATE" id="tblCol_8221993251ab4744936bbc687217d690" index="13" datatype="Real" />
+    <Column name="TAX_AMT" id="tblCol_9bfa42ff20e4419bac41125c746f1ecb" index="14" datatype="Real" />
+    <Column name="LINKED_TAX_AMT" id="tblCol_c31666ec4aea43baa726c90ee676a0a6" index="15" datatype="Real" />
+    <Column name="AMT_FOR_TAX" id="tblCol_89b5f79961914877ab2e4f82ce27fd2c" index="16" datatype="Real" />
+    <Column name="TAX_EXMP_SRC" id="tblCol_6821f470c66b444e8cc7a80144747ea9" index="17" datatype="Text" />
+    <Column name="CLIN" id="tblCol_d757686813134d4f909ca5d7536dbe7b" index="18" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

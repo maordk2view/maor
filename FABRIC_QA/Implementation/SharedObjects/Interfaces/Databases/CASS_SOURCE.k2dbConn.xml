@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBConn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="DBConnCassandra" name="CASS_SOURCE" type="Cassandra" version="1.9.2.0">
+  <Active>true</Active>
+  <DataSource>10.21.1.173</DataSource>
+  <PortNum>9042</PortNum>
+  <DataBase />
+  <UserId>cassandra</UserId>
+  <Password>chdaBAdVvTPh4KHMSvNqljPiHIDcW6gBce59uoLOla0=:290zFKhTHIjSPmDQYBfeldwgYqWDpuRbB23JXi3mLk0=</Password>
+  <ConnectionStringClient>Contact Points='10.21.1.173';Port=9042;Default Keyspace='';Username='cassandra';Password='[PASSWORD]';</ConnectionStringClient>
+  <IsCustomConnectionStringServerSide>true</IsCustomConnectionStringServerSide>
+  <ConnectionStringServerSide>jdbc:cassandra://10.21.1.173:9042?consistency=QUORUM</ConnectionStringServerSide>
+  <CommandList />
+</DBConn>

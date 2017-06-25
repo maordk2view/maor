@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>pop_RT1</ID>
+  <PopulationObjectName>pop_RT1</PopulationObjectName>
+  <TableName>p1_RT1</TableName>
+  <RootItemID>rt_RT1</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="col1" id="rtCol_a346b364e332418db1d74576e67b90c5" dataType="Text" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="ParserRecordTypeDataSave" id="rt_RT1" name="RT1" nodeOrder="0" module="ParserRecordType" mapObjectModule="ParserRecordType" parentParser="p1" deleteRecordsAfterSync="false">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="ParserRecordTypeDataSaveColumn" id="rtCol_a346b364e332418db1d74576e67b90c5" name="col1" dataType="Text" />
+        <Output xsi:type="ParserRecordTypeDataSaveColumn" id="rtCol_1c17848ec197443b99de97de0a607c14" name="col2" dataType="Text" />
+        <Output xsi:type="ParserRecordTypeDataSaveColumn" id="rtCol_fb152aa962d74067a83d45e08350e44a" name="col3" dataType="Text" />
+        <Output xsi:type="ParserRecordTypeDataSaveColumn" id="rtCol_6ffd4eba685f421bb50ed4d5d90c269b" name="col4" dataType="Text" />
+      </OutputsList>
+      <RecordTypeKeyColumn>rtCol_a346b364e332418db1d74576e67b90c5</RecordTypeKeyColumn>
+      <PkColumnsList />
+      <ClusteringKeyOrder>ASC</ClusteringKeyOrder>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="12" fromNodeOrder="0" fromItemID="rt_RT1" fromColID="rtCol_a346b364e332418db1d74576e67b90c5" toItemID="tbl_p1_RT1" toColID="tblCol_0f7930cc9c4d43279ff275540fe1ff23" />
+    <Link partId="13" fromNodeOrder="0" fromItemID="rt_RT1" fromColID="rtCol_1c17848ec197443b99de97de0a607c14" toItemID="tbl_p1_RT1" toColID="tblCol_355293b41b884423b06f58f3e040f375" />
+    <Link partId="14" fromNodeOrder="0" fromItemID="rt_RT1" fromColID="rtCol_fb152aa962d74067a83d45e08350e44a" toItemID="tbl_p1_RT1" toColID="tblCol_9b63152efd7a48158d8979e7620638c9" />
+    <Link partId="15" fromNodeOrder="0" fromItemID="rt_RT1" fromColID="rtCol_6ffd4eba685f421bb50ed4d5d90c269b" toItemID="tbl_p1_RT1" toColID="tblCol_1b0fbc8537de469abd4ad32781657e33" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

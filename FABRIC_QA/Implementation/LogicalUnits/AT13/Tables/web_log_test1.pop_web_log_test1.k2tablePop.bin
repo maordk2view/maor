@@ -1,0 +1,6 @@
+﻿<Graph name="web_log_test1.pop_web_log_test1.k2tablePop.bin" lastPartID="213">
+  <TableNode partID="0" name="web_log_test1" pos="478.978516 22.8906288" width="309.6698" />
+  <ParserRecordTypeTargetNode partID="5" name="web_log_test1" pos="9.999985 12.9270859" size="309.3241 86.19399" parserName="test1" isTargetNode="false" isRoot="true" />
+  <Link partID="8" from="0" to="1" pointsArr="319.3241 43.94618 329.3241 43.94618 468.978516 53.9270859 478.978516 53.9270859" fromNodePartID="5" fromNodeColumnName="person_id" toNodePartID="0" toNodeColumnName="person_id" />
+  <Link partID="9" from="2" to="3" pointsArr="319.3241 56.0190964 329.3241 56.0190964 468.978516 66 478.978516 66" fromNodePartID="5" fromNodeColumnName="path" toNodePartID="0" toNodeColumnName="path" />
+</Graph>

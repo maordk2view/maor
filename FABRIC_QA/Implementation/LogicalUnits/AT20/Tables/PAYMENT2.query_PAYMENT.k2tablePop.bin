@@ -1,0 +1,15 @@
+﻿<Graph name="PAYMENT2.query_PAYMENT.k2tablePop.bin" lastPartID="22">
+  <TableNode partID="0" name="PAYMENT2" pos="641 112" width="309.3241" />
+  <DBQueryNode partID="9" name="HIS_DB" pos="174 97" size="253 120.364578" isRoot="true">
+    <DBQuery>{"Name":"query_PAYMENT","ID":"query_query_PAYMENT","ConnName":"HIS_DB","SQL":"Select *\r\nFrom PAYMENT","ColumnsList":[{"ID":"queryCol_0","Name":"INVOICE_ID","DataType":"Text","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"PAYMENT_ID","DataType":"Text","Index":1,"IsInputArgument":true},{"ID":"queryCol_2","Name":"ISSUED_DATE","DataType":"Text","Index":2,"IsInputArgument":true},{"ID":"queryCol_3","Name":"STATUS","DataType":"Text","Index":3,"IsInputArgument":true},{"ID":"queryCol_4","Name":"AMOUNT","DataType":"Text","Index":4,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <FunctionMapNode id="0" R0="1" partID="20" topLabel="k2_currentDateTime (20)" pos="398.916931 330" size="153.932251 45.0911255" isRoot="false">
+    <KFunction>{"Name":"k2_currentDateTime","ID":"f_20","Category":"Date","FunctionLevel":1,"FunctionType":0,"FunctionType2":0,"RegisterAsLuDbFunction":false,"SaveToDLUR":false,"ApiFunction":false,"DecisionFunction":false,"RequiresLuReference":false,"Desc":"","Auther":{"Name":"","ID":""},"Language":1,"FunctionBody":"java.text.DateFormat dateFormat = new java.text.SimpleDateFormat(\"yyyy/MM/dd HH:mm:ss\");\njava.util.Date date = new java.util.Date();\nreturn dateFormat.format(date);","IsSyntaxValid":true,"IsRootFunction":false,"inputParams":[],"outputParams":[{"Name":"current_datetime","ID":"fo_20.0","Index":0,"DataType":"String","Comment":""}]}</KFunction>
+  </FunctionMapNode>
+  <Link partID="15" from="2" to="3" pointsArr="427 133.036469 437 133.036469 631 143.036453 641 143.036453" fromNodePartID="9" fromNodeColumnName="INVOICE_ID" toNodePartID="0" toNodeColumnName="INVOICE_ID" />
+  <Link partID="16" from="4" to="5" pointsArr="427 145.109375 437 145.109375 631 155.109375 641 155.109375" fromNodePartID="9" fromNodeColumnName="PAYMENT_ID" toNodePartID="0" toNodeColumnName="PAYMENT_ID" />
+  <Link partID="17" from="6" to="7" pointsArr="427 157.182281 437 157.182281 631 167.182281 641 167.182281" fromNodePartID="9" fromNodeColumnName="ISSUED_DATE" toNodePartID="0" toNodeColumnName="ISSUED_DATE" />
+  <Link partID="18" from="8" to="9" pointsArr="427 169.2552 437 169.2552 631 179.2552 641 179.2552" fromNodePartID="9" fromNodeColumnName="STATUS" toNodePartID="0" toNodeColumnName="STATUS" />
+  <Link partID="19" from="10" to="11" pointsArr="427 181.328125 437 181.328125 631 191.328125 641 191.328125" fromNodePartID="9" fromNodeColumnName="AMOUNT" toNodePartID="0" toNodeColumnName="AMOUNT" />
+  <Link partID="22" from="1" to="12" pointsArr="552.7661 355.091125 562.7661 355.091125 631 203.401031 641 203.401031" fromNodePartID="20" fromNodeColumnName="current_datetime" toNodePartID="0" toNodeColumnName="currentD" />
+</Graph>

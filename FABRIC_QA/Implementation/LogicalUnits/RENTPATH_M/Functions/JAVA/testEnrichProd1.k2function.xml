@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>testEnrichProd1</Name>
+  <ID>JAVA.testEnrichProd1</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String entity_id=getInstanceID();
+
+Integer entity= Integer.valueOf(entity_id);
+
+String SQL1= "select b.CUSTOMER_ID, a.PRODUCT_CODE, a.PRODUCT_STATUS, a.ACTIVITY_TYPE,a.NIR_PRODUCT_IND  from o_yp_product a, m_yp_customer b where b.customer_id = ? and a.product_code = ? and a.customer_id=b.customer_id";
+
+Object [] resultarray1={entity, "IZTR"};
+
+ResultSetWrapper rs=DBQuery("ludb" ,SQL1,resultarray1);
+
+Integer i=1;
+
+for (Object[] row : rs) {
+	
+Object [] resultarray2={(Integer)row[0],row[1].toString()+"enrich","0000", row[2].toString(),'A', row[3].toString(),k2_currentDateTime(), row[4].toString(), 1.0, i++};
+		
+String SQL2= "insert into L_YP_PRODUCT_ENRICH (CUSTOMER_ID,PRODUCT_CODE,PRODUCT_ISSUE_NUM,PRODUCT_STATUS,"+
+				"RETIREMENT_STATUS,ACTIVITY_TYPE,ACTIVITY_DATE,NIR_PRODUCT_IND,NISD_AMOUNT, SEQ) values (?,?,?,?,?,?,?,?,?,?)";
+
+DBExecute("ludb", SQL2 ,resultarray2);
+		
+}
+
+</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams />
+  <OutputParams />
+</KFunction>

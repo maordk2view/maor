@@ -1,0 +1,7 @@
+﻿<Graph name="WEB_LOG_ROOT.query_WEB_LOG_ROOT.k2tablePop.bin" lastPartID="10">
+  <TableNode partID="0" name="WEB_LOG_ROOT" pos="308 17.9270859" width="309.324219" />
+  <DBQueryNode partID="4" name="PBG" pos="10 13.9635429" size="253 72.0729141" isRoot="true">
+    <DBQuery>{"Name":"query_WEB_LOG_ROOT","ID":"query_query_WEB_LOG_ROOT","ConnName":"PBG","SQL":"select * from WEB_LOG_ROOT","ColumnsList":[{"ID":"queryCol_0","Name":"ID","DataType":"Text","Index":0,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="6" from="0" to="1" pointsArr="263 50 273 50 298 48.9635429 308 48.9635429" fromNodePartID="4" fromNodeColumnName="ID" toNodePartID="0" toNodeColumnName="ID" />
+</Graph>

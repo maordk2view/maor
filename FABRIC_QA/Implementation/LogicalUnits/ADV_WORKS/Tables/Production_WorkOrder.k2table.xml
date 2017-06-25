@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Production_WorkOrder</Name>
+  <ID>tbl_Production_WorkOrder</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="WorkOrderID" id="tblCol_4c18b541f789438eac322711d6119bb8" index="0" datatype="Integer" mandatory="true" />
+    <Column name="ProductID" id="tblCol_f4ff1a975cbe44d395c0f879e386ca4d" index="1" datatype="Integer" mandatory="true" />
+    <Column name="OrderQty" id="tblCol_90977e3b69a44295a721b2d072f706bf" index="2" datatype="Integer" mandatory="true" />
+    <Column name="StockedQty" id="tblCol_c61bea3263da44d38022dd2e87812bc5" index="3" datatype="Integer" mandatory="true" />
+    <Column name="ScrappedQty" id="tblCol_3742f6475ee743729cff5ed8c50e213e" index="4" datatype="Integer" mandatory="true" />
+    <Column name="StartDate" id="tblCol_5fa119ecb4b94a5f8d39d348c173e6fd" index="5" datatype="Text" mandatory="true" />
+    <Column name="EndDate" id="tblCol_8f541b375c4840f4acff81a70d93302d" index="6" datatype="Text" />
+    <Column name="DueDate" id="tblCol_e1503f83d0ae4273b3d006d41a590f78" index="7" datatype="Text" mandatory="true" />
+    <Column name="ScrapReasonID" id="tblCol_48e240e1811043e38f002b952e2938ba" index="8" datatype="Integer" />
+    <Column name="ModifiedDate" id="tblCol_e3988e88195446d09793e94c7c8f3f98" index="9" datatype="Text" mandatory="true" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_4c18b541f789438eac322711d6119bb8" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

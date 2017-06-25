@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>roles</Name>
+  <ID>tbl_roles</ID>
+  <EntityId>tblCol_8bf03df9f1f041bea1bcad268ff0d2d3</EntityId>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="description" id="tblCol_a60e1582253c425dafa02669c613e089" index="0" datatype="Text" />
+    <Column name="name" id="tblCol_8bf03df9f1f041bea1bcad268ff0d2d3" index="1" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_YP_PRODUCT</PopulationObjectName>
+  <TableName>YP_PRODUCT</TableName>
+  <ID>query_YP_PRODUCT</ID>
+  <RootItemID>query_101</RootItemID>
+  <Mode>Upsert</Mode>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="CUSTOMER_ID" id="query_101.0" dataType="Integer" index="0" />
+    <Arg name="PRODUCT_CODE" id="query_101.1" dataType="Text" index="1" />
+    <Arg name="PRODUCT_ISSUE_NUM" id="query_101.2" dataType="Integer" index="2" />
+    <Arg name="PRODUCT_STATUS" id="query_101.3" dataType="Integer" index="3" />
+    <Arg name="RETIREMENT_STATUS" id="query_101.4" dataType="Text" index="4" />
+    <Arg name="ACTIVITY_TYPE" id="query_101.5" dataType="Integer" index="5" />
+    <Arg name="ADDITIONAL_ACTIVITY" id="query_101.6" dataType="Integer" index="6" />
+    <Arg name="ACTIVITY_DATE" id="query_101.7" dataType="Text" index="7" />
+    <Arg name="ACTIVITY_UPDATE_DATE" id="query_101.8" dataType="Text" index="8" />
+    <Arg name="ADVANCE_SALE_IND" id="query_101.9" dataType="Text" index="9" />
+    <Arg name="PROSPECT_CODE" id="query_101.10" dataType="Integer" index="10" />
+    <Arg name="PROD_CURR_PROS_CODE" id="query_101.11" dataType="Integer" index="11" />
+    <Arg name="PROSPECT_AGE" id="query_101.12" dataType="Integer" index="12" />
+    <Arg name="DOMINANT_HEADING" id="query_101.13" dataType="Integer" index="13" />
+    <Arg name="DOMINANT_HEADING_AMT" id="query_101.14" dataType="Real" index="14" />
+    <Arg name="LAST_CONT_PRINT_DATE" id="query_101.15" dataType="Text" index="15" />
+    <Arg name="COMPLAINT_IND" id="query_101.16" dataType="Text" index="16" />
+    <Arg name="COMPLAINT_DATE" id="query_101.17" dataType="Text" index="17" />
+    <Arg name="DIVISION_ARRIVE_DATE" id="query_101.18" dataType="Text" index="18" />
+    <Arg name="COMMERCIAL_NAME" id="query_101.19" dataType="Text" index="19" />
+    <Arg name="SRCH_COMMERCIAL_NAME" id="query_101.20" dataType="Text" index="20" />
+    <Arg name="DISPLAY_AD_EXIST_IND" id="query_101.21" dataType="Text" index="21" />
+    <Arg name="LOCAL_FOREIGN_IND" id="query_101.22" dataType="Text" index="22" />
+    <Arg name="CANVASS_CODE" id="query_101.23" dataType="Text" index="23" />
+    <Arg name="CANVASS_ISSUE_NUM" id="query_101.24" dataType="Integer" index="24" />
+    <Arg name="FIRST_ASSIGN_ID" id="query_101.25" dataType="Integer" index="25" />
+    <Arg name="FIRST_ASSIGN_DATE" id="query_101.26" dataType="Text" index="26" />
+    <Arg name="CURRENT_ASSIGN_ID" id="query_101.27" dataType="Integer" index="27" />
+    <Arg name="CURRENT_ASSIGN_DATE" id="query_101.28" dataType="Text" index="28" />
+    <Arg name="CONTRACT_LOAD_PHASE" id="query_101.29" dataType="Integer" index="29" />
+    <Arg name="CONTINUITY_AGE" id="query_101.30" dataType="Integer" index="30" />
+    <Arg name="CHANNEL_AGE" id="query_101.31" dataType="Integer" index="31" />
+    <Arg name="ASSIST_ASSIGN_ID" id="query_101.32" dataType="Integer" index="32" />
+    <Arg name="ASSIST_PERCENTAGE" id="query_101.33" dataType="Real" index="33" />
+    <Arg name="LENDING_ASSIGN_ID" id="query_101.34" dataType="Integer" index="34" />
+    <Arg name="SELL_CANVASS_CODE" id="query_101.35" dataType="Text" index="35" />
+    <Arg name="SELL_CANV_ISS_NUM" id="query_101.36" dataType="Integer" index="36" />
+    <Arg name="SELL_ASSIGN_ID" id="query_101.37" dataType="Integer" index="37" />
+    <Arg name="CMSN_CANVASS_CODE" id="query_101.38" dataType="Text" index="38" />
+    <Arg name="CMSN_CANV_ISS_NUM" id="query_101.39" dataType="Integer" index="39" />
+    <Arg name="CMSN_ASSIGN_ID" id="query_101.40" dataType="Integer" index="40" />
+    <Arg name="QUERY_STATUS" id="query_101.41" dataType="Integer" index="41" />
+    <Arg name="COMPLAINT_ASGN_ID" id="query_101.42" dataType="Integer" index="42" />
+    <Arg name="NIR_PRODUCT_IND" id="query_101.43" dataType="Text" index="43" />
+    <Arg name="START_PUBLISH_DATE" id="query_101.44" dataType="Text" index="44" />
+    <Arg name="DURATION" id="query_101.45" dataType="Integer" index="45" />
+    <Arg name="ACTUAL_END_PUB_DATE" id="query_101.46" dataType="Text" index="46" />
+    <Arg name="RENEWAL_CONTRACT_IND" id="query_101.47" dataType="Text" index="47" />
+    <Arg name="PRODUCT_NAME" id="query_101.48" dataType="Text" index="48" />
+    <Arg name="NUM_OF_BOTS_ITEMS" id="query_101.49" dataType="Integer" index="49" />
+    <Arg name="NUM_OF_NISD_ITEMS" id="query_101.50" dataType="Integer" index="50" />
+    <Arg name="NUM_QUERIED_ITEMS" id="query_101.51" dataType="Integer" index="51" />
+    <Arg name="LAST_YEAR_NISD_AMT" id="query_101.52" dataType="Real" index="52" />
+    <Arg name="ORIG_ASGN_BOTS_AMT" id="query_101.53" dataType="Real" index="53" />
+    <Arg name="OVER_RATE_BOTS_AMT" id="query_101.54" dataType="Real" index="54" />
+    <Arg name="BOTS_AMOUNT" id="query_101.55" dataType="Real" index="55" />
+    <Arg name="NISD_AMOUNT" id="query_101.56" dataType="Real" index="56" />
+    <Arg name="RESULTS_NISD_AMT" id="query_101.57" dataType="Real" index="57" />
+    <Arg name="TAX_ID_LETTER" id="query_101.58" dataType="Text" index="58" />
+    <Arg name="TAX_ID_DATE" id="query_101.59" dataType="Text" index="59" />
+    <Arg name="TAX_ID_CODE" id="query_101.60" dataType="Text" index="60" />
+    <Arg name="E_MAIL_ADDRESS" id="query_101.61" dataType="Text" index="61" />
+    <Arg name="ASSIST_CANVASS_CODE" id="query_101.62" dataType="Text" index="62" />
+    <Arg name="ASSIST_CANV_ISS_NUM" id="query_101.63" dataType="Integer" index="63" />
+    <Arg name="CURP_ID" id="query_101.64" dataType="Text" index="64" />
+    <Arg name="HIGH_WGHT_COLOR_CODE" id="query_101.65" dataType="Text" index="65" />
+    <Arg name="PREV_HIGH_WGHT_COLOR" id="query_101.66" dataType="Text" index="66" />
+    <Arg name="CTCR_BATCH_PROG_ID" id="query_101.67" dataType="Text" index="67" />
+    <Arg name="CTCR_BATCH_PROG_DT" id="query_101.68" dataType="Text" index="68" />
+    <Arg name="CTCR_ONLINE_USER_ID" id="query_101.69" dataType="Integer" index="69" />
+    <Arg name="CTCR_ONLINE_PROG_ID" id="query_101.70" dataType="Text" index="70" />
+    <Arg name="CTCR_ONLINE_PROG_DT" id="query_101.71" dataType="Text" index="71" />
+    <Arg name="CTCR_SYS_CRE_DT" id="query_101.72" dataType="Text" index="72" />
+    <Arg name="CTCR_SYS_UPD_DT" id="query_101.73" dataType="Text" index="73" />
+    <Arg name="CTCR_DBI_PROG_ID" id="query_101.74" dataType="Text" index="74" />
+    <Arg name="CTCR_DBI_PROG_DT" id="query_101.75" dataType="Text" index="75" />
+    <Arg name="CTCR_CNV_DT" id="query_101.76" dataType="Text" index="76" />
+    <Arg name="CTCR_EVENT_ID" id="query_101.77" dataType="Real" index="77" />
+    <Arg name="SUBSC_UP_TO_DATE_AMT" id="query_101.78" dataType="Real" index="78" />
+    <Arg name="NIR_CANCEL_DATE" id="query_101.79" dataType="Text" index="79" />
+    <Arg name="PRD_FORCED_REP_ID" id="query_101.80" dataType="Integer" index="80" />
+    <Arg name="PRD_FORCED_CHANNEL_CODE" id="query_101.81" dataType="Text" index="81" />
+    <Arg name="PRD_FORCE_TYPE" id="query_101.82" dataType="Integer" index="82" />
+    <Arg name="SIG_NAME" id="query_101.83" dataType="Text" index="83" />
+    <Arg name="SIG_DATE_PREV" id="query_101.84" dataType="Text" index="84" />
+    <Arg name="PREP_STATUS" id="query_101.85" dataType="Text" index="85" />
+    <Arg name="DISCOUNT_AMT" id="query_101.86" dataType="Real" index="86" />
+    <Arg name="DISCOUNT_BOTS_AMT" id="query_101.87" dataType="Real" index="87" />
+    <Arg name="ORIG_RETIREMENT_STATUS" id="query_101.88" dataType="Text" index="88" />
+    <Arg name="UDAC_CMSN_POINTS" id="query_101.89" dataType="Real" index="89" />
+    <Arg name="PREV_UDAC_CMSN_POINTS" id="query_101.90" dataType="Real" index="90" />
+    <Arg name="NIR_PROD_RELATED" id="query_101.91" dataType="Text" index="91" />
+    <Arg name="MIX_PRODUCT_IND" id="query_101.92" dataType="Text" index="92" />
+    <Arg name="PP_SELECTED_DATE" id="query_101.93" dataType="Text" index="93" />
+    <Arg name="MEDIA_AGENT_IND" id="query_101.94" dataType="Text" index="94" />
+    <Arg name="MEDIA_AGENT_CODE" id="query_101.95" dataType="Text" index="95" />
+    <Arg name="PYME_IND" id="query_101.96" dataType="Text" index="96" />
+    <Arg name="CONVERSION_IND" id="query_101.97" dataType="Text" index="97" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_101" name="query_YP_PRODUCT" nodeOrder="0" module="DBQuery" connName="ORA_SOURCE">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.0" name="CUSTOMER_ID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.1" name="PRODUCT_CODE" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.2" name="PRODUCT_ISSUE_NUM" dataType="Integer" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.3" name="PRODUCT_STATUS" dataType="Integer" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.4" name="RETIREMENT_STATUS" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.5" name="ACTIVITY_TYPE" dataType="Integer" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.6" name="ADDITIONAL_ACTIVITY" dataType="Integer" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.7" name="ACTIVITY_DATE" dataType="Text" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.8" name="ACTIVITY_UPDATE_DATE" dataType="Text" index="8" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.9" name="ADVANCE_SALE_IND" dataType="Text" index="9" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.10" name="PROSPECT_CODE" dataType="Integer" index="10" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.11" name="PROD_CURR_PROS_CODE" dataType="Integer" index="11" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.12" name="PROSPECT_AGE" dataType="Integer" index="12" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.13" name="DOMINANT_HEADING" dataType="Integer" index="13" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.14" name="DOMINANT_HEADING_AMT" dataType="Real" index="14" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.15" name="LAST_CONT_PRINT_DATE" dataType="Text" index="15" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.16" name="COMPLAINT_IND" dataType="Text" index="16" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.17" name="COMPLAINT_DATE" dataType="Text" index="17" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.18" name="DIVISION_ARRIVE_DATE" dataType="Text" index="18" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.19" name="COMMERCIAL_NAME" dataType="Text" index="19" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.20" name="SRCH_COMMERCIAL_NAME" dataType="Text" index="20" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.21" name="DISPLAY_AD_EXIST_IND" dataType="Text" index="21" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.22" name="LOCAL_FOREIGN_IND" dataType="Text" index="22" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.23" name="CANVASS_CODE" dataType="Text" index="23" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.24" name="CANVASS_ISSUE_NUM" dataType="Integer" index="24" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.25" name="FIRST_ASSIGN_ID" dataType="Integer" index="25" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.26" name="FIRST_ASSIGN_DATE" dataType="Text" index="26" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.27" name="CURRENT_ASSIGN_ID" dataType="Integer" index="27" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.28" name="CURRENT_ASSIGN_DATE" dataType="Text" index="28" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.29" name="CONTRACT_LOAD_PHASE" dataType="Integer" index="29" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.30" name="CONTINUITY_AGE" dataType="Integer" index="30" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.31" name="CHANNEL_AGE" dataType="Integer" index="31" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.32" name="ASSIST_ASSIGN_ID" dataType="Integer" index="32" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.33" name="ASSIST_PERCENTAGE" dataType="Real" index="33" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.34" name="LENDING_ASSIGN_ID" dataType="Integer" index="34" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.35" name="SELL_CANVASS_CODE" dataType="Text" index="35" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.36" name="SELL_CANV_ISS_NUM" dataType="Integer" index="36" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.37" name="SELL_ASSIGN_ID" dataType="Integer" index="37" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.38" name="CMSN_CANVASS_CODE" dataType="Text" index="38" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.39" name="CMSN_CANV_ISS_NUM" dataType="Integer" index="39" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.40" name="CMSN_ASSIGN_ID" dataType="Integer" index="40" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.41" name="QUERY_STATUS" dataType="Integer" index="41" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.42" name="COMPLAINT_ASGN_ID" dataType="Integer" index="42" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.43" name="NIR_PRODUCT_IND" dataType="Text" index="43" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.44" name="START_PUBLISH_DATE" dataType="Text" index="44" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.45" name="DURATION" dataType="Integer" index="45" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.46" name="ACTUAL_END_PUB_DATE" dataType="Text" index="46" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.47" name="RENEWAL_CONTRACT_IND" dataType="Text" index="47" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.48" name="PRODUCT_NAME" dataType="Text" index="48" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.49" name="NUM_OF_BOTS_ITEMS" dataType="Integer" index="49" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.50" name="NUM_OF_NISD_ITEMS" dataType="Integer" index="50" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.51" name="NUM_QUERIED_ITEMS" dataType="Integer" index="51" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.52" name="LAST_YEAR_NISD_AMT" dataType="Real" index="52" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.53" name="ORIG_ASGN_BOTS_AMT" dataType="Real" index="53" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.54" name="OVER_RATE_BOTS_AMT" dataType="Real" index="54" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.55" name="BOTS_AMOUNT" dataType="Real" index="55" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.56" name="NISD_AMOUNT" dataType="Real" index="56" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.57" name="RESULTS_NISD_AMT" dataType="Real" index="57" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.58" name="TAX_ID_LETTER" dataType="Text" index="58" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.59" name="TAX_ID_DATE" dataType="Text" index="59" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.60" name="TAX_ID_CODE" dataType="Text" index="60" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.61" name="E_MAIL_ADDRESS" dataType="Text" index="61" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.62" name="ASSIST_CANVASS_CODE" dataType="Text" index="62" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.63" name="ASSIST_CANV_ISS_NUM" dataType="Integer" index="63" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.64" name="CURP_ID" dataType="Text" index="64" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.65" name="HIGH_WGHT_COLOR_CODE" dataType="Text" index="65" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.66" name="PREV_HIGH_WGHT_COLOR" dataType="Text" index="66" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.67" name="CTCR_BATCH_PROG_ID" dataType="Text" index="67" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.68" name="CTCR_BATCH_PROG_DT" dataType="Text" index="68" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.69" name="CTCR_ONLINE_USER_ID" dataType="Integer" index="69" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.70" name="CTCR_ONLINE_PROG_ID" dataType="Text" index="70" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.71" name="CTCR_ONLINE_PROG_DT" dataType="Text" index="71" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.72" name="CTCR_SYS_CRE_DT" dataType="Text" index="72" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.73" name="CTCR_SYS_UPD_DT" dataType="Text" index="73" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.74" name="CTCR_DBI_PROG_ID" dataType="Text" index="74" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.75" name="CTCR_DBI_PROG_DT" dataType="Text" index="75" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.76" name="CTCR_CNV_DT" dataType="Text" index="76" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.77" name="CTCR_EVENT_ID" dataType="Real" index="77" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.78" name="SUBSC_UP_TO_DATE_AMT" dataType="Real" index="78" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.79" name="NIR_CANCEL_DATE" dataType="Text" index="79" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.80" name="PRD_FORCED_REP_ID" dataType="Integer" index="80" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.81" name="PRD_FORCED_CHANNEL_CODE" dataType="Text" index="81" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.82" name="PRD_FORCE_TYPE" dataType="Integer" index="82" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.83" name="SIG_NAME" dataType="Text" index="83" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.84" name="SIG_DATE_PREV" dataType="Text" index="84" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.85" name="PREP_STATUS" dataType="Text" index="85" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.86" name="DISCOUNT_AMT" dataType="Real" index="86" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.87" name="DISCOUNT_BOTS_AMT" dataType="Real" index="87" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.88" name="ORIG_RETIREMENT_STATUS" dataType="Text" index="88" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.89" name="UDAC_CMSN_POINTS" dataType="Real" index="89" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.90" name="PREV_UDAC_CMSN_POINTS" dataType="Real" index="90" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.91" name="NIR_PROD_RELATED" dataType="Text" index="91" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.92" name="MIX_PRODUCT_IND" dataType="Text" index="92" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.93" name="PP_SELECTED_DATE" dataType="Text" index="93" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.94" name="MEDIA_AGENT_IND" dataType="Text" index="94" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.95" name="MEDIA_AGENT_CODE" dataType="Text" index="95" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.96" name="PYME_IND" dataType="Text" index="96" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_101.97" name="CONVERSION_IND" dataType="Text" index="97" />
+      </OutputsList>
+      <SQL><![CDATA[Select *
+From YP_PRODUCT
+Order By YP_PRODUCT.PRODUCT_ISSUE_NUM]]></SQL>
+    </Item>
+    <Item id="f_2894" name="trnProduct" nodeOrder="1" module="Translation" fileName="trnProduct.k2trans.xml">
+      <InputsList>
+        <Input id="fi_2894.0" name="PRD_CD_IN" />
+        <Input id="fi_2894.1" name="VSERION" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_2894.0" name="PRD_CD_OUT" />
+      </OutputsList>
+    </Item>
+    <Item id="f_2905" name="trnProduct" nodeOrder="1" module="Translation" fileName="trnProduct.k2trans.xml">
+      <InputsList>
+        <Input id="fi_2905.0" name="PRD_CD_IN" defaultValue="A" />
+        <Input id="fi_2905.1" name="VSERION" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_2905.0" name="PRD_CD_OUT" />
+      </OutputsList>
+    </Item>
+    <Item id="f_2910" name="trnProduct" nodeOrder="1" module="Translation" fileName="trnProduct.k2trans.xml">
+      <InputsList>
+        <Input id="fi_2910.0" name="PRD_CD_IN" defaultValue="" />
+        <Input id="fi_2910.1" name="VSERION" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_2910.0" name="PRD_CD_OUT" />
+      </OutputsList>
+    </Item>
+    <Item id="f_2922" name="trnProduct" nodeOrder="1" module="Translation" fileName="trnProduct.k2trans.xml">
+      <InputsList>
+        <Input id="fi_2922.0" name="PRD_CD_IN" defaultValue="B" />
+        <Input id="fi_2922.1" name="VSERION" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_2922.0" name="PRD_CD_OUT" />
+      </OutputsList>
+    </Item>
+    <Item id="f_2917" name="trnProduct" nodeOrder="2" module="Translation" fileName="trnProduct.k2trans.xml">
+      <InputsList>
+        <Input id="fi_2917.0" name="PRD_CD_IN" defaultValue="" />
+        <Input id="fi_2917.1" name="VSERION" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_2917.0" name="PRD_CD_OUT" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="200" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.0" toItemID="tbl_0" toColID="tblCol_9d753ac1f9a343ec9c415444908f1062" />
+    <Link partId="1091" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.1" toItemID="tbl_0" toColID="tblCol_c8b13603208943969c64783e54257cb5" />
+    <Link partId="1290" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.2" toItemID="tbl_0" toColID="tblCol_18079993b06e40b3b17cf03105bcd689" />
+    <Link partId="203" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.3" toItemID="tbl_0" toColID="tblCol_959bd567839340cbb704e115032f580c" />
+    <Link partId="204" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.4" toItemID="tbl_0" toColID="tblCol_0a729d146d6e4bd3908f0a57a77bc1d0" />
+    <Link partId="205" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.5" toItemID="tbl_0" toColID="tblCol_70aca03c6ca04e63a3344df303b49323" />
+    <Link partId="206" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.6" toItemID="tbl_0" toColID="tblCol_e69bb6da1151444f92f528b1a4240173" />
+    <Link partId="207" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.7" toItemID="tbl_0" toColID="tblCol_227381e778b4434a865bf16175694604" />
+    <Link partId="208" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.8" toItemID="tbl_0" toColID="tblCol_1da70b281c194aa2894b22950081c66c" />
+    <Link partId="209" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.9" toItemID="tbl_0" toColID="tblCol_70e424e28af443619bb048652b59437c" />
+    <Link partId="210" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.10" toItemID="tbl_0" toColID="tblCol_18565161737a4128a8c35d509605bed1" />
+    <Link partId="211" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.11" toItemID="tbl_0" toColID="tblCol_1f8107751dfb4ed1bbf38249494660e8" />
+    <Link partId="212" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.12" toItemID="tbl_0" toColID="tblCol_516e528349134f3d8930aefabc008b3a" />
+    <Link partId="213" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.13" toItemID="tbl_0" toColID="tblCol_e9a7bf9f44454f5d804da0f29eb9e72e" />
+    <Link partId="214" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.14" toItemID="tbl_0" toColID="tblCol_1a82537ee0264f9e9d908c06de9e4d36" />
+    <Link partId="215" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.15" toItemID="tbl_0" toColID="tblCol_2bea8d594273474e8ea024c0a790b5e6" />
+    <Link partId="216" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.16" toItemID="tbl_0" toColID="tblCol_ae4e18d8e9b546e6be6f056bdf6521be" />
+    <Link partId="217" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.17" toItemID="tbl_0" toColID="tblCol_7313db0545d64aa8a7aea2683b47a2c0" />
+    <Link partId="218" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.18" toItemID="tbl_0" toColID="tblCol_397946b22cba4e4fa2418b48d8ede7a9" />
+    <Link partId="219" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.19" toItemID="tbl_0" toColID="tblCol_4cc20d8d2d2e4ea7abbfc76a4b483d14" />
+    <Link partId="220" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.20" toItemID="tbl_0" toColID="tblCol_79f71f9941734c51b94a74e35c339346" />
+    <Link partId="221" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.21" toItemID="tbl_0" toColID="tblCol_7656ad18d05a4557b66a08e7e0821cbe" />
+    <Link partId="222" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.22" toItemID="tbl_0" toColID="tblCol_da0ac3163085469ca2c56efa6e57534d" />
+    <Link partId="223" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.23" toItemID="tbl_0" toColID="tblCol_77cb9925cce84aa386a4082dbc7e5b9b" />
+    <Link partId="224" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.24" toItemID="tbl_0" toColID="tblCol_e4cba4ef369846eba3f8ddec7f3d68ac" />
+    <Link partId="225" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.25" toItemID="tbl_0" toColID="tblCol_73c34d81ba6e47d790463f981390816e" />
+    <Link partId="226" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.26" toItemID="tbl_0" toColID="tblCol_8e324b7a4ec94373b3a232418fdd9f87" />
+    <Link partId="227" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.27" toItemID="tbl_0" toColID="tblCol_56b06bb82d9f4999a104d8594fe69ede" />
+    <Link partId="228" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.28" toItemID="tbl_0" toColID="tblCol_b26d7e0cc9964c95ad0b43060777ccb3" />
+    <Link partId="229" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.29" toItemID="tbl_0" toColID="tblCol_ca49a8733c994543ac99cc2516b96651" />
+    <Link partId="230" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.30" toItemID="tbl_0" toColID="tblCol_a0e374e704fb431e976cd64a87096cd1" />
+    <Link partId="231" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.31" toItemID="tbl_0" toColID="tblCol_91000ac0f08f4754bb45bd8227e74fb5" />
+    <Link partId="232" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.32" toItemID="tbl_0" toColID="tblCol_77d226c3b26d400da24f7f3eb73a6e7b" />
+    <Link partId="233" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.33" toItemID="tbl_0" toColID="tblCol_24103ad1dd7f49d9b3485f545baa46bc" />
+    <Link partId="234" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.34" toItemID="tbl_0" toColID="tblCol_9d5be6d2db5b46769ab1cd47a3d395f3" />
+    <Link partId="235" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.35" toItemID="tbl_0" toColID="tblCol_2b2ccf36ad0b4bb99844c2d617fb612d" />
+    <Link partId="236" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.36" toItemID="tbl_0" toColID="tblCol_daf8805d5f6c4fb88412b8dd9d6ab09d" />
+    <Link partId="237" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.37" toItemID="tbl_0" toColID="tblCol_24dddffdfc484fe5925bcc9523341eeb" />
+    <Link partId="238" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.38" toItemID="tbl_0" toColID="tblCol_061d3e98e2c9443084600cd17d8abd19" />
+    <Link partId="239" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.39" toItemID="tbl_0" toColID="tblCol_13ba573b6542430fb78c4e9c9ed10a46" />
+    <Link partId="240" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.40" toItemID="tbl_0" toColID="tblCol_df1b675d9cda4864b62238ed72d92b00" />
+    <Link partId="241" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.41" toItemID="tbl_0" toColID="tblCol_3fb95a16c43e4c9788949d4c95101763" />
+    <Link partId="242" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.42" toItemID="tbl_0" toColID="tblCol_fa979d5efbcb4cd9bb20da2ac6179c36" />
+    <Link partId="243" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.43" toItemID="tbl_0" toColID="tblCol_c83d94b3d3ee4e0f8fcf5e4bd0ad325e" />
+    <Link partId="244" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.44" toItemID="tbl_0" toColID="tblCol_03aad46a943f471480e372c1f80a5002" />
+    <Link partId="245" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.45" toItemID="tbl_0" toColID="tblCol_c1a0845cb2a3404d8a397158b4b3eff9" />
+    <Link partId="246" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.46" toItemID="tbl_0" toColID="tblCol_948de32d4cb8493c9adfd23fa8c1104a" />
+    <Link partId="247" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.47" toItemID="tbl_0" toColID="tblCol_3fb977060aa24b5483ff392e2a93f076" />
+    <Link partId="248" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.48" toItemID="tbl_0" toColID="tblCol_c02ddaa0d7c04dbfa22783c97490ebc9" />
+    <Link partId="249" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.49" toItemID="tbl_0" toColID="tblCol_c030fab552c24bceadc0a65d4519041a" />
+    <Link partId="250" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.50" toItemID="tbl_0" toColID="tblCol_229b1a0bf1de4533a00cb4f3aa1970f8" />
+    <Link partId="251" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.51" toItemID="tbl_0" toColID="tblCol_89fe5ceff71a43d98c21aa471c510f01" />
+    <Link partId="252" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.52" toItemID="tbl_0" toColID="tblCol_b0ef7293106a4932ae8f218c929682d4" />
+    <Link partId="253" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.53" toItemID="tbl_0" toColID="tblCol_209132ff1ba5443abaa7b23d9fd19066" />
+    <Link partId="254" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.54" toItemID="tbl_0" toColID="tblCol_bbd42b9e780141d092189f47ba145e36" />
+    <Link partId="255" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.55" toItemID="tbl_0" toColID="tblCol_7cb9a58480224a51ad10904639ef6a7e" />
+    <Link partId="256" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.56" toItemID="tbl_0" toColID="tblCol_f2a3c38b4e1142b09589f6cbc645af06" />
+    <Link partId="257" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.57" toItemID="tbl_0" toColID="tblCol_8c674b02997c478ea08057ae611aaa1c" />
+    <Link partId="258" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.58" toItemID="tbl_0" toColID="tblCol_771500f82d82413aaf6fa7a96883b7dd" />
+    <Link partId="259" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.59" toItemID="tbl_0" toColID="tblCol_fcdbe109ad7d4ea9ad7200391c8db7a8" />
+    <Link partId="260" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.60" toItemID="tbl_0" toColID="tblCol_905297b728984d5cb555308b2e8fecaf" />
+    <Link partId="261" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.61" toItemID="tbl_0" toColID="tblCol_c80b00f416bc4beea4c60e463fb2c423" />
+    <Link partId="262" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.62" toItemID="tbl_0" toColID="tblCol_28ed95d58277490ba15fbdcb4277b9a8" />
+    <Link partId="263" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.63" toItemID="tbl_0" toColID="tblCol_92a927f9e92c4a7ab1b6d546f56bde9f" />
+    <Link partId="264" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.64" toItemID="tbl_0" toColID="tblCol_020948ccfabc4012a98017b223084319" />
+    <Link partId="265" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.65" toItemID="tbl_0" toColID="tblCol_2bc9bc6a840f4c2987db1e669820d404" />
+    <Link partId="266" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.66" toItemID="tbl_0" toColID="tblCol_dfce535198f04044a405ef01d09ccb33" />
+    <Link partId="267" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.67" toItemID="tbl_0" toColID="tblCol_923cda8a3d9e4917a7e3ed2edf191012" />
+    <Link partId="268" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.68" toItemID="tbl_0" toColID="tblCol_c7c270bae1284f1fbac912c3197a0192" />
+    <Link partId="269" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.69" toItemID="tbl_0" toColID="tblCol_25cbb7add6a0437b850446b99d26f6a0" />
+    <Link partId="270" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.70" toItemID="tbl_0" toColID="tblCol_9210a5aa9b30486f8fc0c76341ee2cb1" />
+    <Link partId="271" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.71" toItemID="tbl_0" toColID="tblCol_98cbe27b497a4993acd64dd456b6f327" />
+    <Link partId="272" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.72" toItemID="tbl_0" toColID="tblCol_417681ec5f5746aa92df2c979deaa6e4" />
+    <Link partId="273" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.73" toItemID="tbl_0" toColID="tblCol_2c67aa6e90db4032a878b558de5153d3" />
+    <Link partId="274" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.74" toItemID="tbl_0" toColID="tblCol_8bfc29e8df27477d9ee4efd079118383" />
+    <Link partId="275" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.75" toItemID="tbl_0" toColID="tblCol_7c3e8bc7b3b643568d43a8450de6b26a" />
+    <Link partId="276" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.76" toItemID="tbl_0" toColID="tblCol_37f9742e88e84d6c9a15d177c2dbb4ae" />
+    <Link partId="277" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.77" toItemID="tbl_0" toColID="tblCol_e04adbe3d8354e11bf16d10802f367e2" />
+    <Link partId="278" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.78" toItemID="tbl_0" toColID="tblCol_0e267d05d20d4c3a8f9d47dc5bd5f0b7" />
+    <Link partId="279" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.79" toItemID="tbl_0" toColID="tblCol_dca07f68abc149aa8f8c9f66a192458a" />
+    <Link partId="280" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.80" toItemID="tbl_0" toColID="tblCol_02233d038e644a9c95fd263f3b5ddd67" />
+    <Link partId="281" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.81" toItemID="tbl_0" toColID="tblCol_294fa5e4f7d047848c5bc20bc83d7d02" />
+    <Link partId="282" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.82" toItemID="tbl_0" toColID="tblCol_845115a5652340fb9290372ac087ca0f" />
+    <Link partId="283" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.83" toItemID="tbl_0" toColID="tblCol_70c2caa12ef343b488b9653e08ad7374" />
+    <Link partId="284" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.84" toItemID="tbl_0" toColID="tblCol_389e37ca91e140338e3b2e7092c59320" />
+    <Link partId="285" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.85" toItemID="tbl_0" toColID="tblCol_f310ec3d6fb44259ba4fd6bcc3488c35" />
+    <Link partId="286" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.86" toItemID="tbl_0" toColID="tblCol_cf9bdb58233646e2a799899a54101b8a" />
+    <Link partId="287" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.87" toItemID="tbl_0" toColID="tblCol_d48ab06034c64a01b9b77f3aa947b253" />
+    <Link partId="288" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.88" toItemID="tbl_0" toColID="tblCol_f6485f4f35394527a5c417f320445942" />
+    <Link partId="289" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.89" toItemID="tbl_0" toColID="tblCol_b1093bae40f04bcca27580bbeb27b0cb" />
+    <Link partId="290" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.90" toItemID="tbl_0" toColID="tblCol_58c1d73cf7c84e81bffa22b7fd66729f" />
+    <Link partId="291" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.91" toItemID="tbl_0" toColID="tblCol_04f384b0d3034104bda5c67384a51f76" />
+    <Link partId="292" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.92" toItemID="tbl_0" toColID="tblCol_0032f824a97a4d3088c079c2a4e2749b" />
+    <Link partId="293" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.93" toItemID="tbl_0" toColID="tblCol_2e700a068db54968adc7a7b1ec56d288" />
+    <Link partId="294" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.94" toItemID="tbl_0" toColID="tblCol_19272835f8c04796861384cc306d88ce" />
+    <Link partId="295" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.95" toItemID="tbl_0" toColID="tblCol_f7d32bec00944fedb92d9b4f8ebc8c85" />
+    <Link partId="2888" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.97" toItemID="tbl_0" toColID="tblCol_764910364a614214bebb29434a3f72d5" />
+    <Link partId="1690" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.96" toItemID="tbl_0" toColID="tblCol_b5bcfc4b4399468cac0bc50d9f07de30" />
+    <Link partId="2090" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.1" toItemID="tbl_0" toColID="tblCol_bbfe5b294ee04749928a051ab538ca50" />
+    <Link partId="2897" fromNodeOrder="1" fromItemID="f_2894" fromColID="fo_2894.0" toItemID="tbl_0" toColID="tblCol_ee8acd1f8dea4892a26109885e3d15e1" />
+    <Link partId="2902" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.1" toItemID="f_2894" toColID="fi_2894.0" />
+    <Link partId="2908" fromNodeOrder="1" fromItemID="f_2905" fromColID="fo_2905.0" toItemID="tbl_0" toColID="tblCol_7cf56974b16541fd8caf5cebabe46910" />
+    <Link partId="2915" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.15" toItemID="f_2905" toColID="fi_2905.0" />
+    <Link partId="2913" fromNodeOrder="1" fromItemID="f_2910" fromColID="fo_2910.0" toItemID="tbl_0" toColID="tblCol_2890b617a5ab4af4b0e6206284941d06" />
+    <Link partId="2930" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.15" toItemID="f_2910" toColID="fi_2910.0" />
+    <Link partId="2920" fromNodeOrder="2" fromItemID="f_2917" fromColID="fo_2917.0" toItemID="tbl_0" toColID="tblCol_139353a540cf484fb46db5a038d42db5" />
+    <Link partId="2926" fromNodeOrder="1" fromItemID="f_2922" fromColID="fo_2922.0" toItemID="f_2917" toColID="fi_2917.0" />
+    <Link partId="2925" fromNodeOrder="0" fromItemID="query_101" fromColID="query_101.15" toItemID="f_2922" toColID="fi_2922.0" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

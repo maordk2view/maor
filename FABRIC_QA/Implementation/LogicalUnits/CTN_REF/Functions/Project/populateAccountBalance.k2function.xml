@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>populateAccountBalance</Name>
+  <ID>Project.populateAccountBalance</ID>
+  <Category>Project</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>RegularFunction</FunctionType>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>Random rand = new Random();
+Double d = rand.nextDouble() * 1000.0;
+
+Object row [] = {accountNumber, d};
+yield(row);</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>true</IsRootFunction>
+  <InputParams>
+    <Input name="accountNumber" id="fi.Project.populateAccountBalance.0" index="0" dataType="String">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="accountNumber" id="fo.Project.populateAccountBalance.0" index="0" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="accountBalance" id="fo.Project.populateAccountBalance.1" index="1" dataType="Double">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

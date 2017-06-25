@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Production_ScrapReason</Name>
+  <ID>tbl_Production_ScrapReason</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="ScrapReasonID" id="tblCol_a955a6252eec4035b233a743be772239" index="0" datatype="Integer" mandatory="true" />
+    <Column name="Name" id="tblCol_94de0a29eb384ce2b8501412a4155d83" index="1" datatype="Text" mandatory="true" />
+    <Column name="ModifiedDate" id="tblCol_605f46309ae64c1b960b0af0c92b071c" index="2" datatype="Text" mandatory="true" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_a955a6252eec4035b233a743be772239" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

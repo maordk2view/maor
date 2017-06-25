@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>getTrnValue</Name>
+  <ID>JAVA.getTrnValue</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String[] trnValues = {prd_cd, "1"};
+
+Map trn = getTranslationValues("trnProduct", trnValues);
+
+return  (String) trn.get("PRD_CD_OUT") ;
+
+//return "A";</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <InputParams>
+    <Input name="prd_cd" id="fi.JAVA.getTrnValue.0" index="0" dataType="String">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="prd_cd_out" id="fo.JAVA.getTrnValue.0" index="0" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>P_YP_ADDRESS_FUN</Name>
+  <ID>tbl_P_YP_ADDRESS_FUN</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="address_id" id="tblCol_4713bf31155543ee87f4b7ce5622aae9" index="0" datatype="Long" />
+    <Column name="customer_id" id="tblCol_d8be082927064d288f0f51065e85dc92" index="1" datatype="Long" />
+    <Column name="house_no" id="tblCol_a306ca56bff54acfaa6fc7b2bfcf1511" index="2" datatype="String" />
+    <Column name="colony_id" id="tblCol_689fa8913d4c4a9d8e71419cc2eb51a6" index="3" datatype="Long" />
+    <Column name="override_colony" id="tblCol_162f02cbe4334329b01dbb29cf23331a" index="4" datatype="String" />
+    <Column name="street_name" id="tblCol_7e1b52eb48af404ba65f4bd38f7a20b0" index="5" datatype="String" />
+    <Column name="state_code" id="tblCol_32cc89bfc5b94150aa9bac3641fc125f" index="6" datatype="String" />
+    <Column name="street_type" id="tblCol_e704ca9105fc4846a6bbc06dc67a6926" index="7" datatype="String" />
+    <Column name="country" id="tblCol_22be7eb0b08641ad9c378e97e3ec31ce" index="8" datatype="String" />
+    <Column name="sfa_id" id="tblCol_7a82eabdbfee4424be082c5ad1c2a95c" index="9" datatype="String" />
+    <Column name="zip_code" id="tblCol_d9d651aafe8e4439ae47c0ea7925562f" index="10" datatype="String" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

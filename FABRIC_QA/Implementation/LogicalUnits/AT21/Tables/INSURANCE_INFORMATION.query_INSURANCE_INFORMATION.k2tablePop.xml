@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_INSURANCE_INFORMATION</ID>
+  <PopulationObjectName>query_INSURANCE_INFORMATION</PopulationObjectName>
+  <TableName>INSURANCE_INFORMATION</TableName>
+  <RootItemID>query_query_INSURANCE_INFORMATION</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="PATIENT_ID" id="queryCol_0" dataType="Text" index="0" />
+    <Arg name="POLICY_ID" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="VALID_FROM" id="queryCol_2" dataType="Text" index="2" />
+    <Arg name="VALID_TO" id="queryCol_3" dataType="Text" index="3" />
+    <Arg name="STATUS" id="queryCol_4" dataType="Text" index="4" />
+    <Arg name="PROVIDE" id="queryCol_5" dataType="Text" index="5" />
+    <Arg name="PLAN" id="queryCol_6" dataType="Text" index="6" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_INSURANCE_INFORMATION" name="query_INSURANCE_INFORMATION" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="HIS_DB">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="PATIENT_ID" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="POLICY_ID" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="VALID_FROM" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="VALID_TO" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="STATUS" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="PROVIDE" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_6" name="PLAN" dataType="Text" index="6" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM INSURANCE_INFORMATION]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="18" fromNodeOrder="0" fromItemID="query_query_INSURANCE_INFORMATION" fromColID="queryCol_0" toItemID="tbl_INSURANCE_INFORMATION" toColID="tblCol_ede2da1e34fd4a58812b61164b920d20" />
+    <Link partId="19" fromNodeOrder="0" fromItemID="query_query_INSURANCE_INFORMATION" fromColID="queryCol_1" toItemID="tbl_INSURANCE_INFORMATION" toColID="tblCol_a0e7ed4703f646c9b77a96868f83b8fa" />
+    <Link partId="20" fromNodeOrder="0" fromItemID="query_query_INSURANCE_INFORMATION" fromColID="queryCol_2" toItemID="tbl_INSURANCE_INFORMATION" toColID="tblCol_e8ea3faad8e340ba876c989493b278d9" />
+    <Link partId="21" fromNodeOrder="0" fromItemID="query_query_INSURANCE_INFORMATION" fromColID="queryCol_3" toItemID="tbl_INSURANCE_INFORMATION" toColID="tblCol_806e21a70d494eef86574fdf48c5292f" />
+    <Link partId="22" fromNodeOrder="0" fromItemID="query_query_INSURANCE_INFORMATION" fromColID="queryCol_4" toItemID="tbl_INSURANCE_INFORMATION" toColID="tblCol_f82eeed6d333494cb13002377eff3e38" />
+    <Link partId="23" fromNodeOrder="0" fromItemID="query_query_INSURANCE_INFORMATION" fromColID="queryCol_5" toItemID="tbl_INSURANCE_INFORMATION" toColID="tblCol_215161b09f344db986a0da0084aba7a5" />
+    <Link partId="24" fromNodeOrder="0" fromItemID="query_query_INSURANCE_INFORMATION" fromColID="queryCol_6" toItemID="tbl_INSURANCE_INFORMATION" toColID="tblCol_c7a0ed118f8e4605ab2520f51abeedd7" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

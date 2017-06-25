@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_yp_cust_yp_country_information</PopulationObjectName>
+  <TableName>yp_country_information</TableName>
+  <ID>query_yp_cust_yp_country_information</ID>
+  <RootItemID>query_10</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="seq" id="query_10.0" dataType="Real" index="0" />
+    <Arg name="customer_id" id="query_10.1" dataType="Real" index="1" />
+    <Arg name="country_name" id="query_10.2" dataType="Text" index="2" />
+    <Arg name="country_flag_url" id="query_10.3" index="3" />
+    <Arg name="country_flag1" id="query_10.4" dataType="BLOB" index="4" />
+    <Arg name="country_flag2" id="query_10.5" dataType="Text" index="5" />
+    <Arg name="add_infromation" id="query_10.6" dataType="Text" index="6" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_10" name="query_yp_cust_yp_country_information" nodeOrder="0" module="DBQuery" connName="PG_SOURCE">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_10.0" name="seq" dataType="Real" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_10.1" name="customer_id" dataType="Real" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_10.2" name="country_name" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_10.3" name="country_flag_url" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_10.4" name="country_flag1" dataType="BLOB" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_10.5" name="country_flag2" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_10.6" name="add_infromation" dataType="Text" index="6" />
+      </OutputsList>
+      <SQL><![CDATA[select * from yp_cust.yp_country_information]]></SQL>
+    </Item>
+    <Item xsi:type="DBLookupDataSave" id="dbLookup.41" name="yp_cust.yp_address" nodeOrder="1" module="Lookup" itemType="DB_Object" lookupNotFound="Reject_Record" connName="PG_SOURCE" owner="yp_cust">
+      <InputsList>
+        <Input xsi:type="LookupDataSaveColumnInput" id="dbLookup.41.in.customer_id" name="customer_id" columnID="PG_SOURCE.yp_cust.yp_address.customer_id" />
+      </InputsList>
+      <OutputsList>
+        <Output xsi:type="LookupDataSaveColumn" id="dbLookup.41.out.state_code" name="state_code" columnID="PG_SOURCE.yp_cust.yp_address.state_code" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="18" fromNodeOrder="0" fromItemID="query_10" fromColID="query_10.0" toItemID="tbl_yp_country_information" toColID="tblCol_13f0e8d9ad21483588847ab76a40b614" />
+    <Link partId="19" fromNodeOrder="0" fromItemID="query_10" fromColID="query_10.1" toItemID="tbl_yp_country_information" toColID="tblCol_4da641908f674907b3eda178204fd1d1" />
+    <Link partId="20" fromNodeOrder="0" fromItemID="query_10" fromColID="query_10.2" toItemID="tbl_yp_country_information" toColID="tblCol_43f29622375b459dacb90165b3bc111e" />
+    <Link partId="21" fromNodeOrder="0" fromItemID="query_10" fromColID="query_10.3" toItemID="tbl_yp_country_information" toColID="tblCol_96d8840102fe401d98269b78d6bd5687" />
+    <Link partId="22" fromNodeOrder="0" fromItemID="query_10" fromColID="query_10.4" toItemID="tbl_yp_country_information" toColID="tblCol_e2bc621c5ff74162a3feb65d7df1fb38" />
+    <Link partId="23" fromNodeOrder="0" fromItemID="query_10" fromColID="query_10.5" toItemID="tbl_yp_country_information" toColID="tblCol_b6e860b3c29444a69416a7787b7ce4b2" />
+    <Link partId="24" fromNodeOrder="0" fromItemID="query_10" fromColID="query_10.6" toItemID="tbl_yp_country_information" toColID="tblCol_cd16793f53e847e182aa785d1a782a7a" />
+    <Link partId="113" fromNodeOrder="1" fromItemID="dbLookup.41" fromColID="dbLookup.41.out.state_code" toItemID="tbl_yp_country_information" toColID="tblCol_02da849aa5cd4b66b7a44d52d3ba5a2d" />
+    <Link partId="114" fromNodeOrder="0" fromItemID="query_10" fromColID="query_10.1" toItemID="dbLookup.41" toColID="dbLookup.41.in.customer_id" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

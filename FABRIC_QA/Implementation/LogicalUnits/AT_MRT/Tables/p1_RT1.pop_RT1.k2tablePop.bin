@@ -1,0 +1,8 @@
+﻿<Graph name="p1_RT1.pop_RT1.k2tablePop.bin" lastPartID="35">
+  <TableNode partID="0" name="p1_RT1" pos="439.324127 0.8177147" width="309.3242" />
+  <ParserRecordTypeTargetNode partID="7" name="RT1" pos="9.999985 0.854171753" size="309.324127 98.29166" parserName="p1" isTargetNode="false" isRoot="true" deleteRecordsAfterSync="false" />
+  <Link partID="12" from="0" to="1" pointsArr="319.3241 31.8906269 329.3241 31.8906269 369.3241 32 389.3241 32 429.324127 31.85417 439.324127 31.85417" fromNodePartID="7" fromNodeColumnName="col1" toNodePartID="0" toNodeColumnName="col1" />
+  <Link partID="13" from="2" to="3" pointsArr="319.3241 43.9635429 329.3241 43.9635429 369.3241 44 389.3241 44 429.324127 43.9270859 439.324127 43.9270859" fromNodePartID="7" fromNodeColumnName="col2" toNodePartID="0" toNodeColumnName="col2" />
+  <Link partID="14" from="4" to="5" pointsArr="319.3241 56.0364571 329.3241 56.0364571 369.3241 56 389.3241 56 429.324127 56 439.324127 56" fromNodePartID="7" fromNodeColumnName="col3" toNodePartID="0" toNodeColumnName="col3" />
+  <Link partID="15" from="6" to="7" pointsArr="319.3241 68.109375 329.3241 68.109375 369.3241 68 389.3241 68 429.324127 68.0729141 439.324127 68.0729141" fromNodePartID="7" fromNodeColumnName="col4" toNodePartID="0" toNodeColumnName="col4" />
+</Graph>

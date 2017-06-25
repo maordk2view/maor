@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_up_payment</ID>
+  <PopulationObjectName>query_up_payment</PopulationObjectName>
+  <TableName>PAYMENT</TableName>
+  <RootItemID>query_query_INVOICE</RootItemID>
+  <Mode>Update</Mode>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="INVOICE_ID" id="queryCol_1" dataType="Text" index="1" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_INVOICE" name="query_INVOICE" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="HIS_DB">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="STATUS" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="INVOICE_ID" dataType="Text" index="1" />
+      </OutputsList>
+      <SQL><![CDATA[Select INVOICE.STATUS,
+  INVOICE.INVOICE_ID
+From INVOICE
+Where INVOICE.STATUS = 'CLOSED']]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="161" fromNodeOrder="0" fromItemID="query_query_INVOICE" fromColID="queryCol_1" toItemID="tbl_PAYMENT" toColID="tblCol_7eb1f24f95094f63b2d5d4e08996f031" />
+    <Link partId="183" fromNodeOrder="0" fromItemID="query_query_INVOICE" fromColID="queryCol_0" toItemID="tbl_PAYMENT" toColID="tblCol_9d0aac6b90e044d1942799ca6fe136d1" />
+  </LinksList>
+  <ModeKeyColumnIDs>tblCol_7eb1f24f95094f63b2d5d4e08996f031</ModeKeyColumnIDs>
+</TablePopulationObject>

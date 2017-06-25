@@ -1,0 +1,14 @@
+﻿<Graph name="YP_ITEM_EXT.popYpItemExt.k2tablePop.bin" lastPartID="190">
+  <TableNode partID="0" name="YP_ITEM_EXT" pos="400.3525 30" width="312.9716" />
+  <DBQueryNode partID="5" name="ludb" pos="-1 63" size="253 96.21875" isRoot="true">
+    <DBQuery>{"Name":"query_YP_ITEM","ID":"query_query_YP_ITEM","ConnName":"ludb","SQL":"Select RIVI1.YP_ITEM.CUSTOMER_ID,\r\n  COUNT(*) CNT,\r\n  RIVI1.YP_ITEM.TOWN_INTEGR_CODE\r\nFrom RIVI1.YP_ITEM\r\nGroup By RIVI1.YP_ITEM.TOWN_INTEGR_CODE","ColumnsList":[{"ID":"queryCol_0","Name":"CUSTOMER_ID","DataType":"Integer","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"CNT","Index":1,"IsInputArgument":false},{"ID":"queryCol_2","Name":"TOWN_INTEGR_CODE","DataType":"Text","Index":2,"IsInputArgument":false}]}</DBQuery>
+  </DBQueryNode>
+  <ConstantMapNode partID="173" topLabel="7777" pos="470.740723 247.000015" size="33.7291565 45.09114">
+    <KDataValue>{"ID":"c.173","DataValue":"9999"}</KDataValue>
+  </ConstantMapNode>
+  <Link partID="136" from="0" to="1" pointsArr="252 99.03646 262 99.03646 390.3525 61.0364571 400.3525 61.0364571" fromNodePartID="5" fromNodeColumnName="CUSTOMER_ID" toNodePartID="0" toNodeColumnName="CUST_ID" />
+  <Link partID="141" from="2" to="3" pointsArr="252 123.182289 262 123.182289 390.3525 73.109375 400.3525 73.109375" fromNodePartID="5" fromNodeColumnName="TOWN_INTEGR_CODE" toNodePartID="0" toNodeColumnName="T_P_INT" />
+  <Link partID="140" from="4" to="5" pointsArr="252 111.109375 262 111.109375 390.3525 85.18229 400.3525 85.18229" fromNodePartID="5" fromNodeColumnName="CNT" toNodePartID="0" toNodeColumnName="CNT" />
+  <Link partID="170" from="4" to="6" pointsArr="252 111.109375 262 111.109375 390.3525 97.2552 400.3525 97.2552" fromNodePartID="5" fromNodeColumnName="CNT" toNodePartID="0" toNodeColumnName="CNT1" />
+  <Link partID="175" from="7" to="8" pointsArr="504.469879 272.091156 514.469849 272.091156 390.3525 121.401031 400.3525 121.401031" fromNodePartID="173" fromNodeColumnName="9999" toNodePartID="0" toNodeColumnName="CNT3" />
+</Graph>

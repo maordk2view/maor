@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>yp_item</Name>
+  <ID>tbl_yp_item</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="CUSTOMER_ID" id="tblCol_6ca2c4dbf14842f7a5f2e504f7a1de9f" index="0" datatype="Integer" mandatory="true" />
+    <Column name="PRODUCT_CODE" id="tblCol_1a0d7e764a94446fbd184f1010c4ae95" index="1" datatype="Text" mandatory="true" />
+    <Column name="PRODUCT_ISSUE_NUM" id="tblCol_ba79927b3a1046c3aa40a8725c4bbe4c" index="2" datatype="Integer" mandatory="true" />
+    <Column name="ITEM_ID" id="tblCol_9d210ae69e414778867005760ccd5235" index="3" datatype="Integer" mandatory="true" />
+    <Column name="ITEM_VERSION" id="tblCol_6985c414364f4c37a5fa857a14255768" index="4" datatype="Integer" mandatory="true" />
+    <Column name="PROPOSAL_ID" id="tblCol_6bc2d8d1f8c849abbbf5664eb2e94529" index="5" datatype="Integer" mandatory="true" />
+    <Column name="LAST_VERSION_IND" id="tblCol_6ffa1cae027746db8f8c0452eae0a931" index="6" datatype="Text" mandatory="true" />
+    <Column name="SECTION_CODE" id="tblCol_b2d7dbfe1a424f26aaa1f961794a395b" index="7" datatype="Text" mandatory="true" />
+    <Column name="HEADING_CODE" id="tblCol_a1a7667b18334d1fa157feb5302c2af9" index="8" datatype="Integer" mandatory="true" />
+    <Column name="SUB_HEADING_CODE" id="tblCol_ef0618d9d2d24607b63b1c5fe114988d" index="9" datatype="Integer" />
+    <Column name="TOWN_POPULATION_CODE" id="tblCol_3a46543390544436b35ca5e0e61f540a" index="10" datatype="Integer" />
+    <Column name="TOWN_INTEGR_CODE" id="tblCol_1649f0c910d44de0b2fc40043636dfaf" index="11" datatype="Text" mandatory="true" />
+    <Column name="UDAC_CODE" id="tblCol_3aaa64a5a67b4879b1bbf6a422be5919" index="12" datatype="Text" mandatory="true" />
+    <Column name="RATE_UDAC_CODE" id="tblCol_11b2adb77daf461c8c3bb90edcceccd4" index="13" datatype="Text" mandatory="true" />
+    <Column name="LISTING_ID" id="tblCol_f184d428c1a14a10a0bf8271150751c6" index="14" datatype="Integer" />
+    <Column name="MAIN_ITEM_ID" id="tblCol_4385666aeb494d0da268a440237b90d8" index="15" datatype="Integer" />
+    <Column name="ACTION_CODE" id="tblCol_2245c2cd92674735ad903dbaabaf7360" index="16" datatype="Text" mandatory="true" />
+    <Column name="ACTION_CODE_RSN" id="tblCol_3e6dac30d45543a29e3b67db5456c8be" index="17" datatype="Text" mandatory="true" />
+    <Column name="CONTRACT_ID" id="tblCol_03e6414d42534a90b52b9e39d94fa7e9" index="18" datatype="Integer" />
+    <Column name="CONTRACT_VERSION" id="tblCol_aa60352c9cc44881a19c9369ed2d1bd5" index="19" datatype="Integer" />
+    <Column name="PREVIOUS_ITEM_ID" id="tblCol_3872efcb49954fea87f738cb0b9d728a" index="20" datatype="Integer" />
+    <Column name="PREVIOUS_ACTION_CODE" id="tblCol_a505252ac300478c9069b51e40d94de5" index="21" datatype="Text" mandatory="true" />
+    <Column name="PREV_ACTION_CODE_RSN" id="tblCol_54765cd5eff64e69a3416087ba9333dc" index="22" datatype="Text" mandatory="true" />
+    <Column name="OPEN_DATE" id="tblCol_800e6501036c4d1f92daa3637a0552e2" index="23" datatype="Text" />
+    <Column name="IN_OUT_DATE" id="tblCol_42c2226d56d74e4fb903ab77a88f2983" index="24" datatype="Text" />
+    <Column name="ITEM_STATUS" id="tblCol_2ab5b5593e6142ec82b022300f412d6a" index="25" datatype="Integer" mandatory="true" />
+    <Column name="BOTS_ORIGIN_CODE" id="tblCol_7dabb03309f048a78c46a94903644416" index="26" datatype="Text" mandatory="true" />
+    <Column name="DIS_ASSOC_STATUS" id="tblCol_a02ef249b96c4ffc8ae8f4747097c5c0" index="27" datatype="Integer" mandatory="true" />
+    <Column name="COPYSHEET_CHG_REASON" id="tblCol_217db4383d3940a6b53126e46ae2e2d0" index="28" datatype="Text" mandatory="true" />
+    <Column name="DISPLAY_AD_ACT_RSN" id="tblCol_845f80fddeea476ca88e8038d7c3defe" index="29" datatype="Text" mandatory="true" />
+    <Column name="DISPLAY_AD_PREFIX" id="tblCol_ca8a93ef7b7b48eb87795fd1a6112a7e" index="30" datatype="Text" mandatory="true" />
+    <Column name="DISPLAY_AD_NUMBER" id="tblCol_92c3c7b7a48d40e28077493aa8004b88" index="31" datatype="Integer" />
+    <Column name="DISPLAY_AD_VERSION" id="tblCol_b63f11b04cae454899bb1444a11e952c" index="32" datatype="Integer" />
+    <Column name="DISPLAY_AD_ACTIVITY" id="tblCol_71d0109ae4564df5ad59c45b6e6cbe5e" index="33" datatype="Text" mandatory="true" />
+    <Column name="OMIT_ANCHOR_IND" id="tblCol_d48b5f1c682d4056b5eb8cefb445eaa8" index="34" datatype="Text" mandatory="true" />
+    <Column name="OMIT_ADDRESS_IND" id="tblCol_66c30858a61e47fb893670d8be2ce601" index="35" datatype="Text" mandatory="true" />
+    <Column name="OMIT_TOWN_IND" id="tblCol_c10498d13c6f44b6abc589fc5027b819" index="36" datatype="Text" mandatory="true" />
+    <Column name="HELD_ACTIVITY" id="tblCol_ac8933b77dd244089f9d0398f41c2f2a" index="37" datatype="Text" mandatory="true" />
+    <Column name="ITEM_NISD_AMT" id="tblCol_22ea3d4dc3254191b0148315587ca894" index="38" datatype="Real" />
+    <Column name="ITEM_BOTS_AMT" id="tblCol_f8c5151318444903ad6fd41372cb534e" index="39" datatype="Real" />
+    <Column name="ATB_AMT" id="tblCol_b54b61e496f44758ae8e64ad9eae2301" index="40" datatype="Real" />
+    <Column name="ATB_REASON" id="tblCol_061693f68a72496cbec3df987c42af6c" index="41" datatype="Text" mandatory="true" />
+    <Column name="COMPLAINT_IND" id="tblCol_906b5e278b624888b9e5141932428b93" index="42" datatype="Text" mandatory="true" />
+    <Column name="COMPLAINT_NISD_AMT" id="tblCol_4acf02ccaadf4031a2e406ea60bcf669" index="43" datatype="Real" mandatory="true" />
+    <Column name="BRAND_NAME" id="tblCol_8c75ed37b3834880aa5d70947eca06df" index="44" datatype="Text" />
+    <Column name="SEARCH_BRAND_NAME" id="tblCol_7bdd8f748d5f48f99836ffcbe9e2f49f" index="45" datatype="Text" />
+    <Column name="BRAND_NAMES_NUM" id="tblCol_f212b302313240c3b6061115667d3c46" index="46" datatype="Integer" />
+    <Column name="CAPTION_ARR_IND" id="tblCol_7d3df26f379149e598738b5c0afbee5c" index="47" datatype="Text" mandatory="true" />
+    <Column name="HEADING_CNG_STS" id="tblCol_7099c959a1844b8aad3d83ca1b5c5a69" index="48" datatype="Text" mandatory="true" />
+    <Column name="LAST_YEAR_DISC_CODE" id="tblCol_dcd6879414ef46cc9a77a106835a9788" index="49" datatype="Text" />
+    <Column name="LAST_YEAR_DISC_PHASE" id="tblCol_864a0ad9fbba416b9b973516d248018a" index="50" datatype="Integer" />
+    <Column name="DISCOUNT_BOTS_AMT" id="tblCol_80ceb8e9847249b19da5c2a9cc2ffc8a" index="51" datatype="Real" />
+    <Column name="SELLING_ID" id="tblCol_726888cae6dc43799cdb18110ed1ac1f" index="52" datatype="Text" />
+    <Column name="SUBORDINATE_SEQ_NUM" id="tblCol_8bf0414450b845eb8594768e671f7580" index="53" datatype="Integer" mandatory="true" />
+    <Column name="SENIORITY_DATE" id="tblCol_4685c5d109be40e4bf2db7ff5d476410" index="54" datatype="Text" />
+    <Column name="DISCOUNT_CODE" id="tblCol_b2693f354ba0458cad15e4200649a215" index="55" datatype="Text" />
+    <Column name="DISCOUNT_PHASE" id="tblCol_d8f48a20b76e4741b8b0d56dfc2555e2" index="56" datatype="Integer" />
+    <Column name="DISCOUNT_AMT" id="tblCol_baf2b03cefa44fac9fc92f49ca30de99" index="57" datatype="Real" />
+    <Column name="ADVERT_ID" id="tblCol_3a3977f78bad45eca0d453c4e55c751e" index="58" datatype="Integer" />
+    <Column name="ADVERT_LINE_ID" id="tblCol_15858564d4484b3a9dbf37e4493f08af" index="59" datatype="Integer" />
+    <Column name="COPY_SHEET_FORMAT" id="tblCol_f2ee9a10a0b24e6dbc65619863da312c" index="60" datatype="Text" mandatory="true" />
+    <Column name="BASED_ON_AD_PREFIX" id="tblCol_4f3bacc51e6741fb9b86b758f03e8832" index="61" datatype="Text" mandatory="true" />
+    <Column name="CORRECTION_NUMBER" id="tblCol_bbaeb31734c04b1fa7017e494130ebc3" index="62" datatype="Integer" />
+    <Column name="CORRECTION_UPD_DATE" id="tblCol_c5ed006903234c8f9a2d67308687c3e6" index="63" datatype="Text" />
+    <Column name="BASED_ON_AD" id="tblCol_5c24d7a055594093971d3e91e8f18079" index="64" datatype="Integer" />
+    <Column name="IDENTICAL_TO_BASE" id="tblCol_b9cf36105904441b981e67613d790a77" index="65" datatype="Text" mandatory="true" />
+    <Column name="CONTENT_ID" id="tblCol_0cf75354444e4c9b8d45d50adb3eee9a" index="66" datatype="Integer" />
+    <Column name="CONTENT_VERSION" id="tblCol_ebae1b0e0a2f4453ab6b29132d82c324" index="67" datatype="Integer" />
+    <Column name="FORCE_PRICE_IND" id="tblCol_fba90b01f9d14dc6a95376504a35416f" index="68" datatype="Text" mandatory="true" />
+    <Column name="UNIT_QUANTITY" id="tblCol_558713484c4c4fb99afa1c13f0249d38" index="69" datatype="Integer" />
+    <Column name="PROM_RELATED_YP_PRD" id="tblCol_65b39a6e95b545d69ec1db3db2ca419d" index="70" datatype="Text" />
+    <Column name="PROM_RELATED_YP_ISS" id="tblCol_7f1f60ebd6134442809a2f485e2ec97c" index="71" datatype="Integer" />
+    <Column name="PROM_RELATED_ITEM_ID" id="tblCol_76c1eca1ecc448579be0de2d344d98bd" index="72" datatype="Integer" />
+    <Column name="NIR_GRAPH_SUPPLIER" id="tblCol_b719d490248f42f1984a3d499830e3d8" index="73" datatype="Text" mandatory="true" />
+    <Column name="NIR_GRAPH_SUP_METHOD" id="tblCol_47860674e42e4da2843368369e26647d" index="74" datatype="Text" mandatory="true" />
+    <Column name="START_PUBLISH_DATE" id="tblCol_e8bb1ed9fac54115826906d5556830f0" index="75" datatype="Text" />
+    <Column name="NIR_PRODUCT_IND" id="tblCol_e1125e1b337b4f2d87c193352f8f21c2" index="76" datatype="Text" mandatory="true" />
+    <Column name="LISTADO_ID" id="tblCol_6595a542d16149d3b8f3b9f5e30745a1" index="77" datatype="Integer" />
+    <Column name="ADVERT_INDENT_LEVEL" id="tblCol_1f49e917eaab49178948196ed71ea9f5" index="78" datatype="Integer" />
+    <Column name="ADVERT_LINE_SEQ_NUM" id="tblCol_54d54f318777459f9cd9dae27e7bd8c4" index="79" datatype="Integer" />
+    <Column name="ASSC_DISASS_CUST_ID" id="tblCol_4c51107629e346d49830320dddbd16f2" index="80" datatype="Integer" />
+    <Column name="LOCATED_IND" id="tblCol_6493158a22df40148a07769b891ea1ff" index="81" datatype="Text" mandatory="true" />
+    <Column name="MISSING_CONTENT_IND" id="tblCol_04b6ccf8f2944aeeb27d1ef9f37619d4" index="82" datatype="Text" mandatory="true" />
+    <Column name="COMPLAINT_PERCENTAGE" id="tblCol_ec4f9c69ff1644bab8d31113dd88183c" index="83" datatype="Real" />
+    <Column name="ITEM_CMSN_BOTS_AMT" id="tblCol_fdcd2649be8541ce9c8aa9638a753c47" index="84" datatype="Real" />
+    <Column name="ATCB_AMT" id="tblCol_39b61df6ac8a404e8d94bb5e4790a454" index="85" datatype="Real" />
+    <Column name="DISCOUNT_PERCENTAGE" id="tblCol_28798462634f4d8bbc7c0eff0fc329d8" index="86" datatype="Real" />
+    <Column name="LAST_YEAR_DISC_PRCNT" id="tblCol_c2bc0640b9f4453e800e957f8b607e93" index="87" datatype="Real" />
+    <Column name="LAST_YEAR_RATE_UDAC" id="tblCol_783fec9433224139b72bacc2497192fe" index="88" datatype="Text" />
+    <Column name="ASSC_DISASS_PRD_CODE" id="tblCol_9a34c09fe12846fcba3a38ceb154ac49" index="89" datatype="Text" />
+    <Column name="CTCR_BATCH_PROG_ID" id="tblCol_f9f7bc1b3583417cb4bffa302bbf77a1" index="90" datatype="Text" />
+    <Column name="CTCR_BATCH_PROG_DT" id="tblCol_93f3b0be8540420c935d40511b2f252a" index="91" datatype="Text" />
+    <Column name="CTCR_ONLINE_USER_ID" id="tblCol_3278dd4e71004b73a4b2030816cccfe2" index="92" datatype="Integer" />
+    <Column name="CTCR_ONLINE_PROG_ID" id="tblCol_ad1fbe88363249f39709bf071d511b72" index="93" datatype="Text" />
+    <Column name="CTCR_ONLINE_PROG_DT" id="tblCol_32d82fad653242a0b8b1a90acdeb4227" index="94" datatype="Text" />
+    <Column name="CTCR_SYS_CRE_DT" id="tblCol_31a8ff90452d4318b5971e36a232068b" index="95" datatype="Text" />
+    <Column name="CTCR_SYS_UPD_DT" id="tblCol_7c049b39f06343b186abea4a894d04fe" index="96" datatype="Text" />
+    <Column name="CTCR_DBI_PROG_ID" id="tblCol_ec3944e3b9ce4dfa8115bd301bd97b25" index="97" datatype="Text" />
+    <Column name="CTCR_DBI_PROG_DT" id="tblCol_9e0fef016ab349ff90e97da57f0de183" index="98" datatype="Text" />
+    <Column name="CTCR_CNV_DT" id="tblCol_938e760ca6474e3aa800de95ae7c5330" index="99" datatype="Text" />
+    <Column name="CTCR_EVENT_ID" id="tblCol_8a5063a1fc7948689022c4f177442403" index="100" datatype="Integer" />
+    <Column name="COMMISSION_PAID_IND" id="tblCol_cd257d2aa96e432e9705eec27968b220" index="101" datatype="Text" mandatory="true" />
+    <Column name="PRE_PAY_IND" id="tblCol_2b42470c7d72441c9457ab3ef8f5776e" index="102" datatype="Text" mandatory="true" />
+    <Column name="COMPLAINT_BOTS_AMT" id="tblCol_38329e2c509c414e9739d4edacf4c117" index="103" datatype="Real" mandatory="true" />
+    <Column name="SFA_TRANSACTION" id="tblCol_ae7f171c6a29454f8a14191621af2417" index="104" datatype="Text" />
+    <Column name="SFA_ID" id="tblCol_1b539c407e1044b3b501dea2ad135bd2" index="105" datatype="Text" />
+    <Column name="BASED_ON_UDAC" id="tblCol_bccd865872784eb787f550b66037b65c" index="106" datatype="Text" />
+    <Column name="RATE_DISC_PERCENTAGE" id="tblCol_f0e5d4a7bb5b48d0805c71d255c1c377" index="107" datatype="Real" />
+    <Column name="RATE_DISCOUNT_AMT" id="tblCol_5a2169ccd12641e8a7293be3ed7a022f" index="108" datatype="Real" />
+    <Column name="RATE_BASE_AMT" id="tblCol_ac5c3acddaed4ce19f204ace120ce8ec" index="109" datatype="Real" />
+    <Column name="RATE_DISC_PERCENTAGE_LY" id="tblCol_067f4ddd1cdc402fb8debd6007e0c276" index="110" datatype="Real" />
+    <Column name="RATE_DISCOUNT_AMT_LY" id="tblCol_b8d0a0c59b0f4bf199f599955b2e03cb" index="111" datatype="Real" />
+    <Column name="LOYALTY_DISC_PERCENTAGE" id="tblCol_1c985be251d244c6a1e6f229cdc8164e" index="112" datatype="Real" />
+    <Column name="LOYALTY_DISCOUNT_AMT" id="tblCol_09aa59bf1b8b4e6398a7f05fe4389f71" index="113" datatype="Real" />
+    <Column name="LOYALTY_BASE_AMT" id="tblCol_3f0198acaf014eadabab5552cd91e2ec" index="114" datatype="Real" />
+    <Column name="LOYALTY_DISC_PERCENTAGE_LY" id="tblCol_08dfed9a1c644807997ff99fef693e66" index="115" datatype="Real" />
+    <Column name="LOYALTY_DISCOUNT_AMT_LY" id="tblCol_8bd114d8476d46aa837a970befce295c" index="116" datatype="Real" />
+    <Column name="NS_RATE_TYPE" id="tblCol_13d63754e8b843448ebf37a5cbc0e10e" index="117" datatype="Text" />
+    <Column name="BOTTOM_PRICE" id="tblCol_fac9dab5eaba4581a35d2b7443618e70" index="118" datatype="Real" />
+    <Column name="UDAC_CMSN_POINTS" id="tblCol_bcf330b0e1264e2584728bc753071faf" index="119" datatype="Real" />
+    <Column name="BONI_DISC_CODE" id="tblCol_c2ce0bef26b1403a8b2e58998f91144d" index="120" datatype="Text" />
+    <Column name="PREV_BONI_DISC_CODE" id="tblCol_04dbc5c4e6ad49cca8d844bea38c6fea" index="121" datatype="Text" />
+    <Column name="SPECIAL_UDAC_IND" id="tblCol_dbc3643f839145dab111a470422ca4ed" index="122" datatype="Integer" />
+    <Column name="VOLUME_DISC_PERCENTAGE" id="tblCol_76d30bf753f34d4aa9591355c3c95e35" index="123" datatype="Real" />
+    <Column name="VOLUME_DISCOUNT_AMT" id="tblCol_43b6f3f3c57848d8be1acd5d5fefe5eb" index="124" datatype="Real" />
+    <Column name="VOLUME_BASE_AMT" id="tblCol_4ef103cd3ca44b5da23e440a20c1e4ba" index="125" datatype="Real" />
+    <Column name="LOCK_CONTENT_IND" id="tblCol_cc878eda63f540cc9f0bdb61fce80d8c" index="126" datatype="Text" mandatory="true" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

@@ -1,0 +1,25 @@
+﻿<Graph version="1.0.0.2" name="vdb.k2vdb.bin" lastPartID="169">
+  <Node id="0" partID="0" name="HR_REGIONS" isRootView="true" pos="11 238" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"HR_REGIONS","TablePopulationPropertiesList":[{"ID":"query_HR_REGIONS","Name":"query_HR_REGIONS","Order":1}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="7" name="HR_COUNTRIES" isRootView="false" pos="313 188" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"HR_COUNTRIES","TablePopulationPropertiesList":[{"ID":"query_HR_COUNTRIES","Name":"query_HR_COUNTRIES","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="2" partID="16" name="HR_LOCATIONS" isRootView="false" pos="615 138" size="257 158.2999" listGroupSize="250 121.2999" viewType="Table">
+    <TableProperties>{"TableName":"HR_LOCATIONS","TablePopulationPropertiesList":[{"ID":"query_HR_LOCATIONS","Name":"query_HR_LOCATIONS","Order":3}]}</TableProperties>
+  </Node>
+  <Node id="3" partID="31" name="HR_DEPARTMENTS" isRootView="false" pos="917 88" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"HR_DEPARTMENTS","TablePopulationPropertiesList":[{"ID":"query_HR_DEPARTMENTS","Name":"query_HR_DEPARTMENTS","Order":4}]}</TableProperties>
+  </Node>
+  <Node id="4" partID="42" name="HR_JOB_HISTORY" isRootView="false" pos="1219 13" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"HR_JOB_HISTORY","TablePopulationPropertiesList":[{"ID":"query_HR_JOB_HISTORY","Name":"query_HR_JOB_HISTORY","Order":5}]}</TableProperties>
+  </Node>
+  <Node id="5" partID="66" name="HR_EMPLOYEES" isRootView="false" pos="1219 213" size="257 236.694092" listGroupSize="250 199.694092" viewType="Table">
+    <TableProperties>{"TableName":"HR_EMPLOYEES","TablePopulationPropertiesList":[{"ID":"query_HR_EMPLOYEES","Name":"query_HR_EMPLOYEES","Order":5}]}</TableProperties>
+  </Node>
+  <Link from="6" to="7" partID="91" linkType="Database" pointsArr="268 284.545563 278 284.545563 303 266.727844 313 266.727844" fromNodePartID="0" fromNodeColumnName="REGION_ID" toNodePartID="7" toNodeColumnName="REGION_ID" toNodePopulationObjectName="query_HR_COUNTRIES" />
+  <Link from="8" to="9" partID="92" linkType="Database" pointsArr="570 234.545578 580 234.545578 605 265.001282 615 265.001282" fromNodePartID="7" fromNodeColumnName="COUNTRY_ID" toNodePartID="16" toNodeColumnName="COUNTRY_ID" toNodePopulationObjectName="query_HR_LOCATIONS" />
+  <Link from="10" to="11" partID="93" linkType="Database" pointsArr="872 184.545578 882 184.545578 907 182.819 917 182.819" fromNodePartID="16" fromNodeColumnName="LOCATION_ID" toNodePartID="31" toNodeColumnName="LOCATION_ID" toNodePopulationObjectName="query_HR_DEPARTMENTS" />
+  <Link from="12" to="13" partID="94" linkType="Database" pointsArr="1174 134.545563 1184 134.545563 1209 123.910149 1219 123.910149" fromNodePartID="31" fromNodeColumnName="DEPARTMENT_ID" toNodePartID="42" toNodeColumnName="DEPARTMENT_ID" toNodePopulationObjectName="query_HR_JOB_HISTORY" />
+  <Link from="12" to="14" partID="95" linkType="Database" pointsArr="1174 134.545563 1184 134.545563 1209 420.457123 1219 420.457123" fromNodePartID="31" fromNodeColumnName="DEPARTMENT_ID" toNodePartID="66" toNodeColumnName="DEPARTMENT_ID" toNodePopulationObjectName="query_HR_EMPLOYEES" />
+</Graph>

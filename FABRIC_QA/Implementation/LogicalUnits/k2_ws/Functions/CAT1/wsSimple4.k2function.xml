@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>wsSimple4</Name>
+  <ID>CAT1.wsSimple4</ID>
+  <Category>CAT1</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>WebService</FunctionType>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>
+DBExecute("fabric","get AT2."+cust_id, null);
+
+String sql = "SELECT PREV_BALANCE_AMT * PYM_RECEIVED_AMT AS RESULT FROM BILL WHERE CYCLE_RUN_YEAR='2013' ORDER BY BAN, CYCLE_RUN_MONTH LIMIT 1";
+
+Object result = DBSelectValue("cdbms", sql, null);
+
+return result.toString();
+
+</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="cust_id" id="fi.CAT1.wsSimple4.0" index="0" dataType="Integer">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="result" id="fo.CAT1.wsSimple4.0" index="0" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.2.6.0">
+  <Name>vdb</Name>
+  <RootView>CUSTOMER</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>CONTRACT</Table>
+    <Table>SERVICE_AGREEMENT</Table>
+    <Table>SERVICE_FEATURE</Table>
+    <Table>BILLING_ACCOUNT</Table>
+    <Table>ADJUSTMENT</Table>
+    <Table>BAN_DIRECT_DEBIT</Table>
+    <Table>BILL</Table>
+    <Table>BILL_SUBSCRIBER</Table>
+    <Table>CHARGE_HISTORY</Table>
+    <Table>CHARGE_HIST_TAXES</Table>
+    <Table>CHARGE_TAXES</Table>
+    <Table>CREDIT_DEBIT_LINK</Table>
+    <Table>CREDIT_HISTORY</Table>
+    <Table>INVOICE</Table>
+    <Table>PAYMENT_ACTIVITY</Table>
+    <Table>DIRECT_DEBIT_REQUEST</Table>
+    <Table>USAGE</Table>
+    <Table>CUSTOMER</Table>
+    <Table>ADDRESS_NAME_LINK</Table>
+    <Table>ADDRESS_DATA</Table>
+    <Table>NAME_DATA</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="CONTRACT">
+      <Populations>
+        <Population id="query_CONTRACT" name="query_CONTRACT" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="SERVICE_AGREEMENT">
+      <Populations>
+        <Population id="query_SERVICE_AGREEMENT" name="query_SERVICE_AGREEMENT" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="SERVICE_FEATURE">
+      <Populations>
+        <Population id="query_SERVICE_FEATURE" name="query_SERVICE_FEATURE" order="3" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="BILLING_ACCOUNT">
+      <Populations>
+        <Population id="query_BILLING_ACCOUNT" name="query_BILLING_ACCOUNT" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="ADJUSTMENT">
+      <Populations>
+        <Population id="query_ADJUSTMENT" name="query_ADJUSTMENT" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="BAN_DIRECT_DEBIT">
+      <Populations>
+        <Population id="query_BAN_DIRECT_DEBIT" name="query_BAN_DIRECT_DEBIT" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="BILL">
+      <Populations>
+        <Population id="query_BILL" name="query_BILL" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="BILL_SUBSCRIBER">
+      <Populations>
+        <Population id="query_BILL_SUBSCRIBER" name="query_BILL_SUBSCRIBER" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="CHARGE_HISTORY">
+      <Populations>
+        <Population id="query_CHARGE_HISTORY" name="query_CHARGE_HISTORY" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="CHARGE_HIST_TAXES">
+      <Populations>
+        <Population id="query_CHARGE_HIST_TAXES" name="query_CHARGE_HIST_TAXES" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="CHARGE_TAXES">
+      <Populations>
+        <Population id="query_CHARGE_TAXES" name="query_CHARGE_TAXES" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="CREDIT_DEBIT_LINK">
+      <Populations>
+        <Population id="query_CREDIT_DEBIT_LINK" name="query_CREDIT_DEBIT_LINK" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="CREDIT_HISTORY">
+      <Populations>
+        <Population id="query_CREDIT_HISTORY" name="query_CREDIT_HISTORY" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="INVOICE">
+      <Populations>
+        <Population id="query_INVOICE" name="query_INVOICE" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="PAYMENT_ACTIVITY">
+      <Populations>
+        <Population id="query_PAYMENT_ACTIVITY" name="query_PAYMENT_ACTIVITY" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="DIRECT_DEBIT_REQUEST">
+      <Populations>
+        <Population id="query_DIRECT_DEBIT_REQUEST" name="query_DIRECT_DEBIT_REQUEST" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="USAGE">
+      <Populations>
+        <Population id="query_USAGE" name="query_USAGE" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="CUSTOMER">
+      <Populations>
+        <Population id="query_CUSTOMER" name="query_CUSTOMER" order="1" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="ADDRESS_NAME_LINK">
+      <Populations>
+        <Population id="query_ADDRESS_NAME_LINK" name="query_ADDRESS_NAME_LINK" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="ADDRESS_DATA">
+      <Populations>
+        <Population id="query_ADDRESS_DATA" name="query_ADDRESS_DATA" order="3" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="NAME_DATA">
+      <Populations>
+        <Population id="query_NAME_DATA" name="query_NAME_DATA" order="3" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="false" name="FUN_REF_UDAC" />
+    <Item active="false" name="MS_REF_UDAC" />
+    <Item active="false" name="REF_SERVICE_AGREEMENT" />
+    <Item active="false" name="REF_YP_PRODUCT_TRN" />
+    <Item active="false" name="test_YP_REF_UDAC" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="77">
+      <From tableType="TableObject" table="CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_163d5fb16ece4ebab406456efcf6bf0b" />
+      <To tableType="TableObject" table="ADDRESS_NAME_LINK" populationObjectName="query_ADDRESS_NAME_LINK" column="CUSTOMER_ID" columnId="query_22.1" />
+    </Relation>
+    <Relation id="993">
+      <From tableType="TableObject" table="CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_163d5fb16ece4ebab406456efcf6bf0b" />
+      <To tableType="TableObject" table="CONTRACT" populationObjectName="query_CONTRACT" column="BAN" columnId="query_67.0" />
+    </Relation>
+    <Relation id="1237">
+      <From tableType="TableObject" table="CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_163d5fb16ece4ebab406456efcf6bf0b" />
+      <To tableType="TableObject" table="SERVICE_AGREEMENT" populationObjectName="query_SERVICE_AGREEMENT" column="BAN" columnId="query_49.0" />
+    </Relation>
+    <Relation id="1288">
+      <From tableType="TableObject" table="SERVICE_AGREEMENT" column="BAN" columnId="tblCol_bc0fb3dc3b27449e8dfe317652bbd27d" />
+      <To tableType="TableObject" table="SERVICE_FEATURE" populationObjectName="query_SERVICE_FEATURE" column="BAN" columnId="query_52.0" />
+    </Relation>
+    <Relation id="1754">
+      <From tableType="TableObject" table="CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_163d5fb16ece4ebab406456efcf6bf0b" />
+      <To tableType="TableObject" table="BILLING_ACCOUNT" populationObjectName="query_BILLING_ACCOUNT" column="BAN" columnId="query_208.0" />
+    </Relation>
+    <Relation id="1882">
+      <From tableType="TableObject" table="CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_163d5fb16ece4ebab406456efcf6bf0b" />
+      <To tableType="TableObject" table="ADJUSTMENT" populationObjectName="query_ADJUSTMENT" column="BAN" columnId="query_129.0" />
+    </Relation>
+    <Relation id="1927">
+      <From tableType="TableObject" table="CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_163d5fb16ece4ebab406456efcf6bf0b" />
+      <To tableType="TableObject" table="BAN_DIRECT_DEBIT" populationObjectName="query_BAN_DIRECT_DEBIT" column="BAN" columnId="query_24.0" />
+    </Relation>
+    <Relation id="2065">
+      <From tableType="TableObject" table="CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_163d5fb16ece4ebab406456efcf6bf0b" />
+      <To tableType="TableObject" table="BILL" populationObjectName="query_BILL" column="BAN" columnId="query_139.0" />
+    </Relation>
+    <Relation id="2164">
+      <From tableType="TableObject" table="CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_163d5fb16ece4ebab406456efcf6bf0b" />
+      <To tableType="TableObject" table="BILL_SUBSCRIBER" populationObjectName="query_BILL_SUBSCRIBER" column="BAN" columnId="query_100.0" />
+    </Relation>
+    <Relation id="2294">
+      <From tableType="TableObject" table="CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_163d5fb16ece4ebab406456efcf6bf0b" />
+      <To tableType="TableObject" table="CHARGE_HISTORY" populationObjectName="query_CHARGE_HISTORY" column="BAN" columnId="query_131.1" />
+    </Relation>
+    <Relation id="2315">
+      <From tableType="TableObject" table="CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_163d5fb16ece4ebab406456efcf6bf0b" />
+      <To tableType="TableObject" table="CHARGE_HIST_TAXES" populationObjectName="query_CHARGE_HIST_TAXES" column="BAN" columnId="query_22.1" />
+    </Relation>
+    <Relation id="2336">
+      <From tableType="TableObject" table="CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_163d5fb16ece4ebab406456efcf6bf0b" />
+      <To tableType="TableObject" table="CHARGE_TAXES" populationObjectName="query_CHARGE_TAXES" column="BAN" columnId="query_22.1" />
+    </Relation>
+    <Relation id="2360">
+      <From tableType="TableObject" table="CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_163d5fb16ece4ebab406456efcf6bf0b" />
+      <To tableType="TableObject" table="CREDIT_DEBIT_LINK" populationObjectName="query_CREDIT_DEBIT_LINK" column="BAN" columnId="query_25.0" />
+    </Relation>
+    <Relation id="2420">
+      <From tableType="TableObject" table="CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_163d5fb16ece4ebab406456efcf6bf0b" />
+      <To tableType="TableObject" table="CREDIT_HISTORY" populationObjectName="query_CREDIT_HISTORY" column="BAN" columnId="query_61.0" />
+    </Relation>
+    <Relation id="2451">
+      <From tableType="TableObject" table="CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_163d5fb16ece4ebab406456efcf6bf0b" />
+      <To tableType="TableObject" table="DIRECT_DEBIT_REQUEST" populationObjectName="query_DIRECT_DEBIT_REQUEST" column="BAN" columnId="query_32.0" />
+    </Relation>
+    <Relation id="2468">
+      <From tableType="TableObject" table="CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_163d5fb16ece4ebab406456efcf6bf0b" />
+      <To tableType="TableObject" table="INVOICE" populationObjectName="query_INVOICE" column="BAN" columnId="query_18.0" />
+    </Relation>
+    <Relation id="2513">
+      <From tableType="TableObject" table="CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_163d5fb16ece4ebab406456efcf6bf0b" />
+      <To tableType="TableObject" table="PAYMENT_ACTIVITY" populationObjectName="query_PAYMENT_ACTIVITY" column="BAN" columnId="query_46.0" />
+    </Relation>
+    <Relation id="2714">
+      <From tableType="TableObject" table="CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_163d5fb16ece4ebab406456efcf6bf0b" />
+      <To tableType="TableObject" table="USAGE" populationObjectName="query_USAGE" column="BAN" columnId="query_202.0" />
+    </Relation>
+    <Relation id="1144">
+      <From tableType="TableObject" table="ADDRESS_NAME_LINK" column="NAME_ID" columnId="tblCol_cd8892b008104af4a4c755290bbe40c3" />
+      <To tableType="TableObject" table="NAME_DATA" populationObjectName="query_NAME_DATA" column="NAME_ID" columnId="query_20.0" />
+    </Relation>
+    <Relation id="138">
+      <From tableType="TableObject" table="ADDRESS_NAME_LINK" column="ADDRESS_ID" columnId="tblCol_fafe77dc48074315a31b6690484fd432" />
+      <To tableType="TableObject" table="ADDRESS_DATA" populationObjectName="query_ADDRESS_DATA" column="ADDRESS_ID" columnId="query_62.0" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

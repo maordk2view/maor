@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_Cinema_Film</ID>
+  <PopulationObjectName>query_Cinema_Film</PopulationObjectName>
+  <TableName>Film</TableName>
+  <RootItemID>query_query_Cinema_Film</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="ID" id="queryCol_0" dataType="Integer" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_Cinema_Film" name="query_Cinema_Film" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="dbCache">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="ID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="Category" dataType="Integer" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="Description" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="Length" dataType="Integer" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="PlayingNow" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="Rating" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_6" name="TicketsSold" dataType="Integer" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_7" name="Title" dataType="Text" index="7" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM Cinema.Film]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="20" fromNodeOrder="0" fromItemID="query_query_Cinema_Film" fromColID="queryCol_0" toItemID="tbl_Film" toColID="tblCol_f67f09a5aaf04822be863d23a67b822b" />
+    <Link partId="21" fromNodeOrder="0" fromItemID="query_query_Cinema_Film" fromColID="queryCol_1" toItemID="tbl_Film" toColID="tblCol_f820d241ed674b838c3aebf133a9ba46" />
+    <Link partId="22" fromNodeOrder="0" fromItemID="query_query_Cinema_Film" fromColID="queryCol_2" toItemID="tbl_Film" toColID="tblCol_0da5b7c65c0e4c32a7e4961518cc79e7" />
+    <Link partId="23" fromNodeOrder="0" fromItemID="query_query_Cinema_Film" fromColID="queryCol_3" toItemID="tbl_Film" toColID="tblCol_acd22c5f9a7e439ea3f4e16deadcf2b2" />
+    <Link partId="24" fromNodeOrder="0" fromItemID="query_query_Cinema_Film" fromColID="queryCol_4" toItemID="tbl_Film" toColID="tblCol_c0331261a4be460ba6897cbbda0aab7d" />
+    <Link partId="25" fromNodeOrder="0" fromItemID="query_query_Cinema_Film" fromColID="queryCol_5" toItemID="tbl_Film" toColID="tblCol_d19984d14df84c958c028bb07b3bed1f" />
+    <Link partId="26" fromNodeOrder="0" fromItemID="query_query_Cinema_Film" fromColID="queryCol_6" toItemID="tbl_Film" toColID="tblCol_ace10c65571b43cbae8ca02855004aad" />
+    <Link partId="27" fromNodeOrder="0" fromItemID="query_query_Cinema_Film" fromColID="queryCol_7" toItemID="tbl_Film" toColID="tblCol_50750107f7e04fd4964f75d82b5388ca" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

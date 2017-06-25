@@ -1,0 +1,9 @@
+﻿<Graph version="1.2.0.0" name="vdb.k2vdb.bin" lastPartID="328">
+  <Node id="0" partID="0" name="web_log_test1" isRootView="false" pos="459 171" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"web_log_test1","TablePopulationPropertiesList":[{"ID":"pop_web_log_test1","Name":"pop_web_log_test1","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="13" name="WEB_LOG_ROOT" isRootView="true" pos="49 90" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"WEB_LOG_ROOT","TablePopulationPropertiesList":[{"ID":"query_WEB_LOG_ROOT","Name":"query_WEB_LOG_ROOT","Order":1}]}</TableProperties>
+  </Node>
+  <Link from="2" to="3" partID="18" linkType="Database" pointsArr="306 136.545563 316 136.545563 449 217.545578 459 217.545578" fromNodePartID="13" fromNodeColumnName="ID" toNodePartID="0" toNodeColumnName="person_id" toNodePopulationObjectName="pop_web_log_test1" />
+</Graph>

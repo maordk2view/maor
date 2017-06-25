@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_default_u_data</ID>
+  <PopulationObjectName>query_default_u_data</PopulationObjectName>
+  <TableName>default_u_data</TableName>
+  <RootItemID>query_query_default_u_data</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="movieid" id="queryCol_1" dataType="Integer" index="1" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_default_u_data" name="query_default_u_data" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="dbHadoop_Hive">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="userid" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="movieid" dataType="Integer" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="rating" dataType="Integer" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="unixtime" dataType="Text" index="3" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT userid, movieid, rating, unixtime FROM `default`.u_data]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="12" fromNodeOrder="0" fromItemID="query_query_default_u_data" fromColID="queryCol_0" toItemID="tbl_default_u_data" toColID="tblCol_1e74c5924b79456fa42e7d2aacda961a" />
+    <Link partId="13" fromNodeOrder="0" fromItemID="query_query_default_u_data" fromColID="queryCol_1" toItemID="tbl_default_u_data" toColID="tblCol_6d5f916b6acf47248c59287a0c3f6310" />
+    <Link partId="14" fromNodeOrder="0" fromItemID="query_query_default_u_data" fromColID="queryCol_2" toItemID="tbl_default_u_data" toColID="tblCol_cfb6dab310b04f9d8ee32a81fce884d7" />
+    <Link partId="15" fromNodeOrder="0" fromItemID="query_query_default_u_data" fromColID="queryCol_3" toItemID="tbl_default_u_data" toColID="tblCol_c278c4f01fb1485f80188fa67a764220" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

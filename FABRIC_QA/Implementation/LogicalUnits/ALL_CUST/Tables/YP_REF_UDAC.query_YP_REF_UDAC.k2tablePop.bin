@@ -1,0 +1,11 @@
+﻿<Graph name="YP_REF_UDAC.query_YP_REF_UDAC.k2tablePop.bin" lastPartID="31">
+  <TableNode partID="0" name="YP_REF_UDAC" pos="308 18.7812538" width="309.324219" />
+  <DBQueryNode partID="8" name="ORA_SOURCE" pos="10 14.8177109" size="253 132.4375" isRoot="true">
+    <DBQuery>{"Name":"query_YP_REF_UDAC","ID":"query_8","ConnName":"ORA_SOURCE","SQL":"Select 1 As DUMMY,\r\n  Y.*\r\nFrom YP_REF_UDAC Y","ColumnsList":[{"ID":"query_8.0","Name":"DUMMY","DataType":"Real","Index":0,"IsInputArgument":true},{"ID":"query_8.1","Name":"UDAC_CODE","DataType":"Text","Index":1,"IsInputArgument":true},{"ID":"query_8.2","Name":"UDAC_VERSION","DataType":"Real","Index":2,"IsInputArgument":true},{"ID":"query_8.3","Name":"LAST_VERSION_IND","DataType":"Text","Index":3,"IsInputArgument":true},{"ID":"query_8.4","Name":"TYPE","DataType":"Text","Index":4,"IsInputArgument":true},{"ID":"query_8.5","Name":"UDAC_DESC","DataType":"Text","Index":5,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="14" from="0" to="1" pointsArr="263 62.9270859 273 62.9270859 298 49.8177147 308 49.8177147" fromNodePartID="8" fromNodeColumnName="UDAC_CODE" toNodePartID="0" toNodeColumnName="UDAC_CODE" />
+  <Link partID="15" from="2" to="3" pointsArr="263 75 273 75 298 61.8906326 308 61.8906326" fromNodePartID="8" fromNodeColumnName="UDAC_VERSION" toNodePartID="0" toNodeColumnName="UDAC_VERSION" />
+  <Link partID="16" from="4" to="5" pointsArr="263 87.07292 273 87.07292 298 73.96355 308 73.96355" fromNodePartID="8" fromNodeColumnName="LAST_VERSION_IND" toNodePartID="0" toNodeColumnName="LAST_VERSION_IND" />
+  <Link partID="17" from="6" to="7" pointsArr="263 99.14583 273 99.14583 298 86.03646 308 86.03646" fromNodePartID="8" fromNodeColumnName="TYPE" toNodePartID="0" toNodeColumnName="TYPE" />
+  <Link partID="18" from="8" to="9" pointsArr="263 111.21875 273 111.21875 298 98.109375 308 98.109375" fromNodePartID="8" fromNodeColumnName="UDAC_DESC" toNodePartID="0" toNodeColumnName="UDAC_DESC" />
+</Graph>

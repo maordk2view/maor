@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>test</Name>
+  <ID>ROOT.test</ID>
+  <Category>ROOT</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String sql = "SELECT CUSTOMER_ID, PRODUCT_CODE, PRODUCT_STATUS, ACTIVITY_TYPE FROM yp_product";
+Object[] valuesArr = null;
+ResultSetWrapper rs = DBQuery("MYSQL_SOURCE", sql, valuesArr);
+
+for(Object[] row : rs) {
+  yield (row);	
+}</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>true</IsRootFunction>
+  <InputParams>
+    <Input name="CUSTOMER_ID" id="fi.ROOT.test.0" index="0" dataType="Long">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="CUSTOMER_ID" id="fo.ROOT.test.0" index="0" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="PRODUCT_CODE" id="fo.ROOT.test.1" index="1" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="PRODUCT_STATUS" id="fo.ROOT.test.2" index="2" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="ACTIVITY_TYPE" id="fo.ROOT.test.3" index="3" dataType="Long">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

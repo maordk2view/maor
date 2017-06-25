@@ -1,0 +1,58 @@
+﻿<Graph version="1.7.1.0" name="vdb.k2vdb.bin" lastPartID="1425">
+  <Node id="0" partID="0" name="Production_Product" isRootView="true" pos="20 651.867554" size="257 138.547119" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"Production_Product","TablePopulationPropertiesList":[{"ID":"query_Production_Product","Name":"query_Production_Product","Order":1}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="53" name="Production_ProductCostHistory" isRootView="false" pos="327 20" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"Production_ProductCostHistory","TablePopulationPropertiesList":[{"ID":"query_Production_ProductCostHistory","Name":"query_Production_ProductCostHistory","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="2" partID="66" name="Production_ProductDocument" isRootView="false" pos="327 177" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"Production_ProductDocument","TablePopulationPropertiesList":[{"ID":"query_Production_ProductDocument","Name":"query_Production_ProductDocument","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="3" partID="75" name="Production_Document" isRootView="false" pos="634 177" size="257 138.5469" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"Production_Document","TablePopulationPropertiesList":[{"ID":"query_Production_Document","Name":"query_Production_Document","Order":3}]}</TableProperties>
+  </Node>
+  <Node id="4" partID="106" name="Production_ProductInventory" isRootView="false" pos="327 335.5469" size="257 138.546875" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"Production_ProductInventory","TablePopulationPropertiesList":[{"ID":"query_Production_ProductInventory","Name":"query_Production_ProductInventory","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="5" partID="123" name="Production_Location" isRootView="false" pos="634 335.5469" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"Production_Location","TablePopulationPropertiesList":[{"ID":"query_Production_Location","Name":"query_Production_Location","Order":3}]}</TableProperties>
+  </Node>
+  <Node id="6" partID="136" name="Production_WorkOrderRouting" isRootView="false" pos="941 335.5469" size="257 138.546936" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"Production_WorkOrderRouting","TablePopulationPropertiesList":[{"ID":"query_Production_WorkOrderRouting","Name":"query_Production_WorkOrderRouting","Order":4}]}</TableProperties>
+  </Node>
+  <Node id="7" partID="163" name="Production_WorkOrder" isRootView="false" pos="327 1283.73511" size="257 138.547119" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"Production_WorkOrder","TablePopulationPropertiesList":[{"ID":"query_Production_WorkOrder","Name":"query_Production_WorkOrder","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="8" partID="195" name="Production_ProductListPriceHistory" isRootView="false" pos="327 494.09375" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"Production_ProductListPriceHistory","TablePopulationPropertiesList":[{"ID":"query_Production_ProductListPriceHistory","Name":"query_Production_ProductListPriceHistory","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="9" partID="208" name="Production_BillOfMaterials" isRootView="false" pos="327 651.09375" size="257 138.547119" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"Production_BillOfMaterials","TablePopulationPropertiesList":[{"ID":"query_Production_BillOfMaterials","Name":"query_Production_BillOfMaterials","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="10" partID="238" name="Production_ProductProductPhoto" isRootView="false" pos="327 809.640869" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"Production_ProductProductPhoto","TablePopulationPropertiesList":[{"ID":"query_Production_ProductProductPhoto","Name":"query_Production_ProductProductPhoto","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="11" partID="249" name="Production_ProductPhoto" isRootView="false" pos="634 809.640869" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"Production_ProductPhoto","TablePopulationPropertiesList":[{"ID":"query_Production_ProductPhoto","Name":"query_Production_ProductPhoto","Order":3}]}</TableProperties>
+  </Node>
+  <Node id="12" partID="264" name="Production_TransactionHistory" isRootView="false" pos="327 966.640869" size="257 138.547119" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"Production_TransactionHistory","TablePopulationPropertiesList":[{"ID":"query_Production_TransactionHistory","Name":"query_Production_TransactionHistory","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="13" partID="285" name="Production_ProductReview" isRootView="false" pos="327 1125.188" size="257 138.547119" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"Production_ProductReview","TablePopulationPropertiesList":[{"ID":"query_Production_ProductReview","Name":"query_Production_ProductReview","Order":2}]}</TableProperties>
+  </Node>
+  <Link from="14" to="15" partID="392" linkType="Database" pointsArr="277 698.4131 287 698.4131 317 66.54557 327 66.54557" fromNodePartID="0" fromNodeColumnName="ProductID" toNodePartID="53" toNodeColumnName="ProductID" toNodePopulationObjectName="query_Production_ProductCostHistory" />
+  <Link from="14" to="16" partID="393" linkType="Database" pointsArr="277 698.4131 287 698.4131 317 223.5456 327 223.5456" fromNodePartID="0" fromNodeColumnName="ProductID" toNodePartID="66" toNodeColumnName="ProductID" toNodePopulationObjectName="query_Production_ProductDocument" />
+  <Link from="14" to="17" partID="394" linkType="Database" pointsArr="277 698.4131 287 698.4131 317 382.092468 327 382.092468" fromNodePartID="0" fromNodeColumnName="ProductID" toNodePartID="106" toNodeColumnName="ProductID" toNodePopulationObjectName="query_Production_ProductInventory" />
+  <Link from="14" to="18" partID="395" linkType="Database" pointsArr="277 698.4131 287 698.4131 317 540.639343 327 540.639343" fromNodePartID="0" fromNodeColumnName="ProductID" toNodePartID="195" toNodeColumnName="ProductID" toNodePopulationObjectName="query_Production_ProductListPriceHistory" />
+  <Link from="14" to="19" partID="396" linkType="Database" pointsArr="277 698.4131 287 698.4131 317 713.730469 327 713.730469" fromNodePartID="0" fromNodeColumnName="ProductID" toNodePartID="208" toNodeColumnName="ProductAssemblyID" toNodePopulationObjectName="query_Production_BillOfMaterials" />
+  <Link from="14" to="20" partID="397" linkType="Database" pointsArr="277 698.4131 287 698.4131 317 729.8216 327 729.8216" fromNodePartID="0" fromNodeColumnName="ProductID" toNodePartID="208" toNodeColumnName="ComponentID" toNodePopulationObjectName="query_Production_BillOfMaterials" />
+  <Link from="14" to="21" partID="398" linkType="Database" pointsArr="277 698.4131 287 698.4131 317 856.186462 327 856.186462" fromNodePartID="0" fromNodeColumnName="ProductID" toNodePartID="238" toNodeColumnName="ProductID" toNodePopulationObjectName="query_Production_ProductProductPhoto" />
+  <Link from="14" to="22" partID="399" linkType="Database" pointsArr="277 698.4131 287 698.4131 317 1029.27759 327 1029.27759" fromNodePartID="0" fromNodeColumnName="ProductID" toNodePartID="264" toNodeColumnName="ProductID" toNodePopulationObjectName="query_Production_TransactionHistory" />
+  <Link from="14" to="23" partID="400" linkType="Database" pointsArr="277 698.4131 287 698.4131 317 1187.82471 327 1187.82471" fromNodePartID="0" fromNodeColumnName="ProductID" toNodePartID="285" toNodeColumnName="ProductID" toNodePopulationObjectName="query_Production_ProductReview" />
+  <Link from="14" to="24" partID="401" linkType="Database" pointsArr="277 698.4131 287 698.4131 317 1346.37183 327 1346.37183" fromNodePartID="0" fromNodeColumnName="ProductID" toNodePartID="163" toNodeColumnName="ProductID" toNodePopulationObjectName="query_Production_WorkOrder" />
+  <Link from="25" to="26" partID="406" linkType="Database" pointsArr="584 239.636719 594 239.636719 624 223.5456 634 223.5456" fromNodePartID="66" fromNodeColumnName="DocumentNode" toNodePartID="75" toNodeColumnName="DocumentNode" toNodePopulationObjectName="query_Production_Document" />
+  <Link from="27" to="28" partID="407" linkType="Database" pointsArr="584 398.183624 594 398.183624 624 382.092468 634 382.092468" fromNodePartID="106" fromNodeColumnName="LocationID" toNodePartID="123" toNodeColumnName="LocationID" toNodePopulationObjectName="query_Production_Location" />
+  <Link from="29" to="30" partID="408" linkType="Database" pointsArr="891 382.092468 901 382.092468 931 430.365936 941 430.365936" fromNodePartID="123" fromNodeColumnName="LocationID" toNodePartID="136" toNodeColumnName="LocationID" toNodePopulationObjectName="query_Production_WorkOrderRouting" />
+  <Link from="31" to="32" partID="409" linkType="Database" pointsArr="584 872.2776 594 872.2776 624 856.186462 634 856.186462" fromNodePartID="238" fromNodeColumnName="ProductPhotoID" toNodePartID="249" toNodeColumnName="ProductPhotoID" toNodePopulationObjectName="query_Production_ProductPhoto" />
+</Graph>

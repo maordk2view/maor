@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>wsPreparedStatementTestDiffLU2</Name>
+  <ID>JAVA.wsPreparedStatementTestDiffLU2</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>WebService</FunctionType>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>// Because AT1 &amp; AT3 have 5 instances, we add one to AT3 to be different from AT1 and than delete it
+DBExecute("fabric", "get AT3.90008;", null);
+DBExecute("fabric", "use AT3", null);
+Object retVal = DBSelectValue("fabric", "select count(*) from m_yp_customer", null);
+DBExecute("fabric", "delete instance AT3.90008;", null);
+return retVal;</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams />
+  <OutputParams>
+    <Output name="result" id="fo.JAVA.wsPreparedStatementTestDiffLU2.0" index="0" dataType="Object">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

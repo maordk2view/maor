@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>YP_REF_UDAC_CODE</Name>
+  <ID>tbl_YP_REF_UDAC_CODE</ID>
+  <ColumnsCollation>NOCASE</ColumnsCollation>
+  <LazyDataUpdate enabled="true" performEvery="00:00:30" />
+  <Columns>
+    <Column name="UDAC_CODE" id="tblCol_7cce7b39095e449598e79e9a4bac21f1" index="0" datatype="Text" defaultValue="A" />
+    <Column name="UDAC_VERSION" id="tblCol_36e8e263417c4874859ccb0264dec067" index="1" datatype="Integer" />
+    <Column name="LAST_VERSION_IND" id="tblCol_452fea6993da4b02b9e5cc687204ba98" index="2" datatype="Text" />
+    <Column name="TYPE" id="tblCol_7d64411834614dd2970f28223fb6fc14" index="3" datatype="Text" />
+    <Column name="UDAC_DESC" id="tblCol_b0aa7240c28b494cb971fcdd72078d71" index="4" datatype="Text" />
+    <Column name="DUMMY" id="tblCol_17649ad55eb944209beb1fe73833a40d" index="5" datatype="Integer" />
+    <Column name="CUSTOMER_ID" id="tblCol_26c98ddfc46b4d5cb3e264365b2e986d" index="6" datatype="Integer" />
+    <Column name="LEGAL_NAME" id="tblCol_fec827ff7d78477eb072c116c4db9f32" index="7" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

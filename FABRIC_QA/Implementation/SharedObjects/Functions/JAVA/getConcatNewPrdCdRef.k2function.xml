@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>getConcatNewPrdCdRef</Name>
+  <ID>JAVA.getConcatNewPrdCdRef</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String sql = "SELECT NEW_PRODUCT_CODE FROM YP_PRODUCT P, REF_YP_PRODUCT_TRN T WHERE T.OLD_PRODUCT_CODE=P.PRODUCT_CODE";
+
+ResultSetWrapper rs = DBQuery("ludb", sql, null);
+
+String prd_cd_new="";
+
+for(Object[] row : rs) {
+	prd_cd_new = prd_cd_new + row[0];
+}
+
+return prd_cd_new;
+
+
+
+
+
+</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams />
+  <OutputParams>
+    <Output name="prd_cd_new" id="fo.JAVA.getConcatNewPrdCdRef.0" index="0" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

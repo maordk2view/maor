@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_YP_CUSTOMER_TIME</PopulationObjectName>
+  <TableName>YP_CUSTOMER_TIME</TableName>
+  <ID>query_YP_CUSTOMER_TIME</ID>
+  <RootItemID>query_3</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="CUSTOMER_ID" id="query_3.0" dataType="Integer" index="0" />
+    <Arg name="CUR_TIME_STAMPTZ" id="query_3.1" dataType="Text" index="1" />
+    <Arg name="CUR_TIME_STAMP" id="query_3.2" dataType="Text" index="2" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_3" name="query_YP_CUSTOMER_TIME" nodeOrder="0" module="DBQuery" connName="ORA_SOURCE">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.0" name="CUSTOMER_ID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.1" name="CUR_TIME_STAMPTZ" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.2" name="CUR_TIME_STAMP" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.3" name="CUR_TIME_STAMP_TZLOCAL" dataType="Text" index="3" />
+      </OutputsList>
+      <SQL><![CDATA[Select *
+From YP_CUSTOMER_TIME]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="8" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.0" toItemID="tbl_YP_CUSTOMER_TIME" toColID="tblCol_f44f3068491540bd9a09d74784c43177" />
+    <Link partId="18" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.1" toItemID="tbl_YP_CUSTOMER_TIME" toColID="tblCol_071655c6580643baa4a0a167f281ccd3" />
+    <Link partId="19" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.2" toItemID="tbl_YP_CUSTOMER_TIME" toColID="tblCol_fba39db09b2d41e68b31fff316ca160b" />
+    <Link partId="30" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.3" toItemID="tbl_YP_CUSTOMER_TIME" toColID="tblCol_15e40586303f4404ae045259c342d155" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>SERVICE_AGREEMENT</Name>
+  <ID>tbl_SERVICE_AGREEMENT</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="BAN" id="tblCol_2a153dfcfe56477ca30558250a0f5c1f" index="0" datatype="Integer" mandatory="true" />
+    <Column name="SUBSCRIBER_NO" id="tblCol_68be4c24530f4f3d8e5941a3cbfe7f9f" index="1" datatype="Text" mandatory="true" />
+    <Column name="SOC" id="tblCol_ee0e668ab1b94b31881ac9140fca4c99" index="2" datatype="Text" mandatory="true" />
+    <Column name="SOC_SEQ_NO" id="tblCol_3bb525dcefbd4153afb665e7ccd9fb0d" index="3" datatype="Integer" mandatory="true" />
+    <Column name="SYS_CREATION_DATE" id="tblCol_2f7a1e0d0f6e4bd2b28b76629dad2a8e" index="4" datatype="Text" mandatory="true" />
+    <Column name="SYS_UPDATE_DATE" id="tblCol_50a1021a5b014e1cb5e6f115e1e6334d" index="5" datatype="Text" />
+    <Column name="OPERATOR_ID" id="tblCol_9996a68579fd461199f507d99d68d09b" index="6" datatype="Integer" />
+    <Column name="APPLICATION_ID" id="tblCol_172abda0801b4fd1b4b51e9d6e1318b9" index="7" datatype="Text" />
+    <Column name="DL_SERVICE_CODE" id="tblCol_b588b01cd13942a1b0d439e35ad9fbe7" index="8" datatype="Text" mandatory="true" />
+    <Column name="DL_UPDATE_STAMP" id="tblCol_310746e7edfa47b3860d08530603186d" index="9" datatype="Integer" />
+    <Column name="SOC_EFFECTIVE_DATE" id="tblCol_ca7b2bb4e1474cfc8d14c4a2907fef8c" index="10" datatype="Text" mandatory="true" />
+    <Column name="CUSTOMER_ID" id="tblCol_c6babec57fcc4dd2a5e40f951b5a8daf" index="11" datatype="Integer" mandatory="true" />
+    <Column name="EFFECTIVE_DATE" id="tblCol_ae0dbc7ef40a454491118ecfabd1adfa" index="12" datatype="Text" mandatory="true" />
+    <Column name="SERVICE_TYPE" id="tblCol_281ca38e8b5f4e719274f329a9a36eee" index="13" datatype="Text" mandatory="true" />
+    <Column name="EXPIRATION_DATE" id="tblCol_6133750d156c42818ee5e7c7a3724e40" index="14" datatype="Text" />
+    <Column name="SOC_LEVEL_CODE" id="tblCol_661f8b5bb00b43de804118cb7a075fff" index="15" datatype="Text" />
+    <Column name="DEALER_CODE" id="tblCol_0080e7740dd2450286cbe5e9f165aa4c" index="16" datatype="Text" />
+    <Column name="CONV_RUN_NO" id="tblCol_404bb4918828417ab3bc99be227062fc" index="17" datatype="Integer" />
+    <Column name="EFFECTIVE_ISSUE_DATE" id="tblCol_3e8da27bd8ee4bf5b5ca13e355cd0049" index="18" datatype="Text" />
+    <Column name="EXPIRATION_ISSUE_DATE" id="tblCol_7c0823acf0934e378a6b975e971c89ba" index="19" datatype="Text" />
+    <Column name="TRX_ID" id="tblCol_a1a09dafcb9a40e7bf5a5e13e4e6a49a" index="20" datatype="Integer" />
+    <Column name="SOC_VER_NO" id="tblCol_73f2f03bc1cf4e90ac56d58eea15be77" index="21" datatype="Integer" mandatory="true" />
+    <Column name="SPLIT_DEALER_CODE" id="tblCol_8ea890b9a7a7449e96e687cb029616f7" index="22" datatype="Text" />
+    <Column name="INS_TRX_ID" id="tblCol_76666eb825e546f99a78ffc9f24c974c" index="23" datatype="Integer" />
+    <Column name="PRODUCT_TYPE" id="tblCol_36c355d694844e2483c815ac7bbbd15e" index="24" datatype="Text" mandatory="true" />
+    <Column name="REL_SOC" id="tblCol_416bd99c19a24060a6e347064a62c8a9" index="25" datatype="Text" />
+    <Column name="REL_SOC_SEQ_NO" id="tblCol_4b53fdbb72bd4b49af89984df3f0b56d" index="26" datatype="Integer" />
+    <Column name="RC_EFF_RSN_CODE" id="tblCol_00f213a296094630a441f496a5c919c8" index="27" datatype="Text" />
+    <Column name="RC_EXP_RSN_CODE" id="tblCol_6cc4f1dc463f419c918dd312033efd00" index="28" datatype="Text" />
+    <Column name="SRV_FTR_IND" id="tblCol_f536194294ac42889f751a81bd955dac" index="29" datatype="Text" />
+    <Column name="GLPP_ID" id="tblCol_acc16d7389af4d3e97098656cde132c2" index="30" datatype="Text" />
+    <Column name="AGENT_CODE" id="tblCol_106def526fdb4f1bbb80b4e9ca182587" index="31" datatype="Text" />
+    <Column name="AGENT_LOCATION" id="tblCol_257c411cc2e64f4cb51428da208636b5" index="32" datatype="Text" />
+    <Column name="AGR_PARKING_IND" id="tblCol_f496d82b06a942f09555e0cc945e50f0" index="33" datatype="Text" />
+    <Column name="AGR_ENABLER_IND" id="tblCol_e4d5a22e175648be87efec01d36d88e7" index="34" datatype="Text" />
+    <Column name="AGR_D2C" id="tblCol_9401be3e379d40f0bfc3e219d5972fd7" index="35" datatype="Text" />
+    <Column name="TARGET_BAN" id="tblCol_5f7231a9875d41abb68eb79a4c5b542f" index="36" datatype="Integer" />
+    <Column name="PURCHASE_ORD_NO" id="tblCol_e1a44c43da154cc69f583f5fbd9164a4" index="37" datatype="Text" />
+    <Column name="CLIN" id="tblCol_40f67081be4f435d8fc1ad1c127ecd13" index="38" datatype="Text" />
+    <Column name="ORIG_VESTED_DAYS" id="tblCol_865b73341aee4e30be1287e3477150fd" index="39" datatype="Integer" />
+    <Column name="DATA_VOICE_IND" id="tblCol_458af953c8634252a7d22c55eb8b5d35" index="40" datatype="Text" />
+    <Column name="ATT_SALE_CODE" id="tblCol_b4d83502df1846f3b28b2eebfdae1d21" index="41" datatype="Text" />
+    <Column name="OFFER_INSTANCE_ID" id="tblCol_e09291f0de1d4e06816571d27f5eb19e" index="42" datatype="Integer" />
+    <Column name="OMS_NOTIFY" id="tblCol_be994f1fa8b347179575574fba0c1a8e" index="43" datatype="Text" />
+    <Column name="INIT_DEALER" id="tblCol_1c37b2850b7949b68a67fe9f67305fa1" index="44" datatype="Text" />
+    <Column name="INIT_RMV_DEALER" id="tblCol_650ce4471b1a4c2b90f3f512dc545184" index="45" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

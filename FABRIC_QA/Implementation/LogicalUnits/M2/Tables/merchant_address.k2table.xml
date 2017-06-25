@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>merchant_address</Name>
+  <ID>tbl_merchant_address</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="merchant_id" id="tblCol_b2d4bc49887d489b88606bdc34677108" index="0" datatype="Integer" mandatory="true" />
+    <Column name="contact_id" id="tblCol_32b2db306f7b4fc1bf68f24c6038c8ed" index="1" datatype="Integer" mandatory="true" />
+    <Column name="address_line1" id="tblCol_dce3e0acd67842958a1ebd235722a135" index="2" datatype="Text" mandatory="true" />
+    <Column name="address_line2" id="tblCol_057fbe6836634cd0baf0211c2ec708da" index="3" datatype="Text" mandatory="true" />
+    <Column name="city" id="tblCol_a4d80a8875de4a099b3bfaff362e6101" index="4" datatype="Text" mandatory="true" />
+    <Column name="state" id="tblCol_d5319bd7c9064c50b128a37261e92d22" index="5" datatype="Text" mandatory="true" />
+    <Column name="zip" id="tblCol_aeaafd52934648348fa761a354115bb6" index="6" datatype="Integer" mandatory="true" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_b2d4bc49887d489b88606bdc34677108" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

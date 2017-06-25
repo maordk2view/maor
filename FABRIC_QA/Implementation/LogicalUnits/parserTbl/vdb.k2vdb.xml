@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2.3.0.1">
+  <Name>vdb</Name>
+  <RootView>PATIENT</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <EnableDataEncryption>false</EnableDataEncryption>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>PATIENT</Table>
+    <Table>invoice</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="PATIENT">
+      <Populations>
+        <Population id="query_PATIENT" name="query_PATIENT" order="1" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="invoice">
+      <Populations>
+        <Population id="popInvPars" name="popInvPars" order="2" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="false" name="ccr_YP_ADDRESS" />
+    <Item active="false" name="ccr_YP_ADDRESS_TAR" />
+    <Item active="false" name="ccr_YP_CUSTOMER" />
+    <Item active="false" name="ccr_YP_CUSTOMER_ACHI" />
+    <Item active="false" name="ccr_YP_CUSTOMER_TAR" />
+    <Item active="false" name="ccr_YP_CUSTOMER_TIME" />
+    <Item active="false" name="ccr_YP_ITEM" />
+    <Item active="false" name="ccr_YP_PRODUCT" />
+    <Item active="false" name="ccr_YP_PRODUCT_TRN" />
+    <Item active="false" name="ccr_YP_REF_UDAC" />
+    <Item active="false" name="ccr_YP_SPACE" />
+    <Item active="false" name="ccr1VISIT" />
+    <Item active="false" name="ccr2_ELI_COMP" />
+    <Item active="false" name="ccr2_ELI_EMP" />
+    <Item active="false" name="ccr2_IMS_STATE_LOOKUP" />
+    <Item active="false" name="ccr2_INV_CCID_PARENTS" />
+    <Item active="false" name="ccr2_INVENTORY_DETAILS" />
+    <Item active="false" name="ccr2_PARTY" />
+    <Item active="false" name="ccr2_PARTY_SALE_SV" />
+    <Item active="false" name="ccr2_PARTY_SALES" />
+    <Item active="false" name="ccr2_PARTY_SALES_1" />
+    <Item active="false" name="ccr2_PARTY_SALES_2M" />
+    <Item active="false" name="ccr2_PARTY_SALES_2M_TMP" />
+    <Item active="false" name="ccr2_PARTY_SALES_LV3" />
+    <Item active="false" name="ccr2_PARTY_SALES_LV4" />
+    <Item active="false" name="ccr2_PARTY_SALES_SVID" />
+    <Item active="false" name="ccr2_RLB_ACCT" />
+    <Item active="false" name="ccr2_SRC_INVOICES" />
+    <Item active="false" name="ccr2_TARGET_TP_ITEM" />
+    <Item active="false" name="ccr2_TARGET_YP_ITEM" />
+    <Item active="false" name="ccr2_YP_ADDRESS_TAR" />
+    <Item active="false" name="ccr2_YP_CUSTOMER" />
+    <Item active="false" name="ccr2_YP_CUSTOMER_ACHI" />
+    <Item active="false" name="ccr2_YP_CUSTOMER_TAR" />
+    <Item active="false" name="ccr2_YP_CUSTOMER_TIME" />
+    <Item active="false" name="ccr2_YP_ITEM" />
+    <Item active="false" name="ccr2_YP_PRODUCT" />
+    <Item active="false" name="ccr2_YP_PRODUCT_TRN" />
+    <Item active="false" name="ccr2_YP_REF_UDAC" />
+    <Item active="false" name="ccr2_YP_SPACE" />
+    <Item active="false" name="ccr2VISIT" />
+    <Item active="false" name="ccrINVOICE" />
+    <Item active="false" name="ccrTestALLERGIES" />
+    <Item active="false" name="ccrTestFAMILY_HISTORY" />
+    <Item active="false" name="ccrTestINSURANCE_INFORMATION" />
+    <Item active="false" name="ccrTestINVOICE" />
+    <Item active="false" name="ccrTestM_INVOICE" />
+    <Item active="false" name="ccrTestPATIENT" />
+    <Item active="false" name="ccrTestPAYMENT" />
+    <Item active="false" name="ccrTestS_INVOICE" />
+    <Item active="false" name="ccrTestTMP_INVOICE" />
+    <Item active="false" name="ccrTestVISIT" />
+    <Item active="false" name="ccrTestyp_address" />
+    <Item active="false" name="ccrTestyp_country_information" />
+    <Item active="false" name="ccrTestyp_customer" />
+    <Item active="false" name="ccrTestyp_item" />
+    <Item active="false" name="ccrTestyp_product" />
+    <Item active="false" name="ccrTestyp_product_trn" />
+    <Item active="false" name="ccrTestyp_ref_udac" />
+    <Item active="false" name="ccrTestyp_ref_udac_manar" />
+    <Item active="false" name="ccrTestyp_ref_udac_rivi" />
+    <Item active="false" name="ccrTestyp_ref_udac_sereen" />
+    <Item active="false" name="FUN_REF_UDAC" />
+    <Item active="false" name="medication_reference" />
+    <Item active="false" name="MS_REF_UDAC" />
+    <Item active="false" name="new_ref_YP_REF_UDAC" />
+    <Item active="false" name="NEW_YP_PRODUCT_TRN" />
+    <Item active="false" name="new_YP_REF_UDAC" />
+    <Item active="false" name="NEW1_YP_PRODUCT_TRN" />
+    <Item active="false" name="NEW1YP_REF_UDAC" />
+    <Item active="false" name="NEW2_YP_PRODUCT_TRN" />
+    <Item active="false" name="NEW3_YP_PRODUCT_TRN" />
+    <Item active="false" name="NEWYP_REF_UDAC" />
+    <Item active="false" name="product_ref" />
+    <Item active="false" name="ref_M_INVOICE" />
+    <Item active="false" name="ref_S_INVOICE" />
+    <Item active="false" name="REF_SERVICE_AGREEMENT" />
+    <Item active="false" name="ref_test_INV" />
+    <Item active="false" name="ref_YP_CUSTOMER" />
+    <Item active="false" name="REF_YP_PRODUCT_TRN" />
+    <Item active="false" name="ref_yp_ref_udac_sereen" />
+    <Item active="false" name="refProduct" />
+    <Item active="false" name="refVisit" />
+    <Item active="false" name="refYP_CUSTOMER" />
+    <Item active="false" name="SOURCE_OFFER" />
+    <Item active="false" name="ssYP_REF_UDAC" />
+    <Item active="false" name="test_S_INVOICE" />
+    <Item active="false" name="test_YP_REF_UDAC" />
+    <Item active="false" name="test1_YP_REF_UDAC" />
+    <Item active="false" name="test1S_INVOICE" />
+    <Item active="false" name="testRefTbl" />
+    <Item active="false" name="testVISIT" />
+    <Item active="false" name="tst_YP_REF_UDAC" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="1083">
+      <From tableType="TableObject" table="PATIENT" column="PATIENT_ID" columnId="tblCol_7e4e18099cdb4483b95d7e9265080263" />
+      <To tableType="TableObject" table="invoice" populationObjectName="popInvPars" column="invoiceID" columnId="rtCol_3143f4f7cb7c4408a32283f44597d5ba" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

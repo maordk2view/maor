@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>SOURCE_CUSTOMER</Name>
+  <ID>tbl_SOURCE_CUSTOMER</ID>
+  <EntityId>tblCol_d899ed2ce1c249b3b1901ecea4e84df9</EntityId>
+  <LazyDataUpdate syncMethod="Inherited" performEvery="00:00:20">
+    <DecisionFunction>test</DecisionFunction>
+  </LazyDataUpdate>
+  <Columns>
+    <Column name="CUSTOMER_ID" id="tblCol_d899ed2ce1c249b3b1901ecea4e84df9" index="0" datatype="Integer" mandatory="true" />
+    <Column name="CUSTOMER_TYPE" id="tblCol_d84eb833a43742efa06606f7ec52c43a" index="1" datatype="Text" />
+    <Column name="FIRST_NAME" id="tblCol_8d8a94782fb2409ca646f1b1188fc0f4" index="2" datatype="Text" />
+    <Column name="LAST_NAME" id="tblCol_63e800909c2a4e7e952ee265377a1cc4" index="3" datatype="Text" />
+    <Column name="CREDIT_SCORE" id="tblCol_a03614a8a62c42a28ae4328711cb4740" index="4" datatype="Integer" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" instanceOnly="true" columnsIdsList="tblCol_d899ed2ce1c249b3b1901ecea4e84df9" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

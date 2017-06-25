@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.7.0.6">
+  <Name>vdb</Name>
+  <RootView>root</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>target</Table>
+    <Table>root</Table>
+    <Table>users</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="target">
+      <Populations>
+        <Population id="plp_target" name="plp_target" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="root">
+      <Populations>
+        <Population id="query_tests_root" name="query_tests_root" order="1" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="users">
+      <Populations>
+        <Population id="query_tests_users" name="query_tests_users" order="2" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="false" name="FUN_REF_UDAC" />
+    <Item active="false" name="MS_REF_UDAC" />
+    <Item active="false" name="REF_SERVICE_AGREEMENT" />
+    <Item active="false" name="REF_YP_PRODUCT_TRN" />
+    <Item active="false" name="test_YP_REF_UDAC" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="206">
+      <From tableType="TableObject" table="root" column="end" columnId="tblCol_212b4664b61a48599033c11f33c99537" />
+      <To tableType="TableObject" table="target" populationObjectName="plp_target" column="end" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="290">
+      <From tableType="TableObject" table="root" column="code" columnId="tblCol_6bc5cf13d0114aabbaaeac027867add6" />
+      <To tableType="TableObject" table="users" populationObjectName="query_tests_users" column="user_code" columnId="queryCol_6" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

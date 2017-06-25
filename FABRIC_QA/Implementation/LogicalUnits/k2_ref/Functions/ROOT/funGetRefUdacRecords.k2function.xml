@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>funGetRefUdacRecords</Name>
+  <ID>ROOT.funGetRefUdacRecords</ID>
+  <Category>ROOT</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String sql = "SELECT last_version_ind, udac_code, udac_desc FROM yp_cust.yp_ref_udac";
+Object[] valuesArr = null;
+ResultSetWrapper rs = DBQuery("PG_SOURCE", sql, valuesArr);
+
+for(Object[] row : rs) {
+    yield(row);
+}
+Object[] row2 = {"N", "PLA", "PLA UPSERT"};
+yield (row2);
+</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>true</IsRootFunction>
+  <InputParams />
+  <OutputParams>
+    <Output name="last_version_ind" id="fo.ROOT.funGetRefUdacRecords.0" index="0" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="udac_code" id="fo.ROOT.funGetRefUdacRecords.1" index="1" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="udac_desc" id="fo.ROOT.funGetRefUdacRecords.2" index="2" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

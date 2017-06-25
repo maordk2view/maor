@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_Production_ProductInventory</ID>
+  <PopulationObjectName>query_Production_ProductInventory</PopulationObjectName>
+  <TableName>Production_ProductInventory</TableName>
+  <RootItemID>query_query_Production_ProductInventory</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="ProductID" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="LocationID" id="queryCol_1" dataType="Integer" index="1" />
+    <Arg name="Shelf" id="queryCol_2" dataType="Text" index="2" />
+    <Arg name="Bin" id="queryCol_3" dataType="Integer" index="3" />
+    <Arg name="Quantity" id="queryCol_4" dataType="Integer" index="4" />
+    <Arg name="rowguid" id="queryCol_5" dataType="Text" index="5" />
+    <Arg name="ModifiedDate" id="queryCol_6" dataType="Text" index="6" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_Production_ProductInventory" name="query_Production_ProductInventory" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="SqlServer_AdvWorks">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="ProductID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="LocationID" dataType="Integer" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="Shelf" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="Bin" dataType="Integer" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="Quantity" dataType="Integer" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="rowguid" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_6" name="ModifiedDate" dataType="Text" index="6" />
+      </OutputsList>
+      <SQL><![CDATA[select * from Production.ProductInventory]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="18" fromNodeOrder="0" fromItemID="query_query_Production_ProductInventory" fromColID="queryCol_0" toItemID="tbl_Production_ProductInventory" toColID="tblCol_f8eccfe2107848fc9ec60b429eb2a6af" />
+    <Link partId="19" fromNodeOrder="0" fromItemID="query_query_Production_ProductInventory" fromColID="queryCol_1" toItemID="tbl_Production_ProductInventory" toColID="tblCol_b5f992774974473c9f83daac46d8f702" />
+    <Link partId="20" fromNodeOrder="0" fromItemID="query_query_Production_ProductInventory" fromColID="queryCol_2" toItemID="tbl_Production_ProductInventory" toColID="tblCol_4dfd70bf0e144334ba2583f5dba3ad88" />
+    <Link partId="21" fromNodeOrder="0" fromItemID="query_query_Production_ProductInventory" fromColID="queryCol_3" toItemID="tbl_Production_ProductInventory" toColID="tblCol_5bb7bb7c07d347eabdbe68d6613cf2af" />
+    <Link partId="22" fromNodeOrder="0" fromItemID="query_query_Production_ProductInventory" fromColID="queryCol_4" toItemID="tbl_Production_ProductInventory" toColID="tblCol_cfa616becede471ead91c6dfaf321979" />
+    <Link partId="23" fromNodeOrder="0" fromItemID="query_query_Production_ProductInventory" fromColID="queryCol_5" toItemID="tbl_Production_ProductInventory" toColID="tblCol_851e87b9826b4e4bacb8aed738efb9f2" />
+    <Link partId="24" fromNodeOrder="0" fromItemID="query_query_Production_ProductInventory" fromColID="queryCol_6" toItemID="tbl_Production_ProductInventory" toColID="tblCol_6034b72b8f824ae78e7787aa7db7bfa4" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

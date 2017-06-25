@@ -1,0 +1,17 @@
+﻿<Graph name="VISIT.query_VISIT.k2tablePop.bin" lastPartID="347">
+  <TableNode partID="0" name="VISIT" pos="308 12.7447968" width="309.324219" />
+  <DBQueryNode partID="9" name="HIS_DB" pos="6 6.781251" size="253 132.4375" isRoot="true">
+    <DBQuery>{"Name":"query_VISIT","ID":"query_query_VISIT","ConnName":"HIS_DB","SQL":"SELECT * FROM VISIT","ColumnsList":[{"ID":"queryCol_0","Name":"PATIENT_ID","DataType":"Text","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"VISIT_ID","DataType":"Text","Index":1,"IsInputArgument":true},{"ID":"queryCol_2","Name":"VISIT_DATE","DataType":"Text","Index":2,"IsInputArgument":true},{"ID":"queryCol_3","Name":"STATUS","DataType":"Text","Index":3,"IsInputArgument":true},{"ID":"queryCol_4","Name":"PHYSICIAN","DataType":"Text","Index":4,"IsInputArgument":true},{"ID":"queryCol_5","Name":"DIAGNOSIS","DataType":"Text","Index":5,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <FunctionMapNode id="0" R0="1" partID="66" topLabel="k2_currentDate (66)" pos="251 209.653656" size="153.317627 45.09114" isRoot="false">
+    <KFunction>{"Name":"k2_currentDate","ID":"f_66","Category":"Date","FunctionLevel":1,"FunctionType":0,"RegisterAsLuDbFunction":false,"SaveToDLUR":false,"ApiFunction":false,"DecisionFunction":false,"RequiresLuReference":false,"Desc":"","Auther":{"Name":"","ID":""},"Language":1,"FunctionBody":"java.text.DateFormat dateFormat = new java.text.SimpleDateFormat(\"yyyy/MM/dd\");\njava.util.Date date = new java.util.Date();\nreturn dateFormat.format(date);","IsSyntaxValid":true,"IsRootFunction":false,"inputParams":[],"outputParams":[{"Name":"current_date","ID":"fo_66.0","Index":0,"DataType":"String","Comment":""}]}</KFunction>
+  </FunctionMapNode>
+  <Link partID="16" from="2" to="3" pointsArr="259 42.81771 269 42.81771 298 43.78125 308 43.78125" fromNodePartID="9" fromNodeColumnName="PATIENT_ID" toNodePartID="0" toNodeColumnName="PATIENT_ID" />
+  <Link partID="17" from="4" to="5" pointsArr="259 54.890625 269 54.890625 298 55.8541641 308 55.8541641" fromNodePartID="9" fromNodeColumnName="VISIT_ID" toNodePartID="0" toNodeColumnName="VISIT_ID" />
+  <Link partID="18" from="6" to="7" pointsArr="259 66.96354 269 66.96354 298 67.92708 308 67.92708" fromNodePartID="9" fromNodeColumnName="VISIT_DATE" toNodePartID="0" toNodeColumnName="VISIT_DATE" />
+  <Link partID="19" from="8" to="9" pointsArr="259 79.03645 269 79.03645 298 80 308 80" fromNodePartID="9" fromNodeColumnName="STATUS" toNodePartID="0" toNodeColumnName="STATUS" />
+  <Link partID="20" from="10" to="11" pointsArr="259 91.109375 269 91.109375 298 92.07291 308 92.07291" fromNodePartID="9" fromNodeColumnName="PHYSICIAN" toNodePartID="0" toNodeColumnName="PHYSICIAN" />
+  <Link partID="21" from="12" to="13" pointsArr="259 103.182281 269 103.182281 298 104.145828 308 104.145828" fromNodePartID="9" fromNodeColumnName="DIAGNOSIS" toNodePartID="0" toNodeColumnName="DIAGNOSIS" />
+  <Link partID="68" from="1" to="14" pointsArr="404.317627 234.7448 414.317627 234.7448 298 116.21875 308 116.21875" fromNodePartID="66" fromNodeColumnName="current_date" toNodePartID="0" toNodeColumnName="date" />
+  <Link partID="330" from="8" to="15" pointsArr="259 79.03645 269 79.03645 298 128.291672 308 128.291672" fromNodePartID="9" fromNodeColumnName="STATUS" toNodePartID="0" toNodeColumnName="STATUS1" />
+</Graph>

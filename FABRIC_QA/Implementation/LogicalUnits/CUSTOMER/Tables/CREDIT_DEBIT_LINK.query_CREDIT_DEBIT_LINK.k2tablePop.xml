@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_CREDIT_DEBIT_LINK</PopulationObjectName>
+  <TableName>CREDIT_DEBIT_LINK</TableName>
+  <ID>query_CREDIT_DEBIT_LINK</ID>
+  <RootItemID>query_25</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="BAN" id="query_25.0" dataType="Integer" index="0" />
+    <Arg name="SYS_CREATION_DATE" id="query_25.1" dataType="Text" index="1" />
+    <Arg name="SYS_UPDATE_DATE" id="query_25.2" dataType="Text" index="2" />
+    <Arg name="OPERATOR_ID" id="query_25.3" dataType="Integer" index="3" />
+    <Arg name="APPLICATION_ID" id="query_25.4" dataType="Text" index="4" />
+    <Arg name="DL_SERVICE_CODE" id="query_25.5" dataType="Text" index="5" />
+    <Arg name="DL_UPDATE_STAMP" id="query_25.6" dataType="Integer" index="6" />
+    <Arg name="LINK_AMT" id="query_25.7" dataType="Real" index="7" />
+    <Arg name="CREDIT_TYPE" id="query_25.8" dataType="Text" index="8" />
+    <Arg name="CREDIT_SEQ_NO" id="query_25.9" dataType="Integer" index="9" />
+    <Arg name="INV_SEQ_NO" id="query_25.10" dataType="Integer" index="10" />
+    <Arg name="LINK_ACTV_CODE" id="query_25.11" dataType="Text" index="11" />
+    <Arg name="LINK_ACTV_SEQ_NO" id="query_25.12" dataType="Integer" index="12" />
+    <Arg name="LINK_ENT_SEQ_NO" id="query_25.13" dataType="Integer" index="13" />
+    <Arg name="UNLINK_ACTV_CODE" id="query_25.14" dataType="Text" index="14" />
+    <Arg name="UNLINK_ACTV_SEQ_NO" id="query_25.15" dataType="Integer" index="15" />
+    <Arg name="UNLINK_ENT_SEQ_NO" id="query_25.16" dataType="Integer" index="16" />
+    <Arg name="CREDIT_POSTING_DATE" id="query_25.17" dataType="Text" index="17" />
+    <Arg name="CONV_RUN_NO" id="query_25.18" dataType="Integer" index="18" />
+    <Arg name="SPECIFIC_CAAP_IND" id="query_25.19" dataType="Text" index="19" />
+    <Arg name="LINK_RANK" id="query_25.20" dataType="Integer" index="20" />
+    <Arg name="CAAP_LEVEL" id="query_25.21" dataType="Integer" index="21" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_25" name="query_CREDIT_DEBIT_LINK" nodeOrder="0" module="DBQuery" connName="ORA_140">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_25.0" name="BAN" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_25.1" name="SYS_CREATION_DATE" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_25.2" name="SYS_UPDATE_DATE" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_25.3" name="OPERATOR_ID" dataType="Integer" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_25.4" name="APPLICATION_ID" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_25.5" name="DL_SERVICE_CODE" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_25.6" name="DL_UPDATE_STAMP" dataType="Integer" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_25.7" name="LINK_AMT" dataType="Real" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_25.8" name="CREDIT_TYPE" dataType="Text" index="8" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_25.9" name="CREDIT_SEQ_NO" dataType="Integer" index="9" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_25.10" name="INV_SEQ_NO" dataType="Integer" index="10" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_25.11" name="LINK_ACTV_CODE" dataType="Text" index="11" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_25.12" name="LINK_ACTV_SEQ_NO" dataType="Integer" index="12" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_25.13" name="LINK_ENT_SEQ_NO" dataType="Integer" index="13" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_25.14" name="UNLINK_ACTV_CODE" dataType="Text" index="14" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_25.15" name="UNLINK_ACTV_SEQ_NO" dataType="Integer" index="15" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_25.16" name="UNLINK_ENT_SEQ_NO" dataType="Integer" index="16" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_25.17" name="CREDIT_POSTING_DATE" dataType="Text" index="17" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_25.18" name="CONV_RUN_NO" dataType="Integer" index="18" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_25.19" name="SPECIFIC_CAAP_IND" dataType="Text" index="19" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_25.20" name="LINK_RANK" dataType="Integer" index="20" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_25.21" name="CAAP_LEVEL" dataType="Integer" index="21" />
+      </OutputsList>
+      <SQL><![CDATA[select * from CREDIT_DEBIT_LINK]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="48" fromNodeOrder="0" fromItemID="query_25" fromColID="query_25.0" toItemID="tbl_CREDIT_DEBIT_LINK" toColID="tblCol_1c314bb5e8384f09b6c656fd78b8f8a4" />
+    <Link partId="49" fromNodeOrder="0" fromItemID="query_25" fromColID="query_25.1" toItemID="tbl_CREDIT_DEBIT_LINK" toColID="tblCol_8deb95b492e24d689b8d6fa3e35d4ef4" />
+    <Link partId="50" fromNodeOrder="0" fromItemID="query_25" fromColID="query_25.2" toItemID="tbl_CREDIT_DEBIT_LINK" toColID="tblCol_ec8e9cb959544172aee99e4ecb840812" />
+    <Link partId="51" fromNodeOrder="0" fromItemID="query_25" fromColID="query_25.3" toItemID="tbl_CREDIT_DEBIT_LINK" toColID="tblCol_7416b79978a84c2484936b1d8098082f" />
+    <Link partId="52" fromNodeOrder="0" fromItemID="query_25" fromColID="query_25.4" toItemID="tbl_CREDIT_DEBIT_LINK" toColID="tblCol_8947ea9e315645fe9eae10d281dd607b" />
+    <Link partId="53" fromNodeOrder="0" fromItemID="query_25" fromColID="query_25.5" toItemID="tbl_CREDIT_DEBIT_LINK" toColID="tblCol_c4352a2a87484f89ba97864bdf93f8e5" />
+    <Link partId="54" fromNodeOrder="0" fromItemID="query_25" fromColID="query_25.6" toItemID="tbl_CREDIT_DEBIT_LINK" toColID="tblCol_4c8fc5c27a0048cd9a12b7a5e0601da9" />
+    <Link partId="55" fromNodeOrder="0" fromItemID="query_25" fromColID="query_25.7" toItemID="tbl_CREDIT_DEBIT_LINK" toColID="tblCol_9fa030dfd3f6408ebdd069418a27a1c6" />
+    <Link partId="56" fromNodeOrder="0" fromItemID="query_25" fromColID="query_25.8" toItemID="tbl_CREDIT_DEBIT_LINK" toColID="tblCol_6dec4dd0b4d9417fbde974c3d3c402d9" />
+    <Link partId="57" fromNodeOrder="0" fromItemID="query_25" fromColID="query_25.9" toItemID="tbl_CREDIT_DEBIT_LINK" toColID="tblCol_a0b989b421ea4177be7673089937c539" />
+    <Link partId="58" fromNodeOrder="0" fromItemID="query_25" fromColID="query_25.10" toItemID="tbl_CREDIT_DEBIT_LINK" toColID="tblCol_ebba1b64150f4d3dbb550509cd3359d2" />
+    <Link partId="59" fromNodeOrder="0" fromItemID="query_25" fromColID="query_25.11" toItemID="tbl_CREDIT_DEBIT_LINK" toColID="tblCol_591b009ea14d4bf98cc4572f137abea4" />
+    <Link partId="60" fromNodeOrder="0" fromItemID="query_25" fromColID="query_25.12" toItemID="tbl_CREDIT_DEBIT_LINK" toColID="tblCol_9e0c942378794abebbc47803b2c1e9ee" />
+    <Link partId="61" fromNodeOrder="0" fromItemID="query_25" fromColID="query_25.13" toItemID="tbl_CREDIT_DEBIT_LINK" toColID="tblCol_a0b0e3e6f3384d5da4b989219f968249" />
+    <Link partId="62" fromNodeOrder="0" fromItemID="query_25" fromColID="query_25.14" toItemID="tbl_CREDIT_DEBIT_LINK" toColID="tblCol_0b2aa11dc6b14b6eb91529c450f122c3" />
+    <Link partId="63" fromNodeOrder="0" fromItemID="query_25" fromColID="query_25.15" toItemID="tbl_CREDIT_DEBIT_LINK" toColID="tblCol_07447aeada6e40e38be4ddffce9c665a" />
+    <Link partId="64" fromNodeOrder="0" fromItemID="query_25" fromColID="query_25.16" toItemID="tbl_CREDIT_DEBIT_LINK" toColID="tblCol_5d943fa832694d01b0cccb133b4c3769" />
+    <Link partId="65" fromNodeOrder="0" fromItemID="query_25" fromColID="query_25.17" toItemID="tbl_CREDIT_DEBIT_LINK" toColID="tblCol_980683d962ae49f98527fc7676bacc7c" />
+    <Link partId="66" fromNodeOrder="0" fromItemID="query_25" fromColID="query_25.18" toItemID="tbl_CREDIT_DEBIT_LINK" toColID="tblCol_2e0820fd32f4418db1c6051732643574" />
+    <Link partId="67" fromNodeOrder="0" fromItemID="query_25" fromColID="query_25.19" toItemID="tbl_CREDIT_DEBIT_LINK" toColID="tblCol_ac9c3bfdb29640eb80fb7578e409ca52" />
+    <Link partId="68" fromNodeOrder="0" fromItemID="query_25" fromColID="query_25.20" toItemID="tbl_CREDIT_DEBIT_LINK" toColID="tblCol_56f8e3b4a49547aba52c2bedfdf873c1" />
+    <Link partId="69" fromNodeOrder="0" fromItemID="query_25" fromColID="query_25.21" toItemID="tbl_CREDIT_DEBIT_LINK" toColID="tblCol_e49202f3bf984d87bf2c6f2efb98e700" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

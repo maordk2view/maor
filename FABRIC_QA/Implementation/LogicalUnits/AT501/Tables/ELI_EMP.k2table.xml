@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ELI_EMP</Name>
+  <ID>tbl_ELI_EMP</ID>
+  <EntityId />
+  <LazyDataUpdate enabled="true" performEvery="00:00:01">
+    <TruncateBeforeSync>false</TruncateBeforeSync>
+  </LazyDataUpdate>
+  <Columns>
+    <Column name="FIRST" id="tblCol_ae832afa10904425adf07944a66a14db" index="0" datatype="Text" />
+    <Column name="LAST" id="tblCol_e227d27b78c749d4aaf53d7da1f5a013" index="1" datatype="Text" />
+    <Column name="COMP_ID" id="tblCol_6364b4af1357475c9f8e821a41c75660" index="2" datatype="integer" mandatory="true" />
+  </Columns>
+  <IndexesList>
+    <Index id="2" columnsIdsList="tblCol_e227d27b78c749d4aaf53d7da1f5a013" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

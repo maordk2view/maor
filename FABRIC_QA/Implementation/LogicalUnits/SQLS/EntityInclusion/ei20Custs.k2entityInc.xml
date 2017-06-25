@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DbQueryItemOfDataTable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DbConn>SQLSERVER_SOURCE</DbConn>
+  <Name>ei20Custs</Name>
+  <Sql>select top 20 customer_id from yp_customer</Sql>
+  <IsSqlValid>true</IsSqlValid>
+</DbQueryItemOfDataTable>

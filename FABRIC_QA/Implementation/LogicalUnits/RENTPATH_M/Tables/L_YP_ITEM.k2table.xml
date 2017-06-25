@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>L_YP_ITEM</Name>
+  <ID>tbl_L_YP_ITEM</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="CUSTOMER_ID" id="tblCol_09350f4b08be4a389f31f1a98ec1bb3d" index="0" datatype="Text" />
+    <Column name="PRODUCT_CODE" id="tblCol_df0d9bc8cdde4cf38b9a98ad9f5395c7" index="1" datatype="Text" />
+    <Column name="PRODUCT_ISSUE_NUM" id="tblCol_352871e4f2824b5ca6e9cb35d2d2fcf1" index="2" datatype="Text" />
+    <Column name="ITEM_ID" id="tblCol_ab2152bebfd24ac0955ba1b36bcaecc4" index="3" datatype="Text" />
+    <Column name="ITEM_VERSION" id="tblCol_e69f4e48e92c4088b14788b97b5fe2d4" index="4" datatype="Text" />
+    <Column name="PROPOSAL_ID" id="tblCol_34f248cf60e246d89d2b344c08419ead" index="5" datatype="Text" />
+    <Column name="LAST_VERSION_IND" id="tblCol_c2480a81b937470980b2e6a55fef03a5" index="6" datatype="Text" />
+    <Column name="SECTION_CODE" id="tblCol_021a42dcc0394137b37d670def245f0f" index="7" datatype="Text" />
+    <Column name="HEADING_CODE" id="tblCol_88c8a54c8eab4bdcb58b481d96204858" index="8" datatype="Text" />
+    <Column name="SUB_HEADING_CODE" id="tblCol_1516f6e186bb4c338284931cb529597f" index="9" datatype="Text" />
+    <Column name="UDAC_CODE" id="tblCol_daf47c4ce55a45e68a3445b06c39910d" index="10" datatype="Text" />
+    <Column name="RATE_UDAC_CODE" id="tblCol_9dc58b978ba045eea47c0f65bb45d15a" index="11" datatype="Text" />
+    <Column name="LISTING_ID" id="tblCol_231ee9d87e59445abbe615b7329eb130" index="12" datatype="Text" />
+    <Column name="MAIN_ITEM_ID" id="tblCol_3efdb19f0dde4044a1ea0de2c3f2c2d2" index="13" datatype="Text" />
+    <Column name="ACTION_CODE" id="tblCol_6df473c1c8d740219f06313c22b1d0fc" index="14" datatype="Text" />
+    <Column name="ACTION_CODE_RSN" id="tblCol_7c3251aefd0a48eb82f004e5ffcc99d8" index="15" datatype="Text" />
+    <Column name="CONTRACT_ID" id="tblCol_1f992c422e104b208556695e6f4d2072" index="16" datatype="Text" />
+    <Column name="CONTRACT_VERSION" id="tblCol_1f5778e7d53143fbbf9a6a8caf842faf" index="17" datatype="Text" />
+    <Column name="NEW_UDAC" id="tblCol_73e5e87492e74885a94de0714eaee3c9" index="18" datatype="Text" />
+    <Column name="HBD" id="tblCol_29d80bf3657b4a9b92a03dc0706a30d7" index="19" datatype="Text" />
+    <Column name="DATE" id="tblCol_8d33982ccd9545bc83c8180b671f2ff6" index="20" datatype="Text" />
+    <Column name="ENTITY_ID" id="tblCol_a559ebc8a33640ad9ad7d06190a0339a" index="21" datatype="Text" />
+    <Column name="CON_SHARED" id="tblCol_41bfb34db81d44f39b33446306a1f836" index="22" datatype="Text" />
+    <Column name="EXECUTE" id="tblCol_8e8a21843b3f4e2b9e8ec123e0ff67ed" index="23" datatype="Text" />
+    <Column name="EXE_BOOL" id="tblCol_d1760c092cdc44af9330868e8337cd3a" index="24" datatype="Text" />
+    <Column name="CON_LU" id="tblCol_a073462413f341d781343ebf9a46c056" index="25" datatype="Text" />
+    <Column name="GL_LU" id="tblCol_9892c6c6d8914511b87d6b4c2edf00b7" index="26" datatype="Text" />
+    <Column name="GL_SH" id="tblCol_78b12f5e66b544de8222a909914fa495" index="27" datatype="Integer" />
+    <Column name="A" id="tblCol_2ef9e64c0f074a919c25bc0e9dceb27b" index="28" datatype="Integer" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

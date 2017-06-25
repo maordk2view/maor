@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2.1.0.4">
+  <Name>vdb</Name>
+  <RootView>Images</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <EnableDataEncryption>false</EnableDataEncryption>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>Images</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="Images">
+      <Populations>
+        <Population id="query_Images" name="query_Images" order="1" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="false" name="FUN_REF_UDAC" />
+    <Item active="false" name="MS_REF_UDAC" />
+    <Item active="false" name="REF_SERVICE_AGREEMENT" />
+    <Item active="false" name="REF_YP_PRODUCT_TRN" />
+    <Item active="false" name="refVisit" />
+    <Item active="false" name="test_YP_REF_UDAC" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations />
+</VirtualDB>

@@ -1,0 +1,14 @@
+﻿<Graph name="Film.query_Cinema_Film.k2tablePop.bin" lastPartID="63">
+  <TableNode partID="0" name="Film" pos="527 19.67189" width="309.3241" />
+  <DBQueryNode partID="11" name="dbCache" pos="10 21.7083435" size="253 156.583313" isRoot="true">
+    <DBQuery>{"Name":"query_Cinema_Film","ID":"query_query_Cinema_Film","ConnName":"dbCache","SQL":"SELECT * FROM Cinema.Film","ColumnsList":[{"ID":"queryCol_0","Name":"ID","DataType":"Integer","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"Category","DataType":"Integer","Index":1,"IsInputArgument":true},{"ID":"queryCol_2","Name":"Description","DataType":"Text","Index":2,"IsInputArgument":true},{"ID":"queryCol_3","Name":"Length","DataType":"Integer","Index":3,"IsInputArgument":true},{"ID":"queryCol_4","Name":"PlayingNow","DataType":"Text","Index":4,"IsInputArgument":true},{"ID":"queryCol_5","Name":"Rating","DataType":"Text","Index":5,"IsInputArgument":true},{"ID":"queryCol_6","Name":"TicketsSold","DataType":"Integer","Index":6,"IsInputArgument":true},{"ID":"queryCol_7","Name":"Title","DataType":"Text","Index":7,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="20" from="0" to="1" pointsArr="263 57.7447968 273 57.7447968 517 50.7083435 527 50.7083435" fromNodePartID="11" fromNodeColumnName="ID" toNodePartID="0" toNodeColumnName="ID" />
+  <Link partID="21" from="2" to="3" pointsArr="263 69.81771 273 69.81771 517 62.7812576 527 62.7812576" fromNodePartID="11" fromNodeColumnName="Category" toNodePartID="0" toNodeColumnName="Category" />
+  <Link partID="22" from="4" to="5" pointsArr="263 81.890625 273 81.890625 517 74.85417 527 74.85417" fromNodePartID="11" fromNodeColumnName="Description" toNodePartID="0" toNodeColumnName="Description" />
+  <Link partID="23" from="6" to="7" pointsArr="263 93.96355 273 93.96355 517 86.92709 527 86.92709" fromNodePartID="11" fromNodeColumnName="Length" toNodePartID="0" toNodeColumnName="Length" />
+  <Link partID="24" from="8" to="9" pointsArr="263 106.036453 273 106.036453 517 99 527 99" fromNodePartID="11" fromNodeColumnName="PlayingNow" toNodePartID="0" toNodeColumnName="PlayingNow" />
+  <Link partID="25" from="10" to="11" pointsArr="263 118.109375 273 118.109375 517 111.072922 527 111.072922" fromNodePartID="11" fromNodeColumnName="Rating" toNodePartID="0" toNodeColumnName="Rating" />
+  <Link partID="26" from="12" to="13" pointsArr="263 130.1823 273 130.1823 517 123.145844 527 123.145844" fromNodePartID="11" fromNodeColumnName="TicketsSold" toNodePartID="0" toNodeColumnName="TicketsSold" />
+  <Link partID="27" from="14" to="15" pointsArr="263 142.255219 273 142.255219 517 135.218765 527 135.218765" fromNodePartID="11" fromNodeColumnName="Title" toNodePartID="0" toNodeColumnName="Title" />
+</Graph>

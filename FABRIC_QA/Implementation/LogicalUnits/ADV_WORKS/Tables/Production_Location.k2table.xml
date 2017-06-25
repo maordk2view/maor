@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Production_Location</Name>
+  <ID>tbl_Production_Location</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="LocationID" id="tblCol_1e19a5d605b549808fc6b8c76972977e" index="0" datatype="Integer" mandatory="true" />
+    <Column name="Name" id="tblCol_887ff623796247bb8af75202abc01fea" index="1" datatype="Text" mandatory="true" />
+    <Column name="CostRate" id="tblCol_8e9a7f34ca4f4112be2bccf46c708a6e" index="2" datatype="Real" mandatory="true" />
+    <Column name="Availability" id="tblCol_58b9f61198634fc8841c6d7277c74861" index="3" datatype="Real" mandatory="true" />
+    <Column name="ModifiedDate" id="tblCol_051f123a47244bc28ad08946eed6fb50" index="4" datatype="Text" mandatory="true" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_1e19a5d605b549808fc6b8c76972977e" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

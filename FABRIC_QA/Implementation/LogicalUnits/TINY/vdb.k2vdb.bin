@@ -1,0 +1,5 @@
+﻿<Graph version="1.2.0.0" name="vdb.k2vdb.bin" lastPartID="24">
+  <Node id="0" partID="0" name="tbl" isRootView="true" pos="199 168" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"tbl","TablePopulationPropertiesList":[{"ID":"tinytbl","Name":"tinytbl","Order":1}]}</TableProperties>
+  </Node>
+</Graph>

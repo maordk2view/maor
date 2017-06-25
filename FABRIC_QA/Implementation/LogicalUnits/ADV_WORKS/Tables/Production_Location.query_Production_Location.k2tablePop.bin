@@ -1,0 +1,11 @@
+﻿<Graph name="Production_Location.query_Production_Location.k2tablePop.bin" lastPartID="18">
+  <TableNode partID="0" name="Production_Location" pos="308 18.7812538" width="309.3241" />
+  <DBQueryNode partID="8" name="SqlServer_AdvWorks" pos="10 14.8177109" size="253 120.364578" isRoot="true">
+    <DBQuery>{"Name":"query_Production_Location","ID":"query_query_Production_Location","ConnName":"SqlServer_AdvWorks","SQL":"select * from Production.Location","ColumnsList":[{"ID":"queryCol_0","Name":"LocationID","DataType":"Integer","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"Name","DataType":"Text","Index":1,"IsInputArgument":true},{"ID":"queryCol_2","Name":"CostRate","DataType":"Real","Index":2,"IsInputArgument":true},{"ID":"queryCol_3","Name":"Availability","DataType":"Real","Index":3,"IsInputArgument":true},{"ID":"queryCol_4","Name":"ModifiedDate","DataType":"Text","Index":4,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="14" from="0" to="1" pointsArr="263 50.85417 273 50.85417 275.5 25 295.5 25 298 49.81771 308 49.81771" fromNodePartID="8" fromNodeColumnName="LocationID" toNodePartID="0" toNodeColumnName="LocationID" />
+  <Link partID="15" from="2" to="3" pointsArr="263 62.9270859 273 62.9270859 275.5 50 295.5 50 298 61.89063 308 61.89063" fromNodePartID="8" fromNodeColumnName="Name" toNodePartID="0" toNodeColumnName="Name" />
+  <Link partID="16" from="4" to="5" pointsArr="263 75 273 75 275.5 75 295.5 75 298 73.96355 308 73.96355" fromNodePartID="8" fromNodeColumnName="CostRate" toNodePartID="0" toNodeColumnName="CostRate" />
+  <Link partID="17" from="6" to="7" pointsArr="263 87.0729141 273 87.0729141 275.5 100 295.5 100 298 86.03645 308 86.03645" fromNodePartID="8" fromNodeColumnName="Availability" toNodePartID="0" toNodeColumnName="Availability" />
+  <Link partID="18" from="8" to="9" pointsArr="263 99.14583 273 99.14583 275.5 125 295.5 125 298 98.109375 308 98.109375" fromNodePartID="8" fromNodeColumnName="ModifiedDate" toNodePartID="0" toNodeColumnName="ModifiedDate" />
+</Graph>

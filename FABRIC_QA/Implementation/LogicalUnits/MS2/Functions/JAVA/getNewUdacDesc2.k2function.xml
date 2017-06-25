@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>getNewUdacDesc2</Name>
+  <ID>JAVA.getNewUdacDesc2</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>true</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String sql = "select UDAC_DESC FROM YP_REF_UDAC WHERE UDAC_CODE = ? and UDAC_VERSION = ? AND LAST_VERSION_IND = ?";
+
+Object[] valuesArr = {i_udac_code, i_udac_ver, i_last_version_ind};
+
+//Object newUdacCode = DBSelectValue("ORA_SOURCE", sql, valuesArr);
+Object newUdacCode = DBSelectValue("MYSQL_SOURCE", sql, valuesArr);
+//String s2 = (String) newUdacCode;
+
+//String s1 = java_concat_str(s2, "_TEST_FUN_IN_FUN");
+
+//String s1 = java_concat_str(SYSTEM, "_TEST_FUN_IN_FUN");
+
+//return  (String) newUdacCode;
+
+return  (String) newUdacCode;</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="i_udac_code" id="fi.JAVA.getNewUdacDesc2.0" index="0" dataType="String">
+      <Comment />
+    </Input>
+    <Input name="i_udac_ver" id="fi.JAVA.getNewUdacDesc2.1" index="1" dataType="Integer">
+      <Comment />
+    </Input>
+    <Input name="i_last_version_ind" id="fi.JAVA.getNewUdacDesc2.2" index="2" dataType="String">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="o_new_udac" id="fo.JAVA.getNewUdacDesc2.0" index="0" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

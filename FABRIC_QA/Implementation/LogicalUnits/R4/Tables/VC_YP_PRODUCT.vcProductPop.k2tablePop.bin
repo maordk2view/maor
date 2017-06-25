@@ -1,0 +1,10 @@
+﻿<Graph name="VC_YP_PRODUCT.vcProductPop.k2tablePop.bin" lastPartID="162">
+  <TableNode partID="0" name="VC_YP_PRODUCT" pos="404 30" width="309.3241" />
+  <DBQueryNode partID="7" name="ludb" pos="71 104" size="253 108.291656" isRoot="true">
+    <DBQuery>{"Name":"query_YP_PRODUCT","ID":"query_query_YP_PRODUCT","ConnName":"ludb","SQL":"Select CUSTOMER_ID,\r\n  PRODUCT_CODE,\r\n  PRODUCT_ISSUE_NUM,\r\n  'ORA' As SOURCE\r\nFrom YP_PRODUCT\r\nUnion\r\nSelect R4.DBO_YP_PRODUCT.CUSTOMER_ID,\r\n  R4.DBO_YP_PRODUCT.PRODUCT_CODE,\r\n  R4.DBO_YP_PRODUCT.PRODUCT_ISSUE_NUM,\r\n  'SQL_SERVER' As SOURCE\r\nFrom R4.DBO_YP_PRODUCT","ColumnsList":[{"ID":"queryCol_0","Name":"CUSTOMER_ID","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"PRODUCT_CODE","Index":1,"IsInputArgument":false},{"ID":"queryCol_2","Name":"PRODUCT_ISSUE_NUM","Index":2,"IsInputArgument":false},{"ID":"queryCol_3","Name":"SOURCE","Index":3,"IsInputArgument":false}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="113" from="0" to="1" pointsArr="324 176.2552 334 176.2552 394 97.2552 404 97.2552" fromNodePartID="7" fromNodeColumnName="SOURCE" toNodePartID="0" toNodeColumnName="SOURCE" />
+  <Link partID="140" from="2" to="3" pointsArr="324 140.036453 334 140.036453 394 61.0364571 404 61.0364571" fromNodePartID="7" fromNodeColumnName="CUSTOMER_ID" toNodePartID="0" toNodeColumnName="CUSTOMER_ID" />
+  <Link partID="141" from="4" to="5" pointsArr="324 152.109375 334 152.109375 394 73.109375 404 73.109375" fromNodePartID="7" fromNodeColumnName="PRODUCT_CODE" toNodePartID="0" toNodeColumnName="PRODUCT_CODE" />
+  <Link partID="142" from="6" to="7" pointsArr="324 164.182281 334 164.182281 394 85.18229 404 85.18229" fromNodePartID="7" fromNodeColumnName="PRODUCT_ISSUE_NUM" toNodePartID="0" toNodeColumnName="PRODUCT_ISSUE_NUM" />
+</Graph>

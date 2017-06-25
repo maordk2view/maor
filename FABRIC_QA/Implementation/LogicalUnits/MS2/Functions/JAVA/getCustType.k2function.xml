@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>getCustType</Name>
+  <ID>JAVA.getCustType</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>
+
+
+String sql = "select getNewUdacDesc2(HBD, 1, 'Y') FROM YP_CUSTOMER ";
+
+String sql1 = "select CTCR_BATCH_PROG_DT FROM YP_CUSTOMER";
+
+String sql2 = "select CUSTOMER_TYPE FROM YP_CUSTOMER";
+
+Object cust_type = DBSelectValue("ludb", sql2, null);
+
+Object hbd = DBSelectValue("ludb", sql, null);
+
+Object date = DBSelectValue("ludb", sql1, null);
+
+String[] trnValues = {prd_cd, "2"};
+
+Map trn = getTranslationValues("trnProduct", trnValues);
+
+String prd_cd_out = (String) trn.get("PRD_CD_OUT");
+
+//if (prd_cd_out.equals("DEF"))
+	//rejectEntity ("Entity  was rejected in getCustType " + prd_cd_out);
+
+//if (product_issue_num == 2008 || product_issue_num == 2005)
+	//rejectRecord ("Trn product record was rejected in getCustType " + prd_cd);
+
+if (prd_cd.equals("DVAR"))
+  rejectRecord ("Trn product record was rejected in getCustType " + prd_cd);
+
+
+//o_trn_prd = 
+
+//String value = (String) newMap.get("my_code");
+String entity = getInstanceID();
+String new_cust_type = java_concat_str ((String)cust_type, "_NEW");
+String o_entity=entity;
+return  new Object[] {(String)hbd, (String)date, entity, prd_cd_out, new_cust_type} ;</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="prd_cd" id="fi.JAVA.getCustType.0" index="0" dataType="String">
+      <Comment />
+    </Input>
+    <Input name="product_issue_num" id="fi.JAVA.getCustType.1" index="1" dataType="Integer">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="hbd" id="fo.JAVA.getCustType.0" index="0" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="o_date" id="fo.JAVA.getCustType.1" index="1" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="o_entity_id" id="fo.JAVA.getCustType.2" index="2" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="o_trn_prd" id="fo.JAVA.getCustType.3" index="3" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="new_cust_type" id="fo.JAVA.getCustType.4" index="4" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

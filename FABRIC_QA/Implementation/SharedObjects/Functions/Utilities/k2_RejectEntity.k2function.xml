@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>k2_RejectEntity</Name>
+  <ID>Utilities.k2_RejectEntity</ID>
+  <Category>Utilities</Category>
+  <FunctionLevel>Product</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>PHP</Language>
+  <FunctionBody>$GLOBALS['rejectRecord'] = true;
+$GLOBALS['rejectEntity'] = true;
+$GLOBALS['rejectEntityDescription'] = $i_rejectDescription;
+
+$o_output =  $i_rejectDescription;
+
+return $o_output;</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <InputParams>
+    <Input name="i_rejectDescription" id="fi.Utilities.k2_RejectEntity.0" index="0" dataType="text" />
+  </InputParams>
+  <OutputParams>
+    <Output name="o_output" id="fo.Utilities.k2_RejectEntity.0" index="0" dataType="text" />
+  </OutputParams>
+</KFunction>

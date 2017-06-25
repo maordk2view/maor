@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2.4.0.6">
+  <Name>vdb</Name>
+  <RootView>merchant</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <EnableDataEncryption>false</EnableDataEncryption>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>merchant</Table>
+    <Table>contact</Table>
+    <Table>contact_address</Table>
+    <Table>merchant_address</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="merchant">
+      <Populations>
+        <Population id="query_merchant" name="query_merchant" order="1" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="contact">
+      <Populations>
+        <Population id="query_contact" name="query_contact" order="2" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="contact_address">
+      <Populations>
+        <Population id="query_contact_address" name="query_contact_address" order="3" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="merchant_address">
+      <Populations>
+        <Population id="query_merchant_address" name="query_merchant_address" order="2" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="false" name="FUN_REF_UDAC" />
+    <Item active="false" name="MS_REF_UDAC" />
+    <Item active="false" name="REF_SERVICE_AGREEMENT" />
+    <Item active="false" name="REF_YP_PRODUCT_TRN" />
+    <Item active="false" name="test_YP_REF_UDAC" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="337">
+      <From tableType="TableObject" table="merchant" column="merchant_id" columnId="tblCol_4d2bd7d9cea04af0a2483206c43cdc71" />
+      <To tableType="TableObject" table="contact" populationObjectName="query_contact" column="merchant_id" columnId="query_11.0" />
+    </Relation>
+    <Relation id="338">
+      <From tableType="TableObject" table="merchant" column="merchant_id" columnId="tblCol_4d2bd7d9cea04af0a2483206c43cdc71" />
+      <To tableType="TableObject" table="merchant_address" populationObjectName="query_merchant_address" column="merchant_id" columnId="query_10.0" />
+    </Relation>
+    <Relation id="339">
+      <From tableType="TableObject" table="contact" column="contact_id" columnId="tblCol_abd74ae5b6324a11a2f1862701bb072b" />
+      <To tableType="TableObject" table="contact_address" populationObjectName="query_contact_address" column="contact_id" columnId="query_9.0" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

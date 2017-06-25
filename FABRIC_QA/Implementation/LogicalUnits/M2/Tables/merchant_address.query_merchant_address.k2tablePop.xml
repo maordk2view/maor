@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_merchant_address</PopulationObjectName>
+  <TableName>merchant_address</TableName>
+  <ID>query_merchant_address</ID>
+  <RootItemID>query_10</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="merchant_id" id="query_10.0" dataType="Integer" index="0" />
+    <Arg name="contact_id" id="query_10.1" dataType="Integer" index="1" />
+    <Arg name="address_line1" id="query_10.2" dataType="Text" index="2" />
+    <Arg name="address_line2" id="query_10.3" dataType="Text" index="3" />
+    <Arg name="city" id="query_10.4" dataType="Text" index="4" />
+    <Arg name="state" id="query_10.5" dataType="Text" index="5" />
+    <Arg name="zip" id="query_10.6" dataType="Integer" index="6" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_10" name="query_merchant_address" nodeOrder="0" module="DBQuery" connName="MerchantInfo">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_10.0" name="merchant_id" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_10.1" name="contact_id" dataType="Integer" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_10.2" name="address_line1" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_10.3" name="address_line2" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_10.4" name="city" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_10.5" name="state" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_10.6" name="zip" dataType="Integer" index="6" />
+      </OutputsList>
+      <SQL><![CDATA[select * from merchant_address]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="18" fromNodeOrder="0" fromItemID="query_10" fromColID="query_10.0" toItemID="tbl_merchant_address" toColID="tblCol_b2d4bc49887d489b88606bdc34677108" />
+    <Link partId="19" fromNodeOrder="0" fromItemID="query_10" fromColID="query_10.1" toItemID="tbl_merchant_address" toColID="tblCol_32b2db306f7b4fc1bf68f24c6038c8ed" />
+    <Link partId="20" fromNodeOrder="0" fromItemID="query_10" fromColID="query_10.2" toItemID="tbl_merchant_address" toColID="tblCol_dce3e0acd67842958a1ebd235722a135" />
+    <Link partId="21" fromNodeOrder="0" fromItemID="query_10" fromColID="query_10.3" toItemID="tbl_merchant_address" toColID="tblCol_057fbe6836634cd0baf0211c2ec708da" />
+    <Link partId="22" fromNodeOrder="0" fromItemID="query_10" fromColID="query_10.4" toItemID="tbl_merchant_address" toColID="tblCol_a4d80a8875de4a099b3bfaff362e6101" />
+    <Link partId="23" fromNodeOrder="0" fromItemID="query_10" fromColID="query_10.5" toItemID="tbl_merchant_address" toColID="tblCol_d5319bd7c9064c50b128a37261e92d22" />
+    <Link partId="24" fromNodeOrder="0" fromItemID="query_10" fromColID="query_10.6" toItemID="tbl_merchant_address" toColID="tblCol_aeaafd52934648348fa761a354115bb6" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

@@ -1,0 +1,5 @@
+﻿<Graph version="1.2.0.0" name="vdb.k2vdb.bin" lastPartID="292">
+  <Node id="0" partID="0" name="web_log_test1" isRootView="true" pos="466 90" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"web_log_test1","TablePopulationPropertiesList":[{"ID":"pop_web_log_test1","Name":"pop_web_log_test1","Order":2}]}</TableProperties>
+  </Node>
+</Graph>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>CREDIT_DEBIT_LINK</Name>
+  <ID>tbl_CREDIT_DEBIT_LINK</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="BAN" id="tblCol_1c314bb5e8384f09b6c656fd78b8f8a4" index="0" datatype="Integer" mandatory="true" />
+    <Column name="SYS_CREATION_DATE" id="tblCol_8deb95b492e24d689b8d6fa3e35d4ef4" index="1" datatype="Text" mandatory="true" />
+    <Column name="SYS_UPDATE_DATE" id="tblCol_ec8e9cb959544172aee99e4ecb840812" index="2" datatype="Text" />
+    <Column name="OPERATOR_ID" id="tblCol_7416b79978a84c2484936b1d8098082f" index="3" datatype="Integer" />
+    <Column name="APPLICATION_ID" id="tblCol_8947ea9e315645fe9eae10d281dd607b" index="4" datatype="Text" />
+    <Column name="DL_SERVICE_CODE" id="tblCol_c4352a2a87484f89ba97864bdf93f8e5" index="5" datatype="Text" mandatory="true" />
+    <Column name="DL_UPDATE_STAMP" id="tblCol_4c8fc5c27a0048cd9a12b7a5e0601da9" index="6" datatype="Integer" />
+    <Column name="LINK_AMT" id="tblCol_9fa030dfd3f6408ebdd069418a27a1c6" index="7" datatype="Real" mandatory="true" />
+    <Column name="CREDIT_TYPE" id="tblCol_6dec4dd0b4d9417fbde974c3d3c402d9" index="8" datatype="Text" mandatory="true" />
+    <Column name="CREDIT_SEQ_NO" id="tblCol_a0b989b421ea4177be7673089937c539" index="9" datatype="Integer" />
+    <Column name="INV_SEQ_NO" id="tblCol_ebba1b64150f4d3dbb550509cd3359d2" index="10" datatype="Integer" />
+    <Column name="LINK_ACTV_CODE" id="tblCol_591b009ea14d4bf98cc4572f137abea4" index="11" datatype="Text" />
+    <Column name="LINK_ACTV_SEQ_NO" id="tblCol_9e0c942378794abebbc47803b2c1e9ee" index="12" datatype="Integer" />
+    <Column name="LINK_ENT_SEQ_NO" id="tblCol_a0b0e3e6f3384d5da4b989219f968249" index="13" datatype="Integer" />
+    <Column name="UNLINK_ACTV_CODE" id="tblCol_0b2aa11dc6b14b6eb91529c450f122c3" index="14" datatype="Text" />
+    <Column name="UNLINK_ACTV_SEQ_NO" id="tblCol_07447aeada6e40e38be4ddffce9c665a" index="15" datatype="Integer" />
+    <Column name="UNLINK_ENT_SEQ_NO" id="tblCol_5d943fa832694d01b0cccb133b4c3769" index="16" datatype="Integer" />
+    <Column name="CREDIT_POSTING_DATE" id="tblCol_980683d962ae49f98527fc7676bacc7c" index="17" datatype="Text" />
+    <Column name="CONV_RUN_NO" id="tblCol_2e0820fd32f4418db1c6051732643574" index="18" datatype="Integer" />
+    <Column name="SPECIFIC_CAAP_IND" id="tblCol_ac9c3bfdb29640eb80fb7578e409ca52" index="19" datatype="Text" />
+    <Column name="LINK_RANK" id="tblCol_56f8e3b4a49547aba52c2bedfdf873c1" index="20" datatype="Integer" />
+    <Column name="CAAP_LEVEL" id="tblCol_e49202f3bf984d87bf2c6f2efb98e700" index="21" datatype="Integer" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

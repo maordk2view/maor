@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Translation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>trnUdac</Name>
+  <InputNotFoundAction>Use_Default</InputNotFoundAction>
+  <SchemaColumns>
+    <Column>
+      <Title>IN_UDAC</Title>
+      <ColumnName>IN_UDAC</ColumnName>
+      <Direction>Input</Direction>
+      <Type>Text</Type>
+      <Length>10</Length>
+      <Format />
+      <Index>0</Index>
+      <AllowNULL>true</AllowNULL>
+    </Column>
+    <Column>
+      <Title>IN_VER</Title>
+      <ColumnName>IN_VER</ColumnName>
+      <Direction>Input</Direction>
+      <Type>Integer</Type>
+      <Length>1</Length>
+      <Format />
+      <Index>1</Index>
+      <AllowNULL>true</AllowNULL>
+    </Column>
+    <Column>
+      <Title>OUT_UDAC</Title>
+      <ColumnName>OUT_UDAC</ColumnName>
+      <Direction>Output</Direction>
+      <Type>Text</Type>
+      <Length>10</Length>
+      <Format />
+      <Index>0</Index>
+      <AllowNULL>true</AllowNULL>
+    </Column>
+  </SchemaColumns>
+  <IsImportFromSQL>true</IsImportFromSQL>
+  <IsDynamicData>false</IsDynamicData>
+  <DynamicDbConnName>SQLSERVER_SOURCE</DynamicDbConnName>
+  <DynamicSqlQuery>SELECT UDAC_CODE, UDAC_VERSION, UDAC_DESC FROM YP_REF_UDAC</DynamicSqlQuery>
+  <ColumnMapping>
+    <Map importedColumn="UDAC_CODE" translationColumn="IN_UDAC" />
+    <Map importedColumn="UDAC_VERSION" translationColumn="IN_VER" />
+    <Map importedColumn="UDAC_DESC" translationColumn="OUT_UDAC" />
+  </ColumnMapping>
+  <TranslationData>
+    <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="trnUdac" msdata:UseCurrentLocale="true">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="trnUdac">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IN_UDAC" default="" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="IN_VER" type="xs:long" minOccurs="0" />
+                  <xs:element name="OUT_UDAC" default="" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+      <DocumentElement>
+        <trnUdac diffgr:id="trnUdac1" msdata:rowOrder="0">
+          <IN_UDAC>CPBW</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV CPBW</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac2" msdata:rowOrder="1">
+          <IN_UDAC>CCPW</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV CCPW</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac3" msdata:rowOrder="2">
+          <IN_UDAC>LPZ</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV LPZ</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac4" msdata:rowOrder="3">
+          <IN_UDAC>DCCRW</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV DCCRW</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac5" msdata:rowOrder="4">
+          <IN_UDAC>N2LKN</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV N2LKN</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac6" msdata:rowOrder="5">
+          <IN_UDAC>OCBW</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV OCBW</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac7" msdata:rowOrder="6">
+          <IN_UDAC>PLA</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV PLA</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac8" msdata:rowOrder="7">
+          <IN_UDAC>CCRN</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV CCRN</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac9" msdata:rowOrder="8">
+          <IN_UDAC>N1LKN</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV N1LKN</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac10" msdata:rowOrder="9">
+          <IN_UDAC>DTCFP</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV DTCFP</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac11" msdata:rowOrder="10">
+          <IN_UDAC>3LKN</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV 3LKN</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac12" msdata:rowOrder="11">
+          <IN_UDAC>CCBW</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV CCBW</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac13" msdata:rowOrder="12">
+          <IN_UDAC>BRO</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV BRO</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac14" msdata:rowOrder="13">
+          <IN_UDAC>CCTN</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV CCTN</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac15" msdata:rowOrder="14">
+          <IN_UDAC>SCFP</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV SCFP</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac16" msdata:rowOrder="15">
+          <IN_UDAC>RIGRA</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV RIGRA</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac17" msdata:rowOrder="16">
+          <IN_UDAC>1LKN</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV 1LKN</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac18" msdata:rowOrder="17">
+          <IN_UDAC>DTCKN</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV DTCKN</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac19" msdata:rowOrder="18">
+          <IN_UDAC>OCFP</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV OCFP</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac20" msdata:rowOrder="19">
+          <IN_UDAC>BROPL</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV BROPL</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac21" msdata:rowOrder="20">
+          <IN_UDAC>C2CCP</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV C2CCP</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac22" msdata:rowOrder="21">
+          <IN_UDAC>DCCBW</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV DCCBW</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac23" msdata:rowOrder="22">
+          <IN_UDAC>DCCRN</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV DCCRN</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac24" msdata:rowOrder="23">
+          <IN_UDAC>DCCGW</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV DCCGW</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac25" msdata:rowOrder="24">
+          <IN_UDAC>LVB</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV LVB</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac26" msdata:rowOrder="25">
+          <IN_UDAC>TCCGW</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV TCCGW</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac27" msdata:rowOrder="26">
+          <IN_UDAC>LTB</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV LTB</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac28" msdata:rowOrder="27">
+          <IN_UDAC>TCCKN</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV TCCKN</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac29" msdata:rowOrder="28">
+          <IN_UDAC>SMSB2</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV SMSB2</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac30" msdata:rowOrder="29">
+          <IN_UDAC>PAO</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV PAO</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac31" msdata:rowOrder="30">
+          <IN_UDAC>CCYW</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV CCYW</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac32" msdata:rowOrder="31">
+          <IN_UDAC>OCKN</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV OCKN</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac33" msdata:rowOrder="32">
+          <IN_UDAC>DCCBN</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV DCCBN</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac34" msdata:rowOrder="33">
+          <IN_UDAC>CCKN</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV CCKN</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac35" msdata:rowOrder="34">
+          <IN_UDAC>SBAKN</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV SBAKN</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac36" msdata:rowOrder="35">
+          <IN_UDAC>TCRN</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV TCRN</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac37" msdata:rowOrder="36">
+          <IN_UDAC>CCFP</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV CCFP</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac38" msdata:rowOrder="37">
+          <IN_UDAC>TTCGN</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV TTCGN</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac39" msdata:rowOrder="38">
+          <IN_UDAC>DEPB</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV DEPB</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac40" msdata:rowOrder="39">
+          <IN_UDAC>R1LKN</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV R1LKN</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac41" msdata:rowOrder="40">
+          <IN_UDAC>3LBN</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV 3LBN</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac42" msdata:rowOrder="41">
+          <IN_UDAC>RGR</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV RGR</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac43" msdata:rowOrder="42">
+          <IN_UDAC>LPIP</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV LPIP</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac44" msdata:rowOrder="43">
+          <IN_UDAC>DCCKN</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV DCCKN</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac45" msdata:rowOrder="44">
+          <IN_UDAC>OCGN</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV OCGN</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac46" msdata:rowOrder="45">
+          <IN_UDAC>DCCOW</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV DCCOW</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac47" msdata:rowOrder="46">
+          <IN_UDAC>TCCOW</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV TCCOW</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac48" msdata:rowOrder="47">
+          <IN_UDAC>LTD</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV LTD</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac49" msdata:rowOrder="48">
+          <IN_UDAC>DCCFP</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV DCCFP</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac50" msdata:rowOrder="49">
+          <IN_UDAC>PMCR</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV PMCR</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac51" msdata:rowOrder="50">
+          <IN_UDAC>SMSC2</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV SMSC2</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac52" msdata:rowOrder="51">
+          <IN_UDAC>TCCFP</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV TCCFP</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac53" msdata:rowOrder="52">
+          <IN_UDAC>CCBN</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV CCBN</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac54" msdata:rowOrder="53">
+          <IN_UDAC>CPFP</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV CPFP</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac55" msdata:rowOrder="54">
+          <IN_UDAC>2LBN</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV 2LBN</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac56" msdata:rowOrder="55">
+          <IN_UDAC>OCBN</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV OCBN</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac57" msdata:rowOrder="56">
+          <IN_UDAC>RPIP</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV RPIP</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac58" msdata:rowOrder="57">
+          <IN_UDAC>CCRW</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV CCRW</OUT_UDAC>
+        </trnUdac>
+        <trnUdac diffgr:id="trnUdac59" msdata:rowOrder="58">
+          <IN_UDAC>SRL</IN_UDAC>
+          <IN_VER>1</IN_VER>
+          <OUT_UDAC>CONV SRL</OUT_UDAC>
+        </trnUdac>
+      </DocumentElement>
+    </diffgr:diffgram>
+  </TranslationData>
+</Translation>

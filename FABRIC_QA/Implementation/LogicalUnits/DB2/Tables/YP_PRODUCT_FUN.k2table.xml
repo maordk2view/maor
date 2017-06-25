@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>YP_PRODUCT_FUN</Name>
+  <ID>tbl_YP_PRODUCT_FUN</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="CUSTOMER_ID" id="tblCol_a587d6b4e268449fbc0a82e2b01fed66" index="0" datatype="Long" />
+    <Column name="PRODUCT_CODE" id="tblCol_3d3265f5f2df4ceeac9999bc41af05c7" index="1" datatype="String" />
+    <Column name="PRODUCT_ISSUE_NUM" id="tblCol_c2e759ae64eb444ebb1c4a91203d2b4b" index="2" datatype="Long" />
+    <Column name="PRODUCT_STATUS" id="tblCol_d7d8918f0685404ebe27a22f342252a4" index="3" datatype="Long" />
+    <Column name="RETIREMENT_STATUS" id="tblCol_c8f2ad96fcd842f3b1b7de4b79e47492" index="4" datatype="String" />
+    <Column name="PROSPECT_CODE" id="tblCol_24d8ca62585b401b9796e39b28b36686" index="5" datatype="Long" />
+    <Column name="PROSPECT_AGE" id="tblCol_83e60cd228ca4011907f433fc97a5761" index="6" datatype="Long" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

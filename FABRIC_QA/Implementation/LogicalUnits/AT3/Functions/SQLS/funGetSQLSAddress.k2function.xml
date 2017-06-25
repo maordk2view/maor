@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>funGetSQLSAddress</Name>
+  <ID>SQLS.funGetSQLSAddress</ID>
+  <Category>SQLS</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String sql = "SELECT * FROM dbo.YP_ADDRESS WHERE CUSTOMER_ID = ?";
+Object[] valuesArr = {i_cust_id};
+ResultSetWrapper rs = DBQuery("SQLSERVER_SOURCE", sql, valuesArr);
+
+for(Object[] row : rs) {
+	yield (row);
+}
+</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>true</IsRootFunction>
+  <InputParams>
+    <Input name="i_cust_id" id="fi.SQLS.funGetSQLSAddress.0" index="0" dataType="Integer">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="CUSTOMER_ID" id="fo.SQLS.funGetSQLSAddress.0" index="0" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="STREET" id="fo.SQLS.funGetSQLSAddress.1" index="1" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="CITY" id="fo.SQLS.funGetSQLSAddress.2" index="2" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="STATE" id="fo.SQLS.funGetSQLSAddress.3" index="3" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="COUNTRY" id="fo.SQLS.funGetSQLSAddress.4" index="4" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="ZIP_CODE" id="fo.SQLS.funGetSQLSAddress.5" index="5" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

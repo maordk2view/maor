@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>STAM</Name>
+  <ID>tbl_STAM</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="STAM" id="tblCol_6d237fb36c794458bf13d1a654ae9e8b" index="0" datatype="text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

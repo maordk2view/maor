@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBConn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Sqlite_SOURCE" type="SQLite" version="2.5.7.0">
+  <Active>true</Active>
+  <DataBase>C:\Users\Mhanna\workspace\cdbms_trunk\test\sqlite_repo\ALL_CUST.1.db</DataBase>
+  <Memory>false</Memory>
+  <AttachedDatabases />
+</DBConn>

@@ -1,0 +1,12 @@
+﻿<Graph name="YP_ADDRESS.query_YP_ADDRESS.k2tablePop.bin" lastPartID="35">
+  <TableNode partID="0" name="YP_ADDRESS" pos="356 9.744797" width="309.3241" />
+  <DBQueryNode partID="9" name="SybaseASE" pos="10 8.78125" size="253 132.4375" isRoot="true">
+    <DBQuery>{"Name":"query_YP_ADDRESS","ID":"query_query_YP_ADDRESS","ConnName":"SybaseASE","SQL":"SELECT * FROM YP_ADDRESS","ColumnsList":[{"ID":"queryCol_0","Name":"CUSTOMER_ID","DataType":"Real","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"STREET","DataType":"Text","Index":1,"IsInputArgument":true},{"ID":"queryCol_2","Name":"CITY","DataType":"Text","Index":2,"IsInputArgument":true},{"ID":"queryCol_3","Name":"STATE","DataType":"Text","Index":3,"IsInputArgument":true},{"ID":"queryCol_4","Name":"COUNTRY","DataType":"Text","Index":4,"IsInputArgument":true},{"ID":"queryCol_5","Name":"ZIP_CODE","DataType":"Text","Index":5,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="16" from="0" to="1" pointsArr="263 44.81771 273 44.81771 346 40.7812538 356 40.7812538" fromNodePartID="9" fromNodeColumnName="CUSTOMER_ID" toNodePartID="0" toNodeColumnName="CUSTOMER_ID" />
+  <Link partID="17" from="2" to="3" pointsArr="263 56.890625 273 56.890625 346 52.85417 356 52.85417" fromNodePartID="9" fromNodeColumnName="STREET" toNodePartID="0" toNodeColumnName="STREET" />
+  <Link partID="18" from="4" to="5" pointsArr="263 68.96354 273 68.96354 346 64.9270859 356 64.9270859" fromNodePartID="9" fromNodeColumnName="CITY" toNodePartID="0" toNodeColumnName="CITY" />
+  <Link partID="19" from="6" to="7" pointsArr="263 81.03645 273 81.03645 346 77 356 77" fromNodePartID="9" fromNodeColumnName="STATE" toNodePartID="0" toNodeColumnName="STATE" />
+  <Link partID="20" from="8" to="9" pointsArr="263 93.109375 273 93.109375 346 89.0729141 356 89.0729141" fromNodePartID="9" fromNodeColumnName="COUNTRY" toNodePartID="0" toNodeColumnName="COUNTRY" />
+  <Link partID="21" from="10" to="11" pointsArr="263 105.182281 273 105.182281 346 101.145828 356 101.145828" fromNodePartID="9" fromNodeColumnName="ZIP_CODE" toNodePartID="0" toNodeColumnName="ZIP_CODE" />
+</Graph>

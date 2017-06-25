@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>NVL</Name>
+  <ID>ORACLE.NVL</ID>
+  <Category>ORACLE</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>true</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc>NVL is the Oracle equivelent of IFNULL
+If the value is null, replace it with a predifined replacement value
+</Desc>
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>if(value==null)
+	return  replacement;
+else
+	return value;
+</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="value" id="fi.ORACLE.NVL.0" index="0" dataType="String">
+      <Comment>Value that might be null</Comment>
+    </Input>
+    <Input name="replacement" id="fi.ORACLE.NVL.1" index="1" dataType="String">
+      <Comment>Replace with this when value is null</Comment>
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="retVal" id="fo.ORACLE.NVL.0" index="0" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

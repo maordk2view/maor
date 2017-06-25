@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Production_UnitMeasure</Name>
+  <ID>tbl_Production_UnitMeasure</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="UnitMeasureCode" id="tblCol_774e9d57678c4899a97605e4e0172dc9" index="0" datatype="Text" mandatory="true" />
+    <Column name="Name" id="tblCol_50cb2ee9e67c436a8a91765cd6004454" index="1" datatype="Text" mandatory="true" />
+    <Column name="ModifiedDate" id="tblCol_67989b6fb9764aa3ac858531b860bbf9" index="2" datatype="Text" mandatory="true" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_774e9d57678c4899a97605e4e0172dc9" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

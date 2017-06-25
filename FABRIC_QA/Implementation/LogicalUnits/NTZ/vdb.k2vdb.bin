@@ -1,0 +1,15 @@
+﻿<Graph version="2.5.3.0" name="vdb.k2vdb.bin" lastPartID="899">
+  <Node id="0" partID="53" name="YP_CUSTOMER" isRootView="true" pos="7 64" size="257 138.546844" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"YP_CUSTOMER","TablePopulationPropertiesList":[{"ID":"query_YP_CUSTOMER","Name":"query_YP_CUSTOMER","Order":1}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="106" name="YP_PRODUCT" isRootView="false" pos="321 5" size="257 138.54686" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"YP_PRODUCT","TablePopulationPropertiesList":[{"ID":"query_YP_PRODUCT","Name":"query_YP_PRODUCT","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="2" partID="209" name="YP_ITEM" isRootView="false" pos="557 212" size="257 138.5469" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"YP_ITEM","TablePopulationPropertiesList":[{"ID":"query_YP_ITEM","Name":"query_YP_ITEM","Order":3}]}</TableProperties>
+  </Node>
+  <Link from="3" to="4" partID="205" linkType="Database" pointsArr="264 110.54557 274 110.54557 311 51.54557 321 51.54557" fromNodePartID="53" fromNodeColumnName="CUSTOMER_ID" toNodePartID="106" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="query_YP_PRODUCT" />
+  <Link from="5" to="6" partID="337" linkType="Database" pointsArr="578 51.54557 588 51.54557 547 258.5456 557 258.5456" fromNodePartID="106" fromNodeColumnName="CUSTOMER_ID" toNodePartID="209" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="query_YP_ITEM" />
+  <Link from="7" to="8" partID="338" linkType="Database" pointsArr="578 67.63672 588 67.63672 547 274.636719 557 274.636719" fromNodePartID="106" fromNodeColumnName="PRODUCT_CODE" toNodePartID="209" toNodeColumnName="PRODUCT_CODE" toNodePopulationObjectName="query_YP_ITEM" />
+  <Link from="9" to="10" partID="339" linkType="Database" pointsArr="578 83.72786 588 83.72786 547 290.727844 557 290.727844" fromNodePartID="106" fromNodeColumnName="PRODUCT_ISSUE_NUM" toNodePartID="209" toNodeColumnName="PRODUCT_ISSUE_NUM" toNodePopulationObjectName="query_YP_ITEM" />
+</Graph>

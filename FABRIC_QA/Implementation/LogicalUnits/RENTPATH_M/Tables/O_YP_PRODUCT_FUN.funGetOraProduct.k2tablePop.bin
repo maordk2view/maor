@@ -1,0 +1,65 @@
+﻿<Graph name="O_YP_PRODUCT_FUN.funGetOraProduct.k2tablePop.bin" lastPartID="437">
+  <TableNode partID="0" name="O_YP_PRODUCT_FUN" pos="454.218018 92.0156555" width="253" />
+  <FunctionMapNode id="0" L0="5" R0="6" R1="7" R2="8" R3="9" R4="10" R5="11" R6="12" R7="13" R8="14" R9="15" R10="16" R11="17" R12="18" R13="19" partID="3" topLabel="funGetOraProduct (3)" pos="10.2257462 77.94401" size="150.880035 194.111969" isRoot="true">
+    <KFunction>{"Name":"funGetOraProduct","ID":"f_3","Category":"ORA","FunctionLevel":0,"RegisterAsLuDbFunction":false,"SaveToDLUR":false,"ApiFunction":false,"RequiresLuReference":false,"Desc":"","Auther":{"Name":"","ID":""},"Language":1,"FunctionBody":"String sql = \"SELECT CUSTOMER_ID, PRODUCT_CODE, PRODUCT_ISSUE_NUM, PRODUCT_STATUS, RETIREMENT_STATUS, ACTIVITY_TYPE, ACTIVITY_DATE, NIR_PRODUCT_IND, NISD_AMOUNT, BOTS_AMOUNT, DISCOUNT_AMT, CONVERSION_IND FROM YP_PRODUCT WHERE CUSTOMER_ID=?\";\nObject[] valuesArr = {i_cust_id};\nResultSetWrapper rs = DBQuery(\"YP_TEST\", sql, valuesArr);\n\nfor(Object[] row : rs) {\n\tObject [] row2 = Arrays.copyOf(row,row.length+2);\n\trow2[row.length] = concat(row[1].toString(), \"_S1\");\n\tString[] trnValues = {row[1].toString(), \"1\"};\n\tMap trn = getTranslationValues(\"trnProduct\", trnValues);\n\trow2[row.length+1] = (String) trn.get(\"PRD_CD_OUT\");\n\t\n    yield(row2);\n}\n","IsSyntaxValid":true,"IsRootFunction":true,"inputParams":[{"Name":"i_cust_id","ID":"fi_3.0","Index":0,"DataType":"Integer","Comment":""}],"outputParams":[{"Name":"CUSTOMER_ID","ID":"fo_3.0","Index":0,"DataType":"Long","Comment":""},{"Name":"PRODUCT_CODE","ID":"fo_3.1","Index":1,"DataType":"String","Comment":""},{"Name":"PRODUCT_ISSUE_NUM","ID":"fo_3.2","Index":2,"DataType":"Long","Comment":""},{"Name":"PRODUCT_STATUS","ID":"fo_3.3","Index":3,"DataType":"Long","Comment":""},{"Name":"RETIREMENT_STATUS","ID":"fo_3.4","Index":4,"DataType":"String","Comment":""},{"Name":"ACTIVITY_TYPE","ID":"fo_3.5","Index":5,"DataType":"Long","Comment":""},{"Name":"ACTIVITY_DATE","ID":"fo_3.6","Index":6,"DataType":"String","Comment":""},{"Name":"NIR_PRODUCT_IND","ID":"fo_3.7","Index":7,"DataType":"String","Comment":""},{"Name":"NISD_AMOUNT","ID":"fo_3.8","Index":8,"DataType":"Double","Comment":""},{"Name":"BOTS_AMOUNT","ID":"fo_3.9","Index":9,"DataType":"Double","Comment":""},{"Name":"DISCOUNT_AMT","ID":"fo_3.10","Index":10,"DataType":"Double","Comment":""},{"Name":"CONVERSION_IND","ID":"fo_3.11","Index":11,"DataType":"String","Comment":""},{"Name":"S1","ID":"fo_3.12","Index":12,"DataType":"String","Comment":""},{"Name":"S2","ID":"fo_3.13","Index":13,"DataType":"String","Comment":""}]}</KFunction>
+  </FunctionMapNode>
+  <FunctionMapNode id="1" L0="20" L1="21" R0="22" partID="98" topLabel="k2_mod (98)" pos="234.103592 349.325623" size="147.228836 51.7444458" isRoot="false">
+    <KFunction>{"Name":"k2_mod","ID":"f_98","Category":"Math","FunctionLevel":1,"RegisterAsLuDbFunction":false,"SaveToDLUR":false,"ApiFunction":false,"RequiresLuReference":false,"Desc":"Modulo of a number","Auther":{"Name":"","ID":""},"Language":1,"FunctionBody":"if(i_number == null || i_mod == null)\n\treturn null;\nreturn i_number % i_mod;","IsSyntaxValid":true,"IsRootFunction":false,"inputParams":[{"Name":"i_number","ID":"fi_98.0","Index":0,"DataType":"Integer","Comment":"","MapDefaultValue":"9"},{"Name":"i_mod","ID":"fi_98.1","Index":1,"DataType":"Integer","Comment":"","MapDefaultValue":"5"}],"outputParams":[{"Name":"o_mod_num","ID":"fo_98.0","Index":0,"DataType":"Integer","Comment":""}]}</KFunction>
+  </FunctionMapNode>
+  <FunctionMapNode id="2" L0="23" L1="24" L2="25" L3="26" L4="27" R0="28" partID="102" topLabel="k2_plus (102)" pos="254.718018 457.272156" size="106 85.45572" isRoot="false">
+    <KFunction>{"Name":"k2_plus","ID":"f_102","Category":"Math","FunctionLevel":1,"RegisterAsLuDbFunction":false,"SaveToDLUR":false,"ApiFunction":false,"RequiresLuReference":false,"Desc":"sum up to five parameters to get a result","Auther":{"Name":"","ID":""},"Language":1,"FunctionBody":"if (i_num1 == null) i_num1 = 0d;\nif (i_num2 == null) i_num2 = 0d;\nif (i_num3 == null) i_num3 = 0d;\nif (i_num4 == null) i_num4 = 0d;\nif (i_num5 == null) i_num5 = 0d;\n\nreturn i_num1 + i_num2 + i_num3 + i_num4 + i_num5;","IsSyntaxValid":true,"IsRootFunction":false,"inputParams":[{"Name":"i_num1","ID":"fi_102.0","Index":0,"DataType":"Double","Comment":"","MapDefaultValue":"1.0"},{"Name":"i_num2","ID":"fi_102.1","Index":1,"DataType":"Double","Comment":"","MapDefaultValue":"2.0"},{"Name":"i_num3","ID":"fi_102.2","Index":2,"DataType":"Double","Comment":"","MapDefaultValue":"3.0"},{"Name":"i_num4","ID":"fi_102.3","Index":3,"DataType":"Double","Comment":""},{"Name":"i_num5","ID":"fi_102.4","Index":4,"DataType":"Double","Comment":""}],"outputParams":[{"Name":"o_num","ID":"fo_102.0","Index":0,"DataType":"Double","Comment":""}]}</KFunction>
+  </FunctionMapNode>
+  <ConstantMapNode partID="167" topLabel="C1" pos="293.217773 752.454468" size="32.5208435 45.0911255">
+    <KDataValue>{"ID":"c.167","DataValue":"SUC"}</KDataValue>
+  </ConstantMapNode>
+  <ConstantMapNode partID="169" topLabel="C2" pos="307.528931 827.454468" size="24.828125 45.0911255">
+    <KDataValue>{"ID":"c.169","DataValue":"1.0"}</KDataValue>
+  </ConstantMapNode>
+  <GlobalMapNode id="3" R0="29" partID="173" topLabel="Global - SYSTEM" pos="31.2180176 469.4544" size="203 45.0911446">
+    <MajorGlobalItem>{"Category":"QA","Name":"SYSTEM","Value":"QA2","Comment":"QA Testing"}</MajorGlobalItem>
+  </GlobalMapNode>
+  <GlobalMapNode id="4" R0="30" partID="176" topLabel="Global - LU_NAME" pos="206.218018 677.4544" size="203 45.0911446">
+    <MajorGlobalItem>{"Category":"LU","Name":"LU_NAME","Value":"AT1"}</MajorGlobalItem>
+  </GlobalMapNode>
+  <ConstantMapNode partID="291" topLabel="C3" pos="84.2088 1052.45435" size="25.4791641 45.0911865">
+    <KDataValue>{"ID":"c.291","DataValue":"Bla"}</KDataValue>
+  </ConstantMapNode>
+  <ConstantMapNode partID="295" topLabel="D1" pos="307.528931 902.454468" size="24.828125 45.0911255">
+    <KDataValue>{"ID":"c.295","DataValue":"2.0"}</KDataValue>
+  </ConstantMapNode>
+  <ConstantMapNode partID="298" topLabel="C5" pos="307.528931 1052.45435" size="24.828125 45.0911865">
+    <KDataValue>{"ID":"c.298","DataValue":"2.0"}</KDataValue>
+  </ConstantMapNode>
+  <ConstantMapNode partID="309" topLabel="D4" pos="617.2139 765" size="43.192688 45.0911255">
+    <KDataValue>{"ID":"c.309","DataValue":"TEST1"}</KDataValue>
+  </ConstantMapNode>
+  <ConstantMapNode partID="315" topLabel="D5" pos="538.3994 814" size="23 45.0911255">
+    <KDataValue>{"ID":"c.315","DataValue":"1"}</KDataValue>
+  </ConstantMapNode>
+  <Link partID="29" from="6" to="31" pointsArr="147.038239 99.07161 157.038239 99.07161 444.218018 123.052116 454.218018 123.052116" fromNodePartID="3" fromNodeColumnName="CUSTOMER_ID" toNodePartID="0" toNodeColumnName="CUSTOMER_ID" />
+  <Link partID="30" from="7" to="32" pointsArr="147.038239 111.144524 157.038239 111.144524 444.218018 135.125031 454.218018 135.125031" fromNodePartID="3" fromNodeColumnName="PRODUCT_CODE" toNodePartID="0" toNodeColumnName="PRODUCT_CODE" />
+  <Link partID="31" from="8" to="33" pointsArr="147.038239 123.217438 157.038239 123.217438 444.218018 147.197937 454.218018 147.197937" fromNodePartID="3" fromNodeColumnName="PRODUCT_ISSUE_NUM" toNodePartID="0" toNodeColumnName="PRODUCT_ISSUE_NUM" />
+  <Link partID="32" from="9" to="34" pointsArr="147.038239 135.290344 157.038239 135.290344 444.218018 159.270859 454.218018 159.270859" fromNodePartID="3" fromNodeColumnName="PRODUCT_STATUS" toNodePartID="0" toNodeColumnName="PRODUCT_STATUS" />
+  <Link partID="33" from="10" to="35" pointsArr="147.038239 147.363266 157.038239 147.363266 444.218018 171.343781 454.218018 171.343781" fromNodePartID="3" fromNodeColumnName="RETIREMENT_STATUS" toNodePartID="0" toNodeColumnName="RETIREMENT_STATUS" />
+  <Link partID="34" from="11" to="36" pointsArr="147.038239 159.436188 157.038239 159.436188 444.218018 183.416687 454.218018 183.416687" fromNodePartID="3" fromNodeColumnName="ACTIVITY_TYPE" toNodePartID="0" toNodeColumnName="ACTIVITY_TYPE" />
+  <Link partID="35" from="12" to="37" pointsArr="147.038239 171.5091 157.038239 171.5091 444.218018 195.489609 454.218018 195.489609" fromNodePartID="3" fromNodeColumnName="ACTIVITY_DATE" toNodePartID="0" toNodeColumnName="ACTIVITY_DATE" />
+  <Link partID="36" from="13" to="38" pointsArr="147.038239 183.582031 157.038239 183.582031 444.218018 207.562531 454.218018 207.562531" fromNodePartID="3" fromNodeColumnName="NIR_PRODUCT_IND" toNodePartID="0" toNodeColumnName="NIR_PRODUCT_IND" />
+  <Link partID="37" from="14" to="39" pointsArr="147.038239 195.654938 157.038239 195.654938 444.218018 219.635452 454.218018 219.635452" fromNodePartID="3" fromNodeColumnName="NISD_AMOUNT" toNodePartID="0" toNodeColumnName="NISD_AMOUNT" />
+  <Link partID="38" from="15" to="40" pointsArr="147.038239 207.727875 157.038239 207.727875 444.218018 231.708374 454.218018 231.708374" fromNodePartID="3" fromNodeColumnName="BOTS_AMOUNT" toNodePartID="0" toNodeColumnName="BOTS_AMOUNT" />
+  <Link partID="39" from="16" to="41" pointsArr="147.038239 219.800781 157.038239 219.800781 444.218018 243.7813 454.218018 243.7813" fromNodePartID="3" fromNodeColumnName="DISCOUNT_AMT" toNodePartID="0" toNodeColumnName="DISCOUNT_AMT" />
+  <Link partID="40" from="17" to="42" pointsArr="147.038239 231.873688 157.038239 231.873688 444.218018 255.8542 454.218018 255.8542" fromNodePartID="3" fromNodeColumnName="CONVERSION_IND" toNodePartID="0" toNodeColumnName="CONVERSION_IND" />
+  <Link partID="109" from="28" to="43" pointsArr="360.718018 502.5456 370.718018 502.5456 444.218018 292.072937 454.218018 292.072937" fromNodePartID="102" fromNodeColumnName="o_num" toNodePartID="0" toNodeColumnName="R1" />
+  <Link partID="110" from="22" to="44" pointsArr="381.332428 377.743439 391.332428 377.743439 444.218018 280 454.218018 280" fromNodePartID="98" fromNodeColumnName="o_mod_num" toNodePartID="0" toNodeColumnName="I1" />
+  <Link partID="115" from="19" to="45" pointsArr="147.038239 256.0195 157.038239 256.0195 444.218018 304.1458 454.218018 304.1458" fromNodePartID="3" fromNodeColumnName="S2" toNodePartID="0" toNodeColumnName="S2" />
+  <Link partID="116" from="18" to="46" pointsArr="147.038239 243.9466 157.038239 243.9466 444.218018 267.927124 454.218018 267.927124" fromNodePartID="3" fromNodeColumnName="S1" toNodePartID="0" toNodeColumnName="S1" />
+  <Link partID="119" from="8" to="20" pointsArr="147.038239 123.217438 157.038239 123.217438 224.103592 371.70697 234.103592 371.70697" fromNodePartID="3" fromNodeColumnName="PRODUCT_ISSUE_NUM" toNodePartID="98" toNodeColumnName="i_number" />
+  <Link partID="120" from="8" to="23" pointsArr="147.038239 123.217438 157.038239 123.217438 244.718018 478.39975 254.718018 478.39975" fromNodePartID="3" fromNodeColumnName="PRODUCT_ISSUE_NUM" toNodePartID="102" toNodeColumnName="i_num1" />
+  <Link partID="171" from="47" to="48" pointsArr="332.357056 852.5456 342.357056 852.5456 444.218018 352.437439 454.218018 352.437439" fromNodePartID="169" fromNodeColumnName="1.0" toNodePartID="0" toNodeColumnName="C2" />
+  <Link partID="172" from="49" to="50" pointsArr="325.738617 777.5456 335.738617 777.5456 444.218018 340.364563 454.218018 340.364563" fromNodePartID="167" fromNodeColumnName="SUC" toNodePartID="0" toNodeColumnName="C1" />
+  <Link partID="175" from="29" to="51" pointsArr="234.218018 494.545563 244.218018 494.545563 444.218018 316.21875 454.218018 316.21875" fromNodePartID="173" fromNodeColumnName="SYSTEM" toNodePartID="0" toNodeColumnName="G1" />
+  <Link partID="178" from="30" to="52" pointsArr="409.218018 702.545532 419.218018 702.545532 444.218018 328.291626 454.218018 328.291626" fromNodePartID="176" fromNodeColumnName="LU_NAME" toNodePartID="0" toNodeColumnName="G2" />
+  <Link partID="183" from="16" to="53" pointsArr="147.038239 219.800781 157.038239 219.800781 444.218018 376.583282 454.218018 376.583282" fromNodePartID="3" fromNodeColumnName="DISCOUNT_AMT" toNodePartID="0" toNodeColumnName="D2" />
+  <Link partID="297" from="54" to="55" pointsArr="332.357056 927.5456 342.357056 927.5456 444.218018 364.510376 454.218018 364.510376" fromNodePartID="295" fromNodeColumnName="2.0" toNodePartID="0" toNodeColumnName="D1" />
+  <Link partID="312" from="56" to="57" pointsArr="660.4066 790.0911 670.4066 790.0911 444.218018 388.656219 454.218018 388.656219" fromNodePartID="309" fromNodeColumnName="TEST1" toNodePartID="0" toNodeColumnName="D3" />
+  <Link partID="314" from="56" to="58" pointsArr="660.4066 790.0911 670.4066 790.0911 444.218018 412.8021 454.218018 412.8021" fromNodePartID="309" fromNodeColumnName="TEST1" toNodePartID="0" toNodeColumnName="D5" />
+</Graph>

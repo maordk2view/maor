@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>eli_emp_query</ID>
+  <PopulationObjectName>eli_emp_query</PopulationObjectName>
+  <TableName>ELI_EMP_UPSERT</TableName>
+  <RootItemID>query_query_ELI_EMP</RootItemID>
+  <Mode>Upsert</Mode>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="FIRST" id="queryCol_0" dataType="Text" index="0" />
+    <Arg name="LAST" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="COMP_ID" id="queryCol_2" dataType="Text" index="2" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_ELI_EMP" name="query_ELI_EMP" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="YP_TEST">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="FIRST" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="LAST" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="COMP_ID" dataType="Text" index="2" />
+      </OutputsList>
+      <SQL><![CDATA[select * from ELI_EMP]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="24" fromNodeOrder="0" fromItemID="query_query_ELI_EMP" fromColID="queryCol_0" toItemID="tbl_ELI_EMP_UPSERT" toColID="tblCol_6a4ca47de02a47c286af130a253eecef" />
+    <Link partId="25" fromNodeOrder="0" fromItemID="query_query_ELI_EMP" fromColID="queryCol_1" toItemID="tbl_ELI_EMP_UPSERT" toColID="tblCol_d5537d5a885a4ca9b816ad73fb6fc3ef" />
+    <Link partId="26" fromNodeOrder="0" fromItemID="query_query_ELI_EMP" fromColID="queryCol_2" toItemID="tbl_ELI_EMP_UPSERT" toColID="tblCol_7201fcdf3a144b8babd171897b36d1b7" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

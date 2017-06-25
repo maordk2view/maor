@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Film</Name>
+  <ID>tbl_Film</ID>
+  <EntityId>tblCol_f67f09a5aaf04822be863d23a67b822b</EntityId>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="ID" id="tblCol_f67f09a5aaf04822be863d23a67b822b" index="0" datatype="Integer" mandatory="true" />
+    <Column name="Category" id="tblCol_f820d241ed674b838c3aebf133a9ba46" index="1" datatype="Integer" />
+    <Column name="Description" id="tblCol_0da5b7c65c0e4c32a7e4961518cc79e7" index="2" datatype="Text" />
+    <Column name="Length" id="tblCol_acd22c5f9a7e439ea3f4e16deadcf2b2" index="3" datatype="Integer" />
+    <Column name="PlayingNow" id="tblCol_c0331261a4be460ba6897cbbda0aab7d" index="4" datatype="Text" />
+    <Column name="Rating" id="tblCol_d19984d14df84c958c028bb07b3bed1f" index="5" datatype="Text" />
+    <Column name="TicketsSold" id="tblCol_ace10c65571b43cbae8ca02855004aad" index="6" datatype="Integer" />
+    <Column name="Title" id="tblCol_50750107f7e04fd4964f75d82b5388ca" index="7" datatype="Text" mandatory="true" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_f67f09a5aaf04822be863d23a67b822b" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

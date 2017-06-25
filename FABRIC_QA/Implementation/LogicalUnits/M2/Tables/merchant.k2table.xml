@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>merchant</Name>
+  <ID>tbl_merchant</ID>
+  <EntityId>tblCol_4d2bd7d9cea04af0a2483206c43cdc71</EntityId>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="merchant_id" id="tblCol_4d2bd7d9cea04af0a2483206c43cdc71" index="0" datatype="Integer" mandatory="true" />
+    <Column name="merchant_type" id="tblCol_772711acd4b44adca01012c57c6af2f6" index="1" datatype="Text" />
+    <Column name="merchant_name" id="tblCol_0aa1725c2cc04ab2bf51b5f564bf67ae" index="2" datatype="Text" />
+    <Column name="tin" id="tblCol_d4bc7b09c497426dbccce4f110c2aaa3" index="3" datatype="Text" />
+    <Column name="effective_start_date" id="tblCol_293195aec93e4c0ba3ccc9ac0f01b6e2" index="4" datatype="Text" />
+    <Column name="effective_end_date" id="tblCol_a165b6a366fd48be879e577e5e70da16" index="5" datatype="Text" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_4d2bd7d9cea04af0a2483206c43cdc71" />
+    <Index id="2" columnsIdsList="tblCol_772711acd4b44adca01012c57c6af2f6,tblCol_0aa1725c2cc04ab2bf51b5f564bf67ae,tblCol_d4bc7b09c497426dbccce4f110c2aaa3,tblCol_293195aec93e4c0ba3ccc9ac0f01b6e2,tblCol_a165b6a366fd48be879e577e5e70da16" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

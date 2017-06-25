@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBConn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SqliteMS" type="SQLite" version="2.4.1.570">
+  <Active>false</Active>
+  <DataBase>C:\k2View\K2View Documents\Prop files\prop.AT4.db</DataBase>
+  <Memory>false</Memory>
+  <AttachedDatabases />
+</DBConn>

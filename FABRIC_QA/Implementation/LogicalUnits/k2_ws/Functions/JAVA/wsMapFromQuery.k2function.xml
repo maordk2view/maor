@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>wsMapFromQuery</Name>
+  <ID>JAVA.wsMapFromQuery</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>WebService</FunctionType>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>DBExecute("fabric","use AT1",null);
+Map&lt;String, String&gt; data = new HashMap&lt;String, String&gt;();
+String q = "select count(*) from M_yp_customer where SEARCH_LEGAL_NAME='AMELIA GUADALUPE ARM'";
+Object count = DBSelectValue("fabric", q, null);
+if(count==null)
+	data.put("COUNT", "NULL_VALUE");
+else
+	data.put("COUNT", count.toString());
+return data;
+</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams />
+  <OutputParams>
+    <Output name="rval" id="fo.JAVA.wsMapFromQuery.0" index="0" dataType="Object">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

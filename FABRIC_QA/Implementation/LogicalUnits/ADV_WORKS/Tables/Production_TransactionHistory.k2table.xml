@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Production_TransactionHistory</Name>
+  <ID>tbl_Production_TransactionHistory</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="TransactionID" id="tblCol_088997f4d12f4a86b83b2feee057fad6" index="0" datatype="Integer" mandatory="true" />
+    <Column name="ProductID" id="tblCol_48b6451e9bbd434cbd13706817b7b35a" index="1" datatype="Integer" mandatory="true" />
+    <Column name="ReferenceOrderID" id="tblCol_edb132cfe1014cbdbd91fd7d8a95f919" index="2" datatype="Integer" mandatory="true" />
+    <Column name="ReferenceOrderLineID" id="tblCol_d0a54cb5619f456db14f0d2255166b60" index="3" datatype="Integer" mandatory="true" />
+    <Column name="TransactionDate" id="tblCol_041b4b4577c64ff996d94bdd3fc5bf01" index="4" datatype="Text" mandatory="true" />
+    <Column name="TransactionType" id="tblCol_2b3106bf92504ab491b7860c2e039711" index="5" datatype="Text" mandatory="true" />
+    <Column name="Quantity" id="tblCol_73609813136d439f89f9b86181cc67df" index="6" datatype="Integer" mandatory="true" />
+    <Column name="ActualCost" id="tblCol_88817a818fbf4caca4e6917fb690d063" index="7" datatype="Real" mandatory="true" />
+    <Column name="ModifiedDate" id="tblCol_387713e8d3ac49928db7041758c1bc9e" index="8" datatype="Text" mandatory="true" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_088997f4d12f4a86b83b2feee057fad6" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

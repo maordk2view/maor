@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>YP_ADDR_FUN</Name>
+  <ID>tbl_YP_ADDR_FUN</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="ADDRESS_ID" id="tblCol_4260639b25a54401a103260bb9541734" index="0" datatype="Integer" />
+    <Column name="HOUSE_NO" id="tblCol_c328fcb5327240f0bb1b96eb06a8e958" index="1" datatype="String" />
+    <Column name="COLONY_ID" id="tblCol_5e146334f04b4fab8e4f9ae3cdbb5984" index="2" datatype="Integer" />
+    <Column name="STATE_CODE" id="tblCol_ad010be5494644dc9b3242be0a5e7626" index="3" datatype="String" />
+    <Column name="ZIP_CODE" id="tblCol_2da6e04d644941e4aeb5539816786b6e" index="4" datatype="String" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

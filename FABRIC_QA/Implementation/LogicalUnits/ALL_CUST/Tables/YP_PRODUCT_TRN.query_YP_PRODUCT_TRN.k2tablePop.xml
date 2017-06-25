@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_YP_PRODUCT_TRN</PopulationObjectName>
+  <TableName>YP_PRODUCT_TRN</TableName>
+  <ID>query_YP_PRODUCT_TRN</ID>
+  <RootItemID>query_5</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="DUMMY" id="query_5.0" dataType="Real" index="0" />
+    <Arg name="OLD_PRODUCT_CODE" id="query_5.1" dataType="Text" index="1" />
+    <Arg name="NEW_PRODUCT_CODE" id="query_5.2" dataType="Text" index="2" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_5" name="query_YP_PRODUCT_TRN" nodeOrder="0" module="DBQuery" connName="ORA_SOURCE">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_5.1" name="OLD_PRODUCT_CODE" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_5.2" name="NEW_PRODUCT_CODE" dataType="Text" index="2" />
+      </OutputsList>
+      <SQL><![CDATA[Select 1 As DUMMY,
+  Y.*
+From YP_PRODUCT_TRN Y]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="8" fromNodeOrder="0" fromItemID="query_5" fromColID="query_5.1" toItemID="tbl_YP_PRODUCT_TRN" toColID="tblCol_61580b79093c42e78d0d6bab44fc3551" />
+    <Link partId="9" fromNodeOrder="0" fromItemID="query_5" fromColID="query_5.2" toItemID="tbl_YP_PRODUCT_TRN" toColID="tblCol_6282e55cff4b4749b7ebae3c82bac8b9" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.8.0.10">
+  <Name>vdb</Name>
+  <RootView>Datatypes</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <EnableDataEncryption>false</EnableDataEncryption>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>Datatypes</Table>
+    <Table>Clients</Table>
+    <Table>Clients_Media</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="Datatypes">
+      <Populations>
+        <Population id="query_Datatypes" name="query_Datatypes" order="1" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="Clients">
+      <Populations>
+        <Population id="query_Clients" name="query_Clients" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="Clients_Media">
+      <Populations>
+        <Population id="query_Clients_Media" name="query_Clients_Media" order="3" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="false" name="FUN_REF_UDAC" />
+    <Item active="false" name="MS_REF_UDAC" />
+    <Item active="false" name="REF_SERVICE_AGREEMENT" />
+    <Item active="false" name="REF_YP_PRODUCT_TRN" />
+    <Item active="false" name="test_YP_REF_UDAC" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="89">
+      <From tableType="TableObject" table="Datatypes" column="int_param" columnId="tblCol_28d99419d2ed44a4b70ada3ea8d14677" />
+      <To tableType="TableObject" table="Clients" populationObjectName="query_Clients" column="Client_id" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="90">
+      <From tableType="TableObject" table="Clients" column="int_code" columnId="tblCol_9732d3f8d0a14b409844c6e83cb7565b" />
+      <To tableType="TableObject" table="Clients_Media" populationObjectName="query_Clients_Media" column="Media_id" columnId="queryCol_0" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

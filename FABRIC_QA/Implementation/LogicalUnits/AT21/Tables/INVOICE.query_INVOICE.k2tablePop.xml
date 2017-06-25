@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_INVOICE</ID>
+  <PopulationObjectName>query_INVOICE</PopulationObjectName>
+  <TableName>INVOICE</TableName>
+  <RootItemID>query_query_INVOICE</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="PATIENT_ID" id="queryCol_0" dataType="Text" index="0" />
+    <Arg name="INVOICE_ID" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="ISSUED_DATE" id="queryCol_2" dataType="Text" index="2" />
+    <Arg name="DUE_DATE" id="queryCol_3" dataType="Text" index="3" />
+    <Arg name="STATUS" id="queryCol_4" dataType="Text" index="4" />
+    <Arg name="BALANCE" id="queryCol_5" dataType="Real" index="5" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_INVOICE" name="query_INVOICE" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="HIS_DB">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="PATIENT_ID" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="INVOICE_ID" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="ISSUED_DATE" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="DUE_DATE" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="STATUS" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="BALANCE" dataType="Real" index="5" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM INVOICE]]></SQL>
+    </Item>
+    <Item id="f_37" name="k2_currentDateTime" nodeOrder="0" module="Function" mapObjectModule="Function" fileName="k2_currentDateTime.k2function.xml">
+      <InputsList />
+      <OutputsList>
+        <Output id="fo_37.0" name="current_datetime" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="16" fromNodeOrder="0" fromItemID="query_query_INVOICE" fromColID="queryCol_0" toItemID="tbl_INVOICE" toColID="tblCol_e3c7864543f34602b49354a1599d35b7" />
+    <Link partId="17" fromNodeOrder="0" fromItemID="query_query_INVOICE" fromColID="queryCol_1" toItemID="tbl_INVOICE" toColID="tblCol_67ddfa5e72124d0dbbfe424553afb8b3" />
+    <Link partId="18" fromNodeOrder="0" fromItemID="query_query_INVOICE" fromColID="queryCol_2" toItemID="tbl_INVOICE" toColID="tblCol_8a35e3e7d881475c8d2fe0a7f7805085" />
+    <Link partId="19" fromNodeOrder="0" fromItemID="query_query_INVOICE" fromColID="queryCol_3" toItemID="tbl_INVOICE" toColID="tblCol_640ad5e6e283404bb4236292fa5484c3" />
+    <Link partId="21" fromNodeOrder="0" fromItemID="query_query_INVOICE" fromColID="queryCol_5" toItemID="tbl_INVOICE" toColID="tblCol_f050e0b457184d30a358bf1dc98e0173" />
+    <Link partId="39" fromNodeOrder="0" fromItemID="f_37" fromColID="fo_37.0" toItemID="tbl_INVOICE" toColID="tblCol_6000c2ff5d4d43c09048407031746edf" />
+    <Link partId="815" fromNodeOrder="0" fromItemID="query_query_INVOICE" fromColID="queryCol_4" toItemID="tbl_INVOICE" toColID="tblCol_dbd3e54fa9f740639fdd44e60a10eecf" />
+    <Link partId="2260" fromNodeOrder="0" fromItemID="query_query_INVOICE" fromColID="queryCol_4" toItemID="tbl_INVOICE" toColID="tblCol_be405398c6c6430a84c7089cd7fca86c" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

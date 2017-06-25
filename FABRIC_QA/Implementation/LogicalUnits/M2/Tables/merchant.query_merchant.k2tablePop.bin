@@ -1,0 +1,12 @@
+﻿<Graph name="merchant.query_merchant.k2tablePop.bin" lastPartID="21">
+  <TableNode partID="0" name="merchant" pos="308 12.7447968" width="309.324158" />
+  <DBQueryNode partID="9" name="MerchantInfo" pos="10 8.78125" size="253 132.4375" isRoot="true">
+    <DBQuery>{"Name":"query_merchant","ID":"query_9","ConnName":"MerchantInfo","SQL":"select * from merchant","ColumnsList":[{"ID":"query_9.0","Name":"merchant_id","DataType":"Integer","Index":0,"IsInputArgument":true},{"ID":"query_9.1","Name":"merchant_type","DataType":"Text","Index":1,"IsInputArgument":false},{"ID":"query_9.2","Name":"merchant_name","DataType":"Text","Index":2,"IsInputArgument":false},{"ID":"query_9.3","Name":"tin","DataType":"Text","Index":3,"IsInputArgument":false},{"ID":"query_9.4","Name":"effective_start_date","DataType":"Text","Index":4,"IsInputArgument":false},{"ID":"query_9.5","Name":"effective_end_date","DataType":"Text","Index":5,"IsInputArgument":false}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="16" from="0" to="1" pointsArr="263 44.81771 273 44.81771 275.5 0 295.5 0 298 43.7812538 308 43.7812538" fromNodePartID="9" fromNodeColumnName="merchant_id" toNodePartID="0" toNodeColumnName="merchant_id" />
+  <Link partID="17" from="2" to="3" pointsArr="263 56.890625 273 56.890625 275.5 25 295.5 25 298 55.85417 308 55.85417" fromNodePartID="9" fromNodeColumnName="merchant_type" toNodePartID="0" toNodeColumnName="merchant_type" />
+  <Link partID="18" from="4" to="5" pointsArr="263 68.96354 273 68.96354 275.5 50 295.5 50 298 67.9270859 308 67.9270859" fromNodePartID="9" fromNodeColumnName="merchant_name" toNodePartID="0" toNodeColumnName="merchant_name" />
+  <Link partID="19" from="6" to="7" pointsArr="263 81.03645 273 81.03645 275.5 75 295.5 75 298 80 308 80" fromNodePartID="9" fromNodeColumnName="tin" toNodePartID="0" toNodeColumnName="tin" />
+  <Link partID="20" from="8" to="9" pointsArr="263 93.109375 273 93.109375 275.5 100 295.5 100 298 92.0729141 308 92.0729141" fromNodePartID="9" fromNodeColumnName="effective_start_date" toNodePartID="0" toNodeColumnName="effective_start_date" />
+  <Link partID="21" from="10" to="11" pointsArr="263 105.182281 273 105.182281 275.5 125 295.5 125 298 104.145828 308 104.145828" fromNodePartID="9" fromNodeColumnName="effective_end_date" toNodePartID="0" toNodeColumnName="effective_end_date" />
+</Graph>

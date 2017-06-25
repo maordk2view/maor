@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>HR_COUNTRIES</Name>
+  <ID>tbl_HR_COUNTRIES</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="COUNTRY_ID" id="tblCol_5b5f5341a9d3407db671122195f515ef" index="0" datatype="Text" mandatory="true" />
+    <Column name="COUNTRY_NAME" id="tblCol_3be740942a2149bc93d693bcb7b6309a" index="1" datatype="Text" />
+    <Column name="REGION_ID" id="tblCol_aff63f5e5ab841068e8c58c3bce2d6fe" index="2" datatype="Integer" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_5b5f5341a9d3407db671122195f515ef" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

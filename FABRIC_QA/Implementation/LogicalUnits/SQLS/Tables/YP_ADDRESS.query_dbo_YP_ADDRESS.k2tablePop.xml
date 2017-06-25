@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_dbo_YP_ADDRESS</PopulationObjectName>
+  <TableName>YP_ADDRESS</TableName>
+  <ID>query_dbo_YP_ADDRESS</ID>
+  <RootItemID>query_9</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="CUSTOMER_ID" id="query_9.0" dataType="Integer" index="0" />
+    <Arg name="STREET" id="query_9.1" dataType="Text" index="1" />
+    <Arg name="CITY" id="query_9.2" dataType="Text" index="2" />
+    <Arg name="STATE" id="query_9.3" dataType="Text" index="3" />
+    <Arg name="COUNTRY" id="query_9.4" dataType="Text" index="4" />
+    <Arg name="ZIP_CODE" id="query_9.5" dataType="Text" index="5" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_9" name="query_dbo_YP_ADDRESS" nodeOrder="0" module="DBQuery" connName="SQLSERVER_SOURCE">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_9.0" name="CUSTOMER_ID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_9.1" name="STREET" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_9.2" name="CITY" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_9.3" name="STATE" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_9.4" name="COUNTRY" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_9.5" name="ZIP_CODE" dataType="Text" index="5" />
+      </OutputsList>
+      <SQL><![CDATA[select * from dbo.YP_ADDRESS]]></SQL>
+    </Item>
+    <Item xsi:type="ConstantDataSave" id="c.36" nodeOrder="0" module="Constant">
+      <InputsList />
+      <OutputsList />
+      <Value><![CDATA[A]]></Value>
+    </Item>
+    <Item xsi:type="ConstantDataSave" id="c.41" nodeOrder="0" module="Constant">
+      <InputsList />
+      <OutputsList />
+      <Value><![CDATA[B]]></Value>
+    </Item>
+    <Item xsi:type="ConstantDataSave" id="c.80" nodeOrder="0" module="Constant">
+      <InputsList />
+      <OutputsList />
+      <Value><![CDATA[C]]></Value>
+    </Item>
+    <Item xsi:type="ConstantDataSave" id="c.84" nodeOrder="0" module="Constant">
+      <InputsList />
+      <OutputsList />
+      <Value><![CDATA[D]]></Value>
+    </Item>
+    <Item xsi:type="ConstantDataSave" id="c.-1" nodeOrder="0" module="Constant">
+      <InputsList />
+      <OutputsList />
+      <Value><![CDATA[E]]></Value>
+    </Item>
+    <Item xsi:type="ConstantDataSave" id="c.-1" nodeOrder="0" module="Constant">
+      <InputsList />
+      <OutputsList />
+      <Value><![CDATA[F]]></Value>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="16" fromNodeOrder="0" fromItemID="query_9" fromColID="query_9.0" toItemID="tbl_YP_ADDRESS" toColID="tblCol_82ebda774606477385d9eb1e239b0a1d" />
+    <Link partId="17" fromNodeOrder="0" fromItemID="query_9" fromColID="query_9.1" toItemID="tbl_YP_ADDRESS" toColID="tblCol_ce6bd11ddd2b4052bc7fd8cfe403315b" />
+    <Link partId="18" fromNodeOrder="0" fromItemID="query_9" fromColID="query_9.2" toItemID="tbl_YP_ADDRESS" toColID="tblCol_132ab1a5cbde4fc89be89decb8defd9e" />
+    <Link partId="19" fromNodeOrder="0" fromItemID="query_9" fromColID="query_9.3" toItemID="tbl_YP_ADDRESS" toColID="tblCol_8c116c2f52e44b3f8fb303b2b43a716a" />
+    <Link partId="20" fromNodeOrder="0" fromItemID="query_9" fromColID="query_9.4" toItemID="tbl_YP_ADDRESS" toColID="tblCol_8c8570ba3601487cad196267926eae86" />
+    <Link partId="21" fromNodeOrder="0" fromItemID="query_9" fromColID="query_9.5" toItemID="tbl_YP_ADDRESS" toColID="tblCol_297c58d47b9f4f288323e7dde03faacb" />
+    <Link partId="39" fromNodeOrder="0" fromItemID="c.36" fromColID="c.36" toItemID="tbl_YP_ADDRESS" toColID="tblCol_d866c7a5498042deac7e82d455cd70ef" />
+    <Link partId="43" fromNodeOrder="0" fromItemID="c.41" fromColID="c.41" toItemID="tbl_YP_ADDRESS" toColID="tblCol_6f10d44efd904f3ab1ec1ef6cda21c16" />
+    <Link partId="83" fromNodeOrder="0" fromItemID="c.80" fromColID="c.80" toItemID="tbl_YP_ADDRESS" toColID="tblCol_6edc6df9660d415285cc413a6225fad0" />
+    <Link partId="87" fromNodeOrder="0" fromItemID="c.84" fromColID="c.84" toItemID="tbl_YP_ADDRESS" toColID="tblCol_d2b8bb54c3f94e38a0b171232ae3142a" />
+    <Link partId="116" fromNodeOrder="0" fromItemID="c.-1" fromColID="c.-1" toItemID="tbl_YP_ADDRESS" toColID="tblCol_7886d6f07d9f4231bd984189a839bc1e" />
+    <Link partId="117" fromNodeOrder="0" fromItemID="c.-1" fromColID="c.-1" toItemID="tbl_YP_ADDRESS" toColID="tblCol_b5fa282a67c2409c98677474ffd492e1" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

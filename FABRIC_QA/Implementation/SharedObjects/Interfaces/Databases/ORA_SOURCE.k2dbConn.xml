@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBConn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="DBConnOracle" name="ORA_SOURCE" type="Oracle" version="2.4.6.0">
+  <Active>true</Active>
+  <DataSource>10.21.1.140</DataSource>
+  <PortNum>1521</PortNum>
+  <DataBase>K20RA1</DataBase>
+  <UserId>CUSTOMER</UserId>
+  <Password>f/zjXKU0WW6ZRK+SMn+hEoMCXKQe2YGN3lxi3NZbH48=:wlweaUWrZj/E26sO8PbCthq3RLUgpnjV7D2Ucp7/cCg=</Password>
+  <ProviderType>Native</ProviderType>
+</DBConn>

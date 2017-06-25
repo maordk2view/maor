@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>dbQueryTest</Name>
+  <ID>JAVA.dbQueryTest</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String sql = "SELECT ADDRESS_ID, HOUSE_NO FROM YP_ADDRESS WHERE CUSTOMER_ID = ? AND STATE_CODE = ?";
+
+Object[] valuesArr = {cust_id, "BC"};
+
+ResultSetWrapper rs = DBQuery("ludb", sql, valuesArr);
+
+String error = DBGetLastErrorStr();
+
+String house_no = "";
+Integer address_sum = 0;
+String add_str = ""; 
+
+for (Object[] row : rs) {
+	address_sum = address_sum + ((Double)row[0]).intValue();
+    add_str = add_str + "+ " + row[0];	
+	house_no = house_no + "+ " + row[1];	
+}
+
+return new Object[] {house_no, address_sum, add_str, error} ;</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="cust_id" id="fi.JAVA.dbQueryTest.0" index="0" dataType="Integer">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="house_nm_str" id="fo.JAVA.dbQueryTest.0" index="0" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="address_sum" id="fo.JAVA.dbQueryTest.1" index="1" dataType="Integer">
+      <Comment />
+    </Output>
+    <Output name="add_str" id="fo.JAVA.dbQueryTest.2" index="2" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="error" id="fo.JAVA.dbQueryTest.3" index="3" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MajorGlobal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Globals</Name>
+  <ItemsList>
+    <MajorGlobalItem category="QA" type="Constant" name="SYSTEM">
+      <Value>QA2</Value>
+      <Comment>QA Testing</Comment>
+    </MajorGlobalItem>
+    <MajorGlobalItem category="QA" type="Constant" name="CONV_NO">
+      <Value>1</Value>
+    </MajorGlobalItem>
+    <MajorGlobalItem category="LU" type="Constant" name="LU_NAME">
+      <Value>SHARED</Value>
+    </MajorGlobalItem>
+    <MajorGlobalItem type="Constant" name="AT1_SCHEME">
+      <Value>yp_cust</Value>
+    </MajorGlobalItem>
+  </ItemsList>
+</MajorGlobal>

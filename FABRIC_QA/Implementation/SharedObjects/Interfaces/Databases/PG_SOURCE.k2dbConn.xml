@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBConn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="PG_SOURCE" type="PostgreSQL" version="2.4.4.1">
+  <Active>true</Active>
+  <DataSource>10.21.1.128</DataSource>
+  <PortNum>5432</PortNum>
+  <DataBase>k2view</DataBase>
+  <UserId>yp_cust</UserId>
+  <Password>j4XPgqlhWfX84UbAUKtJHpUFnjBkGOYijDq1oJItvlQ=:sj8DKPsqrx7HeZCSqlh+/argDS0anM56S6AVa7zgKQU=</Password>
+</DBConn>

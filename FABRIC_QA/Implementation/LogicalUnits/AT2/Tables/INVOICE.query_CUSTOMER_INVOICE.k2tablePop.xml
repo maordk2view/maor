@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_CUSTOMER_INVOICE</PopulationObjectName>
+  <TableName>INVOICE</TableName>
+  <ID>query_CUSTOMER_INVOICE</ID>
+  <RootItemID>query_18</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="BAN" id="query_18.0" dataType="Integer" index="0" />
+    <Arg name="SYS_CREATION_DATE" id="query_18.1" dataType="Text" index="1" />
+    <Arg name="SYS_UPDATE_DATE" id="query_18.2" dataType="Text" index="2" />
+    <Arg name="OPERATOR_ID" id="query_18.3" dataType="Integer" index="3" />
+    <Arg name="APPLICATION_ID" id="query_18.4" dataType="Text" index="4" />
+    <Arg name="DL_SERVICE_CODE" id="query_18.5" dataType="Text" index="5" />
+    <Arg name="DL_UPDATE_STAMP" id="query_18.6" dataType="Integer" index="6" />
+    <Arg name="AR_EXCPT_ACCT_IND" id="query_18.7" dataType="Text" index="7" />
+    <Arg name="ACCOUNT_TYPE" id="query_18.8" dataType="Text" index="8" />
+    <Arg name="BILL_CYCLE" id="query_18.9" dataType="Integer" index="9" />
+    <Arg name="AR_BALANCE" id="query_18.10" dataType="Real" index="10" />
+    <Arg name="BAN_STATUS" id="query_18.11" dataType="Text" index="11" />
+    <Arg name="HIST_LAST_DATE" id="query_18.12" dataType="Text" index="12" />
+    <Arg name="STATUS_LAST_DATE" id="query_18.13" dataType="Text" index="13" />
+    <Arg name="STATUS_ACTV_CODE" id="query_18.14" dataType="Text" index="14" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_18" name="query_CUSTOMER_INVOICE" nodeOrder="0" module="DBQuery" connName="CUSTOMER_TEST">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.0" name="BAN" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.1" name="SYS_CREATION_DATE" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.2" name="SYS_UPDATE_DATE" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.3" name="OPERATOR_ID" dataType="Integer" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.4" name="APPLICATION_ID" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.5" name="DL_SERVICE_CODE" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.6" name="DL_UPDATE_STAMP" dataType="Integer" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.7" name="AR_EXCPT_ACCT_IND" dataType="Text" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.8" name="ACCOUNT_TYPE" dataType="Text" index="8" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.9" name="BILL_CYCLE" dataType="Integer" index="9" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.10" name="AR_BALANCE" dataType="Real" index="10" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.11" name="BAN_STATUS" dataType="Text" index="11" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.12" name="HIST_LAST_DATE" dataType="Text" index="12" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.13" name="STATUS_LAST_DATE" dataType="Text" index="13" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_18.14" name="STATUS_ACTV_CODE" dataType="Text" index="14" />
+      </OutputsList>
+      <SQL><![CDATA[select * from CUSTOMER.INVOICE]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="34" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.0" toItemID="tbl_INVOICE" toColID="tblCol_17b408ff9ae742cd8f97087c51583664" />
+    <Link partId="35" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.1" toItemID="tbl_INVOICE" toColID="tblCol_86f7f69c8a91420183d099dbdc490de2" />
+    <Link partId="36" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.2" toItemID="tbl_INVOICE" toColID="tblCol_0ff0432248114406acf80b1e95df6165" />
+    <Link partId="37" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.3" toItemID="tbl_INVOICE" toColID="tblCol_61309c2ba1944f4cae4b8fbf3d6d8cef" />
+    <Link partId="38" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.4" toItemID="tbl_INVOICE" toColID="tblCol_0c91b48ae61f4843bfd976ccb46b131a" />
+    <Link partId="39" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.5" toItemID="tbl_INVOICE" toColID="tblCol_ace6e4a3fd2c49d08921a7395a55ea08" />
+    <Link partId="40" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.6" toItemID="tbl_INVOICE" toColID="tblCol_f60e4d6ac7d64e03aee3a0b5dea53993" />
+    <Link partId="41" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.7" toItemID="tbl_INVOICE" toColID="tblCol_d1f5fd7d3b8f4b86a4e73db7a2bc0887" />
+    <Link partId="42" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.8" toItemID="tbl_INVOICE" toColID="tblCol_614fafdd434f43fa807edfa2bd2c6df1" />
+    <Link partId="43" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.9" toItemID="tbl_INVOICE" toColID="tblCol_9104376f0b61434bbf9cab3c0673bb5b" />
+    <Link partId="44" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.10" toItemID="tbl_INVOICE" toColID="tblCol_1f0ef72918cc4bf4b284ff091dad9c2d" />
+    <Link partId="45" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.11" toItemID="tbl_INVOICE" toColID="tblCol_4791384d3ade4e24aa5268837af11ae1" />
+    <Link partId="46" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.12" toItemID="tbl_INVOICE" toColID="tblCol_498ad1526c1f4923a809b7554be0dca8" />
+    <Link partId="47" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.13" toItemID="tbl_INVOICE" toColID="tblCol_5d8614b9b3794f2ca94eb45edd2e5bbf" />
+    <Link partId="48" fromNodeOrder="0" fromItemID="query_18" fromColID="query_18.14" toItemID="tbl_INVOICE" toColID="tblCol_c832cb4f52ea470694dc67a920db740d" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>popYpItemExt</ID>
+  <PopulationObjectName>popYpItemExt</PopulationObjectName>
+  <TableName>YP_ITEM_EXT</TableName>
+  <RootItemID>query_query_YP_ITEM</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="CUSTOMER_ID" id="queryCol_0" dataType="Integer" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_YP_ITEM" name="query_YP_ITEM" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="ludb">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="CUSTOMER_ID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="CNT" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="TOWN_INTEGR_CODE" dataType="Text" index="2" />
+      </OutputsList>
+      <SQL><![CDATA[Select RIVI1.YP_ITEM.CUSTOMER_ID,
+  COUNT(*) CNT,
+  RIVI1.YP_ITEM.TOWN_INTEGR_CODE
+From RIVI1.YP_ITEM
+Group By RIVI1.YP_ITEM.TOWN_INTEGR_CODE]]></SQL>
+    </Item>
+    <Item xsi:type="ConstantDataSave" id="c.173" nodeOrder="0" module="Constant" mapObjectModule="Constant">
+      <Value><![CDATA[9999]]></Value>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="136" fromNodeOrder="0" fromItemID="query_query_YP_ITEM" fromColID="queryCol_0" toItemID="tbl_YP_ITEM_EXT" toColID="tblCol_7b7a1fd4af8146fa991f62db7343cbcc" />
+    <Link partId="141" fromNodeOrder="0" fromItemID="query_query_YP_ITEM" fromColID="queryCol_2" toItemID="tbl_YP_ITEM_EXT" toColID="tblCol_84cc6b336e7b46fa9c164eeb7479a54c" />
+    <Link partId="140" fromNodeOrder="0" fromItemID="query_query_YP_ITEM" fromColID="queryCol_1" toItemID="tbl_YP_ITEM_EXT" toColID="tblCol_b1d7f5a1b67b4d32825bb6b83e89334c" />
+    <Link partId="170" fromNodeOrder="0" fromItemID="query_query_YP_ITEM" fromColID="queryCol_1" toItemID="tbl_YP_ITEM_EXT" toColID="tblCol_d7eb68fe4b53467bb5eda3399877fdce" />
+    <Link partId="175" fromNodeOrder="0" fromItemID="c.173" fromColID="c.173" toItemID="tbl_YP_ITEM_EXT" toColID="tblCol_806899410baf430ea4f04bc4a0c72c42" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>YP_CUSTOMER_TIME</Name>
+  <ID>tbl_YP_CUSTOMER_TIME</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="CUSTOMER_ID" id="tblCol_f44f3068491540bd9a09d74784c43177" index="0" datatype="Integer" />
+    <Column name="CUR_TIME_STAMP" id="tblCol_071655c6580643baa4a0a167f281ccd3" index="1" datatype="Text" />
+    <Column name="CUR_TIME_STAMP_LOCAL" id="tblCol_fba39db09b2d41e68b31fff316ca160b" index="2" datatype="Text" />
+    <Column name="TIMESTAMP_TZLOCAL" id="tblCol_15e40586303f4404ae045259c342d155" index="3" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

@@ -1,0 +1,36 @@
+﻿<Graph name="YP_ADDRESS.query_dbo_YP_ADDRESS.k2tablePop.bin" lastPartID="117">
+  <TableNode partID="0" name="YP_ADDRESS" pos="308 12.7447968" width="253" />
+  <DBQueryNode partID="9" name="SQLSERVER_SOURCE" pos="10 8.78125" size="253 132.4375" isRoot="true">
+    <DBQuery>{"Name":"query_dbo_YP_ADDRESS","ID":"query_9","ConnName":"SQLSERVER_SOURCE","SQL":"select * from dbo.YP_ADDRESS","ColumnsList":[{"ID":"query_9.0","Name":"CUSTOMER_ID","DataType":"Integer","Index":0,"IsInputArgument":true},{"ID":"query_9.1","Name":"STREET","DataType":"Text","Index":1,"IsInputArgument":true},{"ID":"query_9.2","Name":"CITY","DataType":"Text","Index":2,"IsInputArgument":true},{"ID":"query_9.3","Name":"STATE","DataType":"Text","Index":3,"IsInputArgument":true},{"ID":"query_9.4","Name":"COUNTRY","DataType":"Text","Index":4,"IsInputArgument":true},{"ID":"query_9.5","Name":"ZIP_CODE","DataType":"Text","Index":5,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <ConstantMapNode partID="36" topLabel="A" pos="660.7554 286.653656" size="23 45.091156">
+    <KDataValue>{"ID":"c.36","DataValue":"A"}</KDataValue>
+  </ConstantMapNode>
+  <ConstantMapNode partID="41" topLabel="B" pos="854.7554 379.653656" size="23 45.091156">
+    <KDataValue>{"ID":"c.41","DataValue":"B"}</KDataValue>
+  </ConstantMapNode>
+  <ConstantMapNode partID="80" topLabel="C" pos="462.043457 395.653656" size="23 45.091156">
+    <KDataValue>{"ID":"c.80","DataValue":"C"}</KDataValue>
+  </ConstantMapNode>
+  <ConstantMapNode partID="84" topLabel="D" pos="769.043457 546.6536" size="23 45.0911255">
+    <KDataValue>{"ID":"c.84","DataValue":"D"}</KDataValue>
+  </ConstantMapNode>
+  <ConstantMapNode partID="110" topLabel="E" pos="492.6875 634" size="23 45.0911255">
+    <KDataValue>{"ID":"c.-1","DataValue":"E"}</KDataValue>
+  </ConstantMapNode>
+  <ConstantMapNode partID="114" topLabel="F" pos="717.6875 682" size="23 45.0911255">
+    <KDataValue>{"ID":"c.-1","DataValue":"F"}</KDataValue>
+  </ConstantMapNode>
+  <Link partID="16" from="0" to="1" pointsArr="263 44.81771 273 44.81771 298 43.7812538 308 43.7812538" fromNodePartID="9" fromNodeColumnName="CUSTOMER_ID" toNodePartID="0" toNodeColumnName="CUSTOMER_ID" />
+  <Link partID="17" from="2" to="3" pointsArr="263 56.890625 273 56.890625 298 55.85417 308 55.85417" fromNodePartID="9" fromNodeColumnName="STREET" toNodePartID="0" toNodeColumnName="STREET" />
+  <Link partID="18" from="4" to="5" pointsArr="263 68.96354 273 68.96354 298 67.9270859 308 67.9270859" fromNodePartID="9" fromNodeColumnName="CITY" toNodePartID="0" toNodeColumnName="CITY" />
+  <Link partID="19" from="6" to="7" pointsArr="263 81.03645 273 81.03645 298 80 308 80" fromNodePartID="9" fromNodeColumnName="STATE" toNodePartID="0" toNodeColumnName="STATE" />
+  <Link partID="20" from="8" to="9" pointsArr="263 93.109375 273 93.109375 298 92.0729141 308 92.0729141" fromNodePartID="9" fromNodeColumnName="COUNTRY" toNodePartID="0" toNodeColumnName="COUNTRY" />
+  <Link partID="21" from="10" to="11" pointsArr="263 105.182281 273 105.182281 298 104.145828 308 104.145828" fromNodePartID="9" fromNodeColumnName="ZIP_CODE" toNodePartID="0" toNodeColumnName="ZIP_CODE" />
+  <Link partID="39" from="12" to="13" pointsArr="683.7554 311.7448 693.7554 311.7448 298 116.21875 308 116.21875" fromNodePartID="36" fromNodeColumnName="A" toNodePartID="0" toNodeColumnName="A" />
+  <Link partID="43" from="14" to="15" pointsArr="877.7554 404.7448 887.7554 404.7448 298 128.291672 308 128.291672" fromNodePartID="41" fromNodeColumnName="B" toNodePartID="0" toNodeColumnName="B" />
+  <Link partID="83" from="16" to="17" pointsArr="485.043457 420.7448 495.043457 420.7448 298 140.3646 308 140.3646" fromNodePartID="80" fromNodeColumnName="C" toNodePartID="0" toNodeColumnName="C" />
+  <Link partID="87" from="18" to="19" pointsArr="792.043457 571.744751 802.043457 571.744751 298 152.437515 308 152.437515" fromNodePartID="84" fromNodeColumnName="D" toNodePartID="0" toNodeColumnName="D" />
+  <Link partID="116" from="20" to="21" pointsArr="515.6875 659.0911 525.6875 659.0911 298 164.510437 308 164.510437" fromNodePartID="110" fromNodeColumnName="E" toNodePartID="0" toNodeColumnName="E" />
+  <Link partID="117" from="22" to="23" pointsArr="740.6875 707.0911 750.6875 707.0911 298 176.583344 308 176.583344" fromNodePartID="114" fromNodeColumnName="F" toNodePartID="0" toNodeColumnName="F" />
+</Graph>

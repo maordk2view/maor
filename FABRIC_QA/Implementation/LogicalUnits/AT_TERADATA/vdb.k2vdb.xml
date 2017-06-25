@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2.0.0.3">
+  <Name>vdb</Name>
+  <RootView>customer</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <EnableDataEncryption>false</EnableDataEncryption>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>customer</Table>
+    <Table>customer_name</Table>
+    <Table>credit_acct</Table>
+    <Table>savings_acct</Table>
+    <Table>trans</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="customer">
+      <Populations>
+        <Population id="query_customer" name="query_customer" order="1" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="customer_name">
+      <Populations>
+        <Population id="query_customer_name" name="query_customer_name" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="credit_acct">
+      <Populations>
+        <Population id="query_credit_acct" name="query_credit_acct" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="savings_acct">
+      <Populations>
+        <Population id="query_savings_acct" name="query_savings_acct" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="trans">
+      <Populations>
+        <Population id="query_trans" name="query_trans" order="2" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="false" name="medication_reference" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="50">
+      <From tableType="TableObject" table="customer" column="cust_id" columnId="tblCol_cc70a59cc3554fea8c717c874d02a670" />
+      <To tableType="TableObject" table="customer_name" populationObjectName="query_customer_name" column="cust_id" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="72">
+      <From tableType="TableObject" table="customer" column="cust_id" columnId="tblCol_cc70a59cc3554fea8c717c874d02a670" />
+      <To tableType="TableObject" table="credit_acct" populationObjectName="query_credit_acct" column="cust_id" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="94">
+      <From tableType="TableObject" table="customer" column="cust_id" columnId="tblCol_cc70a59cc3554fea8c717c874d02a670" />
+      <To tableType="TableObject" table="savings_acct" populationObjectName="query_savings_acct" column="cust_id" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="114">
+      <From tableType="TableObject" table="customer" column="cust_id" columnId="tblCol_cc70a59cc3554fea8c717c874d02a670" />
+      <To tableType="TableObject" table="trans" populationObjectName="query_trans" column="cust_id" columnId="queryCol_0" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

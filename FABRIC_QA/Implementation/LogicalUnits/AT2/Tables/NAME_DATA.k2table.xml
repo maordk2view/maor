@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>NAME_DATA</Name>
+  <ID>tbl_NAME_DATA</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="NAME_ID" id="tblCol_e48a5e90066b48578a6529ddb845fcac" index="0" datatype="Integer" mandatory="true" />
+    <Column name="SYS_CREATION_DATE" id="tblCol_66d7a9ed9a4a498c9d92ec92ddcdeccb" index="1" datatype="Text" mandatory="true" />
+    <Column name="SYS_UPDATE_DATE" id="tblCol_25bc4c35456b4597adaa4f22ead86b91" index="2" datatype="Text" />
+    <Column name="OPERATOR_ID" id="tblCol_3ab7f173b26140c79cde81e9c1220e1d" index="3" datatype="Integer" />
+    <Column name="APPLICATION_ID" id="tblCol_5afbedcda60441b1b66f7764cfb5c35c" index="4" datatype="Text" />
+    <Column name="DL_SERVICE_CODE" id="tblCol_218cff84bb054aa49eba44b49a0787a5" index="5" datatype="Text" mandatory="true" />
+    <Column name="DL_UPDATE_STAMP" id="tblCol_62d08d7c6fbf4f428355fee53c8d3666" index="6" datatype="Integer" />
+    <Column name="CONTROL_NAME" id="tblCol_c867e46486ac46cbb2d6be5e8adbcc98" index="7" datatype="Text" />
+    <Column name="LAST_BUSINESS_NAME" id="tblCol_d53de55126864af4b93f16e8dae8ca1e" index="8" datatype="Text" />
+    <Column name="FIRST_NAME" id="tblCol_b77eb8adedaf4792823713ef8c0aa588" index="9" datatype="Text" />
+    <Column name="MIDDLE_INITIAL" id="tblCol_88281f606cd14d6585d092c08cd94b8e" index="10" datatype="Text" />
+    <Column name="NAME_TITLE" id="tblCol_3867cecc640644c19ff18bdf0a0caff0" index="11" datatype="Text" />
+    <Column name="NAME_SUFFIX" id="tblCol_cd84375c0a914f508c1f8af3fb2b43a3" index="12" datatype="Text" />
+    <Column name="ADDITIONAL_TITLE" id="tblCol_8dba8062d4514ea68e9c1e8c461bd386" index="13" datatype="Text" />
+    <Column name="NAME_FORMAT" id="tblCol_cb79ddb395c648e3b4e6741ca0ab096c" index="14" datatype="Text" />
+    <Column name="CONV_RUN_NO" id="tblCol_3c12ebbc8f7a47489f8e7f4ab2b9c251" index="15" datatype="Integer" />
+    <Column name="PRV_LST_NAME" id="tblCol_1266798897494455aa70eca991640e47" index="16" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

@@ -1,0 +1,9 @@
+﻿<Graph name="Production_ScrapReason.query_Production_ScrapReason.k2tablePop.bin" lastPartID="12">
+  <TableNode partID="0" name="Production_ScrapReason" pos="335.5161 5.854168" width="309.3241" />
+  <DBQueryNode partID="6" name="SqlServer_AdvWorks" pos="10 1.890625" size="280.5161 96.21875" isRoot="true">
+    <DBQuery>{"Name":"query_Production_ScrapReason","ID":"query_query_Production_ScrapReason","ConnName":"SqlServer_AdvWorks","SQL":"select * from Production.ScrapReason","ColumnsList":[{"ID":"queryCol_0","Name":"ScrapReasonID","DataType":"Integer","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"Name","DataType":"Text","Index":1,"IsInputArgument":true},{"ID":"queryCol_2","Name":"ModifiedDate","DataType":"Text","Index":2,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="10" from="0" to="1" pointsArr="290.5161 37.9270859 300.5161 37.9270859 303.0161 25 323.0161 25 325.5161 36.890625 335.5161 36.890625" fromNodePartID="6" fromNodeColumnName="ScrapReasonID" toNodePartID="0" toNodeColumnName="ScrapReasonID" />
+  <Link partID="11" from="2" to="3" pointsArr="290.5161 50 300.5161 50 303.0161 50 323.0161 50 325.5161 48.9635429 335.5161 48.9635429" fromNodePartID="6" fromNodeColumnName="Name" toNodePartID="0" toNodeColumnName="Name" />
+  <Link partID="12" from="4" to="5" pointsArr="290.5161 62.0729141 300.5161 62.0729141 303.0161 75 323.0161 75 325.5161 61.0364571 335.5161 61.0364571" fromNodePartID="6" fromNodeColumnName="ModifiedDate" toNodePartID="0" toNodeColumnName="ModifiedDate" />
+</Graph>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>executePolicyDecision</Name>
+  <ID>Project.executePolicyDecision</ID>
+  <Category>Project</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>WebService</FunctionType>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>
+DBExecute("fabric","get Policy:" + PolicyID,null);
+
+
+
+ResultSetWrapper rs = DBQuery("cdbms","SELECT policy_id, decision_datetime, result, conclusion, informational_message FROM policy_renewal_result",null);
+
+// Loop over table rows and for each row, change its valuse and update remote
+for(Object [] row : rs) {
+	Object [] sapiensDecisionResults = new Object[row.length];	
+	// Manipulate columns
+	String policy_id              = (String)row[0];
+	String decision_datetime      = (String)row[1];
+	String result                 = (String)row[2];
+	String conclusion      	   = (String)row[3];
+	String informational_message  = (String)row[4];
+	
+	sapiensDecisionResults[0] = policy_id;
+	sapiensDecisionResults[1] = decision_datetime;
+	sapiensDecisionResults[2] = result;
+	sapiensDecisionResults[3] = conclusion;
+	sapiensDecisionResults[4] = informational_message;
+	
+	// Update remote DB
+	DBExecute("PolicyDB", "insert into decision_input.POLICY_RENEWAL_RESULTS (policy_id,decision_datetime,result,conclusion,informational_message) values(?,?,?,?,?);",sapiensDecisionResults);
+}
+
+return DBQuery("cdbms","SELECT policy_id, decision_datetime, conclusion, informational_message FROM policy_renewal_result",null);</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="PolicyID" id="fi.Project.executePolicyDecision.0" index="0" dataType="String">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="results" id="fo.Project.executePolicyDecision.0" index="0" dataType="Object">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

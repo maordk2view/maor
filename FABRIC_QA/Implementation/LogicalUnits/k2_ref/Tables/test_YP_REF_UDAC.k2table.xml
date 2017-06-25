@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>test_YP_REF_UDAC</Name>
+  <ID>tbl_test_YP_REF_UDAC</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="UDAC_CODE" id="tblCol_0b496a02e0c6493a9535e4d0e1d4dba4" index="0" datatype="Text" />
+    <Column name="UDAC_VERSION" id="tblCol_2d658ea642fd409d9ff24c2ce1c4b353" index="1" datatype="Integer" />
+    <Column name="LAST_VERSION_IND" id="tblCol_18c4e9583f28433d9d6aa7b4cf4cc821" index="2" datatype="Text" />
+    <Column name="TYPE" id="tblCol_591d217df82041e598b74c7d89109fb2" index="3" datatype="Text" />
+    <Column name="UDAC_DESC" id="tblCol_2f708ef01d4f47e688ad1a4ab7fd299c" index="4" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

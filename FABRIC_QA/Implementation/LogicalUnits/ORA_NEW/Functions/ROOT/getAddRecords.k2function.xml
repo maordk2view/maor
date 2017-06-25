@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>getAddRecords</Name>
+  <ID>ROOT.getAddRecords</ID>
+  <Category>ROOT</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String sql = "SELECT ADDRESS_ID, HOUSE_NO, COLONY_ID, STATE_CODE, ZIP_CODE, STREET_NAME, interior_number FROM YP_ADDRESS WHERE CUSTOMER_ID = ?";
+Object[] valuesArr = {CUSTOMER_ID};
+
+ResultSetWrapper rs = DBQuery("PG_SOURCE", sql, valuesArr);
+
+//String a = java_concat_str ("1", "_rivi");
+for (Object[] row : rs) {
+
+
+	row[1] = concat (row[1].toString(), "_con_fun");
+	Object [] row2 = Arrays.copyOf(row,row.length+2);
+
+	String[] trnValues = {"MEXA", "1"};
+
+	Map trn = getTranslationValues("trnProduct", trnValues);
+
+	row2[7] = (String) trn.get("PRD_CD_OUT");
+	
+	String sql1 = "select getNewUdacDesc2(HBD, 1, 'Y') FROM YP_CUSTOMER ";
+	row2[8] = DBSelectValue("ludb", sql1, null);
+
+	//if (obj[1].equals("1502_con_fun_LU"))
+		//rejectEntity ("Entity  was rejected in getAddRecords " + obj[1]);
+	//if (obj[1].equals("1502_con_fun"))
+	//else
+	//	return null;
+	
+	yield (row2);
+}</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>true</IsRootFunction>
+  <InputParams>
+    <Input name="CUSTOMER_ID" id="fi.ROOT.getAddRecords.0" index="0" dataType="Integer">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="ADDRESS_ID" id="fo.ROOT.getAddRecords.0" index="0" dataType="Integer">
+      <Comment />
+    </Output>
+    <Output name="HOUSE_NO" id="fo.ROOT.getAddRecords.1" index="1" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="COLONY_ID" id="fo.ROOT.getAddRecords.2" index="2" dataType="Integer">
+      <Comment />
+    </Output>
+    <Output name="STATE_CODE" id="fo.ROOT.getAddRecords.3" index="3" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="ZIP_CODE" id="fo.ROOT.getAddRecords.4" index="4" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="STREET_NAME" id="fo.ROOT.getAddRecords.5" index="5" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="SFA_ID" id="fo.ROOT.getAddRecords.6" index="6" dataType="Integer">
+      <Comment />
+    </Output>
+    <Output name="ADD_PRM1" id="fo.ROOT.getAddRecords.7" index="7" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="ADD_PRM2" id="fo.ROOT.getAddRecords.8" index="8" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

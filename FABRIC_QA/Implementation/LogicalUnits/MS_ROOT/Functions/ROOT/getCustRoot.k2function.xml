@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>getCustRoot</Name>
+  <ID>ROOT.getCustRoot</ID>
+  <Category>ROOT</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String sql = "SELECT CUSTOMER_ID AS CUST_ID, CUSTOMER_TYPE, CUST_OPEN_DATE_TIME, CONTACT_ID FROM YP_CUSTOMER WHERE CUSTOMER_ID = ? ";
+
+Object[] valuesArr = {CUSTOMER_ID};
+
+ResultSetWrapper rs = DBQuery("MYSQL_SOURCE", sql, valuesArr);
+
+for (Object[] row : rs) {
+	yield (row);
+}</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>true</IsRootFunction>
+  <InputParams>
+    <Input name="CUSTOMER_ID" id="fi.ROOT.getCustRoot.0" index="0" dataType="Integer">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="CUST_ID" id="fo.ROOT.getCustRoot.0" index="0" dataType="Integer">
+      <Comment />
+    </Output>
+    <Output name="CUSTOMER_TYPE" id="fo.ROOT.getCustRoot.1" index="1" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="CUST_OPEN_DATE_TIME" id="fo.ROOT.getCustRoot.2" index="2" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="CONTACT_ID" id="fo.ROOT.getCustRoot.3" index="3" dataType="Integer">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

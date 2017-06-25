@@ -1,0 +1,12 @@
+﻿<Graph name="Production_ProductPhoto.query_Production_ProductPhoto.k2tablePop.bin" lastPartID="35">
+  <TableNode partID="0" name="Production_ProductPhoto" pos="753.7799 31.7447968" width="309.3241" />
+  <DBQueryNode partID="9" name="SqlServer_AdvWorks" pos="10.0000153 8.78125" size="280.7799 132.4375" isRoot="true">
+    <DBQuery>{"Name":"query_Production_ProductPhoto","ID":"query_query_Production_ProductPhoto","ConnName":"SqlServer_AdvWorks","SQL":"select * from Production.ProductPhoto","ColumnsList":[{"ID":"queryCol_0","Name":"ProductPhotoID","DataType":"Integer","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"ThumbNailPhoto","DataType":"BLOB","Index":1,"IsInputArgument":true},{"ID":"queryCol_2","Name":"ThumbnailPhotoFileName","DataType":"Text","Index":2,"IsInputArgument":true},{"ID":"queryCol_3","Name":"LargePhoto","DataType":"BLOB","Index":3,"IsInputArgument":true},{"ID":"queryCol_4","Name":"LargePhotoFileName","DataType":"Text","Index":4,"IsInputArgument":true},{"ID":"queryCol_5","Name":"ModifiedDate","DataType":"Text","Index":5,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="16" from="0" to="1" pointsArr="290.7799 44.81771 300.7799 44.81771 743.7799 62.7812538 753.7799 62.7812538" fromNodePartID="9" fromNodeColumnName="ProductPhotoID" toNodePartID="0" toNodeColumnName="ProductPhotoID" />
+  <Link partID="17" from="2" to="3" pointsArr="290.7799 56.890625 300.7799 56.890625 743.7799 74.85417 753.7799 74.85417" fromNodePartID="9" fromNodeColumnName="ThumbNailPhoto" toNodePartID="0" toNodeColumnName="ThumbNailPhoto" />
+  <Link partID="18" from="4" to="5" pointsArr="290.7799 68.96354 300.7799 68.96354 743.7799 86.9270859 753.7799 86.9270859" fromNodePartID="9" fromNodeColumnName="ThumbnailPhotoFileName" toNodePartID="0" toNodeColumnName="ThumbnailPhotoFileName" />
+  <Link partID="19" from="6" to="7" pointsArr="290.7799 81.03645 300.7799 81.03645 743.7799 99 753.7799 99" fromNodePartID="9" fromNodeColumnName="LargePhoto" toNodePartID="0" toNodeColumnName="LargePhoto" />
+  <Link partID="20" from="8" to="9" pointsArr="290.7799 93.109375 300.7799 93.109375 743.7799 111.072914 753.7799 111.072914" fromNodePartID="9" fromNodeColumnName="LargePhotoFileName" toNodePartID="0" toNodeColumnName="LargePhotoFileName" />
+  <Link partID="21" from="10" to="11" pointsArr="290.7799 105.182281 300.7799 105.182281 743.7799 123.145828 753.7799 123.145828" fromNodePartID="9" fromNodeColumnName="ModifiedDate" toNodePartID="0" toNodeColumnName="ModifiedDate" />
+</Graph>

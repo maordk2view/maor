@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>funGetOraProduct</Name>
+  <ID>ORA.funGetOraProduct</ID>
+  <Category>ORA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String sql = "SELECT CUSTOMER_ID, PRODUCT_CODE, PRODUCT_ISSUE_NUM, PRODUCT_STATUS, RETIREMENT_STATUS, ACTIVITY_TYPE, ACTIVITY_DATE, NIR_PRODUCT_IND, NISD_AMOUNT, BOTS_AMOUNT, DISCOUNT_AMT, CONVERSION_IND FROM YP_PRODUCT WHERE CUSTOMER_ID=?";
+Object[] valuesArr = {i_cust_id};
+ResultSetWrapper rs = DBQuery("YP_TEST", sql, valuesArr);
+
+for(Object[] row : rs) {
+	Object [] row2 = Arrays.copyOf(row,row.length+2);
+	row2[row.length] = concat(row[1].toString(), "_S1");
+	String[] trnValues = {row[1].toString(), "1"};
+	Map trn = getTranslationValues("trnProduct", trnValues);
+	row2[row.length+1] = (String) trn.get("PRD_CD_OUT");
+	
+    yield(row2);
+}
+</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>true</IsRootFunction>
+  <InputParams>
+    <Input name="i_cust_id" id="fi.ORA.funGetOraProduct.0" index="0" dataType="Integer">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="CUSTOMER_ID" id="fo.ORA.funGetOraProduct.0" index="0" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="PRODUCT_CODE" id="fo.ORA.funGetOraProduct.1" index="1" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="PRODUCT_ISSUE_NUM" id="fo.ORA.funGetOraProduct.2" index="2" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="PRODUCT_STATUS" id="fo.ORA.funGetOraProduct.3" index="3" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="RETIREMENT_STATUS" id="fo.ORA.funGetOraProduct.4" index="4" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="ACTIVITY_TYPE" id="fo.ORA.funGetOraProduct.5" index="5" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="ACTIVITY_DATE" id="fo.ORA.funGetOraProduct.6" index="6" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="NIR_PRODUCT_IND" id="fo.ORA.funGetOraProduct.7" index="7" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="NISD_AMOUNT" id="fo.ORA.funGetOraProduct.8" index="8" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="BOTS_AMOUNT" id="fo.ORA.funGetOraProduct.9" index="9" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="DISCOUNT_AMT" id="fo.ORA.funGetOraProduct.10" index="10" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="CONVERSION_IND" id="fo.ORA.funGetOraProduct.11" index="11" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="S1" id="fo.ORA.funGetOraProduct.12" index="12" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="S2" id="fo.ORA.funGetOraProduct.13" index="13" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

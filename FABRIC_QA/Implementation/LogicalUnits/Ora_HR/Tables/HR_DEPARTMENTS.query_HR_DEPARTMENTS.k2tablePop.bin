@@ -1,0 +1,10 @@
+﻿<Graph name="HR_DEPARTMENTS.query_HR_DEPARTMENTS.k2tablePop.bin" lastPartID="15">
+  <TableNode partID="0" name="HR_DEPARTMENTS" pos="309.146362 24.8177147" width="309.324158" />
+  <DBQueryNode partID="7" name="CUSTOMER_TEST" pos="9.999992 20.8541718" size="254.146378 108.291656" isRoot="true">
+    <DBQuery>{"Name":"query_HR_DEPARTMENTS","ID":"query_query_HR_DEPARTMENTS","ConnName":"CUSTOMER_TEST","SQL":"select * from HR.DEPARTMENTS","ColumnsList":[{"ID":"queryCol_0","Name":"DEPARTMENT_ID","DataType":"Integer","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"DEPARTMENT_NAME","DataType":"Text","Index":1,"IsInputArgument":true},{"ID":"queryCol_2","Name":"MANAGER_ID","DataType":"Integer","Index":2,"IsInputArgument":true},{"ID":"queryCol_3","Name":"LOCATION_ID","DataType":"Integer","Index":3,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="12" from="0" to="1" pointsArr="264.146362 56.89063 274.146362 56.89063 276.646362 25 296.646362 25 299.146362 55.85417 309.146362 55.85417" fromNodePartID="7" fromNodeColumnName="DEPARTMENT_ID" toNodePartID="0" toNodeColumnName="DEPARTMENT_ID" />
+  <Link partID="13" from="2" to="3" pointsArr="264.146362 68.96355 274.146362 68.96355 276.646362 50 296.646362 50 299.146362 67.9270859 309.146362 67.9270859" fromNodePartID="7" fromNodeColumnName="DEPARTMENT_NAME" toNodePartID="0" toNodeColumnName="DEPARTMENT_NAME" />
+  <Link partID="14" from="4" to="5" pointsArr="264.146362 81.03645 274.146362 81.03645 276.646362 75 296.646362 75 299.146362 80 309.146362 80" fromNodePartID="7" fromNodeColumnName="MANAGER_ID" toNodePartID="0" toNodeColumnName="MANAGER_ID" />
+  <Link partID="15" from="6" to="7" pointsArr="264.146362 93.109375 274.146362 93.109375 276.646362 100 296.646362 100 299.146362 92.07292 309.146362 92.07292" fromNodePartID="7" fromNodeColumnName="LOCATION_ID" toNodePartID="0" toNodeColumnName="LOCATION_ID" />
+</Graph>

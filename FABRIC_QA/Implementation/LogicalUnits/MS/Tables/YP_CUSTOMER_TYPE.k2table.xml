@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>YP_CUSTOMER_TYPE</Name>
+  <ID>tbl_YP_CUSTOMER_TYPE</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="CUSTOMER_ID" id="tblCol_ca6f3e6883d1416ead64554941953642" index="0" datatype="Integer" />
+    <Column name="CUSTOMER_TYPE" id="tblCol_480a4bf6f1da417fa1d300d1216d774b" index="1" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

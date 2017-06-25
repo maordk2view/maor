@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Production_ProductCostHistory</Name>
+  <ID>tbl_Production_ProductCostHistory</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="ProductID" id="tblCol_6999082c7e144fdbbb514c6c86b6a246" index="0" datatype="Integer" mandatory="true" />
+    <Column name="StartDate" id="tblCol_d3a123bb711345c2a873aa8c458b82ef" index="1" datatype="Text" mandatory="true" />
+    <Column name="EndDate" id="tblCol_355a72abb52d4475b7a1000b220e23d2" index="2" datatype="Text" />
+    <Column name="StandardCost" id="tblCol_b2e2e7772aea4ed8ba7fcc7ae237880b" index="3" datatype="Real" mandatory="true" />
+    <Column name="ModifiedDate" id="tblCol_6bd2968cac7147d1bb6c3568865c9bf2" index="4" datatype="Text" mandatory="true" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_6999082c7e144fdbbb514c6c86b6a246,tblCol_d3a123bb711345c2a873aa8c458b82ef" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

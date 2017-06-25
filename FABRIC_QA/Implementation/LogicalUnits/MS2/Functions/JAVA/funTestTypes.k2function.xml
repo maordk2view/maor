@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>funTestTypes</Name>
+  <ID>JAVA.funTestTypes</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>return "Rivi Test Studio Types ";</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <InputParams>
+    <Input name="i_int" id="fi.JAVA.funTestTypes.0" index="0" dataType="Integer">
+      <Comment />
+    </Input>
+    <Input name="i_long" id="fi.JAVA.funTestTypes.1" index="1" dataType="Long">
+      <Comment />
+    </Input>
+    <Input name="i_float" id="fi.JAVA.funTestTypes.2" index="2" dataType="Float">
+      <Comment />
+    </Input>
+    <Input name="i_double" id="fi.JAVA.funTestTypes.3" index="3" dataType="Double">
+      <Comment />
+    </Input>
+    <Input name="i_string" id="fi.JAVA.funTestTypes.4" index="4" dataType="String">
+      <Comment />
+    </Input>
+    <Input name="i_bool" id="fi.JAVA.funTestTypes.5" index="5" dataType="Boolean">
+      <Comment />
+    </Input>
+    <Input name="i_object" id="fi.JAVA.funTestTypes.6" index="6" dataType="Object">
+      <Comment />
+    </Input>
+    <Input name="i_byte" id="fi.JAVA.funTestTypes.7" index="7" dataType="Byte[]">
+      <Comment />
+    </Input>
+    <Input name="i_object_arr" id="fi.JAVA.funTestTypes.8" index="8" dataType="Object[]">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="o_string" id="fo.JAVA.funTestTypes.0" index="0" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

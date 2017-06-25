@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DbQueryItemOfDataTable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ei1000Custs</Name>
+  <DbConn>PG_SOURCE</DbConn>
+  <Sql>SELECT CUSTOMER_ID FROM YP_CUSTOMER order by customer_id limit 1000</Sql>
+  <IsSqlValid>true</IsSqlValid>
+</DbQueryItemOfDataTable>

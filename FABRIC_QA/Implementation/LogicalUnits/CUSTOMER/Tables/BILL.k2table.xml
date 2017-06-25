@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>BILL</Name>
+  <ID>tbl_BILL</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="BAN" id="tblCol_2e7315699a6a4d6eafe9bd3fdbbbacbe" index="0" datatype="Integer" mandatory="true" />
+    <Column name="BILL_SEQ_NO" id="tblCol_96d8b5196cab4f6cb7412f33745ab353" index="1" datatype="Integer" mandatory="true" />
+    <Column name="SYS_CREATION_DATE" id="tblCol_f757c5d4b9f1473d89215a0c31cae4f3" index="2" datatype="Text" mandatory="true" />
+    <Column name="SYS_UPDATE_DATE" id="tblCol_ab9d2bf61e134944b5159624545014aa" index="3" datatype="Text" />
+    <Column name="OPERATOR_ID" id="tblCol_4a83bd6f8b5d471694b72653e5e3d0be" index="4" datatype="Integer" />
+    <Column name="APPLICATION_ID" id="tblCol_dd5bc5649c2c4352b045bbf8eca46e29" index="5" datatype="Text" />
+    <Column name="DL_SERVICE_CODE" id="tblCol_3513b676cdf64fffbad0fc179b9dee23" index="6" datatype="Text" mandatory="true" />
+    <Column name="DL_UPDATE_STAMP" id="tblCol_fa37c9ae62ba48f8a4751fae93ba92ee" index="7" datatype="Integer" />
+    <Column name="CYCLE_CODE" id="tblCol_cea2e84ce16c49619d0feb601d779662" index="8" datatype="Integer" />
+    <Column name="PRODUCTION_DATE" id="tblCol_82cd8fd6f8df44bda79d0eec39577924" index="9" datatype="Text" />
+    <Column name="CYCLE_CLOSE_DATE" id="tblCol_42312729e2c6498295ced05cf0657583" index="10" datatype="Text" />
+    <Column name="CYCLE_RUN_YEAR" id="tblCol_9f2565f00f234f8e8179708ed9ac1e0a" index="11" datatype="Integer" />
+    <Column name="CYCLE_RUN_MONTH" id="tblCol_7ad7c5d468c14708ba73d478f5945bcc" index="12" datatype="Integer" />
+    <Column name="BILL_DUE_DATE" id="tblCol_4cc46837d1a8449e8f99dd268415a117" index="13" datatype="Text" />
+    <Column name="BILL_DELIVERY_IND" id="tblCol_1841c4d763594f9a913ed69e6354c337" index="14" datatype="Text" />
+    <Column name="NM_ADR_LINK_SEQ_NO" id="tblCol_cef36a31a32f472ea2c7dcb5b3a55974" index="15" datatype="Integer" />
+    <Column name="BAN_STATUS" id="tblCol_bb184e9216bb4619b937bb6b2521de1b" index="16" datatype="Text" />
+    <Column name="BAN_STATUS_DATE" id="tblCol_1d7224ccf020492690069d15715e66ea" index="17" datatype="Text" />
+    <Column name="DEPOSIT_PAID_AMT" id="tblCol_4ba451c8ad2348dd9681c153d69c9c83" index="18" datatype="Real" />
+    <Column name="DEPOSIT_REQ_AMT" id="tblCol_fd8c8f42a4444ab79795feaa143c1156" index="19" datatype="Real" />
+    <Column name="PREV_BALANCE_AMT" id="tblCol_09caed9c88a2446c852428f6ea64d595" index="20" datatype="Real" />
+    <Column name="PYM_RECEIVED_AMT" id="tblCol_489e718ecea74b588643a41ff1a89c95" index="21" datatype="Real" />
+    <Column name="TOTAL_BILLED_CHARGE" id="tblCol_ed22e540f8304e79aace449e586c27e3" index="22" datatype="Real" />
+    <Column name="TOTAL_BILLED_ADJUST" id="tblCol_073a7f5abe814aaabab8e8f15cb1082c" index="23" datatype="Real" />
+    <Column name="PAST_DUE_AMT" id="tblCol_c64de8754e014c41b5f9e435c94e1552" index="24" datatype="Real" />
+    <Column name="LATE_PYM_BASE_AMT" id="tblCol_cd43f161c6784ff38a7e686677f1c906" index="25" datatype="Real" />
+    <Column name="LATE_PYM_CHRG_AMT" id="tblCol_b12ec2cad91145998e2ffe87f030558d" index="26" datatype="Real" />
+    <Column name="CURR_CHARGE_AMT" id="tblCol_d3b804f4b41945b4a3c810418f079e6d" index="27" datatype="Real" />
+    <Column name="CURR_CREDIT_AMT" id="tblCol_fdc996b7cde3419f90f8aa195ab6e90c" index="28" datatype="Real" />
+    <Column name="TOTAL_DUE_AMT" id="tblCol_8574be194a124a9cb8908897a8ef5353" index="29" datatype="Real" />
+    <Column name="ACTUAL_BALANCE_AMT" id="tblCol_9751be2f453f456f84e925101743e51d" index="30" datatype="Real" />
+    <Column name="BILLING_METHOD" id="tblCol_ba1f08a2c15c4861a16c887d2fe4df54" index="31" datatype="Text" />
+    <Column name="BANK_ACCOUNT_NO" id="tblCol_f3e05efbdc674397b711355ced163b69" index="32" datatype="Text" />
+    <Column name="BANK_CODE" id="tblCol_229dadfee0dd43a29c18091d547001e4" index="33" datatype="Text" />
+    <Column name="CREDIT_CARD_NO" id="tblCol_c696d45dac884fdd9bd093b9309a39f5" index="34" datatype="Text" />
+    <Column name="CREDIT_CARD_TYPE" id="tblCol_23cb81a32c66470ba7f2556a06a4cb15" index="35" datatype="Text" />
+    <Column name="PRD_CVRG_STRT_DATE" id="tblCol_251eae57b880480ab6ef0468ad9aa9e7" index="36" datatype="Text" />
+    <Column name="PRD_CVRG_END_DATE" id="tblCol_46f6fdc2b3d143b4b229c5d333623f53" index="37" datatype="Text" />
+    <Column name="CURR_RC_CHRG_AMT" id="tblCol_3b7e8a0a9a5742fa8f84945d28f45f80" index="38" datatype="Real" />
+    <Column name="CURR_OC_CHRG_AMT" id="tblCol_ee8c8f93e0f74e13b74e19edbda5370f" index="39" datatype="Real" />
+    <Column name="CURR_OTR_UC_CHRG_AMT" id="tblCol_f3886d7fb2994947a49544407a570661" index="40" datatype="Real" />
+    <Column name="CURR_TOLL_CHRG_AMT" id="tblCol_993b09a80ece4237b5e93fc8a4adcaaf" index="41" datatype="Real" />
+    <Column name="CURR_ICC_CHRG_AMT" id="tblCol_befefd771fa448458dbac94cbc8ef594" index="42" datatype="Real" />
+    <Column name="MANUAL_HNDL_REASON" id="tblCol_4922b5165ea945e3a8bb6a0cb8678b1f" index="43" datatype="Text" />
+    <Column name="MANUAL_HNDL_REQ_OPID" id="tblCol_5e6d71f932ef43f38356760725327399" index="44" datatype="Integer" />
+    <Column name="MANUAL_HNDL_BY_OPID" id="tblCol_6c6cb1dfaa5e43e3a44ec5bfc7cc426b" index="45" datatype="Integer" />
+    <Column name="BL_MEDIA_CATEGORY" id="tblCol_95495b6e29a449c3b3ab893140b45c56" index="46" datatype="Text" />
+    <Column name="PRODUCTION_TYPE" id="tblCol_6b3c039be6fb47908375fa4c29caf07f" index="47" datatype="Text" />
+    <Column name="PRODUCTION_REQUEST" id="tblCol_0b9dd2fc543042fea696b15aaea47021" index="48" datatype="Text" />
+    <Column name="CARRY_OVER_IND" id="tblCol_72f4a6a5968f4f75b29bfc018d035dd3" index="49" datatype="Text" />
+    <Column name="GROUP_IND" id="tblCol_2a762e5c88354922a7b96d9ac4e9289a" index="50" datatype="Text" />
+    <Column name="NUM_OF_CTNS" id="tblCol_7a6c719b919e41cc81b72ec5f4b40905" index="51" datatype="Integer" />
+    <Column name="TAX_CTY_EXMP_IND" id="tblCol_20f3c0e41bfc4016a97dc29e65a08e1a" index="52" datatype="Text" />
+    <Column name="TAX_CNT_EXMP_IND" id="tblCol_0f600ab1e325403893fc34b72882a9a3" index="53" datatype="Text" />
+    <Column name="TAX_STT_EXMP_IND" id="tblCol_9097ffd8e8864362a2658d3feea2ffe7" index="54" datatype="Text" />
+    <Column name="TAX_FED_EXMP_IND" id="tblCol_8245af4f5d9d49b5b9268372b997c480" index="55" datatype="Text" />
+    <Column name="TAX_MIS1_EXMP_IND" id="tblCol_d714a1c663314e68bf5d83e1f720b93a" index="56" datatype="Text" />
+    <Column name="TAX_MIS2_EXMP_IND" id="tblCol_a7ed99cce2de4c758c0e830c3c7b9a66" index="57" datatype="Text" />
+    <Column name="TAX_RM_EXMP_IND" id="tblCol_ab73efdf78b6496793b205760cfac7e8" index="58" datatype="Text" />
+    <Column name="TAX_CTY_AMT" id="tblCol_975296eb543b4cc7969580e1d205b332" index="59" datatype="Real" />
+    <Column name="TAX_CNT_AMT" id="tblCol_569314c80aad40a6b2d73a18cd30655b" index="60" datatype="Real" />
+    <Column name="TAX_STT_AMT" id="tblCol_1648e762e153423d99c11d6115022117" index="61" datatype="Real" />
+    <Column name="TAX_FED_AMT" id="tblCol_111c50635c3a4867990373d4b37fda13" index="62" datatype="Real" />
+    <Column name="TAX_MIS1_AMT" id="tblCol_ecaba8096f614d8ab333460b804af411" index="63" datatype="Real" />
+    <Column name="TAX_MIS2_AMT" id="tblCol_9df88c35ef9c4fa180f58c34efa61c95" index="64" datatype="Real" />
+    <Column name="TAX_RM_AMT" id="tblCol_6694eeefed9e4a4f973a553aa7de1014" index="65" datatype="Real" />
+    <Column name="TAX_ADR_SOURCE_CD" id="tblCol_3bc65899350a42c3a745fe1cf5a5da39" index="66" datatype="Text" />
+    <Column name="MISC_TAX_ACTV_RSN_CD" id="tblCol_ef1a46c432454f9f89c7eb5fe942d42f" index="67" datatype="Text" />
+    <Column name="CTNS_NUM_HOME_CALLS" id="tblCol_375dcacc98774422b45ff52c49f13cd2" index="68" datatype="Integer" />
+    <Column name="CTNS_NUM_HOME_MINS" id="tblCol_f63cd3084d1d49c79ddbfce34feb6374" index="69" datatype="Real" />
+    <Column name="CTNS_NUM_RM_CALLS" id="tblCol_198f6972f3624b55a7267ae500211a4b" index="70" datatype="Integer" />
+    <Column name="CTNS_NUM_RM_MINS" id="tblCol_f6457d8810c5419f922b5499c439f9c0" index="71" datatype="Real" />
+    <Column name="BILL_DATE" id="tblCol_3c20a5dac3d74066b93978cab100db52" index="72" datatype="Text" />
+    <Column name="CONV_RUN_NO" id="tblCol_224a2466a4db4fea9f9975b1604e6b30" index="73" datatype="Integer" />
+    <Column name="AFTER_CYCLE_CHG_IND" id="tblCol_b8bf12686dd54d8a9d1653b1937098d1" index="74" datatype="Text" />
+    <Column name="BL_DEF_MAILING_IND" id="tblCol_10cd16f44ccd4432bf7a7fb710a816cb" index="75" datatype="Text" />
+    <Column name="BL_BAL_HANDLE_IND" id="tblCol_697e838786474b5ab8a3ae48f8f841ee" index="76" datatype="Text" />
+    <Column name="LOCAL_AT_AMT" id="tblCol_60351cb3b3d847509aafab7ea2e8c2a6" index="77" datatype="Real" />
+    <Column name="LOCAL_TOLL_AMT" id="tblCol_b50e5d6627f24929a14a18c83a3fe9a9" index="78" datatype="Real" />
+    <Column name="LOCAL_AC_AMT" id="tblCol_ea345f53e40d4995b31eb1c2f643dc78" index="79" datatype="Real" />
+    <Column name="EHA_AT_AMT" id="tblCol_eee5f036bc4f4c59a24e8f7f6eabe686" index="80" datatype="Real" />
+    <Column name="EHA_TOLL_AMT" id="tblCol_dfcfed5e284243bdbf476f1221ff7cf1" index="81" datatype="Real" />
+    <Column name="EHA_AC_AMT" id="tblCol_5ff78c63f8834163b289ffea5cf6e04e" index="82" datatype="Real" />
+    <Column name="ZONE_AT_AMT" id="tblCol_4c5bd35456a64776af9364cc986fa6f3" index="83" datatype="Real" />
+    <Column name="ZONE_TOLL_AMT" id="tblCol_d33f484596ba46ecbd8f9bcbcc84f541" index="84" datatype="Real" />
+    <Column name="ZONE_AC_AMT" id="tblCol_96464c8237e44af88c28d28e5473a14e" index="85" datatype="Real" />
+    <Column name="RM_AT_AMT" id="tblCol_f3a42696a40142e09ebdf2bcedfa643b" index="86" datatype="Real" />
+    <Column name="RM_TOLL_AMT" id="tblCol_3bbc5033342849b0b1d90423f3c73ce1" index="87" datatype="Real" />
+    <Column name="RM_AC_AMT" id="tblCol_60d8d95a3c834095a76e2ef1f22c45cf" index="88" datatype="Real" />
+    <Column name="EHA_RM_TAX" id="tblCol_4c535e4d18a94c3ca3cd7e0d0bba3819" index="89" datatype="Real" />
+    <Column name="CURR_CTNFE_CHRG_AMT" id="tblCol_7f702c1bcb344e009c954c8b4bfd6962" index="90" datatype="Real" />
+    <Column name="BILL_CONF_STATUS" id="tblCol_34bfca5486d84d6eb69c8aa2fb5faca1" index="91" datatype="Text" />
+    <Column name="BILL_STATUS_DATE" id="tblCol_ea758a44269d45b79fc5cc35ba9f6371" index="92" datatype="Text" />
+    <Column name="CR_CARD_AUTH_CODE" id="tblCol_40f9f28affcd4161b593fc52a9e8ed92" index="93" datatype="Text" />
+    <Column name="CR_CARD_EXP_DATE" id="tblCol_49b1d5980bd04570854b7d2951cc57e7" index="94" datatype="Text" />
+    <Column name="AUTO_GEN_PYM_TYPE" id="tblCol_4e1fe36b234e4ffaa4219a57ec1530a3" index="95" datatype="Text" />
+    <Column name="BAL_NOT_PAST_AMT" id="tblCol_8f9982678d7f4330ba00be6c43aec1f1" index="96" datatype="Real" />
+    <Column name="ICC_IND" id="tblCol_d6f8aead52d942a89a90acbcedfbed61" index="97" datatype="Text" />
+    <Column name="PP_RC_CHRG_AMT" id="tblCol_91d7a2ca186d41559c7c160be6bd1642" index="98" datatype="Real" />
+    <Column name="BAN_PP_RC_CHRG_AMT" id="tblCol_b0d0e401e8fe454cb6a576954b7a2989" index="99" datatype="Real" />
+    <Column name="BAN_RC_CHRG_AMT" id="tblCol_fe023df59fe84bb4b482dd8d4859da98" index="100" datatype="Real" />
+    <Column name="BAN_OC_CHRG_AMT" id="tblCol_9db7918d6aff4bfea2329b8a6b2d1a85" index="101" datatype="Real" />
+    <Column name="BAN_ADJUST_AMT" id="tblCol_c3628390a5d44997b3f90ad338a7d9e2" index="102" datatype="Real" />
+    <Column name="BAN_TOTAL_TAX_AMT" id="tblCol_479ad80edbc5465aacb5933388eb87de" index="103" datatype="Real" />
+    <Column name="BAN_RC_DISCTBL_AMT" id="tblCol_8b9efb9ca31347548c6c7f8d154c90cd" index="104" datatype="Real" />
+    <Column name="BAN_OC_DISCTBL_AMT" id="tblCol_f2a227ce9eb147c69baf34feec42b9b1" index="105" datatype="Real" />
+    <Column name="CTNS_NUM_HOME_VOL" id="tblCol_758084f946884a3ba348995cbf6fff5e" index="106" datatype="Real" />
+    <Column name="CTNS_NUM_RM_VOL" id="tblCol_98be79e92dbc4aae97fb9df99cfaa282" index="107" datatype="Real" />
+    <Column name="LOCAL_DT_AT_AMT" id="tblCol_c33ebbb8179b432b853273dda625c6da" index="108" datatype="Real" />
+    <Column name="LOCAL_DT_AC_AMT" id="tblCol_898ed947e2a34822ac3203a177bb5d2a" index="109" datatype="Real" />
+    <Column name="EHA_DT_AT_AMT" id="tblCol_d557e84751874dd2a5103941651b3e8d" index="110" datatype="Real" />
+    <Column name="EHA_DT_AC_AMT" id="tblCol_84b5ec2e106645328002c4885a45db13" index="111" datatype="Real" />
+    <Column name="RM_DT_AT_AMT" id="tblCol_44ebe6077a944f49b561a23fdb37b8f9" index="112" datatype="Real" />
+    <Column name="RM_DT_AC_AMT" id="tblCol_bd2320b43123495ba93ac98242d97784" index="113" datatype="Real" />
+    <Column name="AR_DUE_DATE" id="tblCol_7b85cab085d74b1585a76d523d8ebc3e" index="114" datatype="Text" />
+    <Column name="BILL_LNG" id="tblCol_de414dfe727d418b9c3509023d0bb9b5" index="115" datatype="Text" />
+    <Column name="MVC_VALUE" id="tblCol_6df971602c1d42208561a283abe1e826" index="116" datatype="Integer" />
+    <Column name="BL_PAGE_BREAK_IND" id="tblCol_f66cf32416e44b46ab4aa37bb177a6d5" index="117" datatype="Text" />
+    <Column name="ARREARS_OVERRIDE" id="tblCol_21720390608b447e96cb585d927a1137" index="118" datatype="Text" />
+    <Column name="LATE_PYM_POLICY" id="tblCol_36b2e1b2c88a42eba459343e4032f5f4" index="119" datatype="Text" />
+    <Column name="EXTR_SEQ_NO" id="tblCol_e42cd7175a1248eb8eeeb7a856c2cb9a" index="120" datatype="Integer" />
+    <Column name="LOCAL_MARKET" id="tblCol_bcf8bb2f6f0740dda2789fc440314120" index="121" datatype="Text" />
+    <Column name="LS_IND" id="tblCol_bc3dd19eac8b4231a58bfcf53c8d4d06" index="122" datatype="Text" />
+    <Column name="CORPORATE_ID" id="tblCol_d6f322ff637e42d5a04b934e30e3bf72" index="123" datatype="Integer" />
+    <Column name="DATA_VOICE_IND" id="tblCol_31a41d74d56c47e082e892efbb7935be" index="124" datatype="Text" />
+    <Column name="TOT_TAX_AND_TAXFEE" id="tblCol_0d716cafc11543a1856192e4dfcac971" index="125" datatype="Real" />
+    <Column name="EQU_DTL_BILL_IND" id="tblCol_5e093678ce8149b59afdafd7e1dca458" index="126" datatype="Text" />
+    <Column name="BMG_IND" id="tblCol_196bd68f53d44963b27e93664eebda20" index="127" datatype="Text" />
+    <Column name="ATT_INVOICE_ID" id="tblCol_db8d2f40d1244128bf48f1bec820b4ca" index="128" datatype="Text" />
+    <Column name="COPAY_ADJ_AMT" id="tblCol_8dc7811c90bc424d9e018e43b42ab48f" index="129" datatype="Real" />
+    <Column name="MLB_RUN_SEQ" id="tblCol_eee966b24bd44a70a47cca4584d00c33" index="130" datatype="Integer" />
+    <Column name="ADR_ZIP" id="tblCol_39a4f3820a8a4c53a5c2883f31dbbfe2" index="131" datatype="Text" />
+    <Column name="ADR_ZIP_GEO_CODE" id="tblCol_2fe318b7241f41708750e23252130651" index="132" datatype="Text" />
+    <Column name="ADR_INCORP_IND" id="tblCol_90e8c1e83a2e445abf212be9e91fcdf7" index="133" datatype="Text" />
+    <Column name="TITAN_IND" id="tblCol_604f3c395a0b4c23956ebdcacb198572" index="134" datatype="Text" />
+    <Column name="INST_UNPAID_AMT" id="tblCol_e5c101f25c684d4487101209022e84fd" index="135" datatype="Real" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

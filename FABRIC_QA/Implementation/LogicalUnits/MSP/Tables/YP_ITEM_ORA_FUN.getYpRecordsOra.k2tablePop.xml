@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>getYpRecordsOra</PopulationObjectName>
+  <TableName>YP_ITEM_ORA_FUN</TableName>
+  <ID>getYpRecordsOra</ID>
+  <RootItemID>f_3</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="CUST_ID" id="fi_3.0" dataType="Integer" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item id="f_3" name="getYpRecordsOra" nodeOrder="0" module="Function" fileName="getYpRecordsOra.k2function.xml">
+      <InputsList>
+        <Input id="fi_3.0" name="CUST_ID" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_3.0" name="CUSTOMER_ID" />
+        <Output id="fo_3.1" name="PRODUCT_CODE" />
+        <Output id="fo_3.2" name="PRODUCT_ISSUE_NUM" />
+        <Output id="fo_3.3" name="ITEM_ID" />
+        <Output id="fo_3.4" name="ITEM_VERSION" />
+        <Output id="fo_3.5" name="PROPOSAL_ID" />
+        <Output id="fo_3.6" name="LAST_VERSION_IND" />
+        <Output id="fo_3.7" name="SECTION_CODE" />
+        <Output id="fo_3.8" name="HEADING_CODE" />
+        <Output id="fo_3.9" name="SUB_HEADING_CODE" />
+        <Output id="fo_3.10" name="TOWN_POPULATION_CODE" />
+        <Output id="fo_3.11" name="TOWN_INTEGR_CODE" />
+        <Output id="fo_3.12" name="UDAC_CODE" />
+        <Output id="fo_3.13" name="RATE_UDAC_CODE" />
+        <Output id="fo_3.14" name="LISTING_ID" />
+        <Output id="fo_3.15" name="MAIN_ITEM_ID" />
+        <Output id="fo_3.16" name="ACTION_CODE" />
+        <Output id="fo_3.17" name="ACTION_CODE_RSN" />
+        <Output id="fo_3.18" name="CONTRACT_ID" />
+        <Output id="fo_3.19" name="CONTRACT_VERSION" />
+        <Output id="fo_3.20" name="PREVIOUS_ITEM_ID" />
+        <Output id="fo_3.21" name="PREVIOUS_ACTION_CODE" />
+        <Output id="fo_3.22" name="PREV_ACTION_CODE_RSN" />
+        <Output id="fo_3.23" name="OPEN_DATE" />
+        <Output id="fo_3.24" name="IN_OUT_DATE" />
+        <Output id="fo_3.25" name="ITEM_STATUS" />
+        <Output id="fo_3.26" name="BOTS_ORIGIN_CODE" />
+        <Output id="fo_3.27" name="DIS_ASSOC_STATUS" />
+        <Output id="fo_3.28" name="COPYSHEET_CHG_REASON" />
+        <Output id="fo_3.29" name="DISPLAY_AD_ACT_RSN" />
+        <Output id="fo_3.30" name="DISPLAY_AD_PREFIX" />
+        <Output id="fo_3.31" name="DISPLAY_AD_NUMBER" />
+        <Output id="fo_3.32" name="DISPLAY_AD_VERSION" />
+        <Output id="fo_3.33" name="DISPLAY_AD_ACTIVITY" />
+        <Output id="fo_3.34" name="OMIT_ANCHOR_IND" />
+        <Output id="fo_3.35" name="OMIT_ADDRESS_IND" />
+        <Output id="fo_3.36" name="OMIT_TOWN_IND" />
+        <Output id="fo_3.37" name="HELD_ACTIVITY" />
+        <Output id="fo_3.38" name="ITEM_NISD_AMT" />
+        <Output id="fo_3.39" name="ITEM_BOTS_AMT" />
+        <Output id="fo_3.40" name="ATB_AMT" />
+        <Output id="fo_3.41" name="ATB_REASON" />
+        <Output id="fo_3.42" name="COMPLAINT_IND" />
+        <Output id="fo_3.43" name="COMPLAINT_NISD_AMT" />
+        <Output id="fo_3.44" name="BRAND_NAME" />
+        <Output id="fo_3.45" name="SEARCH_BRAND_NAME" />
+        <Output id="fo_3.46" name="BRAND_NAMES_NUM" />
+        <Output id="fo_3.47" name="CAPTION_ARR_IND" />
+        <Output id="fo_3.48" name="HEADING_CNG_STS" />
+        <Output id="fo_3.49" name="LAST_YEAR_DISC_CODE" />
+        <Output id="fo_3.50" name="LAST_YEAR_DISC_PHASE" />
+        <Output id="fo_3.51" name="DISCOUNT_BOTS_AMT" />
+        <Output id="fo_3.52" name="SELLING_ID" />
+        <Output id="fo_3.53" name="SUBORDINATE_SEQ_NUM" />
+        <Output id="fo_3.54" name="SENIORITY_DATE" />
+        <Output id="fo_3.55" name="DISCOUNT_CODE" />
+        <Output id="fo_3.56" name="DISCOUNT_PHASE" />
+        <Output id="fo_3.57" name="DISCOUNT_AMT" />
+        <Output id="fo_3.58" name="ADVERT_ID" />
+        <Output id="fo_3.59" name="ADVERT_LINE_ID" />
+        <Output id="fo_3.60" name="COPY_SHEET_FORMAT" />
+        <Output id="fo_3.61" name="BASED_ON_AD_PREFIX" />
+        <Output id="fo_3.62" name="CORRECTION_NUMBER" />
+        <Output id="fo_3.63" name="CORRECTION_UPD_DATE" />
+        <Output id="fo_3.64" name="BASED_ON_AD" />
+        <Output id="fo_3.65" name="IDENTICAL_TO_BASE" />
+        <Output id="fo_3.66" name="CONTENT_ID" />
+        <Output id="fo_3.67" name="CONTENT_VERSION" />
+        <Output id="fo_3.68" name="FORCE_PRICE_IND" />
+        <Output id="fo_3.69" name="UNIT_QUANTITY" />
+        <Output id="fo_3.70" name="PROM_RELATED_YP_PRD" />
+        <Output id="fo_3.71" name="PROM_RELATED_YP_ISS" />
+        <Output id="fo_3.72" name="PROM_RELATED_ITEM_ID" />
+        <Output id="fo_3.73" name="NIR_GRAPH_SUPPLIER" />
+        <Output id="fo_3.74" name="NIR_GRAPH_SUP_METHOD" />
+        <Output id="fo_3.75" name="START_PUBLISH_DATE" />
+        <Output id="fo_3.76" name="NIR_PRODUCT_IND" />
+        <Output id="fo_3.77" name="LISTADO_ID" />
+        <Output id="fo_3.78" name="ADVERT_INDENT_LEVEL" />
+        <Output id="fo_3.79" name="ADVERT_LINE_SEQ_NUM" />
+        <Output id="fo_3.80" name="ASSC_DISASS_CUST_ID" />
+        <Output id="fo_3.81" name="LOCATED_IND" />
+        <Output id="fo_3.82" name="MISSING_CONTENT_IND" />
+        <Output id="fo_3.83" name="COMPLAINT_PERCENTAGE" />
+        <Output id="fo_3.84" name="ITEM_CMSN_BOTS_AMT" />
+        <Output id="fo_3.85" name="ATCB_AMT" />
+        <Output id="fo_3.86" name="DISCOUNT_PERCENTAGE" />
+        <Output id="fo_3.87" name="LAST_YEAR_DISC_PRCNT" />
+        <Output id="fo_3.88" name="LAST_YEAR_RATE_UDAC" />
+        <Output id="fo_3.89" name="ASSC_DISASS_PRD_CODE" />
+        <Output id="fo_3.90" name="CTCR_BATCH_PROG_ID" />
+        <Output id="fo_3.91" name="CTCR_BATCH_PROG_DT" />
+        <Output id="fo_3.92" name="CTCR_ONLINE_USER_ID" />
+        <Output id="fo_3.93" name="CTCR_ONLINE_PROG_ID" />
+        <Output id="fo_3.94" name="CTCR_ONLINE_PROG_DT" />
+        <Output id="fo_3.95" name="CTCR_SYS_CRE_DT" />
+        <Output id="fo_3.96" name="CTCR_SYS_UPD_DT" />
+        <Output id="fo_3.97" name="CTCR_DBI_PROG_ID" />
+        <Output id="fo_3.98" name="CTCR_DBI_PROG_DT" />
+        <Output id="fo_3.99" name="CTCR_CNV_DT" />
+        <Output id="fo_3.100" name="CTCR_EVENT_ID" />
+        <Output id="fo_3.101" name="COMMISSION_PAID_IND" />
+        <Output id="fo_3.102" name="PRE_PAY_IND" />
+        <Output id="fo_3.103" name="COMPLAINT_BOTS_AMT" />
+        <Output id="fo_3.104" name="SFA_TRANSACTION" />
+        <Output id="fo_3.105" name="SFA_ID" />
+        <Output id="fo_3.106" name="BASED_ON_UDAC" />
+        <Output id="fo_3.107" name="RATE_DISC_PERCENTAGE" />
+        <Output id="fo_3.108" name="RATE_DISCOUNT_AMT" />
+        <Output id="fo_3.109" name="RATE_BASE_AMT" />
+        <Output id="fo_3.110" name="RATE_DISC_PERCENTAGE_LY" />
+        <Output id="fo_3.111" name="RATE_DISCOUNT_AMT_LY" />
+        <Output id="fo_3.112" name="LOYALTY_DISC_PERCENTAGE" />
+        <Output id="fo_3.113" name="LOYALTY_DISCOUNT_AMT" />
+        <Output id="fo_3.114" name="LOYALTY_BASE_AMT" />
+        <Output id="fo_3.115" name="LOYALTY_DISC_PERCENTAGE_LY" />
+        <Output id="fo_3.116" name="LOYALTY_DISCOUNT_AMT_LY" />
+        <Output id="fo_3.117" name="NS_RATE_TYPE" />
+        <Output id="fo_3.118" name="BOTTOM_PRICE" />
+        <Output id="fo_3.119" name="UDAC_CMSN_POINTS" />
+        <Output id="fo_3.120" name="BONI_DISC_CODE" />
+        <Output id="fo_3.121" name="PREV_BONI_DISC_CODE" />
+        <Output id="fo_3.122" name="SPECIAL_UDAC_IND" />
+        <Output id="fo_3.123" name="VOLUME_DISC_PERCENTAGE" />
+        <Output id="fo_3.124" name="VOLUME_DISCOUNT_AMT" />
+        <Output id="fo_3.125" name="VOLUME_BASE_AMT" />
+        <Output id="fo_3.126" name="LOCK_CONTENT_IND" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="259" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.0" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_d9ebf14725284fc0a88438aa9888d459" />
+    <Link partId="260" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.1" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_a5377719103a409697a342b510cbed59" />
+    <Link partId="261" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.2" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_a333aa4bb7b94654ad60e5faaa8409b8" />
+    <Link partId="262" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.3" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_27f1551847e54eba8e178c36bd1bb4dd" />
+    <Link partId="263" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.4" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_7020861f5d8341c9ba9425d959c1f0c4" />
+    <Link partId="264" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.5" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_5369bcbaf14c411f868900af3fa63f51" />
+    <Link partId="265" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.6" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_cbebb2bfdc244483a3728dc12b9ca5d1" />
+    <Link partId="266" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.7" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_f42c3707d59643aba5c15606c28ee78b" />
+    <Link partId="267" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.8" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_cad9671121ef473c8665a38635f49eac" />
+    <Link partId="268" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.9" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_6d13fb3c21934bb5a9afe7b44f7048bd" />
+    <Link partId="269" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.10" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_a9c437f5b41b4cdfbf8d2ac6b02fd9a0" />
+    <Link partId="270" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.11" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_bc871b43ac154676bf57fefedc8b6274" />
+    <Link partId="271" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.12" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_eaaae3e765e74ea681dec5f2af820888" />
+    <Link partId="272" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.13" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_0da671e497054e639180d425e09c8b93" />
+    <Link partId="273" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.14" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_28a24a8bc53e4b5fb11d9865ca981f76" />
+    <Link partId="274" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.15" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_2320b3ac590b46b8abb0813d905568dc" />
+    <Link partId="275" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.16" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_44f24cf4a03746a0b37805fd366f1486" />
+    <Link partId="276" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.17" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_1e4650c8438440f7aa1f8b317ab7ee19" />
+    <Link partId="277" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.18" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_8560b10280c6497dae64e30fa400798b" />
+    <Link partId="278" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.19" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_e5ae471f44614ef58fd6e879c76ed0da" />
+    <Link partId="279" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.20" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_8d23b1169e18432d808805244b2e08d5" />
+    <Link partId="280" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.21" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_0870e4f824254b74b36d89dd19e77502" />
+    <Link partId="281" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.22" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_22b58cb72b5f4793981858f3d867a6e0" />
+    <Link partId="282" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.23" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_8108193af0ba48c5ba902cf5895c06b4" />
+    <Link partId="283" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.24" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_4c85f108b0f442ee816db02ebb569265" />
+    <Link partId="284" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.25" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_ccfead11d2064c30859def77359fb8c0" />
+    <Link partId="285" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.26" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_706a2289a30a4288bed03909428ce3bc" />
+    <Link partId="286" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.27" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_c23e1365c6404c829849714a800b0b6f" />
+    <Link partId="287" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.28" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_f22d9c5940244e718787c1d03bbb34d7" />
+    <Link partId="288" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.29" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_c1bfcb661f9e45c3b80a59dffcb61260" />
+    <Link partId="289" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.30" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_b5c27b876b0a475fad4b8002f8ea6d0a" />
+    <Link partId="290" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.31" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_dedd2d5fb3344300aac506aa36d45559" />
+    <Link partId="291" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.32" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_5e52e7183baa480e87c04fb9cb782faf" />
+    <Link partId="292" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.33" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_88adf7ae87764186a1e982e862a720cc" />
+    <Link partId="293" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.34" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_dc93a9bfbfcd45fc816259166e37d02d" />
+    <Link partId="294" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.35" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_6531bcc46f38406999a9da14a69bf050" />
+    <Link partId="295" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.36" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_268476290ec642b3ac5b29f0929916c9" />
+    <Link partId="296" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.37" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_59162ca9d8024640b365bb4e505d10d0" />
+    <Link partId="297" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.38" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_070a4dcf618341c893d069a7d18b529c" />
+    <Link partId="298" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.39" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_f81c69d0253845728e261f7151a389ac" />
+    <Link partId="299" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.40" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_e9fe4cd8b77544a493a7ca807ac0b5a0" />
+    <Link partId="300" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.41" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_86fe06044b8a4032a0c7d88166bf24cc" />
+    <Link partId="301" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.42" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_1781fc987d0c4c5c82a2b9cd92bc37db" />
+    <Link partId="302" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.43" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_60bccd3d842b4a9baa3c00f806c38d08" />
+    <Link partId="303" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.44" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_0ccf07ffb51b4a56b2b63fb52186d3dc" />
+    <Link partId="304" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.45" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_1c47114278844770a37d70efbd8399fc" />
+    <Link partId="305" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.46" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_1c63d4178a5c4c1cafe286f125b5a59a" />
+    <Link partId="306" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.47" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_b35215c0291249be88201a8fcc364beb" />
+    <Link partId="307" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.48" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_cd33913b1b5e4c389ffebf581e8398ac" />
+    <Link partId="308" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.49" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_660dae73881a44f591ae041ded5fc14b" />
+    <Link partId="309" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.50" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_ddfcafdfb0b5465089eb512a9642094a" />
+    <Link partId="310" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.51" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_0d3933c6837e4c81ae6d0ff923465617" />
+    <Link partId="311" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.52" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_21fc625cdabd46848abd5cd7b9a7963f" />
+    <Link partId="312" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.53" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_8787b0ea66fe4431b7f709fb52395f27" />
+    <Link partId="313" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.54" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_4332bc09b2534772b3ae125a440b7c95" />
+    <Link partId="314" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.55" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_f7a95487e4ed4b75af66bd30cda356e8" />
+    <Link partId="315" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.56" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_0d67be7611ad4e2e9b7f78966c9dfa34" />
+    <Link partId="316" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.57" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_a4c9bbc5dce74b1d8b877d3982a75fc8" />
+    <Link partId="317" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.58" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_5948009205ca414e927bd6b8393df72a" />
+    <Link partId="318" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.59" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_76ab8dcbfa5f4867aa208ae99fe01084" />
+    <Link partId="319" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.60" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_7526137b54544f07a5889e6388cd1604" />
+    <Link partId="320" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.61" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_1e817a9e4a5f4f46a2800cdadee46277" />
+    <Link partId="321" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.62" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_fbfa1ba43c12445991d341eeef8b5e5f" />
+    <Link partId="322" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.63" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_b1dfe170ac68454f83c4de0277cd0c52" />
+    <Link partId="323" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.64" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_105958ea53814609b44a0e42f337c4df" />
+    <Link partId="324" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.65" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_28e1c018b6f3419ab6cf62f4608c681a" />
+    <Link partId="325" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.66" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_bc66dd6070824a9b9a42747bc77bb615" />
+    <Link partId="326" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.67" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_eaee8e151d7048e183a96ca1f29a3657" />
+    <Link partId="327" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.68" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_c0f10d08e8034f68ab0f009434b97d49" />
+    <Link partId="328" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.69" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_e869e834b0804aedba99526f0431f3b2" />
+    <Link partId="329" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.70" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_13d383ee390e4a09899f186b21500ce3" />
+    <Link partId="330" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.71" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_a92125694c8a437eb124a44dd05d0ffe" />
+    <Link partId="331" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.72" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_b0bf13a6317e4b8f9ccc40793a1242d4" />
+    <Link partId="332" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.73" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_2dc44413f1e44fccb6e78ecdeba5fcf2" />
+    <Link partId="333" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.74" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_604b0cec4f3e45519350bb421c5bc26c" />
+    <Link partId="334" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.75" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_cd9e5f04da22456c9ca0d15d45cb41c6" />
+    <Link partId="335" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.76" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_11449dcc3eb34f6eaba33da1c78c1ed3" />
+    <Link partId="336" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.77" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_c4c83657b47a47169a472dc352bc92e0" />
+    <Link partId="337" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.78" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_00aea70ffa5f4e2397147ba866194c27" />
+    <Link partId="338" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.79" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_3fcf365e79294e0596e58d222b93c7db" />
+    <Link partId="339" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.80" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_88702aa765c24a99900dae1a236cf443" />
+    <Link partId="340" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.81" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_94f2670efff64eda8af6be511251e728" />
+    <Link partId="341" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.82" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_22f5d79aaed045e2957655e5c7a5c63d" />
+    <Link partId="342" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.83" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_241b2055d3504c72afb7f90b1bd20d29" />
+    <Link partId="343" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.84" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_cd54835c5e14403d9d2695ac4a813b35" />
+    <Link partId="344" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.85" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_91443405b7fc4bfbab767fae9c54c78d" />
+    <Link partId="345" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.86" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_2caa9c8b87004d8fa31c004f5c88a152" />
+    <Link partId="346" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.87" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_2a953492113245ccac2f4862955a59ef" />
+    <Link partId="347" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.88" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_ea5b1baa50c24ef590fed58495712fc9" />
+    <Link partId="348" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.89" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_65484529dad94f9e9ff61f9d1086283c" />
+    <Link partId="349" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.90" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_ab7a7442dd6c4e7bb6a38a67c5107e7f" />
+    <Link partId="350" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.91" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_119a3f28e05844b19506c157a2174214" />
+    <Link partId="351" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.92" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_4411f4cbf3a24ca69353d1c0d8400afa" />
+    <Link partId="352" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.93" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_131e5b5123d64de3be767af9e6f444e5" />
+    <Link partId="353" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.94" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_6aa6374f826a418a842e39af62ed382d" />
+    <Link partId="354" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.95" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_5ffebe0c15b647e78165433e9ade6b68" />
+    <Link partId="355" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.96" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_20cb246bc37a46e3a976bcb00e908af4" />
+    <Link partId="356" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.97" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_0efefa03cda7478b963ee44e995d5268" />
+    <Link partId="357" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.98" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_391fdf8a52fb4197921c57ee6c1ce8fe" />
+    <Link partId="358" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.99" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_08c91f9e5a734e0bbb5b17ecae444961" />
+    <Link partId="359" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.100" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_92956bca9c9c48deaa72c7e97a190f35" />
+    <Link partId="360" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.101" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_78e159b4685d4289bdc0f2bf9a16534f" />
+    <Link partId="361" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.102" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_51c4dfa85a304accb9acd89ba6bfe1d0" />
+    <Link partId="362" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.103" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_146bb9c4f1bc4efea5e9116eec52f117" />
+    <Link partId="363" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.104" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_e8f96e85cbcb4270beafd8f86cb496d2" />
+    <Link partId="364" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.105" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_d9a990f670b1406fbcc534562932f188" />
+    <Link partId="365" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.106" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_eb89ad1b70d44877bf5c5a3f52318809" />
+    <Link partId="366" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.107" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_3765a3cb38b34cbdb9345c832743db13" />
+    <Link partId="367" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.108" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_7d287614c3f748dbbcbdeaf53e34a36c" />
+    <Link partId="368" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.109" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_5de7e5785e45492dae82b71875e7c089" />
+    <Link partId="369" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.110" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_ad18c4464bdd41d2a50a7ea7fca93d5f" />
+    <Link partId="370" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.111" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_69dcc25e28fd49c3a1e8f3d3df19ea28" />
+    <Link partId="371" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.112" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_7f65719abe4e4e32ab9ba9e1ad084503" />
+    <Link partId="372" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.113" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_21274566689b499993344fb32e65aec1" />
+    <Link partId="373" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.114" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_e3c9fb07bd3d41b2b3c0f37aad2aa9a7" />
+    <Link partId="374" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.115" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_63aa6c8d86f242a389a6d1e13578234b" />
+    <Link partId="375" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.116" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_c5eef8afcb61491aacbb1d25110bf513" />
+    <Link partId="376" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.117" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_706b776da0ae4032bec7e441306cc361" />
+    <Link partId="377" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.118" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_52ea5f7b28af4876bb8205d9925d51aa" />
+    <Link partId="378" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.119" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_831d7002738a4dc1a7bfba70867fb741" />
+    <Link partId="379" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.120" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_80570ba89aef40ad843ed7535d499014" />
+    <Link partId="380" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.121" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_72d838a484f14495841334b631813c36" />
+    <Link partId="381" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.122" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_8883bd460f464cacad64b0de1e351e83" />
+    <Link partId="382" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.123" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_c8e764f425044585a31db62a8559d281" />
+    <Link partId="383" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.124" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_d451223cce3c4b8e8f58a56fe1cc8d4b" />
+    <Link partId="384" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.125" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_d4204b0b9d0c49e9bbca8476f01a5c18" />
+    <Link partId="385" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.126" toItemID="tbl_YP_ITEM_ORA_FUN" toColID="tblCol_1f712c3ab09d4316bfbdcab7bd91cdfb" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

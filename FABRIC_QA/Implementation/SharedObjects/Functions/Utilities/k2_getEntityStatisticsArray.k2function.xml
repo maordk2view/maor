@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>k2_getEntityStatisticsArray</Name>
+  <ID>Utilities.k2_getEntityStatisticsArray</ID>
+  <Category>Utilities</Category>
+  <FunctionLevel>Product</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc>Get the entire entityStatistics info</Desc>
+  <Auther name="" id="" />
+  <Language>PHP</Language>
+  <FunctionBody>return getEntityStatisticsArray();</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <InputParams />
+  <OutputParams>
+    <Output name="entityStats" id="fo.Utilities.k2_getEntityStatisticsArray.0" index="0" dataType="object">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

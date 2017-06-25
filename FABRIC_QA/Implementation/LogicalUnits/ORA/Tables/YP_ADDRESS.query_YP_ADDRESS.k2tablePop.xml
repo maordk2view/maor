@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_YP_ADDRESS</PopulationObjectName>
+  <TableName>YP_ADDRESS</TableName>
+  <ID>query_YP_ADDRESS</ID>
+  <RootItemID>query_36</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="ADDRESS_ID" id="query_36.0" dataType="Integer" index="0" />
+    <Arg name="CUSTOMER_ID" id="query_36.1" dataType="Integer" index="1" />
+    <Arg name="HOUSE_NO" id="query_36.2" dataType="Text" index="2" />
+    <Arg name="COLONY_ID" id="query_36.3" dataType="Integer" index="3" />
+    <Arg name="OVERRIDE_COLONY" id="query_36.4" dataType="Text" index="4" />
+    <Arg name="STATE_CODE" id="query_36.5" dataType="Text" index="5" />
+    <Arg name="STREET_NAME" id="query_36.6" dataType="Text" index="6" />
+    <Arg name="STREET_TYPE" id="query_36.7" dataType="Text" index="7" />
+    <Arg name="SUB_LOCATION" id="query_36.8" dataType="Text" index="8" />
+    <Arg name="ZIP_CODE" id="query_36.9" dataType="Text" index="9" />
+    <Arg name="PO_BOX" id="query_36.10" dataType="Text" index="10" />
+    <Arg name="DIRECTION" id="query_36.11" dataType="Text" index="11" />
+    <Arg name="SELLING_ID" id="query_36.12" dataType="Text" index="12" />
+    <Arg name="BLOCK_NUMBER" id="query_36.13" dataType="Text" index="13" />
+    <Arg name="TERRAIN_NUMBER" id="query_36.14" dataType="Text" index="14" />
+    <Arg name="INTERIOR_NUMBER" id="query_36.15" dataType="Text" index="15" />
+    <Arg name="OVERRIDE_TOWN" id="query_36.16" dataType="Text" index="16" />
+    <Arg name="BETWEEN_STREET1" id="query_36.17" dataType="Text" index="17" />
+    <Arg name="BETWEEN_STREET2" id="query_36.18" dataType="Text" index="18" />
+    <Arg name="COUNTRY" id="query_36.19" dataType="Text" index="19" />
+    <Arg name="OVERRIDE_COLONY_TYPE" id="query_36.20" dataType="Text" index="20" />
+    <Arg name="CTCR_BATCH_PROG_ID" id="query_36.21" dataType="Text" index="21" />
+    <Arg name="CTCR_BATCH_PROG_DT" id="query_36.22" dataType="Text" index="22" />
+    <Arg name="CTCR_ONLINE_USER_ID" id="query_36.23" dataType="Integer" index="23" />
+    <Arg name="CTCR_ONLINE_PROG_ID" id="query_36.24" dataType="Text" index="24" />
+    <Arg name="CTCR_ONLINE_PROG_DT" id="query_36.25" dataType="Text" index="25" />
+    <Arg name="CTCR_SYS_CRE_DT" id="query_36.26" dataType="Text" index="26" />
+    <Arg name="CTCR_SYS_UPD_DT" id="query_36.27" dataType="Text" index="27" />
+    <Arg name="CTCR_DBI_PROG_ID" id="query_36.28" dataType="Text" index="28" />
+    <Arg name="CTCR_DBI_PROG_DT" id="query_36.29" dataType="Text" index="29" />
+    <Arg name="CTCR_CNV_DT" id="query_36.30" dataType="Text" index="30" />
+    <Arg name="CTCR_EVENT_ID" id="query_36.31" dataType="Integer" index="31" />
+    <Arg name="SFA_ID" id="query_36.32" dataType="Text" index="32" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_36" name="query_YP_ADDRESS" nodeOrder="0" module="DBQuery" connName="ORA_SOURCE">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.0" name="ADDRESS_ID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.1" name="CUSTOMER_ID" dataType="Integer" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.2" name="HOUSE_NO" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.3" name="COLONY_ID" dataType="Integer" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.4" name="OVERRIDE_COLONY" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.5" name="STATE_CODE" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.6" name="STREET_NAME" dataType="Text" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.7" name="STREET_TYPE" dataType="Text" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.8" name="SUB_LOCATION" dataType="Text" index="8" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.9" name="ZIP_CODE" dataType="Text" index="9" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.10" name="PO_BOX" dataType="Text" index="10" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.11" name="DIRECTION" dataType="Text" index="11" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.12" name="SELLING_ID" dataType="Text" index="12" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.13" name="BLOCK_NUMBER" dataType="Text" index="13" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.14" name="TERRAIN_NUMBER" dataType="Text" index="14" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.15" name="INTERIOR_NUMBER" dataType="Text" index="15" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.16" name="OVERRIDE_TOWN" dataType="Text" index="16" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.17" name="BETWEEN_STREET1" dataType="Text" index="17" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.18" name="BETWEEN_STREET2" dataType="Text" index="18" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.19" name="COUNTRY" dataType="Text" index="19" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.20" name="OVERRIDE_COLONY_TYPE" dataType="Text" index="20" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.21" name="CTCR_BATCH_PROG_ID" dataType="Text" index="21" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.22" name="CTCR_BATCH_PROG_DT" dataType="Text" index="22" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.23" name="CTCR_ONLINE_USER_ID" dataType="Integer" index="23" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.24" name="CTCR_ONLINE_PROG_ID" dataType="Text" index="24" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.25" name="CTCR_ONLINE_PROG_DT" dataType="Text" index="25" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.26" name="CTCR_SYS_CRE_DT" dataType="Text" index="26" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.27" name="CTCR_SYS_UPD_DT" dataType="Text" index="27" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.28" name="CTCR_DBI_PROG_ID" dataType="Text" index="28" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.29" name="CTCR_DBI_PROG_DT" dataType="Text" index="29" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.30" name="CTCR_CNV_DT" dataType="Text" index="30" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.31" name="CTCR_EVENT_ID" dataType="Integer" index="31" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_36.32" name="SFA_ID" dataType="Text" index="32" />
+      </OutputsList>
+      <SQL><![CDATA[select * from YP_ADDRESS]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="70" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.0" toItemID="tbl_0" toColID="tblCol_c65c952c2edc48c3b4d117e30331882b" />
+    <Link partId="71" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.1" toItemID="tbl_0" toColID="tblCol_2f35db8ac7fa4495977f5ea7011cf941" />
+    <Link partId="72" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.2" toItemID="tbl_0" toColID="tblCol_5aa9394fb21a4e489c917d73fe9b8191" />
+    <Link partId="73" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.3" toItemID="tbl_0" toColID="tblCol_8e857cff26f54699a16de5650b0e12ed" />
+    <Link partId="74" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.4" toItemID="tbl_0" toColID="tblCol_8211e56846f2450fbc17b6f76516b501" />
+    <Link partId="75" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.5" toItemID="tbl_0" toColID="tblCol_974a2ef9b85d41a5948a0081d1c1af18" />
+    <Link partId="76" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.6" toItemID="tbl_0" toColID="tblCol_a8414ce708d64008a84a3603e7aa3ea6" />
+    <Link partId="77" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.7" toItemID="tbl_0" toColID="tblCol_29f7a98a21924f05bf124c32e9797a24" />
+    <Link partId="78" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.8" toItemID="tbl_0" toColID="tblCol_191567b621e84c099baee74862571fbf" />
+    <Link partId="79" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.9" toItemID="tbl_0" toColID="tblCol_0b86ee72da414a519c5df35eb502be11" />
+    <Link partId="80" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.10" toItemID="tbl_0" toColID="tblCol_4d092bb9e8f64fc8b5401a87ac979684" />
+    <Link partId="81" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.11" toItemID="tbl_0" toColID="tblCol_c1e5fdd58ac74dbe8bf10aa0253e4c40" />
+    <Link partId="82" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.12" toItemID="tbl_0" toColID="tblCol_12d5f0c42cd044d884828800506f6cb0" />
+    <Link partId="83" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.13" toItemID="tbl_0" toColID="tblCol_461344fca2064f8cbd61f2aa3ee43515" />
+    <Link partId="84" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.14" toItemID="tbl_0" toColID="tblCol_be83a1ed95a948f7b46caf50a1f28b1a" />
+    <Link partId="85" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.15" toItemID="tbl_0" toColID="tblCol_e742975dd9a542d6b54513326b884df0" />
+    <Link partId="86" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.16" toItemID="tbl_0" toColID="tblCol_01b0d3bed7934864a64c25d4e042dcee" />
+    <Link partId="87" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.17" toItemID="tbl_0" toColID="tblCol_2326d5a9771d44f9bcc8490daf0826aa" />
+    <Link partId="88" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.18" toItemID="tbl_0" toColID="tblCol_97d6d4e3470c4b0ba0798ee1f8bf83f2" />
+    <Link partId="89" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.19" toItemID="tbl_0" toColID="tblCol_56fa9c3dc5664668a5aab327ee37a761" />
+    <Link partId="90" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.20" toItemID="tbl_0" toColID="tblCol_4485b2adb9bd4a33aae10ca28cc177f2" />
+    <Link partId="91" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.21" toItemID="tbl_0" toColID="tblCol_6106f13cb110485da4f63e9afa960565" />
+    <Link partId="92" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.22" toItemID="tbl_0" toColID="tblCol_a7ad409d9ed04de18a20e7932072f99b" />
+    <Link partId="93" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.23" toItemID="tbl_0" toColID="tblCol_19aa2c6f85e145e8b4dcac29cde912d1" />
+    <Link partId="94" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.24" toItemID="tbl_0" toColID="tblCol_9829e5aca57149d38a94a0b652c4ce5d" />
+    <Link partId="95" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.25" toItemID="tbl_0" toColID="tblCol_e0f908b3a449472090847af1edcbabea" />
+    <Link partId="96" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.26" toItemID="tbl_0" toColID="tblCol_ef35162e4195444989eeab690a65aed0" />
+    <Link partId="97" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.27" toItemID="tbl_0" toColID="tblCol_6247912025574ccaa4cf24a18ff0803a" />
+    <Link partId="98" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.28" toItemID="tbl_0" toColID="tblCol_8741dbc7fb4e478eacfe689c94cc1733" />
+    <Link partId="99" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.29" toItemID="tbl_0" toColID="tblCol_742b012779e147418beeebea1f251ae5" />
+    <Link partId="100" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.30" toItemID="tbl_0" toColID="tblCol_b6e6f02515aa4c2a8f8d3bd2a5e651e1" />
+    <Link partId="101" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.31" toItemID="tbl_0" toColID="tblCol_218bdc42cb194684a09f3dcfee0cf441" />
+    <Link partId="102" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.32" toItemID="tbl_0" toColID="tblCol_ba5cf18f40db4321b0d1d41c01970f28" />
+    <Link partId="512" fromNodeOrder="0" fromItemID="query_36" fromColID="query_36.19" toItemID="tbl_0" toColID="b18a69017fe84d548751c740773ca781" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

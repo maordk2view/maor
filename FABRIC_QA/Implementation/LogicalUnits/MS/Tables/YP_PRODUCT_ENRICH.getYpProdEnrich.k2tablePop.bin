@@ -1,0 +1,18 @@
+﻿<Graph name="YP_PRODUCT_ENRICH.getYpProdEnrich.k2tablePop.bin" lastPartID="398">
+  <TableNode partID="0" name="YP_PRODUCT_ENRICH" pos="394.269318 30" width="259.730865" />
+  <FunctionMapNode id="0" L0="2" R0="3" R1="4" R2="5" R3="6" partID="3" topLabel="getYpProdEnrich (3)" pos="28.5746155 23.9999962" size="242.156525 73.3828" isRoot="true">
+    <KFunction>{"Name":"getYpProdEnrich","ID":"f_3","Category":"ROOT","FunctionLevel":0,"RegisterAsLuDbFunction":false,"SaveToDLUR":false,"ApiFunction":false,"RequiresLuReference":false,"Desc":"","Auther":{"Name":"","ID":""},"Language":1,"FunctionBody":"String sql = \"SELECT CUSTOMER_ID, PRODUCT_CODE, PRODUCT_STATUS, ACTIVITY_TYPE FROM yp_product WHERE CUSTOMER_ID =?\";\n\nObject[] valuesArr = {CUSTOMER_ID};\n\nResultSetWrapper rs = DBQuery(\"MYSQL_SOURCE\", sql, valuesArr);\n\nfor(Object[] row : rs) {\n  yield (row);\t\n}","IsSyntaxValid":true,"IsRootFunction":true,"inputParams":[{"Name":"CUSTOMER_ID","ID":"fi_3.0","Index":0,"DataType":"Integer","Comment":""}],"outputParams":[{"Name":"CUSTOMER_ID","ID":"fo_3.0","Index":0,"DataType":"Long","Comment":""},{"Name":"PRODUCT_CODE","ID":"fo_3.1","Index":1,"DataType":"String","Comment":""},{"Name":"PRODUCT_STATUS","ID":"fo_3.2","Index":2,"DataType":"Long","Comment":""},{"Name":"ACTIVITY_TYPE","ID":"fo_3.3","Index":3,"DataType":"Long","Comment":""}]}</KFunction>
+  </FunctionMapNode>
+  <FunctionMapNode id="1" R0="7" partID="43" topLabel="k2_currentDateTime (43)" pos="150 152" size="153.932251 45.09114" isRoot="false">
+    <KFunction>{"Name":"k2_currentDateTime","ID":"f_43","Category":"Date","FunctionLevel":1,"RegisterAsLuDbFunction":false,"SaveToDLUR":false,"ApiFunction":false,"RequiresLuReference":false,"Desc":"","Auther":{"Name":"","ID":""},"Language":1,"FunctionBody":"java.text.DateFormat dateFormat = new java.text.SimpleDateFormat(\"yyyy/MM/dd HH:mm:ss\");\njava.util.Date date = new java.util.Date();\nreturn dateFormat.format(date);","IsSyntaxValid":true,"IsRootFunction":false,"inputParams":[],"outputParams":[{"Name":"current_datetime","ID":"fo_43.0","Index":0,"DataType":"String","Comment":""}]}</KFunction>
+  </FunctionMapNode>
+  <ConstantMapNode partID="296" topLabel="T1" pos="251.13298 415" size="23.0000153 45.091156">
+    <KDataValue>{"ID":"c.296","DataValue":"0"}</KDataValue>
+  </ConstantMapNode>
+  <Link partID="14" from="3" to="8" pointsArr="270.73114 45.1275978 280.73114 45.1275978 384.269318 61.0364571 394.269318 61.0364571" fromNodePartID="3" fromNodeColumnName="CUSTOMER_ID" toNodePartID="0" toNodeColumnName="CUSTOMER_ID" />
+  <Link partID="15" from="4" to="9" pointsArr="270.73114 57.2005157 280.73114 57.2005157 384.269318 73.109375 394.269318 73.109375" fromNodePartID="3" fromNodeColumnName="PRODUCT_CODE" toNodePartID="0" toNodeColumnName="PRODUCT_CODE" />
+  <Link partID="16" from="5" to="10" pointsArr="270.73114 69.27343 280.73114 69.27343 384.269318 85.18229 394.269318 85.18229" fromNodePartID="3" fromNodeColumnName="PRODUCT_STATUS" toNodePartID="0" toNodeColumnName="PRODUCT_STATUS" />
+  <Link partID="17" from="6" to="11" pointsArr="270.73114 81.346344 280.73114 81.346344 384.269318 97.2552 394.269318 97.2552" fromNodePartID="3" fromNodeColumnName="ACTIVITY_TYPE" toNodePartID="0" toNodeColumnName="ACTIVITY_TYPE" />
+  <Link partID="45" from="7" to="12" pointsArr="299.4552 177.091141 309.4552 177.091141 384.269318 133.473953 394.269318 133.473953" fromNodePartID="43" fromNodeColumnName="current_datetime" toNodePartID="0" toNodeColumnName="CURRENT_DATE" />
+  <Link partID="298" from="13" to="14" pointsArr="274.133 440.091156 284.133 440.091156 384.269318 181.76564 394.269318 181.76564" fromNodePartID="296" fromNodeColumnName="0" toNodePartID="0" toNodeColumnName="T1" />
+</Graph>

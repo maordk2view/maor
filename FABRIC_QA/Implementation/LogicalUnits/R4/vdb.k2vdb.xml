@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2.5.2.0">
+  <Name>vdb</Name>
+  <RootView>YP_CUSTOMER</RootView>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>YP_CUSTOMER</Table>
+    <Table>VC_YP_PRODUCT</Table>
+    <Table>YP_PRODUCT</Table>
+    <Table>YP_ITEM</Table>
+    <Table>dbo_YP_CUSTOMER</Table>
+    <Table>dbo_YP_ITEM</Table>
+    <Table>dbo_YP_PRODUCT</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="YP_CUSTOMER">
+      <Populations>
+        <Population id="query_YP_CUSTOMER" name="query_YP_CUSTOMER" order="1" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="VC_YP_PRODUCT">
+      <Populations>
+        <Population id="vcProductPop" name="vcProductPop" order="7" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="YP_PRODUCT">
+      <Populations>
+        <Population id="query_YP_PRODUCT" name="query_YP_PRODUCT" order="6" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="YP_ITEM">
+      <Populations>
+        <Population id="query_YP_ITEM" name="query_YP_ITEM" order="7" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="dbo_YP_CUSTOMER">
+      <Populations>
+        <Population id="query_dbo_YP_CUSTOMER" name="query_dbo_YP_CUSTOMER" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="dbo_YP_ITEM">
+      <Populations>
+        <Population id="query_dbo_YP_ITEM" name="query_dbo_YP_ITEM" order="5" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="dbo_YP_PRODUCT">
+      <Populations>
+        <Population id="query_dbo_YP_PRODUCT" name="query_dbo_YP_PRODUCT" order="4" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="true" name="FUN_REF_UDAC" />
+    <Item active="true" name="MS_REF_UDAC" />
+    <Item active="false" name="REF_SERVICE_AGREEMENT" />
+    <Item active="false" name="REF_YP_PRODUCT_TRN" />
+    <Item active="false" name="test_YP_REF_UDAC" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="563">
+      <From tableType="TableObject" table="YP_CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_0fe05d1216ea4938a8b977940ec30577" />
+      <To tableType="TableObject" table="YP_PRODUCT" populationObjectName="query_YP_PRODUCT" column="CUSTOMER_ID" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="1695">
+      <From tableType="TableObject" table="YP_CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_0fe05d1216ea4938a8b977940ec30577" />
+      <To tableType="TableObject" table="dbo_YP_CUSTOMER" populationObjectName="query_dbo_YP_CUSTOMER" column="CUSTOMER_ID" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="1740">
+      <From tableType="TableObject" table="YP_CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_0fe05d1216ea4938a8b977940ec30577" />
+      <To tableType="TableObject" table="VC_YP_PRODUCT" populationObjectName="vcProductPop" column="CUSTOMER_ID" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="564">
+      <From tableType="TableObject" table="YP_PRODUCT" column="CUSTOMER_ID" columnId="tblCol_cb38b6e085c9497880776c3d84f46a6a" />
+      <To tableType="TableObject" table="YP_ITEM" populationObjectName="query_YP_ITEM" column="CUSTOMER_ID" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="565">
+      <From tableType="TableObject" table="YP_PRODUCT" column="PRODUCT_CODE" columnId="tblCol_f1466a2fe1b64d38bee2eebd30d246d3" />
+      <To tableType="TableObject" table="YP_ITEM" populationObjectName="query_YP_ITEM" column="PRODUCT_CODE" columnId="queryCol_1" />
+    </Relation>
+    <Relation id="566">
+      <From tableType="TableObject" table="YP_PRODUCT" column="PRODUCT_ISSUE_NUM" columnId="tblCol_783fdcf376274f51bfd792883dd980e4" />
+      <To tableType="TableObject" table="YP_ITEM" populationObjectName="query_YP_ITEM" column="PRODUCT_ISSUE_NUM" columnId="queryCol_2" />
+    </Relation>
+    <Relation id="1127">
+      <From tableType="TableObject" table="dbo_YP_CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_9e5fc67810b84169915ce63b0898f965" />
+      <To tableType="TableObject" table="dbo_YP_PRODUCT" populationObjectName="query_dbo_YP_PRODUCT" column="CUSTOMER_ID" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="1128">
+      <From tableType="TableObject" table="dbo_YP_PRODUCT" column="CUSTOMER_ID" columnId="tblCol_c9ec9b9ae22a4b00a401278ccb47fa39" />
+      <To tableType="TableObject" table="dbo_YP_ITEM" populationObjectName="query_dbo_YP_ITEM" column="CUSTOMER_ID" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="1129">
+      <From tableType="TableObject" table="dbo_YP_PRODUCT" column="PRODUCT_CODE" columnId="tblCol_8a1f8ed696b2419897dec020dda78de5" />
+      <To tableType="TableObject" table="dbo_YP_ITEM" populationObjectName="query_dbo_YP_ITEM" column="PRODUCT_CODE" columnId="queryCol_1" />
+    </Relation>
+    <Relation id="1130">
+      <From tableType="TableObject" table="dbo_YP_PRODUCT" column="PRODUCT_ISSUE_NUM" columnId="tblCol_c4e2d5b7197a46629e6990edd0fbf7be" />
+      <To tableType="TableObject" table="dbo_YP_ITEM" populationObjectName="query_dbo_YP_ITEM" column="PRODUCT_ISSUE_NUM" columnId="queryCol_2" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

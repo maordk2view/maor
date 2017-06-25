@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DbQueryItemOfDataTable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DbConn>MYSQL_SOURCE</DbConn>
+  <Name>ei10Custs</Name>
+  <Sql>select CUSTOMER_ID from yp_cust.yp_customer LIMIT 10</Sql>
+  <IsSqlValid>true</IsSqlValid>
+</DbQueryItemOfDataTable>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_Production_BillOfMaterials</ID>
+  <PopulationObjectName>query_Production_BillOfMaterials</PopulationObjectName>
+  <TableName>Production_BillOfMaterials</TableName>
+  <RootItemID>query_query_Production_BillOfMaterials</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="BillOfMaterialsID" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="ProductAssemblyID" id="queryCol_1" dataType="Integer" index="1" />
+    <Arg name="ComponentID" id="queryCol_2" dataType="Integer" index="2" />
+    <Arg name="StartDate" id="queryCol_3" dataType="Text" index="3" />
+    <Arg name="EndDate" id="queryCol_4" dataType="Text" index="4" />
+    <Arg name="UnitMeasureCode" id="queryCol_5" dataType="Text" index="5" />
+    <Arg name="BOMLevel" id="queryCol_6" dataType="Integer" index="6" />
+    <Arg name="PerAssemblyQty" id="queryCol_7" dataType="Real" index="7" />
+    <Arg name="ModifiedDate" id="queryCol_8" dataType="Text" index="8" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_Production_BillOfMaterials" name="query_Production_BillOfMaterials" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="SqlServer_AdvWorks">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="BillOfMaterialsID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="ProductAssemblyID" dataType="Integer" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="ComponentID" dataType="Integer" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="StartDate" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="EndDate" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="UnitMeasureCode" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_6" name="BOMLevel" dataType="Integer" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_7" name="PerAssemblyQty" dataType="Real" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_8" name="ModifiedDate" dataType="Text" index="8" />
+      </OutputsList>
+      <SQL><![CDATA[select * from Production.BillOfMaterials]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="22" fromNodeOrder="0" fromItemID="query_query_Production_BillOfMaterials" fromColID="queryCol_0" toItemID="tbl_Production_BillOfMaterials" toColID="tblCol_9b11503a5390497688a00c1fa36f95b0" />
+    <Link partId="23" fromNodeOrder="0" fromItemID="query_query_Production_BillOfMaterials" fromColID="queryCol_1" toItemID="tbl_Production_BillOfMaterials" toColID="tblCol_8a3660f3ebc54d04b71961b9ea4c4208" />
+    <Link partId="24" fromNodeOrder="0" fromItemID="query_query_Production_BillOfMaterials" fromColID="queryCol_2" toItemID="tbl_Production_BillOfMaterials" toColID="tblCol_551d58b377fa475a92c3aecaf04db1d9" />
+    <Link partId="25" fromNodeOrder="0" fromItemID="query_query_Production_BillOfMaterials" fromColID="queryCol_3" toItemID="tbl_Production_BillOfMaterials" toColID="tblCol_d710b2f27a9548b496a8c08b5b5b4073" />
+    <Link partId="26" fromNodeOrder="0" fromItemID="query_query_Production_BillOfMaterials" fromColID="queryCol_4" toItemID="tbl_Production_BillOfMaterials" toColID="tblCol_90f0758138c14ddf9e40c7f270f4aaa4" />
+    <Link partId="27" fromNodeOrder="0" fromItemID="query_query_Production_BillOfMaterials" fromColID="queryCol_5" toItemID="tbl_Production_BillOfMaterials" toColID="tblCol_6ba3d94698674ffaa3e31c20190fd207" />
+    <Link partId="28" fromNodeOrder="0" fromItemID="query_query_Production_BillOfMaterials" fromColID="queryCol_6" toItemID="tbl_Production_BillOfMaterials" toColID="tblCol_ba00c2105d5344d79e8c061c0865ffac" />
+    <Link partId="29" fromNodeOrder="0" fromItemID="query_query_Production_BillOfMaterials" fromColID="queryCol_7" toItemID="tbl_Production_BillOfMaterials" toColID="tblCol_518ee3f821b140ef8e296533d4939866" />
+    <Link partId="30" fromNodeOrder="0" fromItemID="query_query_Production_BillOfMaterials" fromColID="queryCol_8" toItemID="tbl_Production_BillOfMaterials" toColID="tblCol_ed3181ba3f0140d9a0141013ae6dd710" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

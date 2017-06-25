@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>NEW_YP_SPACE</Name>
+  <ID>tbl_NEW_YP_SPACE</ID>
+  <LazyDataUpdate enabled="true" performEvery="00:00:30" />
+  <Columns>
+    <Column name="CUSTOMER_ID" id="tblCol_1303a4e75105465fa16aa175978ce60f" index="0" datatype="Integer" />
+    <Column name="S1" id="tblCol_c6bcb94acb2345f0be59b44d48f9d196" index="1" datatype="Text" />
+    <Column name="S_2" id="tblCol_2cd84642f0654fddabd8c386ac62d0f8" index="2" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

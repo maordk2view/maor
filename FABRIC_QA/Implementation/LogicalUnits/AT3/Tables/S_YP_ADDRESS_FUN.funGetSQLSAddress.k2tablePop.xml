@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>funGetSQLSAddress</PopulationObjectName>
+  <TableName>S_YP_ADDRESS_FUN</TableName>
+  <ID>funGetSQLSAddress</ID>
+  <RootItemID>f_3</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="i_cust_id" id="fi_3.0" dataType="Integer" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item id="f_3" name="funGetSQLSAddress" nodeOrder="0" module="Function" fileName="funGetSQLSAddress.k2function.xml">
+      <InputsList>
+        <Input id="fi_3.0" name="i_cust_id" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_3.0" name="CUSTOMER_ID" />
+        <Output id="fo_3.1" name="STREET" />
+        <Output id="fo_3.2" name="CITY" />
+        <Output id="fo_3.3" name="STATE" />
+        <Output id="fo_3.4" name="COUNTRY" />
+        <Output id="fo_3.5" name="ZIP_CODE" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="17" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.0" toItemID="tbl_S_YP_ADDRESS_FUN" toColID="tblCol_e9b9f8b0760b4237b83e56f8b1832bfa" />
+    <Link partId="18" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.1" toItemID="tbl_S_YP_ADDRESS_FUN" toColID="tblCol_1d18c3feb50b4f96a857244e98b417ee" />
+    <Link partId="19" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.2" toItemID="tbl_S_YP_ADDRESS_FUN" toColID="tblCol_5c71d62c09654ea39aa61b5905d3541e" />
+    <Link partId="20" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.3" toItemID="tbl_S_YP_ADDRESS_FUN" toColID="tblCol_c8ddd684d7ba4e80b819a0d81c2d0d9e" />
+    <Link partId="21" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.4" toItemID="tbl_S_YP_ADDRESS_FUN" toColID="tblCol_0eaf3c1d063e42dcbfb0322a0d3facc5" />
+    <Link partId="22" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.5" toItemID="tbl_S_YP_ADDRESS_FUN" toColID="tblCol_6bdc3912f52e48f09bf143dd80843ef7" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="3.0.3.0">
+  <Name>vdb</Name>
+  <RootView>ctnMainInfo</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <EnableDataEncryption>false</EnableDataEncryption>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>ctnMainInfo</Table>
+    <Table>ctnAccountBalance</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="ctnMainInfo">
+      <Populations>
+        <Population id="popCtnMainInfo" name="popCtnMainInfo" order="1" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="ctnAccountBalance">
+      <Populations>
+        <Population id="popCtnAccountBalance" name="popCtnAccountBalance" order="2" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="true" name="FUN_REF_UDAC" />
+    <Item active="true" name="MS_REF_UDAC" />
+    <Item active="true" name="REF_SERVICE_AGREEMENT" />
+    <Item active="true" name="REF_YP_PRODUCT_TRN" />
+    <Item active="true" name="test_YP_REF_UDAC" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="389">
+      <From tableType="TableObject" table="ctnMainInfo" column="ACCOUNT_NUMBER" columnId="tblCol_f1aca6eb0e874e5f9e8b7b2e92623a9e" />
+      <To tableType="TableObject" table="ctnAccountBalance" populationObjectName="popCtnAccountBalance" column="accountNumber" columnId="fi_5.0" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

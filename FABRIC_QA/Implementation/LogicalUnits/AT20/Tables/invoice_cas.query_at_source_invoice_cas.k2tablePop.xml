@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_at_source_invoice_cas</ID>
+  <PopulationObjectName>query_at_source_invoice_cas</PopulationObjectName>
+  <TableName>invoice_cas</TableName>
+  <RootItemID>query_query_at_source_invoice_cas</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="patient_id" id="queryCol_0" dataType="Text" index="0" />
+    <Arg name="status" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="status2" id="queryCol_2" dataType="Text" index="2" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_at_source_invoice_cas" name="query_at_source_invoice_cas" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="at_source">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="patient_id" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="status" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="status2" dataType="Text" index="2" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM at_source.invoice_cas]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="10" fromNodeOrder="0" fromItemID="query_query_at_source_invoice_cas" fromColID="queryCol_0" toItemID="tbl_invoice_cas" toColID="tblCol_4c1b8420d4e047ce936029a3abcf0e5e" />
+    <Link partId="11" fromNodeOrder="0" fromItemID="query_query_at_source_invoice_cas" fromColID="queryCol_1" toItemID="tbl_invoice_cas" toColID="tblCol_d11b962a94ff4e5792b1313ade5ec080" />
+    <Link partId="12" fromNodeOrder="0" fromItemID="query_query_at_source_invoice_cas" fromColID="queryCol_2" toItemID="tbl_invoice_cas" toColID="tblCol_86c7138b4c7648f7a0f207037069843d" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

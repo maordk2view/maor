@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_YP_PRODUCT_TRN</PopulationObjectName>
+  <TableName>YP_PRODUCT_TRN</TableName>
+  <ID>query_YP_PRODUCT_TRN</ID>
+  <RootItemID>query_5</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="OLD_PRODUCT_CODE" id="query_5.0" dataType="Text" index="0" />
+    <Arg name="NEW_PRODUCT_CODE" id="query_5.1" dataType="Text" index="1" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_5" name="query_YP_PRODUCT_TRN" nodeOrder="0" module="DBQuery" connName="netezza">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_5.0" name="OLD_PRODUCT_CODE" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_5.1" name="NEW_PRODUCT_CODE" dataType="Text" index="1" />
+      </OutputsList>
+      <SQL><![CDATA[select * from YP_PRODUCT_TRN]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="8" fromNodeOrder="0" fromItemID="query_5" fromColID="query_5.0" toItemID="tbl_YP_PRODUCT_TRN" toColID="tblCol_e5b2b9a30ced4fc6bf0fa47ea2543303" />
+    <Link partId="9" fromNodeOrder="0" fromItemID="query_5" fromColID="query_5.1" toItemID="tbl_YP_PRODUCT_TRN" toColID="tblCol_544f2ff0bd1e40bc8b69943c43ad2f93" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

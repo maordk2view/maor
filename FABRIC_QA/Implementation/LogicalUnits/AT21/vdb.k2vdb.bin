@@ -1,0 +1,18 @@
+﻿<Graph version="4.0.0.3" name="vdb.k2vdb.bin" lastPartID="12686">
+  <Node id="0" partID="0" name="PATIENT" isRootView="true" pos="11 388" size="257 138.546936" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"PATIENT","TablePopulationPropertiesList":[{"ID":"query_PATIENT","Name":"query_PATIENT","Order":1,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="61" name="INSURANCE_INFORMATION" isRootView="false" pos="414 88" size="257 138.546844" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"INSURANCE_INFORMATION","TablePopulationPropertiesList":[{"ID":"query_INSURANCE_INFORMATION","Name":"query_INSURANCE_INFORMATION","Order":2,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+  <Node id="2" partID="78" name="INVOICE" isRootView="false" pos="351 399" size="257 138.546936" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"INVOICE","TablePopulationPropertiesList":[{"ID":"query_INVOICE","Name":"query_INVOICE","Order":2,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+  <Node id="3" partID="93" name="PAYMENT" isRootView="false" pos="833 160" size="257 154" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"PAYMENT","TablePopulationPropertiesList":[{"ID":"query_PAYMENT","Name":"query_PAYMENT","Order":3,"Disabled":false,"IsEnrichment":false},{"ID":"query_up_payment","Name":"query_up_payment","Order":4,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+  <Link from="4" to="5" partID="123" linkType="Database" pointsArr="268 450.636719 278 450.636719 404 134.545563 414 134.545563" fromNodePartID="0" fromNodeColumnName="PATIENT_ID" toNodePartID="61" toNodeColumnName="PATIENT_ID" toNodePopulationObjectName="query_INSURANCE_INFORMATION" />
+  <Link from="4" to="6" partID="124" linkType="Database" pointsArr="268 450.636719 278 450.636719 341 445.545563 351 445.545563" fromNodePartID="0" fromNodeColumnName="PATIENT_ID" toNodePartID="78" toNodeColumnName="PATIENT_ID" toNodePopulationObjectName="query_INVOICE" />
+  <Link from="7" to="8" partID="126" linkType="Database" pointsArr="608 461.636719 618 461.636719 823 223.545578 833 223.545578" fromNodePartID="78" fromNodeColumnName="INVOICE_ID" toNodePartID="93" toNodeColumnName="INVOICE_ID" toNodePopulationObjectName="query_PAYMENT" />
+  <Link from="7" to="9" partID="12392" linkType="Database" pointsArr="608 461.636719 618 461.636719 828 204.5 838 204.5" fromNodePartID="78" fromNodeColumnName="INVOICE_ID" toNodePartID="93" toNodeColumnName="INVOICE_ID" toNodePopulationObjectName="query_up_payment" />
+</Graph>

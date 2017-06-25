@@ -1,0 +1,8 @@
+﻿<Graph name="eli_ref.double_pop.k2tablePop.bin" lastPartID="20">
+  <TableNode partID="0" name="eli_ref" pos="404 30" width="309.3241" />
+  <DBQueryNode partID="15" name="ORA_SOURCE" pos="36 219" size="253 96.21875" isRoot="true">
+    <DBQuery>{"Name":"query_SOURCE03_ELI_COMP","ID":"query_query_SOURCE03_ELI_COMP","ConnName":"ORA_SOURCE","SQL":"select * from SOURCE03.ELI_COMP","ColumnsList":[{"ID":"queryCol_0","Name":"ID","DataType":"Text","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"COMPANY_NAME","DataType":"Text","Index":1,"IsInputArgument":true},{"ID":"queryCol_2","Name":"HQ","DataType":"Text","Index":2,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="19" from="0" to="1" pointsArr="289 255.036469 299 255.036469 394 61.0364571 404 61.0364571" fromNodePartID="15" fromNodeColumnName="ID" toNodePartID="0" toNodeColumnName="comp_id" />
+  <Link partID="20" from="2" to="3" pointsArr="289 267.109375 299 267.109375 394 85.18229 404 85.18229" fromNodePartID="15" fromNodeColumnName="COMPANY_NAME" toNodePartID="0" toNodeColumnName="udac_code" />
+</Graph>

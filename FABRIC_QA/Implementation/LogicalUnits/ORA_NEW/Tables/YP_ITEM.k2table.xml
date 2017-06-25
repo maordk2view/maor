@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>YP_ITEM</Name>
+  <ID>tbl_YP_ITEM</ID>
+  <LazyDataUpdate enabled="true" performEvery="00:00:30" />
+  <Columns>
+    <Column name="CUSTOMER_ID" id="tblCol_b1d05ad9ee7e4cd3b4329b0447b38709" index="0" datatype="Long" />
+    <Column name="PRODUCT_CODE" id="tblCol_444f99ebe7534307981f1a3dd727796a" index="1" datatype="String" />
+    <Column name="PRODUCT_ISSUE_NUM" id="tblCol_df3b5a636cc945d4ba0b8a1f59103ab3" index="2" datatype="Long" />
+    <Column name="ITEM_ID" id="tblCol_cae7104ecad64c6690aa94c5e064f5da" index="3" datatype="Long" />
+    <Column name="ITEM_VERSION" id="tblCol_29c4549ea6e64ea89d4c4f52b84e92d9" index="4" datatype="Long" />
+    <Column name="LAST_VERSION_IND" id="tblCol_e96c389672cf4257a4f71b6666b15988" index="5" datatype="String" />
+    <Column name="CUR_DATE" id="tblCol_bfcb064175ac460eac74037089d1263d" index="6" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

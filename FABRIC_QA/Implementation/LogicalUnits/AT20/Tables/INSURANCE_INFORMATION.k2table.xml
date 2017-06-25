@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>INSURANCE_INFORMATION</Name>
+  <ID>tbl_INSURANCE_INFORMATION</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="PATIENT_ID" id="tblCol_ede2da1e34fd4a58812b61164b920d20" index="0" datatype="Text" />
+    <Column name="POLICY_ID" id="tblCol_a0e7ed4703f646c9b77a96868f83b8fa" index="1" datatype="Text" mandatory="true" />
+    <Column name="VALID_FROM" id="tblCol_e8ea3faad8e340ba876c989493b278d9" index="2" datatype="Text" />
+    <Column name="VALID_TO" id="tblCol_806e21a70d494eef86574fdf48c5292f" index="3" datatype="Text" />
+    <Column name="STATUS" id="tblCol_f82eeed6d333494cb13002377eff3e38" index="4" datatype="Text" />
+    <Column name="PROVIDE" id="tblCol_215161b09f344db986a0da0084aba7a5" index="5" datatype="Text" />
+    <Column name="PLAN" id="tblCol_c7a0ed118f8e4605ab2520f51abeedd7" index="6" datatype="Text" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_a0e7ed4703f646c9b77a96868f83b8fa" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

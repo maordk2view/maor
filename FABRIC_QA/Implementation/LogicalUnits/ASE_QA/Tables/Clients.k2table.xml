@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Clients</Name>
+  <ID>tbl_Clients</ID>
+  <EntityId>tblCol_356f7ce5a83940dfbb06562fd5c41fb7</EntityId>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="Client_id" id="tblCol_121a9bee2e274b5186c4c8862b528b20" index="0" datatype="Integer" mandatory="true" />
+    <Column name="Reg_date" id="tblCol_356f7ce5a83940dfbb06562fd5c41fb7" index="1" datatype="Text" mandatory="true" />
+    <Column name="First_name" id="tblCol_b25360adaf534c9d93c6a2e1fab3333a" index="2" datatype="Text" mandatory="true" />
+    <Column name="Last_name" id="tblCol_47fd6b581e4b4dc1aa8d69d8056658c1" index="3" datatype="Text" />
+    <Column name="int_code" id="tblCol_2fed4f44ae274468a0a587b000bed804" index="4" datatype="Integer" mandatory="true" />
+    <Column name="int_bit" id="tblCol_0875bcfc44be471f8c00909a327fbb3d" index="5" datatype="Integer" mandatory="true" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

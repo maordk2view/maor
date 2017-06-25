@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_WEB_LOG_ROOT</ID>
+  <PopulationObjectName>query_WEB_LOG_ROOT</PopulationObjectName>
+  <TableName>WEB_LOG_ROOT</TableName>
+  <RootItemID>query_query_WEB_LOG_ROOT</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="ID" id="queryCol_0" dataType="Text" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_WEB_LOG_ROOT" name="query_WEB_LOG_ROOT" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="PBG">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="ID" dataType="Text" index="0" />
+      </OutputsList>
+      <SQL><![CDATA[select * from WEB_LOG_ROOT]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="6" fromNodeOrder="0" fromItemID="query_query_WEB_LOG_ROOT" fromColID="queryCol_0" toItemID="tbl_WEB_LOG_ROOT" toColID="tblCol_249a7fe8132d47ca9095d72a6dc1d8f7" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

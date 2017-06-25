@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>S_N_YP_ADDRESS</Name>
+  <ID>tbl_S_N_YP_ADDRESS</ID>
+  <ColumnsCollation>RTRIM</ColumnsCollation>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="CUSTOMER_ID" id="tblCol_7bfee6aa71474a029c70fa1f5e67a6fe" index="0" datatype="Integer" />
+    <Column name="STREET" id="tblCol_d48f28a51a3d477fb8a064b8303a9a56" index="1" datatype="Text" />
+    <Column name="CITY" id="tblCol_6349a17cc04747648263975302a02227" index="2" datatype="Text" />
+    <Column name="STATE" id="tblCol_ded3f287711d4b6d806590c948890c0f" index="3" datatype="Text" />
+    <Column name="COUNTRY" id="tblCol_906fa6008ca844bc83912955a90a4147" index="4" datatype="Text" />
+    <Column name="ZIP_CODE" id="tblCol_e8df531ea7f742adaf09369600f5f5f5" index="5" datatype="Text" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" unique="true" columnsIdsList="tblCol_7bfee6aa71474a029c70fa1f5e67a6fe,tblCol_d48f28a51a3d477fb8a064b8303a9a56,tblCol_6349a17cc04747648263975302a02227" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

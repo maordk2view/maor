@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>BAN_DIRECT_DEBIT</Name>
+  <ID>tbl_BAN_DIRECT_DEBIT</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="BAN" id="tblCol_4ac3409c9c8a4fca87564475f83bc3b0" index="0" datatype="Integer" mandatory="true" />
+    <Column name="SYS_CREATION_DATE" id="tblCol_4aa4b8b85e7d4a38aa0a128aeda1b217" index="1" datatype="Text" mandatory="true" />
+    <Column name="SYS_UPDATE_DATE" id="tblCol_87c2ba15f2c546b5a90875a3f723d269" index="2" datatype="Text" />
+    <Column name="OPERATOR_ID" id="tblCol_9ffb41e7b5da4bc59149bc8580c2a40d" index="3" datatype="Integer" />
+    <Column name="APPLICATION_ID" id="tblCol_22aed896561249a794ed2a2a9657c6e1" index="4" datatype="Text" />
+    <Column name="DL_SERVICE_CODE" id="tblCol_c1fe89b570ef4666ae4717396eaaf4d1" index="5" datatype="Text" mandatory="true" />
+    <Column name="DL_UPDATE_STAMP" id="tblCol_8e8dafcea4f643bdb3e4d1db154e7db7" index="6" datatype="Integer" />
+    <Column name="CREDIT_CARD_TYPE" id="tblCol_80cfef95e6f64a57b145b56263c3616d" index="7" datatype="Text" />
+    <Column name="CREDIT_CARD_NO" id="tblCol_c94af773e2c04b0fb8d6cf1d0fe4d86d" index="8" datatype="Text" />
+    <Column name="CARD_MEM_HOLD_NM" id="tblCol_092a8de6c582472f8f84db5e0d2521d6" index="9" datatype="Text" />
+    <Column name="EXPIRATION_DATE" id="tblCol_ce13341500c645ab9d22ce23fbf5bffe" index="10" datatype="Text" />
+    <Column name="DD_TYPE" id="tblCol_26276037cf5d4ecd9a99916d32d45e47" index="11" datatype="Text" />
+    <Column name="DD_STATUS" id="tblCol_f7e072015ec1487ea0abd7a5c6db80a7" index="12" datatype="Text" />
+    <Column name="STATUS_ISSUE_DATE" id="tblCol_41b7aab14532409c9c95d5aa1a946948" index="13" datatype="Text" />
+    <Column name="STATUS_REASON" id="tblCol_1f289d2222d6421fb8ed0b1cebe59af8" index="14" datatype="Text" />
+    <Column name="START_DATE" id="tblCol_bf62b3d362494583b53aae3762e973c5" index="15" datatype="Text" />
+    <Column name="END_DATE" id="tblCol_af0cc4a5e7d24806a544ea86bd2fde23" index="16" datatype="Text" />
+    <Column name="BNK_CODE" id="tblCol_0ed6677b788543f3aea769c10267b67d" index="17" datatype="Text" />
+    <Column name="BNK_ACCT_NUMBER" id="tblCol_4dd82522b359404a9d3ea20058e5fffa" index="18" datatype="Text" />
+    <Column name="CARD_VERIFY_NUM" id="tblCol_c2e4001e0ceb4c17869c6088b3bfdbc8" index="19" datatype="Integer" />
+    <Column name="CVV_CODE" id="tblCol_295a30f6c51e467fbff5415087ca1099" index="20" datatype="Text" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" columnsIdsList="tblCol_4ac3409c9c8a4fca87564475f83bc3b0" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

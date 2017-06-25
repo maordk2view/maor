@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>k2_DECODE</Name>
+  <ID>Utilities.k2_DECODE</ID>
+  <Category>Utilities</Category>
+  <FunctionLevel>Product</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc>Decode Input values into a list of decoded output value.</Desc>
+  <Auther name="" id="" />
+  <Language>PHP</Language>
+  <FunctionBody>$input_array = explode(",", $i_array_var_comp);
+$output_array_val = explode(",", $i_array_out_val);
+$i=0;
+$found='false';
+while ($i &lt; count($input_array) &amp;&amp; $found=='false')
+{
+	if ($input_array[$i]==trim($i_var)){
+		$found=='true';
+		$o_var_val = $output_array_val[$i];
+		$o_found_ind = 'true';
+		return array($o_var_val,$o_found_ind);
+	}
+	$i++;		
+}
+$o_var_val = $i_def_val;
+$o_found_ind = 'false';
+return array($o_var_val,$o_found_ind);</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <InputParams>
+    <Input name="i_var" id="fi.Utilities.k2_DECODE.0" index="0" dataType="text" />
+    <Input name="i_array_var_comp" id="fi.Utilities.k2_DECODE.1" index="1" dataType="text" />
+    <Input name="i_array_out_val" id="fi.Utilities.k2_DECODE.2" index="2" dataType="text" />
+    <Input name="i_def_val" id="fi.Utilities.k2_DECODE.3" index="3" dataType="text" />
+  </InputParams>
+  <OutputParams>
+    <Output name="o_var_val" id="fo.Utilities.k2_DECODE.0" index="0" dataType="text" />
+    <Output name="o_found_ind" id="fo.Utilities.k2_DECODE.1" index="1" dataType="text" />
+  </OutputParams>
+</KFunction>

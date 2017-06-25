@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.0.0.2">
+  <Name>vdb</Name>
+  <RootView>TBAP_ITEM</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>TBAP_ITEM</Table>
+    <Table>TT1</Table>
+    <Table>TT2</Table>
+    <Table>TT3</Table>
+    <Table>TT4</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="TBAP_ITEM">
+      <Populations>
+        <Population id="query_TBAP_ITEM" name="query_TBAP_ITEM" order="1" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="TT1">
+      <Populations>
+        <Population id="query_TT1" name="query_TT1" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="TT2">
+      <Populations>
+        <Population id="query_TT2" name="query_TT2" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="TT3">
+      <Populations>
+        <Population id="query_TT3" name="query_TT3" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="TT4">
+      <Populations>
+        <Population id="query_TT4" name="query_TT4" order="2" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="false" name="FUN_REF_UDAC" />
+    <Item active="false" name="MS_REF_UDAC" />
+    <Item active="false" name="REF_SERVICE_AGREEMENT" />
+    <Item active="false" name="REF_YP_PRODUCT_TRN" />
+    <Item active="false" name="test_YP_REF_UDAC" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="2640">
+      <From tableType="TableObject" table="TBAP_ITEM" column="AP_ID" columnId="tblCol_0aa7a92190704f9ab8f055b073dec172" />
+      <To tableType="TableObject" table="TT1" populationObjectName="query_TT1" column="ID" columnId="queryCol_4" />
+    </Relation>
+    <Relation id="2641">
+      <From tableType="TableObject" table="TBAP_ITEM" column="AP_ID" columnId="tblCol_0aa7a92190704f9ab8f055b073dec172" />
+      <To tableType="TableObject" table="TT4" populationObjectName="query_TT4" column="ID" columnId="queryCol_4" />
+    </Relation>
+    <Relation id="2642">
+      <From tableType="TableObject" table="TBAP_ITEM" column="AP_ID" columnId="tblCol_0aa7a92190704f9ab8f055b073dec172" />
+      <To tableType="TableObject" table="TT3" populationObjectName="query_TT3" column="ID" columnId="queryCol_4" />
+    </Relation>
+    <Relation id="2643">
+      <From tableType="TableObject" table="TBAP_ITEM" column="AP_ID" columnId="tblCol_0aa7a92190704f9ab8f055b073dec172" />
+      <To tableType="TableObject" table="TT2" populationObjectName="query_TT2" column="ID" columnId="queryCol_4" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

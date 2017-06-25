@@ -1,0 +1,21 @@
+﻿<Graph version="2.0.0.3" name="vdb.k2vdb.bin" lastPartID="146">
+  <Node id="0" partID="0" name="customer" isRootView="true" pos="11 263" size="257 138.546936" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"customer","TablePopulationPropertiesList":[{"ID":"query_customer","Name":"query_customer","Order":1}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="17" name="customer_name" isRootView="false" pos="313 13" size="257 138.54686" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"customer_name","TablePopulationPropertiesList":[{"ID":"query_customer_name","Name":"query_customer_name","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="2" partID="51" name="credit_acct" isRootView="false" pos="313 213" size="257 138.54686" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"credit_acct","TablePopulationPropertiesList":[{"ID":"query_credit_acct","Name":"query_credit_acct","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="3" partID="73" name="savings_acct" isRootView="false" pos="313 413" size="257 138.54686" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"savings_acct","TablePopulationPropertiesList":[{"ID":"query_savings_acct","Name":"query_savings_acct","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="4" partID="95" name="trans" isRootView="false" pos="313 613" size="257 138.54686" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"trans","TablePopulationPropertiesList":[{"ID":"query_trans","Name":"query_trans","Order":2}]}</TableProperties>
+  </Node>
+  <Link from="5" to="6" partID="50" linkType="Database" pointsArr="268 309.545563 278 309.545563 303 59.54557 313 59.54557" fromNodePartID="0" fromNodeColumnName="cust_id" toNodePartID="17" toNodeColumnName="cust_id" toNodePopulationObjectName="query_customer_name" />
+  <Link from="5" to="7" partID="72" linkType="Database" pointsArr="268 309.545563 278 309.545563 303 259.545563 313 259.545563" fromNodePartID="0" fromNodeColumnName="cust_id" toNodePartID="51" toNodeColumnName="cust_id" toNodePopulationObjectName="query_credit_acct" />
+  <Link from="5" to="8" partID="94" linkType="Database" pointsArr="268 309.545563 278 309.545563 303 459.5456 313 459.5456" fromNodePartID="0" fromNodeColumnName="cust_id" toNodePartID="73" toNodeColumnName="cust_id" toNodePopulationObjectName="query_savings_acct" />
+  <Link from="5" to="9" partID="114" linkType="Database" pointsArr="268 309.545563 278 309.545563 303 659.5456 313 659.5456" fromNodePartID="0" fromNodeColumnName="cust_id" toNodePartID="95" toNodeColumnName="cust_id" toNodePopulationObjectName="query_trans" />
+</Graph>

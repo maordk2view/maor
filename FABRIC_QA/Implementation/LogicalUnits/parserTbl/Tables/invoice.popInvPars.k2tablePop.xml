@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>popInvPars</ID>
+  <PopulationObjectName>popInvPars</PopulationObjectName>
+  <TableName>invoice</TableName>
+  <RootItemID>rt_invParser</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="invoiceID" id="rtCol_3143f4f7cb7c4408a32283f44597d5ba" dataType="Text" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="ParserRecordTypeDataSave" id="rt_invParser" name="invParser" nodeOrder="0" module="ParserRecordType" mapObjectModule="ParserRecordType" parentParser="parsMapInv" active="true" deleteRecordsAfterSync="false">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="ParserRecordTypeDataSaveColumn" id="rtCol_3143f4f7cb7c4408a32283f44597d5ba" name="invoiceID" dataType="Text" />
+        <Output xsi:type="ParserRecordTypeDataSaveColumn" id="rtCol_d3a1b713ca2c4920b6b3c3fa273ef2a3" name="patientID" dataType="Text" />
+        <Output xsi:type="ParserRecordTypeDataSaveColumn" id="rtCol_b6acfb4a3ff146e7b88167676f0ac414" name="status" dataType="Text" />
+      </OutputsList>
+      <RecordTypeKeyColumn>rtCol_3143f4f7cb7c4408a32283f44597d5ba</RecordTypeKeyColumn>
+      <PkColumnsList />
+      <ClusteringKeyOrder>ASC</ClusteringKeyOrder>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="188" fromNodeOrder="0" fromItemID="rt_invParser" fromColID="rtCol_3143f4f7cb7c4408a32283f44597d5ba" toItemID="tbl_invoice" toColID="tblCol_4478bf1133e048c3b069e7098f681818" />
+    <Link partId="189" fromNodeOrder="0" fromItemID="rt_invParser" fromColID="rtCol_d3a1b713ca2c4920b6b3c3fa273ef2a3" toItemID="tbl_invoice" toColID="tblCol_fd489d0644034cfb8b7318e635605893" />
+    <Link partId="191" fromNodeOrder="0" fromItemID="rt_invParser" fromColID="rtCol_b6acfb4a3ff146e7b88167676f0ac414" toItemID="tbl_invoice" toColID="tblCol_9c36d26553634c30b7d79e545ca35ac0" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

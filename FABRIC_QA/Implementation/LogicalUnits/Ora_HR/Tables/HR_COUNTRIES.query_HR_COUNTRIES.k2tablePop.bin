@@ -1,0 +1,9 @@
+﻿<Graph name="HR_COUNTRIES.query_HR_COUNTRIES.k2tablePop.bin" lastPartID="12">
+  <TableNode partID="0" name="HR_COUNTRIES" pos="308 5.854168" width="309.324158" />
+  <DBQueryNode partID="6" name="CUSTOMER_TEST" pos="10 1.890625" size="253 96.21875" isRoot="true">
+    <DBQuery>{"Name":"query_HR_COUNTRIES","ID":"query_query_HR_COUNTRIES","ConnName":"CUSTOMER_TEST","SQL":"select * from HR.COUNTRIES","ColumnsList":[{"ID":"queryCol_0","Name":"COUNTRY_ID","DataType":"Text","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"COUNTRY_NAME","DataType":"Text","Index":1,"IsInputArgument":true},{"ID":"queryCol_2","Name":"REGION_ID","DataType":"Integer","Index":2,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="10" from="0" to="1" pointsArr="263 37.9270859 273 37.9270859 275.5 25 295.5 25 298 36.890625 308 36.890625" fromNodePartID="6" fromNodeColumnName="COUNTRY_ID" toNodePartID="0" toNodeColumnName="COUNTRY_ID" />
+  <Link partID="11" from="2" to="3" pointsArr="263 50 273 50 275.5 50 295.5 50 298 48.9635429 308 48.9635429" fromNodePartID="6" fromNodeColumnName="COUNTRY_NAME" toNodePartID="0" toNodeColumnName="COUNTRY_NAME" />
+  <Link partID="12" from="4" to="5" pointsArr="263 62.0729141 273 62.0729141 275.5 75 295.5 75 298 61.0364571 308 61.0364571" fromNodePartID="6" fromNodeColumnName="REGION_ID" toNodePartID="0" toNodeColumnName="REGION_ID" />
+</Graph>

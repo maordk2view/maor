@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>getMapInput</Name>
+  <ID>Parser.getMapInput</ID>
+  <Category>Parser</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>RegularFunction</FunctionType>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>byte[] b =  input.get("5").toString().getBytes(java.nio.charset.StandardCharsets.UTF_8);
+
+return new Object [] 
+{input.get("0"),input.get("1"), input.get("2") , input.get("3") ,input.get("4") ,b};</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="input" id="fi.Parser.getMapInput.0" index="0" dataType="Map&lt;String,Object&gt;">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="person_id" id="fo.Parser.getMapInput.0" index="0" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="person_name" id="fo.Parser.getMapInput.1" index="1" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="ip" id="fo.Parser.getMapInput.2" index="2" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="realS" id="fo.Parser.getMapInput.3" index="3" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="intField" id="fo.Parser.getMapInput.4" index="4" dataType="Integer">
+      <Comment />
+    </Output>
+    <Output name="b" id="fo.Parser.getMapInput.5" index="5" dataType="Byte[]">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

@@ -1,0 +1,9 @@
+﻿<Graph version="2.5.7.0" name="vdb.k2vdb.bin" lastPartID="2173">
+  <Node id="0" partID="428" name="YP_CUSTOMER" isRootView="true" pos="7 63" size="257 138.546844" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"YP_CUSTOMER","TablePopulationPropertiesList":[{"ID":"query_YP_CUSTOMER","Name":"query_YP_CUSTOMER","Order":1}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="482" name="YP_PRODUCT" isRootView="false" pos="336 61" size="257 138.546844" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"YP_PRODUCT","TablePopulationPropertiesList":[{"ID":"query_YP_PRODUCT","Name":"query_YP_PRODUCT","Order":2}]}</TableProperties>
+  </Node>
+  <Link from="2" to="3" partID="370" linkType="Database" pointsArr="264 109.54557 274 109.54557 326 107.54557 336 107.54557" fromNodePartID="428" fromNodeColumnName="CUSTOMER_ID" toNodePartID="482" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="query_YP_PRODUCT" />
+</Graph>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_HR_REGIONS</PopulationObjectName>
+  <TableName>HR_REGIONS</TableName>
+  <ID>query_HR_REGIONS</ID>
+  <RootItemID>query_query_HR_REGIONS</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="REGION_ID" id="queryCol_0" dataType="Integer" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_HR_REGIONS" name="query_HR_REGIONS" nodeOrder="0" module="DBQuery" connName="CUSTOMER_TEST">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="REGION_ID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="REGION_NAME" dataType="Text" index="1" />
+      </OutputsList>
+      <SQL><![CDATA[select * from HR.REGIONS]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="8" fromNodeOrder="0" fromItemID="query_query_HR_REGIONS" fromColID="queryCol_0" toItemID="tbl_HR_REGIONS" toColID="tblCol_df3f00bd4fdf445899bfa9e31bd5cba9" />
+    <Link partId="9" fromNodeOrder="0" fromItemID="query_query_HR_REGIONS" fromColID="queryCol_1" toItemID="tbl_HR_REGIONS" toColID="tblCol_24bdf28b58384f248347514e8beaaa21" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

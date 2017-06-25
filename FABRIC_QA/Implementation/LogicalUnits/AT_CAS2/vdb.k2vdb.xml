@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="4.0.0.1">
+  <Name>vdb</Name>
+  <RootView>users</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <EnableDataEncryption>false</EnableDataEncryption>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>users</Table>
+    <Table>users2</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="users">
+      <Populations>
+        <Population id="pop2" name="pop2" order="1" disabled="true" enrichment="false" />
+        <Population id="pop3" name="pop3" order="1" disabled="false" enrichment="false" />
+        <Population id="query_test_db_users" name="query_test_db_users" order="1" disabled="true" enrichment="false" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="users2">
+      <Populations>
+        <Population id="pop4" name="pop4" order="2" disabled="true" enrichment="false" />
+        <Population id="query_test_db_users2" name="query_test_db_users2" order="2" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="false" name="FUN_REF_UDAC" />
+    <Item active="false" name="MS_REF_UDAC" />
+    <Item active="false" name="REF_SERVICE_AGREEMENT" />
+    <Item active="false" name="REF_YP_PRODUCT_TRN" />
+    <Item active="false" name="test_YP_REF_UDAC" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="40">
+      <From tableType="TableObject" table="users" column="id" columnId="tblCol_03a92e48b52a4e97b3e0f03c728f8672" />
+      <To tableType="TableObject" table="users2" populationObjectName="query_test_db_users2" column="id" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="75">
+      <From tableType="TableObject" table="users" column="id" columnId="tblCol_03a92e48b52a4e97b3e0f03c728f8672" />
+      <To tableType="TableObject" table="users2" populationObjectName="pop4" column="id" columnId="queryCol_0" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

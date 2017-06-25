@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>JoinAT1_ref</Name>
+  <ID>JAVA.JoinAT1_ref</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>WebService</FunctionType>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>
+DBExecute("fabric","GET AT1.4333", null);
+String q = "select PRODUCT_CODE, NEW_PRODUCT_CODE from D_YP_PRODUCT,REF_YP_PRODUCT_TRN where  PRODUCT_CODE = OLD_PRODUCT_CODE LIMIT 1";
+ResultSetWrapper rs =  DBQuery("fabric",q ,null);
+return rs;</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams />
+  <OutputParams>
+    <Output name="rs" id="fo.JAVA.JoinAT1_ref.0" index="0" dataType="Object">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

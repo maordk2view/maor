@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_Production_Location</ID>
+  <PopulationObjectName>query_Production_Location</PopulationObjectName>
+  <TableName>Production_Location</TableName>
+  <RootItemID>query_query_Production_Location</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="LocationID" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="Name" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="CostRate" id="queryCol_2" dataType="Real" index="2" />
+    <Arg name="Availability" id="queryCol_3" dataType="Real" index="3" />
+    <Arg name="ModifiedDate" id="queryCol_4" dataType="Text" index="4" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_Production_Location" name="query_Production_Location" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="SqlServer_AdvWorks">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="LocationID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="Name" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="CostRate" dataType="Real" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="Availability" dataType="Real" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="ModifiedDate" dataType="Text" index="4" />
+      </OutputsList>
+      <SQL><![CDATA[select * from Production.Location]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="14" fromNodeOrder="0" fromItemID="query_query_Production_Location" fromColID="queryCol_0" toItemID="tbl_Production_Location" toColID="tblCol_1e19a5d605b549808fc6b8c76972977e" />
+    <Link partId="15" fromNodeOrder="0" fromItemID="query_query_Production_Location" fromColID="queryCol_1" toItemID="tbl_Production_Location" toColID="tblCol_887ff623796247bb8af75202abc01fea" />
+    <Link partId="16" fromNodeOrder="0" fromItemID="query_query_Production_Location" fromColID="queryCol_2" toItemID="tbl_Production_Location" toColID="tblCol_8e9a7f34ca4f4112be2bccf46c708a6e" />
+    <Link partId="17" fromNodeOrder="0" fromItemID="query_query_Production_Location" fromColID="queryCol_3" toItemID="tbl_Production_Location" toColID="tblCol_58b9f61198634fc8841c6d7277c74861" />
+    <Link partId="18" fromNodeOrder="0" fromItemID="query_query_Production_Location" fromColID="queryCol_4" toItemID="tbl_Production_Location" toColID="tblCol_051f123a47244bc28ad08946eed6fb50" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

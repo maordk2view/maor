@@ -1,0 +1,9 @@
+﻿<Graph name="Production_Culture.query_Production_Culture.k2tablePop.bin" lastPartID="12">
+  <TableNode partID="0" name="Production_Culture" pos="308 5.854168" width="309.3241" />
+  <DBQueryNode partID="6" name="SqlServer_AdvWorks" pos="10 1.890625" size="253 96.21875" isRoot="true">
+    <DBQuery>{"Name":"query_Production_Culture","ID":"query_query_Production_Culture","ConnName":"SqlServer_AdvWorks","SQL":"select * from Production.Culture","ColumnsList":[{"ID":"queryCol_0","Name":"CultureID","DataType":"Text","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"Name","DataType":"Text","Index":1,"IsInputArgument":true},{"ID":"queryCol_2","Name":"ModifiedDate","DataType":"Text","Index":2,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="10" from="0" to="1" pointsArr="263 37.9270859 273 37.9270859 275.5 25 295.5 25 298 36.890625 308 36.890625" fromNodePartID="6" fromNodeColumnName="CultureID" toNodePartID="0" toNodeColumnName="CultureID" />
+  <Link partID="11" from="2" to="3" pointsArr="263 50 273 50 275.5 50 295.5 50 298 48.9635429 308 48.9635429" fromNodePartID="6" fromNodeColumnName="Name" toNodePartID="0" toNodeColumnName="Name" />
+  <Link partID="12" from="4" to="5" pointsArr="263 62.0729141 273 62.0729141 275.5 75 295.5 75 298 61.0364571 308 61.0364571" fromNodePartID="6" fromNodeColumnName="ModifiedDate" toNodePartID="0" toNodeColumnName="ModifiedDate" />
+</Graph>

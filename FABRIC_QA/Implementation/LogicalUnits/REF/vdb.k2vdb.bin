@@ -1,0 +1,13 @@
+﻿<Graph version="2.5.3.0" name="vdb.k2vdb.bin" lastPartID="53">
+  <Node id="0" partID="15" name="ROOT" isRootView="true" pos="143 148" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"ROOT","TablePopulationPropertiesList":[{"ID":"query_yp_cust_yp_customer","Name":"query_yp_cust_yp_customer","Order":1}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="17" name="YP_PRODUCT_TRN" isRootView="false" pos="433 81" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"YP_PRODUCT_TRN","TablePopulationPropertiesList":[{"ID":"query_YP_PRODUCT_TRN","Name":"query_YP_PRODUCT_TRN","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="2" partID="21" name="YP_REF_UDAC" isRootView="false" pos="507 299" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"YP_REF_UDAC","TablePopulationPropertiesList":[{"ID":"query_YP_REF_UDAC","Name":"query_YP_REF_UDAC","Order":2}]}</TableProperties>
+  </Node>
+  <Link from="3" to="4" partID="6" linkType="Database" pointsArr="400 194.545578 410 194.545578 423 127.54557 433 127.54557" fromNodePartID="15" fromNodeColumnName="inst_id" toNodePartID="17" toNodeColumnName="INST_ID" toNodePopulationObjectName="query_YP_PRODUCT_TRN" />
+  <Link from="3" to="5" partID="14" linkType="Database" pointsArr="400 194.545578 410 194.545578 497 345.545563 507 345.545563" fromNodePartID="15" fromNodeColumnName="inst_id" toNodePartID="21" toNodeColumnName="INST_ID" toNodePopulationObjectName="query_YP_REF_UDAC" />
+</Graph>

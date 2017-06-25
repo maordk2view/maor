@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>P_yp_address</Name>
+  <ID>tbl_P_yp_address</ID>
+  <ColumnsCollation>NOCASE</ColumnsCollation>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="address_id" id="tblCol_586151718dcc47b3ac6718122a184aa9" index="0" datatype="Integer" mandatory="true" />
+    <Column name="customer_id" id="tblCol_189911512a1e4beb8b10b4b280f4d891" index="1" datatype="Integer" mandatory="true" />
+    <Column name="house_no" id="tblCol_488e24d9943c456683de70847bbf1bf4" index="2" datatype="Text" />
+    <Column name="colony_id" id="tblCol_212313c333554726a90ce3929a017af5" index="3" datatype="Integer" />
+    <Column name="override_colony" id="tblCol_de53eef95d2b47ef9a1f8213b3a7a066" index="4" datatype="Text" />
+    <Column name="state_code" id="tblCol_dc78afa3752448b399508ea325c18da1" index="5" datatype="Text" />
+    <Column name="street_name" id="tblCol_1cdf5a10110d4ffc8d5ef4e3f0d3898a" index="6" datatype="Text" />
+    <Column name="street_type" id="tblCol_b6fcf4d8cb364173913a804dabb60ab7" index="7" datatype="Text" />
+    <Column name="sub_location" id="tblCol_b93a40393d3542e49f00118d22656f36" index="8" datatype="Text" />
+    <Column name="zip_code" id="tblCol_cad15dfd9738410191f076a0cf25247f" index="9" datatype="Text" />
+    <Column name="po_box" id="tblCol_24552f3fc77c4167af53d12980dd3e81" index="10" datatype="Text" />
+    <Column name="direction" id="tblCol_4e4b861795b340d5ae94c1ce632a7d1a" index="11" datatype="Text" />
+    <Column name="selling_id" id="tblCol_e14a124b937f4d90bdceacec7b12b535" index="12" datatype="Text" />
+    <Column name="block_number" id="tblCol_a9d579e128a34d778e8560e1116d9ee0" index="13" datatype="Text" />
+    <Column name="terrain_number" id="tblCol_de1e414e5b07481da584100ea78a943c" index="14" datatype="Text" />
+    <Column name="interior_number" id="tblCol_4bf64d956b7646db9738222e6631c7e2" index="15" datatype="Text" />
+    <Column name="override_town" id="tblCol_4ff610845dbc4db2973cada2765a0efa" index="16" datatype="Text" />
+    <Column name="between_street1" id="tblCol_4f1aaf092b7146218f5d6e296b1e75bb" index="17" datatype="Text" />
+    <Column name="between_street2" id="tblCol_7b579364ac4a4adc999a8503a53c47ce" index="18" datatype="Text" />
+    <Column name="country" id="tblCol_1ca063f0961548129d856f591af3ca3e" index="19" datatype="Text" mandatory="true" />
+    <Column name="override_colony_type" id="tblCol_37f686b5a04a4c0caf60eebec6417f78" index="20" datatype="Text" />
+    <Column name="ctcr_batch_prog_id" id="tblCol_bdb152df0efb48a697d552b3d2971e30" index="21" datatype="Text" />
+    <Column name="ctcr_batch_prog_dt" id="tblCol_2765d2ca1c3c4b30950a38a8978b9c98" index="22" datatype="Text" />
+    <Column name="ctcr_online_user_id" id="tblCol_0b502f11bb884b46a6ffd96ec76e5a7d" index="23" datatype="Integer" />
+    <Column name="ctcr_online_prog_id" id="tblCol_47193bb94bee4e028cd18bd4aa3aca12" index="24" datatype="Text" />
+    <Column name="ctcr_online_prog_dt" id="tblCol_842d9f1521134f358445f8248fae7702" index="25" datatype="Text" />
+    <Column name="ctcr_sys_cre_dt" id="tblCol_b02ca097b41745d3ba0702b322ec4cb4" index="26" datatype="Text" />
+    <Column name="ctcr_sys_upd_dt" id="tblCol_cff282f80833433fb946e055ce680570" index="27" datatype="Text" />
+    <Column name="ctcr_dbi_prog_id" id="tblCol_a92bbbb2f39e42c1b11394e9f9483f7b" index="28" datatype="Text" />
+    <Column name="ctcr_dbi_prog_dt" id="tblCol_8e030a600c6048059ee0c3472f2b2ab9" index="29" datatype="Text" />
+    <Column name="ctcr_cnv_dt" id="tblCol_19bc308c63dc48a587d9087c1a805c1a" index="30" datatype="Text" />
+    <Column name="ctcr_event_id" id="tblCol_82b6c48ebc3f44d49fb96d15356ed6c3" index="31" datatype="Integer" />
+    <Column name="sfa_id" id="tblCol_414736a7b4f846c3b747f4b8f80b3e44" index="32" datatype="Text" />
+    <Column name="TRN_REJECT" id="tblCol_6e1e69cf7ce04ee68737299fb7a224d4" index="33" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

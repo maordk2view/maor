@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="4.0.0.3">
+  <Name>vdb</Name>
+  <RootView>PATIENT</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <EnableDataEncryption>false</EnableDataEncryption>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>PATIENT</Table>
+    <Table>INSURANCE_INFORMATION</Table>
+    <Table>INVOICE</Table>
+    <Table>PAYMENT</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="PATIENT">
+      <Populations>
+        <Population id="query_PATIENT" name="query_PATIENT" order="1" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="INSURANCE_INFORMATION">
+      <Populations>
+        <Population id="query_INSURANCE_INFORMATION" name="query_INSURANCE_INFORMATION" order="2" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="INVOICE">
+      <Populations>
+        <Population id="query_INVOICE" name="query_INVOICE" order="2" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="PAYMENT">
+      <Populations>
+        <Population id="query_PAYMENT" name="query_PAYMENT" order="3" disabled="false" enrichment="false" />
+        <Population id="query_up_payment" name="query_up_payment" order="4" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="false" name="FUN_REF_UDAC" />
+    <Item active="false" name="MS_REF_UDAC" />
+    <Item active="false" name="REF_SERVICE_AGREEMENT" />
+    <Item active="false" name="REF_YP_PRODUCT_TRN" />
+    <Item active="false" name="test_YP_REF_UDAC" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="123">
+      <From tableType="TableObject" table="PATIENT" column="PATIENT_ID" columnId="tblCol_e12c65ac4e9c474886e9b5555d60063b" />
+      <To tableType="TableObject" table="INSURANCE_INFORMATION" populationObjectName="query_INSURANCE_INFORMATION" column="PATIENT_ID" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="124">
+      <From tableType="TableObject" table="PATIENT" column="PATIENT_ID" columnId="tblCol_e12c65ac4e9c474886e9b5555d60063b" />
+      <To tableType="TableObject" table="INVOICE" populationObjectName="query_INVOICE" column="PATIENT_ID" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="126">
+      <From tableType="TableObject" table="INVOICE" column="INVOICE_ID" columnId="tblCol_67ddfa5e72124d0dbbfe424553afb8b3" />
+      <To tableType="TableObject" table="PAYMENT" populationObjectName="query_PAYMENT" column="INVOICE_ID" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="12392">
+      <From tableType="TableObject" table="INVOICE" column="INVOICE_ID" columnId="tblCol_67ddfa5e72124d0dbbfe424553afb8b3" />
+      <To tableType="TableObject" table="PAYMENT" populationObjectName="query_up_payment" column="INVOICE_ID" columnId="queryCol_1" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

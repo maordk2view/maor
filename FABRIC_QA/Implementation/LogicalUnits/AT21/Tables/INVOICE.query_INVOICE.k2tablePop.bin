@@ -1,0 +1,17 @@
+﻿<Graph name="INVOICE.query_INVOICE.k2tablePop.bin" lastPartID="2260">
+  <TableNode partID="0" name="INVOICE" pos="672.8286 24.7447968" width="309.495056" />
+  <DBQueryNode partID="9" name="HIS_DB" pos="24 -2.21875" size="253 132.4375" isRoot="true">
+    <DBQuery>{"Name":"query_INVOICE","ID":"query_query_INVOICE","ConnName":"HIS_DB","SQL":"SELECT * FROM INVOICE","ColumnsList":[{"ID":"queryCol_0","Name":"PATIENT_ID","DataType":"Text","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"INVOICE_ID","DataType":"Text","Index":1,"IsInputArgument":true},{"ID":"queryCol_2","Name":"ISSUED_DATE","DataType":"Text","Index":2,"IsInputArgument":true},{"ID":"queryCol_3","Name":"DUE_DATE","DataType":"Text","Index":3,"IsInputArgument":true},{"ID":"queryCol_4","Name":"STATUS","DataType":"Text","Index":4,"IsInputArgument":true},{"ID":"queryCol_5","Name":"BALANCE","DataType":"Real","Index":5,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <FunctionMapNode id="0" R0="1" partID="37" topLabel="k2_currentDateTime (37)" pos="328.992371 230.653656" size="153.932251 45.091156" isRoot="false">
+    <KFunction>{"Name":"k2_currentDateTime","ID":"f_37","Category":"Date","FunctionLevel":1,"FunctionType":0,"FunctionType2":0,"RegisterAsLuDbFunction":false,"SaveToDLUR":false,"ApiFunction":false,"DecisionFunction":false,"RequiresLuReference":false,"Desc":"","Auther":{"Name":"","ID":""},"Language":1,"FunctionBody":"java.text.DateFormat dateFormat = new java.text.SimpleDateFormat(\"yyyy/MM/dd HH:mm:ss\");\njava.util.Date date = new java.util.Date();\nreturn dateFormat.format(date);","IsSyntaxValid":true,"IsRootFunction":false,"inputParams":[],"outputParams":[{"Name":"current_datetime","ID":"fo_37.0","Index":0,"DataType":"String","Comment":""}]}</KFunction>
+  </FunctionMapNode>
+  <Link partID="16" from="2" to="3" pointsArr="277 33.81771 287 33.81771 662.8286 55.7812538 672.8286 55.7812538" fromNodePartID="9" fromNodeColumnName="PATIENT_ID" toNodePartID="0" toNodeColumnName="PATIENT_ID" />
+  <Link partID="17" from="4" to="5" pointsArr="277 45.890625 287 45.890625 662.8286 67.85417 672.8286 67.85417" fromNodePartID="9" fromNodeColumnName="INVOICE_ID" toNodePartID="0" toNodeColumnName="INVOICE_ID" />
+  <Link partID="18" from="6" to="7" pointsArr="277 57.96354 287 57.96354 662.8286 79.9270859 672.8286 79.9270859" fromNodePartID="9" fromNodeColumnName="ISSUED_DATE" toNodePartID="0" toNodeColumnName="ISSUED_DATE" />
+  <Link partID="19" from="8" to="9" pointsArr="277 70.03645 287 70.03645 662.8286 92 672.8286 92" fromNodePartID="9" fromNodeColumnName="DUE_DATE" toNodePartID="0" toNodeColumnName="DUE_DATE" />
+  <Link partID="21" from="10" to="11" pointsArr="277 94.18228 287 94.18228 662.8286 104.072914 672.8286 104.072914" fromNodePartID="9" fromNodeColumnName="BALANCE" toNodePartID="0" toNodeColumnName="BALANCE" />
+  <Link partID="39" from="1" to="12" pointsArr="478.447571 255.7448 488.447571 255.7448 662.8286 116.145828 672.8286 116.145828" fromNodePartID="37" fromNodeColumnName="current_datetime" toNodePartID="0" toNodeColumnName="tempDate" />
+  <Link partID="815" from="13" to="14" pointsArr="277 82.109375 287 82.109375 662.8286 128.21875 672.8286 128.21875" fromNodePartID="9" fromNodeColumnName="STATUS" toNodePartID="0" toNodeColumnName="Status1" />
+  <Link partID="2260" from="13" to="15" pointsArr="277 82.109375 287 82.109375 662.8286 140.291672 672.8286 140.291672" fromNodePartID="9" fromNodeColumnName="STATUS" toNodePartID="0" toNodeColumnName="STATUS" />
+</Graph>

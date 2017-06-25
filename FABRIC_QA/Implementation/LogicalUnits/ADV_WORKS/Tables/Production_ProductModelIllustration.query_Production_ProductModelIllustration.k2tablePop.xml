@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_Production_ProductModelIllustration</ID>
+  <PopulationObjectName>query_Production_ProductModelIllustration</PopulationObjectName>
+  <TableName>Production_ProductModelIllustration</TableName>
+  <RootItemID>query_query_Production_ProductModelIllustration</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="ProductModelID" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="IllustrationID" id="queryCol_1" dataType="Integer" index="1" />
+    <Arg name="ModifiedDate" id="queryCol_2" dataType="Text" index="2" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_Production_ProductModelIllustration" name="query_Production_ProductModelIllustration" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="SqlServer_AdvWorks">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="ProductModelID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="IllustrationID" dataType="Integer" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="ModifiedDate" dataType="Text" index="2" />
+      </OutputsList>
+      <SQL><![CDATA[select * from Production.ProductModelIllustration]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="10" fromNodeOrder="0" fromItemID="query_query_Production_ProductModelIllustration" fromColID="queryCol_0" toItemID="tbl_Production_ProductModelIllustration" toColID="tblCol_a4b8a844086543e68aac389be46fa237" />
+    <Link partId="11" fromNodeOrder="0" fromItemID="query_query_Production_ProductModelIllustration" fromColID="queryCol_1" toItemID="tbl_Production_ProductModelIllustration" toColID="tblCol_db97719977174e7397d420f3706afb50" />
+    <Link partId="12" fromNodeOrder="0" fromItemID="query_query_Production_ProductModelIllustration" fromColID="queryCol_2" toItemID="tbl_Production_ProductModelIllustration" toColID="tblCol_e7855f1619b34c05ae73c28899a01042" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

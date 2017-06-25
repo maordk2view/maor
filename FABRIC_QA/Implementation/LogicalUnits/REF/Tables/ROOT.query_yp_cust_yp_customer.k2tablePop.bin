@@ -1,0 +1,7 @@
+﻿<Graph name="ROOT.query_yp_cust_yp_customer.k2tablePop.bin" lastPartID="62">
+  <TableNode partID="0" name="ROOT" pos="401 30" width="253" />
+  <DBQueryNode partID="3" name="PG_SOURCE" pos="71 139" size="253 72.07291" isRoot="true">
+    <DBQuery>{"Name":"query_yp_cust_yp_customer","ID":"query_3","ConnName":"PG_SOURCE","SQL":"Select 1 As INST_ID","ColumnsList":[{"ID":"query_3.0","Name":"inst_id","DataType":"Integer","Index":0,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="58" from="0" to="1" pointsArr="324 175.036453 334 175.036453 391 61.0364571 401 61.0364571" fromNodePartID="3" fromNodeColumnName="inst_id" toNodePartID="0" toNodeColumnName="inst_id" />
+</Graph>

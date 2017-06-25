@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>TBAP_ITEM</Name>
+  <ID>tbl_TBAP_ITEM</ID>
+  <EntityId>tblCol_0aa7a92190704f9ab8f055b073dec172</EntityId>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="AP_ID" id="tblCol_0aa7a92190704f9ab8f055b073dec172" index="0" datatype="Text" mandatory="true" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

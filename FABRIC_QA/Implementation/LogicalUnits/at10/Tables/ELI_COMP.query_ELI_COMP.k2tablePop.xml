@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_ELI_COMP</ID>
+  <PopulationObjectName>query_ELI_COMP</PopulationObjectName>
+  <TableName>ELI_COMP</TableName>
+  <RootItemID>query_query_SOURCE03_ELI_COMP</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="ID" id="queryCol_0" dataType="Text" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_SOURCE03_ELI_COMP" name="query_SOURCE03_ELI_COMP" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="ORA_SOURCE">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="ID" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="COMPANY_NAME" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="HQ" dataType="Text" index="2" />
+      </OutputsList>
+      <SQL><![CDATA[select * from SOURCE03.ELI_COMP]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="49" fromNodeOrder="0" fromItemID="query_query_SOURCE03_ELI_COMP" fromColID="queryCol_0" toItemID="tbl_ELI_COMP" toColID="tblCol_db27c7401c7b4bc787560bf235db54dd" />
+    <Link partId="50" fromNodeOrder="0" fromItemID="query_query_SOURCE03_ELI_COMP" fromColID="queryCol_1" toItemID="tbl_ELI_COMP" toColID="tblCol_47c0ea509ab94373b4e1cbe12df54e66" />
+    <Link partId="51" fromNodeOrder="0" fromItemID="query_query_SOURCE03_ELI_COMP" fromColID="queryCol_2" toItemID="tbl_ELI_COMP" toColID="tblCol_3aa88f2f66464a39ac7f94ffad3e3ed2" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

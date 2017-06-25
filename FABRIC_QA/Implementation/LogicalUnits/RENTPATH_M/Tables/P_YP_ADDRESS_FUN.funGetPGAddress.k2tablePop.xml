@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>funGetPGAddress</PopulationObjectName>
+  <TableName>P_YP_ADDRESS_FUN</TableName>
+  <ID>funGetPGAddress</ID>
+  <RootItemID>f_3</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="i_cust_id" id="fi_3.0" dataType="Integer" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item id="f_3" name="funGetPGAddress" nodeOrder="0" module="Function" fileName="funGetPGAddress.k2function.xml">
+      <InputsList>
+        <Input id="fi_3.0" name="i_cust_id" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_3.0" name="address_id" />
+        <Output id="fo_3.1" name="customer_id" />
+        <Output id="fo_3.2" name="house_no" />
+        <Output id="fo_3.3" name="colony_id" />
+        <Output id="fo_3.4" name="override_colony" />
+        <Output id="fo_3.5" name="street_name" />
+        <Output id="fo_3.6" name="state_code" />
+        <Output id="fo_3.7" name="street_type" />
+        <Output id="fo_3.8" name="country" />
+        <Output id="fo_3.9" name="sfa_id" />
+        <Output id="fo_3.10" name="zip_code" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="27" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.0" toItemID="tbl_P_YP_ADDRESS_FUN" toColID="tblCol_4713bf31155543ee87f4b7ce5622aae9" />
+    <Link partId="28" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.1" toItemID="tbl_P_YP_ADDRESS_FUN" toColID="tblCol_d8be082927064d288f0f51065e85dc92" />
+    <Link partId="29" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.2" toItemID="tbl_P_YP_ADDRESS_FUN" toColID="tblCol_a306ca56bff54acfaa6fc7b2bfcf1511" />
+    <Link partId="30" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.3" toItemID="tbl_P_YP_ADDRESS_FUN" toColID="tblCol_689fa8913d4c4a9d8e71419cc2eb51a6" />
+    <Link partId="31" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.4" toItemID="tbl_P_YP_ADDRESS_FUN" toColID="tblCol_162f02cbe4334329b01dbb29cf23331a" />
+    <Link partId="32" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.5" toItemID="tbl_P_YP_ADDRESS_FUN" toColID="tblCol_7e1b52eb48af404ba65f4bd38f7a20b0" />
+    <Link partId="33" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.6" toItemID="tbl_P_YP_ADDRESS_FUN" toColID="tblCol_32cc89bfc5b94150aa9bac3641fc125f" />
+    <Link partId="34" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.7" toItemID="tbl_P_YP_ADDRESS_FUN" toColID="tblCol_e704ca9105fc4846a6bbc06dc67a6926" />
+    <Link partId="35" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.8" toItemID="tbl_P_YP_ADDRESS_FUN" toColID="tblCol_22be7eb0b08641ad9c378e97e3ec31ce" />
+    <Link partId="36" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.9" toItemID="tbl_P_YP_ADDRESS_FUN" toColID="tblCol_7a82eabdbfee4424be082c5ad1c2a95c" />
+    <Link partId="37" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.10" toItemID="tbl_P_YP_ADDRESS_FUN" toColID="tblCol_d9d651aafe8e4439ae47c0ea7925562f" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

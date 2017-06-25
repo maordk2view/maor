@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>funGetPGAddress</Name>
+  <ID>PG.funGetPGAddress</ID>
+  <Category>PG</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String sql = "SELECT address_id, customer_id, house_no, colony_id, override_colony, street_name, state_code, street_type, country, sfa_id, zip_code FROM yp_cust.yp_address where customer_id = ?";
+Object[] valuesArr = {i_cust_id};
+ResultSetWrapper rs = DBQuery("PG_SOURCE", sql, valuesArr);
+
+for(Object[] row : rs) {
+	yield (row);
+}
+
+</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>true</IsRootFunction>
+  <InputParams>
+    <Input name="i_cust_id" id="fi.PG.funGetPGAddress.0" index="0" dataType="Integer">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="address_id" id="fo.PG.funGetPGAddress.0" index="0" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="customer_id" id="fo.PG.funGetPGAddress.1" index="1" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="house_no" id="fo.PG.funGetPGAddress.2" index="2" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="colony_id" id="fo.PG.funGetPGAddress.3" index="3" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="override_colony" id="fo.PG.funGetPGAddress.4" index="4" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="street_name" id="fo.PG.funGetPGAddress.5" index="5" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="state_code" id="fo.PG.funGetPGAddress.6" index="6" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="street_type" id="fo.PG.funGetPGAddress.7" index="7" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="country" id="fo.PG.funGetPGAddress.8" index="8" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="sfa_id" id="fo.PG.funGetPGAddress.9" index="9" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="zip_code" id="fo.PG.funGetPGAddress.10" index="10" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_BAN_DIRECT_DEBIT</PopulationObjectName>
+  <TableName>BAN_DIRECT_DEBIT</TableName>
+  <ID>query_BAN_DIRECT_DEBIT</ID>
+  <RootItemID>query_24</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="BAN" id="query_24.0" dataType="Integer" index="0" />
+    <Arg name="SYS_CREATION_DATE" id="query_24.1" dataType="Text" index="1" />
+    <Arg name="SYS_UPDATE_DATE" id="query_24.2" dataType="Text" index="2" />
+    <Arg name="OPERATOR_ID" id="query_24.3" dataType="Integer" index="3" />
+    <Arg name="APPLICATION_ID" id="query_24.4" dataType="Text" index="4" />
+    <Arg name="DL_SERVICE_CODE" id="query_24.5" dataType="Text" index="5" />
+    <Arg name="DL_UPDATE_STAMP" id="query_24.6" dataType="Integer" index="6" />
+    <Arg name="CREDIT_CARD_TYPE" id="query_24.7" dataType="Text" index="7" />
+    <Arg name="CREDIT_CARD_NO" id="query_24.8" dataType="Text" index="8" />
+    <Arg name="CARD_MEM_HOLD_NM" id="query_24.9" dataType="Text" index="9" />
+    <Arg name="EXPIRATION_DATE" id="query_24.10" dataType="Text" index="10" />
+    <Arg name="DD_TYPE" id="query_24.11" dataType="Text" index="11" />
+    <Arg name="DD_STATUS" id="query_24.12" dataType="Text" index="12" />
+    <Arg name="STATUS_ISSUE_DATE" id="query_24.13" dataType="Text" index="13" />
+    <Arg name="STATUS_REASON" id="query_24.14" dataType="Text" index="14" />
+    <Arg name="START_DATE" id="query_24.15" dataType="Text" index="15" />
+    <Arg name="END_DATE" id="query_24.16" dataType="Text" index="16" />
+    <Arg name="BNK_CODE" id="query_24.17" dataType="Text" index="17" />
+    <Arg name="BNK_ACCT_NUMBER" id="query_24.18" dataType="Text" index="18" />
+    <Arg name="CARD_VERIFY_NUM" id="query_24.19" dataType="Integer" index="19" />
+    <Arg name="CVV_CODE" id="query_24.20" dataType="Text" index="20" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_24" name="query_BAN_DIRECT_DEBIT" nodeOrder="0" module="DBQuery" connName="ORA_140">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_24.0" name="BAN" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_24.1" name="SYS_CREATION_DATE" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_24.2" name="SYS_UPDATE_DATE" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_24.3" name="OPERATOR_ID" dataType="Integer" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_24.4" name="APPLICATION_ID" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_24.5" name="DL_SERVICE_CODE" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_24.6" name="DL_UPDATE_STAMP" dataType="Integer" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_24.7" name="CREDIT_CARD_TYPE" dataType="Text" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_24.8" name="CREDIT_CARD_NO" dataType="Text" index="8" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_24.9" name="CARD_MEM_HOLD_NM" dataType="Text" index="9" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_24.10" name="EXPIRATION_DATE" dataType="Text" index="10" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_24.11" name="DD_TYPE" dataType="Text" index="11" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_24.12" name="DD_STATUS" dataType="Text" index="12" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_24.13" name="STATUS_ISSUE_DATE" dataType="Text" index="13" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_24.14" name="STATUS_REASON" dataType="Text" index="14" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_24.15" name="START_DATE" dataType="Text" index="15" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_24.16" name="END_DATE" dataType="Text" index="16" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_24.17" name="BNK_CODE" dataType="Text" index="17" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_24.18" name="BNK_ACCT_NUMBER" dataType="Text" index="18" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_24.19" name="CARD_VERIFY_NUM" dataType="Integer" index="19" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_24.20" name="CVV_CODE" dataType="Text" index="20" />
+      </OutputsList>
+      <SQL><![CDATA[select * from BAN_DIRECT_DEBIT]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="46" fromNodeOrder="0" fromItemID="query_24" fromColID="query_24.0" toItemID="tbl_BAN_DIRECT_DEBIT" toColID="tblCol_4ac3409c9c8a4fca87564475f83bc3b0" />
+    <Link partId="47" fromNodeOrder="0" fromItemID="query_24" fromColID="query_24.1" toItemID="tbl_BAN_DIRECT_DEBIT" toColID="tblCol_4aa4b8b85e7d4a38aa0a128aeda1b217" />
+    <Link partId="48" fromNodeOrder="0" fromItemID="query_24" fromColID="query_24.2" toItemID="tbl_BAN_DIRECT_DEBIT" toColID="tblCol_87c2ba15f2c546b5a90875a3f723d269" />
+    <Link partId="49" fromNodeOrder="0" fromItemID="query_24" fromColID="query_24.3" toItemID="tbl_BAN_DIRECT_DEBIT" toColID="tblCol_9ffb41e7b5da4bc59149bc8580c2a40d" />
+    <Link partId="50" fromNodeOrder="0" fromItemID="query_24" fromColID="query_24.4" toItemID="tbl_BAN_DIRECT_DEBIT" toColID="tblCol_22aed896561249a794ed2a2a9657c6e1" />
+    <Link partId="51" fromNodeOrder="0" fromItemID="query_24" fromColID="query_24.5" toItemID="tbl_BAN_DIRECT_DEBIT" toColID="tblCol_c1fe89b570ef4666ae4717396eaaf4d1" />
+    <Link partId="52" fromNodeOrder="0" fromItemID="query_24" fromColID="query_24.6" toItemID="tbl_BAN_DIRECT_DEBIT" toColID="tblCol_8e8dafcea4f643bdb3e4d1db154e7db7" />
+    <Link partId="53" fromNodeOrder="0" fromItemID="query_24" fromColID="query_24.7" toItemID="tbl_BAN_DIRECT_DEBIT" toColID="tblCol_80cfef95e6f64a57b145b56263c3616d" />
+    <Link partId="54" fromNodeOrder="0" fromItemID="query_24" fromColID="query_24.8" toItemID="tbl_BAN_DIRECT_DEBIT" toColID="tblCol_c94af773e2c04b0fb8d6cf1d0fe4d86d" />
+    <Link partId="55" fromNodeOrder="0" fromItemID="query_24" fromColID="query_24.9" toItemID="tbl_BAN_DIRECT_DEBIT" toColID="tblCol_092a8de6c582472f8f84db5e0d2521d6" />
+    <Link partId="56" fromNodeOrder="0" fromItemID="query_24" fromColID="query_24.10" toItemID="tbl_BAN_DIRECT_DEBIT" toColID="tblCol_ce13341500c645ab9d22ce23fbf5bffe" />
+    <Link partId="57" fromNodeOrder="0" fromItemID="query_24" fromColID="query_24.11" toItemID="tbl_BAN_DIRECT_DEBIT" toColID="tblCol_26276037cf5d4ecd9a99916d32d45e47" />
+    <Link partId="58" fromNodeOrder="0" fromItemID="query_24" fromColID="query_24.12" toItemID="tbl_BAN_DIRECT_DEBIT" toColID="tblCol_f7e072015ec1487ea0abd7a5c6db80a7" />
+    <Link partId="59" fromNodeOrder="0" fromItemID="query_24" fromColID="query_24.13" toItemID="tbl_BAN_DIRECT_DEBIT" toColID="tblCol_41b7aab14532409c9c95d5aa1a946948" />
+    <Link partId="60" fromNodeOrder="0" fromItemID="query_24" fromColID="query_24.14" toItemID="tbl_BAN_DIRECT_DEBIT" toColID="tblCol_1f289d2222d6421fb8ed0b1cebe59af8" />
+    <Link partId="61" fromNodeOrder="0" fromItemID="query_24" fromColID="query_24.15" toItemID="tbl_BAN_DIRECT_DEBIT" toColID="tblCol_bf62b3d362494583b53aae3762e973c5" />
+    <Link partId="62" fromNodeOrder="0" fromItemID="query_24" fromColID="query_24.16" toItemID="tbl_BAN_DIRECT_DEBIT" toColID="tblCol_af0cc4a5e7d24806a544ea86bd2fde23" />
+    <Link partId="63" fromNodeOrder="0" fromItemID="query_24" fromColID="query_24.17" toItemID="tbl_BAN_DIRECT_DEBIT" toColID="tblCol_0ed6677b788543f3aea769c10267b67d" />
+    <Link partId="64" fromNodeOrder="0" fromItemID="query_24" fromColID="query_24.18" toItemID="tbl_BAN_DIRECT_DEBIT" toColID="tblCol_4dd82522b359404a9d3ea20058e5fffa" />
+    <Link partId="65" fromNodeOrder="0" fromItemID="query_24" fromColID="query_24.19" toItemID="tbl_BAN_DIRECT_DEBIT" toColID="tblCol_c2e4001e0ceb4c17869c6088b3bfdbc8" />
+    <Link partId="66" fromNodeOrder="0" fromItemID="query_24" fromColID="query_24.20" toItemID="tbl_BAN_DIRECT_DEBIT" toColID="tblCol_295a30f6c51e467fbff5415087ca1099" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

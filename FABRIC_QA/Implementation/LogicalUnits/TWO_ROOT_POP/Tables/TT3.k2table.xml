@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>TT3</Name>
+  <ID>tbl_TT3</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="NAME" id="tblCol_20e49b5865224b4ebdd132051491f2c2" index="0" datatype="Text" />
+    <Column name="VAL" id="tblCol_502b1dc94fa240e385f4492b43b47749" index="1" datatype="Integer" />
+    <Column name="CODE" id="tblCol_e93b6804b4be415b982c79698e410d3c" index="2" datatype="Text" />
+    <Column name="INN" id="tblCol_e5f9a931788b4a4b9cef4ed5189ba32b" index="3" datatype="Integer" />
+    <Column name="ID" id="tblCol_946d46ad5ae34834acabc8f193908d8d" index="4" datatype="Text" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" columnsIdsList="tblCol_20e49b5865224b4ebdd132051491f2c2" />
+    <Index id="2" columnsIdsList="tblCol_e5f9a931788b4a4b9cef4ed5189ba32b" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

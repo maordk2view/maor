@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>credit_acct</Name>
+  <ID>tbl_credit_acct</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="cust_id" id="tblCol_7b47a004adbc4b0e8b3feffd1d5e4f9d" index="0" datatype="Integer" mandatory="true" />
+    <Column name="acct_nbr" id="tblCol_b56ee053d1a64636905c0e29fca55dc1" index="1" datatype="Text" />
+    <Column name="credit_limit" id="tblCol_61c660f83d874306bd07e42323145af6" index="2" datatype="Integer" />
+    <Column name="credit_rating" id="tblCol_feb72720e3874a24afaecb9ba7eb17e0" index="3" datatype="Integer" />
+    <Column name="account_active" id="tblCol_0decb6a0156c450abc8bcf3a0260bf66" index="4" datatype="Text" />
+    <Column name="acct_start_date" id="tblCol_394345342c294f60926ade9e8039217c" index="5" datatype="Text" />
+    <Column name="acct_end_date" id="tblCol_cdd5e3c62ef34a22ba91fe6ad9385a43" index="6" datatype="Text" />
+    <Column name="starting_balance" id="tblCol_12226409e19640968f298beb4bfd4d98" index="7" datatype="Real" />
+    <Column name="ending_balance" id="tblCol_836172736e1641b6a0795090d1fdb6b3" index="8" datatype="Real" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

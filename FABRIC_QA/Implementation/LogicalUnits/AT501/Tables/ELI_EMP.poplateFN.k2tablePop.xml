@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>poplateFN</ID>
+  <PopulationObjectName>poplateFN</PopulationObjectName>
+  <TableName>ELI_EMP</TableName>
+  <RootItemID>f_10</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="in" id="fi_10.0" dataType="String" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item id="f_10" name="fnPopulation" nodeOrder="0" module="Function" fileName="fnPopulation.k2function.xml">
+      <InputsList>
+        <Input id="fi_10.0" name="in" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_10.0" name="first" />
+        <Output id="fo_10.1" name="last" />
+        <Output id="fo_10.2" name="id" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="15" fromNodeOrder="0" fromItemID="f_10" fromColID="fo_10.0" toItemID="tbl_ELI_EMP" toColID="tblCol_ae832afa10904425adf07944a66a14db" />
+    <Link partId="16" fromNodeOrder="0" fromItemID="f_10" fromColID="fo_10.1" toItemID="tbl_ELI_EMP" toColID="tblCol_e227d27b78c749d4aaf53d7da1f5a013" />
+    <Link partId="17" fromNodeOrder="0" fromItemID="f_10" fromColID="fo_10.2" toItemID="tbl_ELI_EMP" toColID="tblCol_6364b4af1357475c9f8e821a41c75660" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

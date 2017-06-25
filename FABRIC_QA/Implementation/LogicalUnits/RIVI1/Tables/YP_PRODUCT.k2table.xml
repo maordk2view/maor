@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>YP_PRODUCT</Name>
+  <ID>tbl_YP_PRODUCT</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="CUSTOMER_ID" id="tblCol_2bf57e03508d4dd580aecbe14884f05e" index="0" datatype="Integer" mandatory="true" />
+    <Column name="PRODUCT_CODE" id="tblCol_42d5cab341b04131a294253be9e077b5" index="1" datatype="Text" mandatory="true" />
+    <Column name="PRODUCT_ISSUE_NUM" id="tblCol_871d9e02fac7462c91820def3e8fec59" index="2" datatype="Integer" mandatory="true" />
+    <Column name="PRODUCT_STATUS" id="tblCol_de14f515f5704023aafe06a2348aadea" index="3" datatype="Integer" mandatory="true" />
+    <Column name="RETIREMENT_STATUS" id="tblCol_d7e0301fda3a4192937e23eade5405fa" index="4" datatype="Text" mandatory="true" />
+    <Column name="ACTIVITY_TYPE" id="tblCol_0d2fe4e30af74417978eb96d3104fabe" index="5" datatype="Integer" mandatory="true" />
+    <Column name="ADDITIONAL_ACTIVITY" id="tblCol_54faada9924f4c9882f1721ee0ba007b" index="6" datatype="Integer" mandatory="true" />
+    <Column name="ACTIVITY_DATE" id="tblCol_927ee5c81e954de6a61db2cc9794d753" index="7" datatype="Text" />
+    <Column name="ACTIVITY_UPDATE_DATE" id="tblCol_ef3a1d7fb63a4b34b40003cc7a42320e" index="8" datatype="Text" />
+    <Column name="ADVANCE_SALE_IND" id="tblCol_c2830d1bf1084924a0dce721b0e12c02" index="9" datatype="Text" mandatory="true" />
+    <Column name="PROSPECT_CODE" id="tblCol_fad3c2371ac5403c8c1b9aae2970ab23" index="10" datatype="Integer" mandatory="true" />
+    <Column name="PROD_CURR_PROS_CODE" id="tblCol_03e2a6150f934d1195ed739277cbf61d" index="11" datatype="Integer" mandatory="true" />
+    <Column name="PROSPECT_AGE" id="tblCol_c1c9fbc1887f413cbb7a342f5b6e42e9" index="12" datatype="Integer" />
+    <Column name="DOMINANT_HEADING" id="tblCol_777b32d835af4c08b0536f88cb2541f4" index="13" datatype="Integer" mandatory="true" />
+    <Column name="DOMINANT_HEADING_AMT" id="tblCol_101ef4ae0659478fa1dbe9fb7beb768c" index="14" datatype="Real" />
+    <Column name="LAST_CONT_PRINT_DATE" id="tblCol_b55160fa1280459da23730205ef31465" index="15" datatype="Text" />
+    <Column name="COMPLAINT_IND" id="tblCol_5662e4ac72e34cf4a0e5a4bb16fb50f1" index="16" datatype="Text" mandatory="true" />
+    <Column name="COMPLAINT_DATE" id="tblCol_ad1cb534f18e418191af21b06d32674e" index="17" datatype="Text" />
+    <Column name="DIVISION_ARRIVE_DATE" id="tblCol_ed9a8bebce784d08b95f2a598f2e0f06" index="18" datatype="Text" />
+    <Column name="COMMERCIAL_NAME" id="tblCol_e03676857b4f4a2f896db07f307f5da5" index="19" datatype="Text" />
+    <Column name="SRCH_COMMERCIAL_NAME" id="tblCol_dc2a88416b2442419d2e141fc9546af1" index="20" datatype="Text" />
+    <Column name="DISPLAY_AD_EXIST_IND" id="tblCol_600c62c2771049e781ee62c329788e74" index="21" datatype="Text" mandatory="true" />
+    <Column name="LOCAL_FOREIGN_IND" id="tblCol_f05f6168980342a59d74a8c1f6022f8e" index="22" datatype="Text" mandatory="true" />
+    <Column name="CANVASS_CODE" id="tblCol_6f372c3b0ace4ab7af37dd1a75160dee" index="23" datatype="Text" />
+    <Column name="CANVASS_ISSUE_NUM" id="tblCol_11f2e661f59b4e46ab3e6710e3035c5c" index="24" datatype="Integer" />
+    <Column name="FIRST_ASSIGN_ID" id="tblCol_17f9d9e64ea643f38690a53f84218fe4" index="25" datatype="Integer" />
+    <Column name="FIRST_ASSIGN_DATE" id="tblCol_3e60cb0a31b94001bf4259b050f2cfde" index="26" datatype="Text" />
+    <Column name="CURRENT_ASSIGN_ID" id="tblCol_6c97791fe6254d3c95fd395184215722" index="27" datatype="Integer" />
+    <Column name="CURRENT_ASSIGN_DATE" id="tblCol_2d59e57a796a4cf9822eda390ab0b5fa" index="28" datatype="Text" />
+    <Column name="CONTRACT_LOAD_PHASE" id="tblCol_09fd847fb0314048be879aaa7d58ba0c" index="29" datatype="Integer" mandatory="true" />
+    <Column name="CONTINUITY_AGE" id="tblCol_f7a9639b8bfe47aa871f3b6c059669fd" index="30" datatype="Integer" />
+    <Column name="CHANNEL_AGE" id="tblCol_2059a79e0a274cd49db977b4dc9ec731" index="31" datatype="Integer" />
+    <Column name="ASSIST_ASSIGN_ID" id="tblCol_3a3e3e69c4674c65bbe0a283a9f4947e" index="32" datatype="Integer" />
+    <Column name="ASSIST_PERCENTAGE" id="tblCol_799b63a594b441048d7d674fdc8f6555" index="33" datatype="Real" />
+    <Column name="LENDING_ASSIGN_ID" id="tblCol_945d32170919451fb4fedd19a34e1db4" index="34" datatype="Integer" />
+    <Column name="SELL_CANVASS_CODE" id="tblCol_bc76f8c479fb478a92badd1de535bd3d" index="35" datatype="Text" />
+    <Column name="SELL_CANV_ISS_NUM" id="tblCol_3430f5caf11441fb836755d110326277" index="36" datatype="Integer" />
+    <Column name="SELL_ASSIGN_ID" id="tblCol_801d4fd6df4849f794ff4c773d9d48e6" index="37" datatype="Integer" />
+    <Column name="CMSN_CANVASS_CODE" id="tblCol_cd11a088070542f9a847a5d810a884a9" index="38" datatype="Text" />
+    <Column name="CMSN_CANV_ISS_NUM" id="tblCol_da21811881174a52bfaebad882eecf76" index="39" datatype="Integer" />
+    <Column name="CMSN_ASSIGN_ID" id="tblCol_8621ceb9d44a40ccb5f9c318d5444e7c" index="40" datatype="Integer" />
+    <Column name="QUERY_STATUS" id="tblCol_c328e66e16774b6c82faca0b424cd84c" index="41" datatype="Integer" mandatory="true" />
+    <Column name="COMPLAINT_ASGN_ID" id="tblCol_996fd15aa9754dd2b89a61cab9ff4866" index="42" datatype="Integer" />
+    <Column name="NIR_PRODUCT_IND" id="tblCol_85ace7f0d0334c8cb689d2344c02411c" index="43" datatype="Text" mandatory="true" />
+    <Column name="START_PUBLISH_DATE" id="tblCol_8f7bb1a0e481451db3a387cc851316d6" index="44" datatype="Text" />
+    <Column name="DURATION" id="tblCol_c8fbad90f7a44a92a370b9512261fd4b" index="45" datatype="Integer" />
+    <Column name="ACTUAL_END_PUB_DATE" id="tblCol_4095b0ad56134553b478e07dc9929f58" index="46" datatype="Text" />
+    <Column name="RENEWAL_CONTRACT_IND" id="tblCol_e1e86909bbdf4c3a93513412789d83eb" index="47" datatype="Text" mandatory="true" />
+    <Column name="PRODUCT_NAME" id="tblCol_07cdb146c04b4a54be837312e8685f81" index="48" datatype="Text" />
+    <Column name="NUM_OF_BOTS_ITEMS" id="tblCol_c6b2a41b223b4863b4d579453c241b1b" index="49" datatype="Integer" />
+    <Column name="NUM_OF_NISD_ITEMS" id="tblCol_6aa891096d294655bf4818fa6af395b6" index="50" datatype="Integer" />
+    <Column name="NUM_QUERIED_ITEMS" id="tblCol_15a937d5f9204f21b70b24144f4acc9d" index="51" datatype="Integer" />
+    <Column name="LAST_YEAR_NISD_AMT" id="tblCol_5bcfa1e94ac942ed84e434b57881f09d" index="52" datatype="Real" />
+    <Column name="ORIG_ASGN_BOTS_AMT" id="tblCol_651b45ffc7c64053ad72262440d5feaa" index="53" datatype="Real" />
+    <Column name="OVER_RATE_BOTS_AMT" id="tblCol_2a027f1618094bf6b2e2426d920a33d9" index="54" datatype="Real" />
+    <Column name="BOTS_AMOUNT" id="tblCol_16be699e19ad4de0a050708346ec3e2d" index="55" datatype="Real" />
+    <Column name="NISD_AMOUNT" id="tblCol_ff7057d3850e4cb492003f0eac35c32f" index="56" datatype="Real" />
+    <Column name="RESULTS_NISD_AMT" id="tblCol_c44c1abd774a453b85d3df92e5d2ef2e" index="57" datatype="Real" />
+    <Column name="TAX_ID_LETTER" id="tblCol_a3003d2c8b8649b69746a7e955338877" index="58" datatype="Text" />
+    <Column name="TAX_ID_DATE" id="tblCol_43dde481d33d45b1815d6a83633a3f89" index="59" datatype="Text" />
+    <Column name="TAX_ID_CODE" id="tblCol_0a038a23a81d490c93a7f528ac9daedb" index="60" datatype="Text" />
+    <Column name="E_MAIL_ADDRESS" id="tblCol_8ac393d7e5754d4b9889c0a551523ea0" index="61" datatype="Text" />
+    <Column name="ASSIST_CANVASS_CODE" id="tblCol_d933f28afb2d40ad830a6bd2eafcbb4a" index="62" datatype="Text" />
+    <Column name="ASSIST_CANV_ISS_NUM" id="tblCol_6c11106b13894eeb962822e057922853" index="63" datatype="Integer" />
+    <Column name="CURP_ID" id="tblCol_105417857b7246d1951a9d66705f7cb4" index="64" datatype="Text" />
+    <Column name="HIGH_WGHT_COLOR_CODE" id="tblCol_a4989028ee6a45688910a468cac0da89" index="65" datatype="Text" />
+    <Column name="PREV_HIGH_WGHT_COLOR" id="tblCol_bb41efce15534a74992e5b3c84f4a664" index="66" datatype="Text" />
+    <Column name="CTCR_BATCH_PROG_ID" id="tblCol_54416cb25f584dee87af8ae03edbd264" index="67" datatype="Text" />
+    <Column name="CTCR_BATCH_PROG_DT" id="tblCol_1df7fac2507143d0a82e28f46f22f14c" index="68" datatype="Text" />
+    <Column name="CTCR_ONLINE_USER_ID" id="tblCol_f56367de535c4ef280286d97985364e4" index="69" datatype="Integer" />
+    <Column name="CTCR_ONLINE_PROG_ID" id="tblCol_8de3201b77d84a3e8c9be85894949e34" index="70" datatype="Text" />
+    <Column name="CTCR_ONLINE_PROG_DT" id="tblCol_453c72848d6545b2a54c6fcd3c1a4c83" index="71" datatype="Text" />
+    <Column name="CTCR_SYS_CRE_DT" id="tblCol_87f59609bcbc46dabbde39675dc950cd" index="72" datatype="Text" />
+    <Column name="CTCR_SYS_UPD_DT" id="tblCol_2cb179eb5259439dbc798798b524bc0d" index="73" datatype="Text" />
+    <Column name="CTCR_DBI_PROG_ID" id="tblCol_3c5aff449335479d98efc55901575fb4" index="74" datatype="Text" />
+    <Column name="CTCR_DBI_PROG_DT" id="tblCol_f605572847c249e299ccec9314d2dd4e" index="75" datatype="Text" />
+    <Column name="CTCR_CNV_DT" id="tblCol_07fe1756fcd24ef2a05502b9709b5814" index="76" datatype="Text" />
+    <Column name="CTCR_EVENT_ID" id="tblCol_debf36414f6548bc8d2f9f92ffd522bd" index="77" datatype="Integer" />
+    <Column name="SUBSC_UP_TO_DATE_AMT" id="tblCol_5262bb3b65cd4cad8979033eccdc003d" index="78" datatype="Real" />
+    <Column name="NIR_CANCEL_DATE" id="tblCol_bad2bb30957d455abf72e33c3a8254f8" index="79" datatype="Text" />
+    <Column name="PRD_FORCED_REP_ID" id="tblCol_eee4e8732d7c4aef93bd35acf3571af6" index="80" datatype="Integer" />
+    <Column name="PRD_FORCED_CHANNEL_CODE" id="tblCol_2a1f463784b24ee58c317dc90276e553" index="81" datatype="Text" />
+    <Column name="PRD_FORCE_TYPE" id="tblCol_af547db0f8c24896a7d9ea301e201039" index="82" datatype="Integer" mandatory="true" />
+    <Column name="SIG_NAME" id="tblCol_65846c4fa35b4151978259617dcb1749" index="83" datatype="Text" />
+    <Column name="SIG_DATE_PREV" id="tblCol_e0cd9b050b174bcdb0175a479f0e0f50" index="84" datatype="Text" />
+    <Column name="PREP_STATUS" id="tblCol_1952ebfe280e46c0887a0cd15182efb1" index="85" datatype="Text" mandatory="true" />
+    <Column name="DISCOUNT_AMT" id="tblCol_52682334f399403b9a67e6e3ed0fc36b" index="86" datatype="Real" />
+    <Column name="DISCOUNT_BOTS_AMT" id="tblCol_da2395c9de6b4449b71c356b5316be53" index="87" datatype="Real" />
+    <Column name="ORIG_RETIREMENT_STATUS" id="tblCol_e325bab4dfd440e3aa8f781ed3859bb4" index="88" datatype="Text" />
+    <Column name="UDAC_CMSN_POINTS" id="tblCol_f559a78617e944b3b02ed811e4e9512e" index="89" datatype="Real" />
+    <Column name="PREV_UDAC_CMSN_POINTS" id="tblCol_3974637886584419b9309d1e3ff24eba" index="90" datatype="Real" />
+    <Column name="NIR_PROD_RELATED" id="tblCol_fe4efaabed29494197cf7c58913e6ca6" index="91" datatype="Text" />
+    <Column name="MIX_PRODUCT_IND" id="tblCol_79f220f185fa4d73a5d516d3e520bf50" index="92" datatype="Text" />
+    <Column name="PP_SELECTED_DATE" id="tblCol_c77d7e9491064f6497df37eb6133d1ee" index="93" datatype="Text" />
+    <Column name="MEDIA_AGENT_IND" id="tblCol_e0d6964714154d3498286e29dadd298c" index="94" datatype="Text" mandatory="true" />
+    <Column name="MEDIA_AGENT_CODE" id="tblCol_b0da31161c814cfb8efee5779347dc7b" index="95" datatype="Text" />
+    <Column name="PYME_IND" id="tblCol_35417c5434644da2b76c25db7cff05c4" index="96" datatype="Text" />
+    <Column name="CONVERSION_IND" id="tblCol_70b1e31e190142beb3f27021f163bb82" index="97" datatype="Text" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_2bf57e03508d4dd580aecbe14884f05e,tblCol_42d5cab341b04131a294253be9e077b5,tblCol_871d9e02fac7462c91820def3e8fec59" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

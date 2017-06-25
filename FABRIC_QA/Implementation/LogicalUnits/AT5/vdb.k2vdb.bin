@@ -1,0 +1,18 @@
+﻿<Graph version="2.0.0.5" name="vdb.k2vdb.bin" lastPartID="2186">
+  <Node id="0" partID="351" name="ELI_COMP" isRootView="true" pos="74 43" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"ELI_COMP","TablePopulationPropertiesList":[{"ID":"query_ELI_COMP","Name":"query_ELI_COMP","Order":1}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="388" name="ELI_EMP" isRootView="false" pos="491 41" size="257 154" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"ELI_EMP","TablePopulationPropertiesList":[{"ID":"poplateFN","Name":"poplateFN","Order":3},{"ID":"query_ELI_EMP","Name":"query_ELI_EMP","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="2" partID="1157" name="eli_ref" isRootView="false" pos="884 44" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"eli_ref","TablePopulationPropertiesList":[{"ID":"eli_ref_pop","Name":"eli_ref_pop","Order":6}]}</TableProperties>
+  </Node>
+  <Node id="3" partID="1665" name="ELI_EMP_UPSERT" isRootView="false" pos="382 329" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"ELI_EMP_UPSERT","TablePopulationPropertiesList":[{"ID":"eli_emp_query","Name":"eli_emp_query","Order":2}]}</TableProperties>
+  </Node>
+  <Link from="4" to="5" partID="488" linkType="Database" pointsArr="331 89.54557 341 89.54557 481 104.54557 491 104.54557" fromNodePartID="351" fromNodeColumnName="ID" toNodePartID="388" toNodeColumnName="in" toNodePopulationObjectName="poplateFN" />
+  <Link from="4" to="6" partID="946" linkType="Database" pointsArr="331 89.54557 341 89.54557 486 85.5 496 85.5" fromNodePartID="351" fromNodeColumnName="ID" toNodePartID="388" toNodeColumnName="COMP_ID" toNodePopulationObjectName="query_ELI_EMP" />
+  <Link from="7" to="8" partID="1178" linkType="Database" pointsArr="748 152.819 758 152.819 874 90.54557 884 90.54557" fromNodePartID="388" fromNodeColumnName="COMP_ID" toNodePartID="1157" toNodeColumnName="comp_id" toNodePopulationObjectName="eli_ref_pop" />
+  <Link from="4" to="9" partID="1676" linkType="Database" pointsArr="331 89.54557 341 89.54557 372 407.727875 382 407.727875" fromNodePartID="351" fromNodeColumnName="ID" toNodePartID="1665" toNodeColumnName="COMP_ID" toNodePopulationObjectName="eli_emp_query" />
+</Graph>

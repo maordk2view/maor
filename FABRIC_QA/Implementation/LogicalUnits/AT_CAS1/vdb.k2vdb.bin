@@ -1,0 +1,5 @@
+﻿<Graph version="4.0.0.1" name="vdb.k2vdb.bin" lastPartID="18">
+  <Node id="0" partID="0" name="test_db_users" isRootView="true" pos="11 13" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"test_db_users","TablePopulationPropertiesList":[{"ID":"query_test_db_users","Name":"query_test_db_users","Order":1,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+</Graph>

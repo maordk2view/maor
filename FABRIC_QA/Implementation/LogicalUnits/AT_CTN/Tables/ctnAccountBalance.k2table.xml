@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ctnAccountBalance</Name>
+  <ID>tbl_ctnAccountBalance</ID>
+  <LazyDataUpdate enabled="true" performEvery="00:00:10" />
+  <Columns>
+    <Column name="ACCOUNT_NUMBER" id="tblCol_05bc7344f6ae4a4db316f0d493f091a9" index="0" datatype="text" />
+    <Column name="ACCOUNT_BALANCE" id="tblCol_592a23d7b3344f03afbe6f6052148b29" index="1" datatype="real" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

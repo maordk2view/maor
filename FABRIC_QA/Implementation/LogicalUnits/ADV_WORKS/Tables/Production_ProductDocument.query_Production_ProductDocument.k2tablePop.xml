@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_Production_ProductDocument</ID>
+  <PopulationObjectName>query_Production_ProductDocument</PopulationObjectName>
+  <TableName>Production_ProductDocument</TableName>
+  <RootItemID>query_query_Production_ProductDocument</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="ProductID" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="DocumentNode" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="ModifiedDate" id="queryCol_2" dataType="Text" index="2" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_Production_ProductDocument" name="query_Production_ProductDocument" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="SqlServer_AdvWorks">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="ProductID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="DocumentNode" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="ModifiedDate" dataType="Text" index="2" />
+      </OutputsList>
+      <SQL><![CDATA[select * from Production.ProductDocument]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="10" fromNodeOrder="0" fromItemID="query_query_Production_ProductDocument" fromColID="queryCol_0" toItemID="tbl_Production_ProductDocument" toColID="tblCol_4a7cac58a4b741158985d1d0aa003a3c" />
+    <Link partId="11" fromNodeOrder="0" fromItemID="query_query_Production_ProductDocument" fromColID="queryCol_1" toItemID="tbl_Production_ProductDocument" toColID="tblCol_d38ea7700212490daa56ecba1267d268" />
+    <Link partId="12" fromNodeOrder="0" fromItemID="query_query_Production_ProductDocument" fromColID="queryCol_2" toItemID="tbl_Production_ProductDocument" toColID="tblCol_761e4773108c4c95884c45541dfafad8" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

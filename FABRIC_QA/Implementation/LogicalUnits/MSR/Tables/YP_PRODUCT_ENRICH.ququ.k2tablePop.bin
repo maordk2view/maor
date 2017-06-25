@@ -1,0 +1,9 @@
+﻿<Graph name="YP_PRODUCT_ENRICH.ququ.k2tablePop.bin" lastPartID="145">
+  <TableNode partID="0" name="YP_PRODUCT_ENRICH" pos="569 194" width="309.3241" />
+  <DBQueryNode partID="134" name="ORA_140" pos="241 197" size="256.237152 156.583313" isRoot="true">
+    <DBQuery>{"Name":"query_SOURCE03_YP_SPACE","ID":"query_query_SOURCE03_YP_SPACE","ConnName":"ORA_140","SQL":"select * from SOURCE03.YP_SPACE","ColumnsList":[{"ID":"queryCol_0","Name":"CUSTOMER ID","DataType":"Integer","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"S 1","DataType":"Text","Index":1,"IsInputArgument":false},{"ID":"queryCol_2","Name":"S2","DataType":"Text","Index":2,"IsInputArgument":false},{"ID":"queryCol_3","Name":"S 2","DataType":"Text","Index":3,"IsInputArgument":false},{"ID":"queryCol_4","Name":"S-3","DataType":"Text","Index":4,"IsInputArgument":false},{"ID":"queryCol_5","Name":"S#3","DataType":"Text","Index":5,"IsInputArgument":false},{"ID":"queryCol_6","Name":"S*4","DataType":"Text","Index":6,"IsInputArgument":false},{"ID":"queryCol_7","Name":"Aaaa","DataType":"Text","Index":7,"IsInputArgument":false}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="143" from="0" to="1" pointsArr="497.237152 233.036469 507.237152 233.036469 559 225.036453 569 225.036453" fromNodePartID="134" fromNodeColumnName="CUSTOMER ID" toNodePartID="0" toNodeColumnName="CUSTOMER_ID" />
+  <Link partID="144" from="2" to="3" pointsArr="497.237152 245.109375 507.237152 245.109375 559 237.109375 569 237.109375" fromNodePartID="134" fromNodeColumnName="S 1" toNodePartID="0" toNodeColumnName="PRODUCT_CODE" />
+  <Link partID="145" from="4" to="5" pointsArr="497.237152 257.182281 507.237152 257.182281 559 249.182281 569 249.182281" fromNodePartID="134" fromNodeColumnName="S2" toNodePartID="0" toNodeColumnName="PRODUCT_STATUS" />
+</Graph>

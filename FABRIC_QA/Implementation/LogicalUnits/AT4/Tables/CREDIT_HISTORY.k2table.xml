@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>CREDIT_HISTORY</Name>
+  <ID>tbl_CREDIT_HISTORY</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="BAN" id="tblCol_009e959c40e74308a645a4d2be0595fd" index="0" datatype="Integer" mandatory="true" />
+    <Column name="CRD_SEQ_NO" id="tblCol_080b815c99e54c569aa5104886887813" index="1" datatype="Integer" mandatory="true" />
+    <Column name="SYS_CREATION_DATE" id="tblCol_e37eb4b01f4b4f5799fd8528ac848fa2" index="2" datatype="Text" mandatory="true" />
+    <Column name="SYS_UPDATE_DATE" id="tblCol_fab5f2d1a15a42b7aa8a61294e8aabfb" index="3" datatype="Text" />
+    <Column name="OPERATOR_ID" id="tblCol_f2221e1167f243b09ebc87fc63fcb1a4" index="4" datatype="Integer" />
+    <Column name="APPLICATION_ID" id="tblCol_31890605e5114d95a98eb358df8c502b" index="5" datatype="Text" />
+    <Column name="DL_SERVICE_CODE" id="tblCol_0038a2a4a98349869df483fb7115d129" index="6" datatype="Text" mandatory="true" />
+    <Column name="DL_UPDATE_STAMP" id="tblCol_00749bc9be1f4b00b1178e360035dc39" index="7" datatype="Integer" />
+    <Column name="CREDIT_DATE" id="tblCol_990c44d17da44dedb2444c61fa9cf4fc" index="8" datatype="Text" mandatory="true" />
+    <Column name="CREDIT_SOURCE" id="tblCol_dedd9c445842449995000565b562f684" index="9" datatype="Text" />
+    <Column name="CREDIT_STATUS" id="tblCol_43ed35f4af9b4bdbbf322cdf2bb77702" index="10" datatype="Text" />
+    <Column name="CREDIT_CLASS" id="tblCol_02d07b3d4624490dad559943406def10" index="11" datatype="Text" />
+    <Column name="CAS_APPLICATION_TYPE" id="tblCol_812f526f2acc4627b8afd5c9991c675d" index="12" datatype="Text" />
+    <Column name="CAS_REQUESTED_CTN_QTY" id="tblCol_446c0a99be594bcf888fbae4f6a1fa11" index="13" datatype="Integer" />
+    <Column name="CAS_ORDER_NUMBER" id="tblCol_87da2910237c4a6ab6371a61b6431d33" index="14" datatype="Integer" />
+    <Column name="CAS_STATUS_REASON" id="tblCol_21f8c97890d34aceb8cbf1c3a7e1e34a" index="15" datatype="Text" />
+    <Column name="CAS_DEP_AMT_PER_CTN" id="tblCol_df2941b8b6ad48d98ae9647577e0c8e0" index="16" datatype="Real" />
+    <Column name="CAS_APPROVED_CTN_QTY" id="tblCol_bc13dbc9da7d49778c838d9b6f6ad46b" index="17" datatype="Integer" />
+    <Column name="CAS_BUREAU_CODE" id="tblCol_58f18869bb524ef28df76a5474066ff7" index="18" datatype="Text" />
+    <Column name="CAS_BUREAU_REF_CD" id="tblCol_6c1818b706ff4f879500fdc4d50d4e46" index="19" datatype="Text" />
+    <Column name="COL_STATUS_REASON" id="tblCol_8470d9ac0bcf4322be4e797d2fbe05f4" index="20" datatype="Text" />
+    <Column name="CAS_EXPIRE_DATE" id="tblCol_dd0e4089bcc44941847fc23783505b40" index="21" datatype="Text" />
+    <Column name="CREDIT_CLASS_CNG_TP" id="tblCol_7d8a0ef1d7734af08943c307f1f1fe82" index="22" datatype="Text" />
+    <Column name="CONV_RUN_NO" id="tblCol_ff1c4b3b465241e3b753ea0bc25cf31e" index="23" datatype="Integer" />
+    <Column name="CAS_TOTAL_APPROVE_CTN" id="tblCol_9441dc904a74426c967b80129c4f9339" index="24" datatype="Integer" />
+    <Column name="CAS_ORDER_USED_QTY" id="tblCol_8b98a4144c2844e89281aa06cbb7aade" index="25" datatype="Integer" />
+    <Column name="BAN_EFF_DATE" id="tblCol_70139ff4da7b46a98c3c90ec5ef3e682" index="26" datatype="Text" />
+    <Column name="MANUAL_EXP_DATE" id="tblCol_bf8702b6787841ee82e9d7f1c1db0156" index="27" datatype="Text" />
+    <Column name="BAN_AFFECT_IND" id="tblCol_c1441a1e09344fa68d5ae627725f0263" index="28" datatype="Text" />
+    <Column name="DEALER_CODE" id="tblCol_a76fb528810a4a42ad75bddde3d2e0a3" index="29" datatype="Text" />
+    <Column name="SCORABLE_ITEMS" id="tblCol_f5f1f3a2ab404498bc6514f5989e5a13" index="30" datatype="Integer" />
+    <Column name="SUGG_DEPOSIT" id="tblCol_4bc06fcd61344867b57db1998887f42f" index="31" datatype="Integer" />
+    <Column name="NEGATIVE_SCORE" id="tblCol_b0f84c3336224aa083ea7393cbe5d82f" index="32" datatype="Text" />
+    <Column name="POSITIVE_SCORE" id="tblCol_ca638d38ef9644f6b48c140dd2f82139" index="33" datatype="Text" />
+    <Column name="MODEL_SCORE_BUS" id="tblCol_8cc514385cf94842adbf83cf77d27ef5" index="34" datatype="Text" />
+    <Column name="AGENT_CODE" id="tblCol_8336133d6ac344a6bdff7f149ecd54d7" index="35" datatype="Text" />
+    <Column name="AGENT_LOCATION" id="tblCol_54898b0a04014b39a16176df4720a77e" index="36" datatype="Text" />
+    <Column name="CRD_RSLT_OWNER" id="tblCol_fd4abf66c2dd4461a6104cc9355eaba0" index="37" datatype="Text" />
+    <Column name="DEPOSIT_AMOUNT_T1" id="tblCol_7d5d87811faa4b958109a549477ff6ce" index="38" datatype="Real" />
+    <Column name="MAX_APPROVE_CTN_T1" id="tblCol_b2ed3b4d0c6e4b39b57c07468bc947e7" index="39" datatype="Integer" />
+    <Column name="USED_CTN_T1" id="tblCol_49f757a586c34743bc67ba7dfdcacc74" index="40" datatype="Integer" />
+    <Column name="DEPOSIT_AMOUNT_T2" id="tblCol_7ccc70c4ea8e408c9598b756a6a4a0af" index="41" datatype="Real" />
+    <Column name="MAX_APPROVE_CTN_T2" id="tblCol_63412300772f43bd90e8fd34e0ca6993" index="42" datatype="Integer" />
+    <Column name="USED_CTN_T2" id="tblCol_9a3bc77ba26a464683610f4bc82242ac" index="43" datatype="Integer" />
+    <Column name="DEPOSIT_AMOUNT_T3" id="tblCol_989a5ed0573b43e19a576842910c88ec" index="44" datatype="Real" />
+    <Column name="MAX_APPROVE_CTN_T3" id="tblCol_e7e4f99f135f45b583630b9c9b4bf9ab" index="45" datatype="Integer" />
+    <Column name="USED_CTN_T3" id="tblCol_0a0ef58ad3d0410c9a884813fa0fa89b" index="46" datatype="Integer" />
+    <Column name="SUGG_DEPOSIT_T1" id="tblCol_7a2d2fe496984a3c92334d1b79d0fd32" index="47" datatype="Integer" />
+    <Column name="SUGG_DEPOSIT_T2" id="tblCol_a4acb471c5f44fd99ba7ba434c78be8c" index="48" datatype="Integer" />
+    <Column name="SUGG_DEPOSIT_T3" id="tblCol_f56ba52999a044adac6fed92c3e5c5ed" index="49" datatype="Integer" />
+    <Column name="OOW_IND" id="tblCol_10812e9e233745a6b9945ed294d9c04e" index="50" datatype="Text" />
+    <Column name="STORE_ID" id="tblCol_7e15e8e3d96f4e87aa117c3f0d754540" index="51" datatype="Text" />
+    <Column name="SYSTEM_ID" id="tblCol_3b122a26574448099c83eba4fcaff384" index="52" datatype="Text" />
+    <Column name="SALE_CHANNEL" id="tblCol_428d3581aec049ffa2f78ec2793b5b70" index="53" datatype="Text" />
+    <Column name="DECISION_RISK_CLASS" id="tblCol_0748f7ac263248328d28f8b960e7f518" index="54" datatype="Text" />
+    <Column name="EXISTING_DEBT_IND" id="tblCol_d94e6128446f46ec815e8fd6f8d30953" index="55" datatype="Text" />
+    <Column name="AA_IND" id="tblCol_da28df6615aa455299cd24754e1a844c" index="56" datatype="Text" />
+    <Column name="EQUIFAX_KEY" id="tblCol_dd33f99359fb498684ce4cef8fc85313" index="57" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

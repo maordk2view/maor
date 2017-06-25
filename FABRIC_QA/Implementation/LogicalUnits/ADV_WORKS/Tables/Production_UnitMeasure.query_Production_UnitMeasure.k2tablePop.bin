@@ -1,0 +1,9 @@
+﻿<Graph name="Production_UnitMeasure.query_Production_UnitMeasure.k2tablePop.bin" lastPartID="12">
+  <TableNode partID="0" name="Production_UnitMeasure" pos="330.4532 5.854168" width="309.3241" />
+  <DBQueryNode partID="6" name="SqlServer_AdvWorks" pos="10 1.890625" size="275.4532 96.21875" isRoot="true">
+    <DBQuery>{"Name":"query_Production_UnitMeasure","ID":"query_query_Production_UnitMeasure","ConnName":"SqlServer_AdvWorks","SQL":"select * from Production.UnitMeasure","ColumnsList":[{"ID":"queryCol_0","Name":"UnitMeasureCode","DataType":"Text","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"Name","DataType":"Text","Index":1,"IsInputArgument":true},{"ID":"queryCol_2","Name":"ModifiedDate","DataType":"Text","Index":2,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="10" from="0" to="1" pointsArr="285.4532 37.9270859 295.4532 37.9270859 297.9532 25 317.9532 25 320.4532 36.890625 330.4532 36.890625" fromNodePartID="6" fromNodeColumnName="UnitMeasureCode" toNodePartID="0" toNodeColumnName="UnitMeasureCode" />
+  <Link partID="11" from="2" to="3" pointsArr="285.4532 50 295.4532 50 297.9532 50 317.9532 50 320.4532 48.9635429 330.4532 48.9635429" fromNodePartID="6" fromNodeColumnName="Name" toNodePartID="0" toNodeColumnName="Name" />
+  <Link partID="12" from="4" to="5" pointsArr="285.4532 62.0729141 295.4532 62.0729141 297.9532 75 317.9532 75 320.4532 61.0364571 330.4532 61.0364571" fromNodePartID="6" fromNodeColumnName="ModifiedDate" toNodePartID="0" toNodeColumnName="ModifiedDate" />
+</Graph>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>D_YP_ITEM</Name>
+  <ID>tbl_D_YP_ITEM</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="CUSTOMER_ID" id="tblCol_c199753455624596a94ecf0f443d3d89" index="0" datatype="Integer" mandatory="true" />
+    <Column name="PRODUCT_CODE" id="tblCol_dbc42adf67724887b876125dd6b7e766" index="1" datatype="Text" mandatory="true" />
+    <Column name="PRODUCT_ISSUE_NUM" id="tblCol_46aa55d309d44407840ba62b0f3c56b5" index="2" datatype="Integer" mandatory="true" />
+    <Column name="ITEM_ID" id="tblCol_b7bb994823014389af6e2b7498fdeea3" index="3" datatype="Integer" mandatory="true" />
+    <Column name="ITEM_VERSION" id="tblCol_e2f5d8a263394e4e919029d3020a4e11" index="4" datatype="Integer" mandatory="true" />
+    <Column name="LAST_VERSION_IND" id="tblCol_7c49d894400045ea8419e527dfc98054" index="5" datatype="Text" mandatory="true" />
+    <Column name="UDAC_CODE" id="tblCol_6a3f66342f5e4532930f722ff69f89cb" index="6" datatype="Text" mandatory="true" />
+    <Column name="RATE_UDAC_CODE" id="tblCol_5123c126604f427fa3b3503c7ee7ac8d" index="7" datatype="Text" mandatory="true" />
+    <Column name="DB2_UDAC" id="tblCol_c9637a6960c745c7b2f1fb18497b19b5" index="8" datatype="Text" />
+    <Column name="ORA_UDAC" id="tblCol_eb5c7e13a41f42748dc7591ed2a430c0" index="9" datatype="Text" />
+    <Column name="MS_UDAC" id="tblCol_c69c667a91f743909e280f4cce51a3c1" index="10" datatype="Text" />
+    <Column name="SQLS_UDAC" id="tblCol_91696478a17c491ebf3ff5d876072e2f" index="11" datatype="Text" />
+    <Column name="PG_UDAC" id="tblCol_cd4a2e3b9e6441198d59e6397a847a31" index="12" datatype="Text" />
+    <Column name="PRODUCT_STATUS" id="tblCol_1fb1a757c68b48cfbf0601d1c0e622d9" index="13" datatype="Integer" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

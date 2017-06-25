@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>dbQueryPrepare</Name>
+  <ID>JAVA.dbQueryPrepare</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>Connection con = getConnection("ludb");
+
+Connection conPG = getConnection("MYSQL_SOURCE");
+
+String selectString ="SELECT ADDRESS_ID, HOUSE_NO FROM YP_ADDRESS WHERE CUSTOMER_ID = ? AND STATE_CODE = ?";
+
+String updateString = "UPDATE YP_CUSTOMER SET SFA_ID = ? WHERE CUSTOMER_ID = ? ";
+
+Object[] valuesArrSel = {cust_id, "BC"};
+
+Object[] valuesArrUp = {"Rivi 30", cust_id};
+
+PreparedStatement selectAddr = con.prepareStatement(selectString);
+
+PreparedStatement upCust = conPG.prepareStatement(updateString);
+
+ResultSetWrapper rs = DBQueryPrepared(selectAddr, valuesArrSel);
+
+Boolean execute = DBExecutePrepared(upCust, valuesArrUp);
+
+String house_no = "";
+Integer address_sum = 0;
+String add_str = ""; 
+
+for (Object[] row : rs) {
+	address_sum = address_sum + ((Double)row[0]).intValue();
+    add_str = add_str + "+ " + row[0];	
+	house_no = house_no + "+ " + row[1];	
+}
+
+return new Object[] {house_no, address_sum, add_str, execute, 1.23, 1.234, 1} ;</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <InputParams>
+    <Input name="cust_id" id="fi.JAVA.dbQueryPrepare.0" index="0" dataType="Integer">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="house_no" id="fo.JAVA.dbQueryPrepare.0" index="0" dataType="Integer">
+      <Comment />
+    </Output>
+    <Output name="add_sum" id="fo.JAVA.dbQueryPrepare.1" index="1" dataType="Integer">
+      <Comment />
+    </Output>
+    <Output name="add_str" id="fo.JAVA.dbQueryPrepare.2" index="2" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="exe" id="fo.JAVA.dbQueryPrepare.3" index="3" dataType="Boolean">
+      <Comment />
+    </Output>
+    <Output name="fl_test" id="fo.JAVA.dbQueryPrepare.4" index="4" dataType="Float">
+      <Comment />
+    </Output>
+    <Output name="db_test" id="fo.JAVA.dbQueryPrepare.5" index="5" dataType="Double">
+      <Comment />
+    </Output>
+    <Output name="long_test" id="fo.JAVA.dbQueryPrepare.6" index="6" dataType="Long">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

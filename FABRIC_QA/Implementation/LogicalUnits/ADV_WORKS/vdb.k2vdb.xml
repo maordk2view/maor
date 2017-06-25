@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.7.1.0">
+  <Name>vdb</Name>
+  <RootView>Production_Product</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>Production_Product</Table>
+    <Table>Production_ProductCostHistory</Table>
+    <Table>Production_ProductDocument</Table>
+    <Table>Production_Document</Table>
+    <Table>Production_ProductInventory</Table>
+    <Table>Production_Location</Table>
+    <Table>Production_WorkOrderRouting</Table>
+    <Table>Production_WorkOrder</Table>
+    <Table>Production_ProductListPriceHistory</Table>
+    <Table>Production_BillOfMaterials</Table>
+    <Table>Production_ProductProductPhoto</Table>
+    <Table>Production_ProductPhoto</Table>
+    <Table>Production_TransactionHistory</Table>
+    <Table>Production_ProductReview</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="Production_Product">
+      <Populations>
+        <Population id="query_Production_Product" name="query_Production_Product" order="1" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="Production_ProductCostHistory">
+      <Populations>
+        <Population id="query_Production_ProductCostHistory" name="query_Production_ProductCostHistory" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="Production_ProductDocument">
+      <Populations>
+        <Population id="query_Production_ProductDocument" name="query_Production_ProductDocument" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="Production_Document">
+      <Populations>
+        <Population id="query_Production_Document" name="query_Production_Document" order="3" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="Production_ProductInventory">
+      <Populations>
+        <Population id="query_Production_ProductInventory" name="query_Production_ProductInventory" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="Production_Location">
+      <Populations>
+        <Population id="query_Production_Location" name="query_Production_Location" order="3" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="Production_WorkOrderRouting">
+      <Populations>
+        <Population id="query_Production_WorkOrderRouting" name="query_Production_WorkOrderRouting" order="4" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="Production_WorkOrder">
+      <Populations>
+        <Population id="query_Production_WorkOrder" name="query_Production_WorkOrder" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="Production_ProductListPriceHistory">
+      <Populations>
+        <Population id="query_Production_ProductListPriceHistory" name="query_Production_ProductListPriceHistory" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="Production_BillOfMaterials">
+      <Populations>
+        <Population id="query_Production_BillOfMaterials" name="query_Production_BillOfMaterials" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="Production_ProductProductPhoto">
+      <Populations>
+        <Population id="query_Production_ProductProductPhoto" name="query_Production_ProductProductPhoto" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="Production_ProductPhoto">
+      <Populations>
+        <Population id="query_Production_ProductPhoto" name="query_Production_ProductPhoto" order="3" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="Production_TransactionHistory">
+      <Populations>
+        <Population id="query_Production_TransactionHistory" name="query_Production_TransactionHistory" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="Production_ProductReview">
+      <Populations>
+        <Population id="query_Production_ProductReview" name="query_Production_ProductReview" order="2" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="false" name="FUN_REF_UDAC" />
+    <Item active="false" name="MS_REF_UDAC" />
+    <Item active="false" name="REF_SERVICE_AGREEMENT" />
+    <Item active="false" name="REF_YP_PRODUCT_TRN" />
+    <Item active="false" name="test_YP_REF_UDAC" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="392">
+      <From tableType="TableObject" table="Production_Product" column="ProductID" columnId="tblCol_a395af3c56a94f42945746a7069c4680" />
+      <To tableType="TableObject" table="Production_ProductCostHistory" populationObjectName="query_Production_ProductCostHistory" column="ProductID" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="393">
+      <From tableType="TableObject" table="Production_Product" column="ProductID" columnId="tblCol_a395af3c56a94f42945746a7069c4680" />
+      <To tableType="TableObject" table="Production_ProductDocument" populationObjectName="query_Production_ProductDocument" column="ProductID" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="394">
+      <From tableType="TableObject" table="Production_Product" column="ProductID" columnId="tblCol_a395af3c56a94f42945746a7069c4680" />
+      <To tableType="TableObject" table="Production_ProductInventory" populationObjectName="query_Production_ProductInventory" column="ProductID" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="395">
+      <From tableType="TableObject" table="Production_Product" column="ProductID" columnId="tblCol_a395af3c56a94f42945746a7069c4680" />
+      <To tableType="TableObject" table="Production_ProductListPriceHistory" populationObjectName="query_Production_ProductListPriceHistory" column="ProductID" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="396">
+      <From tableType="TableObject" table="Production_Product" column="ProductID" columnId="tblCol_a395af3c56a94f42945746a7069c4680" />
+      <To tableType="TableObject" table="Production_BillOfMaterials" populationObjectName="query_Production_BillOfMaterials" column="ProductAssemblyID" columnId="queryCol_1" />
+    </Relation>
+    <Relation id="397">
+      <From tableType="TableObject" table="Production_Product" column="ProductID" columnId="tblCol_a395af3c56a94f42945746a7069c4680" />
+      <To tableType="TableObject" table="Production_BillOfMaterials" populationObjectName="query_Production_BillOfMaterials" column="ComponentID" columnId="queryCol_2" />
+    </Relation>
+    <Relation id="398">
+      <From tableType="TableObject" table="Production_Product" column="ProductID" columnId="tblCol_a395af3c56a94f42945746a7069c4680" />
+      <To tableType="TableObject" table="Production_ProductProductPhoto" populationObjectName="query_Production_ProductProductPhoto" column="ProductID" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="399">
+      <From tableType="TableObject" table="Production_Product" column="ProductID" columnId="tblCol_a395af3c56a94f42945746a7069c4680" />
+      <To tableType="TableObject" table="Production_TransactionHistory" populationObjectName="query_Production_TransactionHistory" column="ProductID" columnId="queryCol_1" />
+    </Relation>
+    <Relation id="400">
+      <From tableType="TableObject" table="Production_Product" column="ProductID" columnId="tblCol_a395af3c56a94f42945746a7069c4680" />
+      <To tableType="TableObject" table="Production_ProductReview" populationObjectName="query_Production_ProductReview" column="ProductID" columnId="queryCol_1" />
+    </Relation>
+    <Relation id="401">
+      <From tableType="TableObject" table="Production_Product" column="ProductID" columnId="tblCol_a395af3c56a94f42945746a7069c4680" />
+      <To tableType="TableObject" table="Production_WorkOrder" populationObjectName="query_Production_WorkOrder" column="ProductID" columnId="queryCol_1" />
+    </Relation>
+    <Relation id="406">
+      <From tableType="TableObject" table="Production_ProductDocument" column="DocumentNode" columnId="tblCol_d38ea7700212490daa56ecba1267d268" />
+      <To tableType="TableObject" table="Production_Document" populationObjectName="query_Production_Document" column="DocumentNode" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="407">
+      <From tableType="TableObject" table="Production_ProductInventory" column="LocationID" columnId="tblCol_b5f992774974473c9f83daac46d8f702" />
+      <To tableType="TableObject" table="Production_Location" populationObjectName="query_Production_Location" column="LocationID" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="408">
+      <From tableType="TableObject" table="Production_Location" column="LocationID" columnId="tblCol_1e19a5d605b549808fc6b8c76972977e" />
+      <To tableType="TableObject" table="Production_WorkOrderRouting" populationObjectName="query_Production_WorkOrderRouting" column="LocationID" columnId="queryCol_3" />
+    </Relation>
+    <Relation id="409">
+      <From tableType="TableObject" table="Production_ProductProductPhoto" column="ProductPhotoID" columnId="tblCol_1c0a984ae5894fb4b8329c8af4c5e25c" />
+      <To tableType="TableObject" table="Production_ProductPhoto" populationObjectName="query_Production_ProductPhoto" column="ProductPhotoID" columnId="queryCol_0" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

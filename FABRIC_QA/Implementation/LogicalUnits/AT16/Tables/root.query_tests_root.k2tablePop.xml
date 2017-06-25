@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_tests_root</ID>
+  <PopulationObjectName>query_tests_root</PopulationObjectName>
+  <TableName>root</TableName>
+  <RootItemID>query_query_tests_root</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="start" id="queryCol_0" dataType="Text" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_tests_root" name="query_tests_root" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="CASS_SOURCE">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="start" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="end" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="code" dataType="Text" index="2" />
+      </OutputsList>
+      <SQL><![CDATA[Select *
+From tests.root]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="38" fromNodeOrder="0" fromItemID="query_query_tests_root" fromColID="queryCol_0" toItemID="tbl_root" toColID="tblCol_3658321fb8104e9d9869c2a9e0660050" />
+    <Link partId="37" fromNodeOrder="0" fromItemID="query_query_tests_root" fromColID="queryCol_1" toItemID="tbl_root" toColID="tblCol_212b4664b61a48599033c11f33c99537" />
+    <Link partId="47" fromNodeOrder="0" fromItemID="query_query_tests_root" fromColID="queryCol_2" toItemID="tbl_root" toColID="tblCol_6bc5cf13d0114aabbaaeac027867add6" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

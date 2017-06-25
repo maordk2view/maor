@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>wsTwoLus</Name>
+  <ID>CAT1.wsTwoLus</ID>
+  <Category>CAT1</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>WebService</FunctionType>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>DBExecute("fabric","set sync on", null);
+
+DBExecute("fabric","get MS."+cust_id, null);
+
+DBExecute("fabric","get REF.1", null);
+
+String sql = "SELECT NEW_PRODUCT_CODE FROM MS.YP_PRODUCT, REF.YP_PRODUCT_TRN WHERE PRODUCT_CODE=OLD_PRODUCT_CODE LIMIT 1";
+
+Object new_product_code = DBSelectValue("fabric", sql, null);
+
+//Map&lt;String, String&gt; product_data = new HashMap&lt;String, String&gt;();
+
+//product_data.put("NEW_PRODUCT_CODE", new_product_code.toString());
+
+
+//return product_data;
+if(null==new_product_code)
+	return "";
+else
+	return new_product_code.toString();</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="cust_id" id="fi.CAT1.wsTwoLus.0" index="0" dataType="Integer">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="result" id="fo.CAT1.wsTwoLus.0" index="0" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

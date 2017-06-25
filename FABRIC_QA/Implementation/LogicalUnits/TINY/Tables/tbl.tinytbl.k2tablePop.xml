@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>tinytbl</ID>
+  <PopulationObjectName>tinytbl</PopulationObjectName>
+  <TableName>tbl</TableName>
+  <RootItemID>f_5</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="id" id="fi_5.0" dataType="String" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item id="f_5" name="tinyfn" nodeOrder="0" module="Function" mapObjectModule="Function" fileName="tinyfn.k2function.xml">
+      <InputsList>
+        <Input id="fi_5.0" name="id" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_5.0" name="id" />
+        <Output id="fo_5.1" name="name" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="10" fromNodeOrder="0" fromItemID="f_5" fromColID="fo_5.0" toItemID="tbl_tbl" toColID="tblCol_34bc5231645a49f8a6a567cb722602fd" />
+    <Link partId="9" fromNodeOrder="0" fromItemID="f_5" fromColID="fo_5.1" toItemID="tbl_tbl" toColID="tblCol_8e4c190f98524818a71c9910661b787c" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

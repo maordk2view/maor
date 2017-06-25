@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>YP_ITEM_EXT</Name>
+  <ID>tbl_YP_ITEM_EXT</ID>
+  <LazyDataUpdate performEvery="1.00:00:00">
+    <TruncateBeforeSync>false</TruncateBeforeSync>
+  </LazyDataUpdate>
+  <Columns>
+    <Column name="CUST_ID" id="tblCol_7b7a1fd4af8146fa991f62db7343cbcc" index="0" datatype="integer" />
+    <Column name="T_P_INT" id="tblCol_84cc6b336e7b46fa9c164eeb7479a54c" index="1" datatype="text" />
+    <Column name="CNT" id="tblCol_b1d7f5a1b67b4d32825bb6b83e89334c" index="2" datatype="integer" />
+    <Column name="CNT1" id="tblCol_d7eb68fe4b53467bb5eda3399877fdce" index="3" datatype="integer" defaultValue="6" />
+    <Column name="CNT2" id="tblCol_222b1bb20f78442786cdef897598f7c5" index="4" datatype="integer" defaultValue="2" />
+    <Column name="CNT3" id="tblCol_806899410baf430ea4f04bc4a0c72c42" index="5" datatype="real" defaultValue="3" />
+    <Column name="CNT4" id="tblCol_877a4908bd534f4c96e08d709e40d7ed" index="6" datatype="real" defaultValue="4" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

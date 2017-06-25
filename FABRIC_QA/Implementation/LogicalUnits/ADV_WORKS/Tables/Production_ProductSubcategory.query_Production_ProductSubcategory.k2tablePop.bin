@@ -1,0 +1,11 @@
+﻿<Graph name="Production_ProductSubcategory.query_Production_ProductSubcategory.k2tablePop.bin" lastPartID="18">
+  <TableNode partID="0" name="Production_ProductSubcategory" pos="365.100342 18.7812538" width="309.3241" />
+  <DBQueryNode partID="8" name="SqlServer_AdvWorks" pos="10 14.8177109" size="310.100342 120.364578" isRoot="true">
+    <DBQuery>{"Name":"query_Production_ProductSubcategory","ID":"query_query_Production_ProductSubcategory","ConnName":"SqlServer_AdvWorks","SQL":"select * from Production.ProductSubcategory","ColumnsList":[{"ID":"queryCol_0","Name":"ProductSubcategoryID","DataType":"Integer","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"ProductCategoryID","DataType":"Integer","Index":1,"IsInputArgument":true},{"ID":"queryCol_2","Name":"Name","DataType":"Text","Index":2,"IsInputArgument":true},{"ID":"queryCol_3","Name":"rowguid","DataType":"Text","Index":3,"IsInputArgument":true},{"ID":"queryCol_4","Name":"ModifiedDate","DataType":"Text","Index":4,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="14" from="0" to="1" pointsArr="320.100342 50.85417 330.100342 50.85417 332.600342 25 352.600342 25 355.100342 49.81771 365.100342 49.81771" fromNodePartID="8" fromNodeColumnName="ProductSubcategoryID" toNodePartID="0" toNodeColumnName="ProductSubcategoryID" />
+  <Link partID="15" from="2" to="3" pointsArr="320.100342 62.9270859 330.100342 62.9270859 332.600342 50 352.600342 50 355.100342 61.89063 365.100342 61.89063" fromNodePartID="8" fromNodeColumnName="ProductCategoryID" toNodePartID="0" toNodeColumnName="ProductCategoryID" />
+  <Link partID="16" from="4" to="5" pointsArr="320.100342 75 330.100342 75 332.600342 75 352.600342 75 355.100342 73.96355 365.100342 73.96355" fromNodePartID="8" fromNodeColumnName="Name" toNodePartID="0" toNodeColumnName="Name" />
+  <Link partID="17" from="6" to="7" pointsArr="320.100342 87.0729141 330.100342 87.0729141 332.600342 100 352.600342 100 355.100342 86.03645 365.100342 86.03645" fromNodePartID="8" fromNodeColumnName="rowguid" toNodePartID="0" toNodeColumnName="rowguid" />
+  <Link partID="18" from="8" to="9" pointsArr="320.100342 99.14583 330.100342 99.14583 332.600342 125 352.600342 125 355.100342 98.109375 365.100342 98.109375" fromNodePartID="8" fromNodeColumnName="ModifiedDate" toNodePartID="0" toNodeColumnName="ModifiedDate" />
+</Graph>

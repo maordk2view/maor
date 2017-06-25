@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>getCustTypeOra</Name>
+  <ID>JAVA.getCustTypeOra</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String sql = "select getNewUdacDesc2(HBD, 1, 'Y') FROM YP_CUSTOMER ";
+
+String sql1 = "select CTCR_BATCH_PROG_DT FROM YP_CUSTOMER";
+
+
+Object cust_type = DBSelectValue("ludb", sql, null);
+
+Object date = DBSelectValue("ludb", sql1, null);
+
+String[] trnValues = {prd_cd, "1"};
+
+Map trn = getTranslationValues("trnProduct", trnValues);
+
+//o_trn_prd = 
+
+//String value = (String) newMap.get("my_code");
+String entity = getInstanceID();
+
+return  new Object[] {(String)cust_type, (String)date, entity, (String) trn.get("PRD_CD_OUT")} ;</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <InputParams>
+    <Input name="prd_cd" id="fi.JAVA.getCustTypeOra.0" index="0" dataType="String">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="o_cust_type" id="fo.JAVA.getCustTypeOra.0" index="0" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="o_date" id="fo.JAVA.getCustTypeOra.1" index="1" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="o_entity_id" id="fo.JAVA.getCustTypeOra.2" index="2" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="o_trn_prd" id="fo.JAVA.getCustTypeOra.3" index="3" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

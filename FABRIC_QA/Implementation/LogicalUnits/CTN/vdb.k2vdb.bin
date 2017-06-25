@@ -1,0 +1,9 @@
+﻿<Graph version="1.5.1.0" name="vdb.k2vdb.bin" lastPartID="721">
+  <Node id="0" partID="0" name="ctnMainInfo" isRootView="true" pos="30 127" size="257 283.367249" listGroupSize="250 245" viewType="Table">
+    <TableProperties>{"TableName":"ctnMainInfo","TablePopulationPropertiesList":[{"ID":"popCtnMainInfo","Name":"popCtnMainInfo","Order":1}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="39" name="ctnAccountBalance" isRootView="false" pos="461 40" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"ctnAccountBalance","TablePopulationPropertiesList":[{"ID":"popCtnAccountBalance","Name":"popCtnAccountBalance","Order":2}]}</TableProperties>
+  </Node>
+  <Link from="2" to="3" partID="389" linkType="Database" pointsArr="287 189.636719 297 189.636719 451 86.54557 461 86.54557" fromNodePartID="0" fromNodeColumnName="ACCOUNT_NUMBER" toNodePartID="39" toNodeColumnName="accountNumber" toNodePopulationObjectName="popCtnAccountBalance" />
+</Graph>

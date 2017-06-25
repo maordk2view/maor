@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ParserMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>parsMapInv_2</Name>
+  <MapType>ParserMap</MapType>
+  <RootItemID>f_1</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <TargetsList>
+    <Target xsi:type="ParserMapTargetItem">
+      <TargetName>invParser_2</TargetName>
+      <Module>Parser_Map</Module>
+      <ItemsList>
+        <Item id="f_1" name="invFunc" nodeOrder="0" module="Function" mapObjectModule="Function" fileName="invFunc.k2function.xml">
+          <InputsList>
+            <Input id="fi_1.0" name="patient_id" />
+          </InputsList>
+          <OutputsList>
+            <Output id="fo_1.0" name="invoiceID" />
+            <Output id="fo_1.1" name="patientID" />
+            <Output id="fo_1.2" name="STATUS" />
+          </OutputsList>
+        </Item>
+        <Item xsi:type="ParserRecordTypeDataSave" id="rt_invParser_2" name="invParser_2" nodeOrder="1" module="ParserRecordType" mapObjectModule="ParserRecordType" parentParser="parsMapInv_2" active="true">
+          <InputsList>
+            <Input xsi:type="ParserRecordTypeDataSaveColumnInput" id="rtCol_9203cb9589cb48798d66f3bbfe1d2957" name="invoiceID" dataType="Text" />
+            <Input xsi:type="ParserRecordTypeDataSaveColumnInput" id="rtCol_19c6b965e80b47ad9554d6d09724c18d" name="patientID" dataType="Text" />
+            <Input xsi:type="ParserRecordTypeDataSaveColumnInput" id="rtCol_ad37095c1ce24bd5bebec596fbfbe67b" name="status" dataType="Text" />
+          </InputsList>
+          <OutputsList />
+          <RecordTypeKeyColumn>rtCol_9203cb9589cb48798d66f3bbfe1d2957</RecordTypeKeyColumn>
+          <PkColumnsList />
+          <ClusteringKeyOrder>ASC</ClusteringKeyOrder>
+        </Item>
+      </ItemsList>
+      <LinksList>
+        <Link partId="9" fromNodeOrder="0" fromItemID="f_1" fromColID="fo_1.0" toItemID="rt_invParser_2" toColID="rtCol_9203cb9589cb48798d66f3bbfe1d2957" />
+        <Link partId="11" fromNodeOrder="0" fromItemID="f_1" fromColID="fo_1.1" toItemID="rt_invParser_2" toColID="rtCol_19c6b965e80b47ad9554d6d09724c18d" />
+        <Link partId="10" fromNodeOrder="0" fromItemID="f_1" fromColID="fo_1.2" toItemID="rt_invParser_2" toColID="rtCol_ad37095c1ce24bd5bebec596fbfbe67b" />
+      </LinksList>
+      <ParserMapRecordType id="rt_invParser_2" name="invParser_2" parentParser="parsMapInv_2">
+        <Active>true</Active>
+        <RecordTypeKeyColumn>rtCol_9203cb9589cb48798d66f3bbfe1d2957</RecordTypeKeyColumn>
+        <Columns>
+          <Column id="rtCol_9203cb9589cb48798d66f3bbfe1d2957" name="invoiceID" index="0">
+            <DataType>Text</DataType>
+          </Column>
+          <Column id="rtCol_19c6b965e80b47ad9554d6d09724c18d" name="patientID" index="1">
+            <DataType>Text</DataType>
+          </Column>
+          <Column id="rtCol_ad37095c1ce24bd5bebec596fbfbe67b" name="status" index="2">
+            <DataType>Text</DataType>
+          </Column>
+        </Columns>
+        <PkColumns />
+      </ParserMapRecordType>
+    </Target>
+  </TargetsList>
+  <syncEvery>00:00:00</syncEvery>
+</ParserMap>

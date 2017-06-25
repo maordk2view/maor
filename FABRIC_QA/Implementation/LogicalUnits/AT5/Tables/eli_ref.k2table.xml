@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>eli_ref</Name>
+  <ID>tbl_eli_ref</ID>
+  <EntityId>tblCol_3892e0a692464b72bc7ecf21fdfb2480</EntityId>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="comp_id" id="tblCol_3892e0a692464b72bc7ecf21fdfb2480" index="0" datatype="text" />
+    <Column name="name" id="tblCol_981a9b157f9e4b8f92054fea0f1a7656" index="1" datatype="text" />
+    <Column name="udac_code" id="tblCol_8b6940aead934319be0acdbb53fcd8cc" index="2" datatype="text" />
+    <Column name="udac_desc" id="tblCol_87b02d739e8448f2ae65f3a0f8905dc4" index="3" datatype="text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

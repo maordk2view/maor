@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>wsPermTest</Name>
+  <ID>JAVA.wsPermTest</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>WebService</FunctionType>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>DBExecute("fabric","set allow_filtering=true;",null);
+DBExecute("fabric","use AT1",null);
+Map&lt;String, String&gt; data = new HashMap&lt;String, String&gt;();
+String q = "select count(*) from m_yp_customer where customer_id=102887030 or customer_id=103008391 or customer_id=106786934";
+Object count = DBSelectValue("fabric", q, null);
+if(count==null)
+	data.put("COUNT", "NULL_VALUE");
+else
+	data.put("COUNT", count.toString());
+return data;
+</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams />
+  <OutputParams>
+    <Output name="rval" id="fo.JAVA.wsPermTest.0" index="0" dataType="Object">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

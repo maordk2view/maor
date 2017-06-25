@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.0.3.0">
+  <Name>vdb</Name>
+  <RootView>M_yp_customer</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>P_yp_product</Table>
+    <Table>M_yp_customer</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="P_yp_product">
+      <Populations>
+        <Population id="query_yp_cust_yp_product" name="query_yp_cust_yp_product" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="M_yp_customer">
+      <Populations>
+        <Population id="query_yp_customer" name="query_yp_customer" order="1" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="false" name="FUN_REF_UDAC" />
+    <Item active="false" name="MS_REF_UDAC" />
+    <Item active="false" name="REF_SERVICE_AGREEMENT" />
+    <Item active="false" name="REF_YP_PRODUCT_TRN" />
+    <Item active="false" name="test_YP_REF_UDAC" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="603">
+      <From tableType="TableObject" table="M_yp_customer" column="CUSTOMER_ID" columnId="tblCol_1a084487de164f71b50f0053237095e5" />
+      <To tableType="TableObject" table="P_yp_product" populationObjectName="query_yp_cust_yp_product" column="customer_id" columnId="queryCol_0" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_Production_ProductListPriceHistory</ID>
+  <PopulationObjectName>query_Production_ProductListPriceHistory</PopulationObjectName>
+  <TableName>Production_ProductListPriceHistory</TableName>
+  <RootItemID>query_query_Production_ProductListPriceHistory</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="ProductID" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="StartDate" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="EndDate" id="queryCol_2" dataType="Text" index="2" />
+    <Arg name="ListPrice" id="queryCol_3" dataType="Real" index="3" />
+    <Arg name="ModifiedDate" id="queryCol_4" dataType="Text" index="4" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_Production_ProductListPriceHistory" name="query_Production_ProductListPriceHistory" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="SqlServer_AdvWorks">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="ProductID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="StartDate" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="EndDate" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="ListPrice" dataType="Real" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="ModifiedDate" dataType="Text" index="4" />
+      </OutputsList>
+      <SQL><![CDATA[select * from Production.ProductListPriceHistory]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="14" fromNodeOrder="0" fromItemID="query_query_Production_ProductListPriceHistory" fromColID="queryCol_0" toItemID="tbl_Production_ProductListPriceHistory" toColID="tblCol_37eaec8730094016a4eec8fc4dced45c" />
+    <Link partId="15" fromNodeOrder="0" fromItemID="query_query_Production_ProductListPriceHistory" fromColID="queryCol_1" toItemID="tbl_Production_ProductListPriceHistory" toColID="tblCol_e39e306570d9408b9dd4b775d811b62f" />
+    <Link partId="16" fromNodeOrder="0" fromItemID="query_query_Production_ProductListPriceHistory" fromColID="queryCol_2" toItemID="tbl_Production_ProductListPriceHistory" toColID="tblCol_0ae97191ea6e4e9f97fc39bff75b83c4" />
+    <Link partId="17" fromNodeOrder="0" fromItemID="query_query_Production_ProductListPriceHistory" fromColID="queryCol_3" toItemID="tbl_Production_ProductListPriceHistory" toColID="tblCol_078565010c034f3f9b8acf7ae4e8ee9d" />
+    <Link partId="18" fromNodeOrder="0" fromItemID="query_query_Production_ProductListPriceHistory" fromColID="queryCol_4" toItemID="tbl_Production_ProductListPriceHistory" toColID="tblCol_7448985581ab4ed499eedeb6608d4643" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>INVOICE</Name>
+  <ID>tbl_INVOICE</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="PATIENT_ID" id="tblCol_3d7c526bfbe64ea0a5700ccbd6fd239f" index="0" datatype="Text" />
+    <Column name="INVOICE_ID" id="tblCol_6db7debdd0a444a089254d11fd933526" index="1" datatype="Text" mandatory="true" />
+    <Column name="ISSUED_DATE" id="tblCol_f57cb39652454a468e36233516e328bb" index="2" datatype="Text" />
+    <Column name="DUE_DATE" id="tblCol_a0b4c9fa723a474c9cd2dc124659127b" index="3" datatype="Text" />
+    <Column name="STATUS" id="tblCol_8c96a39fb0154b38bf58e5a936a07ef3" index="4" datatype="Text" />
+    <Column name="BALANCE" id="tblCol_d2dd1155b75545c98d4a19a0d7a58edb" index="5" datatype="Integer" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_6db7debdd0a444a089254d11fd933526" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

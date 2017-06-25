@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.0.0.2">
+  <Name>vdb</Name>
+  <RootView>HR_REGIONS</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>HR_REGIONS</Table>
+    <Table>HR_COUNTRIES</Table>
+    <Table>HR_LOCATIONS</Table>
+    <Table>HR_DEPARTMENTS</Table>
+    <Table>HR_JOB_HISTORY</Table>
+    <Table>HR_EMPLOYEES</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="HR_REGIONS">
+      <Populations>
+        <Population id="query_HR_REGIONS" name="query_HR_REGIONS" order="1" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="HR_COUNTRIES">
+      <Populations>
+        <Population id="query_HR_COUNTRIES" name="query_HR_COUNTRIES" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="HR_LOCATIONS">
+      <Populations>
+        <Population id="query_HR_LOCATIONS" name="query_HR_LOCATIONS" order="3" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="HR_DEPARTMENTS">
+      <Populations>
+        <Population id="query_HR_DEPARTMENTS" name="query_HR_DEPARTMENTS" order="4" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="HR_JOB_HISTORY">
+      <Populations>
+        <Population id="query_HR_JOB_HISTORY" name="query_HR_JOB_HISTORY" order="5" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="HR_EMPLOYEES">
+      <Populations>
+        <Population id="query_HR_EMPLOYEES" name="query_HR_EMPLOYEES" order="5" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="false" name="FUN_REF_UDAC" />
+    <Item active="false" name="MS_REF_UDAC" />
+    <Item active="false" name="REF_SERVICE_AGREEMENT" />
+    <Item active="false" name="REF_YP_PRODUCT_TRN" />
+    <Item active="false" name="test_YP_REF_UDAC" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="91">
+      <From tableType="TableObject" table="HR_REGIONS" column="REGION_ID" columnId="tblCol_df3f00bd4fdf445899bfa9e31bd5cba9" />
+      <To tableType="TableObject" table="HR_COUNTRIES" populationObjectName="query_HR_COUNTRIES" column="REGION_ID" columnId="queryCol_2" />
+    </Relation>
+    <Relation id="92">
+      <From tableType="TableObject" table="HR_COUNTRIES" column="COUNTRY_ID" columnId="tblCol_5b5f5341a9d3407db671122195f515ef" />
+      <To tableType="TableObject" table="HR_LOCATIONS" populationObjectName="query_HR_LOCATIONS" column="COUNTRY_ID" columnId="queryCol_5" />
+    </Relation>
+    <Relation id="93">
+      <From tableType="TableObject" table="HR_LOCATIONS" column="LOCATION_ID" columnId="tblCol_bc15239d0e47458d87ebcbe707c6c811" />
+      <To tableType="TableObject" table="HR_DEPARTMENTS" populationObjectName="query_HR_DEPARTMENTS" column="LOCATION_ID" columnId="queryCol_3" />
+    </Relation>
+    <Relation id="94">
+      <From tableType="TableObject" table="HR_DEPARTMENTS" column="DEPARTMENT_ID" columnId="tblCol_a6395238c9574444931bc0c4427d266d" />
+      <To tableType="TableObject" table="HR_JOB_HISTORY" populationObjectName="query_HR_JOB_HISTORY" column="DEPARTMENT_ID" columnId="queryCol_4" />
+    </Relation>
+    <Relation id="95">
+      <From tableType="TableObject" table="HR_DEPARTMENTS" column="DEPARTMENT_ID" columnId="tblCol_a6395238c9574444931bc0c4427d266d" />
+      <To tableType="TableObject" table="HR_EMPLOYEES" populationObjectName="query_HR_EMPLOYEES" column="DEPARTMENT_ID" columnId="queryCol_10" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

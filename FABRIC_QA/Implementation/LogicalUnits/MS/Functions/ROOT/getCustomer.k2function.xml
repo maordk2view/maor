@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>getCustomer</Name>
+  <ID>ROOT.getCustomer</ID>
+  <Category>ROOT</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String sql = "SELECT CUSTOMER_ID, CUSTOMER_TYPE FROM yp_customer where CUSTOMER_ID=?";
+Object[] valuesArr = {CUSTOMER_ID};
+ResultSetWrapper rs = DBQuery("MYSQL_SOURCE", sql, valuesArr);
+
+for(Object[] row : rs) {
+    yield(row);
+}
+</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>true</IsRootFunction>
+  <InputParams>
+    <Input name="CUSTOMER_ID" id="fi.ROOT.getCustomer.0" index="0" dataType="Long">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="CUSTOMER_ID" id="fo.ROOT.getCustomer.0" index="0" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="CUSTOMER_TYPE" id="fo.ROOT.getCustomer.1" index="1" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

@@ -1,0 +1,19 @@
+﻿<Graph version="2.5.3.0" name="vdb.k2vdb.bin" lastPartID="1341">
+  <Node id="0" partID="108" name="YP_ADDRESS" isRootView="false" pos="463 62" size="257 138.546844" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"YP_ADDRESS","TablePopulationPropertiesList":[{"ID":"query_YP_ADDRESS","Name":"query_YP_ADDRESS","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="428" name="YP_CUSTOMER" isRootView="true" pos="7 63" size="257 138.546844" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"YP_CUSTOMER","TablePopulationPropertiesList":[{"ID":"query_YP_CUSTOMER","Name":"query_YP_CUSTOMER","Order":1}]}</TableProperties>
+  </Node>
+  <Node id="2" partID="482" name="YP_PRODUCT" isRootView="false" pos="173 223" size="257 138.546936" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"YP_PRODUCT","TablePopulationPropertiesList":[{"ID":"query_YP_PRODUCT","Name":"query_YP_PRODUCT","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="3" partID="582" name="YP_ITEM" isRootView="false" pos="491 241" size="257 138.546936" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"YP_ITEM","TablePopulationPropertiesList":[{"ID":"query_YP_ITEM","Name":"query_YP_ITEM","Order":3}]}</TableProperties>
+  </Node>
+  <Link from="4" to="5" partID="142" linkType="Database" pointsArr="264 109.54557 274 109.54557 453 124.636711 463 124.636711" fromNodePartID="428" fromNodeColumnName="CUSTOMER_ID" toNodePartID="108" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="query_YP_ADDRESS" />
+  <Link from="4" to="6" partID="370" linkType="Database" pointsArr="264 109.54557 274 109.54557 163 269.5456 173 269.5456" fromNodePartID="428" fromNodeColumnName="CUSTOMER_ID" toNodePartID="482" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="query_YP_PRODUCT" />
+  <Link from="7" to="8" partID="371" linkType="Database" pointsArr="430 269.5456 440 269.5456 481 287.545563 491 287.545563" fromNodePartID="482" fromNodeColumnName="CUSTOMER_ID" toNodePartID="582" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="query_YP_ITEM" />
+  <Link from="9" to="10" partID="372" linkType="Database" pointsArr="430 285.636719 440 285.636719 481 303.636719 491 303.636719" fromNodePartID="482" fromNodeColumnName="PRODUCT_CODE" toNodePartID="582" toNodeColumnName="PRODUCT_CODE" toNodePopulationObjectName="query_YP_ITEM" />
+  <Link from="11" to="12" partID="373" linkType="Database" pointsArr="430 301.727875 440 301.727875 481 319.727875 491 319.727875" fromNodePartID="482" fromNodeColumnName="PRODUCT_ISSUE_NUM" toNodePartID="582" toNodeColumnName="PRODUCT_ISSUE_NUM" toNodePopulationObjectName="query_YP_ITEM" />
+</Graph>

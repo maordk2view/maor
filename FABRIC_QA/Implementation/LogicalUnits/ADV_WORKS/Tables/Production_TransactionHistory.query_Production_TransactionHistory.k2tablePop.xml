@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_Production_TransactionHistory</ID>
+  <PopulationObjectName>query_Production_TransactionHistory</PopulationObjectName>
+  <TableName>Production_TransactionHistory</TableName>
+  <RootItemID>query_query_Production_TransactionHistory</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="TransactionID" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="ProductID" id="queryCol_1" dataType="Integer" index="1" />
+    <Arg name="ReferenceOrderID" id="queryCol_2" dataType="Integer" index="2" />
+    <Arg name="ReferenceOrderLineID" id="queryCol_3" dataType="Integer" index="3" />
+    <Arg name="TransactionDate" id="queryCol_4" dataType="Text" index="4" />
+    <Arg name="TransactionType" id="queryCol_5" dataType="Text" index="5" />
+    <Arg name="Quantity" id="queryCol_6" dataType="Integer" index="6" />
+    <Arg name="ActualCost" id="queryCol_7" dataType="Real" index="7" />
+    <Arg name="ModifiedDate" id="queryCol_8" dataType="Text" index="8" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_Production_TransactionHistory" name="query_Production_TransactionHistory" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="SqlServer_AdvWorks">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="TransactionID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="ProductID" dataType="Integer" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="ReferenceOrderID" dataType="Integer" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="ReferenceOrderLineID" dataType="Integer" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="TransactionDate" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="TransactionType" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_6" name="Quantity" dataType="Integer" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_7" name="ActualCost" dataType="Real" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_8" name="ModifiedDate" dataType="Text" index="8" />
+      </OutputsList>
+      <SQL><![CDATA[select * from Production.TransactionHistory]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="22" fromNodeOrder="0" fromItemID="query_query_Production_TransactionHistory" fromColID="queryCol_0" toItemID="tbl_Production_TransactionHistory" toColID="tblCol_088997f4d12f4a86b83b2feee057fad6" />
+    <Link partId="23" fromNodeOrder="0" fromItemID="query_query_Production_TransactionHistory" fromColID="queryCol_1" toItemID="tbl_Production_TransactionHistory" toColID="tblCol_48b6451e9bbd434cbd13706817b7b35a" />
+    <Link partId="24" fromNodeOrder="0" fromItemID="query_query_Production_TransactionHistory" fromColID="queryCol_2" toItemID="tbl_Production_TransactionHistory" toColID="tblCol_edb132cfe1014cbdbd91fd7d8a95f919" />
+    <Link partId="25" fromNodeOrder="0" fromItemID="query_query_Production_TransactionHistory" fromColID="queryCol_3" toItemID="tbl_Production_TransactionHistory" toColID="tblCol_d0a54cb5619f456db14f0d2255166b60" />
+    <Link partId="26" fromNodeOrder="0" fromItemID="query_query_Production_TransactionHistory" fromColID="queryCol_4" toItemID="tbl_Production_TransactionHistory" toColID="tblCol_041b4b4577c64ff996d94bdd3fc5bf01" />
+    <Link partId="27" fromNodeOrder="0" fromItemID="query_query_Production_TransactionHistory" fromColID="queryCol_5" toItemID="tbl_Production_TransactionHistory" toColID="tblCol_2b3106bf92504ab491b7860c2e039711" />
+    <Link partId="28" fromNodeOrder="0" fromItemID="query_query_Production_TransactionHistory" fromColID="queryCol_6" toItemID="tbl_Production_TransactionHistory" toColID="tblCol_73609813136d439f89f9b86181cc67df" />
+    <Link partId="29" fromNodeOrder="0" fromItemID="query_query_Production_TransactionHistory" fromColID="queryCol_7" toItemID="tbl_Production_TransactionHistory" toColID="tblCol_88817a818fbf4caca4e6917fb690d063" />
+    <Link partId="30" fromNodeOrder="0" fromItemID="query_query_Production_TransactionHistory" fromColID="queryCol_8" toItemID="tbl_Production_TransactionHistory" toColID="tblCol_387713e8d3ac49928db7041758c1bc9e" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

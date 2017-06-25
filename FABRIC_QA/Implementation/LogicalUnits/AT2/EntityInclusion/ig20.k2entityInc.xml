@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DbQueryItemOfDataTable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DbConn>CUSTOMER_TEST</DbConn>
+  <Name>ig20</Name>
+  <Sql>Select CUSTOMER.BILLING_ACCOUNT.BAN
+From CUSTOMER.BILLING_ACCOUNT
+Where RowNum &lt; 21</Sql>
+  <IsSqlValid>true</IsSqlValid>
+</DbQueryItemOfDataTable>

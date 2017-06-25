@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Production_Culture</Name>
+  <ID>tbl_Production_Culture</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="CultureID" id="tblCol_8f1fe9bb194448608c529b4936e2352e" index="0" datatype="Text" mandatory="true" />
+    <Column name="Name" id="tblCol_6000ece6bc184f918e1a02cd1e1efec7" index="1" datatype="Text" mandatory="true" />
+    <Column name="ModifiedDate" id="tblCol_dc494902ab6d4022866f6e9fbfc2a2d7" index="2" datatype="Text" mandatory="true" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_8f1fe9bb194448608c529b4936e2352e" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

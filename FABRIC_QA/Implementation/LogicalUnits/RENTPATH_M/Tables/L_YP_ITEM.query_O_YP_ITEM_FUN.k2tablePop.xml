@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_O_YP_ITEM_FUN</PopulationObjectName>
+  <TableName>L_YP_ITEM</TableName>
+  <ID>query_O_YP_ITEM_FUN</ID>
+  <RootItemID>query_3</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="CUSTOMER_ID" id="query_3.0" dataType="Text" index="0" />
+    <Arg name="PRODUCT_CODE" id="query_3.1" dataType="Text" index="1" />
+    <Arg name="PRODUCT_ISSUE_NUM" id="query_3.2" dataType="Text" index="2" />
+    <Arg name="ITEM_ID" id="query_3.3" dataType="Text" index="3" />
+    <Arg name="ITEM_VERSION" id="query_3.4" dataType="Text" index="4" />
+    <Arg name="PROPOSAL_ID" id="query_3.5" dataType="Text" index="5" />
+    <Arg name="LAST_VERSION_IND" id="query_3.6" dataType="Text" index="6" />
+    <Arg name="SECTION_CODE" id="query_3.7" dataType="Text" index="7" />
+    <Arg name="HEADING_CODE" id="query_3.8" dataType="Text" index="8" />
+    <Arg name="SUB_HEADING_CODE" id="query_3.9" dataType="Text" index="9" />
+    <Arg name="UDAC_CODE" id="query_3.10" dataType="Text" index="10" />
+    <Arg name="RATE_UDAC_CODE" id="query_3.11" dataType="Text" index="11" />
+    <Arg name="LISTING_ID" id="query_3.12" dataType="Text" index="12" />
+    <Arg name="MAIN_ITEM_ID" id="query_3.13" dataType="Text" index="13" />
+    <Arg name="ACTION_CODE" id="query_3.14" dataType="Text" index="14" />
+    <Arg name="ACTION_CODE_RSN" id="query_3.15" dataType="Text" index="15" />
+    <Arg name="CONTRACT_ID" id="query_3.16" dataType="Text" index="16" />
+    <Arg name="CONTRACT_VERSION" id="query_3.17" dataType="Text" index="17" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_3" name="query_O_YP_ITEM_FUN" nodeOrder="0" module="DBQuery" connName="ludb">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.0" name="CUSTOMER_ID" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.1" name="PRODUCT_CODE" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.2" name="PRODUCT_ISSUE_NUM" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.3" name="ITEM_ID" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.4" name="ITEM_VERSION" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.5" name="PROPOSAL_ID" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.6" name="LAST_VERSION_IND" dataType="Text" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.7" name="SECTION_CODE" dataType="Text" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.8" name="HEADING_CODE" dataType="Text" index="8" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.9" name="SUB_HEADING_CODE" dataType="Text" index="9" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.10" name="UDAC_CODE" dataType="Text" index="10" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.11" name="RATE_UDAC_CODE" dataType="Text" index="11" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.12" name="LISTING_ID" dataType="Text" index="12" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.13" name="MAIN_ITEM_ID" dataType="Text" index="13" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.14" name="ACTION_CODE" dataType="Text" index="14" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.15" name="ACTION_CODE_RSN" dataType="Text" index="15" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.16" name="CONTRACT_ID" dataType="Text" index="16" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.17" name="CONTRACT_VERSION" dataType="Text" index="17" />
+      </OutputsList>
+      <SQL><![CDATA[Select *
+From AT1.O_YP_ITEM_FUN]]></SQL>
+    </Item>
+    <Item xsi:type="ConstantDataSave" id="c.177" nodeOrder="0" module="Constant">
+      <InputsList />
+      <OutputsList />
+      <Value><![CDATA[1]]></Value>
+    </Item>
+    <Item id="f_68" name="getNewUdacDesc2" nodeOrder="1" module="Function" fileName="getNewUdacDesc2.k2function.xml">
+      <InputsList>
+        <Input id="fi_68.0" name="i_udac_code" />
+        <Input id="fi_68.1" name="i_udac_ver" defaultValue="1" />
+        <Input id="fi_68.2" name="i_last_version_ind" defaultValue="Y" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_68.0" name="o_new_udac" />
+      </OutputsList>
+    </Item>
+    <Item id="f_75" name="getCustType" nodeOrder="1" module="Function" fileName="getCustType.k2function.xml">
+      <InputsList>
+        <Input id="fi_75.0" name="prd_cd" />
+        <Input id="fi_75.1" name="product_issue_num" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_75.0" name="hbd" />
+        <Output id="fo_75.1" name="o_date" />
+        <Output id="fo_75.2" name="o_entity_id" />
+        <Output id="fo_75.3" name="con_lu" />
+        <Output id="fo_75.4" name="new_cust_type" />
+        <Output id="fo_75.5" name="global_lu" />
+        <Output id="fo_75.6" name="global_sh" />
+      </OutputsList>
+    </Item>
+    <Item id="f_94" name="testExecute" nodeOrder="1" module="Function" fileName="testExecute.k2function.xml">
+      <InputsList>
+        <Input id="fi_94.0" name="cust_id" />
+        <Input id="fi_94.1" name="prod_code" />
+        <Input id="fi_94.2" name="prod_issue_num" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_94.0" name="o_execute" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="40" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.0" toItemID="tbl_L_YP_ITEM" toColID="tblCol_09350f4b08be4a389f31f1a98ec1bb3d" />
+    <Link partId="41" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.1" toItemID="tbl_L_YP_ITEM" toColID="tblCol_df0d9bc8cdde4cf38b9a98ad9f5395c7" />
+    <Link partId="42" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.2" toItemID="tbl_L_YP_ITEM" toColID="tblCol_352871e4f2824b5ca6e9cb35d2d2fcf1" />
+    <Link partId="43" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.3" toItemID="tbl_L_YP_ITEM" toColID="tblCol_ab2152bebfd24ac0955ba1b36bcaecc4" />
+    <Link partId="44" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.4" toItemID="tbl_L_YP_ITEM" toColID="tblCol_e69f4e48e92c4088b14788b97b5fe2d4" />
+    <Link partId="45" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.5" toItemID="tbl_L_YP_ITEM" toColID="tblCol_34f248cf60e246d89d2b344c08419ead" />
+    <Link partId="46" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.6" toItemID="tbl_L_YP_ITEM" toColID="tblCol_c2480a81b937470980b2e6a55fef03a5" />
+    <Link partId="47" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.7" toItemID="tbl_L_YP_ITEM" toColID="tblCol_021a42dcc0394137b37d670def245f0f" />
+    <Link partId="48" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.8" toItemID="tbl_L_YP_ITEM" toColID="tblCol_88c8a54c8eab4bdcb58b481d96204858" />
+    <Link partId="49" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.9" toItemID="tbl_L_YP_ITEM" toColID="tblCol_1516f6e186bb4c338284931cb529597f" />
+    <Link partId="50" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.10" toItemID="tbl_L_YP_ITEM" toColID="tblCol_daf47c4ce55a45e68a3445b06c39910d" />
+    <Link partId="51" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.11" toItemID="tbl_L_YP_ITEM" toColID="tblCol_9dc58b978ba045eea47c0f65bb45d15a" />
+    <Link partId="52" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.12" toItemID="tbl_L_YP_ITEM" toColID="tblCol_231ee9d87e59445abbe615b7329eb130" />
+    <Link partId="53" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.13" toItemID="tbl_L_YP_ITEM" toColID="tblCol_3efdb19f0dde4044a1ea0de2c3f2c2d2" />
+    <Link partId="54" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.14" toItemID="tbl_L_YP_ITEM" toColID="tblCol_6df473c1c8d740219f06313c22b1d0fc" />
+    <Link partId="55" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.15" toItemID="tbl_L_YP_ITEM" toColID="tblCol_7c3251aefd0a48eb82f004e5ffcc99d8" />
+    <Link partId="56" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.16" toItemID="tbl_L_YP_ITEM" toColID="tblCol_1f992c422e104b208556695e6f4d2072" />
+    <Link partId="57" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.17" toItemID="tbl_L_YP_ITEM" toColID="tblCol_1f5778e7d53143fbbf9a6a8caf842faf" />
+    <Link partId="73" fromNodeOrder="1" fromItemID="f_68" fromColID="fo_68.0" toItemID="tbl_L_YP_ITEM" toColID="tblCol_73e5e87492e74885a94de0714eaee3c9" />
+    <Link partId="74" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.10" toItemID="f_68" toColID="fi_68.0" />
+    <Link partId="86" fromNodeOrder="1" fromItemID="f_75" fromColID="fo_75.0" toItemID="tbl_L_YP_ITEM" toColID="tblCol_29d80bf3657b4a9b92a03dc0706a30d7" />
+    <Link partId="84" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.1" toItemID="f_75" toColID="fi_75.0" />
+    <Link partId="85" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.2" toItemID="f_75" toColID="fi_75.1" />
+    <Link partId="88" fromNodeOrder="1" fromItemID="f_75" fromColID="fo_75.1" toItemID="tbl_L_YP_ITEM" toColID="tblCol_8d33982ccd9545bc83c8180b671f2ff6" />
+    <Link partId="90" fromNodeOrder="1" fromItemID="f_75" fromColID="fo_75.2" toItemID="tbl_L_YP_ITEM" toColID="tblCol_a559ebc8a33640ad9ad7d06190a0339a" />
+    <Link partId="92" fromNodeOrder="1" fromItemID="f_75" fromColID="fo_75.4" toItemID="tbl_L_YP_ITEM" toColID="tblCol_41bfb34db81d44f39b33446306a1f836" />
+    <Link partId="104" fromNodeOrder="1" fromItemID="f_94" fromColID="fo_94.0" toItemID="tbl_L_YP_ITEM" toColID="tblCol_d1760c092cdc44af9330868e8337cd3a" />
+    <Link partId="101" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.0" toItemID="f_94" toColID="fi_94.0" />
+    <Link partId="102" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.1" toItemID="f_94" toColID="fi_94.1" />
+    <Link partId="103" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.2" toItemID="f_94" toColID="fi_94.2" />
+    <Link partId="168" fromNodeOrder="1" fromItemID="f_75" fromColID="fo_75.3" toItemID="tbl_L_YP_ITEM" toColID="tblCol_a073462413f341d781343ebf9a46c056" />
+    <Link partId="174" fromNodeOrder="1" fromItemID="f_75" fromColID="fo_75.5" toItemID="tbl_L_YP_ITEM" toColID="tblCol_9892c6c6d8914511b87d6b4c2edf00b7" />
+    <Link partId="175" fromNodeOrder="1" fromItemID="f_75" fromColID="fo_75.6" toItemID="tbl_L_YP_ITEM" toColID="tblCol_78b12f5e66b544de8222a909914fa495" />
+    <Link partId="179" fromNodeOrder="0" fromItemID="c.177" fromColID="c.177" toItemID="tbl_L_YP_ITEM" toColID="tblCol_2ef9e64c0f074a919c25bc0e9dceb27b" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

@@ -1,0 +1,14 @@
+﻿<Graph version="1.1.1.0" name="vdb.k2vdb.bin" lastPartID="1584">
+  <Node id="0" partID="351" name="ELI_COMP" isRootView="true" pos="60 52" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"ELI_COMP","TablePopulationPropertiesList":[{"ID":"query_ELI_COMP","Name":"query_ELI_COMP","Order":1}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="388" name="ELI_EMP" isRootView="false" pos="455 100" size="257 154" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"ELI_EMP","TablePopulationPropertiesList":[{"ID":"poplateFN","Name":"poplateFN","Order":3},{"ID":"query_ELI_EMP","Name":"query_ELI_EMP","Order":4}]}</TableProperties>
+  </Node>
+  <Node id="2" partID="1157" name="eli_ref" isRootView="false" pos="884 44" size="257 138.546844" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"eli_ref","TablePopulationPropertiesList":[{"ID":"eli_ref_pop","Name":"eli_ref_pop","Order":6}]}</TableProperties>
+  </Node>
+  <Link from="3" to="4" partID="488" linkType="Database" pointsArr="317 98.54557 327 98.54557 445 163.545578 455 163.545578" fromNodePartID="351" fromNodeColumnName="ID" toNodePartID="388" toNodeColumnName="in" toNodePopulationObjectName="poplateFN" />
+  <Link from="3" to="5" partID="946" linkType="Database" pointsArr="317 98.54557 327 98.54557 450 144.5 460 144.5" fromNodePartID="351" fromNodeColumnName="ID" toNodePartID="388" toNodeColumnName="COMP_ID" toNodePopulationObjectName="query_ELI_EMP" />
+  <Link from="6" to="7" partID="1178" linkType="Database" pointsArr="712 211.819 722 211.819 874 154.910141 884 154.910141" fromNodePartID="388" fromNodeColumnName="COMP_ID" toNodePartID="1157" toNodeColumnName="comp_id" toNodePopulationObjectName="eli_ref_pop" />
+</Graph>

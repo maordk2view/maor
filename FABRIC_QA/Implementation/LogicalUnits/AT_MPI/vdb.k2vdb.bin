@@ -1,0 +1,29 @@
+﻿<Graph version="1.8.0.8" name="vdb.k2vdb.bin" lastPartID="582">
+  <Node id="0" partID="0" name="PATIENT" isRootView="true" pos="11 413" size="257 138.546875" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"PATIENT","TablePopulationPropertiesList":[{"ID":"query_PATIENT","Name":"query_PATIENT","Order":1}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="21" name="VISIT" isRootView="false" pos="313 13" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"VISIT","TablePopulationPropertiesList":[{"ID":"query_VISIT","Name":"query_VISIT","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="2" partID="36" name="INVOICE" isRootView="false" pos="313 213" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"INVOICE","TablePopulationPropertiesList":[{"ID":"query_INVOICE","Name":"query_INVOICE","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="3" partID="51" name="PAYMENT" isRootView="false" pos="615 238" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"PAYMENT","TablePopulationPropertiesList":[{"ID":"query_PAYMENT","Name":"query_PAYMENT","Order":3}]}</TableProperties>
+  </Node>
+  <Node id="4" partID="64" name="INSURANCE_INFORMATION" isRootView="false" pos="313 413" size="257 138.546875" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"INSURANCE_INFORMATION","TablePopulationPropertiesList":[{"ID":"query_INSURANCE_INFORMATION","Name":"query_INSURANCE_INFORMATION","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="5" partID="81" name="FAMILY_HISTORY" isRootView="false" pos="313 613" size="257 138.546753" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"FAMILY_HISTORY","TablePopulationPropertiesList":[{"ID":"query_FAMILY_HISTORY","Name":"query_FAMILY_HISTORY","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="6" partID="110" name="ALLERGIES" isRootView="false" pos="313 813" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"ALLERGIES","TablePopulationPropertiesList":[{"ID":"query_ALLERGIES","Name":"query_ALLERGIES","Order":2}]}</TableProperties>
+  </Node>
+  <Link from="7" to="8" partID="121" linkType="Database" pointsArr="268 459.545563 278 459.545563 303 59.54557 313 59.54557" fromNodePartID="0" fromNodeColumnName="PATIENT_ID" toNodePartID="21" toNodeColumnName="PATIENT_ID" toNodePopulationObjectName="query_VISIT" />
+  <Link from="7" to="9" partID="122" linkType="Database" pointsArr="268 459.545563 278 459.545563 303 259.5456 313 259.5456" fromNodePartID="0" fromNodeColumnName="PATIENT_ID" toNodePartID="36" toNodeColumnName="PATIENT_ID" toNodePopulationObjectName="query_INVOICE" />
+  <Link from="7" to="10" partID="123" linkType="Database" pointsArr="268 459.545563 278 459.545563 303 459.545563 313 459.545563" fromNodePartID="0" fromNodeColumnName="PATIENT_ID" toNodePartID="64" toNodeColumnName="PATIENT_ID" toNodePopulationObjectName="query_INSURANCE_INFORMATION" />
+  <Link from="7" to="11" partID="124" linkType="Database" pointsArr="268 459.545563 278 459.545563 303 659.5456 313 659.5456" fromNodePartID="0" fromNodeColumnName="PATIENT_ID" toNodePartID="81" toNodeColumnName="PATIENT_ID" toNodePopulationObjectName="query_FAMILY_HISTORY" />
+  <Link from="7" to="12" partID="125" linkType="Database" pointsArr="268 459.545563 278 459.545563 303 859.5456 313 859.5456" fromNodePartID="0" fromNodeColumnName="PATIENT_ID" toNodePartID="110" toNodeColumnName="PATIENT_ID" toNodePopulationObjectName="query_ALLERGIES" />
+  <Link from="13" to="14" partID="126" linkType="Database" pointsArr="570 275.636719 580 275.636719 605 284.545563 615 284.545563" fromNodePartID="36" fromNodeColumnName="INVOICE_ID" toNodePartID="51" toNodeColumnName="INVOICE_ID" toNodePopulationObjectName="query_PAYMENT" />
+</Graph>

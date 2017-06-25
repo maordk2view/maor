@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>getYpItemRecords</PopulationObjectName>
+  <TableName>YP_ITEM_FUN</TableName>
+  <ID>getYpItemRecords</ID>
+  <RootItemID>f_3</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="CUSTOMER_ID" id="fi_3.0" dataType="Integer" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item id="f_3" name="getYpItemRecords" nodeOrder="0" module="Function" fileName="getYpItemRecords.k2function.xml">
+      <InputsList>
+        <Input id="fi_3.0" name="CUSTOMER_ID" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_3.0" name="PRODUCT_ISSUE_NUM" />
+        <Output id="fo_3.1" name="PRODUCT_CODE" />
+        <Output id="fo_3.2" name="ITEM_ID" />
+        <Output id="fo_3.3" name="ITEM_VERSION" />
+        <Output id="fo_3.4" name="LAST_VERSION_IND" />
+        <Output id="fo_3.5" name="HEADING_CODE" />
+        <Output id="fo_3.6" name="SUB_HEADING_CODE" />
+        <Output id="fo_3.7" name="UDAC_CODE" />
+        <Output id="fo_3.8" name="NEW_PRD" />
+        <Output id="fo_3.9" name="NEW_UDAC" />
+        <Output id="fo_3.10" name="HBD" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="25" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.0" toItemID="tbl_YP_ITEM_FUN" toColID="tblCol_75addf22af6b4e84be97a5b99ff44528" />
+    <Link partId="26" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.1" toItemID="tbl_YP_ITEM_FUN" toColID="tblCol_3662bab607374aae9861fe1f4b0df203" />
+    <Link partId="27" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.2" toItemID="tbl_YP_ITEM_FUN" toColID="tblCol_4673ce4d9f7f424395858725cb65cf57" />
+    <Link partId="28" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.3" toItemID="tbl_YP_ITEM_FUN" toColID="tblCol_0973dd202969473db30d305ba8f3805f" />
+    <Link partId="29" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.4" toItemID="tbl_YP_ITEM_FUN" toColID="tblCol_ebd5ab62f66c4c6ca80327abdf7a5f1e" />
+    <Link partId="30" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.5" toItemID="tbl_YP_ITEM_FUN" toColID="tblCol_f006fb42f1734ee08120ba92e204686e" />
+    <Link partId="31" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.6" toItemID="tbl_YP_ITEM_FUN" toColID="tblCol_f498a5ced04b4e8086f2ade61640a11e" />
+    <Link partId="32" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.7" toItemID="tbl_YP_ITEM_FUN" toColID="tblCol_18bda5625cdf4d14a4328d49d234ae83" />
+    <Link partId="33" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.8" toItemID="tbl_YP_ITEM_FUN" toColID="tblCol_a8ce8640cf0a4116a7e9cb2c4f5fb254" />
+    <Link partId="34" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.9" toItemID="tbl_YP_ITEM_FUN" toColID="tblCol_b7b1f7ccf9a540fd8a7df218116946b7" />
+    <Link partId="37" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.10" toItemID="tbl_YP_ITEM_FUN" toColID="tblCol_ab3446e9ed874b0298d0bb902488879a" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

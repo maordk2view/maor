@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ADDRESS_DATA</Name>
+  <ID>tbl_ADDRESS_DATA</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="ADDRESS_ID" id="tblCol_e0bd6ea81d1347be93390ab786fb73a7" index="0" datatype="Integer" mandatory="true" />
+    <Column name="SYS_CREATION_DATE" id="tblCol_35a343c212a34b499506221ad32c3099" index="1" datatype="Text" mandatory="true" />
+    <Column name="SYS_UPDATE_DATE" id="tblCol_d38b4869981a45c1a3b13fd0faa555c6" index="2" datatype="Text" />
+    <Column name="OPERATOR_ID" id="tblCol_fa4793d2377249d5ae27cde6cb30f854" index="3" datatype="Integer" />
+    <Column name="APPLICATION_ID" id="tblCol_09a215373e264a9782aabd6d22e316c0" index="4" datatype="Text" />
+    <Column name="DL_SERVICE_CODE" id="tblCol_485161ddff50458f8356448cc8d10030" index="5" datatype="Text" mandatory="true" />
+    <Column name="DL_UPDATE_STAMP" id="tblCol_ed632e808c6f47ae89ea3f1b5e1f7786" index="6" datatype="Integer" />
+    <Column name="ADR_TYPE" id="tblCol_2a3fa8726b714cfc9ab7603ce1c241f8" index="7" datatype="Text" mandatory="true" />
+    <Column name="ADR_STATUS" id="tblCol_3468931ff5994592ad460486782976f5" index="8" datatype="Text" />
+    <Column name="ADR_FIELDED_IND" id="tblCol_439fd36c05fc4bdb86cf49e7627e448d" index="9" datatype="Text" mandatory="true" />
+    <Column name="ADR_ATTENTION" id="tblCol_61fd0aa705654539aa2b44608fee25eb" index="10" datatype="Text" />
+    <Column name="ADR_SECONDARY_LN" id="tblCol_95fb66a57f1f4836937cc217d63a9c01" index="11" datatype="Text" />
+    <Column name="ADR_PRIMARY_LN" id="tblCol_f011cefb48fd46b4a23c206a1b9aca91" index="12" datatype="Text" />
+    <Column name="ADR_CITY" id="tblCol_91c1dc4071ee463ca88416adf82b51bf" index="13" datatype="Text" />
+    <Column name="ADR_STATE_CODE" id="tblCol_098a1a7e13dd42759aecf90af250dc82" index="14" datatype="Text" />
+    <Column name="ADR_ZIP" id="tblCol_811a3d37429c4c92961ebdd586cfc2c9" index="15" datatype="Text" />
+    <Column name="ADR_ZIP_4" id="tblCol_8ce210420a654764a8748220e7c68704" index="16" datatype="Text" />
+    <Column name="ADR_ZIP_GEO_CODE" id="tblCol_d4d14b71c17642baad49673af93d9055" index="17" datatype="Text" />
+    <Column name="ADR_CARRIER_CODE" id="tblCol_d21ab7bbd13240bba928433019886b4f" index="18" datatype="Text" />
+    <Column name="ADR_BARCODE_SUFFIX" id="tblCol_5b50bc83dd144fb7b942f6b9c4634fba" index="19" datatype="Text" />
+    <Column name="ADR_HOUSE_NO" id="tblCol_ba87caa9d95d442fab2f7d2bbd389c1b" index="20" datatype="Text" />
+    <Column name="ADR_ST_DIRECTION" id="tblCol_c6e872048b0c47de9d105b75c4dd6349" index="21" datatype="Text" />
+    <Column name="ADR_STREET_NAME" id="tblCol_551a56b8120144e7a007fe71a1da4c5b" index="22" datatype="Text" />
+    <Column name="ADR_STREET_SUFFIX" id="tblCol_f7441a14fb2c474bb2fb3134a33e196e" index="23" datatype="Text" />
+    <Column name="ADR_TRAILING_DIR" id="tblCol_ed2e2f6e648848f7b998dd104926977b" index="24" datatype="Text" />
+    <Column name="ADR_APT_DESIGNATOR" id="tblCol_3eea49ba695b46fba0ccc48191657443" index="25" datatype="Text" />
+    <Column name="ADR_APT_NM" id="tblCol_ff2240dcb4414ffba68df4f0ae44cdec" index="26" datatype="Text" />
+    <Column name="ADR_RR_HW_CNTR_NM" id="tblCol_03248fb2a36f4c35ab8d5ef16007042f" index="27" datatype="Text" />
+    <Column name="ADR_RR_HW_BOX_NM" id="tblCol_677019856b70481a8d287ee9d3eb40a9" index="28" datatype="Text" />
+    <Column name="ADR_POB" id="tblCol_bdc36d60ff1e4af5803233d7a85f77bb" index="29" datatype="Text" />
+    <Column name="ADR_COUNTRY" id="tblCol_3905dd18626544f3a3ac303e88cde410" index="30" datatype="Text" />
+    <Column name="ADR_COUNTY" id="tblCol_19840ab943384266beaed186f616b726" index="31" datatype="Text" />
+    <Column name="NUM_OF_BILL_COPIES" id="tblCol_405c657dbd7b435b94f65f8741b91c82" index="32" datatype="Integer" />
+    <Column name="CONV_RUN_NO" id="tblCol_29c9459931204075b8a40d64cd493001" index="33" datatype="Integer" />
+    <Column name="ADR_INCORP_IND" id="tblCol_f673166e033d4b85a311629adc35e6f4" index="34" datatype="Text" />
+    <Column name="ADR_TAX_CITY" id="tblCol_affcdcfd198e4056abab607427f8b3fa" index="35" datatype="Text" />
+    <Column name="FIPS_STATE" id="tblCol_9263580be276460cb936eda1d1512ad2" index="36" datatype="Text" />
+    <Column name="FIPS_COUNTY" id="tblCol_2febac103d994f38a2a1457ccc4c1038" index="37" datatype="Text" />
+    <Column name="FIPS_PLACECODE" id="tblCol_1a3dd7e95bfe4ab6b5138b20aa12d041" index="38" datatype="Text" />
+    <Column name="GEO_UPDATE_DATE" id="tblCol_c0c3404e95d34918ab5eb9507b5fb381" index="39" datatype="Text" />
+    <Column name="DETERMINATION_IND" id="tblCol_fbac74239bfe4d63809afa5bd274c266" index="40" datatype="Text" />
+    <Column name="LATITUDE" id="tblCol_87336e9a7ba14bf78fb7d9f1634ca76f" index="41" datatype="Text" />
+    <Column name="LONGTITUDE" id="tblCol_4ff81253882b4577aa9567033367b764" index="42" datatype="Text" />
+    <Column name="LAT_LON_LEVEL" id="tblCol_a6d18ea5d0b64da7867112179c48678b" index="43" datatype="Text" />
+    <Column name="GEOTAX_GRC" id="tblCol_3bc0aa584f7b424da063adf57d4945ce" index="44" datatype="Text" />
+    <Column name="GEOTAX_SRC" id="tblCol_34183c088fcb46e98ea78452ede288b6" index="45" datatype="Text" />
+    <Column name="URBANIZATION_CODE" id="tblCol_343a9260ee6d4c7c879a3a060ab0d018" index="46" datatype="Text" />
+    <Column name="ADDR_EFF_DATE" id="tblCol_253e61d9d43440ff97543c30b6db91b9" index="47" datatype="Text" />
+    <Column name="LACS_TP" id="tblCol_611292846f244ce19ae0567e24b9ee93" index="48" datatype="Text" />
+    <Column name="DPV_RC" id="tblCol_77f5a3e6e7d3496bb4dfa50dd9a83e0e" index="49" datatype="Text" />
+    <Column name="DPV_TP" id="tblCol_17d23502af1f4b6cad4b5e89cf03497c" index="50" datatype="Text" />
+    <Column name="DPVF_IND" id="tblCol_3d575e877dde45b281cf902f38b99d69" index="51" datatype="Text" />
+    <Column name="LACSLINK_IND" id="tblCol_a2463dc4e7434dfba004e064a1b920d5" index="52" datatype="Text" />
+    <Column name="LACSLINK_RC" id="tblCol_efbe4e4ff5f14a22a417bf6547a541c6" index="53" datatype="Text" />
+    <Column name="LACSLINK_DB_INFO" id="tblCol_17890bde5abd4f78ac4750f94473cb75" index="54" datatype="Text" />
+    <Column name="LACSLINK_VERSION" id="tblCol_22cbe84cf5cb453fa369cc776c960bf0" index="55" datatype="Text" />
+    <Column name="DPV_DB_VINTAGE" id="tblCol_38b4750463e1448da8e0476e0faf5b09" index="56" datatype="Text" />
+    <Column name="DPV_DBSFW" id="tblCol_b4268fb351754ab181e252c173a73adc" index="57" datatype="Text" />
+    <Column name="INTERNATIONAL_ZIP" id="tblCol_c1b63fbb81074fc8ad1d1718249f43b1" index="58" datatype="Text" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" unique="true" columnsIdsList="tblCol_e0bd6ea81d1347be93390ab786fb73a7" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

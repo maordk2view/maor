@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>YP_ITEM_NEW</Name>
+  <ID>tbl_YP_ITEM_NEW</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="CUSTOMER_ID" id="tblCol_dbbbe955c6eb45ea97e3d8188e90426b" index="0" datatype="Integer" />
+    <Column name="PRODUCT_CODE" id="tblCol_dba5c51552fb406bb90c27f7f70055bc" index="1" datatype="Text" />
+    <Column name="PRODUCT_ISSUE_NUM" id="tblCol_490f9de398664508b0333e5e32aa67b7" index="2" datatype="Integer" />
+    <Column name="ITEM_ID" id="tblCol_3830ac033e864c1189cd7a94ed7b95bc" index="3" datatype="Integer" />
+    <Column name="ITEM_VERSION" id="tblCol_148389fb5d1548439ab183c72b27d3dd" index="4" datatype="Integer" />
+    <Column name="UDAC_DESC" id="tblCol_40a2f21a59f144598e0ced568d71a4be" index="5" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

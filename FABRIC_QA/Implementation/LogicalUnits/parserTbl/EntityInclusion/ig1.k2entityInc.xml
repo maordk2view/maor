@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DbQueryItemOfDataTable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ig1</Name>
+  <DbConn>CASS_Local</DbConn>
+  <Sql>Select person_id From k2view_pars2."parserPerson" limit 4</Sql>
+  <IsSqlValid>false</IsSqlValid>
+</DbQueryItemOfDataTable>

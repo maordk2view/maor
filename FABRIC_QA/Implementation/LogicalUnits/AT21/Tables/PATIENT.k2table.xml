@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>PATIENT</Name>
+  <ID>tbl_PATIENT</ID>
+  <EntityId>tblCol_e12c65ac4e9c474886e9b5555d60063b</EntityId>
+  <LazyDataUpdate performEvery="00:00:30" />
+  <Columns>
+    <Column name="SSN" id="tblCol_672b38588fb84646a11d3de5af191c26" index="0" datatype="Text" />
+    <Column name="PATIENT_ID" id="tblCol_e12c65ac4e9c474886e9b5555d60063b" index="1" datatype="Text" mandatory="true" />
+    <Column name="FIRST_NAME" id="tblCol_642779e4116d4442819f47b4d1e3b161" index="2" datatype="Text" />
+    <Column name="LAST_NAME" id="tblCol_36469fd18bfd488fbd6e60f986699416" index="3" datatype="Text" />
+    <Column name="ADDRESS" id="tblCol_c96a64fbb1cd4352821f3340c1f78ac3" index="4" datatype="Text" />
+    <Column name="CITY" id="tblCol_909bb0794c0946c38662d57114116353" index="5" datatype="Text" />
+    <Column name="ZIP" id="tblCol_b412737ffd3e4eb897625057a5a78f2b" index="6" datatype="Text" />
+    <Column name="STATE" id="tblCol_45e16f5a3c0a4e6cbf5524d497151388" index="7" datatype="Text" />
+    <Column name="COUNTRY" id="tblCol_1ec228a525114d5e97781f88f0565405" index="8" datatype="Text" />
+    <Column name="currDate" id="tblCol_cc82d97d580942caa126f4f0f86b105e" index="9" datatype="text" />
+    <Column name="DATE1" id="tblCol_e738760a2fa048928668162bdf4360ae" index="10" datatype="Text" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_e12c65ac4e9c474886e9b5555d60063b" />
+    <Index id="2" columnsIdsList="tblCol_642779e4116d4442819f47b4d1e3b161" />
+    <Index id="3" columnsIdsList="tblCol_36469fd18bfd488fbd6e60f986699416" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

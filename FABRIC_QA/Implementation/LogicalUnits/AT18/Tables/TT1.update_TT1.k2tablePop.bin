@@ -1,0 +1,15 @@
+﻿<Graph name="TT1.update_TT1.k2tablePop.bin" lastPartID="17">
+  <TableNode partID="0" name="TT1" pos="404 30" width="309.3241" />
+  <FunctionMapNode id="0" L0="1" R0="2" partID="8" topLabel="getIdRoot (8)" pos="140 173" size="119.416351 45.09114" isRoot="true">
+    <KFunction>{"Name":"getIdRoot","ID":"f_8","Category":"JAVA","Version":"2.4.0.3","FunctionLevel":0,"FunctionType":0,"FunctionType2":1,"RegisterAsLuDbFunction":false,"SaveToDLUR":false,"ApiFunction":false,"DecisionFunction":false,"RequiresLuReference":false,"Desc":"","Auther":{"Name":"","ID":""},"Language":1,"FunctionBody":"Object [] obj = new Object[1];\nobj[0] = id;\nyield(obj);","IsSyntaxValid":true,"IsRootFunction":true,"inputParams":[{"Name":"id","ID":"fi_8.0","Index":0,"DataType":"String"}],"outputParams":[{"Name":"out","ID":"fo_8.0","Index":0,"DataType":"String"}]}</KFunction>
+  </FunctionMapNode>
+  <ConstantMapNode partID="12" topLabel="VAL" pos="258.8569 97" size="32.8305969 45.09114">
+    <KDataValue>{"ID":"c.12","DataValue":"22"}</KDataValue>
+  </ConstantMapNode>
+  <ConstantMapNode partID="14" topLabel="New name" pos="197.0541 47" size="65.4362 45.09114">
+    <KDataValue>{"ID":"c.14","DataValue":"MM"}</KDataValue>
+  </ConstantMapNode>
+  <Link partID="11" from="2" to="3" pointsArr="259.416351 198.091141 269.416351 198.091141 394 109.328117 404 109.328117" fromNodePartID="8" fromNodeColumnName="out" toNodePartID="0" toNodeColumnName="ID" />
+  <Link partID="16" from="4" to="5" pointsArr="291.6875 122.091141 301.6875 122.091141 394 73.109375 404 73.109375" fromNodePartID="12" fromNodeColumnName="22" toNodePartID="0" toNodeColumnName="VAL" />
+  <Link partID="17" from="6" to="7" pointsArr="247.687485 72.09115 257.6875 72.09115 394 61.0364571 404 61.0364571" fromNodePartID="14" fromNodeColumnName="MM" toNodePartID="0" toNodeColumnName="NAME" />
+</Graph>

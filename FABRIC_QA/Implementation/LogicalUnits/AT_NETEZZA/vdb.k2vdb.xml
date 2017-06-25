@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.8.0.10">
+  <Name>vdb</Name>
+  <RootView>CUSTOMER</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <EnableDataEncryption>false</EnableDataEncryption>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>CUSTOMER</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="CUSTOMER">
+      <Populations>
+        <Population id="query_CUSTOMER" name="query_CUSTOMER" order="1" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList />
+  <Relations />
+  <DatabaseRelations />
+</VirtualDB>

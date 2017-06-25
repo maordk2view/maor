@@ -1,0 +1,9 @@
+﻿<Graph version="1.2.5.0" name="vdb.k2vdb.bin" lastPartID="117">
+  <Node id="0" partID="59" name="roles" isRootView="true" pos="84 163" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"roles","TablePopulationPropertiesList":[{"ID":"query_k2auth_roles","Name":"query_k2auth_roles","Order":1}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="108" name="permissions" isRootView="false" pos="586 232" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"permissions","TablePopulationPropertiesList":[{"ID":"query_k2auth_permissions","Name":"query_k2auth_permissions","Order":2}]}</TableProperties>
+  </Node>
+  <Link from="2" to="3" partID="117" linkType="Database" pointsArr="341 225.636719 351 225.636719 576 310.727844 586 310.727844" fromNodePartID="59" fromNodeColumnName="name" toNodePartID="108" toNodeColumnName="role" toNodePopulationObjectName="query_k2auth_permissions" />
+</Graph>

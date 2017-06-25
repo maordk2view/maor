@@ -1,0 +1,9 @@
+﻿<Graph name="Production_ProductModelIllustration.query_Production_ProductModelIllustration.k2tablePop.bin" lastPartID="12">
+  <TableNode partID="0" name="Production_ProductModelIllustration" pos="360.302979 5.854168" width="309.3241" />
+  <DBQueryNode partID="6" name="SqlServer_AdvWorks" pos="9.99996948 1.890625" size="305.30304 96.21875" isRoot="true">
+    <DBQuery>{"Name":"query_Production_ProductModelIllustration","ID":"query_query_Production_ProductModelIllustration","ConnName":"SqlServer_AdvWorks","SQL":"select * from Production.ProductModelIllustration","ColumnsList":[{"ID":"queryCol_0","Name":"ProductModelID","DataType":"Integer","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"IllustrationID","DataType":"Integer","Index":1,"IsInputArgument":true},{"ID":"queryCol_2","Name":"ModifiedDate","DataType":"Text","Index":2,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="10" from="0" to="1" pointsArr="315.303 37.9270859 325.303 37.9270859 327.802979 25 347.802979 25 350.302979 36.890625 360.302979 36.890625" fromNodePartID="6" fromNodeColumnName="ProductModelID" toNodePartID="0" toNodeColumnName="ProductModelID" />
+  <Link partID="11" from="2" to="3" pointsArr="315.303 50 325.303 50 327.802979 50 347.802979 50 350.302979 48.9635429 360.302979 48.9635429" fromNodePartID="6" fromNodeColumnName="IllustrationID" toNodePartID="0" toNodeColumnName="IllustrationID" />
+  <Link partID="12" from="4" to="5" pointsArr="315.303 62.0729141 325.303 62.0729141 327.802979 75 347.802979 75 350.302979 61.0364571 360.302979 61.0364571" fromNodePartID="6" fromNodeColumnName="ModifiedDate" toNodePartID="0" toNodeColumnName="ModifiedDate" />
+</Graph>

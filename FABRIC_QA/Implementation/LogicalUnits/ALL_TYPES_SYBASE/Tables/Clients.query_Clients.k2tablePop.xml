@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_Clients</ID>
+  <PopulationObjectName>query_Clients</PopulationObjectName>
+  <TableName>Clients</TableName>
+  <RootItemID>query_query_Clients</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="Client_id" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="Reg_date" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="First_name" id="queryCol_2" dataType="Text" index="2" />
+    <Arg name="Last_name" id="queryCol_3" dataType="Text" index="3" />
+    <Arg name="int_code" id="queryCol_4" dataType="Integer" index="4" />
+    <Arg name="int_bit" id="queryCol_5" dataType="Integer" index="5" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_Clients" name="query_Clients" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="SybaseASE">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="Client_id" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="Reg_date" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="First_name" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="Last_name" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="int_code" dataType="Integer" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="int_bit" dataType="Integer" index="5" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM Clients]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="16" fromNodeOrder="0" fromItemID="query_query_Clients" fromColID="queryCol_0" toItemID="tbl_Clients" toColID="tblCol_3f251353919940ea977ce2af3307a2b6" />
+    <Link partId="17" fromNodeOrder="0" fromItemID="query_query_Clients" fromColID="queryCol_1" toItemID="tbl_Clients" toColID="tblCol_336a913fbc67405f90723a909510f5a7" />
+    <Link partId="18" fromNodeOrder="0" fromItemID="query_query_Clients" fromColID="queryCol_2" toItemID="tbl_Clients" toColID="tblCol_8c1c8fda05904fcc8573ce7fa6b4fd9a" />
+    <Link partId="19" fromNodeOrder="0" fromItemID="query_query_Clients" fromColID="queryCol_3" toItemID="tbl_Clients" toColID="tblCol_a6f7523c79bb46c5b260cb37bbaa3bc8" />
+    <Link partId="20" fromNodeOrder="0" fromItemID="query_query_Clients" fromColID="queryCol_4" toItemID="tbl_Clients" toColID="tblCol_9732d3f8d0a14b409844c6e83cb7565b" />
+    <Link partId="21" fromNodeOrder="0" fromItemID="query_query_Clients" fromColID="queryCol_5" toItemID="tbl_Clients" toColID="tblCol_726b8e1f878146ec9f973fa1bbd895e5" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

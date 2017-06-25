@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_HR_COUNTRIES</PopulationObjectName>
+  <TableName>HR_COUNTRIES</TableName>
+  <ID>query_HR_COUNTRIES</ID>
+  <RootItemID>query_query_HR_COUNTRIES</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="COUNTRY_ID" id="queryCol_0" dataType="Text" index="0" />
+    <Arg name="COUNTRY_NAME" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="REGION_ID" id="queryCol_2" dataType="Integer" index="2" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_HR_COUNTRIES" name="query_HR_COUNTRIES" nodeOrder="0" module="DBQuery" connName="CUSTOMER_TEST">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="COUNTRY_ID" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="COUNTRY_NAME" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="REGION_ID" dataType="Integer" index="2" />
+      </OutputsList>
+      <SQL><![CDATA[select * from HR.COUNTRIES]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="10" fromNodeOrder="0" fromItemID="query_query_HR_COUNTRIES" fromColID="queryCol_0" toItemID="tbl_HR_COUNTRIES" toColID="tblCol_5b5f5341a9d3407db671122195f515ef" />
+    <Link partId="11" fromNodeOrder="0" fromItemID="query_query_HR_COUNTRIES" fromColID="queryCol_1" toItemID="tbl_HR_COUNTRIES" toColID="tblCol_3be740942a2149bc93d693bcb7b6309a" />
+    <Link partId="12" fromNodeOrder="0" fromItemID="query_query_HR_COUNTRIES" fromColID="queryCol_2" toItemID="tbl_HR_COUNTRIES" toColID="tblCol_aff63f5e5ab841068e8c58c3bce2d6fe" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

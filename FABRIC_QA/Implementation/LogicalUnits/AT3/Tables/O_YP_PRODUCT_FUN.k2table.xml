@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>O_YP_PRODUCT_FUN</Name>
+  <ID>tbl_O_YP_PRODUCT_FUN</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="CUSTOMER_ID" id="tblCol_36b232e15b544b3f8a80156c3f2102d6" index="0" datatype="Long" />
+    <Column name="PRODUCT_CODE" id="tblCol_ab5174b50fdf49b8accdb7034ebd6feb" index="1" datatype="String" />
+    <Column name="PRODUCT_ISSUE_NUM" id="tblCol_505b006a3a9d4d13aad816d663d6f16c" index="2" datatype="Long" />
+    <Column name="PRODUCT_STATUS" id="tblCol_66dd0112bdca472a89b6674521da6ccc" index="3" datatype="Long" />
+    <Column name="RETIREMENT_STATUS" id="tblCol_49cb122fe6cb4b91898668e167750080" index="4" datatype="String" />
+    <Column name="ACTIVITY_TYPE" id="tblCol_2e41096e9c7a470f80a06b65fa551b5e" index="5" datatype="Long" />
+    <Column name="ACTIVITY_DATE" id="tblCol_1a1850642cd7427f963b801880b6f1e4" index="6" datatype="String" />
+    <Column name="NIR_PRODUCT_IND" id="tblCol_a3ea0f2f237e418e9a9c8bf100719414" index="7" datatype="String" />
+    <Column name="NISD_AMOUNT" id="tblCol_a1c60500235f4cbe8f2fcde94f692311" index="8" datatype="Double" />
+    <Column name="BOTS_AMOUNT" id="tblCol_73cd953dc678497a8793b9dad96ae05b" index="9" datatype="Double" />
+    <Column name="DISCOUNT_AMT" id="tblCol_599d48bb08ab4bf89ea9eeb390e71d9b" index="10" datatype="Double" />
+    <Column name="CONVERSION_IND" id="tblCol_11f82d2656f148c4b59eaafe5d533891" index="11" datatype="String" />
+    <Column name="S1" id="tblCol_6bb7d19ab20a496794500940755cdfdd" index="12" datatype="Text" />
+    <Column name="I1" id="tblCol_7ab7dd5818fb43369b615ee69c8d0d43" index="13" datatype="Integer" />
+    <Column name="R1" id="tblCol_b87b244591f547159f6a29065cebb455" index="14" datatype="Real" />
+    <Column name="S2" id="tblCol_93fb7cb82860430f92fd752710678d1d" index="15" datatype="Text" />
+    <Column name="G1" id="tblCol_dbbc7d9b33e147728547106b19fecfa9" index="16" datatype="Text" />
+    <Column name="G2" id="tblCol_e68f1f7c1e7b456ba40a4f6656b40103" index="17" datatype="Text" />
+    <Column name="C1" id="tblCol_635d1018a221482a852943870b3407c9" index="18" datatype="Text" />
+    <Column name="C2" id="tblCol_a310ed1faae14c05b6856da2426e1b14" index="19" datatype="Real" />
+    <Column name="D1" id="tblCol_57fb7c8fd82248b4a8e130b09ae04acd" index="20" datatype="Real" defaultValue="2.0" />
+    <Column name="D2" id="tblCol_93ac687e8b124679ba6953e0d20a2f3f" index="21" datatype="Integer" defaultValue="2" />
+    <Column name="D3" id="tblCol_3995a9fdfe864ce197cb1b760d888741" index="22" datatype="Text" />
+    <Column name="D4" id="tblCol_a5841ed61fa542219dff951879162f0c" index="23" datatype="Integer" />
+    <Column name="D5" id="tblCol_3dc3045452ae4a4bb34ff66da894ebb3" index="24" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

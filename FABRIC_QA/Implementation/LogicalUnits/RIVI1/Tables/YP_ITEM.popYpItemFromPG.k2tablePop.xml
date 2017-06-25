@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>popYpItemFromPG</ID>
+  <PopulationObjectName>popYpItemFromPG</PopulationObjectName>
+  <TableName>YP_ITEM</TableName>
+  <RootItemID>f_130</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="product_issue_num1" id="fi_130.0" dataType="Long" index="0" />
+    <Arg name="customer_id1" id="fi_130.1" dataType="Long" index="1" />
+    <Arg name="product_code1" id="fi_130.2" dataType="String" index="2" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="ConstantDataSave" id="c.301" nodeOrder="0" module="Constant">
+      <Value><![CDATA[4333]]></Value>
+    </Item>
+    <Item id="f_130" name="funRootYpItem" nodeOrder="0" module="Function" fileName="funRootYpItem.k2function.xml">
+      <InputsList>
+        <Input id="fi_130.0" name="product_issue_num1" defaultValue="2008" />
+        <Input id="fi_130.1" name="customer_id1" defaultValue="4333" />
+        <Input id="fi_130.2" name="product_code1" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_130.0" name="sub_heading_code" />
+        <Output id="fo_130.1" name="customer_id" />
+        <Output id="fo_130.2" name="product_code" />
+        <Output id="fo_130.3" name="product_issue_num" />
+        <Output id="fo_130.4" name="item_id" />
+        <Output id="fo_130.5" name="item_version" />
+        <Output id="fo_130.6" name="proposal_id" />
+        <Output id="fo_130.7" name="last_version_ind" />
+        <Output id="fo_130.8" name="section_code" />
+        <Output id="fo_130.9" name="heading_code" />
+      </OutputsList>
+    </Item>
+    <Item xsi:type="ConstantDataSave" id="c.306" nodeOrder="0" module="Constant">
+      <Value><![CDATA[PG_FUN]]></Value>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="305" fromNodeOrder="0" fromItemID="c.301" fromColID="c.301" toItemID="tbl_YP_ITEM" toColID="tblCol_e6dfb05074a44b72b78f0d5385a6534e" />
+    <Link partId="146" fromNodeOrder="0" fromItemID="f_130" fromColID="fo_130.2" toItemID="tbl_YP_ITEM" toColID="tblCol_ea74391a60e644dcadc5f55448a21c36" />
+    <Link partId="147" fromNodeOrder="0" fromItemID="f_130" fromColID="fo_130.3" toItemID="tbl_YP_ITEM" toColID="tblCol_055c4d5b68b545f2b2574c963e6fd515" />
+    <Link partId="148" fromNodeOrder="0" fromItemID="f_130" fromColID="fo_130.4" toItemID="tbl_YP_ITEM" toColID="tblCol_901d790b47614fcfb9bade613df7129c" />
+    <Link partId="149" fromNodeOrder="0" fromItemID="f_130" fromColID="fo_130.5" toItemID="tbl_YP_ITEM" toColID="tblCol_590b33844c214308a936139d1b12ddf3" />
+    <Link partId="150" fromNodeOrder="0" fromItemID="f_130" fromColID="fo_130.6" toItemID="tbl_YP_ITEM" toColID="tblCol_a1923a3f819944d4907fe5dbe58d14e1" />
+    <Link partId="151" fromNodeOrder="0" fromItemID="f_130" fromColID="fo_130.7" toItemID="tbl_YP_ITEM" toColID="tblCol_8cdab3cab4f24810be3a154eed8e37af" />
+    <Link partId="152" fromNodeOrder="0" fromItemID="f_130" fromColID="fo_130.8" toItemID="tbl_YP_ITEM" toColID="tblCol_75534d326892426a89f5418d98168a97" />
+    <Link partId="153" fromNodeOrder="0" fromItemID="f_130" fromColID="fo_130.9" toItemID="tbl_YP_ITEM" toColID="tblCol_4c40ea8b958545189efa506f53f8cb8c" />
+    <Link partId="144" fromNodeOrder="0" fromItemID="f_130" fromColID="fo_130.0" toItemID="tbl_YP_ITEM" toColID="tblCol_b0a352bff0cd4ba9a3a128642de2029b" />
+    <Link partId="308" fromNodeOrder="0" fromItemID="c.306" fromColID="c.306" toItemID="tbl_YP_ITEM" toColID="tblCol_7459832087964f198a15b09995310ebe" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

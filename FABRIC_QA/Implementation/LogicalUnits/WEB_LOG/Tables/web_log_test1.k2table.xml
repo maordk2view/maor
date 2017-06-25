@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>web_log_test1</Name>
+  <ID>tbl_web_log_test1</ID>
+  <EntityId />
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="person_id" id="tblCol_1c0f3b01100846cbb1455a7f9751387b" index="0" datatype="Text" />
+    <Column name="path" id="tblCol_53a5c0ef5b334eaf9d3e3239daa5beb6" index="1" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

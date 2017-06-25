@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_dbo_YP_ADDRESS</PopulationObjectName>
+  <TableName>S_N_YP_ADDRESS</TableName>
+  <ID>query_dbo_YP_ADDRESS</ID>
+  <RootItemID>query_9</RootItemID>
+  <Mode>Upsert</Mode>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="CUSTOMER_ID" id="query_9.0" dataType="Integer" index="0" />
+    <Arg name="STREET" id="query_9.1" dataType="Text" index="1" />
+    <Arg name="CITY" id="query_9.2" dataType="Text" index="2" />
+    <Arg name="STATE" id="query_9.3" dataType="Text" index="3" />
+    <Arg name="COUNTRY" id="query_9.4" dataType="Text" index="4" />
+    <Arg name="ZIP_CODE" id="query_9.5" dataType="Text" index="5" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_9" name="query_dbo_YP_ADDRESS" nodeOrder="0" module="DBQuery" connName="SQLSERVER_SOURCE">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_9.0" name="CUSTOMER_ID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_9.1" name="STREET" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_9.2" name="CITY" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_9.3" name="STATE" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_9.4" name="COUNTRY" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_9.5" name="ZIP_CODE" dataType="Text" index="5" />
+      </OutputsList>
+      <SQL><![CDATA[select * from dbo.YP_ADDRESS]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="16" fromNodeOrder="0" fromItemID="query_9" fromColID="query_9.0" toItemID="tbl_S_N_YP_ADDRESS" toColID="tblCol_7bfee6aa71474a029c70fa1f5e67a6fe" />
+    <Link partId="17" fromNodeOrder="0" fromItemID="query_9" fromColID="query_9.1" toItemID="tbl_S_N_YP_ADDRESS" toColID="tblCol_d48f28a51a3d477fb8a064b8303a9a56" />
+    <Link partId="18" fromNodeOrder="0" fromItemID="query_9" fromColID="query_9.2" toItemID="tbl_S_N_YP_ADDRESS" toColID="tblCol_6349a17cc04747648263975302a02227" />
+    <Link partId="19" fromNodeOrder="0" fromItemID="query_9" fromColID="query_9.3" toItemID="tbl_S_N_YP_ADDRESS" toColID="tblCol_ded3f287711d4b6d806590c948890c0f" />
+    <Link partId="20" fromNodeOrder="0" fromItemID="query_9" fromColID="query_9.4" toItemID="tbl_S_N_YP_ADDRESS" toColID="tblCol_906fa6008ca844bc83912955a90a4147" />
+    <Link partId="21" fromNodeOrder="0" fromItemID="query_9" fromColID="query_9.5" toItemID="tbl_S_N_YP_ADDRESS" toColID="tblCol_e8df531ea7f742adaf09369600f5f5f5" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

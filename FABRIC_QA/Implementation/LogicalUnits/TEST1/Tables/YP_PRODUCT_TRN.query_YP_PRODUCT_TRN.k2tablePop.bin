@@ -1,0 +1,8 @@
+﻿<Graph name="YP_PRODUCT_TRN.query_YP_PRODUCT_TRN.k2tablePop.bin" lastPartID="9">
+  <TableNode partID="0" name="YP_PRODUCT_TRN" pos="308 11.8906288" width="309.324158" />
+  <DBQueryNode partID="5" name="ORA_SOURCE" pos="10 7.927086" size="253 84.14583" isRoot="true">
+    <DBQuery>{"Name":"query_YP_PRODUCT_TRN","ID":"query_5","ConnName":"ORA_SOURCE","SQL":"select * from YP_PRODUCT_TRN","ColumnsList":[{"ID":"query_5.0","Name":"OLD_PRODUCT_CODE","DataType":"Text","Index":0,"IsInputArgument":true},{"ID":"query_5.1","Name":"NEW_PRODUCT_CODE","DataType":"Text","Index":1,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="8" from="0" to="1" pointsArr="263 43.9635429 273 43.9635429 275.5 25 295.5 25 298 42.9270859 308 42.9270859" fromNodePartID="5" fromNodeColumnName="OLD_PRODUCT_CODE" toNodePartID="0" toNodeColumnName="OLD_PRODUCT_CODE" />
+  <Link partID="9" from="2" to="3" pointsArr="263 56.03646 273 56.03646 275.5 50 295.5 50 298 55.0000038 308 55.0000038" fromNodePartID="5" fromNodeColumnName="NEW_PRODUCT_CODE" toNodePartID="0" toNodeColumnName="NEW_PRODUCT_CODE" />
+</Graph>

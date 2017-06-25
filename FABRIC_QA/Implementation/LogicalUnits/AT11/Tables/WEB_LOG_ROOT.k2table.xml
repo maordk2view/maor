@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>WEB_LOG_ROOT</Name>
+  <ID>tbl_WEB_LOG_ROOT</ID>
+  <EntityId>tblCol_249a7fe8132d47ca9095d72a6dc1d8f7</EntityId>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="ID" id="tblCol_249a7fe8132d47ca9095d72a6dc1d8f7" index="0" datatype="Text" mandatory="true" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

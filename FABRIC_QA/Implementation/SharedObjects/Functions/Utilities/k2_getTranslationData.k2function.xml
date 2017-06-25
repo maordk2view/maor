@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>k2_getTranslationData</Name>
+  <ID>Utilities.k2_getTranslationData</ID>
+  <Category>Utilities</Category>
+  <FunctionLevel>Product</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc>Get the entire translation array (including the inputs)</Desc>
+  <Auther name="" id="" />
+  <Language>PHP</Language>
+  <FunctionBody>return getTranslationData($translationName);</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <InputParams>
+    <Input name="translationName" id="fi.Utilities.k2_getTranslationData.0" index="0" dataType="text">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="translationData" id="fo.Utilities.k2_getTranslationData.0" index="0" dataType="object">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

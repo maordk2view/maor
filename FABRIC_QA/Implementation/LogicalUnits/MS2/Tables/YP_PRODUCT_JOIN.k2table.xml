@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>YP_PRODUCT_JOIN</Name>
+  <ID>tbl_YP_PRODUCT_JOIN</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="customer_id" id="tblCol_f18ee1d2bd24423297af4b7be31abf5d" index="0" datatype="Real" />
+    <Column name="product_code" id="tblCol_e712cd2d261c48ed8d66c595293468b5" index="1" datatype="Text" />
+    <Column name="product_issue_num" id="tblCol_ac780d176da24b33a5b37f4f9b2f0743" index="2" datatype="Real" />
+    <Column name="product_status" id="tblCol_97bbf4e0e3bc408d8dcb07de51832e60" index="3" datatype="Real" />
+    <Column name="retirement_status" id="tblCol_02bb2fcc420442e499c76d7aa6e9f9a2" index="4" datatype="Text" />
+    <Column name="new_product_code" id="tblCol_47412344ba43411d8e46ae0846a11934" index="5" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

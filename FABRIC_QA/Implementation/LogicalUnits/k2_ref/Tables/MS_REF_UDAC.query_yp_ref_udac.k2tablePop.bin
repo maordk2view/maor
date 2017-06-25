@@ -1,0 +1,11 @@
+﻿<Graph name="MS_REF_UDAC.query_yp_ref_udac.k2tablePop.bin" lastPartID="18">
+  <TableNode partID="0" name="MS_REF_UDAC" pos="401 30" width="313" />
+  <DBQueryNode partID="3" name="MYSQL_SOURCE" pos="125 179" size="253 120.364563" isRoot="true">
+    <DBQuery>{"Name":"query_yp_ref_udac","ID":"query_3","ConnName":"MYSQL_SOURCE","SQL":"select * from yp_ref_udac","ColumnsList":[{"ID":"query_3.0","Name":"UDAC_CODE","DataType":"Text","Index":0,"IsInputArgument":true},{"ID":"query_3.1","Name":"UDAC_VERSION","DataType":"Integer","Index":1,"IsInputArgument":true},{"ID":"query_3.2","Name":"LAST_VERSION_IND","DataType":"Text","Index":2,"IsInputArgument":true},{"ID":"query_3.3","Name":"TYPE","DataType":"Text","Index":3,"IsInputArgument":true},{"ID":"query_3.4","Name":"UDAC_DESC","DataType":"Text","Index":4,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="14" from="0" to="1" pointsArr="378 215.036453 388 215.036453 391 61.0364571 401 61.0364571" fromNodePartID="3" fromNodeColumnName="UDAC_CODE" toNodePartID="0" toNodeColumnName="UDAC_CODE" />
+  <Link partID="15" from="2" to="3" pointsArr="378 227.109375 388 227.109375 391 73.109375 401 73.109375" fromNodePartID="3" fromNodeColumnName="UDAC_VERSION" toNodePartID="0" toNodeColumnName="UDAC_VERSION" />
+  <Link partID="16" from="4" to="5" pointsArr="378 239.182281 388 239.182281 391 85.18229 401 85.18229" fromNodePartID="3" fromNodeColumnName="LAST_VERSION_IND" toNodePartID="0" toNodeColumnName="LAST_VERSION_IND" />
+  <Link partID="17" from="6" to="7" pointsArr="378 251.2552 388 251.2552 391 97.2552 401 97.2552" fromNodePartID="3" fromNodeColumnName="TYPE" toNodePartID="0" toNodeColumnName="TYPE" />
+  <Link partID="18" from="8" to="9" pointsArr="378 263.328125 388 263.328125 391 109.328117 401 109.328117" fromNodePartID="3" fromNodeColumnName="UDAC_DESC" toNodePartID="0" toNodeColumnName="UDAC_DESC" />
+</Graph>

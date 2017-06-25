@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>popCtnAccountBalance</ID>
+  <PopulationObjectName>popCtnAccountBalance</PopulationObjectName>
+  <TableName>ctnAccountBalance</TableName>
+  <RootItemID>f_5</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="accountNumber" id="fi_5.0" dataType="String" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item id="f_5" name="populateAccountBalance" nodeOrder="0" module="Function" mapObjectModule="Function" fileName="populateAccountBalance.k2function.xml">
+      <InputsList>
+        <Input id="fi_5.0" name="accountNumber" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_5.0" name="accountNumber" />
+        <Output id="fo_5.1" name="accountBalance" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="46" fromNodeOrder="0" fromItemID="f_5" fromColID="fo_5.0" toItemID="tbl_ctnAccountBalance" toColID="tblCol_05bc7344f6ae4a4db316f0d493f091a9" />
+    <Link partId="47" fromNodeOrder="0" fromItemID="f_5" fromColID="fo_5.1" toItemID="tbl_ctnAccountBalance" toColID="tblCol_592a23d7b3344f03afbe6f6052148b29" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

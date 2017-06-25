@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ALLERGIES</Name>
+  <ID>tbl_ALLERGIES</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="PATIENT_ID" id="tblCol_d160bcce96bb4aa9addec4f39b130cf3" index="0" datatype="Text" mandatory="true" />
+    <Column name="ALERGY_ID" id="tblCol_052f9549a64e4da48dcff099fd135274" index="1" datatype="Text" mandatory="true" />
+    <Column name="MEDICATION_ALLERGY" id="tblCol_233a49b9d26045e7b2ebd665cd94737d" index="2" datatype="Text" />
+    <Column name="DISCOVERED_DATE" id="tblCol_208603a373c64aa2b5ce16394ae2ad8a" index="3" datatype="Text" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" columnsIdsList="tblCol_052f9549a64e4da48dcff099fd135274" />
+    <Index id="2" columnsIdsList="tblCol_233a49b9d26045e7b2ebd665cd94737d" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

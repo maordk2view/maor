@@ -1,0 +1,7 @@
+﻿<Graph name="invoice.popInvPars.k2tablePop.bin" lastPartID="235">
+  <TableNode partID="0" name="invoice" pos="700.731262 151" width="310.593262" />
+  <ParserRecordTypeTargetNode partID="8" name="invParser" pos="257 154" size="309.3241 86.21875" parserName="parsMapInv" isTargetNode="false" isRoot="true" deleteRecordsAfterSync="false" />
+  <Link partID="188" from="0" to="1" pointsArr="566.3241 185.036453 576.3241 185.036453 690.731262 182.036453 700.731262 182.036453" fromNodePartID="8" fromNodeColumnName="invoiceID" toNodePartID="0" toNodeColumnName="invoiceID" />
+  <Link partID="189" from="2" to="3" pointsArr="566.3241 197.109375 576.3241 197.109375 690.731262 194.109375 700.731262 194.109375" fromNodePartID="8" fromNodeColumnName="patientID" toNodePartID="0" toNodeColumnName="patientID" />
+  <Link partID="191" from="4" to="5" pointsArr="566.3241 209.182281 576.3241 209.182281 690.731262 206.182281 700.731262 206.182281" fromNodePartID="8" fromNodeColumnName="status" toNodePartID="0" toNodeColumnName="status" />
+</Graph>

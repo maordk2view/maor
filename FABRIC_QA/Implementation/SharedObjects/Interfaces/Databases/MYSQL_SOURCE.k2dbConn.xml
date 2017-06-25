@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBConn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="DBConnMySql" name="MYSQL_SOURCE" type="MySQL" version="2.1.7.0">
+  <Active>true</Active>
+  <DataSource>10.21.1.171</DataSource>
+  <PortNum>3306</PortNum>
+  <DataBase>yp_cust</DataBase>
+  <UserId>admin</UserId>
+  <Password>KQE3e/BRBVWrscqR/r1TUalPH0C3kkysjdNWofZaghg=:vyeQEr1A/drNqB1uVpOvOQKYQndv6EZaeDTy63CUGHc=</Password>
+  <MaxConnectionsNumber>120</MaxConnectionsNumber>
+  <ConnectionStringClient>Provider=MySQL;server='10.21.1.171';user='admin';database='yp_cust';password='[PASSWORD]';port=3306;</ConnectionStringClient>
+  <ConnectionStringServerSide>jdbc:mysql://10.21.1.171:3306/yp_cust?retainStatementAfterResultSetClose=true&amp;autoReconnect=true</ConnectionStringServerSide>
+  <CommandList />
+</DBConn>

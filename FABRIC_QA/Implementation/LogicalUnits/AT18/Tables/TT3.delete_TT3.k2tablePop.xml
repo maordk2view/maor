@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>delete_TT3</ID>
+  <PopulationObjectName>delete_TT3</PopulationObjectName>
+  <TableName>TT3</TableName>
+  <RootItemID>f_8</RootItemID>
+  <Mode>Delete</Mode>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="id" id="fi_8.0" dataType="String" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="ConstantDataSave" id="c.12" nodeOrder="0" module="Constant" mapObjectModule="Constant">
+      <Value><![CDATA[22]]></Value>
+    </Item>
+    <Item xsi:type="ConstantDataSave" id="c.14" nodeOrder="0" module="Constant" mapObjectModule="Constant">
+      <Value><![CDATA[1]]></Value>
+    </Item>
+    <Item id="f_8" name="getIdRoot" nodeOrder="0" module="Function" mapObjectModule="Function" fileName="getIdRoot.k2function.xml">
+      <InputsList>
+        <Input id="fi_8.0" name="id" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_8.0" name="out" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="17" fromNodeOrder="0" fromItemID="c.12" fromColID="c.12" toItemID="tbl_TT3" toColID="tblCol_502b1dc94fa240e385f4492b43b47749" />
+    <Link partId="16" fromNodeOrder="0" fromItemID="c.14" fromColID="c.14" toItemID="tbl_TT3" toColID="tblCol_e5f9a931788b4a4b9cef4ed5189ba32b" />
+    <Link partId="11" fromNodeOrder="0" fromItemID="f_8" fromColID="fo_8.0" toItemID="tbl_TT3" toColID="tblCol_946d46ad5ae34834acabc8f193908d8d" />
+  </LinksList>
+  <ModeKeyColumnIDs>tblCol_502b1dc94fa240e385f4492b43b47749,tblCol_e5f9a931788b4a4b9cef4ed5189ba32b</ModeKeyColumnIDs>
+</TablePopulationObject>

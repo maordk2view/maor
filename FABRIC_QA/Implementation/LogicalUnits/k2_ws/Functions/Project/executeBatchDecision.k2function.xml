@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>executeBatchDecision</Name>
+  <ID>Project.executeBatchDecision</ID>
+  <Category>Project</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>WebService</FunctionType>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>
+for (int i = Integer.valueOf(minPolicyID); i &lt;= Integer.valueOf(maxPolicyID); i++)
+{
+
+DBExecute("fabric","get Policy:" + i,null);
+
+
+
+ResultSetWrapper rs = DBQuery("fabric","SELECT policy_id, decision_datetime, result, conclusion, informational_message FROM policy_renewal_result",null);
+
+// Loop over table rows and for each row, change its valuse and update remote
+for(Object [] row : rs) {
+	Object [] sapiensDecisionResults = new Object[row.length];	
+	// Manipulate columns
+	String policy_id              = (String)row[0];
+	String decision_datetime      = (String)row[1];
+	String result                 = (String)row[2];
+	String conclusion      	   = (String)row[3];
+	String informational_message  = (String)row[4];
+	
+	sapiensDecisionResults[0] = policy_id;
+	sapiensDecisionResults[1] = decision_datetime;
+	sapiensDecisionResults[2] = result;
+	sapiensDecisionResults[3] = conclusion;
+	sapiensDecisionResults[4] = informational_message;
+	
+	// Update remote DB
+	DBExecute("PolicyDB", "insert into decision_input.POLICY_RENEWAL_RESULTS (policy_id,decision_datetime,result,conclusion,informational_message) values(?,?,?,?,?);",sapiensDecisionResults);
+}
+}
+
+return "Batch executed from Policy ID " + minPolicyID + " to " + maxPolicyID;</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="minPolicyID" id="fi.Project.executeBatchDecision.0" index="0" dataType="String">
+      <Comment />
+    </Input>
+    <Input name="maxPolicyID" id="fi.Project.executeBatchDecision.1" index="1" dataType="String">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="results" id="fo.Project.executeBatchDecision.0" index="0" dataType="Object">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

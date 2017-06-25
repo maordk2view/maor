@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_YP_PRODUCT_TRN</PopulationObjectName>
+  <TableName>REF_YP_PRODUCT_TRN</TableName>
+  <ID>query_YP_PRODUCT_TRN</ID>
+  <RootItemID>query_5</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="OLD_PRODUCT_CODE" id="query_5.0" dataType="Text" index="0" />
+    <Arg name="NEW_PRODUCT_CODE" id="query_5.1" dataType="Text" index="1" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_5" name="query_YP_PRODUCT_TRN" nodeOrder="0" module="DBQuery" connName="YP_TEST">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_5.0" name="OLD_PRODUCT_CODE" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_5.1" name="NEW_PRODUCT_CODE" dataType="Text" index="1" />
+      </OutputsList>
+      <SQL><![CDATA[Select *
+From YP_PRODUCT_TRN]]></SQL>
+    </Item>
+    <Item id="g.16" name="SYSTEM" nodeOrder="0" module="Global">
+      <InputsList />
+      <OutputsList />
+    </Item>
+    <Item id="g.21" name="CONV_NO" nodeOrder="0" module="Global">
+      <InputsList />
+      <OutputsList />
+    </Item>
+    <Item id="f_49" name="concat" nodeOrder="0" module="Function" fileName="concat.k2function.xml">
+      <InputsList>
+        <Input id="fi_49.0" name="str1" defaultValue="A" />
+        <Input id="fi_49.1" name="str2" defaultValue="C" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_49.0" name="str_out" />
+      </OutputsList>
+    </Item>
+    <Item id="f_53" name="concat_shared" nodeOrder="0" module="Function" fileName="concat_shared.k2function.xml">
+      <InputsList>
+        <Input id="fi_53.0" name="i_str" defaultValue="A" />
+        <Input id="fi_53.1" name="i_con_str" defaultValue="B" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_53.0" name="o_str" />
+      </OutputsList>
+    </Item>
+    <Item xsi:type="DBLookupDataSave" id="dbLookup.24" name="YP_PRODUCT_TRN" nodeOrder="1" module="Lookup" itemType="DB_Object" lookupNotFound="Reject_Record" connName="YP_TEST" owner="SOURCE03">
+      <InputsList>
+        <Input xsi:type="LookupDataSaveColumnInput" id="dbLookup.24.in.OLD_PRODUCT_CODE" name="OLD_PRODUCT_CODE" columnID="YP_TEST.YP_PRODUCT_TRN.OLD_PRODUCT_CODE" />
+      </InputsList>
+      <OutputsList>
+        <Output xsi:type="LookupDataSaveColumn" id="dbLookup.24.out.NEW_PRODUCT_CODE" name="NEW_PRODUCT_CODE" columnID="YP_TEST.YP_PRODUCT_TRN.NEW_PRODUCT_CODE" />
+      </OutputsList>
+    </Item>
+    <Item id="f_43" name="trnProduct" nodeOrder="1" module="Translation" fileName="trnProduct.k2trans.xml">
+      <InputsList>
+        <Input id="fi_43.0" name="OLD" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_43.0" name="NEW" />
+      </OutputsList>
+    </Item>
+    <Item id="f_32" name="k2_concat5" nodeOrder="2" module="Function" fileName="k2_concat5.k2function.xml">
+      <InputsList>
+        <Input id="fi_32.0" name="i_str1" defaultValue="DB_LOOKUP_" />
+        <Input id="fi_32.1" name="i_str2" />
+        <Input id="fi_32.2" name="i_str3" />
+        <Input id="fi_32.3" name="i_str4" />
+        <Input id="fi_32.4" name="i_str5" />
+        <Input id="fi_32.5" name="i_delimiter" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_32.0" name="o_str1" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="8" fromNodeOrder="0" fromItemID="query_5" fromColID="query_5.0" toItemID="tbl_REF_YP_PRODUCT_TRN" toColID="tblCol_7b7b376bf7914cbe89b93d5edf83f03f" />
+    <Link partId="9" fromNodeOrder="0" fromItemID="query_5" fromColID="query_5.1" toItemID="tbl_REF_YP_PRODUCT_TRN" toColID="tblCol_32c5d99e1a02476bbdd0aafc2691723f" />
+    <Link partId="19" fromNodeOrder="0" fromItemID="g.16" fromColID="g.16" toItemID="tbl_REF_YP_PRODUCT_TRN" toColID="tblCol_3e8ee90212644d538fbdef754c81e2a6" />
+    <Link partId="23" fromNodeOrder="0" fromItemID="g.21" fromColID="g.21" toItemID="tbl_REF_YP_PRODUCT_TRN" toColID="tblCol_6fca364e0a074cb8b3bffa548bec39c2" />
+    <Link partId="298" fromNodeOrder="2" fromItemID="f_32" fromColID="fo_32.0" toItemID="tbl_REF_YP_PRODUCT_TRN" toColID="tblCol_2f903f9a018140f193bb199205081fc2" />
+    <Link partId="40" fromNodeOrder="1" fromItemID="dbLookup.24" fromColID="dbLookup.24.out.NEW_PRODUCT_CODE" toItemID="f_32" toColID="fi_32.1" />
+    <Link partId="30" fromNodeOrder="0" fromItemID="query_5" fromColID="query_5.0" toItemID="dbLookup.24" toColID="dbLookup.24.in.OLD_PRODUCT_CODE" />
+    <Link partId="46" fromNodeOrder="1" fromItemID="f_43" fromColID="fo_43.0" toItemID="tbl_REF_YP_PRODUCT_TRN" toColID="tblCol_917eba4a00244caf850fb99c9fb29cb8" />
+    <Link partId="47" fromNodeOrder="0" fromItemID="query_5" fromColID="query_5.0" toItemID="f_43" toColID="fi_43.0" />
+    <Link partId="57" fromNodeOrder="0" fromItemID="f_49" fromColID="fo_49.0" toItemID="tbl_REF_YP_PRODUCT_TRN" toColID="tblCol_db7808a4bf2146998ba23e164a61c3c8" />
+    <Link partId="59" fromNodeOrder="0" fromItemID="f_53" fromColID="fo_53.0" toItemID="tbl_REF_YP_PRODUCT_TRN" toColID="tblCol_cf2705fcdccf4f3eb23a5890a29db644" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

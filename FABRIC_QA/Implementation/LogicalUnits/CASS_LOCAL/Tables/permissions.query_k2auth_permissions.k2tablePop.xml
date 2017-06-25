@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_k2auth_permissions</ID>
+  <PopulationObjectName>query_k2auth_permissions</PopulationObjectName>
+  <TableName>permissions</TableName>
+  <RootItemID>query_query_k2auth_permissions</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="method" id="queryCol_0" dataType="Text" index="0" />
+    <Arg name="permissions" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="role" id="queryCol_2" dataType="Text" index="2" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_k2auth_permissions" name="query_k2auth_permissions" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="CASS_Local">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="method" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="permissions" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="role" dataType="Text" index="2" />
+      </OutputsList>
+      <SQL><![CDATA[select * from k2auth.permissions]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="10" fromNodeOrder="0" fromItemID="query_query_k2auth_permissions" fromColID="queryCol_0" toItemID="tbl_permissions" toColID="tblCol_981a1297dbe34c0d93d7c14f563af3df" />
+    <Link partId="11" fromNodeOrder="0" fromItemID="query_query_k2auth_permissions" fromColID="queryCol_1" toItemID="tbl_permissions" toColID="tblCol_c34d6644e51d49da9252974e8f9d0370" />
+    <Link partId="12" fromNodeOrder="0" fromItemID="query_query_k2auth_permissions" fromColID="queryCol_2" toItemID="tbl_permissions" toColID="tblCol_8cd804f13cd440d2b10a8d7822f9d746" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

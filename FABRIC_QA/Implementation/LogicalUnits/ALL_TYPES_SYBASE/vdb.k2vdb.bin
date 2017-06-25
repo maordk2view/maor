@@ -1,0 +1,13 @@
+﻿<Graph version="1.8.0.10" name="vdb.k2vdb.bin" lastPartID="258">
+  <Node id="0" partID="0" name="Datatypes" isRootView="true" pos="11 13" size="257 138.546844" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"Datatypes","TablePopulationPropertiesList":[{"ID":"query_Datatypes","Name":"query_Datatypes","Order":1}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="57" name="Clients" isRootView="false" pos="412 47" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"Clients","TablePopulationPropertiesList":[{"ID":"query_Clients","Name":"query_Clients","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="2" partID="72" name="Clients_Media" isRootView="false" pos="660 445" size="257 138.54686" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"Clients_Media","TablePopulationPropertiesList":[{"ID":"query_Clients_Media","Name":"query_Clients_Media","Order":3}]}</TableProperties>
+  </Node>
+  <Link from="3" to="4" partID="89" linkType="Database" pointsArr="268 59.54557 278 59.54557 402 93.54558 412 93.54558" fromNodePartID="0" fromNodeColumnName="int_param" toNodePartID="57" toNodeColumnName="Client_id" toNodePopulationObjectName="query_Clients" />
+  <Link from="5" to="6" partID="90" linkType="Database" pointsArr="669 157.910156 679 157.910156 650 491.545563 660 491.545563" fromNodePartID="57" fromNodeColumnName="int_code" toNodePartID="72" toNodeColumnName="Media_id" toNodePopulationObjectName="query_Clients_Media" />
+</Graph>

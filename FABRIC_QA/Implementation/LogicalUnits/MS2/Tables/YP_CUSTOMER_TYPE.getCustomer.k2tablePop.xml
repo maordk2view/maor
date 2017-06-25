@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>getCustomer</PopulationObjectName>
+  <TableName>YP_CUSTOMER_TYPE</TableName>
+  <ID>getCustomer</ID>
+  <RootItemID>f_3</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="CUSTOMER_ID" id="fi_3.0" dataType="Long" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item id="f_3" name="getCustomer" nodeOrder="0" module="Function" fileName="getCustomer.k2function.xml">
+      <InputsList>
+        <Input id="fi_3.0" name="CUSTOMER_ID" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_3.0" name="CUSTOMER_ID" />
+        <Output id="fo_3.1" name="CUSTOMER_TYPE" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="9" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.0" toItemID="tbl_YP_CUSTOMER_TYPE" toColID="tblCol_ca6f3e6883d1416ead64554941953642" />
+    <Link partId="10" fromNodeOrder="0" fromItemID="f_3" fromColID="fo_3.1" toItemID="tbl_YP_CUSTOMER_TYPE" toColID="tblCol_480a4bf6f1da417fa1d300d1216d774b" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

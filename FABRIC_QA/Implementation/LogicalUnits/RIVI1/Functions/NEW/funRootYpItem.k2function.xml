@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>funRootYpItem</Name>
+  <ID>NEW.funRootYpItem</ID>
+  <Category>NEW</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>RegularFunction</FunctionType>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String sql = "SELECT sub_heading_code, customer_id, product_code, product_issue_num, item_id, item_version, proposal_id, last_version_ind, section_code, heading_code FROM yp_cust.yp_item WHERE CUSTOMER_ID = ? and  product_issue_num = ?";
+Object[] valuesArr = {customer_id1,2008};
+
+
+ResultSetWrapper rs = DBQuery("PG_SOURCE", sql, valuesArr);
+
+for(Object[] row : rs) {
+    yield(row);
+}
+
+rs.closeStmt();
+</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>true</IsRootFunction>
+  <InputParams>
+    <Input name="product_issue_num1" id="fi.NEW.funRootYpItem.0" index="0" dataType="Long">
+      <Comment />
+    </Input>
+    <Input name="customer_id1" id="fi.NEW.funRootYpItem.1" index="1" dataType="Long">
+      <Comment />
+    </Input>
+    <Input name="product_code1" id="fi.NEW.funRootYpItem.2" index="2" dataType="String">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="sub_heading_code" id="fo.NEW.funRootYpItem.0" index="0" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="customer_id" id="fo.NEW.funRootYpItem.1" index="1" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="product_code" id="fo.NEW.funRootYpItem.2" index="2" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="product_issue_num" id="fo.NEW.funRootYpItem.3" index="3" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="item_id" id="fo.NEW.funRootYpItem.4" index="4" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="item_version" id="fo.NEW.funRootYpItem.5" index="5" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="proposal_id" id="fo.NEW.funRootYpItem.6" index="6" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="last_version_ind" id="fo.NEW.funRootYpItem.7" index="7" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="section_code" id="fo.NEW.funRootYpItem.8" index="8" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="heading_code" id="fo.NEW.funRootYpItem.9" index="9" dataType="Long">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

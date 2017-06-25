@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_k2auth_roles</ID>
+  <PopulationObjectName>query_k2auth_roles</PopulationObjectName>
+  <TableName>roles</TableName>
+  <RootItemID>query_query_k2auth_roles</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="name" id="queryCol_1" dataType="Text" index="1" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_k2auth_roles" name="query_k2auth_roles" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="CASS_Local">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="description" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="name" dataType="Text" index="1" />
+      </OutputsList>
+      <SQL><![CDATA[select * from k2auth.roles]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="8" fromNodeOrder="0" fromItemID="query_query_k2auth_roles" fromColID="queryCol_0" toItemID="tbl_roles" toColID="tblCol_a60e1582253c425dafa02669c613e089" />
+    <Link partId="9" fromNodeOrder="0" fromItemID="query_query_k2auth_roles" fromColID="queryCol_1" toItemID="tbl_roles" toColID="tblCol_8bf03df9f1f041bea1bcad268ff0d2d3" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

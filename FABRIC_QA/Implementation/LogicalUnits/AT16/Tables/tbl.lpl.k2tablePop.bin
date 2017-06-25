@@ -1,0 +1,8 @@
+﻿<Graph name="tbl.lpl.k2tablePop.bin" lastPartID="15">
+  <TableNode partID="0" name="tbl" pos="404 30" width="309.3241" />
+  <DBQueryNode partID="5" name="CASS_Local" pos="50 37" size="253 84.14583" isRoot="true">
+    <DBQuery>{"Name":"query_tests_root","ID":"query_query_tests_root","ConnName":"CASS_Local","SQL":"select * from tests.root","ColumnsList":[{"ID":"queryCol_0","Name":"end","DataType":"Text","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"start","DataType":"Text","Index":1,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="8" from="0" to="1" pointsArr="303 73.03645 313 73.03645 394 73.109375 404 73.109375" fromNodePartID="5" fromNodeColumnName="end" toNodePartID="0" toNodeColumnName="end" />
+  <Link partID="9" from="2" to="3" pointsArr="303 85.109375 313 85.109375 394 61.0364571 404 61.0364571" fromNodePartID="5" fromNodeColumnName="start" toNodePartID="0" toNodeColumnName="start" />
+</Graph>

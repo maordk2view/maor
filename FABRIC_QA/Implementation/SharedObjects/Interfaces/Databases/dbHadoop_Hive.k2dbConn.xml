@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBConn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="DBConnHadoopHive" name="dbHadoop_Hive" type="Hadoop_Hive" version="1.7.0.3">
+  <Active>true</Active>
+  <DataSource>10.21.1.55</DataSource>
+  <PortNum>10000</PortNum>
+  <ConnectionStringClient>Driver={Hortonworks Hive ODBC Driver};HOST=10.21.1.55;PORT=10000;UserName='';PWD='[PASSWORD]';AuthMech=2;HiveServerType=2;</ConnectionStringClient>
+  <ConnectionStringServerSide>jdbc:hive2://10.21.1.55:10000/</ConnectionStringServerSide>
+  <CommandList />
+</DBConn>

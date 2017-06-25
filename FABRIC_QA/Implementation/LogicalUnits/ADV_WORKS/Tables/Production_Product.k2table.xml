@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Production_Product</Name>
+  <ID>tbl_Production_Product</ID>
+  <EntityId>tblCol_a395af3c56a94f42945746a7069c4680</EntityId>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="ProductID" id="tblCol_a395af3c56a94f42945746a7069c4680" index="0" datatype="Integer" mandatory="true" />
+    <Column name="Name" id="tblCol_e6eea30838fd4e0d86d59e4952e71cd1" index="1" datatype="Text" mandatory="true" />
+    <Column name="ProductNumber" id="tblCol_2ee1577d040c4c129dc179b493b5f810" index="2" datatype="Text" mandatory="true" />
+    <Column name="MakeFlag" id="tblCol_26634d601388456ebfba55fe692543e7" index="3" datatype="Integer" mandatory="true" />
+    <Column name="FinishedGoodsFlag" id="tblCol_cb4e52b86f0145d8817dffccd1e30623" index="4" datatype="Integer" mandatory="true" />
+    <Column name="Color" id="tblCol_95ae2b05449540f7a4169ce1d2088391" index="5" datatype="Text" />
+    <Column name="SafetyStockLevel" id="tblCol_8bfac42fb3824c77a27bfd728d608db8" index="6" datatype="Integer" mandatory="true" />
+    <Column name="ReorderPoint" id="tblCol_0715d43ba4224fbcb4066ffc7ec0b31a" index="7" datatype="Integer" mandatory="true" />
+    <Column name="StandardCost" id="tblCol_810d14fd454d4b07816979c41010ae2c" index="8" datatype="Real" mandatory="true" />
+    <Column name="ListPrice" id="tblCol_4ff40e03f64545d19f7a8bf9485b50fd" index="9" datatype="Real" mandatory="true" />
+    <Column name="Size" id="tblCol_23099762bdc8447093a384bf802b6255" index="10" datatype="Text" />
+    <Column name="SizeUnitMeasureCode" id="tblCol_c9dcd4e1f2ef4118bf4a303633f7b648" index="11" datatype="Text" />
+    <Column name="WeightUnitMeasureCode" id="tblCol_19a84ce89d154d4e8b0f8dbba2feade8" index="12" datatype="Text" />
+    <Column name="Weight" id="tblCol_38f62706529c44ef93b1d4d471a996eb" index="13" datatype="Real" />
+    <Column name="DaysToManufacture" id="tblCol_9e9e168c120a43db9b67d76570b7f3b4" index="14" datatype="Integer" mandatory="true" />
+    <Column name="ProductLine" id="tblCol_64a00438a73d4f6dbc0ea5cbdb4f7d54" index="15" datatype="Text" />
+    <Column name="Class" id="tblCol_a1da7c0148d7438b8754c80704431a45" index="16" datatype="Text" />
+    <Column name="Style" id="tblCol_6d633184cdcd4e259a68f315b4339353" index="17" datatype="Text" />
+    <Column name="ProductSubcategoryID" id="tblCol_bd7b31998420461ba27368f78635c56a" index="18" datatype="Integer" />
+    <Column name="ProductModelID" id="tblCol_94a41b53082c4ba89ccb6fe60cba1804" index="19" datatype="Integer" />
+    <Column name="SellStartDate" id="tblCol_fdf9af8698304608bb0e7ffaff7ff7ad" index="20" datatype="Text" mandatory="true" />
+    <Column name="SellEndDate" id="tblCol_dc31b75bd2c0479fb4db94977464228e" index="21" datatype="Text" />
+    <Column name="DiscontinuedDate" id="tblCol_39d7bf6dc4704f23addb19fc5a6daa0e" index="22" datatype="Text" />
+    <Column name="rowguid" id="tblCol_9e07354f1cef4371a267089508f36b22" index="23" datatype="Text" mandatory="true" />
+    <Column name="ModifiedDate" id="tblCol_650386594e794fab881360070560a9d2" index="24" datatype="Text" mandatory="true" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_a395af3c56a94f42945746a7069c4680" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Images</Name>
+  <ID>Images</ID>
+  <Version>2.1.0.4</Version>
+  <EntityId>tblCol_e74506f8607f4ce18cabb97815929414</EntityId>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <SerializationName />
+  <Columns>
+    <Column name="ProductPhotoID" id="tblCol_e74506f8607f4ce18cabb97815929414" index="0" datatype="Integer" mandatory="true" serializationName="ProductPhotoID" />
+    <Column name="ThumbNailPhoto" id="tblCol_3a5f99301f7c4b6e84c1f4ef39285ddb" index="1" datatype="BLOB" serializationName="ThumbNailPhoto" />
+    <Column name="ThumbnailPhotoFileName" id="tblCol_6dc5f3050ff140fd85a79bb36e0dae8a" index="2" datatype="Text" serializationName="ThumbnailPhotoFileName" />
+    <Column name="LargePhoto" id="tblCol_f956b62291244e2db76d23dd1b351ed0" index="3" datatype="BLOB" serializationName="LargePhoto" />
+    <Column name="LargePhotoFileName" id="tblCol_dc11f9f67e4746ee89ba4f21f1aa68dd" index="4" datatype="Text" serializationName="LargePhotoFileName" />
+    <Column name="ModifiedDate" id="tblCol_5f0e7479d4034e108cf7a4c8f359226f" index="5" datatype="Text" mandatory="true" serializationName="ModifiedDate" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

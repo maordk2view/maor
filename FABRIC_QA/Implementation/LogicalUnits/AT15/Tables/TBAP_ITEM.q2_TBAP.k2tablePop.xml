@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>q2_TBAP</ID>
+  <PopulationObjectName>q2_TBAP</PopulationObjectName>
+  <TableName>TBAP_ITEM</TableName>
+  <RootItemID>query_query_TBAP_ITEM</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="AP_VERSION_ID" id="queryCol_3" dataType="Text" index="3" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_TBAP_ITEM" name="query_TBAP_ITEM" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="PBG">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="AP_VERSION_ID" dataType="Text" index="3" />
+      </OutputsList>
+      <SQL><![CDATA[select * from TBAP_ITEM]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="85" fromNodeOrder="0" fromItemID="query_query_TBAP_ITEM" fromColID="queryCol_3" toItemID="tbl_TBAP_ITEM" toColID="tblCol_0aa7a92190704f9ab8f055b073dec172" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

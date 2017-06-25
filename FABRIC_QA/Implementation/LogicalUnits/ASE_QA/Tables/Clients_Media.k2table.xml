@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Clients_Media</Name>
+  <ID>tbl_Clients_Media</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="Media_id" id="tblCol_aaac9e1b4d50496eb2273d547452216b" index="0" datatype="Integer" mandatory="true" />
+    <Column name="phone" id="tblCol_cd56ab3bcce14b97b084307c92512e80" index="1" datatype="Text" mandatory="true" />
+    <Column name="mobile" id="tblCol_ab5b509479a042eb8f0134d8affc5a72" index="2" datatype="Text" mandatory="true" />
+    <Column name="office" id="tblCol_9e4332fe92f8433b9c9b994604747579" index="3" datatype="Text" mandatory="true" />
+    <Column name="office2" id="tblCol_9bb38196c1d84950b413b454d1ae9751" index="4" datatype="Text" mandatory="true" />
+    <Column name="updated_on" id="tblCol_22d65594bbdb4671b1858dabcf3bb784" index="5" datatype="Text" mandatory="true" />
+    <Column name="Client_id" id="tblCol_cc1c0d65b55846cabd25f06522a3742a" index="6" datatype="Integer" mandatory="true" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

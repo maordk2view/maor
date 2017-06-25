@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>users</Name>
+  <ID>tbl_users</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="user_name" id="tblCol_85e1b5af8f384aee972e58198318f2d7" index="0" datatype="text" />
+    <Column name="birth_year" id="tblCol_384420278a56408eaa7833874c6dbb10" index="1" datatype="Integer" />
+    <Column name="gender" id="tblCol_ef476d56b66e43a19c490147f3db523c" index="2" datatype="Text" />
+    <Column name="password" id="tblCol_d7dc5469c2624e02902bde4a624fb3cc" index="3" datatype="Text" />
+    <Column name="session_token" id="tblCol_0004e573099a4b27b528ef67d81ce51b" index="4" datatype="Text" />
+    <Column name="state" id="tblCol_863db81d2a2a4e81bbf2cda0304799af" index="5" datatype="Text" />
+    <Column name="user_code" id="tblCol_ecf5b40febd741b0a1dd001e0a3d7dfd" index="6" datatype="integer" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

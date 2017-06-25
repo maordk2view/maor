@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="3.0.3.0">
+  <Name>vdb</Name>
+  <RootView>Film</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <EnableDataEncryption>false</EnableDataEncryption>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>Film</Table>
+    <Table>FilmCategory</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="Film">
+      <Populations>
+        <Population id="query_Cinema_Film" name="query_Cinema_Film" order="1" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="FilmCategory">
+      <Populations>
+        <Population id="query_Cinema_FilmCategory" name="query_Cinema_FilmCategory" order="2" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="false" name="FUN_REF_UDAC" />
+    <Item active="false" name="MS_REF_UDAC" />
+    <Item active="false" name="REF_SERVICE_AGREEMENT" />
+    <Item active="false" name="REF_YP_PRODUCT_TRN" />
+    <Item active="false" name="test_YP_REF_UDAC" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="109">
+      <From tableType="TableObject" table="Film" column="Category" columnId="tblCol_f820d241ed674b838c3aebf133a9ba46" />
+      <To tableType="TableObject" table="FilmCategory" populationObjectName="query_Cinema_FilmCategory" column="ID" columnId="queryCol_0" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

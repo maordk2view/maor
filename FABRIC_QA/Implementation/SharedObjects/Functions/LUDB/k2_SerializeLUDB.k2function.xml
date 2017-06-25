@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>k2_SerializeLUDB</Name>
+  <ID>LUDB.k2_SerializeLUDB</ID>
+  <Category>LUDB</Category>
+  <FunctionLevel>Product</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc>a function to return the LUDB in XML format</Desc>
+  <Auther name="" id="" />
+  <Language>PHP</Language>
+  <FunctionBody>return serializeLUDB($startingObject, 'xml', $removeEmptyTags, $prefixStr, $suffixStr);</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <InputParams>
+    <Input name="startingObject" id="fi.LUDB.k2_SerializeLUDB.0" index="0" dataType="text">
+      <Comment>LUDB Object to start serialization from</Comment>
+    </Input>
+    <Input name="removeEmptyTags" id="fi.LUDB.k2_SerializeLUDB.1" index="1" dataType="integer">
+      <Comment>true/false</Comment>
+    </Input>
+    <Input name="prefixStr" id="fi.LUDB.k2_SerializeLUDB.2" index="2" dataType="text">
+      <Comment />
+    </Input>
+    <Input name="suffixStr" id="fi.LUDB.k2_SerializeLUDB.3" index="3" dataType="text">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="xmlString" id="fo.LUDB.k2_SerializeLUDB.0" index="0" dataType="text">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

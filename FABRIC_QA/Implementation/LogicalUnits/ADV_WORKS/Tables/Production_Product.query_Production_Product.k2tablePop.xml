@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_Production_Product</ID>
+  <PopulationObjectName>query_Production_Product</PopulationObjectName>
+  <TableName>Production_Product</TableName>
+  <RootItemID>query_query_Production_Product</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="ProductID" id="queryCol_0" dataType="Integer" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_Production_Product" name="query_Production_Product" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="SqlServer_AdvWorks">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="ProductID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="Name" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="ProductNumber" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="MakeFlag" dataType="Integer" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="FinishedGoodsFlag" dataType="Integer" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="Color" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_6" name="SafetyStockLevel" dataType="Integer" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_7" name="ReorderPoint" dataType="Integer" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_8" name="StandardCost" dataType="Real" index="8" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_9" name="ListPrice" dataType="Real" index="9" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_10" name="Size" dataType="Text" index="10" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_11" name="SizeUnitMeasureCode" dataType="Text" index="11" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_12" name="WeightUnitMeasureCode" dataType="Text" index="12" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_13" name="Weight" dataType="Real" index="13" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_14" name="DaysToManufacture" dataType="Integer" index="14" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_15" name="ProductLine" dataType="Text" index="15" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_16" name="Class" dataType="Text" index="16" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_17" name="Style" dataType="Text" index="17" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_18" name="ProductSubcategoryID" dataType="Integer" index="18" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_19" name="ProductModelID" dataType="Integer" index="19" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_20" name="SellStartDate" dataType="Text" index="20" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_21" name="SellEndDate" dataType="Text" index="21" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_22" name="DiscontinuedDate" dataType="Text" index="22" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_23" name="rowguid" dataType="Text" index="23" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_24" name="ModifiedDate" dataType="Text" index="24" />
+      </OutputsList>
+      <SQL><![CDATA[select * from Production.Product]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="54" fromNodeOrder="0" fromItemID="query_query_Production_Product" fromColID="queryCol_0" toItemID="tbl_Production_Product" toColID="tblCol_a395af3c56a94f42945746a7069c4680" />
+    <Link partId="55" fromNodeOrder="0" fromItemID="query_query_Production_Product" fromColID="queryCol_1" toItemID="tbl_Production_Product" toColID="tblCol_e6eea30838fd4e0d86d59e4952e71cd1" />
+    <Link partId="56" fromNodeOrder="0" fromItemID="query_query_Production_Product" fromColID="queryCol_2" toItemID="tbl_Production_Product" toColID="tblCol_2ee1577d040c4c129dc179b493b5f810" />
+    <Link partId="57" fromNodeOrder="0" fromItemID="query_query_Production_Product" fromColID="queryCol_3" toItemID="tbl_Production_Product" toColID="tblCol_26634d601388456ebfba55fe692543e7" />
+    <Link partId="58" fromNodeOrder="0" fromItemID="query_query_Production_Product" fromColID="queryCol_4" toItemID="tbl_Production_Product" toColID="tblCol_cb4e52b86f0145d8817dffccd1e30623" />
+    <Link partId="59" fromNodeOrder="0" fromItemID="query_query_Production_Product" fromColID="queryCol_5" toItemID="tbl_Production_Product" toColID="tblCol_95ae2b05449540f7a4169ce1d2088391" />
+    <Link partId="60" fromNodeOrder="0" fromItemID="query_query_Production_Product" fromColID="queryCol_6" toItemID="tbl_Production_Product" toColID="tblCol_8bfac42fb3824c77a27bfd728d608db8" />
+    <Link partId="61" fromNodeOrder="0" fromItemID="query_query_Production_Product" fromColID="queryCol_7" toItemID="tbl_Production_Product" toColID="tblCol_0715d43ba4224fbcb4066ffc7ec0b31a" />
+    <Link partId="62" fromNodeOrder="0" fromItemID="query_query_Production_Product" fromColID="queryCol_8" toItemID="tbl_Production_Product" toColID="tblCol_810d14fd454d4b07816979c41010ae2c" />
+    <Link partId="63" fromNodeOrder="0" fromItemID="query_query_Production_Product" fromColID="queryCol_9" toItemID="tbl_Production_Product" toColID="tblCol_4ff40e03f64545d19f7a8bf9485b50fd" />
+    <Link partId="64" fromNodeOrder="0" fromItemID="query_query_Production_Product" fromColID="queryCol_10" toItemID="tbl_Production_Product" toColID="tblCol_23099762bdc8447093a384bf802b6255" />
+    <Link partId="65" fromNodeOrder="0" fromItemID="query_query_Production_Product" fromColID="queryCol_11" toItemID="tbl_Production_Product" toColID="tblCol_c9dcd4e1f2ef4118bf4a303633f7b648" />
+    <Link partId="66" fromNodeOrder="0" fromItemID="query_query_Production_Product" fromColID="queryCol_12" toItemID="tbl_Production_Product" toColID="tblCol_19a84ce89d154d4e8b0f8dbba2feade8" />
+    <Link partId="67" fromNodeOrder="0" fromItemID="query_query_Production_Product" fromColID="queryCol_13" toItemID="tbl_Production_Product" toColID="tblCol_38f62706529c44ef93b1d4d471a996eb" />
+    <Link partId="68" fromNodeOrder="0" fromItemID="query_query_Production_Product" fromColID="queryCol_14" toItemID="tbl_Production_Product" toColID="tblCol_9e9e168c120a43db9b67d76570b7f3b4" />
+    <Link partId="69" fromNodeOrder="0" fromItemID="query_query_Production_Product" fromColID="queryCol_15" toItemID="tbl_Production_Product" toColID="tblCol_64a00438a73d4f6dbc0ea5cbdb4f7d54" />
+    <Link partId="70" fromNodeOrder="0" fromItemID="query_query_Production_Product" fromColID="queryCol_16" toItemID="tbl_Production_Product" toColID="tblCol_a1da7c0148d7438b8754c80704431a45" />
+    <Link partId="71" fromNodeOrder="0" fromItemID="query_query_Production_Product" fromColID="queryCol_17" toItemID="tbl_Production_Product" toColID="tblCol_6d633184cdcd4e259a68f315b4339353" />
+    <Link partId="72" fromNodeOrder="0" fromItemID="query_query_Production_Product" fromColID="queryCol_18" toItemID="tbl_Production_Product" toColID="tblCol_bd7b31998420461ba27368f78635c56a" />
+    <Link partId="73" fromNodeOrder="0" fromItemID="query_query_Production_Product" fromColID="queryCol_19" toItemID="tbl_Production_Product" toColID="tblCol_94a41b53082c4ba89ccb6fe60cba1804" />
+    <Link partId="74" fromNodeOrder="0" fromItemID="query_query_Production_Product" fromColID="queryCol_20" toItemID="tbl_Production_Product" toColID="tblCol_fdf9af8698304608bb0e7ffaff7ff7ad" />
+    <Link partId="75" fromNodeOrder="0" fromItemID="query_query_Production_Product" fromColID="queryCol_21" toItemID="tbl_Production_Product" toColID="tblCol_dc31b75bd2c0479fb4db94977464228e" />
+    <Link partId="76" fromNodeOrder="0" fromItemID="query_query_Production_Product" fromColID="queryCol_22" toItemID="tbl_Production_Product" toColID="tblCol_39d7bf6dc4704f23addb19fc5a6daa0e" />
+    <Link partId="77" fromNodeOrder="0" fromItemID="query_query_Production_Product" fromColID="queryCol_23" toItemID="tbl_Production_Product" toColID="tblCol_9e07354f1cef4371a267089508f36b22" />
+    <Link partId="78" fromNodeOrder="0" fromItemID="query_query_Production_Product" fromColID="queryCol_24" toItemID="tbl_Production_Product" toColID="tblCol_650386594e794fab881360070560a9d2" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

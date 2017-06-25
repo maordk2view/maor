@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBConn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SQLSERVER_SOURCE" type="SqlServer" version="2.4.4.1">
+  <Active>true</Active>
+  <DataSource>10.21.1.171</DataSource>
+  <PortNum>49623</PortNum>
+  <DataBase>k2vtest</DataBase>
+  <UserId>sa</UserId>
+  <Password>0CMkiS80hF4y6xclAA73XpfZdj36VSX/zPDhdAZ/QUk=:TJ5VQ9NlAKukN1XT3+OHKqF2bUHEX+EmhKITUIPrxcc=</Password>
+</DBConn>

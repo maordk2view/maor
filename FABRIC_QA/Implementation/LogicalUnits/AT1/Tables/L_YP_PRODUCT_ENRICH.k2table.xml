@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>L_YP_PRODUCT_ENRICH</Name>
+  <ID>tbl_L_YP_PRODUCT_ENRICH</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="CUSTOMER_ID" id="tblCol_b3b8cb0d77cc4da688bef94d1df7e993" index="0" datatype="Text" />
+    <Column name="PRODUCT_CODE" id="tblCol_047ade67caeb4a04b3e53c603f9202f5" index="1" datatype="Text" />
+    <Column name="PRODUCT_ISSUE_NUM" id="tblCol_ae508c75f6f44bc886d06e4bc131478b" index="2" datatype="Text" />
+    <Column name="PRODUCT_STATUS" id="tblCol_fc4570091f48465fb14c5232f51a85eb" index="3" datatype="Text" />
+    <Column name="RETIREMENT_STATUS" id="tblCol_59daf3bcc97a4620b697747970c836da" index="4" datatype="Text" />
+    <Column name="ACTIVITY_TYPE" id="tblCol_cc06aa261462401fa039fd78b4240821" index="5" datatype="Text" />
+    <Column name="ACTIVITY_DATE" id="tblCol_2d1f226a806b442e8ead20267cc5dfbd" index="6" datatype="Text" />
+    <Column name="NIR_PRODUCT_IND" id="tblCol_525f5b8ef67e42b3b87271d00d333e5b" index="7" datatype="Text" />
+    <Column name="NISD_AMOUNT" id="tblCol_349207baa255429284aaff82818d747b" index="8" datatype="Real" />
+    <Column name="SEQ" id="tblCol_f9b36422ef544fb88cc83c53f1d6d1fc" index="9" datatype="Integer" />
+    <Column name="ENRICH_CNT" id="tblCol_2170d01fb4744062ac15728dc95032d2" index="10" datatype="Integer" defaultValue="100" columnType="ComputedField" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList>
+    <Enrichment>
+      <Name>testEnrichProd1</Name>
+      <Type>Function</Type>
+      <TableName>L_YP_PRODUCT_ENRICH</TableName>
+    </Enrichment>
+    <Enrichment>
+      <Name>testEnrichProd2</Name>
+      <Type>Function</Type>
+      <TableName>L_YP_PRODUCT_ENRICH</TableName>
+    </Enrichment>
+    <Enrichment>
+      <Name>testEnrichProd4</Name>
+      <Type>Function</Type>
+      <TableName>L_YP_PRODUCT_ENRICH</TableName>
+    </Enrichment>
+  </EnrichmentList>
+</TableObject>

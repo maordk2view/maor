@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>vcProductPop</PopulationObjectName>
+  <TableName>VC_YP_PRODUCT</TableName>
+  <ID>vcProductPop</ID>
+  <RootItemID>query_query_YP_PRODUCT</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="CUSTOMER_ID" id="queryCol_0" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_YP_PRODUCT" name="query_YP_PRODUCT" nodeOrder="0" module="DBQuery" connName="ludb">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="CUSTOMER_ID" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="PRODUCT_CODE" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="PRODUCT_ISSUE_NUM" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="SOURCE" index="3" />
+      </OutputsList>
+      <SQL><![CDATA[Select CUSTOMER_ID,
+  PRODUCT_CODE,
+  PRODUCT_ISSUE_NUM,
+  'ORA' As SOURCE
+From YP_PRODUCT
+Union
+Select R4.DBO_YP_PRODUCT.CUSTOMER_ID,
+  R4.DBO_YP_PRODUCT.PRODUCT_CODE,
+  R4.DBO_YP_PRODUCT.PRODUCT_ISSUE_NUM,
+  'SQL_SERVER' As SOURCE
+From R4.DBO_YP_PRODUCT]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="140" fromNodeOrder="0" fromItemID="query_query_YP_PRODUCT" fromColID="queryCol_0" toItemID="tbl_VC_YP_PRODUCT" toColID="tblCol_bb30470a8e2046f6a559dec7370b3277" />
+    <Link partId="141" fromNodeOrder="0" fromItemID="query_query_YP_PRODUCT" fromColID="queryCol_1" toItemID="tbl_VC_YP_PRODUCT" toColID="tblCol_5c1dc99951e04c6c917d3d9005ea53f7" />
+    <Link partId="142" fromNodeOrder="0" fromItemID="query_query_YP_PRODUCT" fromColID="queryCol_2" toItemID="tbl_VC_YP_PRODUCT" toColID="tblCol_3fdb3af063e14adaa2d2ac14921aa598" />
+    <Link partId="113" fromNodeOrder="0" fromItemID="query_query_YP_PRODUCT" fromColID="queryCol_3" toItemID="tbl_VC_YP_PRODUCT" toColID="tblCol_97b1f1c48b4c4fc89c328524b0c3f6fa" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>subscriberAddress</Name>
+  <ID>tbl_subscriberAddress</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="CTN" id="tblCol_eaf5d7a8ec7f41d189e8b08d43268275" index="0" datatype="integer" />
+    <Column name="street" id="tblCol_82ecb779e9a04ad1bf9389ae230f3cca" index="1" datatype="text" />
+    <Column name="streetNumber" id="tblCol_d9af8dee85f04d4198a22291607d27fd" index="2" datatype="text" />
+    <Column name="apartmentNumber" id="tblCol_89404dfc93ec4bc199aeb1d32cd744d9" index="3" datatype="text" />
+    <Column name="city" id="tblCol_46e7d69b31c64a3fad7c4e7ca55123cf" index="4" datatype="text" />
+    <Column name="postCode" id="tblCol_a777c4ad9c1b4fa38b9dbe8edae03259" index="5" datatype="text" />
+    <Column name="state" id="tblCol_f0b0b20fee2f46b39046795ee46c7fff" index="6" datatype="text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

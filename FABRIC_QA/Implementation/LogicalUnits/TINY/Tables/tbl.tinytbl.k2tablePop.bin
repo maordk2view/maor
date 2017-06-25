@@ -1,0 +1,8 @@
+﻿<Graph name="tbl.tinytbl.k2tablePop.bin" lastPartID="24">
+  <TableNode partID="0" name="tbl" pos="714 151" width="309.3241" />
+  <FunctionMapNode id="0" L0="1" R0="2" R1="3" partID="5" topLabel="tinyfn (5)" pos="175.976532 98.00001" size="106.046906 49.2369766" isRoot="true">
+    <KFunction>{"Name":"tinyfn","Category":"JAVA","FunctionLevel":0,"FunctionType":0,"RegisterAsLuDbFunction":false,"SaveToDLUR":false,"ApiFunction":false,"RequiresLuReference":false,"Desc":"","Auther":{"Name":"","ID":""},"Language":1,"FunctionBody":"String[] row = {\"hellow\",\"world\"};\nyield(row);\n","IsSyntaxValid":true,"IsRootFunction":true,"inputParams":[{"Name":"id","ID":"fi_5.0","Index":0,"DataType":"String","Comment":""}],"outputParams":[{"Name":"id","ID":"fo_5.0","Index":0,"DataType":"String","Comment":""},{"Name":"name","ID":"fo_5.1","Index":1,"DataType":"String","Comment":""}],"ID":"f_5"}</KFunction>
+  </FunctionMapNode>
+  <Link partID="9" from="3" to="4" pointsArr="282.023438 131.200516 292.023438 131.200516 704 194.109375 714 194.109375" fromNodePartID="5" fromNodeColumnName="name" toNodePartID="0" toNodeColumnName="name" />
+  <Link partID="10" from="2" to="5" pointsArr="282.023438 119.127609 292.023438 119.127609 704 182.036469 714 182.036469" fromNodePartID="5" fromNodeColumnName="id" toNodePartID="0" toNodeColumnName="id" />
+</Graph>

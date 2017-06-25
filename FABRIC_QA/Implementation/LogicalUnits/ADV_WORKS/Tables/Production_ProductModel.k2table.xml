@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Production_ProductModel</Name>
+  <ID>tbl_Production_ProductModel</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="ProductModelID" id="tblCol_20872d9d85854da0be15ba1450d326e4" index="0" datatype="Integer" mandatory="true" />
+    <Column name="Name" id="tblCol_658806333af345a79acae44e321acafb" index="1" datatype="Text" mandatory="true" />
+    <Column name="CatalogDescription" id="tblCol_ecfa9a611b094a3daca471964ddd28e5" index="2" datatype="Text" />
+    <Column name="Instructions" id="tblCol_567b72616a71497bb54bf9ce2f6b989f" index="3" datatype="Text" />
+    <Column name="rowguid" id="tblCol_b3152b6a07a74f71877c1e3bd3f4ebc6" index="4" datatype="Text" mandatory="true" />
+    <Column name="ModifiedDate" id="tblCol_037f577c95ca48d99577a7d08a67b268" index="5" datatype="Text" mandatory="true" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_20872d9d85854da0be15ba1450d326e4" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

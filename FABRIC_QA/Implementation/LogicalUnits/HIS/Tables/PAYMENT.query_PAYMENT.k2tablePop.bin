@@ -1,0 +1,11 @@
+﻿<Graph name="PAYMENT.query_PAYMENT.k2tablePop.bin" lastPartID="18">
+  <TableNode partID="0" name="PAYMENT" pos="308 18.7812538" width="309.324158" />
+  <DBQueryNode partID="8" name="ORACLE_HIS" pos="10 14.8177109" size="253 120.364578" isRoot="true">
+    <DBQuery>{"Name":"query_PAYMENT","ID":"query_query_PAYMENT","ConnName":"ORACLE_HIS","SQL":"SELECT * FROM PAYMENT","ColumnsList":[{"ID":"queryCol_0","Name":"INVOICE_ID","DataType":"Text","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"PAYMENT_ID","DataType":"Text","Index":1,"IsInputArgument":true},{"ID":"queryCol_2","Name":"ISSUED_DATE","DataType":"Text","Index":2,"IsInputArgument":true},{"ID":"queryCol_3","Name":"STATUS","DataType":"Text","Index":3,"IsInputArgument":true},{"ID":"queryCol_4","Name":"AMOUNT","DataType":"Text","Index":4,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="14" from="0" to="1" pointsArr="263 50.85417 273 50.85417 275.5 25 295.5 25 298 49.81771 308 49.81771" fromNodePartID="8" fromNodeColumnName="INVOICE_ID" toNodePartID="0" toNodeColumnName="INVOICE_ID" />
+  <Link partID="15" from="2" to="3" pointsArr="263 62.9270859 273 62.9270859 275.5 50 295.5 50 298 61.89063 308 61.89063" fromNodePartID="8" fromNodeColumnName="PAYMENT_ID" toNodePartID="0" toNodeColumnName="PAYMENT_ID" />
+  <Link partID="16" from="4" to="5" pointsArr="263 75 273 75 275.5 75 295.5 75 298 73.96355 308 73.96355" fromNodePartID="8" fromNodeColumnName="ISSUED_DATE" toNodePartID="0" toNodeColumnName="ISSUED_DATE" />
+  <Link partID="17" from="6" to="7" pointsArr="263 87.0729141 273 87.0729141 275.5 100 295.5 100 298 86.03645 308 86.03645" fromNodePartID="8" fromNodeColumnName="STATUS" toNodePartID="0" toNodeColumnName="STATUS" />
+  <Link partID="18" from="8" to="9" pointsArr="263 99.14583 273 99.14583 275.5 125 295.5 125 298 98.109375 308 98.109375" fromNodePartID="8" fromNodeColumnName="AMOUNT" toNodePartID="0" toNodeColumnName="AMOUNT" />
+</Graph>

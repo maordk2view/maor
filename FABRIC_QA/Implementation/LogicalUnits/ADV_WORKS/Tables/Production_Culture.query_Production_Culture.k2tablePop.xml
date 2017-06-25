@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_Production_Culture</ID>
+  <PopulationObjectName>query_Production_Culture</PopulationObjectName>
+  <TableName>Production_Culture</TableName>
+  <RootItemID>query_query_Production_Culture</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="CultureID" id="queryCol_0" dataType="Text" index="0" />
+    <Arg name="Name" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="ModifiedDate" id="queryCol_2" dataType="Text" index="2" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_Production_Culture" name="query_Production_Culture" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="SqlServer_AdvWorks">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="CultureID" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="Name" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="ModifiedDate" dataType="Text" index="2" />
+      </OutputsList>
+      <SQL><![CDATA[select * from Production.Culture]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="10" fromNodeOrder="0" fromItemID="query_query_Production_Culture" fromColID="queryCol_0" toItemID="tbl_Production_Culture" toColID="tblCol_8f1fe9bb194448608c529b4936e2352e" />
+    <Link partId="11" fromNodeOrder="0" fromItemID="query_query_Production_Culture" fromColID="queryCol_1" toItemID="tbl_Production_Culture" toColID="tblCol_6000ece6bc184f918e1a02cd1e1efec7" />
+    <Link partId="12" fromNodeOrder="0" fromItemID="query_query_Production_Culture" fromColID="queryCol_2" toItemID="tbl_Production_Culture" toColID="tblCol_dc494902ab6d4022866f6e9fbfc2a2d7" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

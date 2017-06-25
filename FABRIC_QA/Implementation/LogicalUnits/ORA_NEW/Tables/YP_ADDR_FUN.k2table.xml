@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>YP_ADDR_FUN</Name>
+  <ID>tbl_YP_ADDR_FUN</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="ADDRESS_ID" id="tblCol_4260639b25a54401a103260bb9541734" index="0" datatype="Integer" />
+    <Column name="HOUSE_NO" id="tblCol_c328fcb5327240f0bb1b96eb06a8e958" index="1" datatype="String" />
+    <Column name="COLONY_ID" id="tblCol_5e146334f04b4fab8e4f9ae3cdbb5984" index="2" datatype="Integer" />
+    <Column name="STATE_CODE" id="tblCol_ad010be5494644dc9b3242be0a5e7626" index="3" datatype="String" />
+    <Column name="ZIP_CODE" id="tblCol_2da6e04d644941e4aeb5539816786b6e" index="4" datatype="String" />
+    <Column name="T1" id="tblCol_ef201e5374a145ae9fda4138606b1275" index="5" datatype="Text" />
+    <Column name="STREET_NAME" id="tblCol_c5f4d4aeffeb41fb88999230bfa45b3c" index="6" datatype="String" />
+    <Column name="CONACT" id="tblCol_f45e3fa8fb0c47fe83c98735d06f2ae6" index="7" datatype="Text" />
+    <Column name="DB_QUERY_UDAC" id="tblCol_45dbf5860764477fb98a9591f0db197f" index="8" datatype="Text" />
+    <Column name="PRD_OUT" id="tblCol_23c13675b5b143a3bb961936f5f9725c" index="9" datatype="Text" />
+    <Column name="PRODUCT_CODE" id="tblCol_6a9ed80a7946460781027fc4d439ac3b" index="10" datatype="Text" />
+    <Column name="SFA_ID" id="tblCol_00fc5207ff5542189cdb118ca9d665e1" index="11" datatype="Text" />
+    <Column name="ADD_PRM1" id="tblCol_5797fdbc3a9146aeb48e7d295ba4fd28" index="12" datatype="Text" />
+    <Column name="T2" id="tblCol_e4e8a286b13f4a3ea0673cd9fa10f450" index="13" datatype="Integer" />
+    <Column name="ADD_PRM2" id="tblCol_36decd4591274b7c88d9eebf080b59bd" index="14" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>k2_SetupProjLogInfo</Name>
+  <ID>Utilities.k2_SetupProjLogInfo</ID>
+  <Category>Utilities</Category>
+  <FunctionLevel>Product</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>PHP</Language>
+  <FunctionBody>$GLOBALS['projectLogInfo']['logCodeId'] = $i_log_code_id;
+$GLOBALS['projectLogInfo']['value1'] = $i_val1;
+$GLOBALS['projectLogInfo']['value2'] = $i_val2;
+$GLOBALS['projectLogInfo']['value3'] = $i_val3;
+$GLOBALS['projectLogInfo']['value4'] = $i_val4;
+$GLOBALS['projectLogInfo']['value5'] = $i_val5;</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <InputParams>
+    <Input name="i_log_code_id" id="fi.Utilities.k2_SetupProjLogInfo.0" index="0" dataType="text" />
+    <Input name="i_val1" id="fi.Utilities.k2_SetupProjLogInfo.1" index="1" dataType="text" />
+    <Input name="i_val2" id="fi.Utilities.k2_SetupProjLogInfo.2" index="2" dataType="text" />
+    <Input name="i_val3" id="fi.Utilities.k2_SetupProjLogInfo.3" index="3" dataType="text" />
+    <Input name="i_val4" id="fi.Utilities.k2_SetupProjLogInfo.4" index="4" dataType="text" />
+    <Input name="i_val5" id="fi.Utilities.k2_SetupProjLogInfo.5" index="5" dataType="text" />
+  </InputParams>
+  <OutputParams />
+</KFunction>

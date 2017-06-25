@@ -1,0 +1,10 @@
+﻿<Graph name="YP_CUSTOMER_TIME.query_YP_CUSTOMER_TIME.k2tablePop.bin" lastPartID="30">
+  <TableNode partID="0" name="YP_CUSTOMER_TIME" pos="670.0709 192" width="312.929077" />
+  <DBQueryNode partID="3" name="ORA_SOURCE" pos="137 154" size="253.0039 108.291626" isRoot="true">
+    <DBQuery>{"Name":"query_YP_CUSTOMER_TIME","ID":"query_3","ConnName":"ORA_SOURCE","SQL":"Select *\r\nFrom YP_CUSTOMER_TIME","ColumnsList":[{"ID":"query_3.0","Name":"CUSTOMER_ID","DataType":"Integer","Index":0,"IsInputArgument":true},{"ID":"query_3.1","Name":"CUR_TIME_STAMPTZ","DataType":"Text","Index":1,"IsInputArgument":true},{"ID":"query_3.2","Name":"CUR_TIME_STAMP","DataType":"Text","Index":2,"IsInputArgument":true},{"ID":"query_3.3","Name":"CUR_TIME_STAMP_TZLOCAL","DataType":"Text","Index":3,"IsInputArgument":false}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="8" from="0" to="1" pointsArr="390.0039 190.036438 400.0039 190.036438 660.0709 223.036453 670.0709 223.036453" fromNodePartID="3" fromNodeColumnName="CUSTOMER_ID" toNodePartID="0" toNodeColumnName="CUSTOMER_ID" />
+  <Link partID="18" from="2" to="3" pointsArr="390.0039 202.10936 400.0039 202.10936 660.0709 235.109375 670.0709 235.109375" fromNodePartID="3" fromNodeColumnName="CUR_TIME_STAMPTZ" toNodePartID="0" toNodeColumnName="CUR_TIME_STAMP" />
+  <Link partID="19" from="4" to="5" pointsArr="390.0039 214.182266 400.0039 214.182266 660.0709 247.182281 670.0709 247.182281" fromNodePartID="3" fromNodeColumnName="CUR_TIME_STAMP" toNodePartID="0" toNodeColumnName="CUR_TIME_STAMP_LOCAL" />
+  <Link partID="30" from="6" to="7" pointsArr="390.0039 226.255188 400.0039 226.255188 660.0709 259.2552 670.0709 259.2552" fromNodePartID="3" fromNodeColumnName="CUR_TIME_STAMP_TZLOCAL" toNodePartID="0" toNodeColumnName="TIMESTAMP_TZLOCAL" />
+</Graph>

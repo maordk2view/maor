@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Production_ProductInventory</Name>
+  <ID>tbl_Production_ProductInventory</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="ProductID" id="tblCol_f8eccfe2107848fc9ec60b429eb2a6af" index="0" datatype="Integer" mandatory="true" />
+    <Column name="LocationID" id="tblCol_b5f992774974473c9f83daac46d8f702" index="1" datatype="Integer" mandatory="true" />
+    <Column name="Shelf" id="tblCol_4dfd70bf0e144334ba2583f5dba3ad88" index="2" datatype="Text" mandatory="true" />
+    <Column name="Bin" id="tblCol_5bb7bb7c07d347eabdbe68d6613cf2af" index="3" datatype="Integer" mandatory="true" />
+    <Column name="Quantity" id="tblCol_cfa616becede471ead91c6dfaf321979" index="4" datatype="Integer" mandatory="true" />
+    <Column name="rowguid" id="tblCol_851e87b9826b4e4bacb8aed738efb9f2" index="5" datatype="Text" mandatory="true" />
+    <Column name="ModifiedDate" id="tblCol_6034b72b8f824ae78e7787aa7db7bfa4" index="6" datatype="Text" mandatory="true" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_f8eccfe2107848fc9ec60b429eb2a6af,tblCol_b5f992774974473c9f83daac46d8f702" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Production_Illustration</Name>
+  <ID>tbl_Production_Illustration</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="IllustrationID" id="tblCol_3abf792029064984a2019fa54626103c" index="0" datatype="Integer" mandatory="true" />
+    <Column name="Diagram" id="tblCol_2fb54263b1de4556a837805a594b8904" index="1" datatype="Text" />
+    <Column name="ModifiedDate" id="tblCol_77aa909810f341fa883c4876bc2f069f" index="2" datatype="Text" mandatory="true" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_3abf792029064984a2019fa54626103c" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

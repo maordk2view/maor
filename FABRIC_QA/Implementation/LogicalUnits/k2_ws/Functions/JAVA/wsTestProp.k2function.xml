@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>wsTestProp</Name>
+  <ID>JAVA.wsTestProp</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>WebService</FunctionType>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>
+DBExecute("fabric","set allow_filtering on", null);
+DBExecute("fabric","use MS", null);
+
+
+
+String sql = "SELECT CUSTOMER_ID, CUSTOMER_TYPE, CUST_OPEN_DATE_TIME, CONTACT_ID, MAIN_MAIN_LISTING_ID, SELLING_ID, OPEN_CLAIM_IND, CLOSE_CLAIM_DATE, CS_TOTAL_AMOUNT, CONVERSION_LOCK, LOCKING_EMP_ID, DELINQUENT_IND, DELINQUENT_REASON, DELINQUENT_EFF_DATE, DELINQUENT_UPD_EMP, WORK_WITH_ID, HBD, LEGAL_NAME FROM YP_CUSTOMER";
+Object[] valuesArr = null;
+ResultSetWrapper rs = DBQuery("fabric", sql, valuesArr);
+
+return rs;</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="CUSTOMER_ID" id="fi.JAVA.wsTestProp.0" index="0" dataType="Long">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="rs" id="fo.JAVA.wsTestProp.0" index="0" dataType="Object">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

@@ -1,0 +1,9 @@
+﻿<Graph name="ELI_EMP_UPSERT.eli_emp_query.k2tablePop.bin" lastPartID="60">
+  <TableNode partID="0" name="ELI_EMP_UPSERT" pos="668.6396 128" width="310.6845" />
+  <DBQueryNode partID="20" name="YP_TEST" pos="180 124" size="253 96.21875" isRoot="true">
+    <DBQuery>{"Name":"query_ELI_EMP","ID":"query_query_ELI_EMP","ConnName":"YP_TEST","SQL":"select * from ELI_EMP","ColumnsList":[{"ID":"queryCol_0","Name":"FIRST","DataType":"Text","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"LAST","DataType":"Text","Index":1,"IsInputArgument":true},{"ID":"queryCol_2","Name":"COMP_ID","DataType":"Text","Index":2,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="24" from="0" to="1" pointsArr="433 160.036469 443 160.036469 658.6396 159.036453 668.6396 159.036453" fromNodePartID="20" fromNodeColumnName="FIRST" toNodePartID="0" toNodeColumnName="FIRST" />
+  <Link partID="25" from="2" to="3" pointsArr="433 172.109375 443 172.109375 658.6396 171.109375 668.6396 171.109375" fromNodePartID="20" fromNodeColumnName="LAST" toNodePartID="0" toNodeColumnName="LAST" />
+  <Link partID="26" from="4" to="5" pointsArr="433 184.182281 443 184.182281 658.6396 183.182281 668.6396 183.182281" fromNodePartID="20" fromNodeColumnName="COMP_ID" toNodePartID="0" toNodeColumnName="COMP_ID" />
+</Graph>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ADDRESS_NAME_LINK</Name>
+  <ID>tbl_ADDRESS_NAME_LINK</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="LINK_SEQ_NO" id="tblCol_6c040e181dbc48c7b534fdc79f75ac9f" index="0" datatype="Integer" mandatory="true" />
+    <Column name="CUSTOMER_ID" id="tblCol_958f8059f44e4283bc1a7ce1fd16e941" index="1" datatype="Integer" mandatory="true" />
+    <Column name="BAN" id="tblCol_037742a55e934e23b193ce5c6a4395b8" index="2" datatype="Integer" />
+    <Column name="SUBSCRIBER_NO" id="tblCol_632d855356ee477ab263585cdd2ffe05" index="3" datatype="Text" />
+    <Column name="LINK_TYPE" id="tblCol_0d2334f9e5e64eb0ace3795f1d24815c" index="4" datatype="Text" mandatory="true" />
+    <Column name="EFFECTIVE_DATE" id="tblCol_9a4bebc7a0364deebeea5103ced7ee42" index="5" datatype="Text" mandatory="true" />
+    <Column name="NAME_ID" id="tblCol_a3a1dd4c38cd433abcc22c45bec96870" index="6" datatype="Integer" mandatory="true" />
+    <Column name="ADDRESS_ID" id="tblCol_5358fb4654fd47b7bd9db8acce93a081" index="7" datatype="Integer" />
+    <Column name="SYS_CREATION_DATE" id="tblCol_926d316362eb45e981ea328dffab07ee" index="8" datatype="Text" mandatory="true" />
+    <Column name="SYS_UPDATE_DATE" id="tblCol_8769c6c9906b44e08c1cb5d4b33dc290" index="9" datatype="Text" />
+    <Column name="OPERATOR_ID" id="tblCol_87f88fe6caf948b9bcd81dc47bc01749" index="10" datatype="Integer" />
+    <Column name="APPLICATION_ID" id="tblCol_5de11281581f4ce7b2583f4ace72333a" index="11" datatype="Text" />
+    <Column name="DL_SERVICE_CODE" id="tblCol_3f8df2831ec74186aeda22b3e94cac96" index="12" datatype="Text" mandatory="true" />
+    <Column name="DL_UPDATE_STAMP" id="tblCol_82b629311ff5455a848ad5b2f9402fc8" index="13" datatype="Integer" />
+    <Column name="EXPIRATION_DATE" id="tblCol_a1d6aac12bc9416989f8e41d3c07d74a" index="14" datatype="Text" />
+    <Column name="CONV_RUN_NO" id="tblCol_bebdea7516494bac9cdf2220245cabf7" index="15" datatype="Integer" />
+    <Column name="FOREIGN_SEQ_NO" id="tblCol_fcc28581aeb6403189be0ec246abf00b" index="16" datatype="Integer" />
+    <Column name="PRODUCT_TYPE" id="tblCol_ddb7d4c4a89d4756b0a52e94af6d0e17" index="17" datatype="Text" />
+    <Column name="EMAIL_ID" id="tblCol_56a34dc5513144158c2613069bf0fead" index="18" datatype="Integer" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

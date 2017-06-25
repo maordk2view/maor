@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_ADDRESS_NAME_LINK</PopulationObjectName>
+  <TableName>ADDRESS_NAME_LINK</TableName>
+  <ID>query_ADDRESS_NAME_LINK</ID>
+  <RootItemID>query_22</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="LINK_SEQ_NO" id="query_22.0" dataType="Integer" index="0" />
+    <Arg name="CUSTOMER_ID" id="query_22.1" dataType="Integer" index="1" />
+    <Arg name="BAN" id="query_22.2" dataType="Integer" index="2" />
+    <Arg name="SUBSCRIBER_NO" id="query_22.3" dataType="Text" index="3" />
+    <Arg name="LINK_TYPE" id="query_22.4" dataType="Text" index="4" />
+    <Arg name="EFFECTIVE_DATE" id="query_22.5" dataType="Text" index="5" />
+    <Arg name="NAME_ID" id="query_22.6" dataType="Integer" index="6" />
+    <Arg name="ADDRESS_ID" id="query_22.7" dataType="Integer" index="7" />
+    <Arg name="SYS_CREATION_DATE" id="query_22.8" dataType="Text" index="8" />
+    <Arg name="SYS_UPDATE_DATE" id="query_22.9" dataType="Text" index="9" />
+    <Arg name="OPERATOR_ID" id="query_22.10" dataType="Integer" index="10" />
+    <Arg name="APPLICATION_ID" id="query_22.11" dataType="Text" index="11" />
+    <Arg name="DL_SERVICE_CODE" id="query_22.12" dataType="Text" index="12" />
+    <Arg name="DL_UPDATE_STAMP" id="query_22.13" dataType="Integer" index="13" />
+    <Arg name="EXPIRATION_DATE" id="query_22.14" dataType="Text" index="14" />
+    <Arg name="CONV_RUN_NO" id="query_22.15" dataType="Integer" index="15" />
+    <Arg name="FOREIGN_SEQ_NO" id="query_22.16" dataType="Integer" index="16" />
+    <Arg name="PRODUCT_TYPE" id="query_22.17" dataType="Text" index="17" />
+    <Arg name="EMAIL_ID" id="query_22.18" dataType="Integer" index="18" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_22" name="query_ADDRESS_NAME_LINK" nodeOrder="0" module="DBQuery" connName="ORA_140">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.0" name="LINK_SEQ_NO" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.1" name="CUSTOMER_ID" dataType="Integer" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.2" name="BAN" dataType="Integer" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.3" name="SUBSCRIBER_NO" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.4" name="LINK_TYPE" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.5" name="EFFECTIVE_DATE" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.6" name="NAME_ID" dataType="Integer" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.7" name="ADDRESS_ID" dataType="Integer" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.8" name="SYS_CREATION_DATE" dataType="Text" index="8" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.9" name="SYS_UPDATE_DATE" dataType="Text" index="9" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.10" name="OPERATOR_ID" dataType="Integer" index="10" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.11" name="APPLICATION_ID" dataType="Text" index="11" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.12" name="DL_SERVICE_CODE" dataType="Text" index="12" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.13" name="DL_UPDATE_STAMP" dataType="Integer" index="13" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.14" name="EXPIRATION_DATE" dataType="Text" index="14" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.15" name="CONV_RUN_NO" dataType="Integer" index="15" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.16" name="FOREIGN_SEQ_NO" dataType="Integer" index="16" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.17" name="PRODUCT_TYPE" dataType="Text" index="17" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.18" name="EMAIL_ID" dataType="Integer" index="18" />
+      </OutputsList>
+      <SQL><![CDATA[select * from ADDRESS_NAME_LINK]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="42" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.0" toItemID="tbl_ADDRESS_NAME_LINK" toColID="tblCol_56f076f424a94bbc8df3d4398650e525" />
+    <Link partId="43" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.1" toItemID="tbl_ADDRESS_NAME_LINK" toColID="tblCol_4a50d48554d94772b114f294fdadf5de" />
+    <Link partId="44" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.2" toItemID="tbl_ADDRESS_NAME_LINK" toColID="tblCol_ad6ff77b62ac4afbaf211932d82f34de" />
+    <Link partId="45" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.3" toItemID="tbl_ADDRESS_NAME_LINK" toColID="tblCol_8a8ccd2c9b734d85b870f4a62b2f3a00" />
+    <Link partId="46" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.4" toItemID="tbl_ADDRESS_NAME_LINK" toColID="tblCol_fa3e4ca92f0f4f11808db04888404edf" />
+    <Link partId="47" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.5" toItemID="tbl_ADDRESS_NAME_LINK" toColID="tblCol_f354a6cef8c9467cb1f32edecf61a65d" />
+    <Link partId="48" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.6" toItemID="tbl_ADDRESS_NAME_LINK" toColID="tblCol_873352b7336f4f839c7b404e073bee06" />
+    <Link partId="49" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.7" toItemID="tbl_ADDRESS_NAME_LINK" toColID="tblCol_0496693a1e9f4281b107230bc5107ca3" />
+    <Link partId="50" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.8" toItemID="tbl_ADDRESS_NAME_LINK" toColID="tblCol_e1092f6a8b504168b601142435797c53" />
+    <Link partId="51" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.9" toItemID="tbl_ADDRESS_NAME_LINK" toColID="tblCol_96aa38ffc9924f5c8b34b3cf43cb51eb" />
+    <Link partId="52" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.10" toItemID="tbl_ADDRESS_NAME_LINK" toColID="tblCol_91f8e85f25bd4991933995f60e4ef1de" />
+    <Link partId="53" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.11" toItemID="tbl_ADDRESS_NAME_LINK" toColID="tblCol_da5d044bf9a04d89982ab5b1dbf49789" />
+    <Link partId="54" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.12" toItemID="tbl_ADDRESS_NAME_LINK" toColID="tblCol_31e65ae2cf8d4baea84bce2fd6a5381f" />
+    <Link partId="55" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.13" toItemID="tbl_ADDRESS_NAME_LINK" toColID="tblCol_1c6244ba23e14046a35d475ebcd31cfa" />
+    <Link partId="56" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.14" toItemID="tbl_ADDRESS_NAME_LINK" toColID="tblCol_f908c0feb54240ae8c3dc5152e48d0b6" />
+    <Link partId="57" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.15" toItemID="tbl_ADDRESS_NAME_LINK" toColID="tblCol_ada3b2a861604a979e6068b17bfc393f" />
+    <Link partId="58" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.16" toItemID="tbl_ADDRESS_NAME_LINK" toColID="tblCol_27182ded027149109a4fa96a7d3e92d6" />
+    <Link partId="59" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.17" toItemID="tbl_ADDRESS_NAME_LINK" toColID="tblCol_ad497e23f330488c8ca9f2d5a06454ad" />
+    <Link partId="60" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.18" toItemID="tbl_ADDRESS_NAME_LINK" toColID="tblCol_9c5549db88574c509e25c7c915abd80a" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>contact_address</Name>
+  <ID>tbl_contact_address</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="contact_id" id="tblCol_9f11c8d1a6824324a49492c997f25518" index="0" datatype="Integer" mandatory="true" />
+    <Column name="address_line1" id="tblCol_a265defa4a5547b78b6f5c6ddb96cc52" index="1" datatype="Text" mandatory="true" />
+    <Column name="address_line2" id="tblCol_4a8f181edb08485d90a841389feb965c" index="2" datatype="Text" mandatory="true" />
+    <Column name="city" id="tblCol_276894cab533462789a1ba8ccd9b1e35" index="3" datatype="Text" mandatory="true" />
+    <Column name="state" id="tblCol_47cefcefddc34a7bbb6ea2fc97f36b17" index="4" datatype="Text" mandatory="true" />
+    <Column name="zip" id="tblCol_103c2c0113b54a138401a9d433886cab" index="5" datatype="Integer" mandatory="true" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_9f11c8d1a6824324a49492c997f25518" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

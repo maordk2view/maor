@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_yp_cust_yp_item</PopulationObjectName>
+  <TableName>yp_item</TableName>
+  <ID>query_yp_cust_yp_item</ID>
+  <RootItemID>query_130</RootItemID>
+  <Mode>Upsert</Mode>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="customer_id" id="query_130.0" dataType="Real" index="0" />
+    <Arg name="product_code" id="query_130.1" dataType="Text" index="1" />
+    <Arg name="product_issue_num" id="query_130.2" dataType="Real" index="2" />
+    <Arg name="item_id" id="query_130.3" dataType="Real" index="3" />
+    <Arg name="item_version" id="query_130.4" dataType="Real" index="4" />
+    <Arg name="proposal_id" id="query_130.5" dataType="Real" index="5" />
+    <Arg name="last_version_ind" id="query_130.6" dataType="Text" index="6" />
+    <Arg name="section_code" id="query_130.7" dataType="Text" index="7" />
+    <Arg name="heading_code" id="query_130.8" dataType="Real" index="8" />
+    <Arg name="sub_heading_code" id="query_130.9" dataType="Real" index="9" />
+    <Arg name="town_population_code" id="query_130.10" dataType="Real" index="10" />
+    <Arg name="town_integr_code" id="query_130.11" dataType="Text" index="11" />
+    <Arg name="udac_code" id="query_130.12" dataType="Text" index="12" />
+    <Arg name="rate_udac_code" id="query_130.13" dataType="Text" index="13" />
+    <Arg name="listing_id" id="query_130.14" dataType="Real" index="14" />
+    <Arg name="main_item_id" id="query_130.15" dataType="Real" index="15" />
+    <Arg name="action_code" id="query_130.16" dataType="Text" index="16" />
+    <Arg name="action_code_rsn" id="query_130.17" dataType="Text" index="17" />
+    <Arg name="contract_id" id="query_130.18" dataType="Real" index="18" />
+    <Arg name="contract_version" id="query_130.19" dataType="Real" index="19" />
+    <Arg name="previous_item_id" id="query_130.20" dataType="Real" index="20" />
+    <Arg name="previous_action_code" id="query_130.21" dataType="Text" index="21" />
+    <Arg name="prev_action_code_rsn" id="query_130.22" dataType="Text" index="22" />
+    <Arg name="open_date" id="query_130.23" dataType="Text" index="23" />
+    <Arg name="in_out_date" id="query_130.24" dataType="Text" index="24" />
+    <Arg name="item_status" id="query_130.25" dataType="Real" index="25" />
+    <Arg name="bots_origin_code" id="query_130.26" dataType="Text" index="26" />
+    <Arg name="dis_assoc_status" id="query_130.27" dataType="Real" index="27" />
+    <Arg name="copysheet_chg_reason" id="query_130.28" dataType="Text" index="28" />
+    <Arg name="display_ad_act_rsn" id="query_130.29" dataType="Text" index="29" />
+    <Arg name="display_ad_prefix" id="query_130.30" dataType="Text" index="30" />
+    <Arg name="display_ad_number" id="query_130.31" dataType="Real" index="31" />
+    <Arg name="display_ad_version" id="query_130.32" dataType="Real" index="32" />
+    <Arg name="display_ad_activity" id="query_130.33" dataType="Text" index="33" />
+    <Arg name="omit_anchor_ind" id="query_130.34" dataType="Text" index="34" />
+    <Arg name="omit_address_ind" id="query_130.35" dataType="Text" index="35" />
+    <Arg name="omit_town_ind" id="query_130.36" dataType="Text" index="36" />
+    <Arg name="held_activity" id="query_130.37" dataType="Text" index="37" />
+    <Arg name="item_nisd_amt" id="query_130.38" dataType="Real" index="38" />
+    <Arg name="item_bots_amt" id="query_130.39" dataType="Real" index="39" />
+    <Arg name="atb_amt" id="query_130.40" dataType="Real" index="40" />
+    <Arg name="atb_reason" id="query_130.41" dataType="Text" index="41" />
+    <Arg name="complaint_ind" id="query_130.42" dataType="Text" index="42" />
+    <Arg name="complaint_nisd_amt" id="query_130.43" dataType="Real" index="43" />
+    <Arg name="brand_name" id="query_130.44" dataType="Text" index="44" />
+    <Arg name="search_brand_name" id="query_130.45" dataType="Text" index="45" />
+    <Arg name="brand_names_num" id="query_130.46" dataType="Real" index="46" />
+    <Arg name="caption_arr_ind" id="query_130.47" dataType="Text" index="47" />
+    <Arg name="heading_cng_sts" id="query_130.48" dataType="Text" index="48" />
+    <Arg name="last_year_disc_code" id="query_130.49" dataType="Text" index="49" />
+    <Arg name="last_year_disc_phase" id="query_130.50" dataType="Real" index="50" />
+    <Arg name="discount_bots_amt" id="query_130.51" dataType="Real" index="51" />
+    <Arg name="selling_id" id="query_130.52" dataType="Text" index="52" />
+    <Arg name="subordinate_seq_num" id="query_130.53" dataType="Real" index="53" />
+    <Arg name="seniority_date" id="query_130.54" dataType="Text" index="54" />
+    <Arg name="discount_code" id="query_130.55" dataType="Text" index="55" />
+    <Arg name="discount_phase" id="query_130.56" dataType="Real" index="56" />
+    <Arg name="discount_amt" id="query_130.57" dataType="Real" index="57" />
+    <Arg name="advert_id" id="query_130.58" dataType="Real" index="58" />
+    <Arg name="advert_line_id" id="query_130.59" dataType="Real" index="59" />
+    <Arg name="copy_sheet_format" id="query_130.60" dataType="Text" index="60" />
+    <Arg name="based_on_ad_prefix" id="query_130.61" dataType="Text" index="61" />
+    <Arg name="correction_number" id="query_130.62" dataType="Real" index="62" />
+    <Arg name="correction_upd_date" id="query_130.63" dataType="Text" index="63" />
+    <Arg name="based_on_ad" id="query_130.64" dataType="Real" index="64" />
+    <Arg name="identical_to_base" id="query_130.65" dataType="Text" index="65" />
+    <Arg name="content_id" id="query_130.66" dataType="Real" index="66" />
+    <Arg name="content_version" id="query_130.67" dataType="Real" index="67" />
+    <Arg name="force_price_ind" id="query_130.68" dataType="Text" index="68" />
+    <Arg name="unit_quantity" id="query_130.69" dataType="Real" index="69" />
+    <Arg name="prom_related_yp_prd" id="query_130.70" dataType="Text" index="70" />
+    <Arg name="prom_related_yp_iss" id="query_130.71" dataType="Real" index="71" />
+    <Arg name="prom_related_item_id" id="query_130.72" dataType="Real" index="72" />
+    <Arg name="nir_graph_supplier" id="query_130.73" dataType="Text" index="73" />
+    <Arg name="nir_graph_sup_method" id="query_130.74" dataType="Text" index="74" />
+    <Arg name="start_publish_date" id="query_130.75" dataType="Text" index="75" />
+    <Arg name="nir_product_ind" id="query_130.76" dataType="Text" index="76" />
+    <Arg name="listado_id" id="query_130.77" dataType="Real" index="77" />
+    <Arg name="advert_indent_level" id="query_130.78" dataType="Real" index="78" />
+    <Arg name="advert_line_seq_num" id="query_130.79" dataType="Real" index="79" />
+    <Arg name="assc_disass_cust_id" id="query_130.80" dataType="Real" index="80" />
+    <Arg name="located_ind" id="query_130.81" dataType="Text" index="81" />
+    <Arg name="missing_content_ind" id="query_130.82" dataType="Text" index="82" />
+    <Arg name="complaint_percentage" id="query_130.83" dataType="Real" index="83" />
+    <Arg name="item_cmsn_bots_amt" id="query_130.84" dataType="Real" index="84" />
+    <Arg name="atcb_amt" id="query_130.85" dataType="Real" index="85" />
+    <Arg name="discount_percentage" id="query_130.86" dataType="Real" index="86" />
+    <Arg name="last_year_disc_prcnt" id="query_130.87" dataType="Real" index="87" />
+    <Arg name="last_year_rate_udac" id="query_130.88" dataType="Text" index="88" />
+    <Arg name="assc_disass_prd_code" id="query_130.89" dataType="Text" index="89" />
+    <Arg name="ctcr_batch_prog_id" id="query_130.90" dataType="Text" index="90" />
+    <Arg name="ctcr_batch_prog_dt" id="query_130.91" dataType="Text" index="91" />
+    <Arg name="ctcr_online_user_id" id="query_130.92" dataType="Real" index="92" />
+    <Arg name="ctcr_online_prog_id" id="query_130.93" dataType="Text" index="93" />
+    <Arg name="ctcr_online_prog_dt" id="query_130.94" dataType="Text" index="94" />
+    <Arg name="ctcr_sys_cre_dt" id="query_130.95" dataType="Text" index="95" />
+    <Arg name="ctcr_sys_upd_dt" id="query_130.96" dataType="Text" index="96" />
+    <Arg name="ctcr_dbi_prog_id" id="query_130.97" dataType="Text" index="97" />
+    <Arg name="ctcr_dbi_prog_dt" id="query_130.98" dataType="Text" index="98" />
+    <Arg name="ctcr_cnv_dt" id="query_130.99" dataType="Text" index="99" />
+    <Arg name="ctcr_event_id" id="query_130.100" dataType="Real" index="100" />
+    <Arg name="commission_paid_ind" id="query_130.101" dataType="Text" index="101" />
+    <Arg name="pre_pay_ind" id="query_130.102" dataType="Text" index="102" />
+    <Arg name="complaint_bots_amt" id="query_130.103" dataType="Real" index="103" />
+    <Arg name="sfa_transaction" id="query_130.104" dataType="Text" index="104" />
+    <Arg name="sfa_id" id="query_130.105" dataType="Text" index="105" />
+    <Arg name="based_on_udac" id="query_130.106" dataType="Text" index="106" />
+    <Arg name="rate_disc_percentage" id="query_130.107" dataType="Real" index="107" />
+    <Arg name="rate_discount_amt" id="query_130.108" dataType="Real" index="108" />
+    <Arg name="rate_base_amt" id="query_130.109" dataType="Real" index="109" />
+    <Arg name="rate_disc_percentage_ly" id="query_130.110" dataType="Real" index="110" />
+    <Arg name="rate_discount_amt_ly" id="query_130.111" dataType="Real" index="111" />
+    <Arg name="loyalty_disc_percentage" id="query_130.112" dataType="Real" index="112" />
+    <Arg name="loyalty_discount_amt" id="query_130.113" dataType="Real" index="113" />
+    <Arg name="loyalty_base_amt" id="query_130.114" dataType="Real" index="114" />
+    <Arg name="loyalty_disc_percentage_ly" id="query_130.115" dataType="Real" index="115" />
+    <Arg name="loyalty_discount_amt_ly" id="query_130.116" dataType="Real" index="116" />
+    <Arg name="ns_rate_type" id="query_130.117" dataType="Text" index="117" />
+    <Arg name="bottom_price" id="query_130.118" dataType="Real" index="118" />
+    <Arg name="udac_cmsn_points" id="query_130.119" dataType="Real" index="119" />
+    <Arg name="boni_disc_code" id="query_130.120" dataType="Text" index="120" />
+    <Arg name="prev_boni_disc_code" id="query_130.121" dataType="Text" index="121" />
+    <Arg name="special_udac_ind" id="query_130.122" dataType="Real" index="122" />
+    <Arg name="volume_disc_percentage" id="query_130.123" dataType="Real" index="123" />
+    <Arg name="volume_discount_amt" id="query_130.124" dataType="Real" index="124" />
+    <Arg name="volume_base_amt" id="query_130.125" dataType="Real" index="125" />
+    <Arg name="lock_content_ind" id="query_130.126" dataType="Text" index="126" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_130" name="query_yp_cust_yp_item" nodeOrder="0" module="DBQuery" connName="PG_SOURCE">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.0" name="customer_id" dataType="Real" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.1" name="product_code" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.2" name="product_issue_num" dataType="Real" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.3" name="item_id" dataType="Real" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.4" name="item_version" dataType="Real" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.5" name="proposal_id" dataType="Real" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.6" name="last_version_ind" dataType="Text" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.7" name="section_code" dataType="Text" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.8" name="heading_code" dataType="Real" index="8" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.9" name="sub_heading_code" dataType="Real" index="9" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.10" name="town_population_code" dataType="Real" index="10" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.11" name="town_integr_code" dataType="Text" index="11" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.12" name="udac_code" dataType="Text" index="12" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.13" name="rate_udac_code" dataType="Text" index="13" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.14" name="listing_id" dataType="Real" index="14" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.15" name="main_item_id" dataType="Real" index="15" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.16" name="action_code" dataType="Text" index="16" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.17" name="action_code_rsn" dataType="Text" index="17" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.18" name="contract_id" dataType="Real" index="18" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.19" name="contract_version" dataType="Real" index="19" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.20" name="previous_item_id" dataType="Real" index="20" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.21" name="previous_action_code" dataType="Text" index="21" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.22" name="prev_action_code_rsn" dataType="Text" index="22" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.23" name="open_date" dataType="Text" index="23" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.24" name="in_out_date" dataType="Text" index="24" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.25" name="item_status" dataType="Real" index="25" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.26" name="bots_origin_code" dataType="Text" index="26" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.27" name="dis_assoc_status" dataType="Real" index="27" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.28" name="copysheet_chg_reason" dataType="Text" index="28" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.29" name="display_ad_act_rsn" dataType="Text" index="29" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.30" name="display_ad_prefix" dataType="Text" index="30" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.31" name="display_ad_number" dataType="Real" index="31" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.32" name="display_ad_version" dataType="Real" index="32" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.33" name="display_ad_activity" dataType="Text" index="33" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.34" name="omit_anchor_ind" dataType="Text" index="34" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.35" name="omit_address_ind" dataType="Text" index="35" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.36" name="omit_town_ind" dataType="Text" index="36" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.37" name="held_activity" dataType="Text" index="37" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.38" name="item_nisd_amt" dataType="Real" index="38" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.39" name="item_bots_amt" dataType="Real" index="39" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.40" name="atb_amt" dataType="Real" index="40" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.41" name="atb_reason" dataType="Text" index="41" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.42" name="complaint_ind" dataType="Text" index="42" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.43" name="complaint_nisd_amt" dataType="Real" index="43" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.44" name="brand_name" dataType="Text" index="44" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.45" name="search_brand_name" dataType="Text" index="45" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.46" name="brand_names_num" dataType="Real" index="46" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.47" name="caption_arr_ind" dataType="Text" index="47" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.48" name="heading_cng_sts" dataType="Text" index="48" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.49" name="last_year_disc_code" dataType="Text" index="49" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.50" name="last_year_disc_phase" dataType="Real" index="50" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.51" name="discount_bots_amt" dataType="Real" index="51" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.52" name="selling_id" dataType="Text" index="52" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.53" name="subordinate_seq_num" dataType="Real" index="53" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.54" name="seniority_date" dataType="Text" index="54" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.55" name="discount_code" dataType="Text" index="55" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.56" name="discount_phase" dataType="Real" index="56" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.57" name="discount_amt" dataType="Real" index="57" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.58" name="advert_id" dataType="Real" index="58" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.59" name="advert_line_id" dataType="Real" index="59" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.60" name="copy_sheet_format" dataType="Text" index="60" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.61" name="based_on_ad_prefix" dataType="Text" index="61" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.62" name="correction_number" dataType="Real" index="62" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.63" name="correction_upd_date" dataType="Text" index="63" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.64" name="based_on_ad" dataType="Real" index="64" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.65" name="identical_to_base" dataType="Text" index="65" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.66" name="content_id" dataType="Real" index="66" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.67" name="content_version" dataType="Real" index="67" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.68" name="force_price_ind" dataType="Text" index="68" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.69" name="unit_quantity" dataType="Real" index="69" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.70" name="prom_related_yp_prd" dataType="Text" index="70" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.71" name="prom_related_yp_iss" dataType="Real" index="71" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.72" name="prom_related_item_id" dataType="Real" index="72" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.73" name="nir_graph_supplier" dataType="Text" index="73" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.74" name="nir_graph_sup_method" dataType="Text" index="74" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.75" name="start_publish_date" dataType="Text" index="75" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.76" name="nir_product_ind" dataType="Text" index="76" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.77" name="listado_id" dataType="Real" index="77" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.78" name="advert_indent_level" dataType="Real" index="78" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.79" name="advert_line_seq_num" dataType="Real" index="79" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.80" name="assc_disass_cust_id" dataType="Real" index="80" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.81" name="located_ind" dataType="Text" index="81" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.82" name="missing_content_ind" dataType="Text" index="82" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.83" name="complaint_percentage" dataType="Real" index="83" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.84" name="item_cmsn_bots_amt" dataType="Real" index="84" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.85" name="atcb_amt" dataType="Real" index="85" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.86" name="discount_percentage" dataType="Real" index="86" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.87" name="last_year_disc_prcnt" dataType="Real" index="87" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.88" name="last_year_rate_udac" dataType="Text" index="88" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.89" name="assc_disass_prd_code" dataType="Text" index="89" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.90" name="ctcr_batch_prog_id" dataType="Text" index="90" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.91" name="ctcr_batch_prog_dt" dataType="Text" index="91" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.92" name="ctcr_online_user_id" dataType="Real" index="92" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.93" name="ctcr_online_prog_id" dataType="Text" index="93" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.94" name="ctcr_online_prog_dt" dataType="Text" index="94" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.95" name="ctcr_sys_cre_dt" dataType="Text" index="95" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.96" name="ctcr_sys_upd_dt" dataType="Text" index="96" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.97" name="ctcr_dbi_prog_id" dataType="Text" index="97" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.98" name="ctcr_dbi_prog_dt" dataType="Text" index="98" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.99" name="ctcr_cnv_dt" dataType="Text" index="99" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.100" name="ctcr_event_id" dataType="Real" index="100" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.101" name="commission_paid_ind" dataType="Text" index="101" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.102" name="pre_pay_ind" dataType="Text" index="102" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.103" name="complaint_bots_amt" dataType="Real" index="103" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.104" name="sfa_transaction" dataType="Text" index="104" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.105" name="sfa_id" dataType="Text" index="105" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.106" name="based_on_udac" dataType="Text" index="106" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.107" name="rate_disc_percentage" dataType="Real" index="107" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.108" name="rate_discount_amt" dataType="Real" index="108" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.109" name="rate_base_amt" dataType="Real" index="109" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.110" name="rate_disc_percentage_ly" dataType="Real" index="110" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.111" name="rate_discount_amt_ly" dataType="Real" index="111" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.112" name="loyalty_disc_percentage" dataType="Real" index="112" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.113" name="loyalty_discount_amt" dataType="Real" index="113" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.114" name="loyalty_base_amt" dataType="Real" index="114" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.115" name="loyalty_disc_percentage_ly" dataType="Real" index="115" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.116" name="loyalty_discount_amt_ly" dataType="Real" index="116" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.117" name="ns_rate_type" dataType="Text" index="117" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.118" name="bottom_price" dataType="Real" index="118" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.119" name="udac_cmsn_points" dataType="Real" index="119" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.120" name="boni_disc_code" dataType="Text" index="120" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.121" name="prev_boni_disc_code" dataType="Text" index="121" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.122" name="special_udac_ind" dataType="Real" index="122" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.123" name="volume_disc_percentage" dataType="Real" index="123" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.124" name="volume_discount_amt" dataType="Real" index="124" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.125" name="volume_base_amt" dataType="Real" index="125" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_130.126" name="lock_content_ind" dataType="Text" index="126" />
+      </OutputsList>
+      <SQL><![CDATA[select * from yp_cust.yp_item]]></SQL>
+    </Item>
+    <Item id="f_901" name="dbQueryTest" nodeOrder="1" module="Function" fileName="dbQueryTest.k2function.xml">
+      <InputsList>
+        <Input id="fi_901.0" name="cust_id" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_901.0" name="house_nm_str" />
+        <Output id="fo_901.1" name="address_sum" />
+        <Output id="fo_901.2" name="add_str" />
+        <Output id="fo_901.3" name="error" />
+      </OutputsList>
+    </Item>
+    <Item id="f_1177" name="testExecute" nodeOrder="1" module="Function" fileName="testExecute.k2function.xml">
+      <InputsList>
+        <Input id="fi_1177.0" name="cust_id" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_1177.0" name="o_execute" />
+        <Output id="fo_1177.1" name="o_error" />
+      </OutputsList>
+    </Item>
+    <Item id="f_1456" name="dbQueryPrepare" nodeOrder="1" module="Function" fileName="dbQueryPrepare.k2function.xml">
+      <InputsList>
+        <Input id="fi_1456.0" name="cust_id" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_1456.0" name="house_no" />
+        <Output id="fo_1456.1" name="add_sum" />
+        <Output id="fo_1456.2" name="add_str" />
+        <Output id="fo_1456.3" name="exe" />
+        <Output id="fo_1456.4" name="fl_test" />
+        <Output id="fo_1456.5" name="db_test" />
+        <Output id="fo_1456.6" name="long_test" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="258" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.0" toItemID="tbl_yp_item" toColID="tblCol_a2406dd59d54469d9793c284386ed64d" />
+    <Link partId="259" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.1" toItemID="tbl_yp_item" toColID="tblCol_3dbcbf3c10dd4b2ca72e86c451794ad0" />
+    <Link partId="260" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.2" toItemID="tbl_yp_item" toColID="tblCol_c0a5c837b2e241899f8fec55ebd800be" />
+    <Link partId="261" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.3" toItemID="tbl_yp_item" toColID="tblCol_599498fe82ed4fa6a4cce2f6e064d25d" />
+    <Link partId="262" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.4" toItemID="tbl_yp_item" toColID="tblCol_fcb5882789274d498abb491862c7962b" />
+    <Link partId="263" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.5" toItemID="tbl_yp_item" toColID="tblCol_d11bb5df0247465fa2118afeb8f35ad1" />
+    <Link partId="264" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.6" toItemID="tbl_yp_item" toColID="tblCol_c4c23cc56999436a8f945f20ee0eea50" />
+    <Link partId="265" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.7" toItemID="tbl_yp_item" toColID="tblCol_3968520ff45e4e32be1b77c29f1f8cdd" />
+    <Link partId="266" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.8" toItemID="tbl_yp_item" toColID="tblCol_97bc5b648d244c2e91adb0750b51d38e" />
+    <Link partId="267" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.9" toItemID="tbl_yp_item" toColID="tblCol_a8105883fe8d49dfb5a37f1b0f995104" />
+    <Link partId="268" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.10" toItemID="tbl_yp_item" toColID="tblCol_f08cc0578cc0417bbd3aa26d87a19a55" />
+    <Link partId="269" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.11" toItemID="tbl_yp_item" toColID="tblCol_4221854405ee4557b1f91e4338429039" />
+    <Link partId="270" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.12" toItemID="tbl_yp_item" toColID="tblCol_3426f06ec660420783b6741ba81769ff" />
+    <Link partId="271" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.13" toItemID="tbl_yp_item" toColID="tblCol_a13d83d83fc14283ba907209369b8aa7" />
+    <Link partId="272" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.14" toItemID="tbl_yp_item" toColID="tblCol_86b28c24343f482cb461775654328b26" />
+    <Link partId="273" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.15" toItemID="tbl_yp_item" toColID="tblCol_5b82f9e4c5524a449a1a1fea6d514e1c" />
+    <Link partId="274" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.16" toItemID="tbl_yp_item" toColID="tblCol_5ca214d454df404bb44bb8055a71ffce" />
+    <Link partId="275" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.17" toItemID="tbl_yp_item" toColID="tblCol_d30019d5cb764edfaf3d84d5f710ab02" />
+    <Link partId="276" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.18" toItemID="tbl_yp_item" toColID="tblCol_e21c5f1cc67948cd8cb70c563ab0a542" />
+    <Link partId="277" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.19" toItemID="tbl_yp_item" toColID="tblCol_676319d72757433491b4b1ffce9f8f41" />
+    <Link partId="278" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.20" toItemID="tbl_yp_item" toColID="tblCol_aba3f65d84564168bf1d25787dd3b5d5" />
+    <Link partId="279" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.21" toItemID="tbl_yp_item" toColID="tblCol_4bd0138561b9429b888b75711ab05a1f" />
+    <Link partId="280" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.22" toItemID="tbl_yp_item" toColID="tblCol_3af77ef0a8e0459eabce9e4f78a46259" />
+    <Link partId="281" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.23" toItemID="tbl_yp_item" toColID="tblCol_7220ee63afb94bf2a8a323ab42564b05" />
+    <Link partId="282" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.24" toItemID="tbl_yp_item" toColID="tblCol_28fff367e1634e909a63da58575b52e0" />
+    <Link partId="283" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.25" toItemID="tbl_yp_item" toColID="tblCol_51cd93bbfc0c4b55b040efe555e3d24e" />
+    <Link partId="284" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.26" toItemID="tbl_yp_item" toColID="tblCol_4e9eba9312f54bc1b30608da5bdf4921" />
+    <Link partId="285" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.27" toItemID="tbl_yp_item" toColID="tblCol_ed1471cfa91949f29e14527da54f3164" />
+    <Link partId="286" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.28" toItemID="tbl_yp_item" toColID="tblCol_4f08e4de97fe42ddacb42f78d39970f8" />
+    <Link partId="287" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.29" toItemID="tbl_yp_item" toColID="tblCol_eb99982125624bc196f597006a3c62a5" />
+    <Link partId="288" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.30" toItemID="tbl_yp_item" toColID="tblCol_388e9447cd204e029fc5aed1dd554596" />
+    <Link partId="289" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.31" toItemID="tbl_yp_item" toColID="tblCol_240c5e2613a44fc28dab197e4f8bd1b5" />
+    <Link partId="290" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.32" toItemID="tbl_yp_item" toColID="tblCol_cb2df3221d494ccaba538fc1519382e8" />
+    <Link partId="291" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.33" toItemID="tbl_yp_item" toColID="tblCol_b7b5ed7cc69147e1b0019d0557517116" />
+    <Link partId="292" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.34" toItemID="tbl_yp_item" toColID="tblCol_ed475c266e6f4575b5c124d67d5947ff" />
+    <Link partId="293" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.35" toItemID="tbl_yp_item" toColID="tblCol_76ca82871df94a7b992b79f20aeb4b67" />
+    <Link partId="294" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.36" toItemID="tbl_yp_item" toColID="tblCol_56e95dd6db9f42b4902997da3d7e11ae" />
+    <Link partId="295" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.37" toItemID="tbl_yp_item" toColID="tblCol_f7c9210aae254a0788e0504eb0004c39" />
+    <Link partId="296" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.38" toItemID="tbl_yp_item" toColID="tblCol_2de0de2f47e44eeabf6b2b5a536b9850" />
+    <Link partId="297" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.39" toItemID="tbl_yp_item" toColID="tblCol_39c43285e32c4e13a3f0f98b357327f8" />
+    <Link partId="298" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.40" toItemID="tbl_yp_item" toColID="tblCol_d89d67c37cd946f488ecd5f653acb7ab" />
+    <Link partId="299" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.41" toItemID="tbl_yp_item" toColID="tblCol_eef41e41eb8b4bc8bb4b555ad5053f3f" />
+    <Link partId="300" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.42" toItemID="tbl_yp_item" toColID="tblCol_b802b9e4d94740e9918957af244bad19" />
+    <Link partId="301" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.43" toItemID="tbl_yp_item" toColID="tblCol_3fe4f58ec78f4530ad3a1d0bbe0737c3" />
+    <Link partId="302" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.44" toItemID="tbl_yp_item" toColID="tblCol_5400ee50e6be479f856201815c8a2543" />
+    <Link partId="303" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.45" toItemID="tbl_yp_item" toColID="tblCol_fc7d51bcc510440cbd4979101157e076" />
+    <Link partId="304" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.46" toItemID="tbl_yp_item" toColID="tblCol_3002171b43684600b5ca44d1f182638c" />
+    <Link partId="305" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.47" toItemID="tbl_yp_item" toColID="tblCol_e448de48269642dab3c71eeb75000d22" />
+    <Link partId="306" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.48" toItemID="tbl_yp_item" toColID="tblCol_171161be47de4c69994785fb2066d163" />
+    <Link partId="307" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.49" toItemID="tbl_yp_item" toColID="tblCol_525472ca09764c189439725da8085af1" />
+    <Link partId="308" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.50" toItemID="tbl_yp_item" toColID="tblCol_9260cc755b7b42268aa159f068b21025" />
+    <Link partId="309" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.51" toItemID="tbl_yp_item" toColID="tblCol_6fcb404894c6498b92d8d7e183688c3f" />
+    <Link partId="310" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.52" toItemID="tbl_yp_item" toColID="tblCol_8a216b5c9fac43968afcd1272e2197f7" />
+    <Link partId="311" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.53" toItemID="tbl_yp_item" toColID="tblCol_4c2fc9dd17bc4842acda8e7619b97f80" />
+    <Link partId="312" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.54" toItemID="tbl_yp_item" toColID="tblCol_c2ef0e945a144138babf64d14072a506" />
+    <Link partId="313" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.55" toItemID="tbl_yp_item" toColID="tblCol_6a2da10145534d1a935349bf08e619dd" />
+    <Link partId="314" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.56" toItemID="tbl_yp_item" toColID="tblCol_5c4c661c436143be90be6f49cb0602bc" />
+    <Link partId="315" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.57" toItemID="tbl_yp_item" toColID="tblCol_2692c39e050040ecb9fc60e21ae5cf24" />
+    <Link partId="316" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.58" toItemID="tbl_yp_item" toColID="tblCol_74074a1977834c2081049bcd680c275a" />
+    <Link partId="317" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.59" toItemID="tbl_yp_item" toColID="tblCol_5d3c9499e2c54aa184224baf3b0df23d" />
+    <Link partId="318" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.60" toItemID="tbl_yp_item" toColID="tblCol_ff1375f247a542baaf72d4f22bb077df" />
+    <Link partId="319" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.61" toItemID="tbl_yp_item" toColID="tblCol_1666b8f93a4347bcaf0fa737039f133b" />
+    <Link partId="320" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.62" toItemID="tbl_yp_item" toColID="tblCol_1eb2761a70ef4135b38d7242dd9c2486" />
+    <Link partId="321" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.63" toItemID="tbl_yp_item" toColID="tblCol_f8ef3e0d91494afb8cf6746c39d1841d" />
+    <Link partId="322" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.64" toItemID="tbl_yp_item" toColID="tblCol_0c9ce1a24b474f569415e554d5b5b857" />
+    <Link partId="323" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.65" toItemID="tbl_yp_item" toColID="tblCol_490aa02361604ac48cb0afe14923fd17" />
+    <Link partId="324" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.66" toItemID="tbl_yp_item" toColID="tblCol_1aa4e4d90b894ee281bead093bd2bfe5" />
+    <Link partId="325" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.67" toItemID="tbl_yp_item" toColID="tblCol_deacb4050dfb405886fa35605ed49f4b" />
+    <Link partId="326" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.68" toItemID="tbl_yp_item" toColID="tblCol_26dafe0f0c454878abf9c516cb09a4c7" />
+    <Link partId="327" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.69" toItemID="tbl_yp_item" toColID="tblCol_66036634b309419b97b32394db6cf6a3" />
+    <Link partId="328" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.70" toItemID="tbl_yp_item" toColID="tblCol_61c0aff019de478db64f030886fb8894" />
+    <Link partId="329" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.71" toItemID="tbl_yp_item" toColID="tblCol_f1334ed9c7ce4e85bc04c43c75590fcd" />
+    <Link partId="330" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.72" toItemID="tbl_yp_item" toColID="tblCol_97d05ff69dbb4feda9080abe81f5d9df" />
+    <Link partId="331" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.73" toItemID="tbl_yp_item" toColID="tblCol_09940c0401fc4fb3a5c385c170fa0628" />
+    <Link partId="332" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.74" toItemID="tbl_yp_item" toColID="tblCol_9b74b80465144ed18c4a3a348b64706c" />
+    <Link partId="333" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.75" toItemID="tbl_yp_item" toColID="tblCol_64da7d5ae2ca44cc963b64c8a7af2104" />
+    <Link partId="334" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.76" toItemID="tbl_yp_item" toColID="tblCol_c72091bd9bbb4afaa6936c37c8fe03fc" />
+    <Link partId="335" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.77" toItemID="tbl_yp_item" toColID="tblCol_42b85ac8b6fe40199d3295794f955111" />
+    <Link partId="336" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.78" toItemID="tbl_yp_item" toColID="tblCol_fc1fa48114754ee9a624e3a1381204ed" />
+    <Link partId="337" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.79" toItemID="tbl_yp_item" toColID="tblCol_be5eb1c66a06417291bc786baa609c96" />
+    <Link partId="338" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.80" toItemID="tbl_yp_item" toColID="tblCol_b6debc15274541e6bad91692ab052c3e" />
+    <Link partId="339" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.81" toItemID="tbl_yp_item" toColID="tblCol_73f7974286a1468c8af5c1126bb7241d" />
+    <Link partId="340" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.82" toItemID="tbl_yp_item" toColID="tblCol_19397e7046ab4974b3fddca38b2eb633" />
+    <Link partId="341" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.83" toItemID="tbl_yp_item" toColID="tblCol_a454c0984f2e43d6b50acc47dcb712a6" />
+    <Link partId="342" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.84" toItemID="tbl_yp_item" toColID="tblCol_16232a79a64f44a8bb009f6c5738c98c" />
+    <Link partId="343" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.85" toItemID="tbl_yp_item" toColID="tblCol_cc6ce0530cbe4dda9756552da2a8320a" />
+    <Link partId="344" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.86" toItemID="tbl_yp_item" toColID="tblCol_10fd39dfb36b496b8d7fe719b437e113" />
+    <Link partId="345" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.87" toItemID="tbl_yp_item" toColID="tblCol_a3a4685f76114ab495697637b1114911" />
+    <Link partId="346" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.88" toItemID="tbl_yp_item" toColID="tblCol_dc49b0a221224acfb16a2c742d0b3951" />
+    <Link partId="347" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.89" toItemID="tbl_yp_item" toColID="tblCol_c735df50d14c459aa37253d19044ea83" />
+    <Link partId="348" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.90" toItemID="tbl_yp_item" toColID="tblCol_f32b720efd5342b29b9de2141dc8999d" />
+    <Link partId="349" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.91" toItemID="tbl_yp_item" toColID="tblCol_d04a7b3a17e440f3847f2c78bd27d558" />
+    <Link partId="350" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.92" toItemID="tbl_yp_item" toColID="tblCol_05578eacd4014b8ea5bde7df7ab5991c" />
+    <Link partId="351" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.93" toItemID="tbl_yp_item" toColID="tblCol_0a8ad603d7e848d18aaa193c5ff86a5b" />
+    <Link partId="352" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.94" toItemID="tbl_yp_item" toColID="tblCol_85c14e3ca2c84d9889ae65a1f14320b1" />
+    <Link partId="353" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.95" toItemID="tbl_yp_item" toColID="tblCol_a5f7f8a10b4a4d8cbce5ee67ea3a1b31" />
+    <Link partId="354" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.96" toItemID="tbl_yp_item" toColID="tblCol_3574c7141f8140e69f9bff7fc1f424ac" />
+    <Link partId="355" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.97" toItemID="tbl_yp_item" toColID="tblCol_8f41571031d44c659fe4814735088f3a" />
+    <Link partId="356" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.98" toItemID="tbl_yp_item" toColID="tblCol_4016ce736ba446838a1a9b992e5531f2" />
+    <Link partId="357" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.99" toItemID="tbl_yp_item" toColID="tblCol_53344d8f54a745ea846fdc552b5d1fc1" />
+    <Link partId="358" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.100" toItemID="tbl_yp_item" toColID="tblCol_5f00228b73c147588f2f87365772ebea" />
+    <Link partId="359" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.101" toItemID="tbl_yp_item" toColID="tblCol_552f45c7570e4e699ab833bbfc2c653e" />
+    <Link partId="360" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.102" toItemID="tbl_yp_item" toColID="tblCol_822d9d92320b435fbfaf9738401f718a" />
+    <Link partId="361" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.103" toItemID="tbl_yp_item" toColID="tblCol_d4d66a76757c41979c7304c45e569a3e" />
+    <Link partId="362" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.104" toItemID="tbl_yp_item" toColID="tblCol_7bbf1a868a3048a7af103a32735b604c" />
+    <Link partId="363" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.105" toItemID="tbl_yp_item" toColID="tblCol_6ce7e3af225e45b9aa9057bd29f78c60" />
+    <Link partId="364" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.106" toItemID="tbl_yp_item" toColID="tblCol_6217db52765446ef813361314f699732" />
+    <Link partId="365" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.107" toItemID="tbl_yp_item" toColID="tblCol_8366d247359d48ceb0131889593e35c2" />
+    <Link partId="366" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.108" toItemID="tbl_yp_item" toColID="tblCol_60177e53aadb4969bb0a08e4ca1a0be3" />
+    <Link partId="367" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.109" toItemID="tbl_yp_item" toColID="tblCol_7541a0015d1f44fcacc40902cfdd3881" />
+    <Link partId="368" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.110" toItemID="tbl_yp_item" toColID="tblCol_77cc9e8596b44af5a4ee910c33f652e0" />
+    <Link partId="369" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.111" toItemID="tbl_yp_item" toColID="tblCol_c79937c9661b480aa02d1cfca8261ab1" />
+    <Link partId="370" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.112" toItemID="tbl_yp_item" toColID="tblCol_0c3928920c1448c2aaf0536134de0c1c" />
+    <Link partId="371" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.113" toItemID="tbl_yp_item" toColID="tblCol_288391d822cd42169cf4728e24f15695" />
+    <Link partId="372" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.114" toItemID="tbl_yp_item" toColID="tblCol_da17c3c55b3a4a23833cd3e4966f6e68" />
+    <Link partId="373" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.115" toItemID="tbl_yp_item" toColID="tblCol_0f854867975e41dfbc76f551edbe1750" />
+    <Link partId="374" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.116" toItemID="tbl_yp_item" toColID="tblCol_65ad811365e247ac8ac4140afc4d2a87" />
+    <Link partId="375" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.117" toItemID="tbl_yp_item" toColID="tblCol_a5b908333da74bf5851fff0ef4741681" />
+    <Link partId="376" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.118" toItemID="tbl_yp_item" toColID="tblCol_49fccc73b0ba489185dcb1d21fec7bad" />
+    <Link partId="377" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.119" toItemID="tbl_yp_item" toColID="tblCol_63e207f36bf246e0af4c19f197438292" />
+    <Link partId="378" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.120" toItemID="tbl_yp_item" toColID="tblCol_4aef6053b6b54760bc7b2ac598739a1d" />
+    <Link partId="379" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.121" toItemID="tbl_yp_item" toColID="tblCol_a70e32a9ccd1454fb296af55abf90ff5" />
+    <Link partId="380" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.122" toItemID="tbl_yp_item" toColID="tblCol_2ac8ba6edb1c4c059f73263465483d4c" />
+    <Link partId="381" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.123" toItemID="tbl_yp_item" toColID="tblCol_1cacc74c7c9b41e5b9672fa00b8b88d2" />
+    <Link partId="382" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.124" toItemID="tbl_yp_item" toColID="tblCol_8f3f85ec3a8148bc98ee705ed98d7ca5" />
+    <Link partId="383" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.125" toItemID="tbl_yp_item" toColID="tblCol_4a0fe58bf4434e7a9ffeb2d8919674b1" />
+    <Link partId="384" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.126" toItemID="tbl_yp_item" toColID="tblCol_f3913a17578b4d718ea996f4dd835132" />
+    <Link partId="909" fromNodeOrder="1" fromItemID="f_901" fromColID="fo_901.1" toItemID="tbl_yp_item" toColID="tblCol_f1cf023c7bdb4112baf132ca297fff16" />
+    <Link partId="907" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.0" toItemID="f_901" toColID="fi_901.0" />
+    <Link partId="910" fromNodeOrder="1" fromItemID="f_901" fromColID="fo_901.2" toItemID="tbl_yp_item" toColID="tblCol_1c7db7f1b6a74b73b2de4f38e4eae26b" />
+    <Link partId="911" fromNodeOrder="1" fromItemID="f_901" fromColID="fo_901.3" toItemID="tbl_yp_item" toColID="tblCol_cf9f610994434168a00e8de8bcb6bac0" />
+    <Link partId="908" fromNodeOrder="1" fromItemID="f_901" fromColID="fo_901.0" toItemID="tbl_yp_item" toColID="tblCol_0457e95f71484eac862bf96b50fe74bb" />
+    <Link partId="1183" fromNodeOrder="1" fromItemID="f_1177" fromColID="fo_1177.0" toItemID="tbl_yp_item" toColID="tblCol_de6833b57bf345bf895d6766170ddc20" />
+    <Link partId="1185" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.0" toItemID="f_1177" toColID="fi_1177.0" />
+    <Link partId="1184" fromNodeOrder="1" fromItemID="f_1177" fromColID="fo_1177.1" toItemID="tbl_yp_item" toColID="tblCol_b4d969b003a24380a466b2b3801b1a1c" />
+    <Link partId="1465" fromNodeOrder="1" fromItemID="f_1456" fromColID="fo_1456.0" toItemID="tbl_yp_item" toColID="tblCol_daf97ae110ad488ba0c0beb47a8db519" />
+    <Link partId="1461" fromNodeOrder="0" fromItemID="query_130" fromColID="query_130.0" toItemID="f_1456" toColID="fi_1456.0" />
+    <Link partId="1466" fromNodeOrder="1" fromItemID="f_1456" fromColID="fo_1456.1" toItemID="tbl_yp_item" toColID="tblCol_08185b3f5bfa47f58b5eee618cc862cb" />
+    <Link partId="1467" fromNodeOrder="1" fromItemID="f_1456" fromColID="fo_1456.2" toItemID="tbl_yp_item" toColID="tblCol_ba5b70946a0044cfbd6548092905308f" />
+    <Link partId="1470" fromNodeOrder="1" fromItemID="f_1456" fromColID="fo_1456.3" toItemID="tbl_yp_item" toColID="tblCol_036996d7b2634d64ac60d20f91d2dc89" />
+    <Link partId="1756" fromNodeOrder="1" fromItemID="f_1456" fromColID="fo_1456.4" toItemID="tbl_yp_item" toColID="tblCol_f6d496834b6440e59b0f1fe35dbc6085" />
+    <Link partId="1757" fromNodeOrder="1" fromItemID="f_1456" fromColID="fo_1456.5" toItemID="tbl_yp_item" toColID="tblCol_5856b33d74bd41a6906ed998e545a4ea" />
+    <Link partId="1758" fromNodeOrder="1" fromItemID="f_1456" fromColID="fo_1456.6" toItemID="tbl_yp_item" toColID="tblCol_63c401e701d9416186f4abc5d60b99c5" />
+    <Link partId="1760" fromNodeOrder="1" fromItemID="f_1456" fromColID="fo_1456.6" toItemID="tbl_yp_item" toColID="tblCol_e9619f0d4c214d5e8c1606187232e9bd" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

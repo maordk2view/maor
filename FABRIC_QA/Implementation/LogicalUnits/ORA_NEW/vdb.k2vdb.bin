@@ -1,0 +1,13 @@
+﻿<Graph version="2.5.3.0" name="vdb.k2vdb.bin" lastPartID="20373">
+  <Node id="0" partID="19727" name="YP_CUSTOMER" isRootView="true" pos="10 55" size="257 138.546844" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"YP_CUSTOMER","TablePopulationPropertiesList":[{"ID":"query_YP_CUSTOMER","Name":"query_YP_CUSTOMER","Order":1}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="19854" name="YP_ADDRESS" isRootView="false" pos="305 5" size="257 138.54686" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"YP_ADDRESS","TablePopulationPropertiesList":[{"ID":"query_YP_ADDRESS","Name":"query_YP_ADDRESS","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="2" partID="20164" name="YP_ITEM" isRootView="false" pos="433 212" size="257 138.5469" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"YP_ITEM","TablePopulationPropertiesList":[{"ID":"getYpItemRecords","Name":"getYpItemRecords","Order":2}]}</TableProperties>
+  </Node>
+  <Link from="3" to="4" partID="19889" linkType="Database" pointsArr="267 101.54557 277 101.54557 295 67.63672 305 67.63672" fromNodePartID="19727" fromNodeColumnName="CUSTOMER_ID" toNodePartID="19854" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="query_YP_ADDRESS" />
+  <Link from="3" to="5" partID="20173" linkType="Database" pointsArr="267 101.54557 277 101.54557 423 258.5456 433 258.5456" fromNodePartID="19727" fromNodeColumnName="CUSTOMER_ID" toNodePartID="20164" toNodeColumnName="CUST_ID" toNodePopulationObjectName="getYpItemRecords" />
+</Graph>

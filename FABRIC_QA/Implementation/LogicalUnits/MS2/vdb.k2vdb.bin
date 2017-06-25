@@ -1,0 +1,37 @@
+﻿<Graph version="2.5.3.0" name="vdb.k2vdb.bin" lastPartID="26226">
+  <Group id="0" partID="12710" name="RIVI TEST" pos="1190 139.180984" size="560 336.638062" wasexpanded="false" expanded="true">
+    <Node id="1" partID="9312" name="YP_ITEM_VC" isRootView="false" pos="1489 333.272125" size="257 138.546936" listGroupSize="250 100" viewType="Table">
+      <TableProperties>{"TableName":"YP_ITEM_VC","TablePopulationPropertiesList":[{"ID":"query_YP_ITEM","Name":"query_YP_ITEM","Order":4}]}</TableProperties>
+    </Node>
+    <Node id="2" partID="11209" name="yp_address" isRootView="false" pos="1194 158.272125" size="257 138.546875" listGroupSize="250 100" viewType="Table">
+      <TableProperties>{"TableName":"yp_address","TablePopulationPropertiesList":[{"ID":"query_yp_address","Name":"query_yp_address","Order":4}]}</TableProperties>
+    </Node>
+  </Group>
+  <Node id="3" partID="17127" name="YP_ITEM_FUN" isRootView="false" pos="895 130" size="257 138.546844" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"YP_ITEM_FUN","TablePopulationPropertiesList":[{"ID":"getYpRecords","Name":"getYpRecords","Order":4}]}</TableProperties>
+  </Node>
+  <Node id="4" partID="17478" name="yp_customer" isRootView="true" pos="10 155" size="257 138.546875" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"yp_customer","TablePopulationPropertiesList":[{"ID":"query_yp_customer","Name":"query_yp_customer","Order":1}]}</TableProperties>
+  </Node>
+  <Node id="5" partID="19782" name="YP_PRODUCT_ENRICH" isRootView="false" pos="324 397" size="257 138.546936" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"YP_PRODUCT_ENRICH","TablePopulationPropertiesList":[{"ID":"getYpProdEnrich","Name":"getYpProdEnrich","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="6" partID="21692" name="yp_item" isRootView="false" pos="600 180" size="257 138.546875" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"yp_item","TablePopulationPropertiesList":[{"ID":"query_yp_item","Name":"query_yp_item","Order":3}]}</TableProperties>
+  </Node>
+  <Node id="7" partID="22461" name="yp_product" isRootView="false" pos="310 166" size="257 138.546875" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"yp_product","TablePopulationPropertiesList":[{"ID":"query_yp_product","Name":"query_yp_product","Order":2}]}</TableProperties>
+  </Node>
+  <Node id="8" partID="23824" name="YP_CUSTOMER_TYPE" isRootView="false" pos="259 12" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"YP_CUSTOMER_TYPE","TablePopulationPropertiesList":[{"ID":"getCustomer","Name":"getCustomer","Order":2}]}</TableProperties>
+  </Node>
+  <Link from="9" to="10" partID="7286" linkType="Database" pointsArr="267 201.545578 277 201.545578 300 212.545578 310 212.545578" fromNodePartID="17478" fromNodeColumnName="CUSTOMER_ID" toNodePartID="22461" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="query_yp_product" />
+  <Link from="11" to="12" partID="7893" linkType="Database" pointsArr="567 212.545578 577 212.545578 590 226.545578 600 226.545578" fromNodePartID="22461" fromNodeColumnName="CUSTOMER_ID" toNodePartID="21692" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="query_yp_item" />
+  <Link from="13" to="14" partID="8800" linkType="Database" pointsArr="857 226.545578 867 226.545578 1479 379.8177 1489 379.8177" fromNodePartID="21692" fromNodeColumnName="CUSTOMER_ID" toNodePartID="9312" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="query_YP_ITEM" />
+  <Link from="13" to="15" partID="11230" linkType="Database" pointsArr="857 226.545578 867 226.545578 1184 204.8177 1194 204.8177" fromNodePartID="21692" fromNodeColumnName="CUSTOMER_ID" toNodePartID="11209" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="query_yp_address" />
+  <Link from="13" to="16" partID="16458" linkType="Database" pointsArr="857 226.545578 867 226.545578 885 176.545578 895 176.545578" fromNodePartID="21692" fromNodeColumnName="CUSTOMER_ID" toNodePartID="17127" toNodeColumnName="CUST_ID" toNodePopulationObjectName="getYpRecords" />
+  <Link from="9" to="17" partID="21061" linkType="Database" pointsArr="267 201.545578 277 201.545578 314 443.545563 324 443.545563" fromNodePartID="17478" fromNodeColumnName="CUSTOMER_ID" toNodePartID="19782" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="getYpProdEnrich" />
+  <Link from="18" to="19" partID="21691" linkType="Database" pointsArr="567 228.636719 577 228.636719 590 242.636719 600 242.636719" fromNodePartID="22461" fromNodeColumnName="PRODUCT_CODE" toNodePartID="21692" toNodeColumnName="PRODUCT_CODE" toNodePopulationObjectName="query_yp_item" />
+  <Link from="9" to="20" partID="23827" linkType="Database" pointsArr="267 201.545578 277 201.545578 249 58.54557 259 58.54557" fromNodePartID="17478" fromNodeColumnName="CUSTOMER_ID" toNodePartID="23824" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="getCustomer" />
+  <Link from="21" to="22" partID="25018" linkType="Database" pointsArr="567 244.727859 577 244.727859 590 258.727844 600 258.727844" fromNodePartID="22461" fromNodeColumnName="PRODUCT_ISSUE_NUM" toNodePartID="21692" toNodeColumnName="PRODUCT_ISSUE_NUM" toNodePopulationObjectName="query_yp_item" />
+</Graph>

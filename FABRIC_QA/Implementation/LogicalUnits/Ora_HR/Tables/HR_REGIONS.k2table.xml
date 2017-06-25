@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>HR_REGIONS</Name>
+  <ID>tbl_HR_REGIONS</ID>
+  <EntityId>tblCol_df3f00bd4fdf445899bfa9e31bd5cba9</EntityId>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="REGION_ID" id="tblCol_df3f00bd4fdf445899bfa9e31bd5cba9" index="0" datatype="Integer" mandatory="true" />
+    <Column name="REGION_NAME" id="tblCol_24bdf28b58384f248347514e8beaaa21" index="1" datatype="Text" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_df3f00bd4fdf445899bfa9e31bd5cba9" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

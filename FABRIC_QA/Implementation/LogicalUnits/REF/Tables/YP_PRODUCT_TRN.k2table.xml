@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>YP_PRODUCT_TRN</Name>
+  <ID>tbl_YP_PRODUCT_TRN</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="INST_ID" id="tblCol_ff698eacf3154740851fb91d92feefa7" index="0" datatype="Real" />
+    <Column name="OLD_PRODUCT_CODE" id="tblCol_bce1b40b760745a09101baa47acdb92d" index="1" datatype="Text" />
+    <Column name="NEW_PRODUCT_CODE" id="tblCol_f81604877777406197a53f5ebfdbcd4d" index="2" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>funGetMYSQLItem</Name>
+  <ID>MYSQL.funGetMYSQLItem</ID>
+  <Category>MYSQL</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String sql = "SELECT CUSTOMER_ID, PRODUCT_CODE, PRODUCT_ISSUE_NUM, ITEM_ID, ITEM_VERSION, PROPOSAL_ID, LAST_VERSION_IND, SECTION_CODE, HEADING_CODE, SUB_HEADING_CODE, UDAC_CODE, ACTION_CODE, CONTRACT_ID, RATE_UDAC_CODE, OPEN_DATE, IN_OUT_DATE, ITEM_STATUS, LISTING_ID, MAIN_ITEM_ID FROM yp_item " + 
+             "WHERE CUSTOMER_ID = ?";
+Object[] valuesArr = {i_cust_id};
+ResultSetWrapper rs = DBQuery("MYSQL_SOURCE", sql, valuesArr);
+
+for(Object[] row : rs) {
+    yield(row);
+}
+</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>true</IsRootFunction>
+  <InputParams>
+    <Input name="i_cust_id" id="fi.MYSQL.funGetMYSQLItem.0" index="0" dataType="Integer">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="CUSTOMER_ID" id="fo.MYSQL.funGetMYSQLItem.0" index="0" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="PRODUCT_CODE" id="fo.MYSQL.funGetMYSQLItem.1" index="1" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="PRODUCT_ISSUE_NUM" id="fo.MYSQL.funGetMYSQLItem.2" index="2" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="ITEM_ID" id="fo.MYSQL.funGetMYSQLItem.3" index="3" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="ITEM_VERSION" id="fo.MYSQL.funGetMYSQLItem.4" index="4" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="PROPOSAL_ID" id="fo.MYSQL.funGetMYSQLItem.5" index="5" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="LAST_VERSION_IND" id="fo.MYSQL.funGetMYSQLItem.6" index="6" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="SECTION_CODE" id="fo.MYSQL.funGetMYSQLItem.7" index="7" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="HEADING_CODE" id="fo.MYSQL.funGetMYSQLItem.8" index="8" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="SUB_HEADING_CODE" id="fo.MYSQL.funGetMYSQLItem.9" index="9" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="UDAC_CODE" id="fo.MYSQL.funGetMYSQLItem.10" index="10" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="ACTION_CODE" id="fo.MYSQL.funGetMYSQLItem.11" index="11" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="CONTRACT_ID" id="fo.MYSQL.funGetMYSQLItem.12" index="12" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="RATE_UDAC_CODE" id="fo.MYSQL.funGetMYSQLItem.13" index="13" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="OPEN_DATE" id="fo.MYSQL.funGetMYSQLItem.14" index="14" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="IN_OUT_DATE" id="fo.MYSQL.funGetMYSQLItem.15" index="15" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="ITEM_STATUS" id="fo.MYSQL.funGetMYSQLItem.16" index="16" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="LISTING_ID" id="fo.MYSQL.funGetMYSQLItem.17" index="17" dataType="Long">
+      <Comment />
+    </Output>
+    <Output name="MAIN_ITEM_ID" id="fo.MYSQL.funGetMYSQLItem.18" index="18" dataType="Long">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

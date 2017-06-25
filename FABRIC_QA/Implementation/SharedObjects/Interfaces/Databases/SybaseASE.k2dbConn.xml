@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBConn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SybaseASE" type="Sybase_ASE" version="1.7.0.8">
+  <Aliases />
+  <Active>true</Active>
+  <DataSource>10.21.1.171</DataSource>
+  <PortNum>5000</PortNum>
+  <DataBase>etl_yp_cust</DataBase>
+  <UserId>sa</UserId>
+  <Password>Rew3uwkUMuQXchKrLeACUunlriltd5Zv6BR6km06sG8=:CObPpjR9k96X4/KXz9rBwGSw9N16HImtORROIicwZmE=</Password>
+  <IsCustomConnectionString>true</IsCustomConnectionString>
+  <ConnectionStringClient>Data Source='10.21.1.171';Port=5000;Database='etl_yp_cust';Uid='sa';Pwd='[PASSWORD]';Charset='utf8';</ConnectionStringClient>
+  <ConnectionStringServerSide />
+  <CommandList />
+</DBConn>

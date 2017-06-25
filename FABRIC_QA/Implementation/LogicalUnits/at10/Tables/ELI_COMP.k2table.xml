@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ELI_COMP</Name>
+  <ID>tbl_ELI_COMP</ID>
+  <EntityId>tblCol_db27c7401c7b4bc787560bf235db54dd</EntityId>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="ID" id="tblCol_db27c7401c7b4bc787560bf235db54dd" index="0" datatype="Text" mandatory="true" />
+    <Column name="COMPANY_NAME" id="tblCol_47c0ea509ab94373b4e1cbe12df54e66" index="1" datatype="Text" />
+    <Column name="HQ" id="tblCol_3aa88f2f66464a39ac7f94ffad3e3ed2" index="2" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

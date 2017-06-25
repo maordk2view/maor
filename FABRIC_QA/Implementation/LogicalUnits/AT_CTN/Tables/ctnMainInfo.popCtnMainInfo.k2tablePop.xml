@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>popCtnMainInfo</ID>
+  <PopulationObjectName>popCtnMainInfo</PopulationObjectName>
+  <TableName>ctnMainInfo</TableName>
+  <RootItemID>f_21</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="CTN" id="fi_21.0" dataType="String" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item id="f_21" name="populateCtnMainInfo" nodeOrder="0" module="Function" mapObjectModule="Function" fileName="populateCtnMainInfo.k2function.xml">
+      <InputsList>
+        <Input id="fi_21.0" name="CTN" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_21.0" name="CTN" />
+        <Output id="fo_21.1" name="accountNumber" />
+        <Output id="fo_21.2" name="carrier" />
+        <Output id="fo_21.3" name="account" />
+        <Output id="fo_21.4" name="accountBillCycle" />
+        <Output id="fo_21.5" name="accountType" />
+        <Output id="fo_21.6" name="accountSubType" />
+        <Output id="fo_21.7" name="accountStatus" />
+        <Output id="fo_21.8" name="accountStatusReason" />
+        <Output id="fo_21.9" name="accountStatusDate" />
+        <Output id="fo_21.10" name="subscriberStatus" />
+        <Output id="fo_21.11" name="subscriberStatusReason" />
+        <Output id="fo_21.12" name="subscriberStatusDate" />
+        <Output id="fo_21.13" name="subscriberRatePlan" />
+        <Output id="fo_21.14" name="subscriberPortStatus" />
+        <Output id="fo_21.15" name="subscriberFirstName" />
+        <Output id="fo_21.16" name="subscriberPaternalLastName" />
+        <Output id="fo_21.17" name="subscriberMaternalLastName" />
+        <Output id="fo_21.18" name="street" />
+        <Output id="fo_21.19" name="streetNumber" />
+        <Output id="fo_21.20" name="apartmentNumber" />
+        <Output id="fo_21.21" name="city" />
+        <Output id="fo_21.22" name="postCode" />
+        <Output id="fo_21.23" name="state" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="41" fromNodeOrder="0" fromItemID="f_21" fromColID="fo_21.0" toItemID="tbl_ctnMainInfo" toColID="tblCol_adb92a80e21d4dcabd4e17318dcf4a83" />
+    <Link partId="119" fromNodeOrder="0" fromItemID="f_21" fromColID="fo_21.1" toItemID="tbl_ctnMainInfo" toColID="tblCol_f1aca6eb0e874e5f9e8b7b2e92623a9e" />
+    <Link partId="120" fromNodeOrder="0" fromItemID="f_21" fromColID="fo_21.2" toItemID="tbl_ctnMainInfo" toColID="tblCol_16fc3f7983bb4792b678dc71b03932d5" />
+    <Link partId="121" fromNodeOrder="0" fromItemID="f_21" fromColID="fo_21.3" toItemID="tbl_ctnMainInfo" toColID="tblCol_2752d91b52f54aada20d906269ecde45" />
+    <Link partId="122" fromNodeOrder="0" fromItemID="f_21" fromColID="fo_21.4" toItemID="tbl_ctnMainInfo" toColID="tblCol_6d934105aa414e98806f992d65aa38e1" />
+    <Link partId="123" fromNodeOrder="0" fromItemID="f_21" fromColID="fo_21.5" toItemID="tbl_ctnMainInfo" toColID="tblCol_644881c2a23347b89ab4467a7aec0d57" />
+    <Link partId="124" fromNodeOrder="0" fromItemID="f_21" fromColID="fo_21.6" toItemID="tbl_ctnMainInfo" toColID="tblCol_cba831ed5b3a44638ed7d69d661e81f4" />
+    <Link partId="125" fromNodeOrder="0" fromItemID="f_21" fromColID="fo_21.7" toItemID="tbl_ctnMainInfo" toColID="tblCol_4919d72b795648d5a9405f6ead5b9e36" />
+    <Link partId="126" fromNodeOrder="0" fromItemID="f_21" fromColID="fo_21.8" toItemID="tbl_ctnMainInfo" toColID="tblCol_bd06afcbdcb648c39e36b5a2439c4d8f" />
+    <Link partId="127" fromNodeOrder="0" fromItemID="f_21" fromColID="fo_21.9" toItemID="tbl_ctnMainInfo" toColID="tblCol_ce2c6b43f4ac4a328ec77f006d69b0ba" />
+    <Link partId="128" fromNodeOrder="0" fromItemID="f_21" fromColID="fo_21.10" toItemID="tbl_ctnMainInfo" toColID="tblCol_2e39598085514e5e974b8748d83e3dff" />
+    <Link partId="129" fromNodeOrder="0" fromItemID="f_21" fromColID="fo_21.11" toItemID="tbl_ctnMainInfo" toColID="tblCol_364e20001b164b49a68f82ce9a6ff786" />
+    <Link partId="130" fromNodeOrder="0" fromItemID="f_21" fromColID="fo_21.12" toItemID="tbl_ctnMainInfo" toColID="tblCol_8747dcb71b4f4ff69152fdbb1c719959" />
+    <Link partId="131" fromNodeOrder="0" fromItemID="f_21" fromColID="fo_21.13" toItemID="tbl_ctnMainInfo" toColID="tblCol_776ccb81d2154d72a56f4bcafce77c1f" />
+    <Link partId="132" fromNodeOrder="0" fromItemID="f_21" fromColID="fo_21.14" toItemID="tbl_ctnMainInfo" toColID="tblCol_22bda1b756c44a63952274653406a233" />
+    <Link partId="133" fromNodeOrder="0" fromItemID="f_21" fromColID="fo_21.15" toItemID="tbl_ctnMainInfo" toColID="tblCol_7a1b526026484cc0af933b815034b672" />
+    <Link partId="134" fromNodeOrder="0" fromItemID="f_21" fromColID="fo_21.16" toItemID="tbl_ctnMainInfo" toColID="tblCol_0d893a5b3c234b56b2fb50c39c572537" />
+    <Link partId="135" fromNodeOrder="0" fromItemID="f_21" fromColID="fo_21.17" toItemID="tbl_ctnMainInfo" toColID="tblCol_cf353d6c57b544c899fe4ee9f4cd1af4" />
+    <Link partId="142" fromNodeOrder="0" fromItemID="f_21" fromColID="fo_21.18" toItemID="tbl_ctnMainInfo" toColID="tblCol_8987d0e5ffdf4871af7cfbc68e844a0b" />
+    <Link partId="143" fromNodeOrder="0" fromItemID="f_21" fromColID="fo_21.19" toItemID="tbl_ctnMainInfo" toColID="tblCol_f1173cbefc1747e495e64598c2ae6b66" />
+    <Link partId="144" fromNodeOrder="0" fromItemID="f_21" fromColID="fo_21.20" toItemID="tbl_ctnMainInfo" toColID="tblCol_ea3cd8ff3ad24662978938a02fc2146e" />
+    <Link partId="145" fromNodeOrder="0" fromItemID="f_21" fromColID="fo_21.21" toItemID="tbl_ctnMainInfo" toColID="tblCol_d3bd9cab8cac427c9422d58b0fa1b094" />
+    <Link partId="146" fromNodeOrder="0" fromItemID="f_21" fromColID="fo_21.22" toItemID="tbl_ctnMainInfo" toColID="tblCol_93c9d17638a94bdda5c1fb32956e20d0" />
+    <Link partId="147" fromNodeOrder="0" fromItemID="f_21" fromColID="fo_21.23" toItemID="tbl_ctnMainInfo" toColID="tblCol_5aecab37c48d49389fbd82e6e7d9bdf3" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

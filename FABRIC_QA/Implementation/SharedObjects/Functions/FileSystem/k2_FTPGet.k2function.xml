@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>k2_FTPGet</Name>
+  <ID>FileSystem.k2_FTPGet</ID>
+  <Category>FileSystem</Category>
+  <FunctionLevel>Product</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>PHP</Language>
+  <FunctionBody>// set up basic connection
+$conn_id = ftp_connect($host); 
+
+// login with username and password
+$login_result = ftp_login($conn_id, $user, $pass); 
+
+//change to passive mode
+if (!isset($passive) || $passive == '' || in_array(strtolower($passive),array('yes','true','y','1'))){
+	ftp_pasv($conn_id, true);
+}else{
+	ftp_pasv($conn_id, true);
+}
+
+// check connection
+if (($conn_id) &amp;&amp; ($login_result)) { 
+	
+	
+	if (!ftp_chdir($conn_id, $from_dir)) {
+		reportUserMessage("Couldn't change to directory $from_dir on ftp host $host");
+		return false;
+	}
+	
+	//get the list of files to ftp
+	$filesToFTP = ftp_nlist($conn_id, ".");
+	
+	//change local dir to 
+	if (!chdir ($to_dir)){
+		reportUserMessage("Couldn't change to local directory $to_dir ");
+		return false;
+	}
+	
+	if (in_array(strtolower($rm_local_files),array('yes','true','y'))){
+		k2_rm($to_dir);
+	}
+	
+	//loop through all files and download them
+	foreach ($filesToFTP as $fileToFTP){
+		
+		if (preg_match($file_regexp,$fileToFTP)){
+			
+			$upload = false;
+			$cnt = 1;
+			while ($upload == false &amp;&amp; $cnt &lt;= $retry){
+		    // upload the file
+			    if (in_array(strtolower($ftp_mode),array('bin','b','binary'))){
+			        $upload = ftp_get($conn_id, $fileToFTP, $fileToFTP, FTP_BINARY); 
+			    }else{
+					$upload = ftp_get($conn_id, $fileToFTP, $fileToFTP, FTP_ASCII); 
+			    }
+
+				$cnt++;
+			}
+			
+			// check upload status
+			if (!$upload) { 
+				reportUserMessage( "FTP download of $fileToFTP has failed!");
+				return false;
+			}
+		}
+	}
+}else{
+	reportUserMessage("FTP connect to localhost failed!");
+	return false;
+}
+
+// close the FTP stream 
+ftp_close($conn_id);
+
+return true;</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <InputParams>
+    <Input name="host" id="fi.FileSystem.k2_FTPGet.0" index="0" dataType="String" />
+    <Input name="user" id="fi.FileSystem.k2_FTPGet.1" index="1" dataType="String" />
+    <Input name="pass" id="fi.FileSystem.k2_FTPGet.2" index="2" dataType="String" />
+    <Input name="from_dir" id="fi.FileSystem.k2_FTPGet.3" index="3" dataType="String" />
+    <Input name="to_dir" id="fi.FileSystem.k2_FTPGet.4" index="4" dataType="String" />
+    <Input name="ftp_mode" id="fi.FileSystem.k2_FTPGet.5" index="5" dataType="String" />
+    <Input name="file_regexp" id="fi.FileSystem.k2_FTPGet.6" index="6" dataType="String" />
+    <Input name="rm_local_files" id="fi.FileSystem.k2_FTPGet.7" index="7" dataType="String" />
+    <Input name="passive" id="fi.FileSystem.k2_FTPGet.8" index="8" dataType="integer">
+      <Comment>true/false (default true)</Comment>
+    </Input>
+    <Input name="retry" id="fi.FileSystem.k2_FTPGet.9" index="9" dataType="integer">
+      <Comment>Number of retries (default 2)</Comment>
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="status" id="fo.FileSystem.k2_FTPGet.0" index="0" dataType="Boolean" />
+  </OutputParams>
+</KFunction>

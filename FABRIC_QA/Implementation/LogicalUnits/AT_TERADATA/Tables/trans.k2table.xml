@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>trans</Name>
+  <ID>tbl_trans</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="cust_id" id="tblCol_a37aeb3c15314c8fb9f71dc7f18247f4" index="0" datatype="Integer" />
+    <Column name="acct_type" id="tblCol_dce6eee826d94ac1b80e833437bd0164" index="1" datatype="Text" />
+    <Column name="tran_period" id="tblCol_bbcc6d357ab445c8984fa4bb83d93907" index="2" datatype="Integer" />
+    <Column name="tran_channel" id="tblCol_6c42aeab71b5445c9aa045347e25cd81" index="3" datatype="Text" />
+    <Column name="tran_code" id="tblCol_a6a0c854b95541f38d16eabbdd111120" index="4" datatype="Text" />
+    <Column name="tran_type" id="tblCol_dfd1d246bb824b56b5187b293a8b4931" index="5" datatype="Text" />
+    <Column name="tran_count" id="tblCol_b45a251141e34f5da1e3dbe0e202c545" index="6" datatype="Integer" />
+    <Column name="tran_total" id="tblCol_bbef7a21c8164d47b50610e2a3e0b571" index="7" datatype="Real" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>popSubscriberAddress</ID>
+  <PopulationObjectName>popSubscriberAddress</PopulationObjectName>
+  <TableName>subscriberAddress</TableName>
+  <RootItemID>f_10</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="CTN" id="fi_10.0" dataType="String" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item id="f_10" name="populateSubscriberAddress" nodeOrder="0" module="Function" mapObjectModule="Function" fileName="populateSubscriberAddress.k2function.xml">
+      <InputsList>
+        <Input id="fi_10.0" name="CTN" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_10.0" name="CTN" />
+        <Output id="fo_10.1" name="street" />
+        <Output id="fo_10.2" name="streetNumber" />
+        <Output id="fo_10.3" name="apartmentNumber" />
+        <Output id="fo_10.4" name="city" />
+        <Output id="fo_10.5" name="postCode" />
+        <Output id="fo_10.6" name="state" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="19" fromNodeOrder="0" fromItemID="f_10" fromColID="fo_10.0" toItemID="tbl_subscriberAddress" toColID="tblCol_eaf5d7a8ec7f41d189e8b08d43268275" />
+    <Link partId="20" fromNodeOrder="0" fromItemID="f_10" fromColID="fo_10.1" toItemID="tbl_subscriberAddress" toColID="tblCol_82ecb779e9a04ad1bf9389ae230f3cca" />
+    <Link partId="21" fromNodeOrder="0" fromItemID="f_10" fromColID="fo_10.2" toItemID="tbl_subscriberAddress" toColID="tblCol_d9af8dee85f04d4198a22291607d27fd" />
+    <Link partId="22" fromNodeOrder="0" fromItemID="f_10" fromColID="fo_10.3" toItemID="tbl_subscriberAddress" toColID="tblCol_89404dfc93ec4bc199aeb1d32cd744d9" />
+    <Link partId="23" fromNodeOrder="0" fromItemID="f_10" fromColID="fo_10.4" toItemID="tbl_subscriberAddress" toColID="tblCol_46e7d69b31c64a3fad7c4e7ca55123cf" />
+    <Link partId="24" fromNodeOrder="0" fromItemID="f_10" fromColID="fo_10.5" toItemID="tbl_subscriberAddress" toColID="tblCol_a777c4ad9c1b4fa38b9dbe8edae03259" />
+    <Link partId="25" fromNodeOrder="0" fromItemID="f_10" fromColID="fo_10.6" toItemID="tbl_subscriberAddress" toColID="tblCol_f0b0b20fee2f46b39046795ee46c7fff" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

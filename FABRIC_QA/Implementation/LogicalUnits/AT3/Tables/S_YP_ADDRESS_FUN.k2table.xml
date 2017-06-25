@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>S_YP_ADDRESS_FUN</Name>
+  <ID>tbl_S_YP_ADDRESS_FUN</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="CUSTOMER_ID" id="tblCol_e9b9f8b0760b4237b83e56f8b1832bfa" index="0" datatype="Long" />
+    <Column name="STREET" id="tblCol_1d18c3feb50b4f96a857244e98b417ee" index="1" datatype="String" />
+    <Column name="CITY" id="tblCol_5c71d62c09654ea39aa61b5905d3541e" index="2" datatype="String" />
+    <Column name="STATE" id="tblCol_c8ddd684d7ba4e80b819a0d81c2d0d9e" index="3" datatype="String" />
+    <Column name="COUNTRY" id="tblCol_0eaf3c1d063e42dcbfb0322a0d3facc5" index="4" datatype="String" />
+    <Column name="ZIP_CODE" id="tblCol_6bdc3912f52e48f09bf143dd80843ef7" index="5" datatype="String" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

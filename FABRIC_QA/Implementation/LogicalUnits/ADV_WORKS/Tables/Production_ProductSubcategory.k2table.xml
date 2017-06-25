@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Production_ProductSubcategory</Name>
+  <ID>tbl_Production_ProductSubcategory</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="ProductSubcategoryID" id="tblCol_0170b37add3f4312ac05eac089f635ac" index="0" datatype="Integer" mandatory="true" />
+    <Column name="ProductCategoryID" id="tblCol_2594e0702c684ef0baf19f73b82c1eff" index="1" datatype="Integer" mandatory="true" />
+    <Column name="Name" id="tblCol_098a6ca408f54e66bccac1df5800238c" index="2" datatype="Text" mandatory="true" />
+    <Column name="rowguid" id="tblCol_6d70510c6c6f4f56a4abde1ce627da1a" index="3" datatype="Text" mandatory="true" />
+    <Column name="ModifiedDate" id="tblCol_9591dd23166847d695a5c8837c96b8e1" index="4" datatype="Text" mandatory="true" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_0170b37add3f4312ac05eac089f635ac" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

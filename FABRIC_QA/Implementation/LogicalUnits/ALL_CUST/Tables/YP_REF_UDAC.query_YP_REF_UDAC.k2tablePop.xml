@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_YP_REF_UDAC</PopulationObjectName>
+  <TableName>YP_REF_UDAC</TableName>
+  <ID>query_YP_REF_UDAC</ID>
+  <RootItemID>query_8</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="DUMMY" id="query_8.0" dataType="Real" index="0" />
+    <Arg name="UDAC_CODE" id="query_8.1" dataType="Text" index="1" />
+    <Arg name="UDAC_VERSION" id="query_8.2" dataType="Real" index="2" />
+    <Arg name="LAST_VERSION_IND" id="query_8.3" dataType="Text" index="3" />
+    <Arg name="TYPE" id="query_8.4" dataType="Text" index="4" />
+    <Arg name="UDAC_DESC" id="query_8.5" dataType="Text" index="5" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_8" name="query_YP_REF_UDAC" nodeOrder="0" module="DBQuery" connName="ORA_SOURCE">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_8.1" name="UDAC_CODE" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_8.2" name="UDAC_VERSION" dataType="Real" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_8.3" name="LAST_VERSION_IND" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_8.4" name="TYPE" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_8.5" name="UDAC_DESC" dataType="Text" index="5" />
+      </OutputsList>
+      <SQL><![CDATA[Select 1 As DUMMY,
+  Y.*
+From YP_REF_UDAC Y]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="14" fromNodeOrder="0" fromItemID="query_8" fromColID="query_8.1" toItemID="tbl_YP_REF_UDAC" toColID="tblCol_4a07a16324e24ad78e27e761b8327b1b" />
+    <Link partId="15" fromNodeOrder="0" fromItemID="query_8" fromColID="query_8.2" toItemID="tbl_YP_REF_UDAC" toColID="tblCol_9148ae0b08c347c49e4f04c4ec26498b" />
+    <Link partId="16" fromNodeOrder="0" fromItemID="query_8" fromColID="query_8.3" toItemID="tbl_YP_REF_UDAC" toColID="tblCol_7edf57e339ce44afa387c9632977fb55" />
+    <Link partId="17" fromNodeOrder="0" fromItemID="query_8" fromColID="query_8.4" toItemID="tbl_YP_REF_UDAC" toColID="tblCol_7fdf0eb735394074b6f5e300d7e5b415" />
+    <Link partId="18" fromNodeOrder="0" fromItemID="query_8" fromColID="query_8.5" toItemID="tbl_YP_REF_UDAC" toColID="tblCol_e5f99c012c8c488981fb9d569b501868" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

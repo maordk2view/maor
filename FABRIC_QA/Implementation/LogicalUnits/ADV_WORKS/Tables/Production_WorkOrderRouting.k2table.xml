@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Production_WorkOrderRouting</Name>
+  <ID>tbl_Production_WorkOrderRouting</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="WorkOrderID" id="tblCol_fc30a6de5e264c1da39b5107beb95f4b" index="0" datatype="Integer" mandatory="true" />
+    <Column name="ProductID" id="tblCol_345c418371a346a5a9829894f45034f4" index="1" datatype="Integer" mandatory="true" />
+    <Column name="OperationSequence" id="tblCol_fc22a8be82884403bd6b75d6b1931de2" index="2" datatype="Integer" mandatory="true" />
+    <Column name="LocationID" id="tblCol_41dce3c3ac7642979861a22c99b1f684" index="3" datatype="Integer" mandatory="true" />
+    <Column name="ScheduledStartDate" id="tblCol_06d8f1ec17fa4e19a79977a223ef8b50" index="4" datatype="Text" mandatory="true" />
+    <Column name="ScheduledEndDate" id="tblCol_de8d606483f040d7be4c05303e0d4a71" index="5" datatype="Text" mandatory="true" />
+    <Column name="ActualStartDate" id="tblCol_8af044eb5fd448f4b5ba6e144c69aebb" index="6" datatype="Text" />
+    <Column name="ActualEndDate" id="tblCol_97d81cfb355e4579a0773c92ed1e9fe0" index="7" datatype="Text" />
+    <Column name="ActualResourceHrs" id="tblCol_b7a26567ef32477bab1215e99e8cc47a" index="8" datatype="Real" />
+    <Column name="PlannedCost" id="tblCol_209e9d34cf0849b7bd7a85ee84db18ef" index="9" datatype="Real" mandatory="true" />
+    <Column name="ActualCost" id="tblCol_f019191204e64dec95cf9986c6e5b6cc" index="10" datatype="Real" />
+    <Column name="ModifiedDate" id="tblCol_d1b99656d62d49d8ac99f7f50af73ebd" index="11" datatype="Text" mandatory="true" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_fc30a6de5e264c1da39b5107beb95f4b,tblCol_fc22a8be82884403bd6b75d6b1931de2" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

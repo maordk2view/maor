@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBConn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="DBConnOracle" name="YP_TEST" type="Oracle" version="1.8.0.8">
+  <Active>true</Active>
+  <DataSource>10.21.1.159</DataSource>
+  <PortNum>1521</PortNum>
+  <DataBase>xe</DataBase>
+  <UserId>YP_CUST</UserId>
+  <Password>2iuM60bVOjWTTKTzPBMKw1VnkI8DVJYDGDZ+kEzOOKc=:JuU/B6JonPSYxeOk7fgpEqRNRNOC7f2vlufH0DkJfi8=</Password>
+  <ConnectionStringClient>Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.21.1.159)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=xe)));User Id=YP_CUST;Password=[PASSWORD];</ConnectionStringClient>
+  <ConnectionStringServerSide>jdbc:oracle:thin:@10.21.1.159:1521/xe</ConnectionStringServerSide>
+  <SchemaFilter />
+  <CommandList />
+</DBConn>

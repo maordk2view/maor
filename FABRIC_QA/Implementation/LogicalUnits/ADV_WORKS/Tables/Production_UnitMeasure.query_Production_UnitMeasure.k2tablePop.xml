@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_Production_UnitMeasure</ID>
+  <PopulationObjectName>query_Production_UnitMeasure</PopulationObjectName>
+  <TableName>Production_UnitMeasure</TableName>
+  <RootItemID>query_query_Production_UnitMeasure</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="UnitMeasureCode" id="queryCol_0" dataType="Text" index="0" />
+    <Arg name="Name" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="ModifiedDate" id="queryCol_2" dataType="Text" index="2" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_Production_UnitMeasure" name="query_Production_UnitMeasure" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="SqlServer_AdvWorks">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="UnitMeasureCode" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="Name" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="ModifiedDate" dataType="Text" index="2" />
+      </OutputsList>
+      <SQL><![CDATA[select * from Production.UnitMeasure]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="10" fromNodeOrder="0" fromItemID="query_query_Production_UnitMeasure" fromColID="queryCol_0" toItemID="tbl_Production_UnitMeasure" toColID="tblCol_774e9d57678c4899a97605e4e0172dc9" />
+    <Link partId="11" fromNodeOrder="0" fromItemID="query_query_Production_UnitMeasure" fromColID="queryCol_1" toItemID="tbl_Production_UnitMeasure" toColID="tblCol_50cb2ee9e67c436a8a91765cd6004454" />
+    <Link partId="12" fromNodeOrder="0" fromItemID="query_query_Production_UnitMeasure" fromColID="queryCol_2" toItemID="tbl_Production_UnitMeasure" toColID="tblCol_67989b6fb9764aa3ac858531b860bbf9" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

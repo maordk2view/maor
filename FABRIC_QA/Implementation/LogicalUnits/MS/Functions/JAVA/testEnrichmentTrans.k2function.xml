@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>testEnrichmentTrans</Name>
+  <ID>JAVA.testEnrichmentTrans</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>Object [] resultarray=null;
+String SQL ="select product_code from yp_product_enrich";
+
+
+ResultSetWrapper rs=DBQuery("ludb",SQL,resultarray);
+
+String product_cd_in="MXIC";
+String product_cd_out="";
+//Integer version =1;
+
+for (Object[] row : rs) {
+	
+	//product_cd_in=(String)row[0];
+	
+
+	String [] inputarray ={product_cd_in,"1"};
+
+	Map list=getTranslationValues("trnProduct",inputarray);
+	
+	product_cd_out = (String)list.get("PRD_CD_OUT");
+	
+	Object [] resultarray2={product_cd_out};
+
+	String SQL2="Update yp_product_enrich set new_product=?";
+
+	DBExecute("ludb",SQL2,resultarray2);
+	
+}</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams />
+  <OutputParams />
+</KFunction>

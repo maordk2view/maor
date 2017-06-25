@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>CUSTOMER</Name>
+  <ID>tbl_CUSTOMER</ID>
+  <EntityId>tblCol_6991cdbc78594bcebc937546eb7378aa</EntityId>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="CUSTOMER_ID" id="tblCol_6991cdbc78594bcebc937546eb7378aa" index="0" datatype="Integer" />
+    <Column name="CUSTOMER_NAME" id="tblCol_a6e46ce210c74b408cd0bdfc852eed2a" index="1" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

@@ -1,0 +1,9 @@
+﻿<Graph name="ELI_EMP.poplateFN.k2tablePop.bin" lastPartID="99">
+  <TableNode partID="0" name="ELI_EMP" pos="439.537018 118" width="309.787079" />
+  <FunctionMapNode id="0" L0="1" R0="2" R1="3" R2="4" partID="10" topLabel="fnPopulation (10)" pos="108.805145 97.9999847" size="136.026825 61.30989" isRoot="true">
+    <KFunction>{"Name":"fnPopulation","Category":"JAVA","FunctionLevel":0,"FunctionType":0,"RegisterAsLuDbFunction":false,"SaveToDLUR":false,"ApiFunction":false,"RequiresLuReference":false,"Desc":"","Auther":{"Name":"","ID":""},"Language":1,"FunctionBody":"String first = \"Mhanna\";\nString last = \"AbuTareef\";\nString id = \"1\";\nyield(new Object[]{first ,last,id});","IsSyntaxValid":true,"IsRootFunction":true,"inputParams":[{"Name":"in","ID":"fi_10.0","Index":0,"DataType":"String","Comment":""}],"outputParams":[{"Name":"first","ID":"fo_10.0","Index":0,"DataType":"String","Comment":""},{"Name":"last","ID":"fo_10.1","Index":1,"DataType":"String","Comment":""},{"Name":"id","ID":"fo_10.2","Index":2,"DataType":"String","Comment":""}],"ID":"f_10"}</KFunction>
+  </FunctionMapNode>
+  <Link partID="15" from="2" to="5" pointsArr="244.83197 119.127586 254.83197 119.127586 430 149.036453 440 149.036453" fromNodePartID="10" fromNodeColumnName="first" toNodePartID="0" toNodeColumnName="FIRST" />
+  <Link partID="16" from="3" to="6" pointsArr="244.83197 131.2005 254.83197 131.2005 430 161.109375 440 161.109375" fromNodePartID="10" fromNodeColumnName="last" toNodePartID="0" toNodeColumnName="LAST" />
+  <Link partID="17" from="4" to="7" pointsArr="244.83197 143.2734 254.83197 143.2734 430 173.182281 440 173.182281" fromNodePartID="10" fromNodeColumnName="id" toNodePartID="0" toNodeColumnName="COMP_ID" />
+</Graph>

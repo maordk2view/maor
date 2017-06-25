@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2.4.0.3">
+  <Name>getIdRoot</Name>
+  <ID>JAVA.getIdRoot</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>RegularFunction</FunctionType>
+  <FunctionType2>RootFunction</FunctionType2>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>Object [] obj = new Object[1];
+obj[0] = id;
+yield(obj);</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>true</IsRootFunction>
+  <InputParams>
+    <Input name="id" id="fi.JAVA.getIdRoot.0" index="0" dataType="String" />
+  </InputParams>
+  <OutputParams>
+    <Output name="out" id="fo.JAVA.getIdRoot.0" index="0" dataType="String" />
+  </OutputParams>
+</KFunction>

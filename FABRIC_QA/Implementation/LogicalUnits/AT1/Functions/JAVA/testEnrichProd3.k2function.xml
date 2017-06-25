@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>testEnrichProd3</Name>
+  <ID>JAVA.testEnrichProd3</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>
+String SQL1= "select count(*) from L_YP_PRODUCT_ENRICH";
+
+Object record_cnt = DBSelectValue("ludb" ,SQL1,null);
+
+String SQL2= "UPDATE M_YP_CUSTOMER SET ENRICH_CNT = ?";
+
+Object [] resultarray1={record_cnt.toString()};
+
+DBExecute("ludb", SQL2 ,resultarray1);
+		
+
+</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams />
+  <OutputParams />
+</KFunction>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBConn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="DBConnOracle" name="CUSTOMER_TEST" type="Oracle" version="2.4.6.0">
+  <Active>true</Active>
+  <DataSource>10.21.1.159</DataSource>
+  <PortNum>1521</PortNum>
+  <DataBase>xe</DataBase>
+  <UserId>CUSTOMER</UserId>
+  <Password>z3mI7pdfeUh8NQojscJHy/zdOB8CJljVjfgRdUGXAoo=:nty7Wd1H8x3NLwyVUGRjnQ4Lajfy/rHg6tAxhFQlQ68=</Password>
+  <SchemaFilter />
+  <ProviderType>Native</ProviderType>
+</DBConn>

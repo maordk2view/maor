@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_CUSTOMER_CHARGE_HIST_TAXES</PopulationObjectName>
+  <TableName>CHARGE_HIST_TAXES</TableName>
+  <ID>query_CUSTOMER_CHARGE_HIST_TAXES</ID>
+  <RootItemID>query_22</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="PARTITION_KEY" id="query_22.0" dataType="Integer" index="0" />
+    <Arg name="BAN" id="query_22.1" dataType="Integer" index="1" />
+    <Arg name="CHG_SEQ_NO" id="query_22.2" dataType="Integer" index="2" />
+    <Arg name="ACTV_SEQ_NO" id="query_22.3" dataType="Integer" index="3" />
+    <Arg name="SYS_CREATION_DATE" id="query_22.4" dataType="Text" index="4" />
+    <Arg name="SYS_UPDATE_DATE" id="query_22.5" dataType="Text" index="5" />
+    <Arg name="OPERATOR_ID" id="query_22.6" dataType="Integer" index="6" />
+    <Arg name="APPLICATION_ID" id="query_22.7" dataType="Text" index="7" />
+    <Arg name="DL_SERVICE_CODE" id="query_22.8" dataType="Text" index="8" />
+    <Arg name="DL_UPDATE_STAMP" id="query_22.9" dataType="Integer" index="9" />
+    <Arg name="CLIN" id="query_22.10" dataType="Text" index="10" />
+    <Arg name="TAX_GROUP_TYPE" id="query_22.11" dataType="Text" index="11" />
+    <Arg name="TAX_AUTH" id="query_22.12" dataType="Integer" index="12" />
+    <Arg name="TAX_TYPE" id="query_22.13" dataType="Integer" index="13" />
+    <Arg name="TAX_RATE" id="query_22.14" dataType="Real" index="14" />
+    <Arg name="TAX_AMT" id="query_22.15" dataType="Real" index="15" />
+    <Arg name="LINKED_TAX_AMT" id="query_22.16" dataType="Real" index="16" />
+    <Arg name="AMT_FOR_TAX" id="query_22.17" dataType="Real" index="17" />
+    <Arg name="TAX_EXMP_SRC" id="query_22.18" dataType="Text" index="18" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_22" name="query_CUSTOMER_CHARGE_HIST_TAXES" nodeOrder="0" module="DBQuery" connName="CUSTOMER_TEST">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.0" name="PARTITION_KEY" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.1" name="BAN" dataType="Integer" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.2" name="CHG_SEQ_NO" dataType="Integer" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.3" name="ACTV_SEQ_NO" dataType="Integer" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.4" name="SYS_CREATION_DATE" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.5" name="SYS_UPDATE_DATE" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.6" name="OPERATOR_ID" dataType="Integer" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.7" name="APPLICATION_ID" dataType="Text" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.8" name="DL_SERVICE_CODE" dataType="Text" index="8" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.9" name="DL_UPDATE_STAMP" dataType="Integer" index="9" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.10" name="CLIN" dataType="Text" index="10" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.11" name="TAX_GROUP_TYPE" dataType="Text" index="11" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.12" name="TAX_AUTH" dataType="Integer" index="12" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.13" name="TAX_TYPE" dataType="Integer" index="13" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.14" name="TAX_RATE" dataType="Real" index="14" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.15" name="TAX_AMT" dataType="Real" index="15" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.16" name="LINKED_TAX_AMT" dataType="Real" index="16" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.17" name="AMT_FOR_TAX" dataType="Real" index="17" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_22.18" name="TAX_EXMP_SRC" dataType="Text" index="18" />
+      </OutputsList>
+      <SQL><![CDATA[select * from CUSTOMER.CHARGE_HIST_TAXES]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="42" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.0" toItemID="tbl_CHARGE_HIST_TAXES" toColID="tblCol_ce60d4bd1362488eb8dfccb5f71d8782" />
+    <Link partId="43" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.1" toItemID="tbl_CHARGE_HIST_TAXES" toColID="tblCol_5d292783518141c59196ac6184b73fa1" />
+    <Link partId="44" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.2" toItemID="tbl_CHARGE_HIST_TAXES" toColID="tblCol_c11c7f43e8664611a1df6fe4fd8fc577" />
+    <Link partId="45" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.3" toItemID="tbl_CHARGE_HIST_TAXES" toColID="tblCol_561f3d75563a4859a3bd21c9d1caa5c7" />
+    <Link partId="46" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.4" toItemID="tbl_CHARGE_HIST_TAXES" toColID="tblCol_0f382104c3bc473b98de62858418795c" />
+    <Link partId="47" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.5" toItemID="tbl_CHARGE_HIST_TAXES" toColID="tblCol_a479cf24b3084412bfc46b84f8624bc7" />
+    <Link partId="48" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.6" toItemID="tbl_CHARGE_HIST_TAXES" toColID="tblCol_db7bd6ee8a9949c9bf7608b2a6c90d53" />
+    <Link partId="49" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.7" toItemID="tbl_CHARGE_HIST_TAXES" toColID="tblCol_801c957fd5dc4aeb88ae3893eabaf2f9" />
+    <Link partId="50" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.8" toItemID="tbl_CHARGE_HIST_TAXES" toColID="tblCol_f6994a865c434888b0f3f65ccff228d1" />
+    <Link partId="51" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.9" toItemID="tbl_CHARGE_HIST_TAXES" toColID="tblCol_8027982d80a54b64a521e77a95c9a576" />
+    <Link partId="52" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.10" toItemID="tbl_CHARGE_HIST_TAXES" toColID="tblCol_f35cf3e7f3214da695be6913897db235" />
+    <Link partId="53" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.11" toItemID="tbl_CHARGE_HIST_TAXES" toColID="tblCol_6eb2aec687b249aabf04f02945426e7b" />
+    <Link partId="54" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.12" toItemID="tbl_CHARGE_HIST_TAXES" toColID="tblCol_057e15c8828940d2ba8e48e3a4d245b0" />
+    <Link partId="55" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.13" toItemID="tbl_CHARGE_HIST_TAXES" toColID="tblCol_7b3132ee36284347a8449021cef8ad4f" />
+    <Link partId="56" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.14" toItemID="tbl_CHARGE_HIST_TAXES" toColID="tblCol_ae99740ec2404db898feec5dd56701d4" />
+    <Link partId="57" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.15" toItemID="tbl_CHARGE_HIST_TAXES" toColID="tblCol_9daa64de248f41e49e5c83460266623c" />
+    <Link partId="58" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.16" toItemID="tbl_CHARGE_HIST_TAXES" toColID="tblCol_7093e722acf54bb29d24a76305270a0c" />
+    <Link partId="59" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.17" toItemID="tbl_CHARGE_HIST_TAXES" toColID="tblCol_067052064eea49c287dc67a299f0262a" />
+    <Link partId="60" fromNodeOrder="0" fromItemID="query_22" fromColID="query_22.18" toItemID="tbl_CHARGE_HIST_TAXES" toColID="tblCol_3a06790b2fac495092c58e7c845da1a5" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

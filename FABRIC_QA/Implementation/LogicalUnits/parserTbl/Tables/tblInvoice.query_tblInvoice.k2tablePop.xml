@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_tblInvoice</ID>
+  <PopulationObjectName>query_tblInvoice</PopulationObjectName>
+  <TableName>tblInvoice</TableName>
+  <RootItemID>query_query_tblInvoice</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="PATIENT_ID" id="queryCol_0" dataType="Text" index="0" />
+    <Arg name="INVOICE_ID" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="ISSUED_DATE" id="queryCol_2" dataType="Text" index="2" />
+    <Arg name="DUE_DATE" id="queryCol_3" dataType="Text" index="3" />
+    <Arg name="STATUS" id="queryCol_4" dataType="Text" index="4" />
+    <Arg name="BALANCE" id="queryCol_5" dataType="Real" index="5" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_tblInvoice" name="query_tblInvoice" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="HIS_DB">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="PATIENT_ID" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="INVOICE_ID" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="ISSUED_DATE" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="DUE_DATE" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="STATUS" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="BALANCE" dataType="Real" index="5" />
+      </OutputsList>
+      <SQL><![CDATA[Select *
+From INVOICE]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="16" fromNodeOrder="0" fromItemID="query_query_tblInvoice" fromColID="queryCol_0" toItemID="tblInvoice" toColID="tblCol_be834cf3dff14af19c6b310dc1127a51" />
+    <Link partId="17" fromNodeOrder="0" fromItemID="query_query_tblInvoice" fromColID="queryCol_1" toItemID="tblInvoice" toColID="tblCol_fc51370b4a1f4e57b2925e9a3a4401e6" />
+    <Link partId="18" fromNodeOrder="0" fromItemID="query_query_tblInvoice" fromColID="queryCol_2" toItemID="tblInvoice" toColID="tblCol_fe383bb7e4884ab5b8450bc6aa9e6342" />
+    <Link partId="19" fromNodeOrder="0" fromItemID="query_query_tblInvoice" fromColID="queryCol_3" toItemID="tblInvoice" toColID="tblCol_5029f5b3f8f8444385e86e92dde1e423" />
+    <Link partId="20" fromNodeOrder="0" fromItemID="query_query_tblInvoice" fromColID="queryCol_4" toItemID="tblInvoice" toColID="tblCol_cff753d3f55841caa7e65aa96b964512" />
+    <Link partId="21" fromNodeOrder="0" fromItemID="query_query_tblInvoice" fromColID="queryCol_5" toItemID="tblInvoice" toColID="tblCol_bbab0d596c134c8e8f080ed66f179b8e" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

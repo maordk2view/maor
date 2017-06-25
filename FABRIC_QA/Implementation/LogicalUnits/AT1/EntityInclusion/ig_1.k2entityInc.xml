@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DbQueryItemOfDataTable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ig_1</Name>
+  <DbConn>MYSQL_SOURCE</DbConn>
+  <Sql>select customer_id from @AT1_SCHEME@.yp_customer where customer_id 
+	in (102887030, 103008391, 106786934, 115793147, 4333)</Sql>
+  <IsSqlValid>true</IsSqlValid>
+</DbQueryItemOfDataTable>

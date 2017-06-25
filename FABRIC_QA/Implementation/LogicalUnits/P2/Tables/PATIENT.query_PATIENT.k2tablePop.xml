@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_PATIENT</ID>
+  <PopulationObjectName>query_PATIENT</PopulationObjectName>
+  <TableName>PATIENT</TableName>
+  <RootItemID>query_query_PATIENT</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="PATIENT_ID" id="queryCol_0" dataType="Text" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_PATIENT" name="query_PATIENT" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="HIS_DB">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="PATIENT_ID" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="SSN" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="FIRST_NAME" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="LAST_NAME" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="ADDRESS" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="CITY" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_7" name="STATE" dataType="Text" index="7" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM PATIENT]]></SQL>
+    </Item>
+    <Item id="f_51" name="k2_currentDateTime" nodeOrder="0" module="Function" mapObjectModule="Function" fileName="k2_currentDateTime.k2function.xml">
+      <InputsList />
+      <OutputsList>
+        <Output id="fo_51.0" name="current_datetime" />
+      </OutputsList>
+    </Item>
+    <Item id="f_250" name="STAM" nodeOrder="1" module="Function" mapObjectModule="Function" fileName="STAM.k2function.xml">
+      <InputsList>
+        <Input id="fi_250.0" name="i_p_id" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_250.0" name="t" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="22" fromNodeOrder="0" fromItemID="query_query_PATIENT" fromColID="queryCol_0" toItemID="tbl_PATIENT" toColID="tblCol_7d9cf001ed6c4dd8b759816a3bb0e889" />
+    <Link partId="23" fromNodeOrder="0" fromItemID="query_query_PATIENT" fromColID="queryCol_1" toItemID="tbl_PATIENT" toColID="tblCol_5d26e36efbb04f0f89141e8633f5d696" />
+    <Link partId="24" fromNodeOrder="0" fromItemID="query_query_PATIENT" fromColID="queryCol_2" toItemID="tbl_PATIENT" toColID="tblCol_1cd812c717164c679486831b85b88ba7" />
+    <Link partId="25" fromNodeOrder="0" fromItemID="query_query_PATIENT" fromColID="queryCol_3" toItemID="tbl_PATIENT" toColID="tblCol_a5a291eefdb14cc8a590f1b513114a01" />
+    <Link partId="26" fromNodeOrder="0" fromItemID="query_query_PATIENT" fromColID="queryCol_4" toItemID="tbl_PATIENT" toColID="tblCol_ea3b80bb848e4de59665e8646ef532f1" />
+    <Link partId="27" fromNodeOrder="0" fromItemID="query_query_PATIENT" fromColID="queryCol_5" toItemID="tbl_PATIENT" toColID="tblCol_37ad71a49ec64296a02b298b871b6f0c" />
+    <Link partId="254" fromNodeOrder="1" fromItemID="f_250" fromColID="fo_250.0" toItemID="tbl_PATIENT" toColID="tblCol_8e10ffaf876a47969ed42a0bdae8f6a1" />
+    <Link partId="253" fromNodeOrder="0" fromItemID="query_query_PATIENT" fromColID="queryCol_0" toItemID="f_250" toColID="fi_250.0" />
+    <Link partId="29" fromNodeOrder="0" fromItemID="query_query_PATIENT" fromColID="queryCol_7" toItemID="tbl_PATIENT" toColID="tblCol_e2d259eaf96c4e65b862f48cf31a459b" />
+    <Link partId="53" fromNodeOrder="0" fromItemID="f_51" fromColID="fo_51.0" toItemID="tbl_PATIENT" toColID="tblCol_65edf551bb0c49aa8151f948e7dafbb0" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Production_ProductReview</Name>
+  <ID>tbl_Production_ProductReview</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="ProductReviewID" id="tblCol_4fdedd1378ed4bb5b6faf131f9b0c880" index="0" datatype="Integer" mandatory="true" />
+    <Column name="ProductID" id="tblCol_272a417dceab4956ae58de0db0d6170f" index="1" datatype="Integer" mandatory="true" />
+    <Column name="ReviewerName" id="tblCol_e5d41fe976734b6e8decc9ee58c86ca9" index="2" datatype="Text" mandatory="true" />
+    <Column name="ReviewDate" id="tblCol_68c1b19b64d8403e9f9f90aa0aebd73d" index="3" datatype="Text" mandatory="true" />
+    <Column name="EmailAddress" id="tblCol_0bc1bec04e4c4cd1bf7875e6ab61e150" index="4" datatype="Text" mandatory="true" />
+    <Column name="Rating" id="tblCol_c465254870ce4eca922b1ad7d6d502b4" index="5" datatype="Integer" mandatory="true" />
+    <Column name="Comments" id="tblCol_599fb39ab4fd40908e82332fe8afbe94" index="6" datatype="Text" />
+    <Column name="ModifiedDate" id="tblCol_47f15f566f5440fabaf5646e6db008c0" index="7" datatype="Text" mandatory="true" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_4fdedd1378ed4bb5b6faf131f9b0c880" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

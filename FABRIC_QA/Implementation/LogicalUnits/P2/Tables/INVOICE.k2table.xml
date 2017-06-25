@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>INVOICE</Name>
+  <ID>tbl_INVOICE</ID>
+  <LazyDataUpdate enabled="true" performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="PATIENT_ID" id="tblCol_2d9aeea6066643f6bcf711c0141ab485" index="0" datatype="Text" />
+    <Column name="INVOICE_ID" id="tblCol_36fde324675a43a1a0d3b0a32c68172a" index="1" datatype="Text" mandatory="true" />
+    <Column name="ISSUED_DATE" id="tblCol_f329f6fb947b4cb8a472aee2ab200ced" index="2" datatype="Text" />
+    <Column name="DUE_DATE" id="tblCol_0925bbd860df4471879a4f3640c6bd43" index="3" datatype="Text" />
+    <Column name="BALANCE" id="tblCol_0ad88a7884e54817946ae54474641e41" index="4" datatype="Real" />
+    <Column name="STATUS1" id="tblCol_073fd683bf164adea115f9fb5f74c48d" index="5" datatype="text" />
+    <Column name="STATUS2" id="tblCol_9045ac2f627a408bb0b04e457dd6883e" index="6" datatype="text" />
+    <Column name="STATUS4" id="tblCol_e926b2eccaa44e75b6885a62863ecda1" index="7" datatype="text" />
+    <Column name="STATUS5" id="tblCol_2e7dc4b153a04250b541c63c56256cb6" index="8" datatype="text" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" columnsIdsList="tblCol_073fd683bf164adea115f9fb5f74c48d" />
+    <Index id="2" columnsIdsList="tblCol_2e7dc4b153a04250b541c63c56256cb6" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

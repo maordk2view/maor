@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2.3.0.1">
+  <Name>invFunc</Name>
+  <ID>Parser.invFunc</ID>
+  <Category>Parser</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>RegularFunction</FunctionType>
+  <FunctionType2>RootFunction</FunctionType2>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String sql = "SELECT INVOICE_ID, PATIENT_ID , STATUS FROM S_INVOICE";
+String sql1=null;
+Object[] valuesArr = null;
+
+ResultSetWrapper rs = DBQuery("HIS_DB", sql, valuesArr);
+
+for(Object[] row : rs) {
+    yield(row);
+}
+
+rs.closeStmt();
+</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>true</IsRootFunction>
+  <InputParams>
+    <Input name="patient_id" id="fi.Parser.invFunc.0" index="0" dataType="String" />
+  </InputParams>
+  <OutputParams>
+    <Output name="invoiceID" id="fo.Parser.invFunc.0" index="0" dataType="String" />
+    <Output name="patientID" id="fo.Parser.invFunc.1" index="1" dataType="String" />
+    <Output name="STATUS" id="fo.Parser.invFunc.2" index="2" dataType="String" />
+  </OutputParams>
+</KFunction>

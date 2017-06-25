@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PopulationObjectName>query_SERVICE_AGREEMENT</PopulationObjectName>
+  <TableName>REF_SERVICE_AGREEMENT</TableName>
+  <ID>query_SERVICE_AGREEMENT</ID>
+  <RootItemID>query_3</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="BAN" id="query_3.0" dataType="Real" index="0" />
+    <Arg name="SUBSCRIBER_NO" id="query_3.1" dataType="Text" index="1" />
+    <Arg name="SOC" id="query_3.2" dataType="Text" index="2" />
+    <Arg name="SOC_SEQ_NO" id="query_3.3" dataType="Real" index="3" />
+    <Arg name="SYS_CREATION_DATE" id="query_3.4" dataType="Text" index="4" />
+    <Arg name="SYS_UPDATE_DATE" id="query_3.5" dataType="Text" index="5" />
+    <Arg name="OPERATOR_ID" id="query_3.6" dataType="Real" index="6" />
+    <Arg name="APPLICATION_ID" id="query_3.7" dataType="Text" index="7" />
+    <Arg name="DL_SERVICE_CODE" id="query_3.8" dataType="Text" index="8" />
+    <Arg name="DL_UPDATE_STAMP" id="query_3.9" dataType="Real" index="9" />
+    <Arg name="SOC_EFFECTIVE_DATE" id="query_3.10" dataType="Text" index="10" />
+    <Arg name="CUSTOMER_ID" id="query_3.11" dataType="Real" index="11" />
+    <Arg name="EFFECTIVE_DATE" id="query_3.12" dataType="Text" index="12" />
+    <Arg name="SERVICE_TYPE" id="query_3.13" dataType="Text" index="13" />
+    <Arg name="EXPIRATION_DATE" id="query_3.14" dataType="Text" index="14" />
+    <Arg name="SOC_LEVEL_CODE" id="query_3.15" dataType="Text" index="15" />
+    <Arg name="DEALER_CODE" id="query_3.16" dataType="Text" index="16" />
+    <Arg name="CONV_RUN_NO" id="query_3.17" dataType="Real" index="17" />
+    <Arg name="EFFECTIVE_ISSUE_DATE" id="query_3.18" dataType="Text" index="18" />
+    <Arg name="EXPIRATION_ISSUE_DATE" id="query_3.19" dataType="Text" index="19" />
+    <Arg name="TRX_ID" id="query_3.20" dataType="Real" index="20" />
+    <Arg name="SOC_VER_NO" id="query_3.21" dataType="Real" index="21" />
+    <Arg name="SPLIT_DEALER_CODE" id="query_3.22" dataType="Text" index="22" />
+    <Arg name="INS_TRX_ID" id="query_3.23" dataType="Real" index="23" />
+    <Arg name="PRODUCT_TYPE" id="query_3.24" dataType="Text" index="24" />
+    <Arg name="REL_SOC" id="query_3.25" dataType="Text" index="25" />
+    <Arg name="REL_SOC_SEQ_NO" id="query_3.26" dataType="Real" index="26" />
+    <Arg name="RC_EFF_RSN_CODE" id="query_3.27" dataType="Text" index="27" />
+    <Arg name="RC_EXP_RSN_CODE" id="query_3.28" dataType="Text" index="28" />
+    <Arg name="SRV_FTR_IND" id="query_3.29" dataType="Text" index="29" />
+    <Arg name="GLPP_ID" id="query_3.30" dataType="Text" index="30" />
+    <Arg name="AGENT_CODE" id="query_3.31" dataType="Text" index="31" />
+    <Arg name="AGENT_LOCATION" id="query_3.32" dataType="Text" index="32" />
+    <Arg name="AGR_PARKING_IND" id="query_3.33" dataType="Text" index="33" />
+    <Arg name="AGR_ENABLER_IND" id="query_3.34" dataType="Text" index="34" />
+    <Arg name="AGR_D2C" id="query_3.35" dataType="Text" index="35" />
+    <Arg name="TARGET_BAN" id="query_3.36" dataType="Real" index="36" />
+    <Arg name="PURCHASE_ORD_NO" id="query_3.37" dataType="Text" index="37" />
+    <Arg name="CLIN" id="query_3.38" dataType="Text" index="38" />
+    <Arg name="ORIG_VESTED_DAYS" id="query_3.39" dataType="Real" index="39" />
+    <Arg name="DATA_VOICE_IND" id="query_3.40" dataType="Text" index="40" />
+    <Arg name="ATT_SALE_CODE" id="query_3.41" dataType="Text" index="41" />
+    <Arg name="OFFER_INSTANCE_ID" id="query_3.42" dataType="Real" index="42" />
+    <Arg name="OMS_NOTIFY" id="query_3.43" dataType="Text" index="43" />
+    <Arg name="INIT_DEALER" id="query_3.44" dataType="Text" index="44" />
+    <Arg name="INIT_RMV_DEALER" id="query_3.45" dataType="Text" index="45" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_3" name="query_SERVICE_AGREEMENT" nodeOrder="0" module="DBQuery" connName="CUSTOMER_TEST">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.0" name="BAN" dataType="Real" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.1" name="SUBSCRIBER_NO" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.2" name="SOC" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.3" name="SOC_SEQ_NO" dataType="Real" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.4" name="SYS_CREATION_DATE" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.5" name="SYS_UPDATE_DATE" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.6" name="OPERATOR_ID" dataType="Real" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.7" name="APPLICATION_ID" dataType="Text" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.8" name="DL_SERVICE_CODE" dataType="Text" index="8" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.9" name="DL_UPDATE_STAMP" dataType="Real" index="9" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.10" name="SOC_EFFECTIVE_DATE" dataType="Text" index="10" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.11" name="CUSTOMER_ID" dataType="Real" index="11" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.12" name="EFFECTIVE_DATE" dataType="Text" index="12" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.13" name="SERVICE_TYPE" dataType="Text" index="13" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.14" name="EXPIRATION_DATE" dataType="Text" index="14" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.15" name="SOC_LEVEL_CODE" dataType="Text" index="15" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.16" name="DEALER_CODE" dataType="Text" index="16" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.17" name="CONV_RUN_NO" dataType="Real" index="17" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.18" name="EFFECTIVE_ISSUE_DATE" dataType="Text" index="18" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.19" name="EXPIRATION_ISSUE_DATE" dataType="Text" index="19" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.20" name="TRX_ID" dataType="Real" index="20" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.21" name="SOC_VER_NO" dataType="Real" index="21" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.22" name="SPLIT_DEALER_CODE" dataType="Text" index="22" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.23" name="INS_TRX_ID" dataType="Real" index="23" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.24" name="PRODUCT_TYPE" dataType="Text" index="24" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.25" name="REL_SOC" dataType="Text" index="25" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.26" name="REL_SOC_SEQ_NO" dataType="Real" index="26" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.27" name="RC_EFF_RSN_CODE" dataType="Text" index="27" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.28" name="RC_EXP_RSN_CODE" dataType="Text" index="28" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.29" name="SRV_FTR_IND" dataType="Text" index="29" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.30" name="GLPP_ID" dataType="Text" index="30" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.31" name="AGENT_CODE" dataType="Text" index="31" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.32" name="AGENT_LOCATION" dataType="Text" index="32" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.33" name="AGR_PARKING_IND" dataType="Text" index="33" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.34" name="AGR_ENABLER_IND" dataType="Text" index="34" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.35" name="AGR_D2C" dataType="Text" index="35" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.36" name="TARGET_BAN" dataType="Real" index="36" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.37" name="PURCHASE_ORD_NO" dataType="Text" index="37" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.38" name="CLIN" dataType="Text" index="38" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.39" name="ORIG_VESTED_DAYS" dataType="Real" index="39" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.40" name="DATA_VOICE_IND" dataType="Text" index="40" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.41" name="ATT_SALE_CODE" dataType="Text" index="41" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.42" name="OFFER_INSTANCE_ID" dataType="Real" index="42" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.43" name="OMS_NOTIFY" dataType="Text" index="43" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.44" name="INIT_DEALER" dataType="Text" index="44" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="query_3.45" name="INIT_RMV_DEALER" dataType="Text" index="45" />
+      </OutputsList>
+      <SQL><![CDATA[Select *
+From SERVICE_AGREEMENT
+Where RowNum < 1000000]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="96" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.0" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_301a1355bcb5407cb9088b6406b226b4" />
+    <Link partId="97" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.1" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_e710f19c3d484c8d9bf2face42b47786" />
+    <Link partId="98" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.2" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_cc039f74d9264fcc9b0c324b02982103" />
+    <Link partId="99" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.3" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_7d2858d895944d0ab5b231c3f4636bf0" />
+    <Link partId="100" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.4" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_15e951abd4e74793a3d96da28811b620" />
+    <Link partId="101" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.5" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_a9129925396746f8a19d74c3aad2735a" />
+    <Link partId="102" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.6" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_aa888ff5cab4448e9677d2b15f099404" />
+    <Link partId="103" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.7" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_56aebc1217fc4b69948a214b7dd8afeb" />
+    <Link partId="104" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.8" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_6c19d1d40182414a827dc4ae838a9934" />
+    <Link partId="105" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.9" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_b2f8cdd7e3844889a1c2889c462e2db4" />
+    <Link partId="106" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.10" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_96661190d3ec4754ab5a7290ae192175" />
+    <Link partId="107" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.11" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_7ef018993e4f402e8addaf50544dfd59" />
+    <Link partId="108" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.12" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_8017afcc70d549ffab01a6acf294b7d4" />
+    <Link partId="109" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.13" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_5a65d98462c54b84b45db71caabc009b" />
+    <Link partId="110" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.14" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_68befd7ab07e4c208c8866cd4fce7a6e" />
+    <Link partId="111" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.15" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_b594e91bf3884bd1b80ee523cf1ca31e" />
+    <Link partId="112" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.16" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_0490c249be8e4d4d8fd766cc9305232f" />
+    <Link partId="113" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.17" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_2167b03dbd524844921b2ca206823bdc" />
+    <Link partId="114" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.18" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_b982dde6162f471cac86632f4224aca8" />
+    <Link partId="115" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.19" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_63c73e3cbd1048f4824fbfcac33d97f9" />
+    <Link partId="116" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.20" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_32d01bf5f1714f6ea4759aabaaace843" />
+    <Link partId="117" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.21" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_248063d834894babaf718abac51253d1" />
+    <Link partId="118" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.22" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_c72ace7b4e7f490cb8aad0a1da24d8db" />
+    <Link partId="119" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.23" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_4ed43d004e4a4377bd16be8afd3de33e" />
+    <Link partId="120" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.24" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_805be9ecb75c4c5eb161ac84952053b2" />
+    <Link partId="121" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.25" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_d93de1dc25f44e109452593f8c46a675" />
+    <Link partId="122" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.26" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_0b47a2abceb24822baddc0af25c48f1b" />
+    <Link partId="123" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.27" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_0cbb5ea0c4614fcdbff408b8bcfc4e29" />
+    <Link partId="124" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.28" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_36410ffd8f3b4eb3839b38c0a9c28d59" />
+    <Link partId="125" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.29" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_e4c332a8b48f4b23b9fc637d866b3156" />
+    <Link partId="126" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.30" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_530e7d401b15437a91fba708945edd83" />
+    <Link partId="127" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.31" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_1a05630064f54002bff4af6c17e68b0d" />
+    <Link partId="128" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.32" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_874da94d581544f5b88ebf9e7888c91f" />
+    <Link partId="129" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.33" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_206782bedb5941f5941239b6943c5b96" />
+    <Link partId="130" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.34" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_305168f33d534f39bdbd38a42013cbeb" />
+    <Link partId="131" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.35" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_0541cefb620445259de4f31f9748cd8b" />
+    <Link partId="132" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.36" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_b51be05fc69f43a6b4ec0bb67fe17cb4" />
+    <Link partId="133" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.37" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_7a12ea3e5a9040dbb92c772885cdd129" />
+    <Link partId="134" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.38" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_e6f6af136ff941cb97f75d3d701e729d" />
+    <Link partId="135" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.39" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_ba106c1393884c088e54d8403e51a5f3" />
+    <Link partId="136" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.40" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_2fc2225dc97a4fd5a0ca3508a8ad1e03" />
+    <Link partId="137" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.41" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_888ed2ba9edf466682a388ab1d9249b4" />
+    <Link partId="138" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.42" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_e4741181182343b3bae9f3c287035d68" />
+    <Link partId="139" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.43" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_8837abfb63194c85b2c6071f5027e36e" />
+    <Link partId="140" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.44" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_aa63d60dd2074691902102fe13c087da" />
+    <Link partId="141" fromNodeOrder="0" fromItemID="query_3" fromColID="query_3.45" toItemID="tbl_REF_SERVICE_AGREEMENT" toColID="tblCol_50760f3c28de4885939a86ba0218048f" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.8.0.8">
+  <Name>vdb</Name>
+  <RootView>PATIENT</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <EnableDataEncryption>false</EnableDataEncryption>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>PATIENT</Table>
+    <Table>VISIT</Table>
+    <Table>INVOICE</Table>
+    <Table>PAYMENT</Table>
+    <Table>INSURANCE_INFORMATION</Table>
+    <Table>FAMILY_HISTORY</Table>
+    <Table>ALLERGIES</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="PATIENT">
+      <Populations>
+        <Population id="query_PATIENT" name="query_PATIENT" order="1" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="VISIT">
+      <Populations>
+        <Population id="query_VISIT" name="query_VISIT" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="INVOICE">
+      <Populations>
+        <Population id="query_INVOICE" name="query_INVOICE" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="PAYMENT">
+      <Populations>
+        <Population id="query_PAYMENT" name="query_PAYMENT" order="3" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="INSURANCE_INFORMATION">
+      <Populations>
+        <Population id="query_INSURANCE_INFORMATION" name="query_INSURANCE_INFORMATION" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="FAMILY_HISTORY">
+      <Populations>
+        <Population id="query_FAMILY_HISTORY" name="query_FAMILY_HISTORY" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="ALLERGIES">
+      <Populations>
+        <Population id="query_ALLERGIES" name="query_ALLERGIES" order="2" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="false" name="FUN_REF_UDAC" />
+    <Item active="false" name="MS_REF_UDAC" />
+    <Item active="false" name="REF_SERVICE_AGREEMENT" />
+    <Item active="false" name="REF_YP_PRODUCT_TRN" />
+    <Item active="false" name="test_YP_REF_UDAC" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="121">
+      <From tableType="TableObject" table="PATIENT" column="PATIENT_ID" columnId="tblCol_60543195867b4b529de59f694a16af11" />
+      <To tableType="TableObject" table="VISIT" populationObjectName="query_VISIT" column="PATIENT_ID" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="122">
+      <From tableType="TableObject" table="PATIENT" column="PATIENT_ID" columnId="tblCol_60543195867b4b529de59f694a16af11" />
+      <To tableType="TableObject" table="INVOICE" populationObjectName="query_INVOICE" column="PATIENT_ID" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="123">
+      <From tableType="TableObject" table="PATIENT" column="PATIENT_ID" columnId="tblCol_60543195867b4b529de59f694a16af11" />
+      <To tableType="TableObject" table="INSURANCE_INFORMATION" populationObjectName="query_INSURANCE_INFORMATION" column="PATIENT_ID" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="124">
+      <From tableType="TableObject" table="PATIENT" column="PATIENT_ID" columnId="tblCol_60543195867b4b529de59f694a16af11" />
+      <To tableType="TableObject" table="FAMILY_HISTORY" populationObjectName="query_FAMILY_HISTORY" column="PATIENT_ID" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="125">
+      <From tableType="TableObject" table="PATIENT" column="PATIENT_ID" columnId="tblCol_60543195867b4b529de59f694a16af11" />
+      <To tableType="TableObject" table="ALLERGIES" populationObjectName="query_ALLERGIES" column="PATIENT_ID" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="126">
+      <From tableType="TableObject" table="INVOICE" column="INVOICE_ID" columnId="tblCol_313ce1a3b43a498496eb4a4b854fea0a" />
+      <To tableType="TableObject" table="PAYMENT" populationObjectName="query_PAYMENT" column="INVOICE_ID" columnId="queryCol_0" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

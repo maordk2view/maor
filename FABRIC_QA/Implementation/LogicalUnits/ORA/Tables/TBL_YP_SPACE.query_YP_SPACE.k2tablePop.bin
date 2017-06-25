@@ -1,0 +1,9 @@
+﻿<Graph name="TBL_YP_SPACE.query_YP_SPACE.k2tablePop.bin" lastPartID="12">
+  <TableNode partID="0" name="TBL_YP_SPACE" pos="308 5.854168" width="253" />
+  <DBQueryNode partID="6" name="ORA_SOURCE" pos="10 1.890625" size="253 96.21875" isRoot="true">
+    <DBQuery>{"Name":"query_YP_SPACE","ID":"query_6","ConnName":"ORA_SOURCE","SQL":"select * from YP_SPACE","ColumnsList":[{"ID":"query_6.0","Name":"CUSTOMER ID","DataType":"Integer","Index":0,"IsInputArgument":true},{"ID":"query_6.1","Name":"S 1","DataType":"Text","Index":1,"IsInputArgument":true},{"ID":"query_6.2","Name":"S2","DataType":"Text","Index":2,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="10" from="0" to="1" pointsArr="263 37.9270859 273 37.9270859 275.5 25 295.5 25 298 36.890625 308 36.890625" fromNodePartID="6" fromNodeColumnName="CUSTOMER ID" toNodePartID="0" toNodeColumnName="CUSTOMER ID" />
+  <Link partID="11" from="2" to="3" pointsArr="263 50 273 50 275.5 50 295.5 50 298 48.9635429 308 48.9635429" fromNodePartID="6" fromNodeColumnName="S 1" toNodePartID="0" toNodeColumnName="S 1" />
+  <Link partID="12" from="4" to="5" pointsArr="263 62.0729141 273 62.0729141 275.5 75 295.5 75 298 61.0364571 308 61.0364571" fromNodePartID="6" fromNodeColumnName="S2" toNodePartID="0" toNodeColumnName="S2" />
+</Graph>

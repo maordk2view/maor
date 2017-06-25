@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.2.4.0">
+  <Name>vdb</Name>
+  <RootView>roles</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>roles</Table>
+    <Table>permissions</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="roles">
+      <Populations>
+        <Population id="query_k2auth_roles" name="query_k2auth_roles" order="1" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="permissions">
+      <Populations>
+        <Population id="query_k2auth_permissions" name="query_k2auth_permissions" order="2" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="false" name="FUN_REF_UDAC" />
+    <Item active="false" name="MS_REF_UDAC" />
+    <Item active="false" name="REF_SERVICE_AGREEMENT" />
+    <Item active="false" name="REF_YP_PRODUCT_TRN" />
+    <Item active="false" name="test_YP_REF_UDAC" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="117">
+      <From tableType="TableObject" table="roles" column="name" columnId="tblCol_8bf03df9f1f041bea1bcad268ff0d2d3" />
+      <To tableType="TableObject" table="permissions" populationObjectName="query_k2auth_permissions" column="role" columnId="queryCol_2" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

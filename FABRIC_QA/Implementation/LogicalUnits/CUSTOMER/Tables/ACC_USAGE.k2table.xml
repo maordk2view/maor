@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ACC_USAGE</Name>
+  <ID>tbl_ACC_USAGE</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="BAN" id="tblCol_7f9225ccdeb54424affbb8844fad3492" index="0" datatype="Integer" mandatory="true" />
+    <Column name="BILL_SEQ_NO" id="tblCol_d039ca3292274bc4bf618b35818d0db4" index="1" datatype="Integer" mandatory="true" />
+    <Column name="RECORD_TYPE" id="tblCol_ce62a12c6b1645b28036079c96b27112" index="2" datatype="Text" mandatory="true" />
+    <Column name="SUBSCRIBER_NO" id="tblCol_0e2065ab59814e9dbb72b3494617d5c3" index="3" datatype="Text" mandatory="true" />
+    <Column name="AIRTIME_FEATURE_CD" id="tblCol_f08a3b5d9cb542bd9ffed09576d1a0df" index="4" datatype="Text" mandatory="true" />
+    <Column name="SERVICE_FTR_SEQ_NO" id="tblCol_8215625a165340a5b8e37aad80ccaa80" index="5" datatype="Integer" mandatory="true" />
+    <Column name="SECONDARY_FEATURE_CD" id="tblCol_53e87c4648154306a9ac5eaa6c3ce536" index="6" datatype="Text" />
+    <Column name="ACTION_DIRECTION_CD" id="tblCol_3168446ca38b48cca850d7dc0ed8d123" index="7" datatype="Text" mandatory="true" />
+    <Column name="EXTENDED_HM_AREA_IND" id="tblCol_e9cfdea845b84fb6a4d55474ccdd1fd9" index="8" datatype="Text" mandatory="true" />
+    <Column name="STEP_NO" id="tblCol_4982d9cf941f4b489522f659f8768471" index="9" datatype="Integer" />
+    <Column name="SYS_CREATION_DATE" id="tblCol_4ae61cfd9a9441d59e7658e560d86de3" index="10" datatype="Text" mandatory="true" />
+    <Column name="SYS_UPDATE_DATE" id="tblCol_6360e324d3b04cb191d42e463d965523" index="11" datatype="Text" />
+    <Column name="OPERATOR_ID" id="tblCol_6af0c0f3fe034e11b7c1124ea81cb16c" index="12" datatype="Integer" />
+    <Column name="APPLICATION_ID" id="tblCol_e5e1a9a3dab7440ca2935d6441d32fa3" index="13" datatype="Text" />
+    <Column name="DL_SERVICE_CODE" id="tblCol_ce9e5fe50afd4829bfb75b24475e81e4" index="14" datatype="Text" mandatory="true" />
+    <Column name="DL_UPDATE_STAMP" id="tblCol_c0feff5a7b86437289efb24ed055d703" index="15" datatype="Integer" />
+    <Column name="AU_SEQ_NO" id="tblCol_8556bd97f8e145b793f510274bf68460" index="16" datatype="Integer" />
+    <Column name="AU_SUMMARY_REQUIRED" id="tblCol_49b7f86c176141f68dba134c312892d3" index="17" datatype="Text" />
+    <Column name="AIR_RECORD_TYPE" id="tblCol_37c1a418e93843e3add0faab1e78b947" index="18" datatype="Text" />
+    <Column name="SOC" id="tblCol_0971d444d083447da1f71736757bf2f8" index="19" datatype="Text" mandatory="true" />
+    <Column name="SOC_EFFECTIVE_DATE" id="tblCol_ca9b879db0e74694858a9fd53084e055" index="20" datatype="Text" mandatory="true" />
+    <Column name="RATING_EFF_DATE" id="tblCol_6032129a726c4306b488666757ab437f" index="21" datatype="Text" />
+    <Column name="PRICE_PLAN_CODE" id="tblCol_2f95970916804c6ca2c1dc572a11f53e" index="22" datatype="Text" />
+    <Column name="RATING_LEVEL_CODE" id="tblCol_b951f581d2b14cedb29b3489e7a5fcdb" index="23" datatype="Text" />
+    <Column name="LAST_CALL_SEIZURE_DT" id="tblCol_896f645690d044e5a9b1180c34c456f6" index="24" datatype="Text" />
+    <Column name="LAST_IM_CALL_DT" id="tblCol_fd7b9dc8c98e4df6bd1134ec9f364065" index="25" datatype="Text" />
+    <Column name="IM_ALLOCATION_IND" id="tblCol_338dc06cbc224313b0b7bb577c38f2c7" index="26" datatype="Text" />
+    <Column name="PRORATION_FACTOR" id="tblCol_5a6b67f36cb448c29570874434f1aaf7" index="27" datatype="Real" />
+    <Column name="RERATE_REQUEST_CD" id="tblCol_fdf85ce824ce452fadfba250b46e1d57" index="28" datatype="Text" />
+    <Column name="RERATE_RESULT_CD" id="tblCol_ecf15adcde114589a5aecc10bfa7fe4f" index="29" datatype="Text" />
+    <Column name="RERATE_DATE" id="tblCol_08ed8ca10b11425bbd06131c4b7096ad" index="30" datatype="Text" />
+    <Column name="TIER_NO_PRD_1" id="tblCol_b62241aeabe3470999eb2a1217450c9b" index="31" datatype="Integer" />
+    <Column name="TIER_NO_PRD_2" id="tblCol_f6f3559fe6744b46888449778d99c27f" index="32" datatype="Integer" />
+    <Column name="TIER_NO_PRD_3" id="tblCol_664ca16d9c59457381cdb00bd24ac0b8" index="33" datatype="Integer" />
+    <Column name="TIER_NO_PRD_4" id="tblCol_4403d4c2359743eeaf024b6cb7f3317b" index="34" datatype="Integer" />
+    <Column name="TIER_NO_PRD_5" id="tblCol_ed2c536f20334f9faa5d23a8273e8117" index="35" datatype="Integer" />
+    <Column name="TIER_NO_PRD_6" id="tblCol_162d5d47bce144a5acb6367bb96bb91a" index="36" datatype="Integer" />
+    <Column name="TIER_NO_COMBD" id="tblCol_d33e8c37c8d5423bb7ecaec0d516cc74" index="37" datatype="Integer" />
+    <Column name="IM_ALLOWED_PRD_1" id="tblCol_98d3f442110a47d5aa4f23ad5ce57d3f" index="38" datatype="Real" />
+    <Column name="IM_ALLOWED_PRD_2" id="tblCol_1d8b5274bfff41a6aff017c2c653a271" index="39" datatype="Real" />
+    <Column name="IM_ALLOWED_PRD_3" id="tblCol_99ec8f7019384ceb80b49f67f82ff551" index="40" datatype="Real" />
+    <Column name="IM_ALLOWED_PRD_4" id="tblCol_a6a42ab3193841c4add2487185921c22" index="41" datatype="Real" />
+    <Column name="IM_ALLOWED_PRD_5" id="tblCol_67ff9ed75d4f456e9713b506974f4dae" index="42" datatype="Real" />
+    <Column name="IM_ALLOWED_PRD_6" id="tblCol_d905ba614ab3459f864aeae2067d7544" index="43" datatype="Real" />
+    <Column name="IM_ALLOWED_COMBD" id="tblCol_bca87fe37017435bb8f18ab902712340" index="44" datatype="Real" />
+    <Column name="CTN_IM_USED_PRD_1" id="tblCol_095f9e41e8ca4b609cf460d9f92c1411" index="45" datatype="Real" mandatory="true" />
+    <Column name="CTN_IM_USED_PRD_2" id="tblCol_8bfc5ee311aa4b689d6caf6e7e50823c" index="46" datatype="Real" mandatory="true" />
+    <Column name="CTN_IM_USED_PRD_3" id="tblCol_77f11f4a37024dd5a7277a4c91ea4610" index="47" datatype="Real" mandatory="true" />
+    <Column name="CTN_IM_USED_PRD_4" id="tblCol_b608bb213f54443989ff2399cc674330" index="48" datatype="Real" mandatory="true" />
+    <Column name="CTN_IM_USED_PRD_5" id="tblCol_63a2495f796245b89d65ca3689e2edd7" index="49" datatype="Real" mandatory="true" />
+    <Column name="CTN_IM_USED_PRD_6" id="tblCol_5546b16961fc497994c313bf503c478a" index="50" datatype="Real" mandatory="true" />
+    <Column name="CTN_IM_USED_COMBD" id="tblCol_bfa16f0ea62543d6a17d72eafeb3351c" index="51" datatype="Real" mandatory="true" />
+    <Column name="CTN_MINS_PRD_1" id="tblCol_e1eeccb1b9974b1a9ded6c9cc6f1c7cf" index="52" datatype="Real" mandatory="true" />
+    <Column name="CTN_MINS_PRD_2" id="tblCol_81e4b0c340e44b3b8c7c180d62ff35ca" index="53" datatype="Real" mandatory="true" />
+    <Column name="CTN_MINS_PRD_3" id="tblCol_332d7b4a7a9f4e69afdcce9c0ccc291a" index="54" datatype="Real" mandatory="true" />
+    <Column name="CTN_MINS_PRD_4" id="tblCol_a59b024dbddd40a290a9a1d5c6f76cbd" index="55" datatype="Real" mandatory="true" />
+    <Column name="CTN_MINS_PRD_5" id="tblCol_5643b2b5312341b58920c07f75b9a1bb" index="56" datatype="Real" mandatory="true" />
+    <Column name="CTN_MINS_PRD_6" id="tblCol_cad14d9baace4082ac7a1197c7fed0be" index="57" datatype="Real" mandatory="true" />
+    <Column name="CTN_MINS" id="tblCol_6bd04eabf98a4b7cb274b8dd43d9ba96" index="58" datatype="Real" mandatory="true" />
+    <Column name="CTN_MINS_NO_AIR" id="tblCol_dd9e460b5d9b406c94a1b52341b14862" index="59" datatype="Real" mandatory="true" />
+    <Column name="NUM_OF_CALLS_PRD_1" id="tblCol_e75a7388163d4d708680ed76cfe7780b" index="60" datatype="Integer" mandatory="true" />
+    <Column name="NUM_OF_CALLS_PRD_2" id="tblCol_21a7e535554e4322bfadfe1931416995" index="61" datatype="Integer" mandatory="true" />
+    <Column name="NUM_OF_CALLS_PRD_3" id="tblCol_c8efa6aaf1204df18c523229a5085576" index="62" datatype="Integer" mandatory="true" />
+    <Column name="NUM_OF_CALLS_PRD_4" id="tblCol_934e650a7c1349a3ba3c00aeb056e441" index="63" datatype="Integer" mandatory="true" />
+    <Column name="NUM_OF_CALLS_PRD_5" id="tblCol_9089130f28684a3b93a4b5d175f8b11e" index="64" datatype="Integer" mandatory="true" />
+    <Column name="NUM_OF_CALLS_PRD_6" id="tblCol_1aa1cea46933427087ffccadc9612dd5" index="65" datatype="Integer" mandatory="true" />
+    <Column name="NUM_OF_CALLS" id="tblCol_ddd6d555adbe445e85ba28f38d28835b" index="66" datatype="Integer" mandatory="true" />
+    <Column name="NUM_OF_FREE_AIR_CALLS" id="tblCol_1220e80723ed41c484fd9248de4632cf" index="67" datatype="Integer" mandatory="true" />
+    <Column name="NUM_OF_NO_AIR_CALLS" id="tblCol_fabf0e6c61d947f3b34bb115bbcd62a3" index="68" datatype="Integer" mandatory="true" />
+    <Column name="CHRG_INCL_IM_PRD_1" id="tblCol_8c95cdd17c9d47d9918df02ad95b6805" index="69" datatype="Real" mandatory="true" />
+    <Column name="CHRG_INCL_IM_PRD_2" id="tblCol_1ec33b4331454190a6645af2a3df718c" index="70" datatype="Real" mandatory="true" />
+    <Column name="CHRG_INCL_IM_PRD_3" id="tblCol_97e6d2b9366944a980caf64a0dcd194e" index="71" datatype="Real" mandatory="true" />
+    <Column name="CHRG_INCL_IM_PRD_4" id="tblCol_d00a3a07bbc64f90819decb2332e40ac" index="72" datatype="Real" mandatory="true" />
+    <Column name="CHRG_INCL_IM_PRD_5" id="tblCol_17bd407375e54cf1868a34f679f7f7d8" index="73" datatype="Real" mandatory="true" />
+    <Column name="CHRG_INCL_IM_PRD_6" id="tblCol_ec6514df26a74b7fa07327aa465833f4" index="74" datatype="Real" mandatory="true" />
+    <Column name="CHRG_AMT_PRD_1" id="tblCol_34cd196148d74b2684db82232adbde02" index="75" datatype="Real" mandatory="true" />
+    <Column name="CHRG_AMT_PRD_2" id="tblCol_6f41e73f1e934f2b8853f5b63beea8af" index="76" datatype="Real" mandatory="true" />
+    <Column name="CHRG_AMT_PRD_3" id="tblCol_4fc69872d01049d7addb1ab9fd2b3898" index="77" datatype="Real" mandatory="true" />
+    <Column name="CHRG_AMT_PRD_4" id="tblCol_5006ea8e3038477b82edfecd816ade6f" index="78" datatype="Real" mandatory="true" />
+    <Column name="CHRG_AMT_PRD_5" id="tblCol_179d5b0530dc454b8d3c751632a840f9" index="79" datatype="Real" mandatory="true" />
+    <Column name="CHRG_AMT_PRD_6" id="tblCol_6f5452e1a04b49409ce2acf18995618d" index="80" datatype="Real" mandatory="true" />
+    <Column name="CHRG_AMT" id="tblCol_2f375c951a2845d29b3149e3b481b0d3" index="81" datatype="Real" mandatory="true" />
+    <Column name="CHRG_AMT_FOR_FED_TAX" id="tblCol_b53769506253455b8da5de46ce589b58" index="82" datatype="Real" mandatory="true" />
+    <Column name="RM_ORIG_CHRG" id="tblCol_23f5633439ef4aaaae1c87554e99975e" index="83" datatype="Real" mandatory="true" />
+    <Column name="DIFF_CTY_TAX_AMT" id="tblCol_46028cbae1434bffa1262c0fc7d8a129" index="84" datatype="Real" mandatory="true" />
+    <Column name="DIFF_CNT_TAX_AMT" id="tblCol_4dbbeac3a796462f8b31bd825c3145a2" index="85" datatype="Real" mandatory="true" />
+    <Column name="DIFF_STT_TAX_AMT" id="tblCol_52f66242adec4fffbc52cf736d07981e" index="86" datatype="Real" mandatory="true" />
+    <Column name="DIFF_MIS1_TAX_AMT" id="tblCol_3cc1b9374a424ce380770c778f2b835c" index="87" datatype="Real" mandatory="true" />
+    <Column name="DIFF_MIS2_TAX_AMT" id="tblCol_174626f5991549bbbbbe5f1fd494847d" index="88" datatype="Real" mandatory="true" />
+    <Column name="RM_ORIG_TAX_AMT" id="tblCol_667457f754bd42958861cafb215a622b" index="89" datatype="Real" mandatory="true" />
+    <Column name="SOC_SEQ_NO" id="tblCol_bed765b875a241daae02b1108477b573" index="90" datatype="Integer" />
+    <Column name="ICC_NUM_OF_CALLS" id="tblCol_a19249ebb6d245c7b17f3628d3d5ccf6" index="91" datatype="Integer" mandatory="true" />
+    <Column name="ICC_MINS" id="tblCol_0063c8593de4467b8d1b382938e957c7" index="92" datatype="Real" mandatory="true" />
+    <Column name="LAST_CALL_PRD_1" id="tblCol_b15a48f3b23943aea78e9cad52da662b" index="93" datatype="Text" />
+    <Column name="LAST_CALL_PRD_2" id="tblCol_b9daaeea47724aaa8bca94609c228bbf" index="94" datatype="Text" />
+    <Column name="LAST_CALL_PRD_3" id="tblCol_33487a4d270c45338b6d8cdb3daa8620" index="95" datatype="Text" />
+    <Column name="LAST_CALL_PRD_4" id="tblCol_7cf0fb1755f24946b815ad7bb5cdb0fa" index="96" datatype="Text" />
+    <Column name="LAST_CALL_PRD_5" id="tblCol_cae9abfbc08b494fa0cea17e0b3f3c34" index="97" datatype="Text" />
+    <Column name="LAST_CALL_PRD_6" id="tblCol_5b1f6c5e98fb4c949b898bafa6057f80" index="98" datatype="Text" />
+    <Column name="LAST_RERATE_DATE" id="tblCol_7ba956eb56b847be97ce78c141801e38" index="99" datatype="Text" />
+    <Column name="RATE_GROUP" id="tblCol_1dba39f0066d40ec84a8b184a7c6ba27" index="100" datatype="Text" />
+    <Column name="ESTBL_NUM_OF_CALLS" id="tblCol_ea271ddd6a1441d6afef04e8a001047f" index="101" datatype="Integer" mandatory="true" />
+    <Column name="BASE_RECORD_IND" id="tblCol_4488f133c8504c0191e0b4d7dc8da178" index="102" datatype="Text" />
+    <Column name="CTN_FM_USED_PRD_1" id="tblCol_110075009cc14539b6e8cf86eb0d1cba" index="103" datatype="Real" mandatory="true" />
+    <Column name="CTN_FM_USED_PRD_2" id="tblCol_a9c4659bf66a416bac718862cbbd00bb" index="104" datatype="Real" mandatory="true" />
+    <Column name="CTN_FM_USED_PRD_3" id="tblCol_9142030b0c35464881b3a8a392360345" index="105" datatype="Real" mandatory="true" />
+    <Column name="CTN_FM_USED_PRD_4" id="tblCol_62ba8eced00a4797917ae9aead3face4" index="106" datatype="Real" mandatory="true" />
+    <Column name="CTN_FM_USED_PRD_5" id="tblCol_60bcc1167778457f99fa473f6d4310a8" index="107" datatype="Real" mandatory="true" />
+    <Column name="CTN_FM_USED_PRD_6" id="tblCol_a10339a8e43f4aaba9e5e4699dbbae0b" index="108" datatype="Real" mandatory="true" />
+    <Column name="CTN_FM_USED_COMBD" id="tblCol_31cdd585e9ad4e3380e0757e409159e8" index="109" datatype="Real" mandatory="true" />
+    <Column name="FREE_MIN_USED_PRD_1" id="tblCol_92ac6b33ea3b45c4ba7344d4ef298a00" index="110" datatype="Real" mandatory="true" />
+    <Column name="FREE_MIN_USED_PRD_2" id="tblCol_78efe81ea6e44abd88a249a93fea8df0" index="111" datatype="Real" mandatory="true" />
+    <Column name="FREE_MIN_USED_PRD_3" id="tblCol_4f19c4d6ee7f4d04a3318366f9b1a863" index="112" datatype="Real" mandatory="true" />
+    <Column name="FREE_MIN_USED_PRD_4" id="tblCol_1535404bdaca49efa598858e6eaa56ea" index="113" datatype="Real" mandatory="true" />
+    <Column name="FREE_MIN_USED_PRD_5" id="tblCol_2398b643d9634baf9bf7f67cea5212f4" index="114" datatype="Real" mandatory="true" />
+    <Column name="FREE_MIN_USED_PRD_6" id="tblCol_7cdc9f04537e478ca4b7b96981ed8706" index="115" datatype="Real" mandatory="true" />
+    <Column name="FREE_MIN_USED_COMBD" id="tblCol_e0caf88add564ce19828d34064cf4c9f" index="116" datatype="Real" mandatory="true" />
+    <Column name="EXPIRATION_DATE" id="tblCol_ecb9710cbde441ee9157c9548b751983" index="117" datatype="Text" />
+    <Column name="FM_TYPE" id="tblCol_46fd5c15633c4299b51ee07d4b296428" index="118" datatype="Text" />
+    <Column name="CALLING_ROUTE_TYPE" id="tblCol_cb79feda771f4acc928f405bbfca5deb" index="119" datatype="Text" />
+    <Column name="UNIT_MEASUR_CODE" id="tblCol_5cfee7204ff744e4aece5c34b061b6fb" index="120" datatype="Text" />
+    <Column name="SUSPECT_PROR_IND" id="tblCol_6e8ab559bb9a4be8b27b327c93ed803b" index="121" datatype="Text" />
+    <Column name="SUSPECT_SUSPEND_IND" id="tblCol_fd1c0eabcd0c46b38311917a18e1a717" index="122" datatype="Text" />
+    <Column name="PRODUCT_TYPE" id="tblCol_a60d4d47e48b4941b42cc21e9dd3d2b5" index="123" datatype="Text" mandatory="true" />
+    <Column name="NEXT_BAN" id="tblCol_462becdb95b04704ba11467e290c71a1" index="124" datatype="Integer" />
+    <Column name="NEXT_SUBNO" id="tblCol_6ad5e81aa5de42988c856bdf7224a307" index="125" datatype="Text" />
+    <Column name="NEXT_FTR_SEQ_NO" id="tblCol_9e295c164f5243528590f0b302e2ca02" index="126" datatype="Integer" />
+    <Column name="INTRASTATE_AMT_1" id="tblCol_3e45a67b04c4444e9a405eb9f4ffa61f" index="127" datatype="Real" mandatory="true" />
+    <Column name="INTRASTATE_AMT_2" id="tblCol_9c4f0ee37f8c4a38bff2ab6f3e72d7d0" index="128" datatype="Real" mandatory="true" />
+    <Column name="INTERSTATE_CHRG_AMT" id="tblCol_382e75bd8d364e5b90ad33189ffd4b2d" index="129" datatype="Real" mandatory="true" />
+    <Column name="INTERSTATE_AMT_1" id="tblCol_5a571b46065b46009348743526e4b008" index="130" datatype="Real" mandatory="true" />
+    <Column name="INTERSTATE_AMT_2" id="tblCol_6ae0d64703de45d089002112031af32f" index="131" datatype="Real" mandatory="true" />
+    <Column name="CTN_VOLUME_PRD_1" id="tblCol_a1120fcb0d1240c48f99990725235d77" index="132" datatype="Real" mandatory="true" />
+    <Column name="CTN_VOLUME_PRD_2" id="tblCol_1383fec1a99942729ec58260fe7715ec" index="133" datatype="Real" mandatory="true" />
+    <Column name="CTN_VOLUME_PRD_3" id="tblCol_ae1919ac143c49edbbb2d7b5a570b297" index="134" datatype="Real" mandatory="true" />
+    <Column name="CTN_VOLUME_PRD_4" id="tblCol_9e91a0a93783411bb6bd6b52f8fc27b1" index="135" datatype="Real" mandatory="true" />
+    <Column name="CTN_VOLUME_PRD_5" id="tblCol_506ac8aba8654d4d92797fc610fdf36e" index="136" datatype="Real" mandatory="true" />
+    <Column name="CTN_VOLUME_PRD_6" id="tblCol_1175f53d0b0e47fcac22dd957ad9df44" index="137" datatype="Real" mandatory="true" />
+    <Column name="CTN_VOLUME" id="tblCol_ade39dfdcd874adfa2b59fe1196f3af9" index="138" datatype="Real" mandatory="true" />
+    <Column name="CTN_VOL_NO_AIR" id="tblCol_cb65e7d77a2948b0b2f324a6e262c842" index="139" datatype="Real" mandatory="true" />
+    <Column name="IV_ALLOWED_PRD_1" id="tblCol_541d00b99bd647b1ab3c4739d7701f3d" index="140" datatype="Real" />
+    <Column name="IV_ALLOWED_PRD_2" id="tblCol_34aedf93955544b1bddf541a534d8958" index="141" datatype="Real" />
+    <Column name="IV_ALLOWED_PRD_3" id="tblCol_04ab1b730ef441f0a1a25dee4adf3787" index="142" datatype="Real" />
+    <Column name="IV_ALLOWED_PRD_4" id="tblCol_d7804cf49c3b4415af0f16e32e10c7f2" index="143" datatype="Real" />
+    <Column name="IV_ALLOWED_PRD_5" id="tblCol_d9321726319a4e689638c596c5f52928" index="144" datatype="Real" />
+    <Column name="IV_ALLOWED_PRD_6" id="tblCol_faffd3ed7eb44e9da38b7a76d0a9baf8" index="145" datatype="Real" />
+    <Column name="IV_ALLOWED_COMBD" id="tblCol_2dad553ab35643e5938c7eebcf9dfee5" index="146" datatype="Real" />
+    <Column name="CTN_IV_USED_PRD_1" id="tblCol_e611b40e07f04687871a4096fe0402ed" index="147" datatype="Real" mandatory="true" />
+    <Column name="CTN_IV_USED_PRD_2" id="tblCol_f9ac6a9667684be3838600bf927861a5" index="148" datatype="Real" mandatory="true" />
+    <Column name="CTN_IV_USED_PRD_3" id="tblCol_19cb2d8e33ff4f50a296e83163aa126a" index="149" datatype="Real" mandatory="true" />
+    <Column name="CTN_IV_USED_PRD_4" id="tblCol_a75561ee9c7442178d958350e4d267aa" index="150" datatype="Real" mandatory="true" />
+    <Column name="CTN_IV_USED_PRD_5" id="tblCol_31e2e8d737864bfba182285b65137d13" index="151" datatype="Real" mandatory="true" />
+    <Column name="CTN_IV_USED_PRD_6" id="tblCol_8c4ed0cb7db34bfda197a81a9f2d6238" index="152" datatype="Real" mandatory="true" />
+    <Column name="CTN_IV_USED_COMBD" id="tblCol_9675a75144474aca8811d21b0fca0daa" index="153" datatype="Real" mandatory="true" />
+    <Column name="DEF_UNIT_MEASUR_CD" id="tblCol_e050050e3426496a8893d54c633e1d47" index="154" datatype="Text" />
+    <Column name="NEXT_SOC" id="tblCol_3af615c5e5ad488bacacf12533ffdfee" index="155" datatype="Text" />
+    <Column name="NEXT_FEATURE_CODE" id="tblCol_da726e1f95b345e28e560ba4a7844b42" index="156" datatype="Text" />
+    <Column name="NEXT_SOC_EFF_DATE" id="tblCol_b35aa830654c4648949d12c6ce6d252d" index="157" datatype="Text" />
+    <Column name="ACCUM_RFM_ALLOWED" id="tblCol_2163592ec03248a9ad98f4e98e58a71c" index="158" datatype="Real" />
+    <Column name="SUBSCRIBER_TYPE" id="tblCol_b1bf999e28714584a4b4517b83fd830e" index="159" datatype="Text" />
+    <Column name="ADJUSTED_RFM_ALLOWED" id="tblCol_d77a527e19054629bd8db93bb2167ffc" index="160" datatype="Real" />
+    <Column name="SUBSCRIBER_GROUP" id="tblCol_2d8f25b0a9e3418f8a78e2dd4da2b63a" index="161" datatype="Text" />
+    <Column name="GROUP_FREE_MIN_USED" id="tblCol_41397a330ec94a84bca632a319104c64" index="162" datatype="Real" mandatory="true" />
+    <Column name="SYS_ADJUST_MINUTES" id="tblCol_cc6c12676c384af4b71936c36f7db163" index="163" datatype="Real" />
+    <Column name="GROUP_RO_MIN_USED" id="tblCol_3606787534fc42c8b7f2677cd8f50d99" index="164" datatype="Real" mandatory="true" />
+    <Column name="POOLING_AMT" id="tblCol_229098b0c2cf4e0aa4a36ac899e043cb" index="165" datatype="Real" />
+    <Column name="POOL_GROUP_ID" id="tblCol_d9f83d8a8fa441219ba3c54c7d28c8be" index="166" datatype="Text" />
+    <Column name="ALLOCATION_FACTOR" id="tblCol_be6713648e724e8a88b8073e40c8b21e" index="167" datatype="Real" />
+    <Column name="EXTRA_FM_ALLOWED" id="tblCol_f019aca0783e4fcf9958ce33ee335127" index="168" datatype="Real" />
+    <Column name="TABLE_NAME" id="tblCol_412bd2d3195e4524bd41a88c45d6592c" index="169" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

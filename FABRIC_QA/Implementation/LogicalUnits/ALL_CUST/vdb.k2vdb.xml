@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2.5.3.0">
+  <Name>vdb</Name>
+  <RootView>YP_CUSTOMER</RootView>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>YP_CUSTOMER</Table>
+    <Table>YP_PRODUCT</Table>
+    <Table>YP_ITEM</Table>
+    <Table>YP_ADDRESS</Table>
+    <Table>YP_PRODUCT_TRN</Table>
+    <Table>YP_REF_UDAC</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="YP_CUSTOMER">
+      <Populations>
+        <Population id="query_YP_CUSTOMER" name="query_YP_CUSTOMER" order="1" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="YP_PRODUCT">
+      <Populations>
+        <Population id="query_CUSTOMER_YP_PRODUCT" name="query_CUSTOMER_YP_PRODUCT" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="YP_ITEM">
+      <Populations>
+        <Population id="query_YP_ITEM" name="query_YP_ITEM" order="3" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="YP_ADDRESS">
+      <Populations>
+        <Population id="query_YP_ADDRESS" name="query_YP_ADDRESS" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="YP_PRODUCT_TRN">
+      <Populations>
+        <Population id="query_YP_PRODUCT_TRN" name="query_YP_PRODUCT_TRN" order="2" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="YP_REF_UDAC">
+      <Populations>
+        <Population id="query_YP_REF_UDAC" name="query_YP_REF_UDAC" order="2" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="false" name="FUN_REF_UDAC" />
+    <Item active="false" name="MS_REF_UDAC" />
+    <Item active="false" name="REF_SERVICE_AGREEMENT" />
+    <Item active="false" name="REF_YP_PRODUCT_TRN" />
+    <Item active="false" name="test_YP_REF_UDAC" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="368">
+      <From tableType="TableObject" table="YP_CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_64a20cbeb3814a7299f44b1e4f8f579b" />
+      <To tableType="TableObject" table="YP_PRODUCT" populationObjectName="query_CUSTOMER_YP_PRODUCT" column="CUSTOMER_ID" columnId="query_101.0" />
+    </Relation>
+    <Relation id="497">
+      <From tableType="TableObject" table="YP_PRODUCT" column="CUSTOMER_ID" columnId="tblCol_dda36d1bfc664d4cb18604e553c23887" />
+      <To tableType="TableObject" table="YP_ITEM" populationObjectName="query_YP_ITEM" column="CUSTOMER_ID" columnId="query_130.0" />
+    </Relation>
+    <Relation id="498">
+      <From tableType="TableObject" table="YP_PRODUCT" column="PRODUCT_CODE" columnId="tblCol_ebc456c837554f4e9225f76edd1829a4" />
+      <To tableType="TableObject" table="YP_ITEM" populationObjectName="query_YP_ITEM" column="PRODUCT_CODE" columnId="query_130.1" />
+    </Relation>
+    <Relation id="499">
+      <From tableType="TableObject" table="YP_PRODUCT" column="PRODUCT_ISSUE_NUM" columnId="tblCol_8196002347284dcb9f1e85fb7e965ab3" />
+      <To tableType="TableObject" table="YP_ITEM" populationObjectName="query_YP_ITEM" column="PRODUCT_ISSUE_NUM" columnId="query_130.2" />
+    </Relation>
+    <Relation id="534">
+      <From tableType="TableObject" table="YP_CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_64a20cbeb3814a7299f44b1e4f8f579b" />
+      <To tableType="TableObject" table="YP_ADDRESS" populationObjectName="query_YP_ADDRESS" column="CUSTOMER_ID" columnId="query_36.1" />
+    </Relation>
+    <Relation id="564">
+      <From tableType="TableObject" table="YP_CUSTOMER" column="DUMMY" columnId="tblCol_58a3d4886e0c4f9e9cbf30bff10d4183" />
+      <To tableType="TableObject" table="YP_PRODUCT_TRN" populationObjectName="query_YP_PRODUCT_TRN" column="DUMMY" columnId="query_5.0" />
+    </Relation>
+    <Relation id="565">
+      <From tableType="TableObject" table="YP_CUSTOMER" column="DUMMY" columnId="tblCol_58a3d4886e0c4f9e9cbf30bff10d4183" />
+      <To tableType="TableObject" table="YP_REF_UDAC" populationObjectName="query_YP_REF_UDAC" column="DUMMY" columnId="query_8.0" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

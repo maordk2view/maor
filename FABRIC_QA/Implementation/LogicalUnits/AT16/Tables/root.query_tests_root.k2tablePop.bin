@@ -1,0 +1,9 @@
+﻿<Graph name="root.query_tests_root.k2tablePop.bin" lastPartID="47">
+  <TableNode partID="0" name="root" pos="455.554718 126.890625" width="309.7695" />
+  <DBQueryNode partID="34" name="CASS_SOURCE" pos="21 121" size="253 96.21875" isRoot="true">
+    <DBQuery>{"Name":"query_tests_root","ID":"query_query_tests_root","ConnName":"CASS_SOURCE","SQL":"Select *\r\nFrom tests.root","ColumnsList":[{"ID":"queryCol_0","Name":"start","DataType":"Text","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"end","DataType":"Text","Index":1,"IsInputArgument":false},{"ID":"queryCol_2","Name":"code","DataType":"Text","Index":2,"IsInputArgument":false}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="38" from="0" to="1" pointsArr="274 157.036453 284 157.036453 445.554718 157.927078 455.554718 157.927078" fromNodePartID="34" fromNodeColumnName="start" toNodePartID="0" toNodeColumnName="start" />
+  <Link partID="37" from="2" to="3" pointsArr="274 169.109375 284 169.109375 445.554718 170 455.554718 170" fromNodePartID="34" fromNodeColumnName="end" toNodePartID="0" toNodeColumnName="end" />
+  <Link partID="47" from="4" to="5" pointsArr="274 181.182281 284 181.182281 445.554718 182.0729 455.554718 182.0729" fromNodePartID="34" fromNodeColumnName="code" toNodePartID="0" toNodeColumnName="code" />
+</Graph>

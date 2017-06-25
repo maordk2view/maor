@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>HR_JOB_HISTORY</Name>
+  <ID>tbl_HR_JOB_HISTORY</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="EMPLOYEE_ID" id="tblCol_084dda6dd3c34ea39bfb01ac575fd411" index="0" datatype="Integer" mandatory="true" />
+    <Column name="START_DATE" id="tblCol_3f3c20bf34a9476b90f716e96931b2a2" index="1" datatype="Text" mandatory="true" />
+    <Column name="END_DATE" id="tblCol_7ee84713367645828644b9958fd10609" index="2" datatype="Text" mandatory="true" />
+    <Column name="JOB_ID" id="tblCol_da0d9313f9f44fb989378a677d07c49d" index="3" datatype="Text" mandatory="true" />
+    <Column name="DEPARTMENT_ID" id="tblCol_02a84dd458df41ceb1b0082f0f23fe2c" index="4" datatype="Integer" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_084dda6dd3c34ea39bfb01ac575fd411,tblCol_3f3c20bf34a9476b90f716e96931b2a2" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

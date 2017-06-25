@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>yp_address</Name>
+  <ID>tbl_yp_address</ID>
+  <ColumnsCollation>NOCASE</ColumnsCollation>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="address_id" id="tblCol_0544873e1c934856ad225d3661860dd0" index="0" datatype="Real" mandatory="true" />
+    <Column name="customer_id" id="tblCol_dd5d9cc714eb46e998f0dc46a1a29d65" index="1" datatype="Real" mandatory="true" />
+    <Column name="house_no" id="tblCol_607f2a329ffa4975b683f07a828e4909" index="2" datatype="Text" />
+    <Column name="colony_id" id="tblCol_e00b2197e5e8450eb579aa38a4c456b3" index="3" datatype="Real" />
+    <Column name="override_colony" id="tblCol_ed34c7db109f460abca1fa207fd23267" index="4" datatype="Text" />
+    <Column name="state_code" id="tblCol_5aef8888d75f4ad9b95f437248ef3ccd" index="5" datatype="Text" />
+    <Column name="street_name" id="tblCol_4d97267eba7147b8a898fa77187e0857" index="6" datatype="Text" />
+    <Column name="street_type" id="tblCol_aba6ee3ee8da475c86a144703e7d0bb4" index="7" datatype="Text" />
+    <Column name="sub_location" id="tblCol_bcdbc58d9f144e56a876e4ae1106f3d5" index="8" datatype="Text" />
+    <Column name="zip_code" id="tblCol_4d4dcd58b335434cae05571cf09348c3" index="9" datatype="Text" />
+    <Column name="po_box" id="tblCol_5dd5cce87ba9492ebb4418c854cda397" index="10" datatype="Text" />
+    <Column name="direction" id="tblCol_a08f4a6387424cfd89a4e6d8f9a99a20" index="11" datatype="Text" />
+    <Column name="selling_id" id="tblCol_ac621068e0a64ff29245ac652252c60e" index="12" datatype="Text" />
+    <Column name="block_number" id="tblCol_f38cfd16c5ff4d0d890186312c889fc4" index="13" datatype="Text" />
+    <Column name="terrain_number" id="tblCol_f00f9114f4c8474d90f41ebba5b338f0" index="14" datatype="Text" />
+    <Column name="interior_number" id="tblCol_1af2f32e8af2447f8901b66d86e01298" index="15" datatype="Text" />
+    <Column name="override_town" id="tblCol_2333987ef3834d468cda9a61346edca5" index="16" datatype="Text" />
+    <Column name="between_street1" id="tblCol_ca5466f57d11407c9b71be668715461f" index="17" datatype="Text" />
+    <Column name="between_street2" id="tblCol_940e2fe478ee459e93ee550ffebd94a8" index="18" datatype="Text" />
+    <Column name="country" id="tblCol_fa351007d53d468b93fa16e8e4ed8e25" index="19" datatype="Text" mandatory="true" />
+    <Column name="override_colony_type" id="tblCol_616c406b922a413aaf47ee54db876aa4" index="20" datatype="Text" />
+    <Column name="ctcr_batch_prog_id" id="tblCol_d3ee9216b90f41c49c47c0ea5f291f98" index="21" datatype="Text" />
+    <Column name="ctcr_batch_prog_dt" id="tblCol_fd830195ff4a4534b5c21d11e8bfc6fc" index="22" datatype="Text" />
+    <Column name="ctcr_online_user_id" id="tblCol_f3d7576b12554341a316ad894d2a0493" index="23" datatype="Real" />
+    <Column name="ctcr_online_prog_id" id="tblCol_029a7be0d32b4ab7860a9afb238b7184" index="24" datatype="Text" />
+    <Column name="ctcr_online_prog_dt" id="tblCol_81914aab46ba4b23a94b8c74178b9933" index="25" datatype="Text" />
+    <Column name="ctcr_sys_cre_dt" id="tblCol_2c779136ff58424f902fb81c7688192d" index="26" datatype="Text" />
+    <Column name="ctcr_sys_upd_dt" id="tblCol_5312c4c97a2f46a494d05f0e9f7cca30" index="27" datatype="Text" />
+    <Column name="ctcr_dbi_prog_id" id="tblCol_3eb83914015142ffa1baeb17da34bd1e" index="28" datatype="Text" />
+    <Column name="ctcr_dbi_prog_dt" id="tblCol_c2f0e9eb8bf545389562b9903bf1dee2" index="29" datatype="Text" />
+    <Column name="ctcr_cnv_dt" id="tblCol_666d6c62b04e40e6b7210c050196170b" index="30" datatype="Text" />
+    <Column name="ctcr_event_id" id="tblCol_89d9b821b19a486b93f3df4575ed473a" index="31" datatype="Real" />
+    <Column name="sfa_id" id="tblCol_1a9230b4b2df4f93bcc9e585ee08cc96" index="32" datatype="Text" />
+    <Column name="T1" id="tblCol_1d6b0ed25dc047fa8bd12b664979e9dd" index="33" datatype="Text" />
+    <Column name="T2" id="tblCol_92bb6f4090754ca6b6218d0e5db1e8ac" index="34" datatype="Text" />
+    <Column name="T3" id="tblCol_7bcbd1c3c787418685b624ba05b05c4e" index="35" datatype="Text" />
+    <Column name="T4" id="tblCol_f2a522ebd5574ade8b7572d74b851c2d" index="36" datatype="Text" mandatory="true" defaultValue="1" />
+    <Column name="T5" id="tblCol_bba3ae20cbf74ca791859f8020e069af" index="37" datatype="Integer" mandatory="true" defaultValue="1" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" columnsIdsList="tblCol_0544873e1c934856ad225d3661860dd0" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

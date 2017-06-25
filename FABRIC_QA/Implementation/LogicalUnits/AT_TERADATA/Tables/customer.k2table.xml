@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>customer</Name>
+  <ID>tbl_customer</ID>
+  <EntityId>tblCol_cc70a59cc3554fea8c717c874d02a670</EntityId>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="cust_id" id="tblCol_cc70a59cc3554fea8c717c874d02a670" index="0" datatype="Integer" mandatory="true" />
+    <Column name="income" id="tblCol_f17358d1b2cf4daab5e61b6aa15c8023" index="1" datatype="Integer" />
+    <Column name="age" id="tblCol_994c0760aca2487389b9c429ae2881f8" index="2" datatype="Integer" />
+    <Column name="years_with_bank" id="tblCol_6e14ae6f3c834fb1a21c95c378a642be" index="3" datatype="Integer" />
+    <Column name="nbr_children" id="tblCol_43c06ab5ddb04314accec02179caa387" index="4" datatype="Integer" />
+    <Column name="gender" id="tblCol_0f30c148037840b489b87f98a26a6581" index="5" datatype="Text" />
+    <Column name="marital_status" id="tblCol_ee2924dfff7b4dc9828238b67daf4c69" index="6" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

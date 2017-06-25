@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>YP_ITEM_FUN</Name>
+  <ID>tbl_YP_ITEM_FUN</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="PRODUCT_ISSUE_NUM" id="tblCol_75addf22af6b4e84be97a5b99ff44528" index="0" datatype="Long" />
+    <Column name="PRODUCT_CODE" id="tblCol_3662bab607374aae9861fe1f4b0df203" index="1" datatype="String" />
+    <Column name="ITEM_ID" id="tblCol_4673ce4d9f7f424395858725cb65cf57" index="2" datatype="Long" />
+    <Column name="ITEM_VERSION" id="tblCol_0973dd202969473db30d305ba8f3805f" index="3" datatype="Long" />
+    <Column name="LAST_VERSION_IND" id="tblCol_ebd5ab62f66c4c6ca80327abdf7a5f1e" index="4" datatype="String" />
+    <Column name="HEADING_CODE" id="tblCol_f006fb42f1734ee08120ba92e204686e" index="5" datatype="Long" />
+    <Column name="SUB_HEADING_CODE" id="tblCol_f498a5ced04b4e8086f2ade61640a11e" index="6" datatype="Long" />
+    <Column name="UDAC_CODE" id="tblCol_18bda5625cdf4d14a4328d49d234ae83" index="7" datatype="String" />
+    <Column name="NEW_PRD" id="tblCol_a8ce8640cf0a4116a7e9cb2c4f5fb254" index="8" datatype="String" />
+    <Column name="NEW_UDAC" id="tblCol_b7b1f7ccf9a540fd8a7df218116946b7" index="9" datatype="String" />
+    <Column name="HBD" id="tblCol_ab3446e9ed874b0298d0bb902488879a" index="10" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

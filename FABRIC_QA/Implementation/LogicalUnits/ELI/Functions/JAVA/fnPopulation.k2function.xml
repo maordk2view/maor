@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>fnPopulation</Name>
+  <ID>JAVA.fnPopulation</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String first = "Mhanna";
+String last = "AbuTareef";
+String id = "1";
+yield(new Object[]{first ,last,id});</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>true</IsRootFunction>
+  <InputParams>
+    <Input name="in" id="fi.JAVA.fnPopulation.0" index="0" dataType="String">
+      <Comment />
+    </Input>
+  </InputParams>
+  <OutputParams>
+    <Output name="first" id="fo.JAVA.fnPopulation.0" index="0" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="last" id="fo.JAVA.fnPopulation.1" index="1" dataType="String">
+      <Comment />
+    </Output>
+    <Output name="id" id="fo.JAVA.fnPopulation.2" index="2" dataType="String">
+      <Comment />
+    </Output>
+  </OutputParams>
+</KFunction>

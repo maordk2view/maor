@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>getProductCodeEnric</Name>
+  <ID>JAVA.getProductCodeEnric</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>RegularFunction</FunctionType>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>//DBExecute("cdbms","get MS:4333", null);
+
+DBExecute("cdbms","get MS.*", null);
+
+//String SQL = "SELECT PRODUCT_CODE FROM YP_PRODUCT limit 1 ";
+String SQL = "SELECT count(*) FROM YP_PRODUCT";				
+Object output = DBSelectValue("cdbms", SQL, null);
+Object []  new_prd= { output.toString() };
+//String SQL1= "UPDATE YP_PRODUCT_NO_TRN SET NEW_PRD=?";
+
+String SQL1= "UPDATE YP_PRODUCT_NO_TRN SET NEW_PRD=?";
+reportUserMessage ("NEW_PRD :"+output.toString());
+
+DBExecute("ludb", SQL1, new_prd);
+
+//return (String)output;</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams />
+  <OutputParams />
+</KFunction>

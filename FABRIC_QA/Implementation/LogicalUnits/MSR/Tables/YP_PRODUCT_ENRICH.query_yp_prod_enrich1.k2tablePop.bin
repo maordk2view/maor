@@ -1,0 +1,17 @@
+﻿<Graph name="YP_PRODUCT_ENRICH.query_yp_prod_enrich1.k2tablePop.bin" lastPartID="566">
+  <TableNode partID="0" name="YP_PRODUCT_ENRICH" pos="528.61145 73" width="309.712158" />
+  <ConstantMapNode partID="116" topLabel="con1" pos="397.431549 273" size="29.9544373 45.091156">
+    <KDataValue>{"ID":"c.116","DataValue":"3"}</KDataValue>
+  </ConstantMapNode>
+  <ConstantMapNode partID="156" topLabel="CUST" pos="487.766357 377" size="65.79932 45.091156">
+    <KDataValue>{"ID":"c.156","DataValue":"106812302"}</KDataValue>
+  </ConstantMapNode>
+  <DBQueryNode partID="464" name="ORA_140" pos="85 89" size="277.22876 108.291656" isRoot="true">
+    <DBQuery>{"Name":"query_SOURCE03_YP_PRODUCT","ID":"query_query_SOURCE03_YP_PRODUCT","ConnName":"ORA_140","SQL":"Select SOURCE03.YP_PRODUCT.CUSTOMER_ID,\r\n  SOURCE03.YP_PRODUCT.PRODUCT_CODE,\r\n  SOURCE03.YP_PRODUCT.PRODUCT_STATUS,\r\n  SOURCE03.YP_PRODUCT.ACTIVITY_TYPE\r\nFrom SOURCE03.YP_PRODUCT","ColumnsList":[{"ID":"queryCol_0","Name":"CUSTOMER_ID","DataType":"Integer","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"PRODUCT_CODE","DataType":"Text","Index":1,"IsInputArgument":true},{"ID":"queryCol_2","Name":"PRODUCT_STATUS","DataType":"Integer","Index":2,"IsInputArgument":true},{"ID":"queryCol_3","Name":"ACTIVITY_TYPE","DataType":"Integer","Index":3,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="118" from="0" to="1" pointsArr="426.656372 298.091156 436.656372 298.091156 518.61145 224.76564 528.61145 224.76564" fromNodePartID="116" fromNodeColumnName="3" toNodePartID="0" toNodeColumnName="T1" />
+  <Link partID="563" from="2" to="3" pointsArr="362.22876 125.036469 372.22876 125.036469 518.61145 104.036461 528.61145 104.036461" fromNodePartID="464" fromNodeColumnName="CUSTOMER_ID" toNodePartID="0" toNodeColumnName="CUSTOMER_ID" />
+  <Link partID="564" from="4" to="5" pointsArr="362.22876 137.109375 372.22876 137.109375 518.61145 116.109375 528.61145 116.109375" fromNodePartID="464" fromNodeColumnName="PRODUCT_CODE" toNodePartID="0" toNodeColumnName="PRODUCT_CODE" />
+  <Link partID="565" from="6" to="7" pointsArr="362.22876 149.182281 372.22876 149.182281 518.61145 128.182281 528.61145 128.182281" fromNodePartID="464" fromNodeColumnName="PRODUCT_STATUS" toNodePartID="0" toNodeColumnName="PRODUCT_STATUS" />
+  <Link partID="566" from="8" to="9" pointsArr="362.22876 161.255188 372.22876 161.255188 518.61145 140.2552 528.61145 140.2552" fromNodePartID="464" fromNodeColumnName="ACTIVITY_TYPE" toNodePartID="0" toNodeColumnName="ACTIVITY_TYPE" />
+</Graph>

@@ -1,0 +1,14 @@
+﻿<Graph name="ALLERGIES.query_ALLERGIES.k2tablePop.bin" lastPartID="40">
+  <TableNode partID="0" name="ALLERGIES" pos="308 24.8177147" width="309.324219" />
+  <DBQueryNode partID="7" name="HIS_DB" pos="10 20.8541718" size="253 108.291656" isRoot="true">
+    <DBQuery>{"Name":"query_ALLERGIES","ID":"query_query_ALLERGIES","ConnName":"HIS_DB","SQL":"SELECT * FROM ALLERGIES","ColumnsList":[{"ID":"queryCol_0","Name":"PATIENT_ID","DataType":"Text","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"ALERGY_ID","DataType":"Text","Index":1,"IsInputArgument":true},{"ID":"queryCol_2","Name":"MEDICATION_ALLERGY","DataType":"Text","Index":2,"IsInputArgument":true},{"ID":"queryCol_3","Name":"DISCOVERED_DATE","DataType":"Text","Index":3,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <FunctionMapNode id="0" R0="1" partID="38" topLabel="k2_currentDateTime (38)" pos="291.916931 183" size="153.932251 45.09114" isRoot="false">
+    <KFunction>{"Name":"k2_currentDateTime","ID":"f_38","Category":"Date","FunctionLevel":1,"FunctionType":0,"RegisterAsLuDbFunction":false,"SaveToDLUR":false,"ApiFunction":false,"DecisionFunction":false,"RequiresLuReference":false,"Desc":"","Auther":{"Name":"","ID":""},"Language":1,"FunctionBody":"java.text.DateFormat dateFormat = new java.text.SimpleDateFormat(\"yyyy/MM/dd HH:mm:ss\");\njava.util.Date date = new java.util.Date();\nreturn dateFormat.format(date);","IsSyntaxValid":true,"IsRootFunction":false,"inputParams":[],"outputParams":[{"Name":"current_datetime","ID":"fo_38.0","Index":0,"DataType":"String","Comment":""}]}</KFunction>
+  </FunctionMapNode>
+  <Link partID="12" from="2" to="3" pointsArr="263 56.89063 273 56.89063 275.5 25 295.5 25 298 55.8541756 308 55.8541756" fromNodePartID="7" fromNodeColumnName="PATIENT_ID" toNodePartID="0" toNodeColumnName="PATIENT_ID" />
+  <Link partID="13" from="4" to="5" pointsArr="263 68.96355 273 68.96355 275.5 50 295.5 50 298 67.92709 308 67.92709" fromNodePartID="7" fromNodeColumnName="ALERGY_ID" toNodePartID="0" toNodeColumnName="ALERGY_ID" />
+  <Link partID="14" from="6" to="7" pointsArr="263 81.03645 273 81.03645 275.5 75 295.5 75 298 80.00001 308 80.00001" fromNodePartID="7" fromNodeColumnName="MEDICATION_ALLERGY" toNodePartID="0" toNodeColumnName="MEDICATION_ALLERGY" />
+  <Link partID="15" from="8" to="9" pointsArr="263 93.109375 273 93.109375 275.5 100 295.5 100 298 92.07292 308 92.07292" fromNodePartID="7" fromNodeColumnName="DISCOVERED_DATE" toNodePartID="0" toNodeColumnName="DISCOVERED_DATE" />
+  <Link partID="40" from="1" to="10" pointsArr="445.766144 208.091141 455.766144 208.091141 298 104.145836 308 104.145836" fromNodePartID="38" fromNodeColumnName="current_datetime" toNodePartID="0" toNodeColumnName="currDate" />
+</Graph>

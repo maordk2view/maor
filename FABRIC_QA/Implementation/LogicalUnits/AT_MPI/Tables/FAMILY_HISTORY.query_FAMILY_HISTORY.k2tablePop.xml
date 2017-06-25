@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_FAMILY_HISTORY</ID>
+  <PopulationObjectName>query_FAMILY_HISTORY</PopulationObjectName>
+  <TableName>FAMILY_HISTORY</TableName>
+  <RootItemID>query_query_FAMILY_HISTORY</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="PATIENT_ID" id="queryCol_0" dataType="Text" index="0" />
+    <Arg name="ALCOHOL_DRUG_ABUSE" id="queryCol_1" dataType="Real" index="1" />
+    <Arg name="ALLERGIES" id="queryCol_2" dataType="Real" index="2" />
+    <Arg name="ASTHMA" id="queryCol_3" dataType="Real" index="3" />
+    <Arg name="CANCER" id="queryCol_4" dataType="Real" index="4" />
+    <Arg name="DEPRESSION" id="queryCol_5" dataType="Real" index="5" />
+    <Arg name="HEART_DISEASE" id="queryCol_6" dataType="Real" index="6" />
+    <Arg name="HIGH_BLOOD_PRESSURE" id="queryCol_7" dataType="Real" index="7" />
+    <Arg name="HIGH_CHOLESTEROL" id="queryCol_8" dataType="Real" index="8" />
+    <Arg name="MENTAL_ILLNESS" id="queryCol_9" dataType="Real" index="9" />
+    <Arg name="STROKE" id="queryCol_10" dataType="Real" index="10" />
+    <Arg name="SMOKER" id="queryCol_11" dataType="Real" index="11" />
+    <Arg name="EXERCISE_REGULARLY" id="queryCol_12" dataType="Real" index="12" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_FAMILY_HISTORY" name="query_FAMILY_HISTORY" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="HIS_DB">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="PATIENT_ID" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="ALCOHOL_DRUG_ABUSE" dataType="Real" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="ALLERGIES" dataType="Real" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="ASTHMA" dataType="Real" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="CANCER" dataType="Real" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="DEPRESSION" dataType="Real" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_6" name="HEART_DISEASE" dataType="Real" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_7" name="HIGH_BLOOD_PRESSURE" dataType="Real" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_8" name="HIGH_CHOLESTEROL" dataType="Real" index="8" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_9" name="MENTAL_ILLNESS" dataType="Real" index="9" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_10" name="STROKE" dataType="Real" index="10" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_11" name="SMOKER" dataType="Real" index="11" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_12" name="EXERCISE_REGULARLY" dataType="Real" index="12" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM FAMILY_HISTORY]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="30" fromNodeOrder="0" fromItemID="query_query_FAMILY_HISTORY" fromColID="queryCol_0" toItemID="tbl_FAMILY_HISTORY" toColID="tblCol_e16ade77adef4cea906ecd89dc8d3cfe" />
+    <Link partId="31" fromNodeOrder="0" fromItemID="query_query_FAMILY_HISTORY" fromColID="queryCol_1" toItemID="tbl_FAMILY_HISTORY" toColID="tblCol_2946ac9ef00a446e92b403101ec30a94" />
+    <Link partId="32" fromNodeOrder="0" fromItemID="query_query_FAMILY_HISTORY" fromColID="queryCol_2" toItemID="tbl_FAMILY_HISTORY" toColID="tblCol_d18b049b47bf4412a3d5d2f978eb7b03" />
+    <Link partId="33" fromNodeOrder="0" fromItemID="query_query_FAMILY_HISTORY" fromColID="queryCol_3" toItemID="tbl_FAMILY_HISTORY" toColID="tblCol_eb91c01a61c8427cbdaa267e0583f22d" />
+    <Link partId="34" fromNodeOrder="0" fromItemID="query_query_FAMILY_HISTORY" fromColID="queryCol_4" toItemID="tbl_FAMILY_HISTORY" toColID="tblCol_290dd90fa4894060bcaafacbfd39fc4c" />
+    <Link partId="35" fromNodeOrder="0" fromItemID="query_query_FAMILY_HISTORY" fromColID="queryCol_5" toItemID="tbl_FAMILY_HISTORY" toColID="tblCol_77bfee494c074c969aa282ad434a7e67" />
+    <Link partId="36" fromNodeOrder="0" fromItemID="query_query_FAMILY_HISTORY" fromColID="queryCol_6" toItemID="tbl_FAMILY_HISTORY" toColID="tblCol_5209cead06ea4556bf46f118cc41886e" />
+    <Link partId="37" fromNodeOrder="0" fromItemID="query_query_FAMILY_HISTORY" fromColID="queryCol_7" toItemID="tbl_FAMILY_HISTORY" toColID="tblCol_5ab449a473984f1196912a2b365b6138" />
+    <Link partId="38" fromNodeOrder="0" fromItemID="query_query_FAMILY_HISTORY" fromColID="queryCol_8" toItemID="tbl_FAMILY_HISTORY" toColID="tblCol_8b2a1f9df2f54bc1bbcd9ff23147989e" />
+    <Link partId="39" fromNodeOrder="0" fromItemID="query_query_FAMILY_HISTORY" fromColID="queryCol_9" toItemID="tbl_FAMILY_HISTORY" toColID="tblCol_168fbf0a5c0c4872ba321c151d73aaca" />
+    <Link partId="40" fromNodeOrder="0" fromItemID="query_query_FAMILY_HISTORY" fromColID="queryCol_10" toItemID="tbl_FAMILY_HISTORY" toColID="tblCol_23a14323e02b47d6a35e6b9ebe14fdcd" />
+    <Link partId="41" fromNodeOrder="0" fromItemID="query_query_FAMILY_HISTORY" fromColID="queryCol_11" toItemID="tbl_FAMILY_HISTORY" toColID="tblCol_d59988c980a548da904ced4877362712" />
+    <Link partId="42" fromNodeOrder="0" fromItemID="query_query_FAMILY_HISTORY" fromColID="queryCol_12" toItemID="tbl_FAMILY_HISTORY" toColID="tblCol_6c1ec2f95a89451288973fe4e3080797" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

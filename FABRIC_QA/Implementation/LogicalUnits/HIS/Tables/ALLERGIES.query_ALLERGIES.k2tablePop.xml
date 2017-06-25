@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_ALLERGIES</ID>
+  <PopulationObjectName>query_ALLERGIES</PopulationObjectName>
+  <TableName>ALLERGIES</TableName>
+  <RootItemID>query_query_ALLERGIES</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="PATIENT_ID" id="queryCol_0" dataType="Text" index="0" />
+    <Arg name="ALERGY_ID" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="MEDICATION_ALLERGY" id="queryCol_2" dataType="Text" index="2" />
+    <Arg name="DISCOVERED_DATE" id="queryCol_3" dataType="Text" index="3" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_ALLERGIES" name="query_ALLERGIES" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="ORACLE_HIS">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="PATIENT_ID" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="ALERGY_ID" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="MEDICATION_ALLERGY" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="DISCOVERED_DATE" dataType="Text" index="3" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM ALLERGIES]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="12" fromNodeOrder="0" fromItemID="query_query_ALLERGIES" fromColID="queryCol_0" toItemID="tbl_ALLERGIES" toColID="tblCol_95e4b90eb94f4b62b997894e4c20c3fc" />
+    <Link partId="13" fromNodeOrder="0" fromItemID="query_query_ALLERGIES" fromColID="queryCol_1" toItemID="tbl_ALLERGIES" toColID="tblCol_af74367259c84e92af64b5a98f74c2cd" />
+    <Link partId="14" fromNodeOrder="0" fromItemID="query_query_ALLERGIES" fromColID="queryCol_2" toItemID="tbl_ALLERGIES" toColID="tblCol_11d4809f697b466eba2b0fc18d351a13" />
+    <Link partId="15" fromNodeOrder="0" fromItemID="query_query_ALLERGIES" fromColID="queryCol_3" toItemID="tbl_ALLERGIES" toColID="tblCol_b8c446bc6c12443080f0c22d04e7b623" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

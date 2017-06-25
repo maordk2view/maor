@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_PAYMENT</ID>
+  <PopulationObjectName>query_PAYMENT</PopulationObjectName>
+  <TableName>PAYMENT2</TableName>
+  <RootItemID>query_query_PAYMENT</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="INVOICE_ID" id="queryCol_0" dataType="Text" index="0" />
+    <Arg name="PAYMENT_ID" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="ISSUED_DATE" id="queryCol_2" dataType="Text" index="2" />
+    <Arg name="STATUS" id="queryCol_3" dataType="Text" index="3" />
+    <Arg name="AMOUNT" id="queryCol_4" dataType="Text" index="4" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_PAYMENT" name="query_PAYMENT" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="HIS_DB">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="INVOICE_ID" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="PAYMENT_ID" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="ISSUED_DATE" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="STATUS" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="AMOUNT" dataType="Text" index="4" />
+      </OutputsList>
+      <SQL><![CDATA[Select *
+From PAYMENT]]></SQL>
+    </Item>
+    <Item id="f_20" name="k2_currentDateTime" nodeOrder="0" module="Function" mapObjectModule="Function" fileName="k2_currentDateTime.k2function.xml">
+      <InputsList />
+      <OutputsList>
+        <Output id="fo_20.0" name="current_datetime" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="15" fromNodeOrder="0" fromItemID="query_query_PAYMENT" fromColID="queryCol_0" toItemID="tbl_PAYMENT2" toColID="tblCol_7eb1f24f95094f63b2d5d4e08996f031" />
+    <Link partId="16" fromNodeOrder="0" fromItemID="query_query_PAYMENT" fromColID="queryCol_1" toItemID="tbl_PAYMENT2" toColID="tblCol_837cd3dbd2234f2c992d27389259fa06" />
+    <Link partId="17" fromNodeOrder="0" fromItemID="query_query_PAYMENT" fromColID="queryCol_2" toItemID="tbl_PAYMENT2" toColID="tblCol_04df25abc138449c8ddd7fc2ab0b1508" />
+    <Link partId="18" fromNodeOrder="0" fromItemID="query_query_PAYMENT" fromColID="queryCol_3" toItemID="tbl_PAYMENT2" toColID="tblCol_9d0aac6b90e044d1942799ca6fe136d1" />
+    <Link partId="19" fromNodeOrder="0" fromItemID="query_query_PAYMENT" fromColID="queryCol_4" toItemID="tbl_PAYMENT2" toColID="tblCol_afcc59d44ce445219ce132278f4e2ae2" />
+    <Link partId="22" fromNodeOrder="0" fromItemID="f_20" fromColID="fo_20.0" toItemID="tbl_PAYMENT2" toColID="tblCol_050ef67334874da381895d68a9062eeb" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

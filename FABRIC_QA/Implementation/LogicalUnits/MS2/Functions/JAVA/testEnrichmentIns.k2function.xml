@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>testEnrichmentIns</Name>
+  <ID>JAVA.testEnrichmentIns</ID>
+  <Category>JAVA</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String entity_id=getInstanceID();
+
+Integer entity= Integer.valueOf(entity_id);
+
+String SQL1= "select b.CUSTOMER_ID, a.PRODUCT_CODE, a.PRODUCT_STATUS, a.ACTIVITY_TYPE,b.PRODUCT_IND  from yp_product a,yp_customer b where b.customer_id = ? and a.customer_id=b.customer_id";
+
+Object [] resultarray1={entity};
+
+//Object [] resultarray1=null;
+ResultSetWrapper rs=DBQuery("ludb" ,SQL1,resultarray1);
+
+String customer_id="";
+String product_code="";
+String product_status="";
+String activity_type="";
+String product_ind="";
+String current_date="";
+
+for (Object[] row : rs) {
+	
+ customer_id = Integer.toString((Integer)row[0]);
+ product_code= (String)row[1]+"enrich";
+ product_status= Integer.toString((Integer)row[2]);
+ activity_type=Integer.toString((Integer)row[3]);
+ product_ind=(String)row[4];
+ current_date=k2_currentDateTime()	;
+	
+	
+Object [] resultarray2={customer_id,product_code,product_status,activity_type,product_ind,current_date};
+	
+//Object [] resultarray2={customer_id,product_code,product_status,activity_type};
+	
+String SQL2= "insert into yp_product_enrich (CUSTOMER_ID, PRODUCT_CODE, PRODUCT_STATUS, ACTIVITY_TYPE,PRODUCT_IND,CURRENT_DATE) values (?,?,?,?,?,?)";
+
+//String SQL2= "insert into yp_product_enrich (CUSTOMER_ID, PRODUCT_CODE, PRODUCT_STATUS, ACTIVITY_TYPE) values (?,?,?,?)";
+DBExecute("ludb", SQL2 ,resultarray2);
+		
+}
+
+</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams />
+  <OutputParams />
+</KFunction>

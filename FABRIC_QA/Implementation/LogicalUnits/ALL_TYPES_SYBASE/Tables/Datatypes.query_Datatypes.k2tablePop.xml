@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_Datatypes</ID>
+  <PopulationObjectName>query_Datatypes</PopulationObjectName>
+  <TableName>Datatypes</TableName>
+  <RootItemID>query_query_Datatypes</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="date_" id="queryCol_10" dataType="Text" index="10" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_Datatypes" name="query_Datatypes" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="SybaseASE">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="int_param" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="small_int" dataType="Integer" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="big_int" dataType="Integer" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="tiny_int" dataType="Integer" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="decimal_" dataType="Real" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="numeric_" dataType="Real" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_6" name="float_" dataType="Real" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_7" name="real_" dataType="Real" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_8" name="binary_" dataType="BLOB" index="8" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_9" name="bit_" dataType="Integer" index="9" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_10" name="date_" dataType="Text" index="10" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_11" name="time_" dataType="Text" index="11" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_12" name="datetime_" dataType="Text" index="12" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM Datatypes]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="30" fromNodeOrder="0" fromItemID="query_query_Datatypes" fromColID="queryCol_0" toItemID="tbl_Datatypes" toColID="tblCol_28d99419d2ed44a4b70ada3ea8d14677" />
+    <Link partId="31" fromNodeOrder="0" fromItemID="query_query_Datatypes" fromColID="queryCol_1" toItemID="tbl_Datatypes" toColID="tblCol_1b53447f0d72415e9e51166be8c236ac" />
+    <Link partId="32" fromNodeOrder="0" fromItemID="query_query_Datatypes" fromColID="queryCol_2" toItemID="tbl_Datatypes" toColID="tblCol_c275158a33944a31943ab1e1281fb405" />
+    <Link partId="33" fromNodeOrder="0" fromItemID="query_query_Datatypes" fromColID="queryCol_3" toItemID="tbl_Datatypes" toColID="tblCol_81a35230807d4ce4a8de96f88fe12088" />
+    <Link partId="34" fromNodeOrder="0" fromItemID="query_query_Datatypes" fromColID="queryCol_4" toItemID="tbl_Datatypes" toColID="tblCol_742baabda1ed45ffb2a3241c53c1bc9e" />
+    <Link partId="35" fromNodeOrder="0" fromItemID="query_query_Datatypes" fromColID="queryCol_5" toItemID="tbl_Datatypes" toColID="tblCol_531489fa397442a0bdf939d95338a11a" />
+    <Link partId="36" fromNodeOrder="0" fromItemID="query_query_Datatypes" fromColID="queryCol_6" toItemID="tbl_Datatypes" toColID="tblCol_b69b54a14eb14f428ad23b7dcde12327" />
+    <Link partId="37" fromNodeOrder="0" fromItemID="query_query_Datatypes" fromColID="queryCol_7" toItemID="tbl_Datatypes" toColID="tblCol_8341ce9f7144407ba45e52f27304735a" />
+    <Link partId="38" fromNodeOrder="0" fromItemID="query_query_Datatypes" fromColID="queryCol_8" toItemID="tbl_Datatypes" toColID="tblCol_60eba447d9b54cd2a407294047f7a2fb" />
+    <Link partId="39" fromNodeOrder="0" fromItemID="query_query_Datatypes" fromColID="queryCol_9" toItemID="tbl_Datatypes" toColID="tblCol_1e4f3659ebd644898a3d72d19b6a96dd" />
+    <Link partId="40" fromNodeOrder="0" fromItemID="query_query_Datatypes" fromColID="queryCol_10" toItemID="tbl_Datatypes" toColID="tblCol_15c4cd3c3ec94e968d84f25c5be06d6f" />
+    <Link partId="41" fromNodeOrder="0" fromItemID="query_query_Datatypes" fromColID="queryCol_11" toItemID="tbl_Datatypes" toColID="tblCol_9424bafb633549a08b15e7a76d9039bf" />
+    <Link partId="42" fromNodeOrder="0" fromItemID="query_query_Datatypes" fromColID="queryCol_12" toItemID="tbl_Datatypes" toColID="tblCol_2f1a218b0fc24c9e95447fb558bce359" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

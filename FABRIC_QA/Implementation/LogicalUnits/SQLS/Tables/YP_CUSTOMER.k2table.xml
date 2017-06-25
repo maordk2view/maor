@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>YP_CUSTOMER</Name>
+  <ID>tbl_YP_CUSTOMER</ID>
+  <EntityId>tblCol_564ce13d87c24abc8531bdd0a768e289</EntityId>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="CUSTOMER_ID" id="tblCol_564ce13d87c24abc8531bdd0a768e289" index="0" datatype="Integer" mandatory="true" />
+    <Column name="CUSTOMER_TYPE" id="tblCol_7f13c4b431fa4f9485cac87a8392afdd" index="1" datatype="Text" mandatory="true" />
+    <Column name="CUST_OPEN_DATE_TIME" id="tblCol_02a1119de2c74a3483bbfbcdf5f30265" index="2" datatype="Text" />
+    <Column name="CONTACT_ID" id="tblCol_0be455677f824b3eb4cf0c2162878d70" index="3" datatype="Integer" />
+    <Column name="MAIN_MAIN_LISTING_ID" id="tblCol_57c1e5d34bfa40b69bfd9a3e09b720bc" index="4" datatype="Integer" mandatory="true" />
+    <Column name="SELLING_ID" id="tblCol_07980231137a4e638c9e5541c23fe4bd" index="5" datatype="Text" />
+    <Column name="OPEN_CLAIM_IND" id="tblCol_3777d9cf163048528097b188ed7c462d" index="6" datatype="Text" mandatory="true" />
+    <Column name="CLOSE_CLAIM_DATE" id="tblCol_11d1623d53c1415aa5ec85604112abda" index="7" datatype="Text" />
+    <Column name="CS_TOTAL_AMOUNT" id="tblCol_3b4cf68ec5bf4f1cb056254037b3cdf8" index="8" datatype="Real" mandatory="true" />
+    <Column name="CONVERSION_LOCK" id="tblCol_a3a7cd1773484b98b2c48eacfd8dbfac" index="9" datatype="Text" mandatory="true" />
+    <Column name="LOCKING_EMP_ID" id="tblCol_e35740df07724f05b8a31d1543140ca6" index="10" datatype="Integer" />
+    <Column name="DELINQUENT_IND" id="tblCol_4450a5f11c824f06a9ed616e9d03ab9e" index="11" datatype="Text" mandatory="true" />
+    <Column name="DELINQUENT_REASON" id="tblCol_6e2c69fba4de4cefa27cecfb8b5958ed" index="12" datatype="Text" mandatory="true" />
+    <Column name="DELINQUENT_EFF_DATE" id="tblCol_1f39b3ebf4e345eba8b6aacc732ad738" index="13" datatype="Text" />
+    <Column name="DELINQUENT_UPD_EMP" id="tblCol_dbb52c8ba677470f9a18214cf9f968b3" index="14" datatype="Integer" />
+    <Column name="WORK_WITH_ID" id="tblCol_6d5b6a8fac73476a9a7c590a6c4e99bc" index="15" datatype="Integer" />
+    <Column name="HBD" id="tblCol_4bee4ca9798748eb92824354a7d03b3c" index="16" datatype="Text" />
+    <Column name="LEGAL_NAME" id="tblCol_60ca7b89a33f4cb5ba0861a3743eb8d8" index="17" datatype="Text" />
+    <Column name="SEARCH_LEGAL_NAME" id="tblCol_056a1a345a824901be3c484b2e9905c1" index="18" datatype="Text" />
+    <Column name="NATIONAL_ACCOUNT_ID" id="tblCol_99355f53ebb1469eb1958d6980a6306e" index="19" datatype="Integer" />
+    <Column name="CREDIT_LIMIT_AMT" id="tblCol_e9157388e37748ffb05f99880e6daebf" index="20" datatype="Real" />
+    <Column name="VIP_IND" id="tblCol_bec5e19a790b44639f6fa8293e30831e" index="21" datatype="Text" mandatory="true" />
+    <Column name="NEW_CONNECT_IND" id="tblCol_bb12fd47b28c4066bd419ff3f66a7187" index="22" datatype="Text" mandatory="true" />
+    <Column name="PROSPECT_CODE" id="tblCol_a1d53257bd5d49d29c16f9957d2f9c1e" index="23" datatype="Integer" mandatory="true" />
+    <Column name="PROSPECT_AGE" id="tblCol_b5334fc27cbf40ee9f301d9645284be4" index="24" datatype="Integer" mandatory="true" />
+    <Column name="CONTACT_SOURCE" id="tblCol_4f5d996827af425faa39c45835f0c839" index="25" datatype="Text" mandatory="true" />
+    <Column name="CTCR_BATCH_PROG_ID" id="tblCol_d53609acbe054b009d444334835f9be0" index="26" datatype="Text" />
+    <Column name="CTCR_BATCH_PROG_DT" id="tblCol_3b17dfce691147a3b6e32a7c0654a779" index="27" datatype="Text" />
+    <Column name="CTCR_ONLINE_USER_ID" id="tblCol_8180718f8ae9444f8b54d9c76b518761" index="28" datatype="Integer" />
+    <Column name="CTCR_ONLINE_PROG_ID" id="tblCol_5af610d9ba3646be8a605f0344e8c2e1" index="29" datatype="Text" />
+    <Column name="CTCR_ONLINE_PROG_DT" id="tblCol_577cae95c10647e0adfe594c8aa8e1bd" index="30" datatype="Text" />
+    <Column name="CTCR_SYS_CRE_DT" id="tblCol_33ff54942b9f484399cfe3b7925b7818" index="31" datatype="Text" />
+    <Column name="CTCR_SYS_UPD_DT" id="tblCol_2761e739cb0d4b8baf1af674e60da3c1" index="32" datatype="Text" />
+    <Column name="CTCR_DBI_PROG_ID" id="tblCol_d16c590e592a4e6db1349ea857dd5380" index="33" datatype="Text" />
+    <Column name="CTCR_DBI_PROG_DT" id="tblCol_339d99727ba4418f943b316d1fc4daff" index="34" datatype="Text" />
+    <Column name="CTCR_CNV_DT" id="tblCol_4e5b9d0552f24e74aa37c136fac941f7" index="35" datatype="Text" />
+    <Column name="CTCR_EVENT_ID" id="tblCol_24d8ea83f3a644abb070a25291e1b22a" index="36" datatype="Integer" />
+    <Column name="SFA_ID" id="tblCol_250590434247457bacf4829298d5f8aa" index="37" datatype="Text" />
+    <Column name="SFA_UPLOAD_IND" id="tblCol_9330a9d2ed304e6fb3cdf4ff241900fe" index="38" datatype="Text" mandatory="true" />
+    <Column name="SUBSC_AMT" id="tblCol_4c2682d50020447fa1a5c636c421b5b1" index="39" datatype="Real" />
+    <Column name="FULL_PRICE_BOTS_AMT" id="tblCol_315e61ceb7664e609fe7b29ee23fe3bf" index="40" datatype="Real" />
+    <Column name="FULL_PRICE_NISD_AMT" id="tblCol_8217cc51afd14f0c9ec5f46947526af3" index="41" datatype="Real" />
+    <Column name="NIR_ONE_YEAR_CONT_AM" id="tblCol_bd2301817dd84f61a7ac27da8897b315" index="42" datatype="Real" />
+    <Column name="BOTS_AMOUNT" id="tblCol_debfdafc3e0c46d984b396ef0602219a" index="43" datatype="Real" />
+    <Column name="NISD_AMOUNT" id="tblCol_9c75f4c2201f40e4975e5abc2bb08f19" index="44" datatype="Real" />
+    <Column name="DOWNLOAD_DATE" id="tblCol_73089d9c0fa044a5bda77eb27d681b75" index="45" datatype="Text" />
+    <Column name="SFA_NIR_ASGN_REP" id="tblCol_8fb9ab7ea18e4e92a2e020364c55e91a" index="46" datatype="Integer" />
+    <Column name="SEGMENTO" id="tblCol_1daabc3ceaf34a609036a44d36977a53" index="47" datatype="Text" />
+    <Column name="CURR_PROSPECT_SOURCE" id="tblCol_899f9e6aa2ea4170b7148faf7b06f2e3" index="48" datatype="Integer" />
+    <Column name="PROSPECT_SOURCE" id="tblCol_d5e01d2f22fd472fa7199951a70d68c0" index="49" datatype="Integer" />
+    <Column name="PROSPECT_SOURCE_DATE" id="tblCol_0e71c324605a4c1d9bcd6b0a847750c8" index="50" datatype="Text" />
+    <Column name="CONVERSION_IND" id="tblCol_4d7b5819106a48b2aa23ddd84ba4f28b" index="51" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>
